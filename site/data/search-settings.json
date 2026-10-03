@@ -7,5 +7,16 @@
     "excludeTerms": "",
     "lookbackDays": 30
   },
-  "requests": []
+  "requests": [
+    {
+      "effectiveDate": "2026-10-04",
+      "scope": "once",
+      "themeKeywords": "cultural transmission\ncultural diffusion\ncross-cultural narrative",
+      "journalKeywords": "narrative persuasion\ncultural proximity\nglobal audiences",
+      "excludeTerms": "",
+      "lookbackDays": 30,
+      "requestNumber": 1,
+      "savedAt": "2026-10-03T08:31:36Z"
+    }
+  ]
 }
