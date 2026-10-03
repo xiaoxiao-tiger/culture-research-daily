@@ -20,21 +20,21 @@
     {
       "platform": "Google Scholar（直接网页）",
       "query": "\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\"",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "当天设置的主题检索",
       "status": "成功，网页返回约19,700条；首屏书籍较多，正式期刊文章再筛选"
     },
     {
       "platform": "Google Scholar（直接网页）",
       "query": "\"narrative persuasion\" OR \"cultural proximity\"",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "此前讨论的子主题补充",
       "status": "成功，网页返回约17,000条；不预先限制期刊"
     },
     {
       "platform": "Google Scholar（直接网页）",
       "query": "\"narrative transportation\" OR \"entertainment persuasion\" OR \"audience identification\"",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "补充传播机制候选及经典理论引用链",
       "status": "成功，网页返回约17,200条；候选经质量与期刊核验后排序"
     },
@@ -64,42 +64,42 @@
     {
       "platform": "Google Scholar（直接网页）",
       "query": "\"The role of transportation in the persuasiveness of public narratives\"",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "核验题名、版本与网页被引次数",
       "status": "已核验：8619次"
     },
     {
       "platform": "Google Scholar（直接网页）",
       "query": "\"Defining Identification A Theoretical Look at the Identification of Audiences With Media Characters\"",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "核验题名、版本与网页被引次数",
       "status": "已核验：3943次"
     },
     {
       "platform": "Google Scholar（直接网页）",
       "query": "\"Toward a Theory of Entertainment Persuasion\"",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "核验题名、版本与网页被引次数",
       "status": "已核验：2332次"
     },
     {
       "platform": "Google Scholar（直接网页）",
       "query": "\"Entertainment Education and Elaboration Likelihood\"",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "核验题名、版本与网页被引次数",
       "status": "已核验：2757次"
     },
     {
       "platform": "Google Scholar（直接网页）",
       "query": "\"The Extended Transportation Imagery Model\"",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "核验题名、版本与网页被引次数",
       "status": "已核验：1927次"
     },
     {
       "platform": "Google Scholar版本列表",
       "query": "cluster=14816949388431748452",
-      "timeRange": "不限年份；检索日期2026-10-03；查询中的2026是关键词而非严格日期过滤",
+      "timeRange": "不限年份；检索日期2026-10-03",
       "purpose": "确认Cohen2001原始期刊与重印版本的合并记录",
       "status": "版本列表含Mass Communication & Society 2001原文；3943次是合并版本口径"
     },
