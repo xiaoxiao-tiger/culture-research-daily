@@ -1,13 +1,8 @@
 {
   "source": "用户提供的JCR_JournalResults_06_2026.csv",
-  "scope": "传播学期刊；JIF Quartile Q1/Q2",
-  "note": "沿用上传表的分区，保留SSCI/ESCI；不等同于中科院分区。文件未提供指标年份，故不推断指标年份。",
+  "scope": "传播学期刊；SSCI且JIF Quartile Q1/Q2",
+  "note": "上传表中排除ESCI后保留77种SSCI Q1/Q2期刊；不等同于中科院分区。原文件未提供指标年份，不推断指标年份。",
   "journals": [
-    {
-      "name": "Journal of Interactive Advertising",
-      "edition": "ESCI",
-      "quartile": "Q1"
-    },
     {
       "name": "JOURNAL OF ADVERTISING",
       "edition": "SSCI",
@@ -36,11 +31,6 @@
     {
       "name": "POLITICAL COMMUNICATION",
       "edition": "SSCI",
-      "quartile": "Q1"
-    },
-    {
-      "name": "Annals of the International Communication Association",
-      "edition": "ESCI",
       "quartile": "Q1"
     },
     {
@@ -84,16 +74,6 @@
       "quartile": "Q1"
     },
     {
-      "name": "Internet Policy Review",
-      "edition": "ESCI",
-      "quartile": "Q1"
-    },
-    {
-      "name": "Journal of Current Issues and Research In Advertising",
-      "edition": "ESCI",
-      "quartile": "Q1"
-    },
-    {
       "name": "PUBLIC RELATIONS REVIEW",
       "edition": "SSCI",
       "quartile": "Q1"
@@ -101,11 +81,6 @@
     {
       "name": "PUBLIC UNDERSTANDING OF SCIENCE",
       "edition": "SSCI",
-      "quartile": "Q1"
-    },
-    {
-      "name": "Journal of Marketing Communications",
-      "edition": "ESCI",
       "quartile": "Q1"
     },
     {
@@ -149,11 +124,6 @@
       "quartile": "Q1"
     },
     {
-      "name": "Journal of Communication Management",
-      "edition": "ESCI",
-      "quartile": "Q1"
-    },
-    {
       "name": "JOURNAL OF BUSINESS AND TECHNICAL COMMUNICATION",
       "edition": "SSCI",
       "quartile": "Q1"
@@ -194,11 +164,6 @@
       "quartile": "Q1"
     },
     {
-      "name": "Global Media and China",
-      "edition": "ESCI",
-      "quartile": "Q1"
-    },
-    {
       "name": "Mass Communication and Society",
       "edition": "SSCI",
       "quartile": "Q1"
@@ -229,11 +194,6 @@
       "quartile": "Q1"
     },
     {
-      "name": "Public Relations Inquiry",
-      "edition": "ESCI",
-      "quartile": "Q1"
-    },
-    {
       "name": "Management Communication Quarterly",
       "edition": "SSCI",
       "quartile": "Q1"
@@ -249,28 +209,13 @@
       "quartile": "Q1"
     },
     {
-      "name": "Revista Latina de Comunicacion Social",
-      "edition": "ESCI",
-      "quartile": "Q1"
-    },
-    {
       "name": "Cyberpsychology-Journal of Psychosocial Research on Cyberspace",
       "edition": "SSCI",
       "quartile": "Q1"
     },
     {
-      "name": "International Journal of Strategic Communication",
-      "edition": "ESCI",
-      "quartile": "Q1"
-    },
-    {
       "name": "Discourse Context & Media",
       "edition": "SSCI",
-      "quartile": "Q1"
-    },
-    {
-      "name": "Journalism and Media",
-      "edition": "ESCI",
       "quartile": "Q1"
     },
     {
@@ -281,11 +226,6 @@
     {
       "name": "JOURNAL OF LANGUAGE AND SOCIAL PSYCHOLOGY",
       "edition": "SSCI",
-      "quartile": "Q1"
-    },
-    {
-      "name": "Nordicom Review",
-      "edition": "ESCI",
       "quartile": "Q1"
     },
     {
@@ -304,11 +244,6 @@
       "quartile": "Q2"
     },
     {
-      "name": "Science Editing",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "JOURNAL OF BROADCASTING & ELECTRONIC MEDIA",
       "edition": "SSCI",
       "quartile": "Q2"
@@ -321,11 +256,6 @@
     {
       "name": "Journalism Practice",
       "edition": "SSCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Online Journal of Communication and Media Technologies",
-      "edition": "ESCI",
       "quartile": "Q2"
     },
     {
@@ -349,28 +279,13 @@
       "quartile": "Q2"
     },
     {
-      "name": "Media War and Conflict",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "Psychology of Popular Media",
       "edition": "SSCI",
       "quartile": "Q2"
     },
     {
-      "name": "COMMUNICATION EDUCATION",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "Games and Culture",
       "edition": "SSCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Business and Professional Communication Quarterly",
-      "edition": "ESCI",
       "quartile": "Q2"
     },
     {
@@ -384,18 +299,8 @@
       "quartile": "Q2"
     },
     {
-      "name": "JCOM-Journal of Science Communication",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "Asian Journal of Communication",
       "edition": "SSCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "International Journal of Sport Communication",
-      "edition": "ESCI",
       "quartile": "Q2"
     },
     {
@@ -414,11 +319,6 @@
       "quartile": "Q2"
     },
     {
-      "name": "Frontiers in Communication",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "PERSONAL RELATIONSHIPS",
       "edition": "SSCI",
       "quartile": "Q2"
@@ -426,11 +326,6 @@
     {
       "name": "International Communication Gazette",
       "edition": "SSCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Journal of Communication in Healthcare",
-      "edition": "ESCI",
       "quartile": "Q2"
     },
     {
@@ -444,18 +339,8 @@
       "quartile": "Q2"
     },
     {
-      "name": "Communication and the Public",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "Journal of Media Psychology-Theories Methods and Applications",
       "edition": "SSCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Communication Research and Practice",
-      "edition": "ESCI",
       "quartile": "Q2"
     },
     {
@@ -464,33 +349,8 @@
       "quartile": "Q2"
     },
     {
-      "name": "JOURNAL OF FAMILY COMMUNICATION",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "COMMUNICATION REVIEW",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "LANGUAGE & COMMUNICATION",
       "edition": "SSCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Revista Mediterranea Comunicacion-Journal of Communication",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Journal of Multicultural Discourses",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Communication Research Reports",
-      "edition": "ESCI",
       "quartile": "Q2"
     },
     {
@@ -504,16 +364,6 @@
       "quartile": "Q2"
     },
     {
-      "name": "Electronic News",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Journal of International and Intercultural Communication",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "International Journal of Communication",
       "edition": "SSCI",
       "quartile": "Q2"
@@ -524,18 +374,8 @@
       "quartile": "Q2"
     },
     {
-      "name": "Tripodos",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "Media International Australia",
       "edition": "SSCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Internet Pragmatics",
-      "edition": "ESCI",
       "quartile": "Q2"
     },
     {
@@ -544,28 +384,8 @@
       "quartile": "Q2"
     },
     {
-      "name": "Communication & Society-Spain",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Internet Histories",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "SEARCH-Journal of Media and Communication Research",
-      "edition": "ESCI",
-      "quartile": "Q2"
-    },
-    {
       "name": "Journal of Media Ethics",
       "edition": "SSCI",
-      "quartile": "Q2"
-    },
-    {
-      "name": "Womens Studies in Communication",
-      "edition": "ESCI",
       "quartile": "Q2"
     }
   ]

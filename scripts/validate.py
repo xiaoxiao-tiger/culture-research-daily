@@ -1,4 +1,4 @@
-"""Validate published issues, source quartiles and all-time deduplication before Pages deploys."""
+"""Validate published issues, source quartiles and ordering before Pages deploys."""
 import json,re
 from pathlib import Path
 from urllib.parse import urlparse
@@ -9,12 +9,6 @@ index=json.loads((root/'index.json').read_text());dates=set();seen={}
 required=('title','titleZh','authors','venue','source','category','evidence','takeaway','theory','data','method','results','relevance','limitations','url')
 journal_data=json.loads((root/'journals.json').read_text())
 journals={normalize_title(j['name']):j for j in journal_data['journals']}
-ledger=json.loads((root/'recommended.json').read_text());ledger_seen={}
-for entry in ledger['papers']:
-    assert entry['title'] and entry['firstRecommended'] and entry['identifiers']
-    for key in entry['identifiers']:
-        assert key not in ledger_seen, 'Duplicate in historical ledger: '+key
-        ledger_seen[key]=entry
 for issue in sorted(index,key=lambda x:x['date']):
     date=issue['date'];assert re.fullmatch(r'\d{4}-\d{2}-\d{2}',date) and date not in dates;dates.add(date)
     data=json.loads((root/f'{date}.json').read_text());assert data['date']==date and data['title'] and data['summary']
@@ -35,12 +29,6 @@ for issue in sorted(index,key=lambda x:x['date']):
         for field in required: assert isinstance(p.get(field),str) and p[field].strip(), (date,field)
         assert urlparse(p['url']).scheme=='https' and isinstance(p['year'],int)
         assert p['evidence'] in ('全文核验','摘要核验','理论综述')
-        ids=identifiers(p)
-        for key in ids:
-            assert key not in seen, f'Repeated paper ({seen.get(key)} -> {date}): {p["title"]}'
-            entry=ledger_seen.get(key)
-            assert entry and entry['firstRecommended']==date, 'Registry missing or previously recommended: '+p['title']
-            seen[key]=date
         if schema>=2:
             assert p['abstractZh'] and urlparse(p['abstractSource']).scheme=='https'
             assert p['abstractMode'] in (('full','unavailable') if schema>=3 else ('full','excerpt'))
@@ -48,15 +36,27 @@ for issue in sorted(index,key=lambda x:x['date']):
             elif schema>=3: assert not p.get('originalAbstract') and p.get('abstractUnavailableReason')
             else: assert len(p['originalAbstract'].split())<=25
     if schema>=3:
-        assert data.get('journalPolicy')=='uploaded-jcr-q1-q2'
+        assert data.get('journalPolicy') in ('uploaded-jcr-q1-q2','communication-q1-q2-and-social-science','ssci-communication-q1-q2-and-social-science')
         for p in data['groups'][1]['papers']:
+            if schema>=4:
+                assert p.get('journalEdition')=='SSCI' and p.get('indexSource'), 'ESCI or unverified journal indexing'
+            if schema>=4 and p.get('discipline')=='social-science': continue
             j=journals.get(normalize_title(p.get('journalName','')))
             assert j and j['quartile'] in ('Q1','Q2'), 'Journal outside uploaded Q1/Q2 list: '+p['venue']
             assert p['jifQuartile']==j['quartile'] and p['journalEdition']==j['edition'] and p['quartileSource']
+    if schema>=4:
+        assert data['historyPolicy']=='repeat-allowed'
+        assert data.get('searchPlatforms')==['Google Scholar','NBER','SSRN','arXiv']
+        assert all(p.get('discoverySource')=='Google Scholar' and p.get('citationSource')=='Google Scholar' for p in data['groups'][1]['papers']), 'Use actual Google Scholar citations'
+        recent=data['groups'][0]['papers']; cited=data['groups'][1]['papers']
+        assert all(re.fullmatch(r'\d{4}-\d{2}(?:-\d{2})?',p.get('publicationDate','')) and p.get('publicationDateSource') for p in recent)
+        assert [p['publicationDate'] for p in recent]==sorted((p['publicationDate'] for p in recent),reverse=True), 'Publication dates out of order'
+        assert all(type(p.get('citationCount')) is int and p['citationCount']>=0 and p.get('citationSource') and p.get('citationCheckedAt') and p.get('citationSourceUrl') for p in cited)
+        assert [p['citationCount'] for p in cited]==sorted((p['citationCount'] for p in cited),reverse=True), 'Citations out of order'
 config=json.loads((root/'search-settings.json').read_text())
 assert config['version']==1 and config['owner']=='xiaoxiao-tiger'
 for r in config['requests']:
     data={k:r[k] for k in ('effectiveDate','scope','themeKeywords','journalKeywords','excludeTerms','lookbackDays')}
     parse_request('<!-- daily-search-settings:v1 -->\n```json\n'+json.dumps(data)+'\n```')
     assert type(r['requestNumber']) is int and r['savedAt']
-print(f'Validated {len(index)} issue(s), journal whitelist, settings and historical deduplication.')
+print(f'Validated {len(index)} issue(s), journal scope, settings and sorting.')

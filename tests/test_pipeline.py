@@ -14,11 +14,17 @@ class Pipeline(unittest.TestCase):
             self.assertEqual(json.loads(path.read_text())['requests'][0]['themeKeywords'],'LLM sycophancy')
             payload['scope']='unknown'
             with self.assertRaises(AssertionError):parse_request('<!-- daily-search-settings:v1 -->\n```json\n'+json.dumps(payload)+'\n```')
-    def test_publish_blocks_duplicate_and_wrong_quartile(self):
+    def test_publish_sorting_scope_and_repeats(self):
         with tempfile.TemporaryDirectory() as tmp:
             target=Path(tmp);shutil.copytree(root/'scripts',target/'scripts');shutil.copytree(root/'site/data',target/'site/data')
-            path=target/'site/data/2026-10-03.json';original=json.loads(path.read_text());bad=json.loads(path.read_text());bad['groups'][1]['papers'][0]['journalName']='A journal absent from user list';path.write_text(json.dumps(bad))
+            path=target/'site/data/2026-10-03.json';original=json.loads(path.read_text());bad=json.loads(path.read_text());bad['groups'][1]['papers'][1]['journalName']='A journal absent from user list';path.write_text(json.dumps(bad))
             result=subprocess.run([sys.executable,str(target/'scripts/validate.py')],capture_output=True,text=True);self.assertNotEqual(result.returncode,0);self.assertIn('outside uploaded Q1/Q2',result.stderr)
+            bad=json.loads(json.dumps(original));bad['groups'][1]['papers'][0]['journalEdition']='ESCI';path.write_text(json.dumps(bad))
+            result=subprocess.run([sys.executable,str(target/'scripts/validate.py')],capture_output=True,text=True);self.assertNotEqual(result.returncode,0);self.assertIn('ESCI or unverified',result.stderr)
             path.write_text(json.dumps(original));later=json.loads(path.read_text());later['date']='2026-10-04';(target/'site/data/2026-10-04.json').write_text(json.dumps(later));idx=json.loads((target/'site/data/index.json').read_text());idx.append(dict(date='2026-10-04',title=later['title'],count=sum(len(g['papers']) for g in later['groups'])));(target/'site/data/index.json').write_text(json.dumps(idx))
-            result=subprocess.run([sys.executable,str(target/'scripts/validate.py')],capture_output=True,text=True);self.assertNotEqual(result.returncode,0);self.assertIn('Repeated paper',result.stderr)
+            result=subprocess.run([sys.executable,str(target/'scripts/validate.py')],capture_output=True,text=True);self.assertEqual(result.returncode,0,result.stderr)
+            bad=json.loads(path.read_text());bad['groups'][1]['papers'].reverse();path.write_text(json.dumps(bad))
+            result=subprocess.run([sys.executable,str(target/'scripts/validate.py')],capture_output=True,text=True);self.assertNotEqual(result.returncode,0);self.assertIn('Citations out of order',result.stderr)
+            bad=json.loads(json.dumps(original));bad['groups'][0]['papers'].reverse();path.write_text(json.dumps(bad))
+            result=subprocess.run([sys.executable,str(target/'scripts/validate.py')],capture_output=True,text=True);self.assertNotEqual(result.returncode,0);self.assertIn('Publication dates out of order',result.stderr)
 if __name__=='__main__':unittest.main()
