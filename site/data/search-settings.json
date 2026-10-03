@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "owner": "xiaoxiao-tiger",
+  "defaults": {
+    "themeKeywords": "cultural transmission\ncultural diffusion\ncross-cultural narrative",
+    "journalKeywords": "narrative persuasion\ncultural proximity\nglobal audiences",
+    "excludeTerms": "",
+    "lookbackDays": 30
+  },
+  "requests": []
+}

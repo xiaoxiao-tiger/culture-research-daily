@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "papers": [
+    {
+      "title": "Movies",
+      "authors": "Stelios Michalopoulos & Christopher Rauh",
+      "doi": "https://doi.org/10.3386/w32220",
+      "identifiers": [
+        "doi:10.3386/w32220",
+        "title:movies"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Economic Models of Cultural Transmission",
+      "authors": "Alberto Bisin & Thierry Verdier",
+      "doi": "https://doi.org/10.3386/w33928",
+      "identifiers": [
+        "doi:10.3386/w33928",
+        "title:economicmodelsofculturaltransmission"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "The Economics of Cultural Transmission and Socialization",
+      "authors": "Alberto Bisin & Thierry Verdier",
+      "doi": "https://doi.org/10.3386/w16512",
+      "identifiers": [
+        "doi:10.3386/w16512",
+        "title:theeconomicsofculturaltransmissionandsocialization"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "When Do Migrants Shape Culture?",
+      "authors": "Samuel Bazzi & Martin Fiszbein",
+      "doi": "https://doi.org/10.3386/w34001",
+      "identifiers": [
+        "doi:10.3386/w34001",
+        "title:whendomigrantsshapeculture"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Economic Models of Identity Formation and Cultural Transmission",
+      "authors": "Alberto Bisin & Thierry Verdier",
+      "doi": "https://doi.org/10.3386/w35506",
+      "identifiers": [
+        "doi:10.3386/w35506",
+        "title:economicmodelsofidentityformationandculturaltransmission"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Social Learning and Peer Effects in Consumption: Evidence from Movie Sales",
+      "authors": "Enrico Moretti",
+      "doi": "https://doi.org/10.3386/w13832",
+      "identifiers": [
+        "doi:10.3386/w13832",
+        "title:sociallearningandpeereffectsinconsumptionevidencefrommoviesales"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Beliefs that Entertain",
+      "authors": "Ashvin Gandhi, Paola Giuliano, Eric Guan, Quinn Keefer, Chase McDonald, Michaela Pagel & Joshua Tasoff",
+      "doi": "https://doi.org/10.3386/w32295",
+      "identifiers": [
+        "doi:10.3386/w32295",
+        "title:beliefsthatentertain"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Economic and Social Impacts of the Media",
+      "authors": "Stefano DellaVigna & Eliana La Ferrara",
+      "doi": "https://doi.org/10.3386/w21360",
+      "identifiers": [
+        "doi:10.3386/w21360",
+        "title:economicandsocialimpactsofthemedia"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Same Lesson, Different Story: Cross-Lingual Reconstruction of Cultural Narratives in Large Language Models",
+      "authors": "Jory Alshaalan, Haya Albaker, Abeer Aldayel, Aljawharah Alabdullatif & Rehab Alahmadi",
+      "doi": "https://doi.org/10.48550/arXiv.2606.24610",
+      "identifiers": [
+        "arxiv:2606.24610",
+        "doi:10.48550/arxiv.2606.24610",
+        "title:samelessondifferentstorycrosslingualreconstructionofculturalnarrativesinlargelanguagemodels"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "\"I Recall the Past\": Exploring How People Collaborate with Generative AI to Create Cultural Heritage Narratives",
+      "authors": "Zhiting He, Jiayi Su, Li Chen, Tianqi Wang & Ray LC",
+      "doi": "https://doi.org/10.48550/arXiv.2501.00359",
+      "identifiers": [
+        "arxiv:2501.00359",
+        "doi:10.48550/arxiv.2501.00359",
+        "title:irecallthepastexploringhowpeoplecollaboratewithgenerativeaitocreateculturalheritagenarratives"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "How Do Global Audiences Take Shape? The Role of Institutions and Culture in Patterns of Web Use",
+      "authors": "Harsh Taneja & James G. Webster",
+      "doi": "https://doi.org/10.1111/jcom.12200",
+      "identifiers": [
+        "doi:10.1111/jcom.12200",
+        "title:howdoglobalaudiencestakeshapetheroleofinstitutionsandcultureinpatternsofwebuse"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Beyond media imperialism: Assymetrical interdependence and cultural proximity",
+      "authors": "Joseph D. Straubhaar",
+      "doi": "https://doi.org/10.1080/15295039109366779",
+      "identifiers": [
+        "doi:10.1080/15295039109366779",
+        "title:beyondmediaimperialismassymetricalinterdependenceandculturalproximity"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Identification as a Mechanism of Narrative Persuasion",
+      "authors": "Anneke de Graaf, Hans Hoeken, José Sanders & Johannes W. J. Beentjes",
+      "doi": "https://doi.org/10.1177/0093650211408594",
+      "identifiers": [
+        "doi:10.1177/0093650211408594",
+        "title:identificationasamechanismofnarrativepersuasion"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "The role of transportation in the persuasiveness of public narratives",
+      "authors": "Melanie C. Green & Timothy C. Brock",
+      "doi": "https://doi.org/10.1037/0022-3514.79.5.701",
+      "identifiers": [
+        "doi:10.1037/0022-3514.79.5.701",
+        "title:theroleoftransportationinthepersuasivenessofpublicnarratives"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Story Perspective and Character Similarity as Drivers of Identification and Narrative Persuasion",
+      "authors": "Hans Hoeken, Matthijs Kolthoff & José Sanders",
+      "doi": "https://doi.org/10.1111/hcre.12076",
+      "identifiers": [
+        "doi:10.1111/hcre.12076",
+        "title:storyperspectiveandcharactersimilarityasdriversofidentificationandnarrativepersuasion"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Entertainment–Education and Elaboration Likelihood: Understanding the Processing of Narrative Persuasion",
+      "authors": "Michael D. Slater & Donna Rouner",
+      "doi": "https://doi.org/10.1111/j.1468-2885.2002.tb00265.x",
+      "identifiers": [
+        "doi:10.1111/j.1468-2885.2002.tb00265.x",
+        "title:entertainmenteducationandelaborationlikelihoodunderstandingtheprocessingofnarrativepersuasion"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Toward a Theory of Entertainment Persuasion: Explaining the Persuasive Effects of Entertainment-Education Messages",
+      "authors": "Emily Moyer-Gusé",
+      "doi": "https://doi.org/10.1111/j.1468-2885.2008.00328.x",
+      "identifiers": [
+        "doi:10.1111/j.1468-2885.2008.00328.x",
+        "title:towardatheoryofentertainmentpersuasionexplainingthepersuasiveeffectsofentertainmenteducationmessages"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "The Extended Transportation-Imagery Model: A Meta-Analysis of the Antecedents and Consequences of Consumers’ Narrative Transportation",
+      "authors": "Tom van Laer, Ko de Ruyter, Luca M. Visconti & Martin Wetzels",
+      "doi": "https://doi.org/10.1086/673383",
+      "identifiers": [
+        "doi:10.1086/673383",
+        "title:theextendedtransportationimagerymodelametaanalysisoftheantecedentsandconsequencesofconsumersnarrativetransportation"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Inferring patterns of folktale diffusion using genomic data",
+      "authors": "Eugenio Bortolini, Luca Pagani, Enrico R. Crema, Stefania Sarno, Chiara Barbieri, Alessio Boattini, Marco Sazzini, Sara Graça da Silva, Gessica Martini, Mait Metspalu, Davide Pettener, Donata Luiselli & Jamshid J. Tehrani",
+      "doi": "https://doi.org/10.1073/pnas.1614395114",
+      "identifiers": [
+        "doi:10.1073/pnas.1614395114",
+        "title:inferringpatternsoffolktalediffusionusinggenomicdata"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Mapping an audience-centric World Wide Web: A departure from hyperlink analysis",
+      "authors": "Harsh Taneja",
+      "doi": "https://doi.org/10.1177/1461444816642172",
+      "identifiers": [
+        "doi:10.1177/1461444816642172",
+        "title:mappinganaudiencecentricworldwidewebadeparturefromhyperlinkanalysis"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Defining Identification: A Theoretical Look at the Identification of Audiences With Media Characters",
+      "authors": "Jonathan Cohen",
+      "doi": "https://doi.org/10.1207/S15327825MCS0403_01",
+      "identifiers": [
+        "doi:10.1207/s15327825mcs0403_01",
+        "title:definingidentificationatheoreticallookattheidentificationofaudienceswithmediacharacters"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Transportation and Need for Affect in Narrative Persuasion: A Mediated Moderation Model",
+      "authors": "Markus Appel & Tobias Richter",
+      "doi": "https://doi.org/10.1080/15213261003799847",
+      "identifiers": [
+        "doi:10.1080/15213261003799847",
+        "title:transportationandneedforaffectinnarrativepersuasionamediatedmoderationmodel"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Involved, Transported, or Emotional? Exploring the Determinants of Change in Knowledge, Attitudes, and Behavior in Entertainment-Education",
+      "authors": "Sheila T. Murphy, Lauren B. Frank, Meghan B. Moran & Paula Patnoe-Woodley",
+      "doi": "https://doi.org/10.1111/j.1460-2466.2011.01554.x",
+      "identifiers": [
+        "doi:10.1111/j.1460-2466.2011.01554.x",
+        "title:involvedtransportedoremotionalexploringthedeterminantsofchangeinknowledgeattitudesandbehaviorinentertainmenteducation"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Explaining the Effects of Narrative in an Entertainment Television Program: Overcoming Resistance to Persuasion",
+      "authors": "Emily Moyer-Gusé & Robin L. Nabi",
+      "doi": "https://doi.org/10.1111/j.1468-2958.2009.01367.x",
+      "identifiers": [
+        "doi:10.1111/j.1468-2958.2009.01367.x",
+        "title:explainingtheeffectsofnarrativeinanentertainmenttelevisionprogramovercomingresistancetopersuasion"
+      ],
+      "firstRecommended": "2026-10-03"
+    }
+  ]
+}

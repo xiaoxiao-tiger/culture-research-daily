@@ -2,7 +2,7 @@ name: Publish daily briefing website
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'scripts/**', '.github/workflows/pages.yml']
+    paths: ['site/**', 'scripts/**', 'tests/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,6 +21,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate briefings
         run: python3 scripts/validate.py
+      - name: Test deduplication and settings
+        run: |
+          python3 -m unittest discover -s tests
+          node --test tests/core.test.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
