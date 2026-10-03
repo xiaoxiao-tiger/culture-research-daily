@@ -5,7 +5,7 @@
   "summary": "两栏各10篇：主题精选讨论文化传递、影视游戏与AI叙事；传播学栏严格按上传期刊表的JIF Q1/Q2名单筛选，补充认同、沉浸与说服抵抗研究。",
   "notice": "创刊期是经典与近年精选，非当日新发表文献。期刊分区沿用用户上传名单，不代表发表当年的分区。2篇核验全文关键部分，其他依据公开摘要或可检索摘要记录。完整原文摘要无法在本站提供时保留来源链接，不用一句话节选代替。原期刊栏4篇范围外文章的记录保留在修订归档和去重登记中。",
   "schemaVersion": 3,
-  "searchNote": "以下3组为实际执行的补充主题查询，逐篇题名查找与摘要核验收起展示。创刊期仍含已知经典文献，并非系统综述或今日新论文清单。",
+  "searchNote": "检索流程现已改为先Google Scholar主题检索，再按上传期刊名单筛选。文化传递与扩散覆盖传播过程，跨文化接受与交流覆盖接收和互动；这些是暂拟默认主题词，可在设置页替换。创刊文献仍为已知经典与近年精选；原检索记录保留在折叠记录中，不能把新流程验证冒充当时筛选过程。",
   "groups": [
     {
       "id": "crossdisciplinary",
@@ -750,29 +750,36 @@
       "timeRange": "不限年份；2026-10-03",
       "purpose": "Q1/Q2补充文献核验",
       "status": "返回出版方或机构题录、摘要；部分直接页面受限"
-    }
-  ],
-  "themeSearches": [
+    },
     {
       "platform": "公开网页（NBER）",
       "query": "site:nber.org (\"cultural transmission\" OR \"cultural diffusion\") media narrative",
       "timeRange": "不限年份；2026-10-03补充查询",
-      "purpose": "主题候选检索",
+      "purpose": "创刊期原主题查询（历史记录；今后改为先主题检索、后期刊筛选）",
       "status": "返回结果；创刊经典另经逐篇核验"
     },
     {
       "platform": "公开网页（期刊）",
       "query": "(\"narrative persuasion\" OR \"cultural proximity\") (\"Journal of Communication\" OR \"Human Communication Research\" OR \"Media Psychology\")",
       "timeRange": "不限年份；2026-10-03补充查询",
-      "purpose": "主题候选检索",
+      "purpose": "创刊期原主题查询（历史记录；今后改为先主题检索、后期刊筛选）",
       "status": "返回结果；创刊经典另经逐篇核验"
     },
     {
       "platform": "公开网页（arXiv）",
       "query": "site:arxiv.org (\"cultural narratives\" OR \"cultural heritage\")",
       "timeRange": "不限年份；2026-10-03补充查询",
-      "purpose": "主题候选检索",
+      "purpose": "创刊期原主题查询（历史记录；今后改为先主题检索、后期刊筛选）",
       "status": "返回结果；创刊经典另经逐篇核验"
+    }
+  ],
+  "themeSearches": [
+    {
+      "platform": "Google Scholar直接检索",
+      "query": "\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\"",
+      "timeRange": "2026-10-03流程验证；请求年份2025–2027，返回年份须逐条核对",
+      "purpose": "验证不预先限制期刊的主题检索",
+      "status": "连接成功，返回10条；不是创刊20篇的重新筛选结果"
     }
   ]
 }
