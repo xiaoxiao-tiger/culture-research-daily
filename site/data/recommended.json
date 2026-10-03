@@ -242,6 +242,106 @@
         "title:explainingtheeffectsofnarrativeinanentertainmenttelevisionprogramovercomingresistancetopersuasion"
       ],
       "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Cultural Evolution",
+      "authors": "Oded Galor; Marc Klemp; Daniel C. Wainstock",
+      "doi": "10.3386/w35656",
+      "identifiers": [
+        "doi:10.3386/w35656",
+        "title:culturalevolution"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Sticky Traditions: Origin, Persistence, and Evolution of Cultural Norms",
+      "authors": "Paola Giuliano",
+      "doi": "10.3386/w35125",
+      "identifiers": [
+        "doi:10.3386/w35125",
+        "title:stickytraditionsoriginpersistenceandevolutionofculturalnorms"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Beyond Translation: Cross-Cultural Meme Transcreation with Vision-Language Models",
+      "authors": "Yuming Zhao; Peiyi Zhang; Oana Ignat",
+      "doi": "10.48550/arXiv.2602.02510",
+      "identifiers": [
+        "arxiv:2602.02510",
+        "doi:10.48550/arxiv.2602.02510",
+        "title:beyondtranslationcrossculturalmemetranscreationwithvisionlanguagemodels"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Minding the Politeness Gap in Cross-cultural Communication",
+      "authors": "Yuka Machino; Matthias Hofer; Max Siegel; Joshua B. Tenenbaum; Robert D. Hawkins",
+      "doi": "10.48550/arXiv.2506.15623",
+      "identifiers": [
+        "arxiv:2506.15623",
+        "doi:10.48550/arxiv.2506.15623",
+        "title:mindingthepolitenessgapincrossculturalcommunication"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Cross-Cultural Transfer of Commonsense Reasoning in LLMs: Evidence from the Arab World",
+      "authors": "Saeed Almheiri; Rania Hossam; Mena Attia; Chenxi Wang; Preslav Nakov; Timothy Baldwin; Fajri Koto",
+      "doi": "10.48550/arXiv.2509.19265",
+      "identifiers": [
+        "arxiv:2509.19265",
+        "doi:10.48550/arxiv.2509.19265",
+        "title:crossculturaltransferofcommonsensereasoninginllmsevidencefromthearabworld"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Streaming diplomacy and the evolution of Hindi cinema: from Bollywood to digital narratives",
+      "authors": "Kanika K. Arya; Manish Verma",
+      "doi": "10.3389/fcomm.2026.1752623",
+      "identifiers": [
+        "doi:10.3389/fcomm.2026.1752623",
+        "title:streamingdiplomacyandtheevolutionofhindicinemafrombollywoodtodigitalnarratives"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Translational Audiences in the Age of Transnational K-Pop",
+      "authors": "Kyong Yoon",
+      "doi": "",
+      "identifiers": [
+        "title:translationalaudiencesintheageoftransnationalkpop"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Digital Mediascapes, Institutional Frameworks, and Audience Practices Across Europe",
+      "authors": "Zrinjka Peruško; Dina Vozab; Antonija Čuvalo",
+      "doi": "",
+      "identifiers": [
+        "title:digitalmediascapesinstitutionalframeworksandaudiencepracticesacrosseurope"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Changing Patterns of Media Use across Cultures: A Challenge for Longitudinal Research",
+      "authors": "Uwe Hasebrink; Klaus Bruhn Jensen; Hilde van den Bulck; Sascha Hölig; Pieter Maeseele",
+      "doi": "",
+      "identifiers": [
+        "title:changingpatternsofmediauseacrossculturesachallengeforlongitudinalresearch"
+      ],
+      "firstRecommended": "2026-10-03"
+    },
+    {
+      "title": "Tracking Configurable Culture From the Margins to the Mainstream",
+      "authors": "Aram Sinnreich; Mark Latonero",
+      "doi": "10.1111/jcc4.12073",
+      "identifiers": [
+        "doi:10.1111/jcc4.12073",
+        "title:trackingconfigurableculturefromthemarginstothemainstream"
+      ],
+      "firstRecommended": "2026-10-03"
     }
   ]
 }

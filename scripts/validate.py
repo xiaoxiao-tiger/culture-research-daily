@@ -19,16 +19,18 @@ for issue in sorted(index,key=lambda x:x['date']):
     date=issue['date'];assert re.fullmatch(r'\d{4}-\d{2}-\d{2}',date) and date not in dates;dates.add(date)
     data=json.loads((root/f'{date}.json').read_text());assert data['date']==date and data['title'] and data['summary']
     schema=data.get('schemaVersion',1)
+    target=data.get('recommendationTargetPerGroup',10)
+    assert type(target) is int and target in (5,10), 'Invalid recommendation target'
     if schema>=2:
         assert [g['id'] for g in data['groups']]==['crossdisciplinary','journals']
-        assert all(g['label'] and (0<=len(g['papers'])<=10 if schema>=3 else len(g['papers'])==10) for g in data['groups'])
+        assert all(g['label'] and (0<=len(g['papers'])<=target if schema>=3 else len(g['papers'])==10) for g in data['groups'])
         assert all(p['publicationType']=='journal' for p in data['groups'][1]['papers'])
         searches=data.get('themeSearches') if schema>=3 else data.get('searchLog')
         assert searches and data['searchNote'], 'Missing theme searches'
         for row in searches+data.get('verificationLog',[]):
             assert all(isinstance(row.get(k),str) and row[k].strip() for k in ('platform','query','timeRange','purpose','status'))
     papers=papers_in(data);assert issue['count']==len(papers), 'Index count mismatch'
-    if schema>=3 and len(papers)<20: assert data.get('shortfallReason'), 'Explain missing papers'
+    if schema>=3 and len(papers)<2*target: assert data.get('shortfallReason'), 'Explain missing papers'
     for p in papers:
         for field in required: assert isinstance(p.get(field),str) and p[field].strip(), (date,field)
         assert urlparse(p['url']).scheme=='https' and isinstance(p['year'],int)

@@ -12,17 +12,17 @@
 
 ## 论文质量与检索
 
-必须先主题检索、后期刊筛选。优先直接使用可用的Google Scholar检索连接；WoS只有实际存在可访问连接时才使用，不能用普通网页搜索冒充WoS检索。首次主题查询不加入期刊名称、出版方域名、期刊白名单或分区限制。先形成不限期刊的候选池，再核验题录、主题相关性与论文质量，并根据上传白名单筛出传播学Q1/Q2栏。已知题名查找、出版方网页与机构仓储用于后续核验，不能替代主要主题检索。
+必须先主题检索、后期刊筛选。覆盖Google Scholar、NBER及arXiv三个来源。Google Scholar直接主题检索，NBER官方域名主题网页检索或可用的官方检索，arXiv优先直接API主题检索；如某渠道失败须记录实际情况。使用可用的Google Scholar检索连接；WoS只有实际存在可访问连接时才使用，不能用普通网页搜索冒充WoS检索。Google Scholar首次主题查询不加入期刊名称、出版方域名、期刊白名单或分区限制。先形成不限期刊的候选池，再核验题录、主题相关性与论文质量，并根据上传白名单筛出传播学Q1/Q2栏。已知题名查找、出版方网页与机构仓储用于后续核验，不能替代主要主题检索。
 
 关键词以用户在设置页输入的研究主题为准。没有用户自定义时，默认词暂拟为文化传递（cultural transmission）、文化扩散（cultural diffusion）、跨文化接受（cross-cultural reception）、跨文化交流（intercultural communication），两栏使用相同主题词。它们是覆盖不同过程的补充表达，并非完全同义词。叙事说服、文化接近等理论词只能在用户指定或候选论文题名、摘要、作者关键词支持时作为可选子主题补充，不能替代整体主题或作为强制AND条件。新扩展词记录依据（用户输入、作者关键词或助手暂拟），避免凭个人熟悉的理论缩小候选范围。
 
 在searchNote简要解释本期关键词为什么适合设置的主题，区分核心主题词与可选理论词。Google Scholar可按独立主题词分别查询并合并去重，不盲目把大量词拼成一条长式。工具排序和年份过滤不能替代逐篇日期核对；不足时扩大时间范围，不能先锁定三四个期刊反复找。
 
-两栏各目标10篇，跨学科的“主题精选”与“传播学Q1/Q2”。主题栏使用适合主题的高质量来源，不局限NBER、SSRN、arXiv；可用Google Scholar、正式期刊、作者及机构仓储。期刊栏只收正式期刊文章，严格匹配site/data/journals.json中用户上传表的113种Q1/Q2期刊。保留SSCI、ESCI区别，JIF Quartile不是中科院分区，文件未提供指标年份，不推断指标年份。不按当前年份随意更新这份用户指定白名单。
+两栏各目标5篇，跨学科的“主题精选”与“传播学Q1/Q2”。主题栏使用适合主题的高质量来源，不局限NBER、SSRN、arXiv；可用Google Scholar、正式期刊、作者及机构仓储。期刊栏只收正式期刊文章，严格匹配site/data/journals.json中用户上传表的113种Q1/Q2期刊。保留SSCI、ESCI区别，JIF Quartile不是中科院分区，文件未提供指标年份，不推断指标年份。不按当前年份随意更新这份用户指定白名单。
 
 优先相关性、理论贡献和证据质量，其次近期新增或重大更新，不因为无法展示完整摘要或取得全文而排除重要论文。不能把工作论文、预印本或会议论文写成期刊文章。期刊栏每篇填写journalName（与白名单名称匹配）、jifQuartile、journalEdition、quartileSource。主题栏可纳入其他高质量学科期刊。
 
-每行关键词可作为独立主题查询，视平台支持调整为可实际执行的检索式。优先最近lookbackDays天和上次运行后的新增。质量不足可逐步扩展时间范围、补充未推荐过的优质经典，并记录实际扩展。不得填充无关论文或回收旧论文以凑数。两栏各不足10篇时允许缺额，填写shortfallReason，index count按实际数，明确缺额原因。
+每行关键词可作为独立主题查询，视平台支持调整为可实际执行的检索式。优先最近lookbackDays天和上次运行后的新增。质量不足可逐步扩展时间范围、补充未推荐过的优质经典，并记录实际扩展。不得填充无关论文或回收旧论文以凑数。两栏各不足5篇时允许缺额，填写shortfallReason，index count按实际数，明确缺额原因。
 
 简报开头只展示少量实际执行的主题检索式themeSearches（一般2–6组）、渠道、日期及时间范围、筛选条件和访问状态。不把作者题名查找或摘要逐句核验塞入主题检索。逐篇题名、全文与摘要查找记录放verificationLog，网页折叠展示。网页引擎限定域名写site:nber.org等正确语法，不将关键词查询伪装成数据库布尔式，不冒称直接检索失败的平台，也不改写历史记录假装过去执行了另一条查询。
 
@@ -44,11 +44,13 @@ originalAbstract仅存逐字核验的完整摘要，abstractMode只允许full或
 
 ## schemaVersion 3
 
-新建site/data/YYYY-MM-DD.json：date、edition、title、summary、notice、schemaVersion:3、journalPolicy:"uploaded-jcr-q1-q2"、searchSettings、searchNote、themeSearches、verificationLog，及两个groups：
-1. id:"crossdisciplinary", label:"主题精选", papers数组最多10篇
-2. id:"journals", label:"传播学 Q1 / Q2", papers数组最多10篇
+新期次填写recommendationTargetPerGroup:5（旧期次未填写时按10验证），每栏最多5篇，总目标10篇。
 
-每个检索记录含platform、query、timeRange、purpose、status。不足20篇必须填写shortfallReason并在notice说明。
+新建site/data/YYYY-MM-DD.json：date、edition、title、summary、notice、schemaVersion:3、journalPolicy:"uploaded-jcr-q1-q2"、searchSettings、searchNote、themeSearches、verificationLog，及两个groups：
+1. id:"crossdisciplinary", label:"主题精选", papers数组最多5篇
+2. id:"journals", label:"传播学 Q1 / Q2", papers数组最多5篇
+
+每个检索记录含platform、query、timeRange、purpose、status。不足10篇必须填写shortfallReason并在notice说明。
 每篇字段title、titleZh、authors、year、venue、source、category、evidence、url、doi、takeaway、theory、data、method、results、relevance、limitations、publicationType、originalAbstract、abstractMode、abstractSource、abstractZh、abstractUnavailableReason（无法提供时）或abstractLicense（完整转载时）。期刊栏加上述4个分区字段。evidence取全文核验/摘要核验/理论综述。可附identityAliases。所有链接使用https。
 
 index保留全部历史记录，更新date、title、count（实际文章数）。同日重试更新同日文件，不另添加日期。site/data/revisions保留创刊期旧版本，仅供追溯，不算新一期；recommended.json包含其已推荐记录。网站收藏保存在用户浏览器并支持导入导出，日更任务不读写收藏。
