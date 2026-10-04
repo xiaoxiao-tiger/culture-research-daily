@@ -2,8 +2,8 @@
   "version": 1,
   "owner": "xiaoxiao-tiger",
   "defaults": {
-    "themeKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"",
-    "journalKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"",
+    "themeKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "journalKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
     "excludeTerms": "",
     "lookbackDays": 30
   },
