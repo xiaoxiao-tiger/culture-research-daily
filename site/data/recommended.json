@@ -274,6 +274,133 @@
         "doi:10.1080/08838150802205876",
         "title:culturalproximityandaudiencebehaviortheroleoflanguageinpatternsofpolarizationandmulticulturalfluency"
       ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "CC-Mediation: Evaluating Large Language Models for Cross-Cultural Conflict Mediation",
+      "identifiers": [
+        "arxiv:2609.04855",
+        "doi:10.48550/arxiv.2609.04855",
+        "title:ccmediationevaluatinglargelanguagemodelsforcrossculturalconflictmediation"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Cultural Evolution",
+      "identifiers": [
+        "doi:10.3386/w35656",
+        "title:culturalevolution"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Multimodal Cultural Safety: Evaluation Frameworks and Alignment Strategies",
+      "identifiers": [
+        "arxiv:2505.14972",
+        "doi:10.48550/arxiv.2505.14972",
+        "title:multimodalculturalsafetyevaluationframeworksandalignmentstrategies"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Translating Across Cultures: LLMs for Intralingual Cultural Adaptation",
+      "identifiers": [
+        "arxiv:2406.14504",
+        "doi:10.48550/arxiv.2406.14504",
+        "title:translatingacrossculturesllmsforintralingualculturaladaptation"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "CultiVerse: Towards Cross-Cultural Understanding for Paintings with Large Language Model",
+      "identifiers": [
+        "arxiv:2405.00435",
+        "doi:10.48550/arxiv.2405.00435",
+        "title:cultiversetowardscrossculturalunderstandingforpaintingswithlargelanguagemodel"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Assessing Cross-Cultural Alignment between ChatGPT and Human Societies: An Empirical Study",
+      "identifiers": [
+        "arxiv:2303.17466",
+        "doi:10.18653/v1/2023.c3nlp-1.7",
+        "doi:10.48550/arxiv.2303.17466",
+        "title:assessingcrossculturalalignmentbetweenchatgptandhumansocietiesanempiricalstudy"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Migration and Cultural Change",
+      "identifiers": [
+        "doi:10.2139/ssrn.3689469",
+        "doi:10.2139/ssrn.4114309",
+        "title:migrationandculturalchange"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Changing Culture and Norms in Developing Countries",
+      "identifiers": [
+        "doi:10.3386/w34784",
+        "title:changingcultureandnormsindevelopingcountries"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Managers and the Cultural Transmission of Gender Norms",
+      "identifiers": [
+        "doi:10.3386/w34782",
+        "title:managersandtheculturaltransmissionofgendernorms"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Sticky Traditions: Origin, Persistence, and Evolution of Cultural Norms",
+      "identifiers": [
+        "doi:10.3386/w35125",
+        "title:stickytraditionsoriginpersistenceandevolutionofculturalnorms"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Cosmopolitans and Locals in World Culture",
+      "identifiers": [
+        "doi:10.1177/026327690007002014",
+        "title:cosmopolitansandlocalsinworldculture"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Transnationalism, Cosmopolitanism and Glocalization",
+      "identifiers": [
+        "doi:10.1177/0011392105048291",
+        "title:transnationalismcosmopolitanismandglocalization"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Vernacular Cosmopolitanism",
+      "identifiers": [
+        "doi:10.1177/026327640602300291",
+        "title:vernacularcosmopolitanism"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Cosmopolis: An Introduction",
+      "identifiers": [
+        "doi:10.1177/026327640201900112",
+        "title:cosmopolisanintroduction"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "How Do Global Audiences Take Shape? The Role of Institutions and Culture in Patterns of Web Use",
+      "identifiers": [
+        "doi:10.1111/jcom.12200",
+        "title:howdoglobalaudiencestakeshapetheroleofinstitutionsandcultureinpatternsofwebuse"
+      ]
     }
   ]
 }
