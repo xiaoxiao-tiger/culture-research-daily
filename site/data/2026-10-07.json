@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 5,
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "date": "2026-10-07",
+  "edition": "正式第4期",
+  "title": "文化传递如何塑造极化、合作与社会规范",
+  "summary": "本期可完整核验5篇最新研究：AI介入文化传播与极化、中文学习智能体中的非言语规范、LLM智能体合作规范、身份形成模型，以及台湾迁移背景下的重男偏好扩散。Google Scholar直接网页被异常流量验证页阻断，因此高被引研究和SSCI期刊栏目不使用旧次数或替代指标补足。",
+  "notice": "永久排除2026-10-04至2026-10-06已登记的45篇及对应版本。今天Google Scholar直接主题检索返回异常流量验证页，无法取得实际引用次数或完成“先主题检索、后筛期刊”；未绕过验证，也未用OpenAlex、下载量、昨日次数或其他指标替代。",
+  "shortfallReason": "Google Scholar于2026-10-07直接网页主题检索被异常流量验证页阻断。高被引组要求当天Google Scholar实际网页次数，期刊组要求由Google Scholar主题检索发现，因此两组均不能合规生成。今日仅发布NBER、SSRN、arXiv可独立核验的最新5篇，总计缺10篇。",
+  "searchSettings": {
+    "themeKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "journalKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "excludeTerms": "",
+    "lookbackDays": 30,
+    "effectiveDate": "2026-10-07",
+    "scope": "defaults"
+  },
+  "searchNote": "采用默认八组关键词，每组关键词为独立主题。先进行宽式主题检索，再以更窄的文化传递与跨文化传播词组排除普通“novelty”造成的大量技术噪声。Google Scholar失败状态如实记录；NBER和SSRN使用公开网页检索，非站内高级检索；arXiv使用站内检索并按首次提交日期排序。排序只针对未入永久登记且质量、相关性合格的候选。",
+  "themeSearches": [
+    {
+      "platform": "Google Scholar",
+      "query": "\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism",
+      "timeRange": "不限年份；最新组优先2026-09-07—2026-10-07；执行2026-10-07",
+      "purpose": "主题检索，先检索主题、后按质量及期刊范围筛选",
+      "status": "直接网页返回“系统检测到异常流量”验证页；未取得结果或引用次数，未绕过验证。",
+      "channel": "Google Scholar直接网页"
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers cultural transmission OR cultural diffusion OR cosmopolitanism 2026",
+      "timeRange": "不限年份；最新组优先2026-09-07—2026-10-07；执行2026-10-07",
+      "purpose": "主题检索，先检索主题、后按质量及期刊范围筛选",
+      "status": "公开网页检索成功；核验NBER题录与摘要搜索结果。NBER详情页直接读取返回403，未绕过。",
+      "channel": "官方域名公开网页检索，非站内高级检索"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:ssrn.com/abstract cultural transmission OR intercultural communication OR cosmopolitanism 2025 2026",
+      "timeRange": "不限年份；最新组优先2026-09-07—2026-10-07；执行2026-10-07",
+      "purpose": "主题检索，先检索主题、后按质量及期刊范围筛选",
+      "status": "公开网页检索成功；核验SSRN题录、首次发布日和公开摘要。详情页直接读取返回403，未绕过。",
+      "channel": "官方域名公开网页检索，非站内高级检索"
+    },
+    {
+      "platform": "arXiv",
+      "query": "\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism；All fields；Announcement date (newest first)；size=50",
+      "timeRange": "不限年份；最新组优先2026-09-07—2026-10-07；执行2026-10-07",
+      "purpose": "主题检索，先检索主题、后按质量及期刊范围筛选",
+      "status": "站内检索成功，共返回7726条；普通novelty导致大量无关技术结果，故进行相关性收窄。",
+      "channel": "arXiv站内搜索网页"
+    },
+    {
+      "platform": "arXiv",
+      "query": "\"cultural transmission\" OR \"intercultural communication\" OR \"cross-cultural reception\" OR \"cultural diffusion\"；All fields；Announcement date (newest first)；size=50",
+      "timeRange": "不限年份；最新组优先2026-09-07—2026-10-07；执行2026-10-07",
+      "purpose": "主题检索，先检索主题、后按质量及期刊范围筛选",
+      "status": "站内检索成功，共80条；排除历史45篇和低相关项后，选取3篇最新且相关的未推荐论文。",
+      "channel": "arXiv站内搜索网页"
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "逐篇核验：arXiv",
+      "query": "Cultural, Structural, and Mediated Routes to Polarization in a Nonlinear Mean-Field Model\nhttps://arxiv.org/abs/2609.37521",
+      "timeRange": "核验2026-10-07；首次公开2026-09-29",
+      "purpose": "身份、首次公开日期、原文摘要、理论、数据、方法与结果单列核验",
+      "status": "核验arXiv题录、完整摘要和明确的Creative Commons许可；未读正文关键部分。"
+    },
+    {
+      "platform": "逐篇核验：arXiv",
+      "query": "Toward a Culturally Adapted Chinese Language Agent: A Wizard-of-Oz Study of Nonverbal Behavior in Chinese-German Intercultural Interaction\nhttps://arxiv.org/abs/2609.35150",
+      "timeRange": "核验2026-10-07；首次公开2026-09-28",
+      "purpose": "身份、首次公开日期、原文摘要、理论、数据、方法与结果单列核验",
+      "status": "核验arXiv题录、完整摘要和明确的Creative Commons许可；未读正文关键部分。"
+    },
+    {
+      "platform": "逐篇核验：arXiv",
+      "query": "Emergence of Reputation-Based Cooperation in LLM Agents\nhttps://arxiv.org/abs/2608.04507",
+      "timeRange": "核验2026-10-07；首次公开2026-08-05",
+      "purpose": "身份、首次公开日期、原文摘要、理论、数据、方法与结果单列核验",
+      "status": "核验arXiv题录、完整摘要和明确的Creative Commons许可；未读正文关键部分。"
+    },
+    {
+      "platform": "逐篇核验：NBER",
+      "query": "Economic Models of Identity Formation and Cultural Transmission\nhttps://www.nber.org/papers/w35506",
+      "timeRange": "核验2026-10-07；首次公开2026-07",
+      "purpose": "身份、首次公开日期、原文摘要、理论、数据、方法与结果单列核验",
+      "status": "核验官方或公开题录与完整摘要；未确认摘要转载许可，未读正文关键部分。"
+    },
+    {
+      "platform": "逐篇核验：SSRN",
+      "query": "The Transmission of Son Preference\nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=6105726",
+      "timeRange": "核验2026-10-07；首次公开2026-02-02",
+      "purpose": "身份、首次公开日期、原文摘要、理论、数据、方法与结果单列核验",
+      "status": "核验官方或公开题录与完整摘要；未确认摘要转载许可，未读正文关键部分。"
+    }
+  ],
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 10,
+      "sortBy": "split",
+      "sortDescription": "先最新5篇，再高被引5篇；10篇整体覆盖NBER、SSRN、arXiv。",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新研究",
+          "target": 5,
+          "sortBy": "publicationDate",
+          "sortDescription": "在未推荐且合格候选中按首次公开日期降序；3篇arXiv、1篇NBER、1篇SSRN。"
+        },
+        {
+          "id": "cited",
+          "label": "高被引研究",
+          "target": 5,
+          "sortBy": "citationCount",
+          "sortDescription": "Google Scholar直接网页受异常流量验证阻断；无可核验的当日实际次数，故本期为空。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included",
+          "reason": "最新组1篇来自NBER官方记录。"
+        },
+        {
+          "database": "SSRN",
+          "status": "included",
+          "reason": "最新组1篇来自SSRN公开记录。"
+        },
+        {
+          "database": "arXiv",
+          "status": "included",
+          "reason": "最新组3篇来自arXiv站内主题检索。"
+        }
+      ],
+      "papers": [
+        {
+          "title": "Cultural, Structural, and Mediated Routes to Polarization in a Nonlinear Mean-Field Model",
+          "titleZh": "通向极化的文化、结构与媒介化路径：非线性平均场模型",
+          "authors": "Jérôme Michaud; Fredrik Jansson",
+          "year": 2026,
+          "venue": "arXiv公开论文记录",
+          "source": "arXiv公开论文记录",
+          "category": "文化传递、跨文化互动与社会规范",
+          "evidence": "摘要核验",
+          "takeaway": "内容过滤可通过状态依赖更新产生极化，同类连接维持社会场中的群体差异，接收者定制即使在完全混合时也能形成极化反馈。",
+          "abstractZh": "内容过滤可通过状态依赖更新产生极化，同类连接维持社会场中的群体差异，接收者定制即使在完全混合时也能形成极化反馈。发送者重写只有在同类连接保留差异化源信号时才影响极化模式。平衡极化可能先以鞍点出现，再成为稳定吸引子。 将极化机制定位在传播过程的不同环节：个体内容过滤发生于接收后的状态更新，同类连接保留群体之间的信号差异，面向接收者的定制形成反馈，发送者重写则在混合前改变源信号。",
+          "theory": "将极化机制定位在传播过程的不同环节：个体内容过滤发生于接收后的状态更新，同类连接保留群体之间的信号差异，面向接收者的定制形成反馈，发送者重写则在混合前改变源信号。理论核心是相同的宏观极化结果可能来自不同动力过程。",
+          "data": "纯理论研究，没有个人、国家或平台样本。分析单位为两个群体的平均意见状态；论文共17页、6幅图。摘要未提供仿真参数网格和稳健性范围。",
+          "method": "建立非线性双群体平均场模型，以共同坐标和差异坐标推导共识与平衡极化的失稳条件，并在完整二维相平面分析稳态分支、横向稳定性、多稳态和吸引域几何。",
+          "results": "内容过滤可通过状态依赖更新产生极化，同类连接维持社会场中的群体差异，接收者定制即使在完全混合时也能形成极化反馈。发送者重写只有在同类连接保留差异化源信号时才影响极化模式。平衡极化可能先以鞍点出现，再成为稳定吸引子。",
+          "relevance": "直接连接AI中介、信息重写和文化传递，可用于区分推荐系统过滤、网络同质性与受众定制三种传播机制。",
+          "limitations": "摘要只支持理论与定性动力结论，未核验方程、参数值、数值图和经验适用范围，不能把模型结果视为现实平台的因果证据。",
+          "url": "https://arxiv.org/abs/2609.37521",
+          "verifiedAt": "2026-10-07",
+          "selectionBucket": "latest",
+          "sourceDatabase": "arXiv",
+          "publicationType": "preprint",
+          "publicationDate": "2026-09-29",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2609.37521",
+          "doi": "10.48550/arXiv.2609.37521",
+          "abstractMode": "full",
+          "originalAbstract": "Collective polarization can arise through mechanisms acting at different stages of social communication, but similar polarized outcomes need not imply dynamically equivalent processes. We introduce a nonlinear two-group mean-field model that distinguishes three routes to polarization: individual content filtering, assortativity, and receiver-side message tailoring. Sender-side reformulation is included as a complementary mediation process that transforms source signals before they are mixed. These message transformations are motivated by AI-mediated cultural transmission, in which intermediaries can reformulate messages or adapt them to receivers. Using common and difference coordinates, we derive general conditions for instabilities toward consensus and balanced polarization and analyze the resulting stationary branches in the full two-dimensional phase plane. Individual filtering can generate polarization through state-dependent updating, assortativity can preserve group differences in the social field, and receiver tailoring can create a polarizing feedback even under complete mixing. By contrast, sender-side reformulation affects the polarization mode only when assortativity preserves differentiated source signals. Although these mechanisms can produce identical local instability conditions or balanced-branch amplitudes, they remain distinguishable through transverse stability, asymmetric equilibria, multistability, and basin geometry. In particular, balanced polarization may emerge as a saddle before becoming a stable attractor, while asymmetric saddles organize the boundary between consensus and polarization basins. These results show that collective polarization depends not only on feedback strength, but also on where feedback enters the communication process.",
+          "abstractSource": "https://arxiv.org/abs/2609.37521",
+          "abstractLicense": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "title": "Toward a Culturally Adapted Chinese Language Agent: A Wizard-of-Oz Study of Nonverbal Behavior in Chinese-German Intercultural Interaction",
+          "titleZh": "迈向文化适应的中文学习智能体：中德跨文化互动中非言语行为的绿野仙踪研究",
+          "authors": "Siddhant Jain; Anna Lea Reinwarth; Dimitra Tsovaltzi; Rafael Math; Julia Renner",
+          "year": 2026,
+          "venue": "arXiv公开论文记录",
+          "source": "arXiv公开论文记录",
+          "category": "文化传递、跨文化互动与社会规范",
+          "evidence": "摘要核验",
+          "takeaway": "论文交付的是研究设计、实时系统、4个互动场景和标注框架，为后续自动文化解释与行为生成建立方法基础。",
+          "abstractZh": "论文交付的是研究设计、实时系统、4个互动场景和标注框架，为后续自动文化解释与行为生成建立方法基础。摘要未报告参与者比较、统计检验或学习成效，因此不能声称系统已经改善跨文化能力。 跨文化交际能力不仅是语法正确，还包括识别文化规范及规范违背引发的细微非言语反应。",
+          "theory": "跨文化交际能力不仅是语法正确，还包括识别文化规范及规范违背引发的细微非言语反应。系统把不可直接观察的社会情绪反应、规范解释、言语表达和可观察行为分层连接。",
+          "data": "研究提出用于采集中德互动多模态数据的系统和方案。对象是面对德国中文学习者规范违背行为的中国母语者；设计4个由文化与教学专家开发的生态化情境。摘要没有报告已招募人数、人口构成或最终语料规模。",
+          "method": "使用绿野仙踪设计，由操作者实时选择智能体行为；MetaHuman呈现写实虚拟人，Live Link捕捉面部，MediaPipe跟踪上半身，同时记录智能体与学习者流。分层标注将心理反应、规范解释、语言和行为转化为未来模型监督目标。",
+          "results": "论文交付的是研究设计、实时系统、4个互动场景和标注框架，为后续自动文化解释与行为生成建立方法基础。摘要未报告参与者比较、统计检验或学习成效，因此不能声称系统已经改善跨文化能力。",
+          "relevance": "与中国文化海外接受和跨文化学习高度相关，尤其提示研究不能只测文本理解，还应测规范违背后的表情、姿态和修复行为。",
+          "limitations": "属于ICMI Companion短文，摘要主要描述系统与方案；样本量、数据质量、标注一致性和效果结果均未确认。",
+          "url": "https://arxiv.org/abs/2609.35150",
+          "verifiedAt": "2026-10-07",
+          "selectionBucket": "latest",
+          "sourceDatabase": "arXiv",
+          "publicationType": "preprint",
+          "publicationDate": "2026-09-28",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2609.35150",
+          "doi": "10.48550/arXiv.2609.35150",
+          "abstractMode": "full",
+          "originalAbstract": "Successful intercultural communication requires more than grammatical competence. It demands sensitivity to culturally embedded social norms whose violation triggers subtle but meaningful nonverbal responses. For German learners of Mandarin Chinese, acquiring this sensitivity is critical yet poorly supported by existing language-learning agents. We present a Wizard-of-Oz (WoZ) study design and supporting real-time system for collecting multimodal behavioral data from native Chinese speakers reacting to social norm violations by German learners. The system features a photorealistic MetaHuman avatar driven by Live Link face capture and MediaPipe upper-body tracking, a wizard console for real-time behavior selection, and synchronized multimodal logging across agent and learner streams. A layered annotation framework, based on psychological theory and covering non-observable socioemotional reactions, norm interpretation, verbal, and observable behavior thereof, and future supervision targets enables the corpus to support training of future automated cultural interpretation and behavior generation models. Four ecologically valid interaction scenarios, developed with cultural and pedagogical experts, provide the methodological and technical foundation for a culturally adapted conversational agent for Chinese language learning.",
+          "abstractSource": "https://arxiv.org/abs/2609.35150",
+          "abstractLicense": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        },
+        {
+          "title": "Emergence of Reputation-Based Cooperation in LLM Agents",
+          "titleZh": "LLM智能体中基于声誉的合作如何涌现",
+          "authors": "Kazuya Horibe; Kenji Itao; Wataru Toyokawa",
+          "year": 2026,
+          "venue": "arXiv公开论文记录",
+          "source": "arXiv公开论文记录",
+          "category": "文化传递、跨文化互动与社会规范",
+          "evidence": "摘要核验",
+          "takeaway": "四个后端对自由骑手入侵的稳健性相差一个数量级以上。",
+          "abstractZh": "四个后端对自由骑手入侵的稳健性相差一个数量级以上。最强预测因素是对手禀赋敏感性，L1规范遵从不能预测稳健性；只有排除背叛者的严格程度稳定预测抵抗入侵。模型停留在Image Scoring式区分，未涌现更稳健的Leading Eight规范。 把自然语言提示视为可跨代文化传递的策略，使用间接互惠理论比较Image Scoring式区分与Leading Eight中的L1规范。",
+          "theory": "把自然语言提示视为可跨代文化传递的策略，使用间接互惠理论比较Image Scoring式区分与Leading Eight中的L1规范。稳定合作依赖社会规范能否识别并排除搭便车者。",
+          "data": "模拟连续捐赠尺度的间接互惠博弈，比较4个LLM后端，智能体可观察对手行为痕迹。摘要未给模型名称、群体规模、世代数、重复次数与温度参数。",
+          "method": "自然语言策略跨代演化，以自由骑手入侵后的合作稳健性为结果，检验对手禀赋敏感性、合作奖励、背叛惩罚、背叛者排除强度及L1规范遵从的预测力。",
+          "results": "四个后端对自由骑手入侵的稳健性相差一个数量级以上。最强预测因素是对手禀赋敏感性，L1规范遵从不能预测稳健性；只有排除背叛者的严格程度稳定预测抵抗入侵。模型停留在Image Scoring式区分，未涌现更稳健的Leading Eight规范。",
+          "relevance": "为“机器文化”提供可操作的代际传递实验，说明文化规范不仅影响态度，也影响合作能否在群体中持续。",
+          "limitations": "模拟结果依赖提示演化和具体LLM；摘要没有报告效应值、方差与模型配置，外推到人类文化传播需谨慎。",
+          "url": "https://arxiv.org/abs/2608.04507",
+          "verifiedAt": "2026-10-07",
+          "selectionBucket": "latest",
+          "sourceDatabase": "arXiv",
+          "publicationType": "preprint",
+          "publicationDate": "2026-08-05",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2608.04507",
+          "doi": "10.48550/arXiv.2608.04507",
+          "abstractMode": "full",
+          "originalAbstract": "Can cooperation among large language model (LLM) agents be evolutionarily stable against free-rider invasion? We study an indirect reciprocity donation game where LLM agents observe behavioral traces and donate on a continuous scale. Strategies, represented as natural language prompts, evolve through cultural transmission across generations. Across four LLM backends, robustness to free-rider invasion varies by more than an order of magnitude. The strongest predictor of this robustness is opponent endowment sensitivity, the degree to which agents discriminate between cooperative and uncooperative opponents, operationalizing the classical Image Scoring mechanism. By contrast, adherence to the Leading-Eight L1 norm does not predict robustness. Robustness depends on defector exclusion: while both cooperator reward and defector punishment vary across models, only the stringency of defector exclusion predicts resistance to free-rider invasion. These findings reveal that LLM agents are confined to Image Scoring-like discrimination and fail to develop the more robust Leading-Eight norms, highlighting a fundamental vulnerability in culturally evolved LLM cooperation and motivating bottom-up approaches to norm construction.",
+          "abstractSource": "https://arxiv.org/abs/2608.04507",
+          "abstractLicense": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        },
+        {
+          "title": "Economic Models of Identity Formation and Cultural Transmission",
+          "titleZh": "身份形成与文化传递的经济模型",
+          "authors": "Alberto Bisin; Thierry Verdier",
+          "year": 2026,
+          "venue": "NBER公开论文记录",
+          "source": "NBER公开论文记录",
+          "category": "文化传递、跨文化互动与社会规范",
+          "evidence": "摘要核验",
+          "takeaway": "综述表明，代际文化传递能够产生反对性、族群与少数群体态度的持续或极化；多维身份结构决定社会会否收敛到以宗教、族群或种族为中心的狭窄身份。",
+          "abstractZh": "综述表明，代际文化传递能够产生反对性、族群与少数群体态度的持续或极化；多维身份结构决定社会会否收敛到以宗教、族群或种族为中心的狭窄身份。论文还提出身份开放与转换的后续研究方向。 把身份形成嵌入代际文化传递与文化演化的一般框架，强调个体身份选择、少数群体反对性身份、文化极化、身份转换和对替代身份的开放程度会共同决定长期社会动力。",
+          "theory": "把身份形成嵌入代际文化传递与文化演化的一般框架，强调个体身份选择、少数群体反对性身份、文化极化、身份转换和对替代身份的开放程度会共同决定长期社会动力。",
+          "data": "理论综述，没有本文独立抽样数据。材料为身份经济学与文化传递模型，参考文献清单在SSRN页面显示91项；具体纳入标准未核验。",
+          "method": "在一般框架中比较不同身份形成模型，并把宗教、族群或种族等特征组合成多维身份，推导社会是否向狭窄且显著的身份标记收敛的条件。",
+          "results": "综述表明，代际文化传递能够产生反对性、族群与少数群体态度的持续或极化；多维身份结构决定社会会否收敛到以宗教、族群或种族为中心的狭窄身份。论文还提出身份开放与转换的后续研究方向。",
+          "relevance": "可为跨文化接受中的身份边界提供微观基础，说明受众是否接受外来神话人物取决于既有身份显著性和替代身份的开放程度。",
+          "limitations": "官方摘要和题录核验，未阅读模型方程与全部文献；这是一篇综述，不应写成新的经验因果证据。",
+          "url": "https://www.nber.org/papers/w35506",
+          "verifiedAt": "2026-10-07",
+          "selectionBucket": "latest",
+          "sourceDatabase": "NBER",
+          "publicationType": "working-paper",
+          "publicationDate": "2026-07",
+          "publicationDatePrecision": "month",
+          "publicationDateSource": "https://www.nber.org/papers/w35506",
+          "doi": "10.3386/w35506",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractSource": "https://www.nber.org/papers/w35506",
+          "abstractUnavailableReason": "NBER官方题录摘要可核验，但详情页直接读取返回403；未确认摘要转载许可，因此不逐字转载。"
+        },
+        {
+          "title": "The Transmission of Son Preference",
+          "titleZh": "重男偏好的文化传递",
+          "authors": "Yifan Zhang",
+          "year": 2026,
+          "venue": "SSRN公开论文记录",
+          "source": "SSRN公开论文记录",
+          "category": "文化传递、跨文化互动与社会规范",
+          "evidence": "摘要核验",
+          "takeaway": "重男偏好从移民扩散到本地人，并通过父系和移民共同体持续。",
+          "abstractZh": "重男偏好从移民扩散到本地人，并通过父系和移民共同体持续。横向传播的总体影响更大，而纵向传递的边际效应更强，说明家庭之外的社会互动是文化改变的重要机制。 区分文化从移民向本地人的横向传播、父系内部的纵向传递以及移民共同体维持。",
+          "theory": "区分文化从移民向本地人的横向传播、父系内部的纵向传递以及移民共同体维持。核心问题是社会互动相对于家庭传递在文化扩散中的作用。",
+          "data": "研究台湾在国民党撤退后形成的中国大陆移民与本地人分布，并利用1985年堕胎合法化这一制度变化观察重男偏好。祖先崇拜暴露用于刻画移民重男偏好差异；摘要未给县市、出生队列和样本量。",
+          "method": "利用移民准随机定居产生的空间暴露差异识别移民文化向本地人扩散，并分别估计父系血缘和移民社区渠道。精确回归式、平衡检验及标准误聚类层级未核验。",
+          "results": "重男偏好从移民扩散到本地人，并通过父系和移民共同体持续。横向传播的总体影响更大，而纵向传递的边际效应更强，说明家庭之外的社会互动是文化改变的重要机制。",
+          "relevance": "提供清晰的横向与纵向文化传递分解，可直接用于构建宏观迁移暴露与微观家庭社会化的多层模型。",
+          "limitations": "仅核验SSRN公开摘要；准随机定居假设、1985年制度冲击的具体识别窗口、效应值与异质性尚未核验。",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6105726",
+          "verifiedAt": "2026-10-07",
+          "selectionBucket": "latest",
+          "sourceDatabase": "SSRN",
+          "publicationType": "working-paper",
+          "publicationDate": "2026-02-02",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6105726",
+          "doi": "10.2139/ssrn.6105726",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6105726",
+          "abstractUnavailableReason": "SSRN明确标示All rights reserved、未经许可不得再利用；故保留摘要来源但不逐字转载。"
+        }
+      ],
+      "shortfallReason": "最新组完成5篇；高被引组因Google Scholar当天直接网页无法访问而缺5篇。"
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "sortDescription": "Google Scholar主题检索被验证页阻断，无法合规执行先主题检索、后筛SSCI期刊和按实际引用次数排序。",
+      "papers": [],
+      "shortfallReason": "缺5篇：没有Google Scholar主题检索结果，不以其他平台候选替代。"
+    }
+  ]
+}
