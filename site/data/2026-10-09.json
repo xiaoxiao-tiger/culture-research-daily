@@ -11,7 +11,7 @@
   "date": "2026-10-09",
   "edition": "正式第6期",
   "title": "文化距离如何塑造技术、贸易与媒介接受",
-  "summary": "本期15篇：最新研究覆盖香水文化演化、身份形成、AI文化评估、社会学习与管理者性别规范；高被引研究解释发展扩散、族群文化、祖源距离、饮食偏好与移民同化；期刊论文聚焦世界主义与文化接近性。",
+  "summary": "本期15篇：最新研究覆盖香水文化演化、AI文化评估、社会学习、品牌本地化与服从规范；高被引研究解释发展扩散、族群文化、祖源距离、饮食偏好与移民同化；期刊论文聚焦世界主义与文化接近性。",
   "notice": "永久排除2026-10-04至2026-10-08已登记的65篇及其已核验版本。Google Scholar直接网页可访问，15篇均逐题名核验；NBER、SSRN与arXiv的检索渠道和访问限制如实列示。",
   "searchSettings": {
     "themeKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
@@ -190,7 +190,7 @@
         {
           "database": "NBER",
           "status": "included",
-          "reason": "最新组1篇、高被引组5篇来自NBER官方记录。"
+          "reason": "高被引组5篇来自NBER官方记录。"
         },
         {
           "database": "SSRN",
@@ -200,7 +200,7 @@
         {
           "database": "arXiv",
           "status": "included",
-          "reason": "最新组3篇来自arXiv官方摘要记录。"
+          "reason": "最新组4篇来自arXiv官方摘要记录。"
         }
       ],
       "papers": [
