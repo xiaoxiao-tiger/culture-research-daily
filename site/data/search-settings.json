@@ -17,6 +17,16 @@
       "lookbackDays": 30,
       "requestNumber": 1,
       "savedAt": "2026-10-03T08:49:24Z"
+    },
+    {
+      "effectiveDate": "2026-10-10",
+      "scope": "once",
+      "themeKeywords": "\"value congruence\" OR \"value alignment\" OR \"value similarity\" AND (\"character\" OR \"narrative\" OR \"audience\")\n\"perceived value similarity\" AND (\"character\" OR \"film\" OR \"story\")\n\"value congruence\" AND (\"cross-cultural\" OR \"foreign media\" OR \"cultural consumption\")\n\"shared values\" AND (\"identification\" OR \"sharing intention\" OR \"word of mouth\")",
+      "journalKeywords": "\"value congruence\" OR \"value alignment\" OR \"value similarity\" AND (\"character\" OR \"narrative\" OR \"audience\")\n\"perceived value similarity\" AND (\"character\" OR \"film\" OR \"story\")\n\"value congruence\" AND (\"cross-cultural\" OR \"foreign media\" OR \"cultural consumption\")\n\"shared values\" AND (\"identification\" OR \"sharing intention\" OR \"word of mouth\")",
+      "excludeTerms": "",
+      "lookbackDays": 30,
+      "requestNumber": 2,
+      "savedAt": "2026-10-09T13:53:47Z"
     }
   ]
 }
