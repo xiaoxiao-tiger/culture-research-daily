@@ -963,6 +963,104 @@
         "doi:10.1207/s15506878jobem4701_5",
         "title:vieweraggressionandhomophilyidentificationandparasocialrelationshipswithtelevisioncharacters"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "StoicLLM: Preference Optimization for Philosophical Alignment in Small Language Models",
+      "identifiers": [
+        "arxiv:2605.11483",
+        "doi:10.48550/arxiv.2605.11483",
+        "title:stoicllmpreferenceoptimizationforphilosophicalalignmentinsmalllanguagemodels"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Beyond Instrumental and Substitutive Paradigms: Introducing Machine Culture as an Emergent Phenomenon in Large Language Models",
+      "identifiers": [
+        "arxiv:2601.17096",
+        "doi:10.48550/arxiv.2601.17096",
+        "title:beyondinstrumentalandsubstitutiveparadigmsintroducingmachinecultureasanemergentphenomenoninlargelanguagemodels"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Fluent but Foreign: Even Regional LLMs Lack Cultural Alignment",
+      "identifiers": [
+        "arxiv:2505.21548",
+        "doi:10.48550/arxiv.2505.21548",
+        "title:fluentbutforeignevenregionalllmslackculturalalignment"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "A Tale of Two Identities: An Ethical Audit of Human and AI-Crafted Personas",
+      "identifiers": [
+        "arxiv:2505.07850",
+        "doi:10.48550/arxiv.2505.07850",
+        "title:ataleoftwoidentitiesanethicalauditofhumanandaicraftedpersonas"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Do Generative AI Models Output Harm while Representing Non-Western Cultures: Evidence from A Community-Centered Approach",
+      "identifiers": [
+        "arxiv:2407.14779",
+        "doi:10.1609/aies.v7i1.31651",
+        "doi:10.48550/arxiv.2407.14779",
+        "title:dogenerativeaimodelsoutputharmwhilerepresentingnonwesternculturesevidencefromacommunitycenteredapproach"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Marked Personas: Using Natural Language Prompts to Measure Stereotypes in Language Models",
+      "identifiers": [
+        "arxiv:2305.18189",
+        "doi:10.48550/arxiv.2305.18189",
+        "title:markedpersonasusingnaturallanguagepromptstomeasurestereotypesinlanguagemodels"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Culture, Entrepreneurship, and Growth",
+      "identifiers": [
+        "doi:10.3386/w19141",
+        "title:cultureentrepreneurshipandgrowth"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Peers and Culture",
+      "identifiers": [
+        "doi:10.1111/j.1467-9442.2008.00525.x",
+        "ssrn:1098922",
+        "title:peersandculture"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Social Finance: Cultural Evolution, Transmission Bias and Market Dynamics",
+      "identifiers": [
+        "doi:10.3386/w27745",
+        "title:socialfinanceculturalevolutiontransmissionbiasandmarketdynamics"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Moonshots, Investment Booms, and Selection Bias in the Transmission of Cultural Traits",
+      "identifiers": [
+        "doi:10.3386/w27735",
+        "title:moonshotsinvestmentboomsandselectionbiasinthetransmissionofculturaltraits"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Cultural Cartography with Word Embeddings",
+      "identifiers": [
+        "arxiv:2007.04508",
+        "doi:10.1016/j.poetic.2021.101567",
+        "doi:10.48550/arxiv.2007.04508",
+        "title:culturalcartographywithwordembeddings"
+      ]
     }
   ]
 }
