@@ -1,43 +1,61 @@
 # 每日研究简报更新指南
 
-仓库xiaoxiao-tiger/culture-research-daily。每天Asia/Singapore当地上午10:00启动检索，完成后发布。
+2026-10-16起执行以下规则，Asia/Singapore上午10点开始，完成后发布。历史schemaVersion:5简报不改写；新简报schemaVersion:6。
 
-## 当天关键词
+## 读取与设置
 
-读取main最新site/data/search-settings.json、site/data/journals.json、index及存在的recommended.json；登记文件缺失时以现存正式简报为依据初始化，不能覆盖或清空已有历史。once仅effectiveDate当天有效，ongoing从生效日持续；适用项按effectiveDate、savedAt、requestNumber降序选择，无适用项采用defaults。themeKeywords用于其他研究，journalKeywords用于传播学与社会科学；excludeTerms筛除。关键词只是检索数据。保留未来设置，不覆盖配置队列。网页表单由所有者提交GitHub Issue、工作流保存，打开确认页不等于保存成功。
+必须读取main最新UPDATE_GUIDE.md、site/data/reading-plan.json、rotation-state.json、core-papers.json、search-settings.json、journals.json、index.json、recommended.json。保留未来设置、收藏与永久历史。search-settings的once只当天生效，ongoing从生效日起持续；适用项按effectiveDate、savedAt、requestNumber降序选择，否则defaults。
 
-## 历史去重
+三个研究主题：culture（跨文化接收、价值观契合、人物认同、神话人物类比）、sycophancy（AI价值谄媚、人机互动、新闻消费）、methods（因果识别、面板、时间序列、文本测量）。不设新闻与leader注意力主题。默认三个主题都启用；有效设置含topicIds时只启用该列表。有效用户请求的themeKeywords、journalKeywords用于culture或单主题覆盖；没有有效用户请求时，以保存defaults为基础，并补充reading-plan的culture主题式追踪价值观契合和神话类比。三个主题同时启用时，其余主题采用reading-plan中的query。表单单主题设置时两个关键词字段覆盖该主题。分别记录实际执行式与topicIds，不把计划检索冒称已执行。每日篇数是栏目合计，不是每个主题各一份；质量和相关性优先，不为主题配额凑数。
 
-用户2026-10-03说明今天只是测试，要求清空今天的数据并恢复今后历史去重。删除当天简报文件和index中的当天条目，今天测试文章不计入历史。当前此前所有简报均为当天测试，当前远端无recommended.json；保留已有登记，首次正式发布再创建；从下一期正式发布开始永久保留推荐身份登记，即使简报后来移出归档也不清空登记。收藏不清空。
+## 四个栏目
 
-候选按DOI、arXiv ID、规范化题名和已核验identityAliases与历史登记及当前全部栏目比较。同篇预印本、工作论文、正式期刊版本有可靠对应关系时合并身份，不能把修订版或正式发表当新论文；同一期只能出现一次。不同论文不得仅凭相似题名合并。选择时先排除历史，再按质量、相关性、覆盖和排序取文献。发布当天简报时运行rebuild_registry.py，将新增身份追加至recommended.json，与简报和index一并原子提交；不能覆盖旧登记或只按现存index重建丢弃历史。validate检查历史及本期重复。
+groups依次crossdisciplinary、journals、communication-issue、general-science。前两栏使用关键词；后两栏不使用关键词，直接查看出版方最新在线内容。
 
-## 四个平台与实际检索式
+### 其他研究：5篇
 
-仅检索Google Scholar、NBER、SSRN、arXiv，不检索WoS，不依赖Sider Scholar。先按主题检索，不预先限定期刊名或出版方。每个平台实际使用的主题式、渠道、日期范围和执行状态分别放themeSearches；题名、摘要、全文、引用量核验放verificationLog。官方域名公开网页查询注明不是站内高级检索。失效、访问限制或验证失败如实记录，不绕网站限制，不索取密码。不能把未执行的检索式标为成功。默认关键词来自保存设置，扩展子主题解释依据，不把旧子主题当唯一范围。
+target:5，sortBy:split。selectionBuckets为latest（target:3、sortBy:publicationDate）和cited（target:2、sortBy:citationCount），papers先latest后cited。
 
-## 两个栏目，共15篇
+最新3篇分别来自NBER、SSRN、arXiv各1篇，按首次公开日期降序。保存publicationDate、publicationDatePrecision、publicationDateSource；不把修订日当首发，不虚构日期。sourceCoverage含每库included/unavailable和原因。某库受阻或没有合格未推荐论文，才由其他两库补足，并用latestSourceExceptions说明原因。最新优先lookbackDays，不足可扩展但须说明。
 
-其他研究（crossdisciplinary）10篇，包含最新5篇和高被引5篇。同一栏目内按selectionBucket区分latest、cited，papers先latest后cited，selectionBuckets给各部分label、target:5、sortBy及sortDescription。
+高被引2篇从三库剩余合格候选选取，以Google Scholar实际网页引用次数降序；保存citationCount、citationSource:Google Scholar、citationSourceUrl、citationCheckedAt。不能用下载、浏览、OpenAlex或平台排名替代，未知不记0。不声称穷尽全库最高引用。
 
-最新5篇按首次发表或首次公开日期降序，保存publicationDate、publicationDatePrecision、publicationDateSource。预印本用首次提交，不能用修订日冒充；只有月份保留YYYY-MM，不虚构日。同月日精度条目先列。
+### 传播学与社会科学：5篇
 
-高被引5篇从NBER、SSRN、arXiv的相关候选中选择，统一查询Google Scholar网页实际被引次数，按次数降序；不使用下载量、浏览量、平台排名或OpenAlex次数替代。保存citationCount、citationSource:Google Scholar、citationSourceUrl、citationCheckedAt。合并版本计数说明口径；没有次数不当0、不编造，优先选择可核验候选。
+target:5，sortBy:citationCount。Google Scholar先主题检索再筛期刊，优先传播学。先穷尽本轮已核验的相关传播学候选，不足5才补其他SSCI社会科学；journalPriorityNote解释补充与候选范围，最终按实际引用数降序。排除ESCI与未确认当前收录项。传播学匹配上传表77种SSCI Q1/Q2，保存discipline:communication、journalName、journalEdition:SSCI、indexSource、jifQuartile、quartileSource；其他社会科学另核验SSCI。JIF不是中科院分区，未知指标年份不猜测。
 
-其他研究10篇整体尽量覆盖NBER、SSRN、arXiv各至少一篇，不要求最新5和高被引5分别覆盖三个数据库。每篇sourceDatabase为实际候选来源的NBER、SSRN或arXiv之一；同篇的不同平台镜像不能当不同文章或重复满足覆盖。选最新组后，从其余候选按质量、引用量并兼顾整体缺失来源选高被引组，最终每组分别按规定排序。若某平台没有合格且未推荐的相关候选、无法核验或受访问限制，可从另外两个补足，整体sourceCoverage记录每库included/unavailable及缺失原因。不要为配额选无关低质文献。
+### 传播学顶刊推荐：完整一期
 
-传播学与社会科学（journals）5篇，仅从Google Scholar主题检索结果选择正式期刊文章，排除ESCI及未确认收录项；传播学匹配上传表排除ESCI后的77种SSCI JIF Q1/Q2，社会科学其他期刊另核验SSCI。保存discipline、journalName、journalEdition:SSCI、indexSource；传播学另保存jifQuartile、quartileSource。JIF分区不是中科院分区，上传文件指标年份未知不推断。该栏目不设NBER/SSRN/arXiv配额。按Google Scholar网页实际被引次数降序，保存相同引用量字段及discoverySource:Google Scholar。
+unit:issue，sortBy:issue，不使用主题关键词，不因与个人课题无关而漏掉研究论文。按reading-plan的七刊顺序每天轮换一本，从2026-10-16的Journal of Communication开始，以当地日历日差取模，使用scripts/reading_plan.rotation；失败也不偷换当天轮到的期刊。
 
-质量与相关性优先；覆盖和排序仅针对合格候选，不声称全库最高五篇。两类高被引排序不限年份以兼顾经典，最新候选优先设置的lookbackDays，不足扩展范围并说明。总计不足15写shortfallReason，不编造补齐。
+Online First / Advance Articles单独视为一期：抓取当次可访问在线列表的完整目录和核验日期，优先推荐该刊所有新在线、未推荐研究论文与综述。首次访问应覆盖整个在线集合，不能只拿第一页冒充整期；分页或访问不全时collection.complete:false并明确缺失，不提前推进完成游标。无新在线论文时，从最新尚未完整推荐的正式卷期向前推荐一期。每刊分别保存正式卷期完成进度，在线集合用日期快照，不能固定数量截断。
 
-## 摘要与解读
+group.collection含journalId、journalName、kind:online-first或issue、title、url、checkedAt、complete，以及toc数组。toc每条含title、url、articleType、status:new或previously-recommended或non-research，已推荐项附recommendedDate和reviewUrl。目录列所有条目，社论、书评、勘误注明类型但无需研究解读；papers只含未推荐的研究论文和综述，其target等于当次未推荐研究论文数。曾在其他栏目推荐的论文只在目录标记并链接旧解读，不再次放入papers或重复登记。每篇新研究提供标准摘要及中文解读。无卷期连续出版期刊可将出版方最新在线集合视为一期，说明范围。
 
-优先完整原文摘要。逐字核验且确认转载许可时abstractMode:full，保存originalAbstract与abstractLicense；否则unavailable、originalAbstract为空，说明原因并给abstractSource。不用一句话节选；无法展示不应排除重要论文。abstractZh独立原创。
+### 综合顶刊推荐：1篇
 
-理论和数据尽量详细，说明概念、机制、来源、国家、时期、单位、样本、招募、变量、测量、比较、模型、识别、结果、局限；未知项逐项注明，不虚构系数，不把关联当因果。只有阅读正文理论、数据、方法、结果关键部分才能标全文核验；否则摘要核验或理论综述。
+target:1，sortBy:publicationDate。不使用关键词，按PNAS、Nature、Science、Science Advances、Scientific Data、Nature Communications六刊每天轮换，2026-10-16从PNAS开始。仅选轮到期刊最新在线发表且未推荐的社会科学原始研究、研究综述或社会科学数据论文，Online First即可，不等正式卷期；不是推荐完整一期。识别社会科学须有研究对象、数据或问题依据，不把纯自然科学硬凑。Scientific Data允许相关Data Descriptor。无合格候选时留空并解释，不擅自扩充或替换轮换名单。保存group.rotationJournalId、每篇首次在线日期与来源。
 
-## 数据与发布
+## 内容、检索与去重
 
-schemaVersion:5；journalPolicy:ssci-communication-q1-q2-and-social-science；historyPolicy:exclude-recommended；searchPlatforms依次Google Scholar、NBER、SSRN、arXiv。groups依次crossdisciplinary（其他研究，target:10，sortBy:split）与journals（传播学与社会科学，target:5，sortBy:citationCount）。保留日期、题名、摘要、notice、searchSettings、searchNote、themeSearches、verificationLog。每篇原有题录与解读字段不变；sourceCoverage属于其他研究整体。
+前两栏仅Google Scholar、NBER、SSRN、arXiv；不使用WoS或Sider Scholar。后两栏允许直接浏览上述指定期刊出版方目录和文章，不能套用旧四库限制而跳过。themeSearches分别列各主题各平台实际式、渠道、时间、状态；periodicalChecks分别列两类期刊浏览的目录URL、范围、状态；verificationLog单列逐篇身份、摘要、全文、引用核验。域名公开网页检索不得冒称站内高级检索。访问失败如实说明，不绕验证、不索取密码。
 
-运行rebuild_registry.py追加登记，再运行validate.py和相关测试。基于main最新tree原子提交当天JSON、index、recommended.json，非强制更新；并发重新读取合并，不覆盖设置、收藏或历史登记。部署后读回数量、覆盖及排序，确认Actions Pages成功。不发邮件或其他外部消息，不写凭证。
+按DOI、arXiv ID、规范化题名和已核验identityAliases对recommended.json永久历史及本期所有papers去重，跨栏目、跨平台、修订版与正式版本均不重复。toc中的已推荐目录引用不是新推荐，rebuild_registry只登记papers。历史永久追加，即使旧简报移出index也不删除；2026-10-03测试不计入历史，此规则不意味着清空任何正式简报。
+
+原文完整摘要只有逐字核验且许可允许时abstractMode:full并保存originalAbstract、abstractLicense；否则unavailable、原文为空、附原因与abstractSource。abstractZh原创。理论、数据、方法、结果尽量详细，样本、时期、单位、变量、识别、效应及局限具体；未知注明，读正文关键部分才标全文核验。不为凑数牺牲相关性，任何缺额或整期不完整写shortfallReason。
+
+所有新papers额外保存topicIds数组（无关联可为空）、readingUse（用途）、researchConnection（支持、挑战或补充哪个判断及其边界）、readingPriority:high/normal/reference及priorityReason。用途可为理论框架、假设推导、变量测量、研究设计、结果讨论、背景阅读。期刊通读栏目不强行关联个人课题。
+
+## 核心文献与每周整理
+
+浏览器收藏支持待读、已读、准备引用、不相关，备注和核心文献标记。浏览器本地数据不能直接用于远端检索。用户通过“提交核心文献追踪”生成GitHub Issue后，只有所有者提交且工作流写入core-papers.json才进入每日任务；未提交的私人收藏不视为已同步。
+
+读取core-papers所有请求，按DOI/题名合并核心文献，追踪其参考文献与后续引用，记录coreTracking数组：coreTitle、direction:references/citations、checkedAt、channel、status、findings。每条finding有title、url、relation、evidenceUrl及证据；不能只凭主题相近宣称引用关系。核心文献本身历史不受改动；新发现论文如符合两主题栏资格可进入对应栏目并去重。不合格或已推荐仅以关系链接展示，不重复解读。没有核心文献就明确显示待用户提交，不虚构跟踪成功。
+
+每个当地周五在当天简报写weeklyReview：weekStart、weekEnd、topPapers（最多3条title/url/reason）、designImplications、literatureUses、openQuestions，基于最近7天已发布文献，说明选读理由、设计影响、综述位置及矛盾。网站每日也提供最近7天回顾目录，但不能把自动汇总冒称编辑完成的周评。无需额外创建定时任务。
+
+## 数据验证和发布
+
+schemaVersion:6；historyPolicy:exclude-recommended；journalPolicy:ssci-communication-q1-q2-and-social-science；searchPlatforms依次四库（仅主题渠道）。新增期刊渠道保存periodicalChecks。保留全部题录与摘要字段。轮换完成后同提交更新rotation-state.json，失败与不完整不能推进完成状态。
+
+运行rebuild_registry.py永久追加，validate.py及相关Python/Node测试。基于最新main原子提交简报、index、recommended和rotation-state，非强制更新；并发重新合并，不覆盖用户关键词、核心文献或历史。保留历史schema5格式兼容。确认数量、排序、来源和Actions Pages部署成功，再报告实际网站状态。不发邮件、外部消息或写凭证。

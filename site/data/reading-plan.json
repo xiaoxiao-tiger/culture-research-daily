@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "effectiveDate": "2026-10-16",
+  "timezone": "Asia/Singapore",
+  "activeTopicIds": ["culture", "sycophancy", "methods"],
+  "topics": [
+    {"id":"culture","label":"跨文化接收与价值观契合","query":"\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") AND (character OR narrative OR audience)) OR (mythology AND analogy)","note":"神话人物接收、价值观契合、人物认同与受众本国神话人物类比；用户保存的当日关键词优先。"},
+    {"id":"sycophancy","label":"AI价值谄媚与人机互动","query":"(sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\")","note":"价值迎合、用户参与、新闻消费与公共讨论。"},
+    {"id":"methods","label":"计算传播研究方法","query":"(\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\")","note":"因果识别、面板、时间序列与文本测量；不单独追踪leader注意力。"}
+  ],
+  "groups": [
+    {"id":"crossdisciplinary","label":"其他研究","target":5,"latestTarget":3,"citedTarget":2,"keywords":true},
+    {"id":"journals","label":"传播学与社会科学","target":5,"communicationFirst":true,"keywords":true},
+    {"id":"communication-issue","label":"传播学顶刊推荐","unit":"issue","keywords":false},
+    {"id":"general-science","label":"综合顶刊推荐","target":1,"keywords":false}
+  ],
+  "rotations": {
+    "startDate":"2026-10-16",
+    "communication":[
+      {"id":"joc","name":"Journal of Communication","url":"https://academic.oup.com/joc"},
+      {"id":"hcr","name":"Human Communication Research","url":"https://academic.oup.com/hcr"},
+      {"id":"cr","name":"Communication Research","url":"https://journals.sagepub.com/home/crx"},
+      {"id":"jcmc","name":"Journal of Computer-Mediated Communication","url":"https://academic.oup.com/jcmc"},
+      {"id":"ct","name":"Communication Theory","url":"https://academic.oup.com/ct"},
+      {"id":"nms","name":"New Media & Society","url":"https://journals.sagepub.com/home/nms"},
+      {"id":"sms","name":"Social Media + Society","url":"https://journals.sagepub.com/home/sms"}
+    ],
+    "general":[
+      {"id":"pnas","name":"PNAS","url":"https://www.pnas.org/"},
+      {"id":"nature","name":"Nature","url":"https://www.nature.com/nature/"},
+      {"id":"science","name":"Science","url":"https://www.science.org/journal/science"},
+      {"id":"science-advances","name":"Science Advances","url":"https://www.science.org/journal/sciadv"},
+      {"id":"scientific-data","name":"Scientific Data","url":"https://www.nature.com/sdata/"},
+      {"id":"nature-communications","name":"Nature Communications","url":"https://www.nature.com/ncomms/"}
+    ]
+  },
+  "weeklyReviewDay":5,
+  "note":"从2026-10-16起执行；历史简报保持原栏目与内容。整期栏目不受关键词或Q1/Q2主题栏名单限制，以明确指定七刊为准。"
+}

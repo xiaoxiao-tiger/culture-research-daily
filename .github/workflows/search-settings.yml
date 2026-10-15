@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   save-and-publish:
-    if: github.actor == github.repository_owner && github.event.issue.user.login == github.repository_owner && startsWith(github.event.issue.title, '[检索设置]')
+    if: github.actor == github.repository_owner && github.event.issue.user.login == github.repository_owner && (startsWith(github.event.issue.title, '[检索设置]') || startsWith(github.event.issue.title, '[核心文献]'))
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data/search-settings.json
+          git add site/data/search-settings.json site/data/core-papers.json
           if ! git diff --cached --quiet; then
             git commit -m "Save owner search settings"
             git push origin HEAD:main

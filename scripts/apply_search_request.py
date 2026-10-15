@@ -9,7 +9,10 @@ def parse_request(body):
     match=re.search(r'<!-- daily-search-settings:v1 -->\s*```json\s*([\s\S]*?)\s*```',body)
     assert match, 'Missing JSON settings'
     data=json.loads(match.group(1))
-    assert isinstance(data,dict) and set(data)==FIELDS, 'Unsupported settings fields'
+    assert isinstance(data,dict) and FIELDS<=set(data)<=FIELDS|{'topicIds'}, 'Unsupported settings fields'
+    if 'topicIds' in data:
+        from reading_plan import TOPICS
+        assert isinstance(data['topicIds'],list) and 0<len(data['topicIds'])<=3 and set(data['topicIds'])<=TOPICS,'Invalid topics'
     assert isinstance(data['effectiveDate'],str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}',data['effectiveDate'])
     date.fromisoformat(data['effectiveDate'])
     assert data['scope'] in ('once','ongoing'), 'Unsupported scope'
@@ -31,6 +34,10 @@ def apply(body,number,saved_at,owner,actor,author,path):
     path.write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n')
 
 if __name__=='__main__':
-    path=Path(__file__).resolve().parents[1]/'site/data/search-settings.json'
-    apply(os.environ['REQUEST_BODY'],os.environ['REQUEST_NUMBER'],os.environ['REQUEST_UPDATED_AT'],os.environ['REPOSITORY_OWNER'],os.environ['REQUEST_ACTOR'],os.environ['REQUEST_AUTHOR'],path)
+    path=Path(__file__).resolve().parents[1]/'site/data'
+    if '<!-- daily-core-papers:v1 -->' in os.environ['REQUEST_BODY']:
+        from reading_plan import apply_core
+        apply_core(os.environ['REQUEST_BODY'],os.environ['REQUEST_NUMBER'],os.environ['REQUEST_UPDATED_AT'],os.environ['REPOSITORY_OWNER'],os.environ['REQUEST_ACTOR'],os.environ['REQUEST_AUTHOR'],path/'core-papers.json')
+    else:
+        apply(os.environ['REQUEST_BODY'],os.environ['REQUEST_NUMBER'],os.environ['REQUEST_UPDATED_AT'],os.environ['REPOSITORY_OWNER'],os.environ['REQUEST_ACTOR'],os.environ['REQUEST_AUTHOR'],path/'search-settings.json')
     print('Owner search settings accepted.')
