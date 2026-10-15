@@ -34,7 +34,7 @@ group.collection含journalId、journalName、kind:online-first或issue、title�
 
 ### 综合顶刊推荐：1篇
 
-target:1，sortBy:publicationDate。不使用关键词，按PNAS、Nature、Science、Science Advances、Scientific Data、Nature Communications六刊每天轮换，2026-10-16从PNAS开始。仅选轮到期刊最新在线发表且未推荐的社会科学原始研究、研究综述或社会科学数据论文，Online First即可，不等正式卷期；不是推荐完整一期。识别社会科学须有研究对象、数据或问题依据，不把纯自然科学硬凑。Scientific Data允许相关Data Descriptor。无合格候选时留空并解释，不擅自扩充或替换轮换名单。保存group.rotationJournalId、每篇首次在线日期与来源。
+target:1，sortBy:publicationDate。不使用关键词，按PNAS、Nature、Science、Science Advances、Scientific Data、Nature Communications六刊每天轮换，2026-10-16从PNAS开始。仅选轮到期刊最新在线发表且未推荐的社会科学原始研究、研究综述或社会科学数据论文，Online First即可，不等正式卷期；不是推荐完整一期。社会科学归属依据研究问题、分析对象与主要结论判断，期刊栏目标签只作线索。归属不明确但可能相关的跨学科研究可以推荐，不因无法确定学科而排除，交由用户判断；保存socialScienceAssessment:uncertain和socialScienceReason说明可能相关之处与不确定原因，category明确显示“综合顶刊 · 学科归属待判断”，limitations同样说明。确认归属则socialScienceAssessment:confirmed并给依据。此不确定性许可不改变论文题录、内容核验和历史去重要求，也不取消主题期刊栏的SSCI/ESCI限制。明确属于纯自然科学或纯技术性能、没有人类行为或社会问题关联的论文仍不纳入。Scientific Data允许相关Data Descriptor。无合格候选时留空并解释，不擅自扩充或替换轮换名单。保存group.rotationJournalId、每篇首次在线日期与来源。
 
 ## 内容、检索与去重
 
