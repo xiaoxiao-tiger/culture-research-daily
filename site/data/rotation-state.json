@@ -1,1 +1,39 @@
-{"version":1,"updatedAt":null,"communication":{},"general":{}}
+{
+  "version": 1,
+  "updatedAt": "2026-10-16",
+  "communication": {
+    "joc": {
+      "lastCheckedAt": "2026-10-16",
+      "onlineSnapshots": [
+        {
+          "checkedAt": "2026-10-16",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag018",
+            "https://doi.org/10.1093/joc/jqag014",
+            "https://doi.org/10.1093/joc/jqag016",
+            "https://doi.org/10.1093/joc/jqag015",
+            "https://doi.org/10.1093/joc/jqag013"
+          ],
+          "firstOnlineDates": [
+            "2026-10-01",
+            "2026-09-22",
+            "2026-09-08",
+            "2026-09-08",
+            "2026-08-30"
+          ]
+        }
+      ],
+      "completedIssues": []
+    }
+  },
+  "general": {
+    "pnas": {
+      "lastAttemptAt": "2026-10-16",
+      "status": "blocked",
+      "reason": "Cloudflare challenge persisted after one normal refresh; no eligible latest paper verified.",
+      "lastCompletedAt": null
+    }
+  }
+}
