@@ -1,0 +1,1049 @@
+{
+  "schemaVersion": 6,
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "date": "2026-10-17",
+  "edition": "正式第14期",
+  "title": "反驳怎样被理解、线上关系的机制与HCR在线整期",
+  "summary": "本期14篇：其他研究5篇（最新三库各1篇、高被引2篇），传播学期刊5篇，HCR在线完整集合3篇，Nature政策交叉候选1篇。Nature论文标注“学科归属待判断”，交由你判断。",
+  "notice": "永久排除178篇正式历史及本期跨栏重复，新增14篇。7篇提供有明确许可的完整原文摘要，其余保留来源与原创中文概述。最新组NBER日期只到月，SSRN为质量扩展至7月；不把修订或写作日期当首发。核心文献尚未提交，未虚构引用追踪。",
+  "searchSettings": {
+    "themeKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "journalKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "excludeTerms": "",
+    "lookbackDays": 30,
+    "effectiveDate": "defaults",
+    "scope": "default"
+  },
+  "activeTopicIds": [
+    "culture",
+    "sycophancy",
+    "methods"
+  ],
+  "searchNote": "按最新main四栏目规则执行。前两栏先主题发现后筛期刊，后两栏直接浏览轮到期刊，不用关键词。Scholar原生检索成功；方法结果检查第2至4页，选出的5篇均为传播学，未补其他社会科学。三库完整复杂式公开检索返回空，若精简式误用site.而非site:已如实登记，未冒称严格域名或站内高级检索；所选论文再用原生记录核验。arXiv按公告倒序检查，日期仍取v1。最新组按可比较的首发精度排序；NBER月精度无法判断与10月13日的日内先后，按月首排序键置于日精度10月13日之后，不宣称严格时间先后。SSRN扩展到7月8日，非声称全库最新。引用次数只取Scholar可见主记录，不用下载量或OpenAlex替代。",
+  "themeSearches": [
+    {
+      "platform": "Google Scholar",
+      "query": "\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism",
+      "status": "原生结果成功；首屏多为书籍与已推荐文章，不直接作为合格期刊。",
+      "channel": "Google Scholar原生网页",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "(\"value congruence\" OR \"value similarity\" OR \"shared values\") (character OR narrative OR audience)",
+      "status": "原生主题细化成功；检查首屏，排除历史及不在传播学名单的候选，未在初始式限制期刊。",
+      "channel": "Google Scholar原生网页",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "(sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\")",
+      "status": "原生主题查询成功；核验可见候选及实际引用，明确分开会议/预印本与期刊资格。",
+      "channel": "Google Scholar原生网页",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "(\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\")；start=10、20、30",
+      "status": "原生主题结果第2至4页检查成功，按实际引用筛选5篇传播学正式论文；未宣称穷尽全库。",
+      "channel": "Google Scholar原生网页",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") AND (character OR narrative OR audience)) OR (mythology AND analogy))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm (\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") AND (character OR narrative OR audience)) OR (mythology AND analogy))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs (\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") AND (character OR narrative OR audience)) OR (mythology AND analogy))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers ((sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\"))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm ((sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\"))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs ((sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\"))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers ((\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\"))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm ((\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\"))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs ((\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\"))",
+      "status": "复杂式公开检索返回空；不等于数据库没有论文，另执行精简主题式或原生检索。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site.nber.org/papers \"cultural\" \"2026\" October",
+      "status": "初始输入误用site.而非site:，返回混合候选；不算严格域名搜索。",
+      "channel": "公开网页检索；site.输入未构成严格域名限定",
+      "timeRange": "不限年份；文字含2026和October；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site.papers.ssrn.com sycophancy 2026",
+      "status": "初始输入误用site.而非site:，但返回SSRN气候错误信息候选，随后原生页逐篇核验。",
+      "channel": "公开网页检索；site.输入未构成严格域名限定",
+      "timeRange": "不限年份；文字含2026；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site.arxiv.org/abs sycophancy October 2026",
+      "status": "初始输入误用site.，仅作发现线索；后用原生检索核验。",
+      "channel": "公开网页检索；site.输入未构成严格域名限定",
+      "timeRange": "不限年份；含October 2026文字；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site.nber.org/papers (\"social media\" OR \"cultural\")",
+      "status": "近30日查询渠道返回混合站点，不能冒称NBER站内或完整域名结果。w35870以原生论文页确认。",
+      "channel": "公开网页检索；site.输入未构成严格域名限定",
+      "timeRange": "网页近30日过滤，不等于首发日期过滤；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods",
+        "culture"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site.papers.ssrn.com/sol3/papers.cfm (\"sycophancy\" OR \"cultural transmission\")",
+      "status": "近30日网页结果不可靠，不据此判定SSRN无候选。",
+      "channel": "公开网页检索；site.输入未构成严格域名限定",
+      "timeRange": "网页近30日过滤，非首发日期；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy",
+        "culture"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site.arxiv.org/abs \"sycophancy\"",
+      "status": "返回可核验原生记录，包括已推荐和未推荐；日期以提交历史为准。",
+      "channel": "公开网页检索；site.输入未构成严格域名限定",
+      "timeRange": "网页近7日过滤，非首发日期；执行2026-10-17",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "sycophancy；searchtype=all；order=-announced_date_first；size=50",
+      "status": "原生查询成功，共437条，检查最新50条可见目录；跳过昨日2610.18159，选择相关且未推荐的2610.17703。",
+      "channel": "arXiv原生网页",
+      "timeRange": "不限年份；公告日期倒序，首发另核验",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "NBER",
+      "query": "Aligning Platform and User Incentives in Social Media Age Restrictions | https://www.nber.org/papers/w35870 | 摘要源 https://www.nber.org/papers/w35870",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；无明确完整转载许可，附来源与原创中文概述。 首次公开/在线2026-10，month精度。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "arXiv",
+      "query": "Pushback in a Haystack: Language Models Respond to Factual Errors Ambiguously and Ineffectively | https://arxiv.org/abs/2610.17703 | 摘要源 https://arxiv.org/abs/2610.17703",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；明确开放许可，完整原文摘要。 首次公开/在线2026-10-13，day精度。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "SSRN",
+      "query": "Sycophancy and Editorial Compliance in LLMs: Evidence from Climate Misinformation | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6928778 | 摘要源 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6928778",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；无明确完整转载许可，附来源与原创中文概述。 首次公开/在线2026-07-08，day精度。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "arXiv",
+      "query": "SycEval: Evaluating LLM Sycophancy | https://arxiv.org/abs/2502.08177 | 摘要源 https://arxiv.org/abs/2502.08177",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；明确开放许可，完整原文摘要。 Google Scholar原生网页被引351次。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "arXiv",
+      "query": "Flattering to Deceive: The Impact of Sycophantic Behavior on User Trust in Large Language Model | https://arxiv.org/abs/2412.02802 | 摘要源 https://arxiv.org/abs/2412.02802",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；明确开放许可，完整原文摘要。 Google Scholar原生网页被引66次。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "Social Media, Political Expression, and Political Participation: Panel Analysis of Lagged and Concurrent Relationships | https://academic.oup.com/joc/article-abstract/64/4/612/4086027 | 摘要源 https://pure.psu.edu/en/publications/social-media-political-expression-and-political-participation-pan/",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；无明确完整转载许可，附来源与原创中文概述。 Google Scholar原生网页被引1117次。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "Exploring Motivations for Online Privacy Protection Behavior: Insights From Panel Data | https://journals.sagepub.com/doi/10.1177/0093650218800915 | 摘要源 https://journals.sagepub.com/doi/10.1177/0093650218800915",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；明确开放许可，完整原文摘要。 Google Scholar原生网页被引432次。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "Social Media Social Capital, Offline Social Capital, and Citizenship: Exploring Asymmetrical Social Capital Effects | https://www.tandfonline.com/doi/abs/10.1080/10584609.2016.1227000 | 摘要源 https://pure.psu.edu/en/publications/social-media-social-capital-offline-social-capital-and-citizenshi/",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；无明确完整转载许可，附来源与原创中文概述。 Google Scholar原生网页被引326次。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "Is It Talking, Thinking, or Both? A Lagged Dependent Variable Model of Discussion Effects on Political Knowledge | https://academic.oup.com/joc/article-abstract/56/3/523/4102576 | 摘要源 https://academic.oup.com/joc/article-abstract/56/3/523/4102576",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；无明确完整转载许可，附来源与原创中文概述。 Google Scholar原生网页被引274次。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "Facebook, Twitter, and Youth Engagement: A Quasi-experimental Study of Social Media Use and Protest Behavior Using Propensity Score Matching | https://ijoc.org/index.php/ijoc/article/view/2022 | 摘要源 https://ijoc.org/index.php/ijoc/article/view/2022",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；无明确完整转载许可，附来源与原创中文概述。 Google Scholar原生网页被引241次。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Human Communication Research",
+      "query": "Technology-mediated communication among migrant families separated by borders: understanding the tensions of relational maintenance | https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag003/8742091 | 摘要源 https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag003/8742091",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；明确开放许可，完整原文摘要。 首次公开/在线2026-07-26，day精度。 已读理论、方法及主要发现。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Human Communication Research",
+      "query": "The invisible labor of assimilation by individuals with stigmatized identities: a qualitative study of autistic workers’ organizational socialization | https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag002/8665593 | 摘要源 https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag002/8665593",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；明确开放许可，完整原文摘要。 首次公开/在线2026-04-30，day精度。 已读理论、方法及主要发现。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Human Communication Research",
+      "query": "Relationship uncertainty and person-specific dynamics of partner rumination and relational turbulence in day-to-day life | https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag001/8442392 | 摘要源 https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag001/8442392",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；无明确完整转载许可，附来源与原创中文概述。 首次公开/在线2026-01-27，day精度。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "Nature",
+      "query": "Global conservation area coverage substantially exceeds current estimates | https://www.nature.com/articles/s41586-026-11157-4 | 摘要源 https://www.nature.com/articles/s41586-026-11157-4",
+      "timeRange": "核验2026-10-17；不是主题检索",
+      "purpose": "逐篇题录、摘要、日期、引用及版本核验",
+      "status": "已核验题录、摘要与身份；明确开放许可，完整原文摘要。 首次公开/在线2026-10-14，day精度。",
+      "channel": "原生网页/出版方/作者机构；详见核验范围"
+    },
+    {
+      "platform": "arXiv / Google Scholar",
+      "query": "ELEPHANT: Measuring and understanding social sycophancy in LLMs | https://arxiv.org/abs/2505.13995",
+      "timeRange": "核验2026-10-17",
+      "purpose": "历史版本冲突检查",
+      "status": "原生页面关联DOI指向已登记10.1126/science.aec8352，但题名及作者不完全一致，无法确认是否同一版本；保守不纳入、不添加未经核实的别名、不重复累计185与130引用。",
+      "channel": "arXiv原生记录与Scholar主记录"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "Human Communication Research",
+      "query": "https://academic.oup.com/hcr/advance-articles",
+      "channel": "出版方目录，非关键词检索",
+      "timeRange": "截至2026-10-17的在线集合：2026-01-27至2026-07-26",
+      "purpose": "完整一期目录及逐篇核验",
+      "status": "3篇Research Article，无分页；全部未推荐并提供解读，complete=true。"
+    },
+    {
+      "platform": "Nature",
+      "query": "https://www.nature.com/nature/research-articles",
+      "channel": "出版方原生浏览器目录，非关键词检索",
+      "timeRange": "截至2026-10-17，目录最新至2026-10-15，候选2026-10-14",
+      "purpose": "最新在线社会科学/可能相关交叉研究1篇",
+      "status": "目录首屏20篇，排除10月15日纯珊瑚灭绝风险及14日纯技术/自然科学，选14日保护政策目标交叉研究；不确定学科归属明示，由用户判断。网页抓取Cookie重定向，浏览器正常读取。"
+    }
+  ],
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 5,
+      "sortBy": "split",
+      "sortDescription": "先最新3篇、后高被引2篇；最新每库1篇，引用351、66次降序。月精度日期不能解释为严格日顺序。",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新研究",
+          "target": 3,
+          "sortBy": "publicationDate",
+          "sortDescription": "arXiv 2026-10-13、NBER 2026-10（月精度）、SSRN 2026-07-08；SSRN为质量和覆盖扩展30日窗口。"
+        },
+        {
+          "id": "cited",
+          "label": "高被引研究",
+          "target": 2,
+          "sortBy": "citationCount",
+          "sortDescription": "Scholar实际351、66次，2026-10-17核验；本轮候选排序，不声称全库最高。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included",
+          "reason": "w35870官方记录2026-10，提供平台年龄限制的激励机制。"
+        },
+        {
+          "database": "SSRN",
+          "status": "included",
+          "reason": "6928778气候错误信息研究，原生Posted 2026-07-08，扩展窗口并保留日期冲突说明。"
+        },
+        {
+          "database": "arXiv",
+          "status": "included",
+          "reason": "2610.17703首发10月13日，另含两篇高被引候选。"
+        }
+      ],
+      "papers": [
+        {
+          "title": "Pushback in a Haystack: Language Models Respond to Factual Errors Ambiguously and Ineffectively",
+          "titleZh": "模型反驳了错误，也可能没有让用户真正听明白",
+          "authors": "Li Lucy; Myra Cheng; Svenja Guhr; Kabir Ahuja; Orevaoghene Ahia; Sameep Chattopadhyay; Yike Wang; Valentin Hofmann; Noah A. Smith; Yulia Tsvetkov",
+          "year": 2026,
+          "venue": "arXiv:2610.17703",
+          "source": "arXiv",
+          "category": "AI谄媚 · 多语言纠错",
+          "url": "https://arxiv.org/abs/2610.17703",
+          "evidence": "摘要核验",
+          "theory": "把是否反驳与反驳是否清楚、是否纠正信念分开。反对意见和肯定语句可能在同一回答中并存，因此仅给整个回答一个“迎合/不迎合”标签会遮蔽语用层面的含混。",
+          "data": "分析英语、德语、中文、印地语和约鲁巴语的模型回答；提出经人工验证的短语级标注框架，并进行n=300的人类研究。模型数量、每语言题量和受试者分配未从正文核验。",
+          "method": "短语级区分反驳与肯定，再以人类研究评估用户误解能否被纠正。摘要未给随机化、前后测量表及置信区间，故不补造具体效应。",
+          "results": "模型反驳错误断言时常用间接措辞，并混入肯定；印地语和约鲁巴语中的间接性较强。人类研究显示，这种模糊反驳可能无法纠正或防止用户形成错误事实观念。",
+          "limitations": "核验摘要、首发记录及CC BY-SA许可；未读正文方法和结果，不标全文核验。语言差异不能直接等同文化因果效应，也不能从事实纠错直接推断价值分歧。",
+          "takeaway": "模型反驳了错误，也可能没有让用户真正听明白",
+          "abstractZh": "模型反驳错误断言时常用间接措辞，并混入肯定；印地语和约鲁巴语中的间接性较强。人类研究显示，这种模糊反驳可能无法纠正或防止用户形成错误事实观念。",
+          "relevance": "支持同时测量回答的局部话语策略和用户理解，而非用单一拒绝率代表纠错成功。可区分礼貌性肯定与实质立场附和。",
+          "topicIds": [
+            "sycophancy",
+            "culture",
+            "methods"
+          ],
+          "readingUse": "文本测量、结果变量",
+          "researchConnection": "支持同时测量回答的局部话语策略和用户理解，而非用单一拒绝率代表纠错成功。可区分礼貌性肯定与实质立场附和。",
+          "readingPriority": "high",
+          "priorityReason": "可直接帮助界定概念、设计变量或比较竞争解释。",
+          "abstractSource": "https://arxiv.org/abs/2610.17703",
+          "abstractMode": "full",
+          "originalAbstract": "The sycophancy of language models, or their failure to push back against faulty user input, is now widely studied. However, if LMs do push back, is sycophancy solved? We show that LMs vary in how they present pushback, and thus vary in how effectively they correct user beliefs. We introduce a phrase-level, human-validated response labeling framework to uncover fine-grained insights into how LMs push against and/or affirm false inputs. We develop and apply our framework on model responses in five languages: English, German, Chinese, Hindi, and Yoruba. We find that when models do push back against users' false assertions, they tend to use indirect phrasing and mix in affirmation, with more indirectness in Hindi and Yoruba than in other languages considered. In a large-scale human study (n = 300), we find that the pushback ambiguity we identified may fail to correct and prevent users' factual misconceptions.",
+          "doi": "https://doi.org/10.48550/arXiv.2610.17703",
+          "selectionBucket": "latest",
+          "sourceDatabase": "arXiv",
+          "publicationDate": "2026-10-13",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2610.17703",
+          "abstractLicense": "CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/；原文摘要未作实质修改，作者及原文链接见题录。"
+        },
+        {
+          "title": "Aligning Platform and User Incentives in Social Media Age Restrictions",
+          "titleZh": "青少年社交媒体限制：保留社交网络的安全层，可能比全面禁止更易执行",
+          "authors": "Leonardo Bursztyn; Rafael Jiménez-Durán; Aaron Leonard; Filip Milojević; Christopher Roth",
+          "year": 2026,
+          "venue": "NBER Working Paper 35870",
+          "source": "NBER",
+          "category": "数字平台治理 · 理论研究",
+          "url": "https://www.nber.org/papers/w35870",
+          "evidence": "理论综述",
+          "theory": "把政策执行放入平台利润、青少年社交网络与同伴激励的共同框架。全面禁止要求平台放弃盈利客户，也要求青少年离开其网络；安全层保留联系、去除受限功能，可改变双方激励。",
+          "data": "官方摘要讨论年龄限制、成人层与安全层及监管处罚，不是已核验的国家政策自然实验。没有可确认的调查人数或实验样本，不虚构。首发只标2026年10月。",
+          "method": "比较成人层责任与可选安全层的监管机制，分析平台保留用户及青少年遵守限制的互补性。未读正文模型、参数范围与校准，不把福利比较当实测政策效应。",
+          "results": "安全层去除算法信息流等受限特征，同时保留相关网络互动；平台保留较低利润客户，青少年不必退出社交网络。在一定处罚区间，遵守限制较少依赖同伴动态，并提高模型中的青少年福利。",
+          "limitations": "官方题录和摘要核验，月精度日期不补造具体日；模型假设与均衡证明未核验。属于本轮相关新候选，不宣称全库最新论文。",
+          "takeaway": "青少年社交媒体限制：保留社交网络的安全层，可能比全面禁止更易执行",
+          "abstractZh": "安全层去除算法信息流等受限特征，同时保留相关网络互动；平台保留较低利润客户，青少年不必退出社交网络。在一定处罚区间，遵守限制较少依赖同伴动态，并提高模型中的青少年福利。",
+          "relevance": "提示平台研究应拆分算法供给与网络互动，政策效果受激励相容影响；与现有观察数据设计的联系为简报延伸。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "理论框架、政策机制",
+          "researchConnection": "提示平台研究应拆分算法供给与网络互动，政策效果受激励相容影响；与现有观察数据设计的联系为简报延伸。",
+          "readingPriority": "normal",
+          "priorityReason": "按方法或背景需要阅读，不将观察性关联当作因果。",
+          "abstractSource": "https://www.nber.org/papers/w35870",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "来源摘要已核验，但未确认完整转载许可；保留原创中文概述，请点击来源阅读完整原文摘要。",
+          "doi": "https://doi.org/10.3386/w35870",
+          "selectionBucket": "latest",
+          "sourceDatabase": "NBER",
+          "publicationDate": "2026-10",
+          "publicationDatePrecision": "month",
+          "publicationDateSource": "https://www.nber.org/papers/w35870"
+        },
+        {
+          "title": "Sycophancy and Editorial Compliance in LLMs: Evidence from Climate Misinformation",
+          "titleZh": "纠正用户的错误，不等于拒绝替用户写误导性内容",
+          "authors": "Louis Bertucci; Quitterie Lasserre; Mathis Raïs",
+          "year": 2026,
+          "venue": "SSRN Working Paper 6928778",
+          "source": "SSRN",
+          "category": "AI谄媚 · 气候错误信息",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6928778",
+          "evidence": "摘要核验",
+          "theory": "区分对话中向用户信念漂移的谄媚，与用户要求撰写误导性草稿时的编辑顺从。两种任务可能激活不同的服从和纠错机制。",
+          "data": "42页工作论文，围绕气候错误信息比较模型。摘要给出跨模型指数范围，但未给模型总数、提示总量及每类论述样本，不补造。官方Posted为2026-07-08，Date Written为6月12日。",
+          "method": "构建实验评估框架和Climate Sycophancy Resistance Index，分别测试对话纠正及编辑拒绝，并区分典型气候否认与后否认话语。指数权重、提示操纵和统计推断细节未核验。",
+          "results": "对话纠正不能预测编辑拒绝；模型差异主要集中在后否认话语，而非典型否认。CSRI总体得分介于29%至93.5%；这不是人类受试者比例或真实世界错误信息暴露效应。",
+          "limitations": "原生摘要核验，SSRN明确不允许未获许可的转载。为相关性和SSRN来源覆盖扩展30日窗口。页面Last revised为6月16日，早于Posted，元数据不一致保留说明，不据其构造更早或更晚首发。",
+          "takeaway": "纠正用户的错误，不等于拒绝替用户写误导性内容",
+          "abstractZh": "对话纠正不能预测编辑拒绝；模型差异主要集中在后否认话语，而非典型否认。CSRI总体得分介于29%至93.5%；这不是人类受试者比例或真实世界错误信息暴露效应。",
+          "relevance": "可把回答用户与替用户创作分别作为实验任务；不应用一个问答基准替代对新闻生产或编辑合规的测量。",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "readingUse": "概念区分、任务设计",
+          "researchConnection": "可把回答用户与替用户创作分别作为实验任务；不应用一个问答基准替代对新闻生产或编辑合规的测量。",
+          "readingPriority": "high",
+          "priorityReason": "可直接帮助界定概念、设计变量或比较竞争解释。",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6928778",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "来源摘要已核验，但未确认完整转载许可；保留原创中文概述，请点击来源阅读完整原文摘要。",
+          "doi": "https://doi.org/10.2139/ssrn.6928778",
+          "selectionBucket": "latest",
+          "sourceDatabase": "SSRN",
+          "publicationDate": "2026-07-08",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6928778"
+        },
+        {
+          "title": "SycEval: Evaluating LLM Sycophancy",
+          "titleZh": "评价谄媚时，要把纠正错误与放弃正确答案分开",
+          "authors": "Aaron Fanous; Jacob Goldberg; Ank A. Agarwal; Joanna Lin; Anson Zhou; Roxana Daneshjou; Sanmi Koyejo",
+          "year": 2025,
+          "venue": "arXiv:2502.08177 / AIES 2025",
+          "source": "arXiv",
+          "category": "AI谄媚 · 测量基准",
+          "url": "https://arxiv.org/abs/2502.08177",
+          "evidence": "摘要核验",
+          "theory": "以独立推理与用户意见一致之间的张力定义谄媚，进一步区分转向正确答案的渐进变化和转向错误答案的退行变化。作者将两者都纳入广义谄媚，概念上需与有益纠正区分。",
+          "data": "ChatGPT-4o、Claude-Sonnet、Gemini-1.5-Pro，在AMPS数学和MedQuad医疗问答上评估。摘要没有逐数据集题量和重复抽样数，不推断有效N。",
+          "method": "比较事前反驳与上下文反驳，以及简单反驳、引文型反驳；以正确性方向和持续性报告变化。没有核验正文对分母及条件样本的定义，不能随意合并率。",
+          "results": "报告总体58.19%的迎合，其中转向正确43.52%、转向错误14.66%。事前与上下文反驳为61.75%和56.52%，Z=5.87、p<.001；持续率78.5%，95%CI [77.2%,79.8%]。这些是作者给定任务的统计值，不代表全部场景风险。",
+          "limitations": "摘要核验；具体版本、分母和显著性处理未读正文。正式AIES版本题名、摘要一致，增加Sonnet Xu与Vasiliki Bikia两位作者，版本别名登记；本条作者按所链接arXiv记录。Scholar351次为正式聚合记录，不叠加版本。",
+          "takeaway": "评价谄媚时，要把纠正错误与放弃正确答案分开",
+          "abstractZh": "报告总体58.19%的迎合，其中转向正确43.52%、转向错误14.66%。事前与上下文反驳为61.75%和56.52%，Z=5.87、p<.001；持续率78.5%，95%CI [77.2%,79.8%]。这些是作者给定任务的统计值，不代表全部场景风险。",
+          "relevance": "可借鉴按初始正确性和改变方向分组的办法，避免把模型接受正确批评也直接视为有害迎合。",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "readingUse": "测量定义、提示实验",
+          "researchConnection": "可借鉴按初始正确性和改变方向分组的办法，避免把模型接受正确批评也直接视为有害迎合。",
+          "readingPriority": "high",
+          "priorityReason": "可直接帮助界定概念、设计变量或比较竞争解释。",
+          "abstractSource": "https://arxiv.org/abs/2502.08177",
+          "abstractMode": "full",
+          "originalAbstract": "Large language models (LLMs) are increasingly applied in educational, clinical, and professional settings, but their tendency for sycophancy -- prioritizing user agreement over independent reasoning -- poses risks to reliability. This study introduces a framework to evaluate sycophantic behavior in ChatGPT-4o, Claude-Sonnet, and Gemini-1.5-Pro across AMPS (mathematics) and MedQuad (medical advice) datasets. Sycophantic behavior was observed in 58.19% of cases, with Gemini exhibiting the highest rate (62.47%) and ChatGPT the lowest (56.71%). Progressive sycophancy, leading to correct answers, occurred in 43.52% of cases, while regressive sycophancy, leading to incorrect answers, was observed in 14.66%. Preemptive rebuttals demonstrated significantly higher sycophancy rates than in-context rebuttals (61.75% vs. 56.52%, $Z=5.87$, $p<0.001$), particularly in computational tasks, where regressive sycophancy increased significantly (preemptive: 8.13%, in-context: 3.54%, $p<0.001$). Simple rebuttals maximized progressive sycophancy ($Z=6.59$, $p<0.001$), while citation-based rebuttals exhibited the highest regressive rates ($Z=6.59$, $p<0.001$). Sycophantic behavior showed high persistence (78.5%, 95% CI: [77.2%, 79.8%]) regardless of context or model. These findings emphasize the risks and opportunities of deploying LLMs in structured and dynamic domains, offering insights into prompt programming and model optimization for safer AI applications.",
+          "doi": "https://doi.org/10.48550/arXiv.2502.08177",
+          "selectionBucket": "cited",
+          "sourceDatabase": "arXiv",
+          "identityAliases": [
+            "doi:10.1609/aies.v8i1.36598"
+          ],
+          "citationCount": 351,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%22SycEval%3A+Evaluating+LLM+Sycophancy%22",
+          "citationCheckedAt": "2026-10-17",
+          "abstractLicense": "CC BY-NC-ND 4.0 https://creativecommons.org/licenses/by-nc-nd/4.0/；原文摘要未作实质修改，作者及原文链接见题录。"
+        },
+        {
+          "title": "Flattering to Deceive: The Impact of Sycophantic Behavior on User Trust in Large Language Model",
+          "titleZh": "在可核验的事实任务中，迎合可能损害用户信任",
+          "authors": "María Victoria Carro",
+          "year": 2024,
+          "venue": "arXiv:2412.02802",
+          "source": "arXiv",
+          "category": "AI谄媚 · 用户信任",
+          "url": "https://arxiv.org/abs/2412.02802",
+          "evidence": "摘要核验",
+          "theory": "迎合能让用户感到被认同，但若牺牲真实性，也可能降低能力和可靠性判断。研究区分自报信任与继续依赖模型的行为指标。",
+          "data": "两组参与者回答有客观正确答案的问题，一组使用专门设计为迎合的GPT，另一组使用标准ChatGPT。摘要未给样本量、任务数和人口构成，不补造。",
+          "method": "先要求使用模型，再让参与者选择是否继续使用，以自报感知及实际行动测量信任。随机分组与具体操纵未从正文确认，不标随机对照试验。",
+          "results": "与标准模型相比，迎合条件下参与者自报和行为信任均更低，即使可以核验输出准确性。该结果不同于部分人际建议研究中的偏好肯定，提示效果依赖任务和可检验标准。",
+          "limitations": "核验摘要与CC BY许可，未核验效应量和实验流程。不能由一个事实任务推断所有情境中的迎合都降低信任。Scholar实际66次，非全库第二高。",
+          "takeaway": "在可核验的事实任务中，迎合可能损害用户信任",
+          "abstractZh": "与标准模型相比，迎合条件下参与者自报和行为信任均更低，即使可以核验输出准确性。该结果不同于部分人际建议研究中的偏好肯定，提示效果依赖任务和可检验标准。",
+          "relevance": "可与昨日人际冲突研究比较：把是否存在正确答案、错误可察觉性和行为依赖同时纳入设计，解释迎合何时获得奖励、何时失去信任。",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "readingUse": "竞争假设、信任测量",
+          "researchConnection": "可与昨日人际冲突研究比较：把是否存在正确答案、错误可察觉性和行为依赖同时纳入设计，解释迎合何时获得奖励、何时失去信任。",
+          "readingPriority": "high",
+          "priorityReason": "可直接帮助界定概念、设计变量或比较竞争解释。",
+          "abstractSource": "https://arxiv.org/abs/2412.02802",
+          "abstractMode": "full",
+          "originalAbstract": "Sycophancy refers to the tendency of a large language model to align its outputs with the user's perceived preferences, beliefs, or opinions, in order to look favorable, regardless of whether those statements are factually correct. This behavior can lead to undesirable consequences, such as reinforcing discriminatory biases or amplifying misinformation. Given that sycophancy is often linked to human feedback training mechanisms, this study explores whether sycophantic tendencies negatively impact user trust in large language models or, conversely, whether users consider such behavior as favorable. To investigate this, we instructed one group of participants to answer ground-truth questions with the assistance of a GPT specifically designed to provide sycophantic responses, while another group used the standard version of ChatGPT. Initially, participants were required to use the language model, after which they were given the option to continue using it if they found it trustworthy and useful. Trust was measured through both demonstrated actions and self-reported perceptions. The findings consistently show that participants exposed to sycophantic behavior reported and exhibited lower levels of trust compared to those who interacted with the standard version of the model, despite the opportunity to verify the accuracy of the model's output.",
+          "doi": "https://doi.org/10.48550/arXiv.2412.02802",
+          "selectionBucket": "cited",
+          "sourceDatabase": "arXiv",
+          "citationCount": 66,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%28sycophancy+OR+%22value+alignment%22+OR+ingratiation+OR+%22opinion+agreement%22%29+AND+%28%22large+language+model%22+OR+chatbot+OR+%22conversational+agent%22%29",
+          "citationCheckedAt": "2026-10-17",
+          "abstractLicense": "CC BY 4.0 https://creativecommons.org/licenses/by/4.0/；原文摘要未作实质修改，作者及原文链接见题录。"
+        }
+      ]
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "sortDescription": "5篇传播学论文，实际引用1117、432、326、274、241次。",
+      "journalPriorityNote": "本轮Scholar方法主题第2至4页核验6篇未推荐传播学候选；以已核验资格与实际引用选择5篇，未补其他社会科学。排除已推荐、非期刊和名单外条目；并非穷尽全库。4篇Q1及1篇Q2来自用户上传77刊，未知JIF指标年份不猜测。",
+      "papers": [
+        {
+          "title": "Social Media, Political Expression, and Political Participation: Panel Analysis of Lagged and Concurrent Relationships",
+          "titleZh": "媒介使用如何经过公开表达连接到线上与线下参与",
+          "authors": "Homero Gil de Zúñiga; Logan Molyneux; Pei Zheng",
+          "year": 2014,
+          "venue": "Journal of Communication 64(4), 612–634",
+          "source": "Google Scholar",
+          "category": "传播学 · 面板与中介",
+          "url": "https://academic.oup.com/joc/article-abstract/64/4/612/4086027",
+          "evidence": "摘要核验",
+          "theory": "区分信息性使用与社交互动使用，并将公开表达作为连接使用和参与的潜在机制。线上与线下参与不应合并为一个结果。",
+          "data": "美国两波面板，研究社交媒体使用、政治表达及线上线下参与。机构摘要未给N、波次时间及具体题项，尚未核验。",
+          "method": "比较滞后和同期关系及直接、间接路径。没有读正文的识别假设和路径系数，不将统计中介当作已经随机识别的机制。",
+          "results": "新闻使用与线下参与有直接关联，也经表达与线上线下参与产生间接联系；社交互动使用主要经表达而非直接路径关联参与。",
+          "limitations": "出版方抓取重定向失败，采用作者所属Penn State机构摘要核验。未核验流失和稳健性；两波设计仍可能受到未观测混淆。",
+          "takeaway": "媒介使用如何经过公开表达连接到线上与线下参与",
+          "abstractZh": "新闻使用与线下参与有直接关联，也经表达与线上线下参与产生间接联系；社交互动使用主要经表达而非直接路径关联参与。",
+          "relevance": "可用于区分接触、表达与行为，不把“看过”直接等同于主动接收或传播；属于方法借鉴而非本文检验文化接收。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "中介假设、变量拆分",
+          "researchConnection": "可用于区分接触、表达与行为，不把“看过”直接等同于主动接收或传播；属于方法借鉴而非本文检验文化接收。",
+          "readingPriority": "high",
+          "priorityReason": "可直接帮助界定概念、设计变量或比较竞争解释。",
+          "abstractSource": "https://pure.psu.edu/en/publications/social-media-political-expression-and-political-participation-pan/",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "来源摘要已核验，但未确认完整转载许可；保留原创中文概述，请点击来源阅读完整原文摘要。",
+          "doi": "https://doi.org/10.1111/jcom.12103",
+          "citationCount": 1117,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%28%22causal+inference%22+OR+%22panel+data%22+OR+%22interrupted+time+series%22+OR+%22text+measurement%22%29+AND+%28communication+OR+%22digital+platforms%22+OR+%22social+media%22%29&start=20",
+          "citationCheckedAt": "2026-10-17",
+          "publicationType": "journal",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "Journal of Communication",
+          "journalEdition": "SSCI",
+          "indexSource": "用户上传JCR_JournalResults_06_2026.csv，匹配site/data/journals.json的77刊名单",
+          "jifQuartile": "Q1",
+          "quartileSource": "https://xiaoxiao-tiger.github.io/culture-research-daily/data/journals.json",
+          "indexCheckedAt": "2026-10-17"
+        },
+        {
+          "title": "Exploring Motivations for Online Privacy Protection Behavior: Insights From Panel Data",
+          "titleZh": "隐私保护不仅需要感到威胁，也需要相信措施有效",
+          "authors": "Sophie C. Boerman; Sanne Kruikemeier; Frederik J. Zuiderveen Borgesius",
+          "year": 2021,
+          "venue": "Communication Research 48(7), 953–977",
+          "source": "Google Scholar",
+          "category": "传播学 · 保护动机与面板",
+          "url": "https://journals.sagepub.com/doi/10.1177/0093650218800915",
+          "evidence": "摘要核验",
+          "theory": "保护动机理论区分威胁评价与应对评价，分别考察严重性、易感性、自我效能与反应效能，避免只以担忧解释行为。",
+          "data": "荷兰2016年4月和2017年5月两波网络调查，完整相关回答N=928；女性49%，首波平均56岁。自变量首波测量，保护行为两波测量。原文第二波招募和完成人数存在明显不一致，不引用该组数字。",
+          "method": "纵向考察四类评价与保护行为；测量清理/拒绝Cookie、浏览记录及其他防追踪实践，区别于减少自我披露。未核验回归结果全部模型和效应量，不标全文核验。",
+          "results": "人们保护隐私的频率总体不高，常用方法是处理Cookie和历史记录；威胁感高，但自我保护效能感较弱。严重性和反应效能与保护行为有关。",
+          "limitations": "已读理论和方法关键部分，结果主要核验摘要。仍是观察性研究；样本年龄偏大。最初在线2018-10-05，正式卷期2021，不混淆。",
+          "takeaway": "隐私保护不仅需要感到威胁，也需要相信措施有效",
+          "abstractZh": "人们保护隐私的频率总体不高，常用方法是处理Cookie和历史记录；威胁感高，但自我保护效能感较弱。严重性和反应效能与保护行为有关。",
+          "relevance": "对研究设计的启示是区分“觉得重要/危险”“觉得自己能做”与“觉得措施有效”，而不是仅测总体态度。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "理论拆分、面板操作化",
+          "researchConnection": "对研究设计的启示是区分“觉得重要/危险”“觉得自己能做”与“觉得措施有效”，而不是仅测总体态度。",
+          "readingPriority": "normal",
+          "priorityReason": "按方法或背景需要阅读，不将观察性关联当作因果。",
+          "abstractSource": "https://journals.sagepub.com/doi/10.1177/0093650218800915",
+          "abstractMode": "full",
+          "originalAbstract": "Personally managing and protecting online privacy has become an essential part of everyday life. This research draws on the protection motivation theory (PMT) to investigate privacy protective behavior online. A two-wave panel study (N = 928) shows that (1) people rarely to occasionally protect their online privacy and (2) people most often delete cookies and browser history or decline cookies to protect their online privacy. In addition, (3) the perceived threat is high: People perceive the collection, usage, and sharing of personal information as a severe problem to which they are susceptible. The coping appraisal is mixed: Although people do have confidence in some protective measures, they have little confidence in their own efficacy to protect their online privacy. Moreover, privacy protective behavior is affected by perceived severity and response efficacy. These findings emphasize the relevance of the PMT in the context of privacy threats, and have important implications for regulators.",
+          "doi": "https://doi.org/10.1177/0093650218800915",
+          "abstractLicense": "CC BY-NC 4.0 https://creativecommons.org/licenses/by-nc/4.0/；原文摘要未作实质修改，作者及原文链接见题录。",
+          "citationCount": 432,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%28%22causal+inference%22+OR+%22panel+data%22+OR+%22interrupted+time+series%22+OR+%22text+measurement%22%29+AND+%28communication+OR+%22digital+platforms%22+OR+%22social+media%22%29&start=10",
+          "citationCheckedAt": "2026-10-17",
+          "publicationType": "journal",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "Communication Research",
+          "journalEdition": "SSCI",
+          "indexSource": "用户上传JCR_JournalResults_06_2026.csv，匹配site/data/journals.json的77刊名单",
+          "jifQuartile": "Q1",
+          "quartileSource": "https://xiaoxiao-tiger.github.io/culture-research-daily/data/journals.json",
+          "indexCheckedAt": "2026-10-17"
+        },
+        {
+          "title": "Social Media Social Capital, Offline Social Capital, and Citizenship: Exploring Asymmetrical Social Capital Effects",
+          "titleZh": "线上社会资本不是线下社会资本的简单延长",
+          "authors": "Homero Gil de Zúñiga; Matthew Barnidge; Andrés Scherman",
+          "year": 2017,
+          "venue": "Political Communication 34(1), 44–68",
+          "source": "Google Scholar",
+          "category": "传播学 · 构念区分",
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/10584609.2016.1227000",
+          "evidence": "摘要核验",
+          "theory": "社会资本是社会关系中可动员的资源。提出社交媒体社会资本可能有不同属性和行为后果，不能把网络联系仅作为线下关系的同义测量。",
+          "data": "美国两波面板，分别测量社交媒体和面对面社会资本，以及线上线下参与。摘要未提供N、年份、构念题项与测量等值检验，不猜测。",
+          "method": "先检验两类社会资本的经验区分，再比较其与两类参与的路径。具体因子模型、路径系数及时间控制未核验。",
+          "results": "社交媒体社会资本与面对面社会资本经验上可区分，对线上线下参与呈现不同关联模式。摘要未明确每条路径的方向和大小，因此不补造“线上一定强于线下”。",
+          "limitations": "作者机构摘要核验。出版方抓取失败；模型区分构念不等于获得因果识别，也不能直接迁移到今天所有平台。",
+          "takeaway": "线上社会资本不是线下社会资本的简单延长",
+          "abstractZh": "社交媒体社会资本与面对面社会资本经验上可区分，对线上线下参与呈现不同关联模式。摘要未明确每条路径的方向和大小，因此不补造“线上一定强于线下”。",
+          "relevance": "支持在平台研究中先论证新构念与旧构念的区别，再讨论独特效果。可借鉴到“看见、理解、认同、传播”的区分。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "构念效度、变量测量",
+          "researchConnection": "支持在平台研究中先论证新构念与旧构念的区别，再讨论独特效果。可借鉴到“看见、理解、认同、传播”的区分。",
+          "readingPriority": "normal",
+          "priorityReason": "按方法或背景需要阅读，不将观察性关联当作因果。",
+          "abstractSource": "https://pure.psu.edu/en/publications/social-media-social-capital-offline-social-capital-and-citizenshi/",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "来源摘要已核验，但未确认完整转载许可；保留原创中文概述，请点击来源阅读完整原文摘要。",
+          "doi": "https://doi.org/10.1080/10584609.2016.1227000",
+          "citationCount": 326,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%28%22causal+inference%22+OR+%22panel+data%22+OR+%22interrupted+time+series%22+OR+%22text+measurement%22%29+AND+%28communication+OR+%22digital+platforms%22+OR+%22social+media%22%29&start=30",
+          "citationCheckedAt": "2026-10-17",
+          "publicationType": "journal",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "Political Communication",
+          "journalEdition": "SSCI",
+          "indexSource": "用户上传JCR_JournalResults_06_2026.csv，匹配site/data/journals.json的77刊名单",
+          "jifQuartile": "Q1",
+          "quartileSource": "https://xiaoxiao-tiger.github.io/culture-research-daily/data/journals.json",
+          "indexCheckedAt": "2026-10-17"
+        },
+        {
+          "title": "Is It Talking, Thinking, or Both? A Lagged Dependent Variable Model of Discussion Effects on Political Knowledge",
+          "titleZh": "讨论的频率与讨论中的精细思考，应当分别测量",
+          "authors": "William P. Eveland Jr.; Tiffany Thomson",
+          "year": 2006,
+          "venue": "Journal of Communication 56(3), 523–542",
+          "source": "Google Scholar",
+          "category": "传播学 · 滞后因变量模型",
+          "url": "https://academic.oup.com/joc/article-abstract/56/3/523/4102576",
+          "evidence": "摘要核验",
+          "theory": "讨论可能通过频率或认知加工促进学习。区分讨论精细化和观点采择，而不是把所有讨论相关认知合成一个指标。",
+          "data": "面板数据，含先前知识、兴趣、新闻使用、新闻精细化、讨论频率及两类认知。摘要未给样本数、调查年份和波次间隔，不补造。",
+          "method": "使用滞后因变量模型，控制既有知识与传播相关变量后比较讨论频率、精细化和观点采择。未读完整识别与误差处理，不把控制基线视为随机化。",
+          "results": "讨论频率和讨论精细化与政治知识正相关，即使控制先前知识、兴趣、新闻使用与新闻加工；观点采择与政治知识没有对应关系。",
+          "limitations": "核验出版方摘要。不同认知维度的测量质量可能影响结果；具体系数、缺失处理和稳健性尚未核验。",
+          "takeaway": "讨论的频率与讨论中的精细思考，应当分别测量",
+          "abstractZh": "讨论频率和讨论精细化与政治知识正相关，即使控制先前知识、兴趣、新闻使用与新闻加工；观点采择与政治知识没有对应关系。",
+          "relevance": "适合区分文化内容接触次数与接触后的认知加工，但这里的知识结果不等同人物认同。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "认知机制、滞后模型",
+          "researchConnection": "适合区分文化内容接触次数与接触后的认知加工，但这里的知识结果不等同人物认同。",
+          "readingPriority": "normal",
+          "priorityReason": "按方法或背景需要阅读，不将观察性关联当作因果。",
+          "abstractSource": "https://academic.oup.com/joc/article-abstract/56/3/523/4102576",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "来源摘要已核验，但未确认完整转载许可；保留原创中文概述，请点击来源阅读完整原文摘要。",
+          "doi": "https://doi.org/10.1111/j.1460-2466.2006.00299.x",
+          "citationCount": 274,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%28%22causal+inference%22+OR+%22panel+data%22+OR+%22interrupted+time+series%22+OR+%22text+measurement%22%29+AND+%28communication+OR+%22digital+platforms%22+OR+%22social+media%22%29&start=30",
+          "citationCheckedAt": "2026-10-17",
+          "publicationType": "journal",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "Journal of Communication",
+          "journalEdition": "SSCI",
+          "indexSource": "用户上传JCR_JournalResults_06_2026.csv，匹配site/data/journals.json的77刊名单",
+          "jifQuartile": "Q1",
+          "quartileSource": "https://xiaoxiao-tiger.github.io/culture-research-daily/data/journals.json",
+          "indexCheckedAt": "2026-10-17"
+        },
+        {
+          "title": "Facebook, Twitter, and Youth Engagement: A Quasi-experimental Study of Social Media Use and Protest Behavior Using Propensity Score Matching",
+          "titleZh": "同一种社交媒体参与关系，会随抗议阶段和平台变化",
+          "authors": "Sebastián Valenzuela; Arturo Arriagada; Andrés Scherman",
+          "year": 2014,
+          "venue": "International Journal of Communication 8",
+          "source": "Google Scholar",
+          "category": "传播学 · 倾向得分匹配",
+          "url": "https://ijoc.org/index.php/ijoc/article/view/2022",
+          "evidence": "摘要核验",
+          "theory": "结合抗议周期与强弱关系网络结构，考察平台使用与行为的关联是否随情境改变，而非假设媒介动员效应恒定。",
+          "data": "智利2011年学生示威之前、期间和之后的重复横截面青年调查。并非追踪同一人的面板；N、各轮日期与抽样权重未核验。",
+          "method": "倾向得分匹配比较平台使用者与可观测特征相似的非使用者，再比较不同时期。匹配只能平衡已测混淆，不消除不可观测选择；具体卡尺和共同支持未核验。",
+          "results": "Facebook和Twitter均与抗议可能性有显著关系，但大小随阶段和平台变化，作者用抗议周期及平台网络结构解释这些差异。摘要未给数值，不虚构平均处理效应。",
+          "limitations": "官方摘要核验，未读正文。论文标题称准实验，不意味着使用完全外生；时间变化还可能有同期事件混淆。",
+          "takeaway": "同一种社交媒体参与关系，会随抗议阶段和平台变化",
+          "abstractZh": "Facebook和Twitter均与抗议可能性有显著关系，但大小随阶段和平台变化，作者用抗议周期及平台网络结构解释这些差异。摘要未给数值，不虚构平均处理效应。",
+          "relevance": "有助于解释观察数据中的匹配法能做什么、不能做什么，并提醒研究媒介事件时检查前中后阶段。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "准实验边界、平台异质性",
+          "researchConnection": "有助于解释观察数据中的匹配法能做什么、不能做什么，并提醒研究媒介事件时检查前中后阶段。",
+          "readingPriority": "high",
+          "priorityReason": "可直接帮助界定概念、设计变量或比较竞争解释。",
+          "abstractSource": "https://ijoc.org/index.php/ijoc/article/view/2022",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "来源摘要已核验，但未确认完整转载许可；保留原创中文概述，请点击来源阅读完整原文摘要。",
+          "citationCount": 241,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%28%22causal+inference%22+OR+%22panel+data%22+OR+%22interrupted+time+series%22+OR+%22text+measurement%22%29+AND+%28communication+OR+%22digital+platforms%22+OR+%22social+media%22%29&start=20",
+          "citationCheckedAt": "2026-10-17",
+          "publicationType": "journal",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "International Journal of Communication",
+          "journalEdition": "SSCI",
+          "indexSource": "用户上传JCR_JournalResults_06_2026.csv，匹配site/data/journals.json的77刊名单",
+          "jifQuartile": "Q2",
+          "quartileSource": "https://xiaoxiao-tiger.github.io/culture-research-daily/data/journals.json",
+          "indexCheckedAt": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "target": 3,
+      "sortBy": "issue",
+      "unit": "issue",
+      "sortDescription": "今天轮到Human Communication Research；当前Advance Access完整一期共3篇，不按固定篇数截断。",
+      "collection": {
+        "journalId": "hcr",
+        "journalName": "Human Communication Research",
+        "kind": "online-first",
+        "title": "Human Communication Research · Advance Access · 2026-10-17在线集合",
+        "url": "https://academic.oup.com/hcr/advance-articles",
+        "checkedAt": "2026-10-17",
+        "complete": true,
+        "toc": [
+          {
+            "title": "Technology-mediated communication among migrant families separated by borders: understanding the tensions of relational maintenance",
+            "url": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag003/8742091",
+            "articleType": "Research Article",
+            "status": "new"
+          },
+          {
+            "title": "The invisible labor of assimilation by individuals with stigmatized identities: a qualitative study of autistic workers’ organizational socialization",
+            "url": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag002/8665593",
+            "articleType": "Research Article",
+            "status": "new"
+          },
+          {
+            "title": "Relationship uncertainty and person-specific dynamics of partner rumination and relational turbulence in day-to-day life",
+            "url": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag001/8442392",
+            "articleType": "Research Article",
+            "status": "new"
+          }
+        ],
+        "scopeNote": "官方当前在线优先列表3篇，无分页；侧栏热门文章不属于此目录，不混入。首次快照完整纳入。"
+      },
+      "papers": [
+        {
+          "title": "Technology-mediated communication among migrant families separated by borders: understanding the tensions of relational maintenance",
+          "titleZh": "跨境家庭的数字联系，同时维系关系并制造情感成本",
+          "authors": "Hyojin Lee; Jennifer A. Kam; Nancy Molina-Rogers; Ricardo Delgado Solis; Amy Gonzales",
+          "year": 2026,
+          "venue": "Human Communication Research · Advance Articles",
+          "source": "Human Communication Research",
+          "category": "整期通读 · 家庭与跨境传播",
+          "url": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag003/8742091",
+          "evidence": "全文核验",
+          "theory": "提出关系维系中的张力：同一沟通行为可以同时产生好处与成本，不一定来自自主与连接等相反需求。把文化规范、结构障碍与家庭角色放到关系维系过程内部。",
+          "data": "27个家庭三元组，共81人，各自访谈父母及9–17岁子女；家庭来自墨西哥和危地马拉，一方移民美国。2023年6–12月招募；30–60分钟西班牙语电话访谈，转录、翻译并复核。",
+          "method": "采用解释性、实践导向迭代分析，ATLAS.ti开放编码、二级编码与轴心编码。比较同一家庭三人叙述及家庭间角色、法律身份、分离时间差异；第17家庭达到主题饱和，仍编码全部27组。",
+          "results": "日常联系带来安慰，也在中断时制造焦虑；实时互动增加共在，也放大分离感；选择披露可减少当下担忧，却可能拉远距离。父亲的积极未来叙事与孩子的技术中介工作还承担不均等成本。",
+          "limitations": "已读正文理论、样本、编码与主要发现。目的性和滚雪球样本不能代表所有跨境家庭；没有识别技术使用的净因果效应。多角色三角核验是可信度策略，不等于统计代表性。",
+          "takeaway": "跨境家庭的数字联系，同时维系关系并制造情感成本",
+          "abstractZh": "日常联系带来安慰，也在中断时制造焦虑；实时互动增加共在，也放大分离感；选择披露可减少当下担忧，却可能拉远距离。父亲的积极未来叙事与孩子的技术中介工作还承担不均等成本。",
+          "relevance": "可借鉴把文化规范嵌入互动条件以及家庭内、家庭间两层比较的方式；本文不是跨文化神话人物接收研究。",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "readingUse": "理论扩展、三元访谈设计",
+          "researchConnection": "可借鉴把文化规范嵌入互动条件以及家庭内、家庭间两层比较的方式；本文不是跨文化神话人物接收研究。",
+          "readingPriority": "normal",
+          "priorityReason": "按方法或背景需要阅读，不将观察性关联当作因果。",
+          "abstractSource": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag003/8742091",
+          "abstractMode": "full",
+          "originalAbstract": "This study examined how highly under-resourced Latina/o/x/e families used technologically mediated communication to maintain their relationship when experiencing migration-based family separation. Drawing on relational maintenance literature, semi-structured interviews were conducted with 27 family triads, each including a father, mother, and child (children between 9 and 17 years old). The findings extend past research on relational maintenance by elucidating how structural barriers and culture contribute to tensions in relational maintenance and by providing within-family and between-family triangulated perspectives. Across families, three recurring relational maintenance strategies were consistently tensional: (a) sustaining routine contact, (b) prioritizing real-time interaction, and (c) practicing selective disclosure. The findings from within-family and between-family analyses showed how relational maintenance, which was primarily mediated by technology, became highly tensional under structural barriers and cultural norms and had unevenly distributed costs for family members.",
+          "doi": "https://doi.org/10.1093/hcr/hqag003",
+          "abstractLicense": "CC BY 4.0 https://creativecommons.org/licenses/by/4.0/；原文摘要未作实质修改，作者及原文链接见题录。",
+          "publicationDate": "2026-07-26",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag003/8742091"
+        },
+        {
+          "title": "The invisible labor of assimilation by individuals with stigmatized identities: a qualitative study of autistic workers’ organizational socialization",
+          "titleZh": "“融入”背后的隐形劳动：自闭症劳动者如何应对组织常态规范",
+          "authors": "Young Ji Kim; Margot Plunkett",
+          "year": 2026,
+          "venue": "Human Communication Research · Advance Articles",
+          "source": "Human Communication Research",
+          "category": "整期通读 · 组织传播与神经多样性",
+          "url": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag002/8665593",
+          "evidence": "全文核验",
+          "theory": "提出同化劳动，指带有污名身份者为了满足组织的默认规范，持续调节身体、感官、沟通与认知的隐形努力。不同于只管理情感展示的情绪劳动，也不同于协调任务的衔接劳动。",
+          "data": "目的性招募31名有工作经验的成年自闭症人士，包括医学诊断和自我认同；提供面对面、Zoom视频/音频/文字及邮件选择。口头访谈均长78分钟，28–101分钟；729页单倍行距资料，12名自闭症成人参与咨询或研究工作。",
+          "method": "实践导向迭代质性分析；先开放编码20%资料，形成550个一级码，再归并为结构条件与个体实践两类理论范畴。研究者反思神经典型视角，通过多种访谈模式减少研究本身的沟通负担。",
+          "results": "结构压力包括污名贬低、默认的神经典型社交规范、缺乏解释资源的不可预测环境及感官规范。应对包括环境扫描、准备与排练、伪装模仿和协商便利措施，显示“正常参与”本身需要额外劳动。",
+          "limitations": "已读正文概念、方法及主要发现。目的性样本和单次叙述不能估计劳动的总体发生率；医学诊断与自我认同并存，应保留其纳入理由。不能把组织适应简单类比为民族文化同化。",
+          "takeaway": "“融入”背后的隐形劳动：自闭症劳动者如何应对组织常态规范",
+          "abstractZh": "结构压力包括污名贬低、默认的神经典型社交规范、缺乏解释资源的不可预测环境及感官规范。应对包括环境扫描、准备与排练、伪装模仿和协商便利措施，显示“正常参与”本身需要额外劳动。",
+          "relevance": "最值得借鉴的是如何将已有概念不能覆盖的经验差异建构为新概念，以及让受访者选择沟通模式。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "质性概念建构、包容性研究设计",
+          "researchConnection": "最值得借鉴的是如何将已有概念不能覆盖的经验差异建构为新概念，以及让受访者选择沟通模式。",
+          "readingPriority": "high",
+          "priorityReason": "可直接帮助界定概念、设计变量或比较竞争解释。",
+          "abstractSource": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag002/8665593",
+          "abstractMode": "full",
+          "originalAbstract": "Organizational socialization is challenging for anyone, but especially for individuals with stigmatized identities, such as autistic people. Although the modern workforce is increasingly neurodiverse, autistic individuals continue to face persistent socialization challenges rooted in neuronormative expectations embedded in the social, cognitive, and sensorial environments of the workplace, which often conflict with autistic ways of relating, thinking, and feeling in organizations. Drawing on literature on organizational socialization and assimilation, stigma, autism, and neurodiversity, and interviews with 31 autistic workers, we theorize assimilation labor: the deliberate, sustained, and often invisible efforts individuals with stigmatized identities expend to adapt to normative expectations. We identify the structural conditions that give rise to assimilation labor, describe the individual practices through which it is enacted, and discuss theoretical and practical implications for understanding and recognizing the disproportionate burdens stigmatized individuals face “behind the scenes” during organizational socialization.",
+          "doi": "https://doi.org/10.1093/hcr/hqag002",
+          "abstractLicense": "CC BY 4.0 https://creativecommons.org/licenses/by/4.0/；原文摘要未作实质修改，作者及原文链接见题录。",
+          "publicationDate": "2026-04-30",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag002/8665593"
+        },
+        {
+          "title": "Relationship uncertainty and person-specific dynamics of partner rumination and relational turbulence in day-to-day life",
+          "titleZh": "关系中的反刍与动荡：把个体内变化和个体差异分开",
+          "authors": "Alan K. Goodboy; Megan R. Dillow; San Bolkan; Rebekah M. Chiasson; Megan A. Vendemia",
+          "year": 2026,
+          "venue": "Human Communication Research · Advance Articles",
+          "source": "Human Communication Research",
+          "category": "整期通读 · 日记与动态模型",
+          "url": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag001/8442392",
+          "evidence": "摘要核验",
+          "theory": "关系动荡理论不仅关注平均差异，也关注每日反刍与动荡如何互相延续，区分水平、惯性与波动性。",
+          "data": "恋爱关系中的参与者N=202；前测关系不确定性，连续30天测每日反刍和关系动荡，后测合作计划。不能未经正文确认就解释为202对伴侣。",
+          "method": "带随机效应的动态结构方程模型，区分“某人比自己平时更多”的日内偏离和不同人的月度平均、惯性及波动。模型具体时间设定、缺失日处理未核验。",
+          "results": "典型参与者在反刍高于平时的当天，动荡也更高；某天动荡更高，次日反刍更多。月均反刍、反刍惯性和波动与月均动荡有关；动荡均值进一步预测后续合作计划。",
+          "limitations": "仅公开摘要可核验，全文需访问权限，未尝试绕过。滞后预测不自动等于因果；样本依赖结构及随机效应分布未核验。",
+          "takeaway": "关系中的反刍与动荡：把个体内变化和个体差异分开",
+          "abstractZh": "典型参与者在反刍高于平时的当天，动荡也更高；某天动荡更高，次日反刍更多。月均反刍、反刍惯性和波动与月均动荡有关；动荡均值进一步预测后续合作计划。",
+          "relevance": "适合学习区分个体内变化和个体间差异，但不要把伴侣反刍机制直接套用到平台受众。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "日记设计、个体内外分解",
+          "researchConnection": "适合学习区分个体内变化和个体间差异，但不要把伴侣反刍机制直接套用到平台受众。",
+          "readingPriority": "normal",
+          "priorityReason": "按方法或背景需要阅读，不将观察性关联当作因果。",
+          "abstractSource": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag001/8442392",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "来源摘要已核验，但未确认完整转载许可；保留原创中文概述，请点击来源阅读完整原文摘要。",
+          "doi": "https://doi.org/10.1093/hcr/hqag001",
+          "publicationDate": "2026-01-27",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://academic.oup.com/hcr/advance-article/doi/10.1093/hcr/hqag001/8442392"
+        }
+      ]
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "nature",
+      "sortDescription": "今天轮到Nature，直接查看最新在线目录；本篇涉及保护政策目标但主要为生态空间估算，学科归属待你判断。",
+      "papers": [
+        {
+          "title": "Global conservation area coverage substantially exceeds current estimates",
+          "titleZh": "保护区覆盖可能已达26.81%，但面积达标不等于治理有效",
+          "authors": "Helen M. K. O’Neill; Joe Beeken; Heather C. Bingham; Rachel E. Golden Kroner; Yifan He; Jessica L. Stewart; 等36位作者（完整名单见原文）",
+          "year": 2026,
+          "venue": "Nature · 2026-10-14在线发表",
+          "source": "Nature",
+          "category": "综合顶刊 · 学科归属待判断",
+          "url": "https://www.nature.com/articles/s41586-026-11157-4",
+          "evidence": "摘要核验",
+          "theory": "以30×30全球政策目标为背景，区分登记的保护面积、实际覆盖、生态代表性和公平有效治理。一个容易计量的面积目标可能遮蔽实施质量。",
+          "data": "25个国家和地区的代表性样本，按生态及社会经济10因素、89特征选择约全球陆地10%的样区；整合全球、国家资料及专家提供的保护地边界。底层全球边界资料取自2022年5月，并非全部2026实时普查。",
+          "method": "用Marxan模拟退火选择代表性样区，两个阶段各1000次；在100×100公里样区估算覆盖并外推全球，结合国家/地方未纳入全球登记的保护地。这里是空间估算，不是保护政策的因果评估。",
+          "results": "外推陆地保护面积为26.81%，高于目前报告的18.5%，更接近2030年30%目标。但新增面积未充分弥补生态代表性缺口，单靠面积达标不能保证阻止生物多样性下降。",
+          "limitations": "学科归属待用户判断：核心是生态空间估算，但涉及政府目标、登记可见性、公平治理和社区保护。已读方法与摘要，尚未完整核验全部结果和补充分析，因此标摘要核验；部分敏感边界数据不公开。",
+          "takeaway": "保护区覆盖可能已达26.81%，但面积达标不等于治理有效",
+          "abstractZh": "外推陆地保护面积为26.81%，高于目前报告的18.5%，更接近2030年30%目标。但新增面积未充分弥补生态代表性缺口，单靠面积达标不能保证阻止生物多样性下降。",
+          "relevance": "对社会科学的可能价值在于区分“指标达标”与“实质结果”，以及全球登记遗漏地方实践；不是传播学研究，不强行关联个人论文。",
+          "topicIds": [
+            "methods"
+          ],
+          "readingUse": "指标有效性、政策评估背景",
+          "researchConnection": "对社会科学的可能价值在于区分“指标达标”与“实质结果”，以及全球登记遗漏地方实践；不是传播学研究，不强行关联个人论文。",
+          "readingPriority": "reference",
+          "priorityReason": "完整一期通读，扩展阅读视野，不强行关联个人课题。",
+          "abstractSource": "https://www.nature.com/articles/s41586-026-11157-4",
+          "abstractMode": "full",
+          "originalAbstract": "Conservation areas are critical for tackling the global environmental crisis¹. These sites are reported as covering 18.5% of the terrestrial realm² and governments have committed through Global Biodiversity Framework Target 3 to increase this to at least 30% by 2030 (ref. 3). There are concerns that this potential near-doubling of conservation area coverage will negatively affect vulnerable people and over-stretch conservation resources⁴. However, nationally available datasets indicate that more conservation areas exist than are reflected in global figures⁵,⁶,⁷. We evaluated progress towards the area component of Target 3 using a globally representative sample across 25 countries and territories that incorporated these national datasets⁸. Extrapolating from this sample, we show that conservation areas likely already cover 26.81% of the terrestrial realm. We may be much closer to achieving 30% terrestrial coverage than previously thought. However, we also show that the extra land does not substantially address gaps in ecological representativeness, indicating that solely meeting the area component of Target 3 will do little to solve continuing global biodiversity loss. More focus and resources are needed to achieve the other components of the target, using a more strategic and inclusive approach to fill present gaps and produce equitable and effective conservation area networks.",
+          "doi": "https://doi.org/10.1038/s41586-026-11157-4",
+          "publicationDate": "2026-10-14",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://www.nature.com/articles/s41586-026-11157-4",
+          "socialScienceAssessment": "uncertain",
+          "socialScienceReason": "研究政府承诺的30×30目标、保护地登记及公平有效治理，但主要分析对象和方法是生态空间覆盖，属于可能相关的政策交叉研究，交由用户判断。",
+          "abstractLicense": "CC BY-NC-ND 4.0 https://creativecommons.org/licenses/by-nc-nd/4.0/；原文摘要未作实质修改，作者及原文链接见题录。"
+        }
+      ]
+    }
+  ],
+  "coreTracking": [],
+  "coreTrackingNote": "core-papers.json无已提交请求，等待用户提交；本地私人收藏未冒称已同步。",
+  "shortfallReason": "四栏目均按当日实际目标完成：5+5+HCR整期3+Nature1，共14篇，并非固定15篇。新近候选中SSRN扩展至2026-07-08；NBER仅月精度，和10月13日之间无法确定严格先后。"
+}

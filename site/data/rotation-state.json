@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-17",
   "communication": {
     "joc": {
       "lastCheckedAt": "2026-10-16",
@@ -26,6 +26,27 @@
         }
       ],
       "completedIssues": []
+    },
+    "hcr": {
+      "lastCheckedAt": "2026-10-17",
+      "onlineSnapshots": [
+        {
+          "checkedAt": "2026-10-17",
+          "url": "https://academic.oup.com/hcr/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/hcr/hqag003",
+            "https://doi.org/10.1093/hcr/hqag002",
+            "https://doi.org/10.1093/hcr/hqag001"
+          ],
+          "firstOnlineDates": [
+            "2026-07-26",
+            "2026-04-30",
+            "2026-01-27"
+          ]
+        }
+      ],
+      "completedIssues": []
     }
   },
   "general": {
@@ -34,6 +55,14 @@
       "status": "blocked",
       "reason": "Cloudflare challenge persisted after one normal refresh; no eligible latest paper verified.",
       "lastCompletedAt": null
+    },
+    "nature": {
+      "lastAttemptAt": "2026-10-17",
+      "status": "completed",
+      "lastCompletedAt": "2026-10-17",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11157-4",
+      "publicationDate": "2026-10-14",
+      "socialScienceAssessment": "uncertain"
     }
   }
 }
