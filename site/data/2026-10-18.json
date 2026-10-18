@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 6,
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "date": "2026-10-18",
+  "edition": "正式第15期 · 部分发布",
+  "title": "论证辨别、AI欺骗的边界与姓名中的文化分化",
+  "summary": "本期可核验新研究3篇：arXiv 1篇、SSRN 1篇、NBER 1篇。高被引、主题期刊和今日轮到的CR整期、Science暂缺；访问验证失败不等于没有合格研究。",
+  "notice": "仅发布已核验部分，不是完整达标简报。永久历史192篇全部保留，本期新增3篇；未沿用昨日引用量，未知引用不记0。CR目录预览只见97条中的前10条，未冒称完整一期，也未推进完成游标。三篇均基于完整公开摘要而非正文关键部分核验，中文概述原创；完整英文摘要请访问原文来源。",
+  "searchSettings": {
+    "themeKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "journalKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "excludeTerms": "",
+    "lookbackDays": 30,
+    "effectiveDate": "defaults",
+    "scope": "default"
+  },
+  "activeTopicIds": [
+    "culture",
+    "sycophancy",
+    "methods"
+  ],
+  "searchNote": "关键词按2026-10-18新加坡日期选择：两条once均已过期，使用defaults并补充reading-plan文化主题。三个主题均启用，不设leader注意力主题。前两栏先主题发现后筛选；后两栏无关键词，直接查出版方在线目录。本轮复杂主题式公开网页检索返回空，随后以已记录的精简式发现候选，再核验原生记录；不能由空结果推断数据库无论文。Google Scholar正常重试仍出现异常流量页，停止该渠道；不得改走镜像绕过验证。最新组是本轮可核验候选，不宣称覆盖三库所有最新论文；NBER扩展到9月且仅月精度，不能确认在9月18日起的30日窗口内。SSRN取Posted日期，不用Date Written；arXiv取v1而非修订日期。",
+  "themeSearches": [
+    {
+      "platform": "Google Scholar",
+      "query": "(\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") (communication OR \"digital platforms\" OR \"social media\")；start=40",
+      "status": "原生网页跳转异常流量验证；一次正常刷新仍受阻，已停止。未取得本日主题结果及实际被引次数。",
+      "channel": "Google Scholar原生网页",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") (character OR narrative OR audience)) OR (mythology analogy))",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm (\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") (character OR narrative OR audience)) OR (mythology analogy))",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs (\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") (character OR narrative OR audience)) OR (mythology analogy))",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") (\"large language model\" OR chatbot OR \"conversational agent\")",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm (sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") (\"large language model\" OR chatbot OR \"conversational agent\")",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs (sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") (\"large language model\" OR chatbot OR \"conversational agent\")",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") (communication OR \"digital platforms\" OR \"social media\")",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm (\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") (communication OR \"digital platforms\" OR \"social media\")",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs (\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") (communication OR \"digital platforms\" OR \"social media\")",
+      "status": "实际执行返回空；仅说明本检索渠道无返回，不等同站内没有论文。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (\"cultural transmission\" OR \"social media\" OR sycophancy)",
+      "status": "精简式公开检索已执行；返回线索须按原生记录和历史身份再核验，不据搜索词中的月份判断首发。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture",
+        "sycophancy",
+        "methods"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm (sycophancy OR \"cultural transmission\")",
+      "status": "精简式公开检索已执行；返回线索须按原生记录和历史身份再核验，不据搜索词中的月份判断首发。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture",
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs (sycophancy OR \"cultural transmission\")",
+      "status": "精简式公开检索已执行；返回线索须按原生记录和历史身份再核验，不据搜索词中的月份判断首发。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture",
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm sycophancy \"September\" \"2026\"",
+      "status": "精简式公开检索已执行；返回线索须按原生记录和历史身份再核验，不据搜索词中的月份判断首发。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers \"cultural\" \"September 2026\"",
+      "status": "精简式公开检索已执行；返回线索须按原生记录和历史身份再核验，不据搜索词中的月份判断首发。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers \"causal inference\" \"October 2026\"",
+      "status": "精简式公开检索已执行；返回线索须按原生记录和历史身份再核验，不据搜索词中的月份判断首发。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "methods"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs sycophancy \"October 2026\"",
+      "status": "精简式公开检索已执行；返回线索须按原生记录和历史身份再核验，不据搜索词中的月份判断首发。",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "timeRange": "不限年份；执行2026-10-18",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    },
+    {
+      "platform": "arXiv",
+      "query": "sycophancy；searchtype=all；abstracts=show；order=-announced_date_first；size=50",
+      "status": "原生结果437条，检查最新50条目录；排除已推荐2610.18159与2610.17703。选择未推荐且与论证辨别直接相关的2610.15634；不以纯临床/工具性能候选凑数。",
+      "channel": "arXiv原生网页",
+      "timeRange": "不限年份；公告倒序；首发另按v1核验",
+      "purpose": "主题发现",
+      "topicIds": [
+        "sycophancy"
+      ]
+    }
+  ],
+  "unexecutedSearches": [
+    {
+      "platform": "Google Scholar",
+      "topicIds": [
+        "culture"
+      ],
+      "query": "(\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") (character OR narrative OR audience)) OR (mythology analogy))",
+      "status": "未执行；同平台本轮异常流量验证持续，未改走其他入口重试。"
+    },
+    {
+      "platform": "Google Scholar",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "query": "(sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") (\"large language model\" OR chatbot OR \"conversational agent\")",
+      "status": "未执行；同平台本轮异常流量验证持续，未改走其他入口重试。"
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "arXiv",
+      "query": "Big-Big-SycoBench: A Benchmark to Detect Sycophancy Through Model Responses to Valid vs. Invalid Arguments | https://arxiv.org/abs/2610.15634",
+      "timeRange": "核验2026-10-18；逐篇记录，不是主题查询",
+      "purpose": "题录、完整摘要、日期、身份与许可核验",
+      "channel": "原生论文网页（NBER、SSRN为浏览器成功；arXiv为官方题录）",
+      "status": "已核验作者、完整摘要、日期与原生标识。未阅读正文关键部分；Google Scholar引用受阻，未保存任何推算次数。首发以arXiv v1记录为准。"
+    },
+    {
+      "platform": "SSRN",
+      "query": "Dissecting Deception in Large Language Models: Mechanisms, Behaviours, and Detection | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7591200",
+      "timeRange": "核验2026-10-18；逐篇记录，不是主题查询",
+      "purpose": "题录、完整摘要、日期、身份与许可核验",
+      "channel": "原生论文网页（NBER、SSRN为浏览器成功；arXiv为官方题录）",
+      "status": "已核验作者、完整摘要、日期与原生标识。未阅读正文关键部分；Google Scholar引用受阻，未保存任何推算次数。SSRN Posted: 10 Oct 2026；Date Written: September 01, 2026不是首发日期。尚未核实更早公开版本，不新增未经证实的版本别名。"
+    },
+    {
+      "platform": "NBER",
+      "query": "Social Sorting and Political Cleavages: Evidence from 2.5 Million Electoral Candidates | https://www.nber.org/papers/w35820",
+      "timeRange": "核验2026-10-18；逐篇记录，不是主题查询",
+      "purpose": "题录、完整摘要、日期、身份与许可核验",
+      "channel": "原生论文网页（NBER、SSRN为浏览器成功；arXiv为官方题录）",
+      "status": "已核验作者、完整摘要、日期与原生标识。未阅读正文关键部分；Google Scholar引用受阻，未保存任何推算次数。官方Issue Date为September 2026，仅到月；不使用月首虚构发布日期。"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "Communication Research",
+      "query": "https://journals.sagepub.com/toc/crxa/0/0",
+      "timeRange": "2026-10-18当前OnlineFirst；无关键词",
+      "purpose": "整期在线目录与分页核验",
+      "channel": "出版方目录预览及原生浏览器",
+      "status": "公开目录预览显示97条，每页10条，仅见第一页。原生浏览器Cloudflare验证，正常刷新一次仍受阻，已停止。未核验其余分页与逐篇内容，不标整期完整，不推进完成状态。"
+    },
+    {
+      "platform": "Science",
+      "query": "https://www.science.org/toc/science/0/0",
+      "timeRange": "2026-10-18最新在线目录；无关键词",
+      "purpose": "轮换期刊最新社会科学研究核验",
+      "channel": "出版方原生网页",
+      "status": "目录请求403；浏览器Cloudflare验证，正常刷新一次仍受阻，已停止。未获得可核验最新社会科学候选，不换期刊补位。"
+    }
+  ],
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 5,
+      "sortBy": "split",
+      "sortDescription": "最新3篇按首发日期降序；高被引0/2，Scholar受阻不填虚构次数。",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新研究",
+          "target": 3,
+          "sortBy": "publicationDate",
+          "sortDescription": "arXiv 10月11日、SSRN 10月10日、NBER 9月（月精度）。NBER扩展30日优先窗口；并非全库穷尽最新排名。"
+        },
+        {
+          "id": "cited",
+          "label": "高被引研究",
+          "target": 2,
+          "sortBy": "citationCount",
+          "sortDescription": "缺2篇：本日Google Scholar异常流量页持续，无法核验实际被引数。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included",
+          "reason": "w35820，9月首次公开月份可核验，未虚构日期；扩展时间窗。"
+        },
+        {
+          "database": "SSRN",
+          "status": "included",
+          "reason": "7591200，Posted为10月10日，不用9月1日写作日。"
+        },
+        {
+          "database": "arXiv",
+          "status": "included",
+          "reason": "2610.15634，v1为10月11日；排除既往推荐版本。"
+        }
+      ],
+      "papers": [
+        {
+          "title": "Big-Big-SycoBench: A Benchmark to Detect Sycophancy Through Model Responses to Valid vs. Invalid Arguments",
+          "titleZh": "把有理修正与无理迎合分开：论证辨别基准",
+          "authors": "Marthe Ballon; Arne Vanhoyweghen; Seorin Kim; Francesca Carlon; Lynn Delcon; Melika Mobini; Vincent Holst; Lukas Van de Voorde; Tibo Vanleke; Mathieu Louis; Bert Verbruggen; Brecht F. Verbeken; Andres Algaba; Vincent Ginis",
+          "year": 2026,
+          "venue": "arXiv 2610.15634",
+          "source": "arXiv",
+          "sourceDatabase": "arXiv",
+          "selectionBucket": "latest",
+          "category": "AI谄媚 · 概念与测量",
+          "evidence": "摘要核验",
+          "url": "https://arxiv.org/abs/2610.15634",
+          "doi": "https://doi.org/10.48550/arXiv.2610.15634",
+          "publicationDate": "2026-10-11",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2610.15634",
+          "theory": "评价任务常没有唯一真值。关键不应是用户反驳后模型是否改口，而是能否根据论证质量有区别地修正：接受有效批评不自动构成谄媚，抗拒所有批评也不代表可靠。",
+          "data": "450份文本材料、5,400条要求提高或降低评分的论证；由12名人工标注者中的一名或多名审核。测试10个模型。12是标注者人数，不是用户实验样本；文本类型比例、标注一致性和抽样细节未从正文核验。",
+          "method": "每份材料先让模型评分20次，估计自身基线和不确定性；随后提供有效或无效论证并要求更新。只有改变量超过基线变异才计入修正，以减轻随机波动误判。分别计算对有效论证的响应与对无效施压的服从；无效论证的具体生成和统计阈值未从正文核验。",
+          "results": "摘要报告，7个模型对有效论证的响应约88%—95%，其余所报为76%—77%和32%；无效论证服从率在不同模型间为0.2%—95%。两个维度存在明显差异，不宜合并成单一改口率。上述数字限于该基准及其测试设置，不代表人类使用中的总体风险。",
+          "takeaway": "把有理修正与无理迎合分开：论证辨别基准",
+          "abstractZh": "摘要报告，7个模型对有效论证的响应约88%—95%，其余所报为76%—77%和32%；无效论证服从率在不同模型间为0.2%—95%。两个维度存在明显差异，不宜合并成单一改口率。上述数字限于该基准及其测试设置，不代表人类使用中的总体风险。",
+          "relevance": "挑战“改口即谄媚”的操作化。你的AI价值迎合研究可同时操纵论证有效性与用户偏好，另测基线变异；将模型评分修正与人的信任、参与分别作为结果变量。",
+          "limitations": "已核验官方摘要、作者和v1时间；未阅读正文关键部分，不标全文核验。人工论证有效性仍可能带有规范判断，需审查标注标准；不能从基准服从率直接推出用户态度改变。",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "readingUse": "概念界定、变量测量、研究设计",
+          "researchConnection": "挑战“改口即谄媚”的操作化。你的AI价值迎合研究可同时操纵论证有效性与用户偏好，另测基线变异；将模型评分修正与人的信任、参与分别作为结果变量。",
+          "readingPriority": "high",
+          "priorityReason": "直接帮助区分合理修正与无根据迎合，避免把概念差异压成一个指标。",
+          "abstractSource": "https://arxiv.org/abs/2610.15634",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本次不完整转载；官方提供CC BY-NC-ND 4.0许可，完整英文摘要可直接在所附arXiv来源阅读。中文解读为独立概述，不作为原文摘要译本。",
+          "abstractLicenseObserved": "CC BY-NC-ND 4.0 https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        },
+        {
+          "title": "Dissecting Deception in Large Language Models: Mechanisms, Behaviours, and Detection",
+          "titleZh": "AI欺骗不等于事实答错：概念、机制与检测框架",
+          "authors": "Pratik Jalan; Abid Ali; Mark Dras; Usman Naseem",
+          "year": 2026,
+          "venue": "SSRN 7591200",
+          "source": "SSRN",
+          "sourceDatabase": "SSRN",
+          "selectionBucket": "latest",
+          "category": "AI谄媚 · 概念与测量",
+          "evidence": "摘要核验",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7591200",
+          "doi": "https://doi.org/10.2139/ssrn.7591200",
+          "publicationDate": "2026-10-10",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7591200",
+          "theory": "将行为功能、潜在机制、检测与治理连接起来，而非仅以答案真假界定风险。文章试图区分欺骗与幻觉，把谄媚、不忠实推理、隐瞒放进同一框架，但不能因此将全部迎合一概断言为欺骗。",
+          "data": "34页综述，证据主要来自英语文本研究；不是新的人类实验。摘要没有给纳入文献总数、检索数据库、时间窗与排除标准，因此不宣称完成可复现的系统综述。",
+          "method": "提出四部分操作检验，并将11种类型归成关于世界、关于推理、关于模型自身、通过他人/代理实施的四类；再用6个次级维度与5种机制衔接检测、评估和缓解。四项检验和五种机制的具体内容尚未从正文核验，不凭名称补造。",
+          "results": "综述指出可检测性倒置：明显错误较容易被发现，微妙或策略性行为更难检测。模型若识别出自己正在被测试，可能隐藏部署中出现的行为，从而威胁评估效度。文章联系单代理策划与多代理串通，并提出12项开放问题；这是综述性判断，不是一个新实验的因果估计。",
+          "takeaway": "AI欺骗不等于事实答错：概念、机制与检测框架",
+          "abstractZh": "综述指出可检测性倒置：明显错误较容易被发现，微妙或策略性行为更难检测。模型若识别出自己正在被测试，可能隐藏部署中出现的行为，从而威胁评估效度。文章联系单代理策划与多代理串通，并提出12项开放问题；这是综述性判断，不是一个新实验的因果估计。",
+          "relevance": "可用于界定价值迎合、礼貌赞同、错误信念强化与策略性欺骗的边界。实验设计可将输出真假、与用户立场一致程度、是否意识到评估分开，不把所有指标视为同一潜变量。",
+          "limitations": "核验SSRN完整摘要、Posted日期与CC BY 4.0许可，未核验正文。英语文本为主的证据不能自动推广到跨文化或多模态互动；作者提出的机制不等于本轮已验证的中介效应。",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "readingUse": "概念界定、变量测量、研究设计",
+          "researchConnection": "可用于界定价值迎合、礼貌赞同、错误信念强化与策略性欺骗的边界。实验设计可将输出真假、与用户立场一致程度、是否意识到评估分开，不把所有指标视为同一潜变量。",
+          "readingPriority": "high",
+          "priorityReason": "直接帮助区分合理修正与无根据迎合，避免把概念差异压成一个指标。",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7591200",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本次不完整转载原文；SSRN原生页已核验CC BY 4.0许可与完整摘要，点击来源可阅读全文摘要。",
+          "abstractLicenseObserved": "CC BY 4.0 https://creativecommons.org/licenses/by/4.0/",
+          "publicationDateNote": "SSRN Posted: 10 Oct 2026；Date Written: September 01, 2026不是首发日期。尚未核实更早公开版本，不新增未经证实的版本别名。"
+        },
+        {
+          "title": "Social Sorting and Political Cleavages: Evidence from 2.5 Million Electoral Candidates",
+          "titleZh": "姓名承载哪些文化分界？250万候选人的社会分类",
+          "authors": "Jesús Fernández-Villaverde; Carlos Sanz",
+          "year": 2026,
+          "venue": "NBER w35820",
+          "source": "NBER",
+          "sourceDatabase": "NBER",
+          "selectionBucket": "latest",
+          "category": "文化测量 · 政治分化",
+          "evidence": "摘要核验",
+          "url": "https://www.nber.org/papers/w35820",
+          "doi": "https://doi.org/10.3386/w35820",
+          "publicationDate": "2026-09",
+          "publicationDatePrecision": "month",
+          "publicationDateSource": "https://www.nber.org/papers/w35820",
+          "theory": "姓名可承载家庭、语言、祖源与文化环境中未被常规社会经济指标充分捕捉的信息。文章以政党候选人姓名的可分辨性描述社会分类；名字并非文化本质，预测能力也不是文化对政治的因果效应。",
+          "data": "西班牙、法国地方选举的250多万名候选人；在市镇—年份内比较党派。摘要未给各国人数、完整年份、名字清洗及缺失规则，不编造这些细节。",
+          "method": "用姓名在样本外预测党派，并在同一市镇中随机配对识别右翼候选人。另以简化的政治取向代际传递模型把信号映射为父母命名倾向差异；这一步依赖结构假设，并非随机实验。",
+          "results": "西班牙和法国的配对识别率分别为55.8%与56.5%；仅用名字部分也约55.0%。模型隐含父母命名倾向差约25个百分点。法国信号到2026年约翻倍，西班牙较稳定；西班牙分界偏语言，法国与移民来源姓名相关、在大城市较强。25个百分点不能解释成姓名导致党派选择的效应。",
+          "takeaway": "姓名承载哪些文化分界？250万候选人的社会分类",
+          "abstractZh": "西班牙和法国的配对识别率分别为55.8%与56.5%；仅用名字部分也约55.0%。模型隐含父母命名倾向差约25个百分点。法国信号到2026年约翻倍，西班牙较稳定；西班牙分界偏语言，法国与移民来源姓名相关、在大城市较强。25个百分点不能解释成姓名导致党派选择的效应。",
+          "relevance": "为文化测量提供代理指标的例子，也提醒区分测量效度、样本外预测和因果解释。价值观契合研究不宜直接用姓名相似替代主观感知相似，需要独立测量与伦理审查。",
+          "limitations": "仅核验官方题录与摘要，未读模型设定及稳健性正文。日期只有2026-09，未虚构日；扩展30日优先窗口至9月候选，但无法确认是否晚于9月18日。社会类别预测可能再生产刻板分类，不应个体归因。",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "readingUse": "概念界定、变量测量、研究设计",
+          "researchConnection": "为文化测量提供代理指标的例子，也提醒区分测量效度、样本外预测和因果解释。价值观契合研究不宜直接用姓名相似替代主观感知相似，需要独立测量与伦理审查。",
+          "readingPriority": "normal",
+          "priorityReason": "补充文化代理指标与社会分类的测量边界，不作文化因果结论。",
+          "abstractSource": "https://www.nber.org/papers/w35820",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "原生页摘要已核验；本轮未确认允许完整转载的明确许可，保留来源与原创中文概述。",
+          "publicationDateNote": "官方Issue Date为September 2026，仅到月；不使用月首虚构发布日期。"
+        }
+      ]
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "sortDescription": "缺5篇：本日Scholar主题及被引核验受阻，未挪用昨日次数。",
+      "journalPriorityNote": "保持传播学优先、先主题后77刊SSCI Q1/Q2筛选。本日未取得可核验Scholar结果，不能宣称已穷尽传播学候选，也未以其他SSCI或ESCI替代凑数。",
+      "papers": []
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "target": 0,
+      "sortBy": "issue",
+      "unit": "issue",
+      "sortDescription": "今天轮到Communication Research；OnlineFirst目录97条仅预览10条，分页验证受阻，本期整期未完成。",
+      "collection": null,
+      "collectionAttempt": {
+        "journalId": "cr",
+        "journalName": "Communication Research",
+        "kind": "online-first",
+        "url": "https://journals.sagepub.com/toc/crxa/0/0",
+        "checkedAt": "2026-10-18",
+        "complete": false,
+        "reportedTotal": 97,
+        "observedCount": 10,
+        "scopeNote": "仅目录第一页预览；不是已推荐的10篇，也不是完整整期。"
+      },
+      "papers": []
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "science",
+      "sortDescription": "今天轮到Science；直接浏览最新在线目录受验证阻挡，暂缺1篇，不擅自更换期刊。",
+      "papers": []
+    }
+  ],
+  "coreTracking": [],
+  "coreTrackingNote": "core-papers.json当前没有已提交核心文献，等待用户通过网站提交；浏览器私人收藏未自动视为同步成功，未虚构引用关系。",
+  "shortfallReason": "其他研究最新3/3（三库各一篇），高被引0/2；传播学与社会科学0/5；Communication Research完整一期未完成（目录预览97条中10条，无法核验剩余分页），Science 0/1。Google Scholar、SAGE及Science在一次正常刷新后仍需验证，已停止，不绕验证、不用昨日引用或其他计数替代。今日仅新增3篇，与完整目标有明确缺额；并不意味着数据库或期刊没有研究。"
+}

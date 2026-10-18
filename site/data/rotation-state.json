@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
   "communication": {
     "joc": {
       "lastCheckedAt": "2026-10-16",
@@ -47,6 +47,22 @@
         }
       ],
       "completedIssues": []
+    },
+    "cr": {
+      "lastAttemptAt": "2026-10-18",
+      "lastCheckedAt": "2026-10-18",
+      "status": "blocked",
+      "reason": "Cloudflare challenge persisted after one normal refresh; directory preview only 10 of reported 97. No complete snapshot or issue cursor advanced.",
+      "lastCompletedAt": null,
+      "onlineSnapshots": [],
+      "completedIssues": [],
+      "directoryObservation": {
+        "checkedAt": "2026-10-18",
+        "url": "https://journals.sagepub.com/toc/crxa/0/0",
+        "reportedTotal": 97,
+        "observedCount": 10,
+        "complete": false
+      }
     }
   },
   "general": {
@@ -63,6 +79,12 @@
       "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11157-4",
       "publicationDate": "2026-10-14",
       "socialScienceAssessment": "uncertain"
+    },
+    "science": {
+      "lastAttemptAt": "2026-10-18",
+      "status": "blocked",
+      "reason": "Cloudflare challenge persisted after one normal refresh; no latest eligible paper verified.",
+      "lastCompletedAt": null
     }
   }
 }

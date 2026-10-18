@@ -1663,6 +1663,31 @@
         "doi:10.1038/s41586-026-11157-4",
         "title:globalconservationareacoveragesubstantiallyexceedscurrentestimates"
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Big-Big-SycoBench: A Benchmark to Detect Sycophancy Through Model Responses to Valid vs. Invalid Arguments",
+      "identifiers": [
+        "arxiv:2610.15634",
+        "doi:10.48550/arxiv.2610.15634",
+        "title:bigbigsycobenchabenchmarktodetectsycophancythroughmodelresponsestovalidvsinvalidarguments"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Dissecting Deception in Large Language Models: Mechanisms, Behaviours, and Detection",
+      "identifiers": [
+        "doi:10.2139/ssrn.7591200",
+        "title:dissectingdeceptioninlargelanguagemodelsmechanismsbehavioursanddetection"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Social Sorting and Political Cleavages: Evidence from 2.5 Million Electoral Candidates",
+      "identifiers": [
+        "doi:10.3386/w35820",
+        "title:socialsortingandpoliticalcleavagesevidencefrom25millionelectoralcandidates"
+      ]
     }
   ]
 }
