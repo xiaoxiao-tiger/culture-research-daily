@@ -1688,6 +1688,91 @@
         "doi:10.3386/w35820",
         "title:socialsortingandpoliticalcleavagesevidencefrom25millionelectoralcandidates"
       ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Trapped in Your Story: Evaluating Narrative-Induced Sycophancy in Large Language Models",
+      "identifiers": [
+        "arxiv:2610.23525",
+        "doi:10.48550/arxiv.2610.23525",
+        "title:trappedinyourstoryevaluatingnarrativeinducedsycophancyinlargelanguagemodels"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Who Matters in College? Familiarity, Ability Signals, and Student Achievement",
+      "identifiers": [
+        "doi:10.3386/w35728",
+        "title:whomattersincollegefamiliarityabilitysignalsandstudentachievement"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Accounting Sycophancy: How Language Models Drop Material Disclosures Under Managerial Pressure",
+      "identifiers": [
+        "doi:10.2139/ssrn.7054341",
+        "title:accountingsycophancyhowlanguagemodelsdropmaterialdisclosuresundermanagerialpressure"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Interaction Context Often Increases Sycophancy in LLMs",
+      "identifiers": [
+        "arxiv:2509.12517",
+        "doi:10.1145/3772318.3791915",
+        "doi:10.48550/arxiv.2509.12517",
+        "title:interactioncontextoftenincreasessycophancyinllms"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Invisible Saboteurs: Sycophantic LLMs Mislead Novices in Problem-Solving Tasks",
+      "identifiers": [
+        "arxiv:2510.03667",
+        "doi:10.1145/3772318.3791365",
+        "doi:10.48550/arxiv.2510.03667",
+        "title:invisiblesaboteurssycophanticllmsmisleadnovicesinproblemsolvingtasks"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "The Political Significance of Social Media Activity and Social Networks",
+      "identifiers": [
+        "doi:10.1080/10584609.2018.1426662",
+        "title:thepoliticalsignificanceofsocialmediaactivityandsocialnetworks"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "A New Space for Political Behavior: Political Social Networking and its Democratic Consequences",
+      "identifiers": [
+        "doi:10.1111/jcc4.12048",
+        "title:anewspaceforpoliticalbehaviorpoliticalsocialnetworkinganditsdemocraticconsequences"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Political persuasion on social media: Tracing direct and indirect effects of news use and social interaction",
+      "identifiers": [
+        "doi:10.1177/1461444815616224",
+        "title:politicalpersuasiononsocialmediatracingdirectandindirecteffectsofnewsuseandsocialinteraction"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Effects of Editorial Media Bias Perception and Media Trust on the Use of Traditional, Citizen, and Social Media News",
+      "identifiers": [
+        "doi:10.1177/1077699016654684",
+        "title:effectsofeditorialmediabiasperceptionandmediatrustontheuseoftraditionalcitizenandsocialmedianews"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Does Facebook increase political participation? Evidence from a field experiment",
+      "identifiers": [
+        "doi:10.1080/1369118x.2015.1119871",
+        "title:doesfacebookincreasepoliticalparticipationevidencefromafieldexperiment"
+      ]
     }
   ]
 }

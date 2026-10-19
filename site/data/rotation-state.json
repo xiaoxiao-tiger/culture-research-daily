@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "communication": {
     "joc": {
       "lastCheckedAt": "2026-10-16",
@@ -63,6 +63,41 @@
         "observedCount": 10,
         "complete": false
       }
+    },
+    "jcmc": {
+      "lastAttemptAt": "2026-10-19",
+      "lastCheckedAt": "2026-10-19",
+      "status": "blocked",
+      "reason": "Advance list empty; current in-progress issue directory has 2 articles. Article challenge persisted after one normal reload; content verification incomplete. No completed cursor advanced.",
+      "lastCompletedAt": null,
+      "onlineSnapshots": [],
+      "completedIssues": [],
+      "directoryObservation": {
+        "journalId": "jcmc",
+        "journalName": "Journal of Computer-Mediated Communication",
+        "kind": "issue",
+        "title": "Volume 31, Issue 6, November 2026 (In Progress) · 2026-10-19可见在线范围",
+        "url": "https://academic.oup.com/jcmc/issue",
+        "checkedAt": "2026-10-19",
+        "complete": false,
+        "reportedTotal": 2,
+        "observedCount": 2,
+        "advanceUrl": "https://academic.oup.com/jcmc/advance-articles",
+        "advanceCount": 0,
+        "scopeNote": "官方目录可见2篇Full-length Research Articles，无分页；11月标签不是未来才可阅读，已上线即可。文章页人机验证无法完成，目录可见不等于逐篇内容核验。",
+        "directoryPreview": [
+          {
+            "title": "The sequential replicant effect in interpersonal sincerity: evidence from AI-mediated apology and gratitude",
+            "url": "https://academic.oup.com/jcmc/article/31/6/zmag024/8890537",
+            "doi": "10.1093/jcmc/zmag024"
+          },
+          {
+            "title": "The link between three smartphone school policies and students’ mental health: a growth trajectory approach",
+            "url": "https://academic.oup.com/jcmc/article/31/6/zmag025/8916679",
+            "doi": "10.1093/jcmc/zmag025"
+          }
+        ]
+      }
     }
   },
   "general": {
@@ -84,6 +119,12 @@
       "lastAttemptAt": "2026-10-18",
       "status": "blocked",
       "reason": "Cloudflare challenge persisted after one normal refresh; no latest eligible paper verified.",
+      "lastCompletedAt": null
+    },
+    "science-advances": {
+      "lastAttemptAt": "2026-10-19",
+      "status": "blocked",
+      "reason": "Directory request inaccessible; browser authority gate refused continued access to science.org due to its existing verification block. No current content verified.",
       "lastCompletedAt": null
     }
   }
