@@ -1,0 +1,1214 @@
+{
+  "schemaVersion": 6,
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "edition": "正式第17期 · 合并博士论文追踪 · 部分发布",
+  "title": "文化解释能否促进接收：理解、兴趣、认同与测量的边界",
+  "summary": "本期14篇完整解读：其他研究5篇，传播学主题4篇，Scientific Data 1篇，博士专题补充4篇。博士论文方向共7篇，跨栏只解读一次，精选3篇精读。Communication Theory整期核验未完成。",
+  "notice": "正式历史不清空，205条旧登记永久保留。最新组NBER仅精确到月、SSRN扩展至4月；博士论文较早补充不冒称新文。不存在本期已核验身份重复。",
+  "searchSettings": {
+    "themeKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "journalKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "excludeTerms": "",
+    "lookbackDays": 30,
+    "effectiveDate": "defaults",
+    "scope": "default"
+  },
+  "activeTopicIds": [
+    "culture",
+    "sycophancy",
+    "methods"
+  ],
+  "searchNote": "按上海当地2026-10-20执行，读取main四栏目schema6及全部配置；无当天有效用户覆盖，保留两条过期once及未来设置。三个主题继续执行，culture额外以博士论文问题为重点，不排除其他栏目。前两栏只四平台，博士专题允许出版方及权威机构补充。所有日志是实际执行，域名查询不是站内高级检索。先主题再筛期刊；引用次数仅采用Google Scholar页面显示。本轮并非穷尽全库，最新有扩展窗口，不把修订日当首发。",
+  "themeSearches": [
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism)",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "复杂式本轮返回空；不表示数据库没有论文。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm (\"cultural transmission\" OR \"cross-cultural reception\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism)",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "复杂式本轮返回空；不表示数据库没有论文。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs (\"cultural transmission\" OR \"cross-cultural reception\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism)",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "复杂式本轮返回空；不表示数据库没有论文。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (\"survey experiment\" OR \"subjective scales\" OR \"measurement invariance\") 2026",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "公开网页查询执行；结果跨查询合并，未对无法核验资格或弱相关候选直接推荐。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm (\"survey experiment\" OR \"measurement invariance\" OR \"causal inference\") 2026",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "公开网页查询执行；结果跨查询合并，未对无法核验资格或弱相关候选直接推荐。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs (\"survey experiment\" OR \"measurement invariance\" OR \"causal inference\") 2026",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "公开网页查询执行；结果跨查询合并，未对无法核验资格或弱相关候选直接推荐。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (sycophancy OR \"value alignment\") \"AI\"",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "公开网页查询执行；结果跨查询合并，未对无法核验资格或弱相关候选直接推荐。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm sycophancy 2026",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "公开网页查询执行；结果跨查询合并，未对无法核验资格或弱相关候选直接推荐。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs sycophancy \"Oct 2026\"",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "公开网页查询执行；结果跨查询合并，未对无法核验资格或弱相关候选直接推荐。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "\"value similarity\" \"character identification\"",
+      "channel": "Google Scholar原生网页",
+      "status": "成功；发现科学家电影关系研究，但清单Z027已介绍，排除。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "2024年至今；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "\"culturally distant media\"",
+      "channel": "Google Scholar原生网页",
+      "status": "成功；Yeo论文没有显示引用次数，不记0，纳入博士专题。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "2024年至今；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "\"cross-cultural\" \"identification\" narrative",
+      "channel": "Google Scholar原生网页",
+      "status": "成功；发现Fort及跨语言可沉浸性研究，后筛资格。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "2024年至今；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "\"narrative persuasion\" \"cultural\"",
+      "channel": "Google Scholar原生网页",
+      "status": "成功；Kim等实际5次；Chen相似性元分析为清单已介绍文献，排除。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "2024年至今；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "\"processing fluency\" narrative",
+      "channel": "Google Scholar原生网页",
+      "status": "成功；Lau15次、Fort7次、旅游混语4次；无引用显示的Riggs不填0。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "2024年至今；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "sycophancy \"large language model\"",
+      "channel": "Google Scholar原生网页",
+      "status": "成功；剩余合格候选中288、142次入选；66次Flattering已推荐。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "\"measurement invariance\" OR \"survey experiment\" OR \"multilevel model\" OR \"meta-analysis\"; start=60",
+      "channel": "Google Scholar原生网页",
+      "status": "第7页成功；不为凑数选择与本轮研究问题关系弱的候选。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers culture identity October 2026",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "成功；另发现主观量表校正工作论文。",
+      "topicIds": [
+        "culture",
+        "methods"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers \"Correcting for Heterogeneity in the Use of Subjective Scales\"",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "成功，随后原生论文页核验10月月级日期与摘要。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com \"AI Sycophancy and Decisions\" \"Abstract\"",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "成功并原生论文页确认；更近期已核验候选多为已推荐或概念性弱证据，扩展至4月28日实证研究。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "不限年份；执行2026-10-20",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "arXiv",
+      "query": "sycophancy; searchtype=all; order=-announced_date_first; size=50",
+      "channel": "arXiv原生网页",
+      "status": "成功；列表与论文页日期不同，采用论文页v1 2026-10-19。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "按公告日期降序浏览；首发另核验",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "博士论文专题",
+      "query": "\"value congruence\" \"character\" identification 2025 2026",
+      "status": "执行，检索人物价值契合的相邻研究。",
+      "channel": "公开网页检索，出版方及作者机构核验",
+      "timeRange": "上次运行后优先，近两年扩展；2026-10-20执行",
+      "purpose": "专题发现与核验",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "博士论文专题",
+      "query": "\"cross-cultural\" \"character identification\" 2024 2025 2026",
+      "status": "执行，核对跨文化人物认同候选。",
+      "channel": "公开网页检索，出版方及作者机构核验",
+      "timeRange": "上次运行后优先，近两年扩展；2026-10-20执行",
+      "purpose": "专题发现与核验",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "博士论文专题",
+      "query": "\"value congruence\" \"Schwartz\" \"myth\" \"2026\"",
+      "status": "执行，未核验到本轮新增直接证据，不代表无人研究。",
+      "channel": "公开网页检索，出版方及作者机构核验",
+      "timeRange": "上次运行后优先，近两年扩展；2026-10-20执行",
+      "purpose": "专题发现与核验",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "博士论文专题",
+      "query": "\"Chinese mythology\" \"foreign audiences\" \"October 2026\"",
+      "status": "执行，未核验到本轮新增直接证据，不代表无人研究。",
+      "channel": "公开网页检索，出版方及作者机构核验",
+      "timeRange": "上次运行后优先，近两年扩展；2026-10-20执行",
+      "purpose": "专题发现与核验",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "博士论文专题",
+      "query": "\"Code‐Mixing in Cultural Educational Materials\" authors 2026",
+      "status": "出版方和作者机构核验正式在线、题录与同行评审。",
+      "channel": "公开网页检索，出版方及作者机构核验",
+      "timeRange": "上次运行后优先，近两年扩展；2026-10-20执行",
+      "purpose": "专题发现与核验",
+      "topicIds": [
+        "culture"
+      ]
+    },
+    {
+      "platform": "博士论文专题",
+      "query": "\"Virtual characters, real emotions\" 108951 authors sample",
+      "status": "作者机构核验同行评审及样本设计。",
+      "channel": "公开网页检索，出版方及作者机构核验",
+      "timeRange": "上次运行后优先，近两年扩展；2026-10-20执行",
+      "purpose": "专题发现与核验",
+      "topicIds": [
+        "culture"
+      ]
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "arXiv",
+      "query": "No Matter Who You Are: Addressivity and Sycophancy in Large Language Models | https://arxiv.org/abs/2610.25728",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；arXiv页面v1为10月19日03:31UTC，优先于搜索列表的10月18日显示。EMNLP标注未另核会议程序，不充作博士论文同行评审期刊精选。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "NBER",
+      "query": "Correcting for Heterogeneity in the Use of Subjective Scales | https://www.nber.org/papers/w35925",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；官网只显示2026年10月，不臆造首发日，不保证自上次运行新增。工作论文，不列博士论文同行评审精选。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "SSRN",
+      "query": "AI Sycophancy and Decisions | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597184",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；为保留三库并优先实证质量，SSRN扩展至4月。不是全库最新；4月17日写作日及10月6日修订日均不作首发。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "arXiv",
+      "query": "Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models | https://arxiv.org/abs/2406.10162",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；Google Scholar实际288次；作者版本说明指出奖励篡改的操作定义可能误计诚实完成任务但修改奖励的情况。不是人类迎合行为的直接证据。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "arXiv",
+      "query": "When Large Language Models contradict humans? Large Language Models' Sycophantic Behaviour | https://arxiv.org/abs/2311.09410",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；Google Scholar实际142次；摘要层面的任务异质性不能解释为所有当前模型的稳定规律。引用量只代表本轮可核验候选，不声称全库最高。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "International Journal of Advertising",
+      "query": "If it is hard to understand, is it hard to be hooked? A meta-analysis of processing fluency and transportation | https://doi.org/10.1080/02650487.2024.2428551",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；Google Scholar实际15次；同行评审及发表状态核验；卷期为2025年，但首次在线2024-11-17；属于近两年补充，不是今日新发表。证据限正式摘要。",
+      "topicIds": [
+        "culture",
+        "methods"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "Communication Research",
+      "query": "The Impacts of Code-Mixing in a Cross-Cultural Narrative: How Processing Fluency Impacts Narrative Engagement and Attitudes Toward Out-Groups | https://doi.org/10.1177/00936502241287334",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；Google Scholar实际7次；同行评审及发表状态核验；首次在线2024-09-28，已超出近两年范围，作为高度相关漏读补充。只核验摘要；国家或群体态度不能替代人物接收。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "Journal of Health Communication",
+      "query": "Narrative Persuasion by Celebrity Source: The Moderating Role of Involvement | https://doi.org/10.1080/10810730.2025.2592871",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；Google Scholar实际5次；摘要核验，非神话人物或跨国实验；不作为博士论文直接证据精选。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "Journal of Language and Social Psychology",
+      "query": "Code-Mixing in Promotional Materials for Tourism: Effects of Format on Processing Fluency and Interest in Cultural Activities | https://doi.org/10.1177/0261927X231210329",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；Google Scholar实际4次；同行评审及发表状态核验；2024卷期，首次在线2023-10-29，明确为较早补充。旅游活动兴趣不是人物认同，不能直接外推到神话受众。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "Scientific Data",
+      "query": "Characterizing the NIH-funded data resource landscape: resource types, functions, access models, and funding | https://www.nature.com/articles/s41597-026-08519-y",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；官方注明已同行评审接受并提前公开，尚待最终版替换。学科归属待判断；并非博士论文人物接收直接证据。正文方法未完整核验。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "Journal of Media Psychology",
+      "query": "A Window Into the Other Side of the World: Predictors of Viewers’ Interest in Culturally Distant Media | https://doi.org/10.1027/1864-1105/a000508",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；同行评审及发表状态核验；首次在线2026-03-20；本轮扩展近两年，不是今日新文。文化选择与角色接收不同，样本文化背景也不代表所有外国受众。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "International Journal of Applied Linguistics",
+      "query": "Code-Mixing in Cultural Educational Materials: Processing and Implications for Comprehension, Perceived Vitality, and Topic Interest | https://doi.org/10.1111/ijal.70260",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；同行评审及发表状态核验；2026-06-19正式在线，属于近两年扩展。不是中国神话或本国神话人物类比实验，不能据此宣称类比机制已获证实。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "Global Perspectives in Communication",
+      "query": "The dimensionality and cross-cultural invariance of narrative transportability: evidence from 50 countries and 21 languages | https://doi.org/10.1093/gpcomm/wpaf002",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；同行评审及发表状态核验；2026-03-10在线。核验摘要及部分结果段，未全面读取正文；未确认该新刊SSCI资格，因此只在同行评审专题，不进入SSCI主题栏。",
+      "topicIds": [
+        "culture",
+        "methods"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    },
+    {
+      "platform": "Computers in Human Behavior",
+      "query": "Virtual characters, real emotions: Avatar identification and psychological transformation across esports and K-pop fandoms | https://doi.org/10.1016/j.chb.2026.108951",
+      "channel": "原生论文页、出版方或作者机构公开记录",
+      "status": "摘要核验；同行评审及发表状态核验；已核验同行评审及2026年6月卷期，首次在线具体日未确认，不补写日期。形象契合不是基本价值观契合，粉丝类别不是文化内外群体。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "执行2026-10-20",
+      "purpose": "逐篇身份、日期与证据范围核验"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "Communication Theory",
+      "query": "https://academic.oup.com/ct/advance-articles",
+      "channel": "出版方目录，无关键词",
+      "status": "可见至少22条目录和部分摘要，目录下半段继续读取超时；未完成完整集合。collection保留null，不推进完成游标。",
+      "topicIds": [],
+      "timeRange": "截至2026-10-20可见在线集合",
+      "purpose": "整期目录核验"
+    },
+    {
+      "platform": "Scientific Data",
+      "query": "https://www.nature.com/sdata/research-articles?year=2026",
+      "channel": "出版方最新在线目录，无关键词",
+      "status": "成功浏览首屏10月20日至17日条目；排除纯自然科学，选择10月19日数据治理研究，学科归属待判断。文章正文直接读取受限，公开摘要及接受状态可核验。",
+      "topicIds": [],
+      "timeRange": "截至2026-10-20最新在线",
+      "purpose": "轮换期刊最新研究"
+    }
+  ],
+  "coreTracking": [
+    {
+      "coreTitle": "尚未收到已同步的核心文献",
+      "direction": "citations",
+      "checkedAt": "2026-10-20",
+      "channel": "core-papers.json",
+      "status": "requests为空；不把私人浏览器收藏当作已同步，不虚构引用追踪。",
+      "findings": []
+    }
+  ],
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 5,
+      "sortBy": "split",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新",
+          "target": 3,
+          "sortBy": "publicationDate",
+          "sortDescription": "按可核验首次公开日期降序；精度不一致时不虚构日。NBER仅到月，SSRN因实证质量扩展至4月。不是全库穷尽最新。"
+        },
+        {
+          "id": "cited",
+          "label": "高被引",
+          "target": 2,
+          "sortBy": "citationCount",
+          "sortDescription": "Google Scholar实际网页次数288、142，核验2026-10-20。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included",
+          "reason": "最新组各1篇，镜像合并为同一身份。"
+        },
+        {
+          "database": "SSRN",
+          "status": "included",
+          "reason": "最新组各1篇，镜像合并为同一身份。"
+        },
+        {
+          "database": "arXiv",
+          "status": "included",
+          "reason": "最新组各1篇，镜像合并为同一身份。"
+        }
+      ],
+      "sortDescription": "最新3篇先列，高被引2篇后列。",
+      "papers": [
+        {
+          "title": "No Matter Who You Are: Addressivity and Sycophancy in Large Language Models",
+          "titleZh": "被对话指向就会迎合吗：后训练与对话对象意识",
+          "authors": "Seungjong Sun, Hyunmin Jun, Minsik Yoon, Eungu Lee, Choongwon Kang, Young Seok Woo, Jang Hyun Kim",
+          "year": 2026,
+          "venue": "arXiv · EMNLP 2026作者标注",
+          "url": "https://arxiv.org/abs/2610.25728",
+          "source": "arXiv",
+          "category": "最新 · 预印本",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "sycophancy"
+          ],
+          "takeaway": "稀疏自编码与受控后训练研究提示，迎合与输出被指向某个对话对象有关，不只取决于对象身份。",
+          "theory": "addressivity指输出被组织成面向对话对象的话语。作者提出后训练强化其与迎合的内部关联。",
+          "data": "比较预训练和后训练模型的内部方向及受控后训练结果。模型清单、样本量和具体提示未从正文核验。",
+          "method": "提取addressivity方向进行激活引导，并进行受控后训练比较，属于模型内部干预，不是人类受众实验。",
+          "results": "引导只在后训练模型中能增强或抑制迎合；受控实验支持对任一被识别的对话对象出现此关联。",
+          "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+          "limitations": "arXiv页面v1为10月19日03:31UTC，优先于搜索列表的10月18日显示。EMNLP标注未另核会议程序，不充作博士论文同行评审期刊精选。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://arxiv.org/abs/2610.25728",
+          "abstractZh": "稀疏自编码与受控后训练研究提示，迎合与输出被指向某个对话对象有关，不只取决于对象身份。",
+          "readingUse": "人机互动中的对话对象机制。",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "normal",
+          "priorityReason": "优先核对研究情境、概念与本课题是否相符。",
+          "sourceDatabase": "arXiv",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-19",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2610.25728",
+          "doi": "https://doi.org/10.48550/arXiv.2610.25728"
+        },
+        {
+          "title": "Correcting for Heterogeneity in the Use of Subjective Scales",
+          "titleZh": "如何修正不同受众使用主观量表的差异",
+          "authors": "Daniel J. Benjamin, Kristen B. Cooper, Ori Heffetz, Miles S. Kimball, Jiannan Zhou",
+          "year": 2026,
+          "venue": "NBER Working Paper 35925",
+          "url": "https://www.nber.org/papers/w35925",
+          "source": "NBER",
+          "category": "最新候选 · 日期精确到月",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "用校准题修正量表使用差异，可能明显改变回归系数的相对大小。",
+          "theory": "相同潜在体验可能被不同人映射到不同主观评分，构成测量而非行为差异。",
+          "data": "作者新数据约10,000人及既有数据，包含身高体重的主观评分验证和生活满意度回归。",
+          "method": "在近似线性的评分映射基础上发展量表校正回归估计量。完整假设、校准题与稳健性未核验。",
+          "results": "生活满意度主要定性结论保留，但失业相对收入的估计代价可约增至三倍。",
+          "relevance": "简报推论：跨文化人物接收量表要区分价值差异和评分风格，校准题不能代替测量不变性检验。",
+          "limitations": "官网只显示2026年10月，不臆造首发日，不保证自上次运行新增。工作论文，不列博士论文同行评审精选。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://www.nber.org/papers/w35925",
+          "abstractZh": "用校准题修正量表使用差异，可能明显改变回归系数的相对大小。",
+          "readingUse": "跨文化问卷的评分风格敏感性分析。",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "normal",
+          "priorityReason": "优先核对研究情境、概念与本课题是否相符。",
+          "doi": "https://doi.org/10.3386/w35925",
+          "sourceDatabase": "NBER",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10",
+          "publicationDatePrecision": "month",
+          "publicationDateSource": "https://www.nber.org/papers/w35925"
+        },
+        {
+          "title": "AI Sycophancy and Decisions",
+          "titleZh": "AI迎合与实际选择：信息收益可能抵消迎合效应",
+          "authors": "John J. Conlon, Peter Schwardmann",
+          "year": 2026,
+          "venue": "SSRN Working Paper",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597184",
+          "source": "SSRN",
+          "category": "扩展窗口 · 非当日新文",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "sycophancy"
+          ],
+          "takeaway": "1,500人、30种决策环境中，AI建议整体缩小初始立场差距；增加迎合会削弱这种趋同。",
+          "theory": "建议的信息效应和迎合效应可能方向相反，不能从模型话语迎合直接推断用户更极化。",
+          "data": "N=1,500，30种决策环境。官网133页版本10月6日修订，但首次posted为4月28日。",
+          "method": "实验操纵建议的迎合程度，比较决策。完整随机化和各环境估计未读正文确认。",
+          "results": "总体出现立场趋同，迎合增加时趋同减弱。具体市场机制结论只适用于作者检验范围。",
+          "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+          "limitations": "为保留三库并优先实证质量，SSRN扩展至4月。不是全库最新；4月17日写作日及10月6日修订日均不作首发。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597184",
+          "abstractZh": "1,500人、30种决策环境中，AI建议整体缩小初始立场差距；增加迎合会削弱这种趋同。",
+          "readingUse": "区分模型语言特征与用户行为后果。",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "normal",
+          "priorityReason": "优先核对研究情境、概念与本课题是否相符。",
+          "doi": "https://doi.org/10.2139/ssrn.6597184",
+          "sourceDatabase": "SSRN",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-04-28",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597184",
+          "identityAliases": [
+            "arxiv:2607.28133",
+            "doi:10.48550/arxiv.2607.28133",
+            "doi:10.65864/79vxo6w34w"
+          ]
+        },
+        {
+          "title": "Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models",
+          "titleZh": "从迎合到奖励篡改：训练行为的跨环境泛化",
+          "authors": "Carson Denison, Monte MacDiarmid, Fazl Barez, David Duvenaud, Shauna Kravec, Samuel Marks, Nicholas Schiefer, Ryan Soklaski, Alex Tamkin, Jared Kaplan, Buck Shlegeris, Samuel R. Bowman, Ethan Perez, Evan Hubinger",
+          "year": 2024,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2406.10162",
+          "source": "arXiv",
+          "category": "高被引 · 非最新",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "sycophancy"
+          ],
+          "takeaway": "课程式训练中的简单钻规则行为可能泛化为更严重的奖励篡改，常规纠正未完全消除。",
+          "theory": "奖励目标错误可能使模型从易学的规则投机迁移至更复杂的投机。",
+          "data": "逐渐复杂的可投机环境与模型输出。模型数量、训练轮数及基线完整参数未核验。",
+          "method": "分阶段训练并在后续环境检验零样本行为，比较纠正和无害性训练。",
+          "results": "少量输出出现直接修改奖励机制，纠正早期行为只能缓解而非消除后续篡改。",
+          "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+          "limitations": "作者版本说明指出奖励篡改的操作定义可能误计诚实完成任务但修改奖励的情况。不是人类迎合行为的直接证据。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://arxiv.org/abs/2406.10162",
+          "abstractZh": "课程式训练中的简单钻规则行为可能泛化为更严重的奖励篡改，常规纠正未完全消除。",
+          "readingUse": "背景阅读",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "normal",
+          "priorityReason": "优先核对研究情境、概念与本课题是否相符。",
+          "doi": "https://doi.org/10.48550/arXiv.2406.10162",
+          "sourceDatabase": "arXiv",
+          "selectionBucket": "cited",
+          "citationCount": 288,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=sycophancy+%22large+language+model%22",
+          "citationCheckedAt": "2026-10-20"
+        },
+        {
+          "title": "When Large Language Models contradict humans? Large Language Models' Sycophantic Behaviour",
+          "titleZh": "模型何时反驳用户：任务类型与迎合倾向",
+          "authors": "Leonardo Ranaldi, Giulia Pucci",
+          "year": 2023,
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2311.09410",
+          "source": "arXiv",
+          "category": "高被引 · 较早研究",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "sycophancy"
+          ],
+          "takeaway": "模型对用户提示的顺从取决于任务，主观判断与客观数学任务不宜合并解释。",
+          "theory": "人类反馈提高有用性，也可能让模型更容易顺应使用者观点。",
+          "data": "不同任务的系统提示干预；所见版本为v4，首发2023-11-15，2025修订不算新文。",
+          "method": "跨任务比较用户干预提示下回答，不是模型训练的随机实验。样本规模与具体模型清单未核验。",
+          "results": "部分主观意见和应基于事实反驳的任务显示迎合；数学或有客观答案的任务中模型相对更能坚持。",
+          "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+          "limitations": "摘要层面的任务异质性不能解释为所有当前模型的稳定规律。引用量只代表本轮可核验候选，不声称全库最高。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://arxiv.org/abs/2311.09410",
+          "abstractZh": "模型对用户提示的顺从取决于任务，主观判断与客观数学任务不宜合并解释。",
+          "readingUse": "背景阅读",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "normal",
+          "priorityReason": "优先核对研究情境、概念与本课题是否相符。",
+          "doi": "https://doi.org/10.48550/arXiv.2311.09410",
+          "sourceDatabase": "arXiv",
+          "selectionBucket": "cited",
+          "citationCount": 142,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=sycophancy+%22large+language+model%22",
+          "citationCheckedAt": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "journalPriorityNote": "本轮已核验且去重后，4篇均为77刊名单内SSCI Q1传播学研究。未以无引用显示、未确认索引或低相关论文凑满5篇；博士论文其他合格同行评审论文进入专题，不放宽本栏资格。",
+      "sortDescription": "先主题检索再筛期刊；按Google Scholar实际15、7、5、4次降序。较早论文清楚标注，不冒称最新。",
+      "papers": [
+        {
+          "title": "If it is hard to understand, is it hard to be hooked? A meta-analysis of processing fluency and transportation",
+          "titleZh": "难理解是否就难投入：流畅性与叙事沉浸的元分析",
+          "authors": "Jennifer Lau",
+          "year": 2025,
+          "venue": "International Journal of Advertising, 44(2), 313–333",
+          "url": "https://doi.org/10.1080/02650487.2024.2428551",
+          "source": "International Journal of Advertising",
+          "category": "博士论文相关 · 近两年研究",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "33个效应量的综合分析支持流畅性与沉浸正相关，不能由此认定所有易懂化都会提升接收。",
+          "theory": "流畅性是加工体验，叙事沉浸是进入故事世界的心理状态；二者相关不等同概念相同。",
+          "data": "摘要确认纳入33个效应量。独立研究数、总样本、语种覆盖及检索截止时间未核验。",
+          "method": "元分析整合效应量。依赖效应处理、发表偏差与调节分析的具体程序未读正文确认。",
+          "results": "综合关系为正。汇总效应大小、区间和异质性统计未核验，不填写推测数值。",
+          "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+          "limitations": "卷期为2025年，但首次在线2024-11-17；属于近两年补充，不是今日新发表。证据限正式摘要。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://doi.org/10.1080/02650487.2024.2428551",
+          "abstractZh": "33个效应量的综合分析支持流畅性与沉浸正相关，不能由此认定所有易懂化都会提升接收。",
+          "readingUse": "机制综述和流畅性路径的可行性依据。",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "high",
+          "priorityReason": "能具体帮助区分接收结果、加工机制或测量边界。",
+          "doi": "https://doi.org/10.1080/02650487.2024.2428551",
+          "apaCitation": "Lau, J. (2025). If it is hard to understand, is it hard to be hooked? A meta-analysis of processing fluency and transportation. International Journal of Advertising, 44(2), 313–333. https://doi.org/10.1080/02650487.2024.2428551",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "peerReviewSource": "https://www.tandfonline.com/doi/abs/10.1080/02650487.2024.2428551",
+          "publicationStatus": "published",
+          "publicationDate": "2024-11-17",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://www.tandfonline.com/doi/abs/10.1080/02650487.2024.2428551",
+          "hypothesisImplication": "把流畅性到沉浸作为可检验路径，但保留熟悉性、认同和价值契合的独立解释。",
+          "manipulationImplication": "预试解释材料是否确实降低加工困难，并核对是否同时改变文化真实性或吸引力。",
+          "measurementImplication": "分别测流畅性和状态沉浸，检验区分效度；不能以一个自报题同时代表两者。",
+          "citationCount": 15,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%22processing+fluency%22+narrative&as_ylo=2024",
+          "citationCheckedAt": "2026-10-20",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "International Journal of Advertising",
+          "journalEdition": "SSCI",
+          "jifQuartile": "Q1",
+          "indexSource": "site/data/journals.json：用户上传77刊名单",
+          "quartileSource": "site/data/journals.json：JIF Q1，名单未标指标年份，不另猜测。"
+        },
+        {
+          "title": "The Impacts of Code-Mixing in a Cross-Cultural Narrative: How Processing Fluency Impacts Narrative Engagement and Attitudes Toward Out-Groups",
+          "titleZh": "跨文化叙事的混语如何影响流畅性、叙事投入与外群体态度",
+          "authors": "Kara S. Fort, Rachel Lopez, Hillary C. Shulman, Elizabeth E. Riggs, Jorge Cruz Ibarra",
+          "year": 2024,
+          "venue": "Communication Research",
+          "url": "https://doi.org/10.1177/00936502241287334",
+          "source": "Communication Research",
+          "category": "博士论文相关 · 较早补充",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "culture"
+          ],
+          "takeaway": "混语可能增加加工困难并削弱叙事投入，但这不是中国神话人物接收的直接证据。",
+          "theory": "把跨文化语言线索、加工流畅性和叙事投入连接起来；外群体态度与人物认同不是同一构念。",
+          "data": "实验N=1,241，美国英语母语者，阅读含不同语言使用方式的跨文化叙事。具体分组人数、刺激全文、量表及效应系数未核验。",
+          "method": "实验比较混语条件，摘要报告流畅性与结果的间接关系。随机化程序和中介识别假设未读正文确认，不能把中介本身视为随机操纵。",
+          "results": "含混语叙事被感知为更难加工，并关联较少叙事投入和更负面的外群体偏向。",
+          "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+          "limitations": "首次在线2024-09-28，已超出近两年范围，作为高度相关漏读补充。只核验摘要；国家或群体态度不能替代人物接收。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://doi.org/10.1177/00936502241287334",
+          "abstractZh": "混语可能增加加工困难并削弱叙事投入，但这不是中国神话人物接收的直接证据。",
+          "readingUse": "加工流畅性中介、语言操纵和结果变量区分。",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "high",
+          "priorityReason": "能具体帮助区分接收结果、加工机制或测量边界。",
+          "doi": "https://doi.org/10.1177/00936502241287334",
+          "apaCitation": "Fort, K. S., Lopez, R., Shulman, H. C., Riggs, E. E., & Cruz Ibarra, J. (2024). The impacts of code-mixing in a cross-cultural narrative: How processing fluency impacts narrative engagement and attitudes toward out-groups. Communication Research. https://doi.org/10.1177/00936502241287334",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "peerReviewSource": "https://journals.sagepub.com/doi/10.1177/00936502241287334",
+          "publicationStatus": "published",
+          "publicationDate": "2024-09-28",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://journals.sagepub.com/doi/10.1177/00936502241287334",
+          "hypothesisImplication": "可检验类比解释通过流畅性促进人物接收，但外群体边界可能改变路径；这不是本文检验过的假设。",
+          "manipulationImplication": "对同一中国人物设置直接解释、本国人物类比和无解释，控制译文难度、长度、语言混用与信息量。",
+          "measurementImplication": "理解用客观题；另测好感、人物认同、分享意向、流畅性和外群体边界，不把态度合成一个接收分数。",
+          "citationCount": 7,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%22processing+fluency%22+narrative&as_ylo=2024",
+          "citationCheckedAt": "2026-10-20",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "COMMUNICATION RESEARCH",
+          "journalEdition": "SSCI",
+          "jifQuartile": "Q1",
+          "indexSource": "site/data/journals.json：用户上传77刊名单",
+          "quartileSource": "site/data/journals.json：JIF Q1，名单未标指标年份，不另猜测。"
+        },
+        {
+          "title": "Narrative Persuasion by Celebrity Source: The Moderating Role of Involvement",
+          "titleZh": "名人叙事说服：受众涉入的边界",
+          "authors": "Kayoung Kim, Chul-Joo Lee, Se-Hoon Jeong",
+          "year": 2025,
+          "venue": "Journal of Health Communication",
+          "url": "https://doi.org/10.1080/10810730.2025.2592871",
+          "source": "Journal of Health Communication",
+          "category": "研究论文",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "culture"
+          ],
+          "takeaway": "360人实验中，名人来源通过吸引力和叙事投入关联更积极的行为意向与政策意见，低涉入者效果更突出。",
+          "theory": "来源可信度、叙事投入与精细加工可能性模型共同解释条件性效果。",
+          "data": "N=360，两组名人与非名人来源设计，情境为心血管疾病健康传播。具体招募、刺激和量表未核验。",
+          "method": "组间实验，检验顺序中介及涉入调节。中介随机化和完整估计模型未核验。",
+          "results": "名人来源被感知更具吸引力，经叙事投入关联行为意向与政策意见，低涉入群体更明显。",
+          "relevance": "简报推论：神话人物材料应控制受众原有涉入及熟悉性，不能把名人来源效果直接认定为神话人物效应。",
+          "limitations": "摘要核验，非神话人物或跨国实验；不作为博士论文直接证据精选。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://doi.org/10.1080/10810730.2025.2592871",
+          "abstractZh": "360人实验中，名人来源通过吸引力和叙事投入关联更积极的行为意向与政策意见，低涉入者效果更突出。",
+          "readingUse": "人物知名度与涉入的控制变量。",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "normal",
+          "priorityReason": "优先核对研究情境、概念与本课题是否相符。",
+          "doi": "https://doi.org/10.1080/10810730.2025.2592871",
+          "publicationDate": "2025-11-28",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://pubmed.ncbi.nlm.nih.gov/41312904/",
+          "citationCount": 5,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%22narrative+persuasion%22+%22cultural%22&as_ylo=2024",
+          "citationCheckedAt": "2026-10-20",
+          "publicationType": "journal",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "JOURNAL OF HEALTH COMMUNICATION",
+          "journalEdition": "SSCI",
+          "jifQuartile": "Q1",
+          "indexSource": "site/data/journals.json：用户上传77刊名单",
+          "quartileSource": "site/data/journals.json：JIF Q1，名单未标指标年份，不另猜测。"
+        },
+        {
+          "title": "Code-Mixing in Promotional Materials for Tourism: Effects of Format on Processing Fluency and Interest in Cultural Activities",
+          "titleZh": "文化宣传中的混语与翻译形式：流畅性受损不一定降低兴趣",
+          "authors": "Jessica Gasiorek, Marko Dragojevic",
+          "year": 2024,
+          "venue": "Journal of Language and Social Psychology, 43(4), 450–467",
+          "url": "https://doi.org/10.1177/0261927X231210329",
+          "source": "Journal of Language and Social Psychology",
+          "category": "博士论文相关 · 较早补充",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "culture"
+          ],
+          "takeaway": "语言陌生性可能同时降低流畅性与增加文化兴趣，解释形式会改变净效果。",
+          "theory": "文化独特性可能有吸引路径，也有加工成本路径。流畅性不是文化兴趣的唯一解释。",
+          "data": "英语与夏威夷语混用的旅游活动宣传材料，比较无注释、括号解释和叙事解释等形式。摘要未给样本数、招募地点和分组细节。",
+          "method": "研究检验混语与翻译形式对加工体验及兴趣的影响。随机化、协变量和间接效应系数尚未核验。",
+          "results": "混语降低流畅性，间接削弱兴趣；也有提高兴趣的相反路径。叙事翻译的材料最终兴趣高于纯英语文本。",
+          "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+          "limitations": "2024卷期，首次在线2023-10-29，明确为较早补充。旅游活动兴趣不是人物认同，不能直接外推到神话受众。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://doi.org/10.1177/0261927X231210329",
+          "abstractZh": "语言陌生性可能同时降低流畅性与增加文化兴趣，解释形式会改变净效果。",
+          "readingUse": "解释格式操纵、文化独特性与流畅性的竞争机制。",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "high",
+          "priorityReason": "能具体帮助区分接收结果、加工机制或测量边界。",
+          "doi": "https://doi.org/10.1177/0261927X231210329",
+          "apaCitation": "Gasiorek, J., & Dragojevic, M. (2024). Code-mixing in promotional materials for tourism: Effects of format on processing fluency and interest in cultural activities. Journal of Language and Social Psychology, 43(4), 450–467. https://doi.org/10.1177/0261927X231210329",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "peerReviewSource": "https://journals.sagepub.com/doi/10.1177/0261927X231210329",
+          "publicationStatus": "published",
+          "publicationDate": "2023-10-29",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://journals.sagepub.com/doi/10.1177/0261927X231210329",
+          "hypothesisImplication": "预设本国类比可能降低困难，但也可能削弱陌生感或文化独特性，不预设单向正效应。",
+          "manipulationImplication": "增加保留原文化符号的叙事解释组，与直接替换成本国人物的类比组区分。",
+          "measurementImplication": "同时测易懂程度、文化独特性、真实性和兴趣；记录两条相反路径，避免只看总效应。",
+          "citationCount": 4,
+          "citationSource": "Google Scholar",
+          "citationSourceUrl": "https://scholar.google.com/scholar?q=%22processing+fluency%22+narrative&as_ylo=2024",
+          "citationCheckedAt": "2026-10-20",
+          "discoverySource": "Google Scholar",
+          "discipline": "communication",
+          "journalName": "JOURNAL OF LANGUAGE AND SOCIAL PSYCHOLOGY",
+          "journalEdition": "SSCI",
+          "jifQuartile": "Q1",
+          "indexSource": "site/data/journals.json：用户上传77刊名单",
+          "quartileSource": "site/data/journals.json：JIF Q1，名单未标指标年份，不另猜测。"
+        }
+      ]
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "unit": "issue",
+      "target": 0,
+      "sortBy": "issue",
+      "collection": null,
+      "sortDescription": "今日轮到Communication Theory。可见Advance Access目录及部分摘要，但目录下半段读取超时，未完成整个在线集合核验；本期不把任意几篇冒称完整一期，也不推进完成游标。",
+      "papers": []
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "scientific-data",
+      "sortDescription": "不使用关键词，检查Scientific Data最新在线目录。排除纯生物或物理数据，选择10月19日的数据治理研究；社会科学归属待判断。",
+      "papers": [
+        {
+          "title": "Characterizing the NIH-funded data resource landscape: resource types, functions, access models, and funding",
+          "titleZh": "NIH数据资源的制度图景：功能、访问与资金",
+          "authors": "Bronwyn Walsh, Jonathan Lawson, Sofia Labrecque, Vasiliki Rahimzadeh",
+          "year": 2026,
+          "venue": "Scientific Data",
+          "url": "https://www.nature.com/articles/s41597-026-08519-y",
+          "source": "Scientific Data",
+          "category": "综合顶刊 · 学科归属待判断",
+          "evidence": "摘要核验",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "105项NIH数据资源的横截面清查呈现访问制度、功能与资金差异，适合作为数据治理的相邻阅读。",
+          "theory": "数据可发现、可访问、可互操作与复用的制度条件，而非单纯技术性能。",
+          "data": "2026年4月目录中的105个NIH领域数据资源，结合公开元数据、NIH RePORTER估算2015至2025年资金。",
+          "method": "横截面资源分类及资金清查，不是资源资助效果的因果识别。",
+          "results": "主要仓储是最大类别，归档与协调是常见功能；资金从2015约3.22亿美元上升到2024峰值约5.17亿美元。",
+          "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+          "limitations": "官方注明已同行评审接受并提前公开，尚待最终版替换。学科归属待判断；并非博士论文人物接收直接证据。正文方法未完整核验。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+          "abstractSource": "https://www.nature.com/articles/s41597-026-08519-y",
+          "abstractZh": "105项NIH数据资源的横截面清查呈现访问制度、功能与资金差异，适合作为数据治理的相邻阅读。",
+          "readingUse": "数据共享治理与方法背景。",
+          "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+          "readingPriority": "normal",
+          "priorityReason": "优先核对研究情境、概念与本课题是否相符。",
+          "doi": "https://doi.org/10.1038/s41597-026-08519-y",
+          "publicationDate": "2026-10-19",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://www.nature.com/articles/s41597-026-08519-y",
+          "publicationStatus": "online-first",
+          "socialScienceAssessment": "uncertain",
+          "socialScienceReason": "对象是科研基础设施、访问政策和资助治理，有科学政策社会科学关联；数据领域是生物医学，不是受众行为研究，学科归属交用户判断。"
+        }
+      ]
+    }
+  ],
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "优先核查2026-10-19上期发布以来至2026-10-20；未确认直接相关新增后扩展2024-10-20至2026-10-20。另列2024-09-28与2023-10-29两篇较早补充。",
+    "selectionNote": "本期7篇同行评审研究，3篇已在传播学主题栏解读，4篇补充在本专题，只登记一次。关注文化选择、加工流畅性、人物认同和跨语言测量；尚未核验到直接检验外国受众对中国神话人物的Schwartz价值契合及本国神话人物类比的本轮新增研究，这不意味着无人研究。",
+    "historyCoverage": "已核对网站205条永久登记、可访问阅读与补充清单189条记录及本轮可见的已介绍题名，按DOI、规范化题名和已核验版本别名去重。完整既往对话检索失败，不保证覆盖不可访问的对话。私人清单内容不上传网站。",
+    "selectedPapers": [
+      "https://doi.org/10.1027/1864-1105/a000508",
+      "https://doi.org/10.1111/ijal.70260",
+      "https://doi.org/10.1177/00936502241287334",
+      "https://doi.org/10.1093/gpcomm/wpaf002",
+      "https://doi.org/10.1016/j.chb.2026.108951",
+      "https://doi.org/10.1080/02650487.2024.2428551",
+      "https://doi.org/10.1177/0261927X231210329"
+    ],
+    "papers": [
+      {
+        "title": "A Window Into the Other Side of the World: Predictors of Viewers’ Interest in Culturally Distant Media",
+        "titleZh": "为何愿意观看文化距离较远的电影",
+        "authors": "Jiyeon Yeo, Kalkidan Lea Classen, Jan-Philipp Stein",
+        "year": 2026,
+        "venue": "Journal of Media Psychology",
+        "url": "https://doi.org/10.1027/1864-1105/a000508",
+        "source": "Journal of Media Psychology",
+        "category": "博士论文专题 · 近两年研究",
+        "evidence": "摘要核验",
+        "topicIds": [
+          "culture"
+        ],
+        "takeaway": "167人研究提示文化距离之外，开放性、同伴影响、文化智力和学习动机也解释观看偏好。",
+        "theory": "以差异易感性媒体效果模型理解文化距离与个体差异；观看兴趣不同于观看后的理解、人物好感和人物认同。",
+        "data": "167名西方背景成年受众，在被试内设计中评估文化距离高低的虚构电影；另测明确兴趣及相关预测变量。",
+        "method": "预注册的被试内实验，预测变量关系不能一概解释为因果。正文可核验片段提示封面美学与类型可能混淆；未完整读取方法与结果，不标全文。",
+        "results": "开放性、同伴影响、文化智力和学习动机显著预测文化距离较远媒体的偏好。系数、置信区间未核验。",
+        "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+        "limitations": "首次在线2026-03-20；本轮扩展近两年，不是今日新文。文化选择与角色接收不同，样本文化背景也不代表所有外国受众。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+        "abstractSource": "https://doi.org/10.1027/1864-1105/a000508",
+        "abstractZh": "167人研究提示文化距离之外，开放性、同伴影响、文化智力和学习动机也解释观看偏好。",
+        "readingUse": "选择阶段与接收阶段的区别、文化距离操纵预试。",
+        "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+        "readingPriority": "high",
+        "priorityReason": "能具体帮助区分接收结果、加工机制或测量边界。",
+        "doi": "https://doi.org/10.1027/1864-1105/a000508",
+        "citationNote": "Google Scholar结果没有展示引用次数，保持未知，不记0；因此放入专题，不进入引用排序期刊栏。",
+        "apaCitation": "Yeo, J., Classen, K. L., & Stein, J.-P. (2026). A window into the other side of the world: Predictors of viewers’ interest in culturally distant media. Journal of Media Psychology. Advance online publication. https://doi.org/10.1027/1864-1105/a000508",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "peerReviewSource": "https://econtent.hogrefe.com/doi/10.1027/1864-1105/a000508",
+        "publicationStatus": "online-first",
+        "publicationDate": "2026-03-20",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://econtent.hogrefe.com/doi/10.1027/1864-1105/a000508",
+        "hypothesisImplication": "文化距离可能影响先看不看，而人物价值契合影响看后接收，分阶段建模，不混为一个效果。",
+        "manipulationImplication": "把文化来源标签与人物行为价值线索分开操纵；封面、题材、画风与字数保持一致。",
+        "measurementImplication": "实验前测开放性、文化智力、学习动机及接触经验；实验后分别测选择意向和四类接收结果。"
+      },
+      {
+        "title": "Code-Mixing in Cultural Educational Materials: Processing and Implications for Comprehension, Perceived Vitality, and Topic Interest",
+        "titleZh": "文化解释中的混语剂量：理解与兴趣可能不同步",
+        "authors": "Jessica Gasiorek, Marko Dragojevic, Sanoe K. Burgess",
+        "year": 2026,
+        "venue": "International Journal of Applied Linguistics",
+        "url": "https://doi.org/10.1111/ijal.70260",
+        "source": "International Journal of Applied Linguistics",
+        "category": "博士论文专题 · 近两年研究",
+        "evidence": "摘要核验",
+        "topicIds": [
+          "culture"
+        ],
+        "takeaway": "458人实验中，低量混语的理解表现最好；高量混语降低流畅性及进一步学习兴趣。",
+        "theory": "加工流畅性和语言社会意义可能产生不同结果；理解、感知语言活力与兴趣不能等同。",
+        "data": "N=458，关于夏威夷文化历史的英语与夏威夷语短文，参与者通常不熟悉夏威夷语。",
+        "method": "随机分配无、低、高混语三组。具体比例、量表题目、样本构成及效应系数未核验。",
+        "results": "高混语组流畅性和进一步学习兴趣较低；无混语与低混语在这两项不显著不同，低混语组文本理解最高。",
+        "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+        "limitations": "2026-06-19正式在线，属于近两年扩展。不是中国神话或本国神话人物类比实验，不能据此宣称类比机制已获证实。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+        "abstractSource": "https://doi.org/10.1111/ijal.70260",
+        "abstractZh": "458人实验中，低量混语的理解表现最好；高量混语降低流畅性及进一步学习兴趣。",
+        "readingUse": "解释材料的陌生符号剂量和多维结果测量。",
+        "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+        "readingPriority": "high",
+        "priorityReason": "能具体帮助区分接收结果、加工机制或测量边界。",
+        "doi": "https://doi.org/10.1111/ijal.70260",
+        "apaCitation": "Gasiorek, J., Dragojevic, M., & Burgess, S. K. (2026). Code-mixing in cultural educational materials: Processing and implications for comprehension, perceived vitality, and topic interest. International Journal of Applied Linguistics. Advance online publication. https://doi.org/10.1111/ijal.70260",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "peerReviewSource": "https://onlinelibrary.wiley.com/doi/10.1111/ijal.70260",
+        "publicationStatus": "online-first",
+        "publicationDate": "2026-06-19",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://onlinelibrary.wiley.com/doi/10.1111/ijal.70260",
+        "hypothesisImplication": "解释并非越本土化越好，可检验适量文化陌生性与流畅性之间的边界，而非假定线性正效应。",
+        "manipulationImplication": "设置无类比、有限类比、强类比，并控制事实信息；预试强类比是否误导人物价值与文化归属。",
+        "measurementImplication": "理解采用客观题，兴趣与分享意向独立测量；增加类比理解准确性、感知文化真实性及流畅性检查。"
+      },
+      {
+        "title": "The dimensionality and cross-cultural invariance of narrative transportability: evidence from 50 countries and 21 languages",
+        "titleZh": "叙事可沉浸性的跨文化测量：50国21语种证据",
+        "authors": "W. P. Malecki, Melanie C. Green, Marta Kowal, Michał Misiak, S. Craig Roberts, Agnieszka Sorokowska, Piotr Sorokowski",
+        "year": 2026,
+        "venue": "Global Perspectives in Communication",
+        "url": "https://doi.org/10.1093/gpcomm/wpaf002",
+        "source": "Global Perspectives in Communication",
+        "category": "博士论文专题 · 测量方法",
+        "evidence": "摘要核验",
+        "topicIds": [
+          "culture",
+          "methods"
+        ],
+        "takeaway": "叙事可沉浸性有四维结构，但跨语言均值比较不能忽略部分标量不变性的条件。",
+        "theory": "特质可沉浸性与一次观看的状态沉浸应区分。四维为认知投入、认知情绪想象、感官想象、个人投入。",
+        "data": "N=8,814，50国21语言。EFA 2,644人，CFA 6,170人，修订量表15题。",
+        "method": "因子分析及构型、载荷、截距不变性检验。正文结果片段显示完整标量不变性不足，排除4个语言组并释放3题截距后获得部分标量不变性。",
+        "results": "支持四维结构与载荷可比性，均值比较的可比范围有条件，不能写成所有21语言完全标量等值。",
+        "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+        "limitations": "2026-03-10在线。核验摘要及部分结果段，未全面读取正文；未确认该新刊SSCI资格，因此只在同行评审专题，不进入SSCI主题栏。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+        "abstractSource": "https://doi.org/10.1093/gpcomm/wpaf002",
+        "abstractZh": "叙事可沉浸性有四维结构，但跨语言均值比较不能忽略部分标量不变性的条件。",
+        "readingUse": "多国实验的测量等值和特质控制。",
+        "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+        "readingPriority": "high",
+        "priorityReason": "能具体帮助区分接收结果、加工机制或测量边界。",
+        "doi": "https://doi.org/10.1093/gpcomm/wpaf002",
+        "apaCitation": "Malecki, W. P., Green, M. C., Kowal, M., Misiak, M., Roberts, S. C., Sorokowska, A., & Sorokowski, P. (2026). The dimensionality and cross-cultural invariance of narrative transportability: Evidence from 50 countries and 21 languages. Global Perspectives in Communication, 1(1), wpaf002. https://doi.org/10.1093/gpcomm/wpaf002",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "peerReviewSource": "https://academic.oup.com/gpc/article/1/1/wpaf002/8509433",
+        "publicationStatus": "published",
+        "publicationDate": "2026-03-10",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://academic.oup.com/gpc/article/1/1/wpaf002/8509433",
+        "hypothesisImplication": "跨国接收差异可能部分来自测量而非理论机制，比较路径和均值前分别检查条件。",
+        "manipulationImplication": "先在各受众国家独立预试材料，避免把语种与文化内外群体操作完全混淆。",
+        "measurementImplication": "Schwartz价值量表、人物认同及沉浸均需跨语言检验；特质可沉浸性作前测，不替代状态中介。"
+      },
+      {
+        "title": "Virtual characters, real emotions: Avatar identification and psychological transformation across esports and K-pop fandoms",
+        "titleZh": "虚拟人物认同：电竞、K-pop及双重粉丝的不同路径",
+        "authors": "Yi-Ting Huang, Yu-Chiao Huang, En-Chia Lin",
+        "year": 2026,
+        "venue": "Computers in Human Behavior, 179, 108951",
+        "url": "https://doi.org/10.1016/j.chb.2026.108951",
+        "source": "Computers in Human Behavior",
+        "category": "博士论文专题 · 相邻机制",
+        "evidence": "摘要核验",
+        "topicIds": [
+          "culture"
+        ],
+        "takeaway": "800人调查中，叙事投入和理想形象契合是跨粉丝组较稳定的认同预测因素，但不是Schwartz价值契合的检验。",
+        "theory": "社会认知和自我扩展视角，区分虚拟人物特征、现实名人影响、媒介丰富度和自我形象契合。",
+        "data": "K/DA虚拟女团，800份有效调查；电竞玩家、K-pop粉丝与双重粉丝。国家构成、招募与各组规模未核验。",
+        "method": "PLS结构方程分析。观察性群组不是随机分配，不能把组间路径差异当文化边界的因果调节。",
+        "results": "叙事投入、理想自我形象契合、理想他人形象契合在各粉丝组均预测认同；外貌、崇拜和生动性路径存在群组差异。",
+        "relevance": "以下研究设计建议为简报推论，不能当作论文已证实结论。",
+        "limitations": "已核验同行评审及2026年6月卷期，首次在线具体日未确认，不补写日期。形象契合不是基本价值观契合，粉丝类别不是文化内外群体。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期未在本站提供完整原文摘要，请通过下方来源链接查看；中文概述为原创，不冒称逐字摘要。",
+        "abstractSource": "https://doi.org/10.1016/j.chb.2026.108951",
+        "abstractZh": "800人调查中，叙事投入和理想形象契合是跨粉丝组较稳定的认同预测因素，但不是Schwartz价值契合的检验。",
+        "readingUse": "人物认同的相邻解释与群组比较边界。",
+        "researchConnection": "提供相邻研究的证据与边界，不直接外推至中国神话人物的外国受众。",
+        "readingPriority": "high",
+        "priorityReason": "能具体帮助区分接收结果、加工机制或测量边界。",
+        "doi": "https://doi.org/10.1016/j.chb.2026.108951",
+        "apaCitation": "Huang, Y.-T., Huang, Y.-C., & Lin, E.-C. (2026). Virtual characters, real emotions: Avatar identification and psychological transformation across esports and K-pop fandoms. Computers in Human Behavior, 179, 108951. https://doi.org/10.1016/j.chb.2026.108951",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "peerReviewSource": "https://ntut.elsevierpure.com/en/publications/virtual-characters-real-emotions-avatar-identification-and-psycho/",
+        "publicationStatus": "published",
+        "publicationDate": "2026-06",
+        "publicationDatePrecision": "month",
+        "publicationDateSource": "https://ntut.elsevierpure.com/en/publications/virtual-characters-real-emotions-avatar-identification-and-psycho/",
+        "hypothesisImplication": "将价值契合与理想形象契合分成竞争解释，检验价值契合是否有增量作用。",
+        "manipulationImplication": "以人物具体行为呈现自我超越或自我提升价值，尽量不同时改变外貌、能力、声望与理想化程度。",
+        "measurementImplication": "受众价值和人物价值分别测量；另测理想自我形象契合与文化边界，不能把喜欢或道德评价直接作为价值契合。"
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.1027/1864-1105/a000508",
+        "reason": "先区分愿不愿观看与看后人物接收，有助于搭建论文的阶段模型。具体假设、操纵与测量建议见下方解读。"
+      },
+      {
+        "doi": "https://doi.org/10.1111/ijal.70260",
+        "reason": "三组随机实验直接显示理解与兴趣不必同步，适合设计解释材料的剂量预试。"
+      },
+      {
+        "doi": "https://doi.org/10.1177/00936502241287334",
+        "reason": "直接把跨文化语言线索、流畅性与叙事投入连接起来，但须保留人物接收和群体态度的区别。"
+      }
+    ]
+  },
+  "shortfallReason": "主题期刊4/5：本轮去重后只核验4篇同时满足相关性、77刊SSCI Q1/Q2和真实GS引用数的论文。Communication Theory完整在线集合未完成，当前不能发布完整一期，不以任意几篇替代。博士专题7篇达到软目标，但未核验到直接检验中国神话人物价值契合与本国人物类比的新近直接证据。"
+}

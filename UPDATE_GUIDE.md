@@ -1,6 +1,16 @@
 # 每日研究简报更新指南
 
-2026-10-16起执行以下规则，Asia/Singapore上午10点开始，完成后发布。历史schemaVersion:5简报不改写；新简报schemaVersion:6。
+2026-10-16起执行以下规则，Asia/Shanghai上午10点开始，完成后发布。历史schemaVersion:5简报不改写；新简报schemaVersion:6。
+
+## 博士论文追踪整合（2026-10-20起）
+
+《从被看见到被接收》作为culture重点，保留一般四栏目、其他主题与配额，一次运行一次发布。优先核对上次运行后的同行评审正式在线研究，不足向近两年扩展，较早高相关论文明确标补充。区分理解、好感、人物认同与传播意向；Schwartz价值契合不能等同道德评价、形象契合或文化接近。另追踪文化内外群体调节、本国相似神话人物类比、熟悉性、图式和加工流畅性。无法核验直接研究时不能声称该方向无人研究。
+
+专题软目标5至8篇，不改变栏目配额。优先放现有合格栏，其余可放dissertation.papers，允许直接检索出版方和权威学术索引，但仅选同行评审、published或online-first期刊论文。原有主题期刊栏仍坚持77刊SSCI Q1/Q2及真实Google Scholar引用数，不因专题放宽。dissertation.selectedPapers保存本期全部精选的DOI引用，topPapers保存最多3个唯一DOI及理由；完整解读只出现一次，其他位置只链接。
+
+每篇精选保存apaCitation、peerReviewed:true、peerReviewSource、publicationType:journal、publicationStatus、日期来源与精度，以及hypothesisImplication、manipulationImplication、measurementImplication。后面三项在页面明确标为简报推论，不能当作原论文发现。每日清楚展示3篇精读选择；不足时解释。dissertation同时保存timeRange、selectionNote、historyCoverage，不足5篇附shortfallReason。相关字段必须实际渲染，收藏导入和永久登记兼容，papers_in包括专题正文，但不登记引用。
+
+运行前核对网站永久历史、可访问既往对话、博士论文阅读与补充清单，按DOI、规范化题名和已核验版本别名统一去重。完整对话不可访问时明确覆盖范围，不能声称完全去重；不上传私人清单、笔记或凭证。用户显式关键词和未来设置继续保留，存在冲突在当期说明。
 
 ## 读取与设置
 

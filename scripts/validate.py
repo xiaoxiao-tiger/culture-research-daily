@@ -29,6 +29,18 @@ for issue in sorted(index,key=lambda x:x['date']):
     for row in data['themeSearches']+data.get('verificationLog',[]):
         assert all(isinstance(row.get(k),str) and row[k].strip() for k in ('platform','query','timeRange','purpose','status'))
     papers=papers_in(data);assert issue['count']==len(papers), 'Index count mismatch'
+    if data.get('dissertation'):
+        d=data['dissertation'];assert modern and d.get('historyCoverage') and d.get('timeRange') and d.get('selectionNote')
+        refs=d['selectedPapers'];assert len(refs)<=8 and len(set(refs))==len(refs), 'Invalid dissertation selection'
+        selected=[p for p in papers if p.get('doi') in refs]
+        assert len(selected)==len(refs) and all(sum(p.get('doi')==ref for p in papers)==1 for ref in refs), 'Unresolved dissertation reference'
+        if len(selected)<5:assert d.get('shortfallReason'), 'Explain dissertation shortfall'
+        for p in selected:
+            assert p.get('peerReviewed') is True and p.get('publicationType')=='journal' and p.get('publicationStatus') in ('published','online-first'), 'Dissertation requires peer-reviewed published articles'
+            assert p.get('apaCitation') and p.get('publicationDateSource') and p.get('publicationDate') and p.get('peerReviewSource')
+            assert all(p.get(k) for k in ('hypothesisImplication','manipulationImplication','measurementImplication')), 'Missing dissertation implications'
+        tops=d['topPapers'];assert len(tops)==min(3,len(refs)) and len({p['doi'] for p in tops})==len(tops)
+        assert all(p['doi'] in refs and p.get('reason') for p in tops), 'Invalid dissertation priorities'
     if (modern and (len(other)<5 or len(groups[1]['papers'])<5 or len(groups[3]['papers'])<1)) or (not modern and len(papers)<15):assert data.get('shortfallReason'), 'Explain missing papers'
     for p in papers:
         for field in required:assert isinstance(p.get(field),str) and p[field].strip(), (date,field)

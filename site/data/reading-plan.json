@@ -1,7 +1,7 @@
 {
   "version": 1,
   "effectiveDate": "2026-10-16",
-  "timezone": "Asia/Singapore",
+  "timezone": "Asia/Shanghai",
   "activeTopicIds": ["culture", "sycophancy", "methods"],
   "topics": [
     {"id":"culture","label":"跨文化接收与价值观契合","query":"\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") AND (character OR narrative OR audience)) OR (mythology AND analogy)","note":"神话人物接收、价值观契合、人物认同与受众本国神话人物类比；用户保存的当日关键词优先。"},

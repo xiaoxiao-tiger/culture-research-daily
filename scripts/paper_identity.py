@@ -14,4 +14,5 @@ def identifiers(p):
     return sorted(set(out))
 
 def papers_in(data):
-    return [p for g in data.get('groups',[]) for p in g['papers']] if 'groups' in data else data['papers']
+    papers=[p for g in data.get('groups',[]) for p in g['papers']] if 'groups' in data else list(data.get('papers',[]))
+    return papers+data.get('dissertation',{}).get('papers',[])

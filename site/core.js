@@ -9,5 +9,6 @@
  const readingStatus=f=>['unread','read','cite','irrelevant'].includes(f.status)?f.status:(f.read?'read':'unread');
  function rotation(plan,date,kind){const day=s=>Date.parse(s+'T00:00:00Z');const n=Math.floor((day(date)-day(plan.rotations.startDate))/86400000);return n<0?null:plan.rotations[kind][n%plan.rotations[kind].length];}
  function mergeFavorites(current,incoming){const next=[...current];for(const f of incoming)if(!next.some(x=>samePaper(x.paper,f.paper)))next.push(f);return next;}
- const api={titleKey,identifiers,paperKey,samePaper,effectiveSettings,requestBody,readingStatus,rotation,mergeFavorites};if(typeof module!=='undefined'&&module.exports)module.exports=api;root.ResearchCore=api;
+ const allPapers=data=>[...(data.groups?data.groups.flatMap(g=>g.papers):data.papers||[]),...(data.dissertation?.papers||[])];
+ const api={titleKey,identifiers,paperKey,samePaper,effectiveSettings,requestBody,readingStatus,rotation,mergeFavorites,allPapers};if(typeof module!=='undefined'&&module.exports)module.exports=api;root.ResearchCore=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20",
   "communication": {
     "joc": {
       "lastCheckedAt": "2026-10-16",
@@ -98,6 +98,22 @@
           }
         ]
       }
+    },
+    "ct": {
+      "lastAttemptAt": "2026-10-20",
+      "lastCheckedAt": "2026-10-20",
+      "status": "incomplete",
+      "reason": "Advance directory partially read; continuation timed out. No complete snapshot, no completed issue cursor advanced.",
+      "lastCompletedAt": null,
+      "onlineSnapshots": [],
+      "completedIssues": [],
+      "directoryObservation": {
+        "checkedAt": "2026-10-20",
+        "url": "https://academic.oup.com/ct/advance-articles",
+        "complete": false,
+        "observedMinimum": 22,
+        "scopeNote": "Only a directory preview and some abstracts verified; full online collection not completed."
+      }
     }
   },
   "general": {
@@ -126,6 +142,14 @@
       "status": "blocked",
       "reason": "Directory request inaccessible; browser authority gate refused continued access to science.org due to its existing verification block. No current content verified.",
       "lastCompletedAt": null
+    },
+    "scientific-data": {
+      "lastAttemptAt": "2026-10-20",
+      "status": "completed",
+      "lastCompletedAt": "2026-10-20",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08519-y",
+      "publicationDate": "2026-10-19",
+      "socialScienceAssessment": "uncertain"
     }
   }
 }

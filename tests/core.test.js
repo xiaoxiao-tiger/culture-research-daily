@@ -1,5 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict');
 const C=require('../site/core.js');
+test('supplement papers count once and references do not duplicate cards',()=>{const a={title:'A',doi:'10.1/a'},b={title:'B',doi:'10.1/b'};assert.deepEqual(C.allPapers({groups:[{papers:[a]}],dissertation:{papers:[b],selectedPapers:[a.doi,b.doi],topPapers:[{doi:a.doi}]}}),[a,b]);assert.deepEqual(C.allPapers({papers:[a]}),[a])});
 test('DOI URL and punctuation variants identify the same paper',()=>{assert(C.samePaper({title:'A Different Title',doi:'https://doi.org/10.1000/EXAMPLE'},{title:'Renamed after publication',doi:'doi:10.1000/example'}));assert(C.samePaper({title:'“Cultural Narratives”:  Evidence'},{title:'Cultural Narratives Evidence'}))});
 test('arXiv versions are not new papers',()=>{assert(C.samePaper({title:'Title revised',url:'https://arxiv.org/abs/2501.00359v2'},{title:'Original title',url:'https://arxiv.org/html/2501.00359v1'}))});
 test('verified cross-version aliases deduplicate a working paper and journal article',()=>{assert(C.samePaper({title:'A working paper',doi:'10.1000/work'},{title:'New journal title',doi:'10.1000/journal',identityAliases:['doi:10.1000/work']}))});
