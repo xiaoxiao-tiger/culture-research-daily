@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "communication": {
     "joc": {
       "lastCheckedAt": "2026-10-16",
@@ -114,6 +114,21 @@
         "observedMinimum": 22,
         "scopeNote": "Only a directory preview and some abstracts verified; full online collection not completed."
       }
+    },
+    "nms": {
+      "lastAttemptAt": "2026-10-21",
+      "lastCheckedAt": "2026-10-21",
+      "status": "blocked",
+      "reason": "Publisher directory remained behind a Cloudflare human-verification page after one normal reload; public indexing exposed only a partial directory. No complete Online First snapshot or issue cursor advanced.",
+      "lastCompletedAt": null,
+      "onlineSnapshots": [],
+      "completedIssues": [],
+      "directoryObservation": {
+        "checkedAt": "2026-10-21",
+        "url": "https://journals.sagepub.com/toc/nmsa/0/0?ContentItemType=research-article&pageSize=100&sortBy=FullEpubDateField&startPage=0",
+        "complete": false,
+        "scopeNote": "Public search exposed a partial directory, while the publisher page required human verification. No arbitrary subset was treated as a complete issue."
+      }
     }
   },
   "general": {
@@ -150,6 +165,15 @@
       "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08519-y",
       "publicationDate": "2026-10-19",
       "socialScienceAssessment": "uncertain"
+    },
+    "nature-communications": {
+      "lastAttemptAt": "2026-10-21",
+      "status": "completed",
+      "lastCompletedAt": "2026-10-21",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41467-026-77235-3",
+      "publicationDate": "2026-08-27",
+      "socialScienceAssessment": "uncertain"
     }
   }
 }
+

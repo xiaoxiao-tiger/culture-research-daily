@@ -1,0 +1,635 @@
+{
+  "schemaVersion": 6,
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "edition": "正式第18期 · 合并博士论文追踪 · 部分发布",
+  "title": "传播触达、跨文化解码与价值认同的证据边界",
+  "summary": "本期9篇完整解读：其他研究3篇，Nature Communications 1篇，博士论文专题5篇。Google Scholar引用量栏目与New Media & Society完整在线一期因访问验证未完成，均保留缺额。博士论文方向精选5篇并给出3篇精读。",
+  "notice": "正式历史不清空，永久登记继续追加。今日按DOI、arXiv ID、规范化题名、已核验别名及可访问的博士论文阅读清单去重；私人清单不上传。",
+  "searchSettings": {
+    "themeKeywords": "\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") AND (character OR narrative OR audience)) OR (mythology AND analogy)",
+    "journalKeywords": "与主题检索相同，检索后再按期刊资格筛选",
+    "excludeTerms": "",
+    "lookbackDays": 30,
+    "effectiveDate": "defaults",
+    "scope": "default"
+  },
+  "activeTopicIds": [
+    "culture",
+    "sycophancy",
+    "methods"
+  ],
+  "searchNote": "按上海当地2026-10-21执行，读取main的schema6、四栏目、轮换及全部配置。无当天有效用户覆盖，保留未来设置。前两栏只使用四个平台；博士专题允许出版方及权威机构补充。公开域名查询均明确标记为非站内高级检索。Google Scholar原生网页触发异常流量验证后停止，不绕过验证，不以其他引用指标替代。",
+  "themeSearches": [
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers (\"cultural transmission\" OR \"cross-cultural reception\" OR \"value congruence\" OR \"causal inference\") 2026",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "执行并扩展核验10月相关结果；选择随机短信干预工作论文。",
+      "topicIds": [
+        "culture",
+        "methods"
+      ],
+      "timeRange": "2026年至今；执行2026-10-21",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com (\"cross-cultural reception\" OR \"value similarity\" OR \"communication\" OR \"causal inference\") 2026",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "执行并扩展核验10月相关结果；选择地方报纸关闭与众筹研究。",
+      "topicIds": [
+        "culture",
+        "methods"
+      ],
+      "timeRange": "2026年至今；执行2026-10-21",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "arXiv",
+      "query": "site:arxiv.org/abs (\"causal robustness\" OR \"causal inference\" OR sycophancy OR \"cultural narrative\") 2026",
+      "channel": "公开域名网页检索，非站内高级检索",
+      "status": "执行并在arXiv原生论文页核验首发时间；选择2610.26250。",
+      "topicIds": [
+        "culture",
+        "sycophancy",
+        "methods"
+      ],
+      "timeRange": "2026年至今；执行2026-10-21",
+      "purpose": "主题发现"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "\"Discovering Language Model Behaviors with Model-Written Evaluations\"",
+      "channel": "Google Scholar原生网页",
+      "status": "页面提示异常流量并要求人工验证；按规则停止。高被引组及主题期刊组不使用替代次数，保持空缺。",
+      "topicIds": [
+        "sycophancy"
+      ],
+      "timeRange": "不限年份；执行2026-10-21",
+      "purpose": "引用次数核验"
+    },
+    {
+      "platform": "博士论文专题",
+      "query": "\"Chinese cultural content\" audience decoding OR \"foreign players\" cross-cultural identification OR \"value-based narratives\"",
+      "channel": "出版方原文、机构记录与权威学术索引",
+      "status": "执行；核验5篇同行评审期刊论文的题录、DOI、发表状态与证据范围。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "优先上次运行后，未足时扩展至近两年并单列较早补充；执行2026-10-21",
+      "purpose": "博士论文专题发现与核验"
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "arXiv",
+      "query": "Causal Robustness from Synthetic Environments | https://arxiv.org/abs/2610.26250",
+      "channel": "arXiv原生论文页",
+      "status": "摘要、作者、v1首发2026-10-19及arXiv ID核验；预印本不充作博士论文同行评审精选。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "执行2026-10-21",
+      "purpose": "逐篇核验"
+    },
+    {
+      "platform": "SSRN",
+      "query": "From Headlines to Bottom Lines | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7609365",
+      "channel": "SSRN公开题录与摘要索引",
+      "status": "核验作者、编号、2026-10-14 posted日期、设计与摘要结果；原生页直接访问受限。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "执行2026-10-21",
+      "purpose": "逐篇核验"
+    },
+    {
+      "platform": "NBER",
+      "query": "Staying Connected | https://www.nber.org/papers/w35923",
+      "channel": "NBER公开题录与摘要索引",
+      "status": "核验作者、工作论文号、10月月级日期和摘要结果；不虚构具体首发日。",
+      "topicIds": [
+        "methods"
+      ],
+      "timeRange": "执行2026-10-21",
+      "purpose": "逐篇核验"
+    },
+    {
+      "platform": "Nature Communications",
+      "query": "Preserved higher-order mentalising | https://www.nature.com/articles/s41467-026-77235-3",
+      "channel": "出版方Article in Press全文与官方专题目录",
+      "status": "全文核验样本、任务、模型和结果；采用官方专题目录2026-08-27日期，学科归属标为不确定。",
+      "topicIds": [],
+      "timeRange": "执行2026-10-21",
+      "purpose": "逐篇核验"
+    },
+    {
+      "platform": "博士论文专题",
+      "query": "5篇专题论文DOI逐一核验",
+      "channel": "SAGE、Frontiers、Taylor & Francis出版方页面及作者机构记录",
+      "status": "均核验为已正式在线或见刊的同行评审期刊论文；未取得全文者只按摘要或可见方法片段解读。",
+      "topicIds": [
+        "culture"
+      ],
+      "timeRange": "执行2026-10-21",
+      "purpose": "专题资格与证据范围核验"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "New Media & Society",
+      "query": "https://journals.sagepub.com/toc/nmsa/0/0?ContentItemType=research-article&pageSize=100&sortBy=FullEpubDateField&startPage=0",
+      "channel": "出版方在线目录，无关键词",
+      "status": "公开搜索只返回部分目录；出版方页面持续显示Cloudflare安全验证。无法完整枚举Online First集合，因此collection为null，不推荐任意子集，不推进完成游标。",
+      "topicIds": [],
+      "timeRange": "截至2026-10-21可见在线集合",
+      "purpose": "完整在线一期核验"
+    },
+    {
+      "platform": "Nature Communications",
+      "query": "https://www.nature.com/ncomms/ 及最新内容目录",
+      "channel": "出版方最新目录和原文，无关键词",
+      "status": "检查最新内容并排除明显纯自然科学；未发现更近且可确认的人类社会科学候选，选择官方社会神经科学目录中最新可核验研究。学科归属不确定，交用户判断。",
+      "topicIds": [],
+      "timeRange": "截至2026-10-21最新可核验社会科学相邻研究",
+      "purpose": "轮换期刊最新研究"
+    }
+  ],
+  "coreTracking": [
+    {
+      "coreTitle": "尚未收到已同步的核心文献",
+      "direction": "citations",
+      "checkedAt": "2026-10-21",
+      "channel": "core-papers.json",
+      "status": "requests为空，不把私人清单或浏览器收藏当作核心文献请求。",
+      "findings": []
+    }
+  ],
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 5,
+      "sortBy": "split",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新",
+          "target": 3,
+          "sortBy": "publicationDate",
+          "sortDescription": "arXiv和SSRN按核验日级首发时间降序，NBER仅到月；各库1篇。"
+        },
+        {
+          "id": "cited",
+          "label": "高被引",
+          "target": 2,
+          "sortBy": "citationCount",
+          "sortDescription": "Google Scholar受异常流量验证阻断，未取得实际次数，本组空缺。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included",
+          "reason": "最新组1篇。"
+        },
+        {
+          "database": "SSRN",
+          "status": "included",
+          "reason": "最新组1篇。"
+        },
+        {
+          "database": "arXiv",
+          "status": "included",
+          "reason": "最新组1篇。"
+        }
+      ],
+      "sortDescription": "最新3篇先列；高被引2篇因Google Scholar无法核验而缺额。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "用于补充相关理论、方法或证据边界。",
+          "title": "Causal Robustness from Synthetic Environments",
+          "titleZh": "从单一观察分布构造合成环境以识别稳健预测",
+          "authors": "Linying Yang, Cyrill Scheidegger, Xinwei Shen, Peter Bühlmann",
+          "year": 2026,
+          "venue": "arXiv:2610.26250",
+          "url": "https://arxiv.org/abs/2610.26250",
+          "source": "arXiv",
+          "category": "其他研究 · 最新",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "论文从单一观察分布重加权生成合成环境，并用不变性约束连接因果预测与协变量偏移下的分布稳健性。",
+          "theory": "在响应满足结构性加性噪声机制时，因果预测函数的条件均方误差对预测值保持恒定，可据此恢复稳健目标。",
+          "data": "理论模型与模拟或示例层面的验证。摘要没有给出传播学数据集、样本规模或应用场景。",
+          "method": "沿预测值方向重加权协变量分布，以Cramér-von Mises准则惩罚不变性偏离，并推导最坏情形表示、一致性、收敛速率和拟合优度检验。",
+          "results": "在附加正交条件下，因果预测函数可被识别为满足不变性限制的唯一风险最小化解；多环境时可与DRIG结合。",
+          "limitations": "预印本，尚非同行评审结论。结构性加性噪声与正交条件较强，摘要未展示传播研究中的实证表现。",
+          "readingUse": "用于评估单一平台或国家数据下的稳健性，不能替代真实跨文化外部验证。",
+          "sourceDatabase": "arXiv",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-19",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2610.26250",
+          "doi": "https://doi.org/10.48550/arXiv.2610.26250",
+          "abstractSource": "https://arxiv.org/abs/2610.26250",
+          "abstractZh": "论文从单一观察分布重加权生成合成环境，并用不变性约束连接因果预测与协变量偏移下的分布稳健性。",
+          "researchConnection": "与博士论文的直接关系有限，主要提供相邻机制或方法。"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "用于补充相关理论、方法或证据边界。",
+          "title": "From Headlines to Bottom Lines: Local Newspaper Closures and Crowdfunding Outcomes",
+          "titleZh": "地方报纸停刊如何影响众筹融资",
+          "authors": "Yi Cao, Christoph H. Loch, Chen Shen, Chi Wan",
+          "year": 2026,
+          "venue": "SSRN Working Paper 7609365",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7609365",
+          "source": "SSRN",
+          "category": "其他研究 · 最新",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "地方日报关闭与当地创业众筹成功率下降约4个百分点、承诺额相对目标下降约0.06相关，提示地方新闻具有连接创业者与远方资本的功能。",
+          "theory": "地方媒体可能作为市场认证、可见性和社会网络桥梁，降低陌生投资者评估本地项目的信息成本。",
+          "data": "2009至2023年美国Kickstarter项目与县级日报关闭事件匹配。公开摘要未给出项目总量和处理县数量。",
+          "method": "错位发生的双重差分设计，并考察数字可达性、商业报道取向、支持者地理分散和当地信贷约束等异质性。",
+          "results": "关闭后成功概率约低4个百分点，pledged-to-goal约低0.06；数字可达、商业导向报纸及支持者更分散、银行信贷较弱地区的效应更大。",
+          "limitations": "工作论文，尚未确认同行评审。识别依赖平行趋势及关闭时点外生性，摘要未核验事件研究图与安慰剂。",
+          "readingUse": "为信息中介、平台可见性和事件研究设计提供案例。",
+          "researchConnection": "与人物接收不直接相关，可用于思考传播渠道如何决定内容被看见与被支持。",
+          "sourceDatabase": "SSRN",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-14",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7609365",
+          "doi": "https://doi.org/10.2139/ssrn.7609365",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7609365",
+          "abstractZh": "地方日报关闭与当地创业众筹成功率下降约4个百分点、承诺额相对目标下降约0.06相关，提示地方新闻具有连接创业者与远方资本的功能。"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "用于补充相关理论、方法或证据边界。",
+          "title": "Staying Connected: Experimental Effects of Coach-Delivered Text Messages in an Adult High School",
+          "titleZh": "教练发送短信对成人高中毕业的实验效应",
+          "authors": "Alberto Ortega, Pietro Pellerito, Patrick S. Turner",
+          "year": 2026,
+          "venue": "NBER Working Paper 35923",
+          "url": "https://www.nber.org/papers/w35923",
+          "source": "NBER",
+          "category": "其他研究 · 最新",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "成人高中的随机短信干预使毕业率提高4.9个百分点；按实际收到信息的服从者效应为9.3个百分点，并增加完成课程数。",
+          "theory": "持续且个性化的低成本联系可能通过提醒、关系支持和行动协调降低成年学习者完成学业的摩擦。",
+          "data": "一所成人高中的学习者随机分配至教练短信干预或对照。公开摘要未给出总样本量、分层方式和随访缺失。",
+          "method": "随机分配识别意向治疗效应，并以分配为工具估计实际收信者效应；另比较教练经验与定制化程度。",
+          "results": "毕业率提高4.9个百分点；服从者提高9.3个百分点，相当于对照均值的41%；课程完成增加，注册率未变，效应集中于经验丰富且会定制信息的教练。",
+          "limitations": "NBER工作论文，首发只核验到2026年10月。单校情境限制外部效度，短信内容、样本和估计细节需阅读全文确认。",
+          "readingUse": "用于设计数字沟通干预、处理服从性并区分注册与毕业结果。",
+          "researchConnection": "与博士论文间接相关，提示传播触达和内容定制应被单独测量。",
+          "sourceDatabase": "NBER",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10",
+          "publicationDatePrecision": "month",
+          "publicationDateSource": "https://www.nber.org/papers/w35923",
+          "doi": "https://doi.org/10.3386/w35923",
+          "abstractSource": "https://www.nber.org/papers/w35923",
+          "abstractZh": "成人高中的随机短信干预使毕业率提高4.9个百分点；按实际收到信息的服从者效应为9.3个百分点，并增加完成课程数。"
+        }
+      ]
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "journalPriorityNote": "传播学优先。Google Scholar原生网页触发异常流量验证，无法取得实际被引次数并完成排序；不使用替代指标，因此本栏不凑数。",
+      "sortDescription": "先主题检索再筛期刊，必须按Google Scholar实际次数降序；本轮无法完成。",
+      "papers": []
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "unit": "issue",
+      "target": 0,
+      "sortBy": "issue",
+      "collection": null,
+      "sortDescription": "今日轮到New Media & Society Online First。目录受安全验证限制且公开索引只覆盖部分条目，无法确认完整一期。",
+      "papers": []
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "nature-communications",
+      "sortDescription": "无关键词检查Nature Communications最新内容；选择最新可核验的人类策略互动研究，学科归属不确定。",
+      "papers": [
+        {
+          "evidence": "全文核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "用于补充相关理论、方法或证据边界。",
+          "title": "Preserved higher-order mentalising during strategic interactions after medial prefrontal cortex damage",
+          "titleZh": "内侧前额叶损伤后高阶心智化仍可保留",
+          "authors": "Yi-Chen Hsieh, Arkady Konovalov, Zhi-Lin Su, Todd A. Vogel, Sanjay G. Manohar, Matthew A. J. Apps, Masud Husain, Christian C. Ruff, Patricia L. Lockwood",
+          "year": 2026,
+          "venue": "Nature Communications",
+          "url": "https://www.nature.com/articles/s41467-026-77235-3",
+          "source": "Nature Communications",
+          "category": "综合顶刊推荐 · 社会认知",
+          "topicIds": [],
+          "takeaway": "内侧前额叶损伤患者在策略互动中的奖励和高阶心智化策略与两类对照相近，但决策更慢；模型把差异定位为更高证据阈值。",
+          "theory": "研究把心智化的信念更新与一般选择过程分离，检验mPFC损伤影响他心理解还是决策动力学。",
+          "data": "33名mPFC局灶损伤患者、16名其他脑区损伤患者和73名健康对照；三组在年龄、性别和教育上匹配。",
+          "method": "150轮inspection game，名义上与另一参与者互动，实际对手为受控算法。结合影响博弈、信念更新、漂移扩散模型和病灶症状映射。",
+          "results": "三组总奖励无显著差异，F(2,119)=0.313，p=.732；mPFC组反应更慢，F(2,119)=5.796，p=.004，模型显示主要来自更高决策边界。",
+          "limitations": "非随机病灶研究不能排除病前差异，算法对手与真实互动有距离。官网日期信号存在差异，本期采用官方专题目录所示2026-08-27。",
+          "readingUse": "用于区分理解他人、形成选择和反应速度，避免把延迟直接解释为理解失败。",
+          "researchConnection": "与人物接收间接相关，可借鉴对理解、评价、认同和行为意向的过程拆分。",
+          "doi": "https://doi.org/10.1038/s41467-026-77235-3",
+          "publicationDate": "2026-08-27",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://www.nature.com/subjects/social-neuroscience/ncomms",
+          "publicationStatus": "online-first",
+          "socialScienceAssessment": "uncertain",
+          "socialScienceReason": "研究问题属于社会认知与策略互动，但核心识别依赖神经心理病灶和计算模型。按用户规则，学科归属不确定仍可推荐并交由用户判断。",
+          "abstractSource": "https://www.nature.com/articles/s41467-026-77235-3",
+          "abstractZh": "内侧前额叶损伤患者在策略互动中的奖励和高阶心智化策略与两类对照相近，但决策更慢；模型把差异定位为更高证据阈值。"
+        }
+      ]
+    }
+  ],
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "优先核查2026-10-20上期发布以来至2026-10-21；未发现足够直接新增后扩展2024-10-21至2026-10-21。2025-04-24的Games and Culture论文单列为较早漏读补充。",
+    "selectionNote": "本期5篇同行评审研究均在专题区只解读一次。两篇直接分析外国受众或海外玩家对中国文化内容的接收，一篇分析中国启发游戏环境，一篇检验价值叙事，一篇检验熟悉性与传播意向。尚未核验到直接随机检验外国受众对中国神话人物的Schwartz价值契合与本国神话人物类比的新论文，这不表示无人研究。",
+    "historyCoverage": "已核对网站219条永久登记、可访问的博士论文阅读与补充清单、已知介绍过的题名及本轮可见对话摘要，按DOI与规范化题名去重。同一Online First和正式卷期视为同篇。无法访问的完整旧对话不在覆盖范围内，不声称绝对完全去重。私人清单不上传。",
+    "selectedPapers": [
+      "https://doi.org/10.1177/10755470251345234",
+      "https://doi.org/10.3389/fcomm.2026.1850055",
+      "https://doi.org/10.3389/frvir.2026.1857057",
+      "https://doi.org/10.1177/15554120251336564",
+      "https://doi.org/10.1080/23311983.2026.2657188"
+    ],
+    "papers": [
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+        "readingPriority": "high",
+        "priorityReason": "与价值观契合和接收结果的链式区分最直接。",
+        "title": "Value-Based Narratives Foster Trust in Scientists and Communication Behaviors",
+        "titleZh": "价值叙事如何促进对科学家的信任与后续传播行为",
+        "authors": "Janet Z. Yang, Laura Arpan, Yotam Ophir, Prerna Shah",
+        "year": 2026,
+        "venue": "Science Communication, 48(5), 762-788",
+        "url": "https://doi.org/10.1177/10755470251345234",
+        "source": "Science Communication",
+        "category": "博士论文专题 · 近两年补充",
+        "topicIds": [
+          "culture"
+        ],
+        "takeaway": "只有仁慈动机知觉与叙事沉浸和人物认同正相关；人物认同进一步关联故事一致信念，后者关联继续沟通意向。",
+        "theory": "区分自我超越式仁慈动机与资历、成就或雄心等动机，并通过沉浸、认同、信念和行为意向连接价值线索与传播结果。",
+        "data": "美国成年人阅读一位医学科学家解释开发医疗诊断AI动机的第一人称叙事。公开摘要未披露样本量和分组规模。",
+        "method": "公开摘要确认检验价值动机知觉与沉浸、认同、信念及沟通意向的关系；具体随机分组、模型和控制变量尚未核验。",
+        "results": "仁慈知觉与沉浸和认同正相关；只有认同与故事一致信念相关，信念再与沟通意向相关。系数与间接效应未核验。",
+        "limitations": "首次在线2025-07-03，不是今天新增。对象是科学家而非神话人物，价值动机知觉不等于Schwartz价值距离。",
+        "readingUse": "重点阅读变量顺序以及仁慈、自我超越价值如何转译为可观察叙事线索。",
+        "researchConnection": "直接支持区分价值契合、人物认同、信念接受和传播意向。",
+        "abstractSource": "https://doi.org/10.1177/10755470251345234",
+        "abstractZh": "只有仁慈动机知觉与叙事沉浸和人物认同正相关；人物认同进一步关联故事一致信念，后者关联继续沟通意向。",
+        "doi": "https://doi.org/10.1177/10755470251345234",
+        "apaCitation": "Yang, J. Z., Arpan, L., Ophir, Y., & Shah, P. (2026). Value-based narratives foster trust in scientists and communication behaviors. Science Communication, 48(5), 762-788. https://doi.org/10.1177/10755470251345234",
+        "peerReviewSource": "https://researchconnect.buffalo.edu/en/publications/value-based-narratives-foster-trust-in-scientists-and-communicati-2/",
+        "publicationStatus": "published",
+        "publicationDate": "2025-07-03",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://journals.sagepub.com/doi/10.1177/10755470251345234",
+        "hypothesisImplication": "人物呈现自我超越价值时，人物认同可能高于成就导向或中性呈现，认同进一步预测好感和传播意向。",
+        "manipulationImplication": "在同一人物和情节中只替换行为动机及选择理由；预试Schwartz归类、道德性和能力感。",
+        "measurementImplication": "分别测受众价值、人物价值知觉、价值距离、道德评价、认同、好感和分享意向。",
+        "publicationType": "journal",
+        "peerReviewed": true
+      },
+      {
+        "evidence": "全文核验",
+        "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+        "readingPriority": "high",
+        "priorityReason": "直接提供中国文化跨平台接收的经验分类和测量语汇。",
+        "title": "Audience perception and decoding of Chinese cultural content in global cross-media context based on LLM-enhanced temporal topic modeling",
+        "titleZh": "全球平台受众如何解码中国文化内容",
+        "authors": "Ru Xu, Hongqing Guo, Kai Wu, Yue Zhuang, Maojun Zhou",
+        "year": 2026,
+        "venue": "Frontiers in Communication, 11",
+        "url": "https://doi.org/10.3389/fcomm.2026.1850055",
+        "source": "Frontiers in Communication",
+        "category": "博士论文专题 · 新近直接研究",
+        "topicIds": [
+          "culture",
+          "methods"
+        ],
+        "takeaway": "24,847条非中文YouTube评论形成算法共情、价值摩擦、文明比较和意识形态争论等解码位置，但来源与情绪差异不能解释为因果。",
+        "theory": "在编码和解码框架中加入平台策展、来源归因和时间体制，提出Algorithmic Decoding Quadrant。",
+        "data": "2014至2025年27,431条原始评论，清洗后保留24,847条非中文评论，其中22,292条英文、2,555条其他语言。",
+        "method": "LLM用于多语预处理、过滤和情绪分析，Seeded-LDA提取11主题，动态主题模型追踪变化并分析回复网络。500条人工复核总体准确率89%，kappa=.87。",
+        "results": "旅游和食物主题正向比例超过60%，叙事框架等争论主题负向比例超过50%；三分之一高参与线程出现政治化外溢，并形成三个描述性阶段。",
+        "limitations": "评论者身份、国籍和暴露分母不可见，API与高参与阈值有选择偏差，LLM翻译、过滤和情绪判断存在误差。",
+        "readingUse": "用于建立自然发生接收的分类框架，并为受控实验挑选刺激和结果维度。",
+        "researchConnection": "最直接触及外国受众、中国文化内容和解码差异，但不是人物层面价值契合实验。",
+        "abstractSource": "https://doi.org/10.3389/fcomm.2026.1850055",
+        "abstractZh": "24,847条非中文YouTube评论形成算法共情、价值摩擦、文明比较和意识形态争论等解码位置，但来源与情绪差异不能解释为因果。",
+        "doi": "https://doi.org/10.3389/fcomm.2026.1850055",
+        "apaCitation": "Xu, R., Guo, H., Wu, K., Zhuang, Y., & Zhou, M. (2026). Audience perception and decoding of Chinese cultural content in global cross-media context based on LLM-enhanced temporal topic modeling. Frontiers in Communication, 11, 1850055. https://doi.org/10.3389/fcomm.2026.1850055",
+        "peerReviewSource": "https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2026.1850055/full",
+        "publicationStatus": "published",
+        "publicationDate": "2026-06-05",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2026.1850055/full",
+        "hypothesisImplication": "人物价值契合效应可能随来源和平台解码位置变化，文化边界不应只用国籍标签代理。",
+        "manipulationImplication": "从自然评论中选择高频误读与共情主题制作材料，再分别随机化人物价值线索、解释方式和来源标签。",
+        "measurementImplication": "把理解、情绪好感、人物认同、文化评价与分享意向分开，并记录平台使用和既有中国接触。",
+        "publicationType": "journal",
+        "peerReviewed": true
+      },
+      {
+        "evidence": "全文核验",
+        "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+        "readingPriority": "high",
+        "priorityReason": "为类比解释的熟悉性机制和传播意向测量提供可操作指标。",
+        "title": "From familiarity to dissemination: the mediating role of immersive VR experience in cross-cultural engagement",
+        "titleZh": "从文化熟悉性到传播意向：沉浸式体验的中介作用",
+        "authors": "Liuxin Ou, Yuxin Chen, Xiangyu Li, Yuting Dai, Guang Luo",
+        "year": 2026,
+        "venue": "Frontiers in Virtual Reality, 7",
+        "url": "https://doi.org/10.3389/frvir.2026.1857057",
+        "source": "Frontiers in Virtual Reality",
+        "category": "博士论文专题 · 新近相邻研究",
+        "topicIds": [
+          "culture"
+        ],
+        "takeaway": "239名参观者数据与访谈显示，文化熟悉性与传播意向的关系经由VR体验完全中介；空间重构、沉浸叙事和多感官参与是重要解释线索。",
+        "theory": "以具身认知和图式激活解释熟悉性如何通过沉浸、临场感与空间性形成文化理解及传播意向。",
+        "data": "Gaudí VR展收集239份问卷；39名中等熟悉者被排除，200人进入高低组比较；最初15次访谈，最终分析13份。",
+        "method": "解释型顺序混合方法。量化部分用ANOVA和PROCESS Model 4，质性部分用主题分析。变量同一时点自报，熟悉性非随机操纵。",
+        "results": "熟悉性影响VR体验，F(1,198)=7.61，p<.01，partial eta squared=.037，也影响传播意向，F(1,198)=7.36，p<.05，partial eta squared=.030；间接效应显著，直接效应不显著。",
+        "limitations": "样本在中国观看西班牙文化展，方向与研究问题相反。极端组切分丢失信息，同期自报中介不能确立时间因果。",
+        "readingUse": "借鉴熟悉性、体验质量和传播意向的分离测量及多方法解释。",
+        "researchConnection": "对应文化熟悉性、图式和传播意向，但不直接检验人物价值契合。",
+        "abstractSource": "https://doi.org/10.3389/frvir.2026.1857057",
+        "abstractZh": "239名参观者数据与访谈显示，文化熟悉性与传播意向的关系经由VR体验完全中介；空间重构、沉浸叙事和多感官参与是重要解释线索。",
+        "doi": "https://doi.org/10.3389/frvir.2026.1857057",
+        "apaCitation": "Ou, L., Chen, Y., Li, X., Dai, Y., & Luo, G. (2026). From familiarity to dissemination: The mediating role of immersive VR experience in cross-cultural engagement. Frontiers in Virtual Reality, 7, 1857057. https://doi.org/10.3389/frvir.2026.1857057",
+        "peerReviewSource": "https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2026.1857057/full",
+        "publicationStatus": "published",
+        "publicationDate": "2026-07-31",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2026.1857057/full",
+        "hypothesisImplication": "本国相似人物类比可能经熟悉性与加工流畅性影响传播意向，但需要随机实验验证。",
+        "manipulationImplication": "随机分配无类比、本国相似人物类比和纯背景解释；控制事实量、长度、视觉吸引力和叙事节奏。",
+        "measurementImplication": "连续测量熟悉性，并分别测临场感、加工流畅性、理解准确率、认同、好感和分享意向。",
+        "publicationType": "journal",
+        "peerReviewed": true
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+        "readingPriority": "high",
+        "priorityReason": "直接解释中国启发游戏环境中的跨文化意义建构。",
+        "title": "Cultural Affordance and Reception: A Theoretical Framework for Interactive Cross-Cultural Sense-Making in Video Game Environments",
+        "titleZh": "游戏环境如何提供跨文化意义建构的可能性",
+        "authors": "Mengli Yu, Yichen Guo, Wenhan Shen, Rong Chen",
+        "year": 2026,
+        "venue": "Games and Culture, 21(6), 1463-1489",
+        "url": "https://doi.org/10.1177/15554120251336564",
+        "source": "Games and Culture",
+        "category": "博士论文专题 · 较早漏读补充",
+        "topicIds": [
+          "culture"
+        ],
+        "takeaway": "《原神》海外玩家访谈归纳出系统性文化元素可供性、个性化文化体验和基于身份协商的文化接收三个维度。",
+        "theory": "结合意义建构与可供性视角，文化元素只有在场景、交互和玩家既有身份共同作用时才进入接收。",
+        "data": "最终纳入14名长期《原神》海外玩家，来自8个国家，年龄15至33岁，游戏经验两年以上。",
+        "method": "半结构访谈与扎根理论编码，从跨地区玩家叙述生成理论框架。招募、访谈时长、编码一致性和饱和过程未完整核验。",
+        "results": "框架强调设计场景和互动将文化元素转化为可行动体验，玩家再通过个性化过程和身份协商形成接收；定量效应与因果路径未检验。",
+        "limitations": "首次在线2025-04-24，为较早漏读补充。小型目的样本不适合估计普遍效应，研究对象也不等于特定神话人物。",
+        "readingUse": "用于完善从呈现、体验到认同的过程模型，并生成访谈和开放题。",
+        "researchConnection": "直接涉及海外玩家对中国启发内容的接收，可补足人物实验的过程解释。",
+        "abstractSource": "https://doi.org/10.1177/15554120251336564",
+        "abstractZh": "《原神》海外玩家访谈归纳出系统性文化元素可供性、个性化文化体验和基于身份协商的文化接收三个维度。",
+        "doi": "https://doi.org/10.1177/15554120251336564",
+        "apaCitation": "Yu, M., Guo, Y., Shen, W., & Chen, R. (2026). Cultural affordance and reception: A theoretical framework for interactive cross-cultural sense-making in video game environments. Games and Culture, 21(6), 1463-1489. https://doi.org/10.1177/15554120251336564",
+        "peerReviewSource": "https://journals.sagepub.com/doi/10.1177/15554120251336564",
+        "publicationStatus": "published",
+        "publicationDate": "2025-04-24",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://journals.sagepub.com/doi/10.1177/15554120251336564",
+        "hypothesisImplication": "文化边界可能通过玩家是否把文化线索纳入自我或游戏身份，调节价值契合对认同的作用。",
+        "manipulationImplication": "在静态叙事之外加入可选互动，让同一价值行为既可观察也可由受众参与，并记录探索路径。",
+        "measurementImplication": "增加文化意义开放题、身份协商和文化真实性，同时与人物认同、好感和传播意向分开。",
+        "publicationType": "journal",
+        "peerReviewed": true
+      },
+      {
+        "evidence": "全文核验",
+        "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+        "readingPriority": "normal",
+        "priorityReason": "题材最直接，适合生成刺激与边界条件，但识别强度较弱。",
+        "title": "Recognizing beauty, engaging with goodness, and approaching truth: foreign players’ cross-cultural identification with Chinese culture through Black Myth: Wukong",
+        "titleZh": "外国玩家如何经由美、善、真理解《黑神话：悟空》的中国文化",
+        "authors": "Junhua Chen, Lin Chen",
+        "year": 2026,
+        "venue": "Cogent Arts & Humanities, 13(1), 2657188",
+        "url": "https://doi.org/10.1080/23311983.2026.2657188",
+        "source": "Cogent Arts & Humanities",
+        "category": "博士论文专题 · 新近直接研究",
+        "topicIds": [
+          "culture"
+        ],
+        "takeaway": "904条海外玩家和评论者文本呈现从审美吸引、道德与身份参与到深层价值理解的路径，但深层理解仍局部且正在形成。",
+        "theory": "将场景理论的戏剧性、正当性、真实性与文化冰山的表层、中层、深层结合，形成美、善、真框架。",
+        "data": "Steam筛得867条英文玩家评论，要求过去六个月、游戏时长超过10小时并包含文化主题词；OpenCritic补充37条，共904条。",
+        "method": "理论导向质性文本分析。正向评论为主，负向和矛盾评论用于讨论障碍。编码者数量、一致性与完整代码本未核验。",
+        "results": "表层由视觉、建筑、服饰和音乐带来审美识别；中层经人物行为、道德系统和身份映射进入理解；深层价值与哲学的接近仍有限。",
+        "limitations": "文化关键词和较长游戏时长筛选会高估投入玩家，正向评论优先有确认偏差。评论中的文化认同不是实验测量的人物认同。",
+        "readingUse": "用于提取悟空相关价值行为、误解点和类比素材，并明确正负案例。",
+        "researchConnection": "与外国玩家、中国神话改编和文化认同高度直接，但不能替代受控人物接收实验。",
+        "abstractSource": "https://doi.org/10.1080/23311983.2026.2657188",
+        "abstractZh": "904条海外玩家和评论者文本呈现从审美吸引、道德与身份参与到深层价值理解的路径，但深层理解仍局部且正在形成。",
+        "doi": "https://doi.org/10.1080/23311983.2026.2657188",
+        "apaCitation": "Chen, J., & Chen, L. (2026). Recognizing beauty, engaging with goodness, and approaching truth: Foreign players’ cross-cultural identification with Chinese culture through Black Myth: Wukong. Cogent Arts & Humanities, 13(1), 2657188. https://doi.org/10.1080/23311983.2026.2657188",
+        "peerReviewSource": "https://www.tandfonline.com/doi/10.1080/23311983.2026.2657188",
+        "publicationStatus": "published",
+        "publicationDate": "2026-04-13",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://www.tandfonline.com/doi/10.1080/23311983.2026.2657188",
+        "hypothesisImplication": "人物价值契合可能先作用于道德理解和人物认同，再作用于文化好感和传播意向；审美吸引应作独立路径。",
+        "manipulationImplication": "从评论提取具体人物行为并操纵价值方向，同时固定画面、音乐和能力强弱。",
+        "measurementImplication": "分别测审美反应、道德评价、文化理解、人物认同、文化好感和传播意向，并用开放题检查理解。",
+        "publicationType": "journal",
+        "peerReviewed": true
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.1177/10755470251345234",
+        "reason": "最直接连接价值动机、人物认同、信念接受和传播行为，适合精读变量顺序与操纵细节。"
+      },
+      {
+        "doi": "https://doi.org/10.3389/fcomm.2026.1850055",
+        "reason": "直接观察非中文受众对中国文化内容的多种解码位置，可界定理解、好感与争论的不同结果。"
+      },
+      {
+        "doi": "https://doi.org/10.3389/frvir.2026.1857057",
+        "reason": "将文化熟悉性、沉浸体验和传播意向分开测量，能支持类比解释的机制与测量设计。"
+      }
+    ]
+  },
+  "shortfallReason": "其他研究3/5：最新3篇按三库各1篇完成；高被引2篇因Google Scholar异常流量验证无法取得实际引用次数而空缺。传播学与社会科学0/5：同一限制使引用量排序和资格筛选无法完成。New Media & Society完整Online First目录受Cloudflare安全验证阻断，公开索引仅为部分目录，故不冒称完整一期。博士专题达到5篇软目标，但未检索到直接随机检验中国神话人物价值契合与本国神话人物类比的新增证据。"
+}
+
