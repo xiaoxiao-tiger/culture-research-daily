@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "communication": {
     "joc": {
       "lastCheckedAt": "2026-10-16",
@@ -129,14 +129,39 @@
         "complete": false,
         "scopeNote": "Public search exposed a partial directory, while the publisher page required human verification. No arbitrary subset was treated as a complete issue."
       }
+    },
+    "sms": {
+      "lastAttemptAt": "2026-10-22",
+      "lastCheckedAt": "2026-10-22",
+      "status": "completed",
+      "lastCompletedAt": "2026-10-22",
+      "onlineSnapshots": [],
+      "completedIssues": [
+        {
+          "checkedAt": "2026-10-22",
+          "url": "https://journals.sagepub.com/toc/sms/current",
+          "title": "Volume 12, Issue 4, October-December 2026",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1177/20563051261483376",
+            "https://doi.org/10.1177/20563051261487940",
+            "https://doi.org/10.1177/20563051261488115",
+            "https://doi.org/10.1177/20563051261489877",
+            "https://doi.org/10.1177/20563051261490338",
+            "https://doi.org/10.1177/20563051261490645"
+          ]
+        }
+      ]
     }
   },
   "general": {
     "pnas": {
-      "lastAttemptAt": "2026-10-16",
-      "status": "blocked",
-      "reason": "Cloudflare challenge persisted after one normal refresh; no eligible latest paper verified.",
-      "lastCompletedAt": null
+      "lastAttemptAt": "2026-10-22",
+      "status": "completed",
+      "lastCompletedAt": "2026-10-22",
+      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2534825123",
+      "publicationDate": "2026-10-21",
+      "socialScienceAssessment": "confirmed"
     },
     "nature": {
       "lastAttemptAt": "2026-10-17",
