@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 6,
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "date": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "edition": "正式日刊",
+  "title": "可见性、人物沉浸与群体边界的证据链",
+  "summary": "本期完成NBER、SSRN、arXiv最新研究各1篇，Journal of Communication 2026年第5期5篇，以及Nature最新社会科学论文1篇。Google Scholar异常流量拦截导致高被引与主题期刊栏保留空缺；博士论文方向精选4篇同行评审研究，并提供周五回顾。",
+  "notice": "Google Scholar原生结果页本次返回异常流量拦截，未取得可核验的被引次数或主题检索结果，因此没有使用其他指标替代。NBER、SSRN、arXiv、OUP和Nature均按官方页面核验。传播学顶刊与综合顶刊不使用主题关键词。",
+  "searchSettings": {
+    "themeKeywords": "\"cultural transmission\" OR \"cultural diffusion\" OR \"cross-cultural reception\" OR \"intercultural communication\" OR \"cultural premium\" OR novelty OR exoticism OR cosmopolitanism OR ((\"value congruence\" OR \"value similarity\" OR \"shared values\") AND (character OR narrative OR audience)) OR (mythology AND analogy)",
+    "journalKeywords": "与主题检索相同，检索后再按期刊资格筛选",
+    "excludeTerms": "",
+    "lookbackDays": 30,
+    "effectiveDate": "defaults",
+    "scope": "default"
+  },
+  "activeTopicIds": [
+    "culture",
+    "sycophancy",
+    "methods"
+  ],
+  "searchNote": "按默认culture、sycophancy和methods主题执行。博士论文重点作为culture主题的强化方向；当日没有覆盖默认主题的生效用户关键词。Google Scholar失败后未绕过验证，也未把公开搜索引擎结果冒称站内检索。",
+  "themeSearches": [
+    {
+      "platform": "Google Scholar",
+      "query": "(\"cross-cultural reception\" OR \"value congruence\" OR \"value similarity\" OR \"cultural proximity\" OR mythology analogy) (audience OR character OR narrative)",
+      "timeRange": "不限年份；检索日期2026-10-23",
+      "purpose": "culture主题发现，先检索后筛期刊",
+      "status": "原生结果页返回异常流量提示；未取得候选或被引次数，未绕过验证。"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "(sycophancy OR \"opinion agreement\" OR ingratiation) (\"large language model\" OR chatbot OR \"conversational agent\")",
+      "timeRange": "不限年份；检索日期2026-10-23",
+      "purpose": "sycophancy主题发现",
+      "status": "原生结果页返回异常流量提示；未取得候选或被引次数。"
+    },
+    {
+      "platform": "Google Scholar",
+      "query": "(\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") (communication OR \"digital platforms\" OR \"social media\")",
+      "timeRange": "不限年份；检索日期2026-10-23",
+      "purpose": "methods主题发现，先检索后筛期刊",
+      "status": "原生结果页返回异常流量提示；无法执行主题期刊筛选。"
+    },
+    {
+      "platform": "NBER",
+      "query": "NBER Working Papers newest papers；按culture、sycophancy、methods相关性筛选",
+      "timeRange": "2026年10月最新列表；核验日期2026-10-23",
+      "purpose": "其他研究最新组",
+      "status": "NBER官方论文页成功核验；w35925已在历史中，去重后纳入w35926。"
+    },
+    {
+      "platform": "SSRN",
+      "query": "culture transmission OR prototype OR familiarity OR value congruence OR sycophancy；按日期排序",
+      "timeRange": "截至2026-10-23最新；核验日期2026-10-23",
+      "purpose": "其他研究最新组",
+      "status": "SSRN官方摘要页成功核验；纳入abstract_id=7639698。"
+    },
+    {
+      "platform": "arXiv",
+      "query": "sycophancy",
+      "timeRange": "按announcement date降序；检索日期2026-10-23",
+      "purpose": "其他研究最新组",
+      "status": "arXiv原生站内搜索成功；纳入2610.30696。"
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "Google Scholar",
+      "query": "逐题名精确被引核验",
+      "timeRange": "核验日期2026-10-23",
+      "purpose": "高被引组与期刊栏排序",
+      "status": "未执行完成。Google Scholar返回异常流量提示，未记录0，也未以其他指标替代。"
+    },
+    {
+      "platform": "出版社与官方页面",
+      "query": "题名、作者、日期、期刊、同行评审、DOI、目录和证据范围逐篇核验",
+      "timeRange": "核验日期2026-10-23",
+      "purpose": "论文身份与内容证据",
+      "status": "OUP Journal of Communication完整期目录、Nature、NBER、SSRN和arXiv官方页面核验；只有实际阅读关键正文的文章标为全文核验。"
+    },
+    {
+      "platform": "永久历史登记",
+      "query": "DOI、arXiv ID、规范化题名、identityAliases",
+      "timeRange": "截至2026-10-22全部推荐记录",
+      "purpose": "跨平台、跨栏目和版本去重",
+      "status": "运行前核对247条永久记录及已知博士论文排除清单；本期条目未发现重复。"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "OUP · Journal of Communication",
+      "query": "Current issue, Volume 76 Issue 5, October 2026",
+      "timeRange": "检查日期2026-10-23",
+      "purpose": "传播学顶刊整期收集，不使用关键词",
+      "status": "官方目录完整核验，共5篇Original Article，均为首次推荐。"
+    },
+    {
+      "platform": "Nature",
+      "query": "Latest research in Sociology and social science",
+      "timeRange": "检查日期2026-10-23；论文在线日期2026-10-14",
+      "purpose": "综合顶刊最新社会科学研究，不使用关键词",
+      "status": "Nature Sociology页面确认Educational intervention can rewire village social networks。"
+    }
+  ],
+  "coreTracking": {
+    "requests": [],
+    "status": "无待跟踪核心论文请求。"
+  },
+  "shortfallReason": "Google Scholar原生网页返回异常流量提示，无法诚实取得实际被引次数，也无法完成先主题检索后筛期刊。因此其他研究高被引组缺2篇，传播学与社会科学栏缺5篇。没有用OpenAlex、下载量、浏览量或普通网页搜索结果替代。博士论文方向在去重和同行评审限制下确认4篇直接或方法上高相关研究，未为达到5篇而填入低相关论文。",
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 5,
+      "sortBy": "split",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新",
+          "target": 3,
+          "sortBy": "publicationDate",
+          "sortDescription": "arXiv与SSRN按日级首发日期降序，NBER只确认到月份；三库各1篇。"
+        },
+        {
+          "id": "cited",
+          "label": "高被引",
+          "target": 2,
+          "sortBy": "citationCount",
+          "sortDescription": "Google Scholar异常流量拦截，无法取得实际网页次数，本期不填充。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included",
+          "reason": "最新组1篇。"
+        },
+        {
+          "database": "SSRN",
+          "status": "included",
+          "reason": "最新组1篇。"
+        },
+        {
+          "database": "arXiv",
+          "status": "included",
+          "reason": "最新组1篇。"
+        }
+      ],
+      "sortDescription": "先列最新3篇；高被引组因Google Scholar访问受阻留空。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "full",
+          "originalAbstract": "When a multilingual LLM agrees with a user's false premise, is it being sycophantic, or does it simply not know better in that language? Current research does not distinguish these cases: they record only whether the model agreed, not why. We introduce the SC-matrix, that crosses a model's competence (whether it answers correctly under no pressure) with its sycophancy (whether it maintains that answer under pressure). Our results show that (1) identical aggregate sycophancy rates can mask different failure compositions, (2) high competence in a language does not always protect against sycophancy, and (3) reasoning-oriented mitigations outperform directive-based strategies. We find that multilingual sycophancy is not a single phenomenon but a composite of different failures that require distinct diagnosis.",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "最新预印本，且对迎合测量的构念区分清楚。",
+          "title": "Disentangling Robustness and Sycophancy in Multilingual LLMs",
+          "titleZh": "区分多语言大模型的稳健性与迎合",
+          "authors": "Rhitabrat Pokharel, Ameeta Agrawal",
+          "year": 2026,
+          "venue": "arXiv:2610.30696",
+          "url": "https://arxiv.org/abs/2610.30696",
+          "source": "arXiv",
+          "category": "其他研究 · 最新",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "takeaway": "论文提出SC矩阵，把模型在无压力条件下是否答对与受到用户错误前提压力后是否坚持正确答案交叉分类。相同的总体迎合率可能掩盖知识不足与真正迎合的不同构成，多语言能力较高也不必然避免迎合。",
+          "theory": "核心区分是能力与迎合。能力回答模型是否知道正确答案，迎合回答模型是否在社会压力下维持该答案。",
+          "data": "公开摘要确认研究比较多语言大模型及多种缓解策略，但未披露模型数量、语言数量、题目规模和各语言样本分布。",
+          "method": "先在无压力条件下测量正确性，再施加错误前提压力，以SC矩阵诊断失败来源，并比较推理型与指令型缓解策略。",
+          "results": "相同汇总迎合率可对应不同失败构成；高语言能力不总能防止迎合；推理型缓解优于指令型策略。",
+          "limitations": "仅据摘要核验，数据集构造、压力提示、统计不确定性和跨语言等值性仍需读正文确认。预印本尚未同行评审。",
+          "readingUse": "用于把迎合测量拆成基线知识与压力下立场改变。",
+          "researchConnection": "与博士论文不直接相关，但其诊断思路可用于区分受众不理解人物价值与理解后不认同。",
+          "abstractSource": "https://arxiv.org/abs/2610.30696",
+          "abstractZh": "论文提出SC矩阵，把模型在无压力条件下是否答对与受到用户错误前提压力后是否坚持正确答案交叉分类。相同的总体迎合率可能掩盖知识不足与真正迎合的不同构成，多语言能力较高也不必然避免迎合。",
+          "doi": "https://doi.org/10.48550/arXiv.2610.30696",
+          "sourceDatabase": "arXiv",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-22",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2610.30696",
+          "abstractLicense": "CC BY 4.0"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "full",
+          "originalAbstract": "This paper treats a company's logo as its center of gravity (Schwerpunkt, in Clausewitz's terms)-not as a point to be \"held\" after creation, but as a point established at the moment the sign is born. The fate of a sign is decided not during the years of its life but at the moment of its birth. The model's central concept is the starting point: the position of a sign relative to prototypes already present in the audience's predictive model before any contact with the brand. The complete mechanism of a sign's birth is reconstructed: the exposure curve does not begin at zero-it begins with ready-made perceptual priors, and the sign either reproduces a prototype (natural mimicry: it is \"born recognized,\" with zero prediction error from the first presentation; the mimicry is Batesian-the leader takes the prototype as a parasite and encloses it, leaving nothing of the occupied prototype for anyone else), or begins as a novation (a start from zero, months of initial friction), or as a copy of a mimic sign (second-order mimicry: a start below zero-the form is inherited, but the initial capital is not). It is shown that every circuit of the model-the optical resonator, predictive layer, imprinting, honest signals, cohesion, manipulative agency, strategic coup d'oeil-is not an independent storyline but a projection of the same quantity: the distance of the starting point from the prototype. Actors' motives (inferiority complex, mimetic desire) function as systematic errors in estimating the starting point: some reduce it to zero (the cult of uniqueness), while others try to steal someone else's (copying the leader). The signal-to-noise ratio is introduced: a signal is a sign that fits into mimicry; noise is a sign that does not fit into mimicry (a form that fails to activate ready-made priors), with a spectral classification based on the type of mismatch: white (zero correlation with priors-not remembered or learned), pink (1/f flicker-oscillation between familiar and alien, attention without liking), and brown (an unassemblable Gestalt-error increasing within the very act of perception).",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "最新且直接触及原型与熟悉性，但证据层级较低。",
+          "title": "Mimicry Is the Guarantee of a Logo's Success: The Sign's Starting Point, Prototype and Being Born Recognized",
+          "titleZh": "模仿是否保证标志成功：符号起点、原型与生而被识别",
+          "authors": "Oleksii Kartashov",
+          "year": 2026,
+          "venue": "SSRN working paper, 7639698",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7639698",
+          "source": "SSRN",
+          "category": "其他研究 · 最新",
+          "topicIds": [
+            "culture"
+          ],
+          "takeaway": "文章提出符号的起点取决于它与受众已有原型的距离。复制原型的标志可在首次呈现时被识别，完全创新则要承担学习摩擦，二阶模仿可能继承形式却不能继承原有资本。",
+          "theory": "以预测加工、原型、拟态、印刻与信噪比整合符号熟悉性、新颖性和识别。",
+          "data": "17页概念论文，没有人类参与者、实验样本或观察数据。",
+          "method": "理论重构与类型学推演，把符号分为原型拟态、从零创新和二阶复制，并用白噪声、粉红噪声和棕色噪声描述不同失配。",
+          "results": "论文提出距离原型越近，预测误差和初始学习摩擦越低；这些是理论命题，并非实证效应。",
+          "limitations": "模型高度概念化，未提供实验验证或真实品牌的系统比较，不能据此推断模仿必然提高好感或传播。",
+          "readingUse": "用于构造熟悉性、新颖性、原型匹配和加工流畅性的竞争解释。",
+          "researchConnection": "与使用受众本国相似神话人物作类比高度相关，但只提供理论机制，不能充作博士论文同行评审精选。",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7639698",
+          "abstractZh": "文章提出符号的起点取决于它与受众已有原型的距离。复制原型的标志可在首次呈现时被识别，完全创新则要承担学习摩擦，二阶模仿可能继承形式却不能继承原有资本。",
+          "doi": "https://doi.org/10.2139/ssrn.7639698",
+          "sourceDatabase": "SSRN",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-21",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7639698",
+          "abstractLicense": "CC BY 4.0"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "NBER最新条目，且对证据使用和干预逻辑有方法论价值。",
+          "title": "The Why and How of Foreign Aid",
+          "titleZh": "外国援助的为何与如何",
+          "authors": "Dean Karlan",
+          "year": 2026,
+          "venue": "NBER Working Paper 35926",
+          "url": "https://www.nber.org/papers/w35926",
+          "source": "NBER",
+          "category": "其他研究 · 最新",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "文章把外国援助中的目标动机与实现策略分开。前者追问解决何种问题、受益者是谁，后者追问如何以更高成本效益实现既定目标，并主张把使用、生产和分享证据建成迭代学习过程。",
+          "theory": "以目标与工具的分离澄清援助政策中的真实冲突与表面冲突，并把证据能力视为受援国、援助国和全球知识公共品的共同利益。",
+          "data": "概念与政策综述，公开摘要没有报告新的经验样本或原创数据。",
+          "method": "规范性框架与证据政策综合，区分援助的为何与如何，并提出学习、采用、适配、重复和共享的循环。",
+          "results": "作者认为强化国家使用和生成证据的能力可以同时服务多方目标；这是政策论证，不是新实验或准实验估计。",
+          "limitations": "没有新样本、效应量或识别设计，不能把政策建议当作因果发现。工作论文虽已注明将发表于Journal of Economic Perspectives，本期仍按NBER版本登记。",
+          "readingUse": "用于区分研究目标、干预工具和证据生产流程。",
+          "researchConnection": "与博士论文主题不直接相关，但其目标与工具分离提醒研究先界定接收结果，再评价类比解释的成本效益。",
+          "abstractSource": "https://www.nber.org/papers/w35926",
+          "abstractZh": "文章把外国援助中的目标动机与实现策略分开。前者追问解决何种问题、受益者是谁，后者追问如何以更高成本效益实现既定目标，并主张把使用、生产和分享证据建成迭代学习过程。",
+          "doi": "https://doi.org/10.3386/w35926",
+          "sourceDatabase": "NBER",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10",
+          "publicationDatePrecision": "month",
+          "publicationDateSource": "https://www.nber.org/papers/w35926"
+        }
+      ]
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "journalPriorityNote": "本栏必须先由Google Scholar主题检索发现，再筛传播学SSCI Q1/Q2或经核验的其他社会科学SSCI。原生页面本次被异常流量拦截，因此不以普通网页检索代替，也不纳入ESCI或未确认期刊。",
+      "sortDescription": "本期没有可核验的Google Scholar实际被引次数，保留空缺。",
+      "papers": []
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "unit": "issue",
+      "target": 5,
+      "sortBy": "issue",
+      "collection": {
+        "journalId": "joc",
+        "kind": "issue",
+        "complete": true,
+        "url": "https://academic.oup.com/joc/issue/76/5",
+        "checkedAt": "2026-10-23",
+        "title": "Volume 76, Issue 5 · October 2026",
+        "toc": [
+          {
+            "title": "Recommending the state: How social media algorithms curate state-created content in China",
+            "url": "https://doi.org/10.1093/joc/jqag010",
+            "articleType": "Original Article",
+            "status": "new"
+          },
+          {
+            "title": "Through their eyes: neural and behavioral evidence for enhanced immersion via point-of-view editing",
+            "url": "https://doi.org/10.1093/joc/jqag011",
+            "articleType": "Original Article",
+            "status": "new"
+          },
+          {
+            "title": "Modes of dialogic communication, modes of reality",
+            "url": "https://doi.org/10.1093/joc/jqag006",
+            "articleType": "Original Article",
+            "status": "new"
+          },
+          {
+            "title": "Media emotion regulation and executive functions: individual differences in temporal ordering among young children",
+            "url": "https://doi.org/10.1093/joc/jqag009",
+            "articleType": "Original Article",
+            "status": "new"
+          },
+          {
+            "title": "Communicating in the Air Force: the National Society for the Study of Communication, the Journal of Communication, and U.S. military education, 1950-1962",
+            "url": "https://doi.org/10.1093/joc/jqag012",
+            "articleType": "Original Article",
+            "status": "new"
+          }
+        ]
+      },
+      "sortDescription": "不使用关键词，按轮换读取Journal of Communication最新尚未推荐的完整正式一期。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "当日轮换期完整目录中的新研究文章。",
+          "title": "Recommending the state: How social media algorithms curate state-created content in China",
+          "titleZh": "推荐国家：社交媒体算法如何策展中国国家生产的内容",
+          "authors": "Yingdan Lu, Xinyi Liu, Carl Zhou",
+          "year": 2026,
+          "venue": "Journal of Communication, 76(5), 343-357",
+          "url": "https://doi.org/10.1093/joc/jqag010",
+          "source": "Journal of Communication",
+          "category": "传播学顶刊推荐 · 2026年第5期",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "对119,064个哔哩哔哩热门与推荐视频的分析显示，推荐算法会放大国家生产内容，但从非国家视频开始的观看序列并不会明显持续滑向国家内容。",
+          "theory": "提出算法宣传策展概念，讨论平台利润目标与对国家内容的制度性响应如何共同塑造可见性。",
+          "data": "119,064个哔哩哔哩热门视频和推荐视频，覆盖不同起始内容与推荐序列。",
+          "method": "抓取平台推荐链，识别国家生产内容，并比较不同起始视频后的推荐构成。",
+          "results": "算法对国家内容存在条件性放大，但非国家内容起始的序列没有显著向国家内容漂移。",
+          "limitations": "平台算法和国家内容分类的具体误差、时间窗口与因果识别边界需读正文进一步判断。可见性不能等同受众理解、好感或认同。",
+          "readingUse": "用于追踪传播学顶刊的理论、证据和方法进展。",
+          "researchConnection": "直接支持论文题目中从被看见到被接收的区分，本研究测量的是算法可见性而非人物接收。",
+          "abstractSource": "https://doi.org/10.1093/joc/jqag010",
+          "abstractZh": "对119,064个哔哩哔哩热门与推荐视频的分析显示，推荐算法会放大国家生产内容，但从非国家视频开始的观看序列并不会明显持续滑向国家内容。",
+          "doi": "https://doi.org/10.1093/joc/jqag010",
+          "publicationType": "journal",
+          "publicationStatus": "published",
+          "peerReviewed": true,
+          "peerReviewSource": "https://academic.oup.com/joc/issue/76/5",
+          "publicationDate": "2026-10",
+          "publicationDateSource": "https://academic.oup.com/joc/issue/76/5",
+          "apaCitation": "Lu, Y., Liu, X., & Zhou, C. (2026). Recommending the state: How social media algorithms curate state-created content in China. Journal of Communication, 76(5), 343-357. https://doi.org/10.1093/joc/jqag010",
+          "hypothesisImplication": "算法暴露只能作为接收的前置条件，理解、好感、人物认同和传播意向应分别建模。",
+          "manipulationImplication": "保持人物材料不变，随机化推荐来源与可见性线索，并与文化解释方式正交。",
+          "measurementImplication": "分别记录曝光、注意、理解、人物评价、认同和分享意向，避免用观看量替代接收。"
+        },
+        {
+          "evidence": "全文核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "high",
+          "priorityReason": "本期最直接操纵人物沉浸并同时提供行为、眼动和神经证据的研究。",
+          "title": "Through their eyes: neural and behavioral evidence for enhanced immersion via point-of-view editing",
+          "titleZh": "通过他们的眼睛：视点剪辑增强沉浸的神经与行为证据",
+          "authors": "Moran Ovadia et al.",
+          "year": 2026,
+          "venue": "Journal of Communication, 76(5), 358-374",
+          "url": "https://doi.org/10.1093/joc/jqag011",
+          "source": "Journal of Communication",
+          "category": "传播学顶刊推荐 · 2026年第5期",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "39名成年人观看8部原创叙事短片。相较匹配控制条件，视点剪辑增加对人物面孔的注视、提高对凝视对象的识别，并增强心理化、视角采择和目标控制相关脑区的共同表征。",
+          "theory": "视点剪辑可能通过共享注意和共享意向缩短观众与人物之间的心理距离。",
+          "data": "招募41名成年人，最终分析39人；8部原创短片包含125个三镜头序列，其中66个以人物为目标，59个以物体为目标。",
+          "method": "设置视点、凝视偏离和身体控制条件，结合眼动、后测识别、功能磁共振、跨被试空间表征相似性与神经解码。",
+          "results": "视点序列增加面孔注视与凝视对象识别，激活心理化区域，并使后续目标元素携带更强的人物身份神经表征。",
+          "limitations": "样本量较小，材料为原创短片，神经共享表征不等同长期人物认同或跨文化价值契合。",
+          "readingUse": "用于追踪传播学顶刊的理论、证据和方法进展。",
+          "researchConnection": "直接提供人物视角形式线索影响沉浸、注意与记忆的实验机制，可作为价值内容之外的重要控制。",
+          "abstractSource": "https://doi.org/10.1093/joc/jqag011",
+          "abstractZh": "39名成年人观看8部原创叙事短片。相较匹配控制条件，视点剪辑增加对人物面孔的注视、提高对凝视对象的识别，并增强心理化、视角采择和目标控制相关脑区的共同表征。",
+          "doi": "https://doi.org/10.1093/joc/jqag011",
+          "publicationType": "journal",
+          "publicationStatus": "published",
+          "publicationDate": "2026-08-04",
+          "publicationDateSource": "https://academic.oup.com/joc/article/76/5/358/8223626",
+          "peerReviewed": true,
+          "peerReviewSource": "https://academic.oup.com/joc/article/76/5/358/8223626",
+          "apaCitation": "Ovadia, M., et al. (2026). Through their eyes: Neural and behavioral evidence for enhanced immersion via point-of-view editing. Journal of Communication, 76(5), 358-374. https://doi.org/10.1093/joc/jqag011",
+          "hypothesisImplication": "人物视点可能独立提高沉浸和信息记忆，因此价值契合效应应在控制叙事视点后检验。",
+          "manipulationImplication": "同一神话人物片段制作第一人称视点、凝视偏离和中性身体镜头三版，保持台词与价值行为一致。",
+          "measurementImplication": "加入面孔注视、目标识别、叙事沉浸、人物认同、价值理解和传播意向，并检验中介顺序。"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "当日轮换期完整目录中的新研究文章。",
+          "title": "Modes of dialogic communication, modes of reality",
+          "titleZh": "对话传播的模式与现实的模式",
+          "authors": "Boris H. J. M. Brummans",
+          "year": 2026,
+          "venue": "Journal of Communication, 76(5), 375-384",
+          "url": "https://doi.org/10.1093/joc/jqag006",
+          "source": "Journal of Communication",
+          "category": "传播学顶刊推荐 · 2026年第5期",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "理论文章从佛教哲学、过程哲学和对话思想出发，提出对话并非始于彼此分离的个体，而可被理解为经验基础持续展开的不同模式。",
+          "theory": "以awaring描述经验基础的涌现过程，并比较强化分离与显现相互连接的对话方式。",
+          "data": "理论论文，不含经验样本。",
+          "method": "跨佛教哲学、过程哲学与对话传播传统进行概念整合。",
+          "results": "主要贡献是提出两种对话传播模式及其现实论基础，不报告经验效应。",
+          "limitations": "概念主张尚需操作化和经验检验，不能直接用于推断具体受众效果。",
+          "readingUse": "用于追踪传播学顶刊的理论、证据和方法进展。",
+          "researchConnection": "作为一般传播学研究追踪，与博士论文的直接程度按文中说明。",
+          "abstractSource": "https://doi.org/10.1093/joc/jqag006",
+          "abstractZh": "理论文章从佛教哲学、过程哲学和对话思想出发，提出对话并非始于彼此分离的个体，而可被理解为经验基础持续展开的不同模式。",
+          "doi": "https://doi.org/10.1093/joc/jqag006",
+          "publicationType": "journal",
+          "publicationStatus": "published"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "当日轮换期完整目录中的新研究文章。",
+          "title": "Media emotion regulation and executive functions: individual differences in temporal ordering among young children",
+          "titleZh": "媒介情绪调节与执行功能：幼儿时间顺序的个体差异",
+          "authors": "Jane Shawcroft et al.",
+          "year": 2026,
+          "venue": "Journal of Communication, 76(5), 385-395",
+          "url": "https://doi.org/10.1093/joc/jqag009",
+          "source": "Journal of Communication",
+          "category": "传播学顶刊推荐 · 2026年第5期",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "六波追踪显示，幼儿媒介情绪调节与执行功能的时间关系存在不同发展类型，多数儿童呈双向关系，少数类型表现为媒介情绪调节先行或两者分化。",
+          "theory": "媒介可被儿童用于调节情绪，而执行功能又可能影响这种使用方式，二者可能形成动态双向过程。",
+          "data": "Project M.E.D.I.A.六波数据，儿童从2.5岁追踪至7.5岁；相关公开材料显示分析样本约87人。",
+          "method": "使用高斯混合模型识别个体时间顺序类型，并检验家庭与照护者特征对类别概率的关联。",
+          "results": "多数儿童属于双向类型，少数属于媒介情绪调节驱动或分化类型；父母抑郁与类别概率相关。",
+          "limitations": "样本较小，类别比例不稳定，自报媒介使用和情绪调节可能有测量误差，不能把类别关联解释为确定因果。",
+          "readingUse": "用于追踪传播学顶刊的理论、证据和方法进展。",
+          "researchConnection": "作为一般传播学研究追踪，与博士论文的直接程度按文中说明。",
+          "abstractSource": "https://doi.org/10.1093/joc/jqag009",
+          "abstractZh": "六波追踪显示，幼儿媒介情绪调节与执行功能的时间关系存在不同发展类型，多数儿童呈双向关系，少数类型表现为媒介情绪调节先行或两者分化。",
+          "doi": "https://doi.org/10.1093/joc/jqag009",
+          "publicationType": "journal",
+          "publicationStatus": "published",
+          "publicationDate": "2026-07-09",
+          "publicationDateSource": "https://academic.oup.com/joc/article/76/5/385/8196632"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "normal",
+          "priorityReason": "当日轮换期完整目录中的新研究文章。",
+          "title": "Communicating in the Air Force: the National Society for the Study of Communication, the Journal of Communication, and U.S. military education, 1950-1962",
+          "titleZh": "在空军中传播：全国传播研究学会、传播学刊与美国军事教育，1950至1962年",
+          "authors": "Dominique Trudel, David W. Park",
+          "year": 2026,
+          "venue": "Journal of Communication, 76(5), 396-406",
+          "url": "https://doi.org/10.1093/joc/jqag012",
+          "source": "Journal of Communication",
+          "category": "传播学顶刊推荐 · 2026年第5期",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "文章重建1950至1962年全国传播研究学会、传播学刊与美国空军军事教育之间的制度联系，说明传播学的早期发展与冷战时期组织需求相互嵌入。",
+          "theory": "以知识制度史理解学科组织、期刊和国家机构如何共同界定传播研究的用途。",
+          "data": "历史档案和机构文献；公开页面未列完整档案馆、文件数量与材料范围。",
+          "method": "档案研究与制度史分析。",
+          "results": "文章将传播学学科形成置于美国空军教育和冷战制度网络中解释。",
+          "limitations": "仅据目录与公开摘要范围概述，具体档案证据和论证链条需读正文确认。",
+          "readingUse": "用于追踪传播学顶刊的理论、证据和方法进展。",
+          "researchConnection": "作为一般传播学研究追踪，与博士论文的直接程度按文中说明。",
+          "abstractSource": "https://doi.org/10.1093/joc/jqag012",
+          "abstractZh": "文章重建1950至1962年全国传播研究学会、传播学刊与美国空军军事教育之间的制度联系，说明传播学的早期发展与冷战时期组织需求相互嵌入。",
+          "doi": "https://doi.org/10.1093/joc/jqag012",
+          "publicationType": "journal",
+          "publicationStatus": "published"
+        }
+      ]
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "nature",
+      "sortDescription": "不使用关键词，检查Nature最新研究，并选择Nature Sociology页面收录的最新社会科学研究。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+          "readingPriority": "high",
+          "priorityReason": "Nature最新社会科学研究，样本大、随机化强且包含长期网络结果。",
+          "title": "Educational intervention can rewire village social networks",
+          "titleZh": "教育干预能够重塑村庄社会网络",
+          "authors": "Marios Papamichalis, Laura Forastiere, Edoardo M. Airoldi, Nicholas A. Christakis",
+          "year": 2026,
+          "venue": "Nature",
+          "url": "https://doi.org/10.1038/s41586-026-11154-7",
+          "source": "Nature",
+          "category": "综合顶刊推荐",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "在洪都拉斯110个偏远村庄、8,331人中实施22个月的集群随机健康教育。低覆盖率时受干预者会减少与未干预健康建议联系人之间的关系，高覆盖率时关系增加；信息吸收中介了关系形成与维持，效应持续三年。",
+          "theory": "社会网络并非干预的固定通道。干预剂量会改变关系维持的收益与同质性选择，从而使信息传播与网络结构共同演化。",
+          "data": "110个村庄、8,331人，村庄内随机设置0%、5%、10%、20%、30%、50%、75%或100%的干预覆盖率，追踪健康、友谊和财务关系。",
+          "method": "集群随机试验，比较不同覆盖剂量下受干预者与未干预者的关系形成、维持和消失，并进行信息吸收中介分析和三年追踪。",
+          "results": "5%至30%低剂量时受干预者切断部分跨处理健康建议关系，50%至100%高剂量时关系增加；处理同类关系形成或持续，跨处理关系更易消失，整体度分布相对稳定。",
+          "limitations": "网络重塑并非所有波次都预注册，早期分析含探索性成分；单一地区和健康教育情境限制外推，群体处理边界不等同文化内外群体。",
+          "readingUse": "精读其集群剂量、关系边界和信息吸收中介设计。",
+          "researchConnection": "可为文化内外群体边界调节价值契合提供随机化结构类比，尤其适合区分个体态度与关系网络变化。",
+          "abstractSource": "https://doi.org/10.1038/s41586-026-11154-7",
+          "abstractZh": "在洪都拉斯110个偏远村庄、8,331人中实施22个月的集群随机健康教育。低覆盖率时受干预者会减少与未干预健康建议联系人之间的关系，高覆盖率时关系增加；信息吸收中介了关系形成与维持，效应持续三年。",
+          "doi": "https://doi.org/10.1038/s41586-026-11154-7",
+          "publicationDate": "2026-10-14",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://www.nature.com/articles/s41586-026-11154-7",
+          "publicationStatus": "published",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "peerReviewSource": "https://www.nature.com/articles/s41586-026-11154-7",
+          "socialScienceAssessment": "confirmed",
+          "socialScienceReason": "Nature Sociology主题页收录该文，且研究使用人类随机试验分析社会网络、信息传播与集体关系。",
+          "apaCitation": "Papamichalis, M., Forastiere, L., Airoldi, E. M., & Christakis, N. A. (2026). Educational intervention can rewire village social networks. Nature. https://doi.org/10.1038/s41586-026-11154-7",
+          "hypothesisImplication": "文化内外群体边界可能随共同信息处理经历而变化，并进一步调节价值契合对人物接收的作用。",
+          "manipulationImplication": "在个体层价值契合操纵之外，随机化小组内相同解释材料的覆盖率，观察内外群体边界是否被重构。",
+          "measurementImplication": "除理解、好感、认同和传播意向外，记录建议关系、讨论对象、信息吸收和跨群体联系。"
+        }
+      ]
+    }
+  ],
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "优先检查2026-10-22上期发布以来至2026-10-23；直接新增不足后扩展至近两年，并补入未曾推荐且高度相关的较早论文。",
+    "selectionNote": "本期确认4篇同行评审研究。视点剪辑研究直接检验人物沉浸；平衡理论研究直接检验人物关系如何改变道德评价；国家内容推荐研究用于严格区分可见性与接收；Nature随机试验提供群体边界和信息吸收的结构类比。未核验到足够多同时满足未推荐、同行评审、高质量和直接相关的新论文，因此不以低相关研究补足。尚未检索到不等于从未有人研究。",
+    "historyCoverage": "已核对网站247条永久登记、截至2026-10-22的博士论文专题、已知介绍过的题名及本轮可见对话，按DOI、arXiv ID、规范化题名与版本别名去重。同一Online First与正式卷期视为同篇。无法访问的完整旧对话不在覆盖范围内，不声称绝对完全去重。",
+    "shortfallReason": "去重后仅4篇达到同行评审、证据可核验和研究问题高相关标准，少于通常5至8篇的目标。",
+    "selectedPapers": [
+      "https://doi.org/10.1093/joc/jqag011",
+      "https://doi.org/10.1093/joc/jqaf025",
+      "https://doi.org/10.1093/joc/jqag010",
+      "https://doi.org/10.1038/s41586-026-11154-7"
+    ],
+    "papers": [
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究设计启示为本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本期不在本站转载完整原文摘要，请通过来源链接查看。中文概述为原创，并标明证据范围。",
+        "readingPriority": "high",
+        "priorityReason": "本期最直接解释人物评价如何在叙事人物网络中相互依赖。",
+        "title": "Evidence of balance theory as a predictive framework for character interdependence",
+        "titleZh": "平衡理论作为人物相互依赖预测框架的证据",
+        "authors": "C. Joseph Francemone, Matthew Grizzard",
+        "year": 2026,
+        "venue": "Journal of Communication, 76(3), 248-259",
+        "url": "https://doi.org/10.1093/joc/jqaf025",
+        "source": "Journal of Communication",
+        "category": "博士论文专题 · 补充研究",
+        "topicIds": [
+          "culture"
+        ],
+        "takeaway": "三项研究表明，关于一个人物的道德信息会偏移受众对同一叙事中其他人物的判断，人物之间的关系正负性决定评价发生同化还是对比。",
+        "theory": "将平衡理论引入叙事人物网络。受众为维持人物关系与道德评价的一致性，会根据人物间关系重组对各人物的态度。",
+        "data": "三项研究使用包含多个相互关联人物的叙事材料；公开摘要未披露各研究样本量、招募平台和人口构成。",
+        "method": "实验操纵目标人物的道德信息与人物关系效价，比较受众对其他人物的道德评价及其同化或对比。",
+        "results": "一个人物的道德信息能够系统性影响相关人物评价，关系效价预测评价方向，支持人物并非被孤立加工。",
+        "limitations": "样本与刺激细节未在公开摘要中完整呈现，人物网络效应能否跨文化、跨神话体系复制仍需检验。",
+        "readingUse": "精读其人物关系效价操纵和跨人物道德评价测量。",
+        "researchConnection": "直接补足博士论文中的人物接收机制，提示价值契合效应可能受到人物关系网络与道德评价的共同影响。",
+        "abstractSource": "https://doi.org/10.1093/joc/jqaf025",
+        "abstractZh": "三项研究表明，关于一个人物的道德信息会偏移受众对同一叙事中其他人物的判断，人物之间的关系正负性决定评价发生同化还是对比。",
+        "doi": "https://doi.org/10.1093/joc/jqaf025",
+        "publicationDate": "2025-06-19",
+        "publicationDateSource": "https://academic.oup.com/joc/article/76/3/248/8167142",
+        "publicationType": "journal",
+        "publicationStatus": "published",
+        "peerReviewed": true,
+        "peerReviewSource": "https://academic.oup.com/joc/article/76/3/248/8167142",
+        "apaCitation": "Francemone, C. J., & Grizzard, M. (2026). Evidence of balance theory as a predictive framework for character interdependence. Journal of Communication, 76(3), 248-259. https://doi.org/10.1093/joc/jqaf025",
+        "hypothesisImplication": "价值契合对目标人物认同的作用可能被目标人物与其他角色的关系效价调节。",
+        "manipulationImplication": "固定目标人物价值行为，正交操纵其与本国相似人物或文化内群体人物的合作、冲突关系。",
+        "measurementImplication": "对每个角色分别测量道德评价、价值契合、好感与认同，并记录人物关系效价和整体叙事平衡。"
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.1093/joc/jqag011",
+        "reason": "直接随机操纵人物视点，并把注视、记忆、心理化与人物表征连成可检验机制链。"
+      },
+      {
+        "doi": "https://doi.org/10.1093/joc/jqaf025",
+        "reason": "直接说明人物评价受关系网络和道德信息共同塑造，可用于扩展价值契合假设。"
+      },
+      {
+        "doi": "https://doi.org/10.1038/s41586-026-11154-7",
+        "reason": "以大规模随机剂量设计显示信息干预会重塑群体关系，为文化边界的动态调节提供最强识别参照。"
+      }
+    ]
+  },
+  "weeklyReview": {
+    "weekStart": "2026-10-17",
+    "weekEnd": "2026-10-23",
+    "topPapers": [
+      {
+        "title": "Selecting and Testing Cultural Symbols for Character IP: Evidence from Mount Tai, China",
+        "url": "https://doi.org/10.3389/fpsyg.2026.1946141",
+        "reason": "把中国文化符号、人物IP、情感共鸣、文化认同和传播意向连接起来，最贴近论文对象。"
+      },
+      {
+        "title": "Linguistic Intervention Unlocks the Economic Gains of Diversity",
+        "url": "https://doi.org/10.1073/pnas.2534825123",
+        "reason": "提供群体边界、沟通摩擦和语言解释干预的行为实验框架。"
+      },
+      {
+        "title": "Through their eyes: neural and behavioral evidence for enhanced immersion via point-of-view editing",
+        "url": "https://doi.org/10.1093/joc/jqag011",
+        "reason": "揭示视点剪辑对人物沉浸、注意和记忆的独立影响，可避免把形式效应误归于价值契合。"
+      }
+    ],
+    "designImplications": [
+      "采用价值契合高低与文化内外群体边界的二乘二设计，并把人物道德评价作为独立机制测量。",
+      "增加受众本国相似神话人物解释组、一般文化背景解释组和无解释组，分别检验熟悉性、图式激活与加工流畅性。",
+      "固定台词与价值行为，控制第一人称视点、凝视和剪辑形式，避免叙事形式混入价值契合处理。",
+      "跨国比较前加入量表校准题，分别估计理解、好感、人物认同和传播意向，避免把评分风格差异解释为接收差异。"
+    ],
+    "literatureUses": [
+      "泰山人物IP研究用于构造文化符号预试、情感共鸣和传播意向测量。",
+      "PNAS语言干预研究用于界定类比解释何时减少跨群体沟通摩擦。",
+      "JoC视点剪辑和平衡理论研究分别控制形式沉浸与人物关系网络。"
+    ],
+    "openQuestions": [
+      "价值契合影响的是人物理解、道德评价、人物认同还是传播意向，作用顺序是否稳定？",
+      "本国相似人物类比在提高加工流畅性的同时，是否会造成错误图式迁移或削弱中国文化独特性？",
+      "文化内外群体边界是稳定身份线索，还是会被共同解释、讨论和关系网络动态改变？"
+    ]
+  }
+}

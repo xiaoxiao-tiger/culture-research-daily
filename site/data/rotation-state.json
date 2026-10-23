@@ -1,9 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "communication": {
     "joc": {
-      "lastCheckedAt": "2026-10-16",
+      "lastAttemptAt": "2026-10-23",
+      "lastCheckedAt": "2026-10-23",
+      "status": "completed",
+      "lastCompletedAt": "2026-10-23",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-16",
@@ -25,7 +28,21 @@
           ]
         }
       ],
-      "completedIssues": []
+      "completedIssues": [
+        {
+          "checkedAt": "2026-10-23",
+          "url": "https://academic.oup.com/joc/issue/76/5",
+          "title": "Volume 76, Issue 5, October 2026",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag010",
+            "https://doi.org/10.1093/joc/jqag011",
+            "https://doi.org/10.1093/joc/jqag006",
+            "https://doi.org/10.1093/joc/jqag009",
+            "https://doi.org/10.1093/joc/jqag012"
+          ]
+        }
+      ]
     },
     "hcr": {
       "lastCheckedAt": "2026-10-17",
@@ -164,12 +181,12 @@
       "socialScienceAssessment": "confirmed"
     },
     "nature": {
-      "lastAttemptAt": "2026-10-17",
+      "lastAttemptAt": "2026-10-23",
       "status": "completed",
-      "lastCompletedAt": "2026-10-17",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11157-4",
+      "lastCompletedAt": "2026-10-23",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11154-7",
       "publicationDate": "2026-10-14",
-      "socialScienceAssessment": "uncertain"
+      "socialScienceAssessment": "confirmed"
     },
     "science": {
       "lastAttemptAt": "2026-10-18",
