@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-24",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-23",
@@ -45,7 +45,7 @@
       ]
     },
     "hcr": {
-      "lastCheckedAt": "2026-10-17",
+      "lastCheckedAt": "2026-10-24",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-17",
@@ -63,7 +63,23 @@
           ]
         }
       ],
-      "completedIssues": []
+      "completedIssues": [
+        {
+          "checkedAt": "2026-10-24",
+          "url": "https://academic.oup.com/hcr/issue/52/4",
+          "title": "Volume 52, Issue 4, October 2026",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/hcr/hqaf030",
+            "https://doi.org/10.1093/hcr/hqaf031",
+            "https://doi.org/10.1093/hcr/hqaf033",
+            "https://doi.org/10.1093/hcr/hqaf032"
+          ]
+        }
+      ],
+      "lastAttemptAt": "2026-10-24",
+      "status": "completed",
+      "lastCompletedAt": "2026-10-24"
     },
     "cr": {
       "lastAttemptAt": "2026-10-18",
@@ -189,10 +205,11 @@
       "socialScienceAssessment": "confirmed"
     },
     "science": {
-      "lastAttemptAt": "2026-10-18",
+      "lastAttemptAt": "2026-10-24",
       "status": "blocked",
-      "reason": "Cloudflare challenge persisted after one normal refresh; no latest eligible paper verified.",
-      "lastCompletedAt": null
+      "reason": "Science current directory remained behind a human-verification page after one normal refresh; no verified candidate and no completed cursor advanced.",
+      "lastCompletedAt": null,
+      "lastCheckedAt": "2026-10-24"
     },
     "science-advances": {
       "lastAttemptAt": "2026-10-19",
@@ -218,4 +235,3 @@
     }
   }
 }
-
