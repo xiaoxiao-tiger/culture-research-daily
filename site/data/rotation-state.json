@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-26",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-23",
@@ -97,26 +97,37 @@
       }
     },
     "jcmc": {
-      "lastAttemptAt": "2026-10-19",
-      "lastCheckedAt": "2026-10-19",
-      "status": "blocked",
-      "reason": "Advance list empty; current in-progress issue directory has 2 articles. Article challenge persisted after one normal reload; content verification incomplete. No completed cursor advanced.",
-      "lastCompletedAt": null,
+      "lastAttemptAt": "2026-10-26",
+      "lastCheckedAt": "2026-10-26",
+      "status": "completed",
+      "reason": "Volume 31, Issue 6 remains In Progress. On 2026-10-26 its public directory showed exactly two Full-length Research Articles, and both official PDFs were accessible and verified. Completion records the full visible scope on the checked date.",
+      "lastCompletedAt": "2026-10-26",
       "onlineSnapshots": [],
-      "completedIssues": [],
+      "completedIssues": [
+        {
+          "checkedAt": "2026-10-26",
+          "url": "https://academic.oup.com/jcmc/issue/31/6",
+          "title": "Volume 31, Issue 6, November 2026 (In Progress) · 2026-10-26完整可见范围",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/jcmc/zmag024",
+            "https://doi.org/10.1093/jcmc/zmag025"
+          ]
+        }
+      ],
       "directoryObservation": {
         "journalId": "jcmc",
         "journalName": "Journal of Computer-Mediated Communication",
         "kind": "issue",
-        "title": "Volume 31, Issue 6, November 2026 (In Progress) · 2026-10-19可见在线范围",
-        "url": "https://academic.oup.com/jcmc/issue",
-        "checkedAt": "2026-10-19",
-        "complete": false,
+        "title": "Volume 31, Issue 6, November 2026 (In Progress) · 2026-10-26完整可见范围",
+        "url": "https://academic.oup.com/jcmc/issue/31/6",
+        "checkedAt": "2026-10-26",
+        "complete": true,
         "reportedTotal": 2,
         "observedCount": 2,
         "advanceUrl": "https://academic.oup.com/jcmc/advance-articles",
         "advanceCount": 0,
-        "scopeNote": "官方目录可见2篇Full-length Research Articles，无分页；11月标签不是未来才可阅读，已上线即可。文章页人机验证无法完成，目录可见不等于逐篇内容核验。",
+        "scopeNote": "官方目录可见2篇Full-length Research Articles，无分页；两篇官方PDF均于2026-10-26完成正文关键部分核验。该期仍标注In Progress，完整性仅指检查日公开目录范围。",
         "directoryPreview": [
           {
             "title": "The sequential replicant effect in interpersonal sincerity: evidence from AI-mediated apology and gratitude",
@@ -220,12 +231,12 @@
       "socialScienceAssessment": "confirmed"
     },
     "scientific-data": {
-      "lastAttemptAt": "2026-10-20",
+      "lastAttemptAt": "2026-10-26",
       "status": "completed",
-      "lastCompletedAt": "2026-10-20",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08519-y",
-      "publicationDate": "2026-10-19",
-      "socialScienceAssessment": "uncertain"
+      "lastCompletedAt": "2026-10-26",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08160-9",
+      "publicationDate": "2026-10-21",
+      "socialScienceAssessment": "confirmed"
     },
     "nature-communications": {
       "lastAttemptAt": "2026-10-21",
