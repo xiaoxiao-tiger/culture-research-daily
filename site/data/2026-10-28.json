@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 6,
+  "date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "edition": "正式第25期",
+  "title": "从群体边界到文化图式：接收为何不能只看好感",
+  "summary": "本期完成NBER、SSRN和arXiv最新研究各1篇，PNAS社会科学研究1篇，并为博士论文精选5篇新近同行评审论文。Google Scholar异常流量限制导致高被引与主题期刊栏留缺；New Media & Society目录受安全验证阻挡，未以零散索引冒充完整一期。",
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "activeTopicIds": [
+    "culture",
+    "sycophancy",
+    "methods"
+  ],
+  "searchSettings": {
+    "source": "defaults + reading-plan",
+    "lookbackDays": 30,
+    "conflictNote": "当日没有生效的一次性用户设置，未来设置保持不变。culture继续以博士论文的人物接收、价值契合、文化边界、图式和类比机制为重点，同时保留culture、sycophancy和methods三个主题。"
+  },
+  "notice": "本期逐篇依据可访问的出版方页面、权威索引、官方摘要或正式记录核验。未读取正文关键部分时不标全文核验，无法核验的样本、系数和识别细节均明确说明。",
+  "searchNote": "Google Scholar原生主题查询返回异常流量提示，随即停止，不绕过验证，也不以网页搜索或其他索引数字冒充Scholar引用次数。NBER、SSRN和arXiv通过公开域名网页发现并回到官方记录逐篇核验，公开网页检索不冒称站内高级检索。博士论文专题另使用出版方和权威学术索引核验同行评审状态。",
+  "themeSearches": [
+    {
+      "platform": "Google Scholar",
+      "query": "(\"cultural transmission\" OR \"cross-cultural reception\" OR \"value congruence\" OR sycophancy OR \"text measurement\")",
+      "timeRange": "不限年份；检索日期2026-10-28",
+      "purpose": "culture、sycophancy和methods主题发现，随后筛期刊并核验被引次数",
+      "status": "原生页面返回unusual traffic，未取得结果和引用次数，未绕过验证。"
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers October 2026 (culture OR outgroup OR communication OR methods)",
+      "timeRange": "优先近30日；检索日期2026-10-28",
+      "purpose": "NBER最新候选发现",
+      "status": "公开域名网页检索成功，入选论文的作者、月份、摘要与DOI由NBER官方记录核验。"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm October 2026 (AI OR communication OR culture OR social connection)",
+      "timeRange": "优先近30日；检索日期2026-10-28",
+      "purpose": "SSRN最新候选发现",
+      "status": "公开域名网页检索成功，题名、作者、首次发布日、样本与SSRN DOI由论文页核验。"
+    },
+    {
+      "platform": "arXiv",
+      "query": "submittedDate:[202610010000 TO 202610282359] AND all:(communication OR alignment OR culture OR narrative)",
+      "timeRange": "2026-10-01至2026-10-28；检索日期2026-10-28",
+      "purpose": "arXiv最新候选发现",
+      "status": "公开摘要记录检索成功，入选论文的首次提交日期、作者、摘要和arXiv ID完成核验。"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "SAGE · New Media & Society",
+      "query": "Online First完整研究文章目录，不使用关键词",
+      "timeRange": "检查日期2026-10-28",
+      "purpose": "传播学顶刊Online First整期收集",
+      "status": "出版方页面在一次正常重试后仍显示Cloudflare人机安全验证。无法确认完整目录，未收录零散索引结果，也未推进完成游标。"
+    },
+    {
+      "platform": "PNAS",
+      "query": "最新在线且未推荐的社会科学研究，不使用关键词",
+      "timeRange": "检查日期2026-10-28",
+      "purpose": "综合顶刊轮换推荐",
+      "status": "通过PNAS题录和PubMed正式记录确认一篇2026-10-19首次在线的科学社会学研究，题名、作者、DOI、摘要、卷期和发表状态均已核验。"
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "Google Scholar",
+      "query": "(\"cultural transmission\" OR \"cross-cultural reception\" OR \"value congruence\" OR sycophancy OR \"text measurement\")",
+      "timeRange": "核验日期2026-10-28",
+      "purpose": "主题发现与引用次数核验",
+      "status": "原生页面明确提示异常流量，未取得可核验结果，停止后续Scholar请求。"
+    },
+    {
+      "platform": "NBER、SSRN与arXiv官方记录",
+      "query": "本期其他研究3篇的题名、作者、日期、摘要、DOI或arXiv ID",
+      "timeRange": "核验日期2026-10-28",
+      "purpose": "逐篇身份、日期与摘要核验",
+      "status": "3篇均完成官方记录核验。NBER与SSRN论文尚未同行评审，arXiv为预印本，均已显著标明。"
+    },
+    {
+      "platform": "期刊出版方与PubMed",
+      "query": "博士论文5篇和PNAS 1篇的题名、作者、期刊、发表状态、日期、DOI、摘要与研究设计",
+      "timeRange": "核验日期2026-10-28",
+      "purpose": "同行评审与内容逐篇核验",
+      "status": "6篇均由期刊出版方或权威学术索引核验。没有取得的样本量、条件系数和全文细节未作推测。"
+    }
+  ],
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 5,
+      "sortBy": "split",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新",
+          "target": 3
+        },
+        {
+          "id": "cited",
+          "label": "高被引",
+          "target": 2
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included"
+        },
+        {
+          "database": "SSRN",
+          "status": "included"
+        },
+        {
+          "database": "arXiv",
+          "status": "included"
+        }
+      ],
+      "sortDescription": "最新3篇按首次公开日期降序，且NBER、SSRN和arXiv各1篇。Google Scholar原生页面返回异常流量提示，高被引2篇不以其他数字替代，因而留缺。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于人机互动和多智能体协同的测量设计。",
+          "researchConnection": "补充sycophancy主题。它提示对齐需要区分互动带来的证据整合和单纯迎合，但不直接检验价值谄媚。",
+          "title": "Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs",
+          "titleZh": "集体涌现对齐：测量并增强多智能体大模型互动中的推理对齐",
+          "authors": "Boxuan Wang, Zhuoyun Li, Sarvapali D. Ramchurn, Xiaowei Huang, Yi Dong",
+          "year": 2026,
+          "venue": "arXiv:2610.34836",
+          "source": "arXiv",
+          "sourceDatabase": "arXiv",
+          "category": "其他研究 · 最新",
+          "url": "https://arxiv.org/abs/2610.34836",
+          "doi": "https://doi.org/10.48550/arXiv.2610.34836",
+          "arxivId": "2610.34836",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "takeaway": "论文提出REMAP框架，比较多智能体互动与匹配的单体自我修正，发现互动能够在需要整合分散证据的推理任务中产生额外的参考答案对齐收益。",
+          "theory": "把对齐理解为互动中形成的信息整合结果，并区分语义覆盖、互动增益、同伴信息恢复和能力异质性。",
+          "data": "使用多个模型家族与两个多跳推理基准。公开摘要未列出全部模型名称、任务样本量和运行次数。",
+          "method": "以匹配的单体自我修正作为对照，计算互动特有的推理对齐增益，并检验同伴信息恢复、模型组合与信息传递方向的关系。随后比较完整推理轨迹交换与紧凑事实交换。",
+          "results": "多数模型组合出现正向互动增益，分散证据整合任务的收益更明显。紧凑事实交换同时提高对齐和任务表现并减少通信开销，但过度选择性的信息路由会在新信息获取、本地内容保留和效率之间产生权衡。",
+          "limitations": "这是尚未同行评审的预印本。公开摘要不足以核验各基准的具体效应量、置信区间和失败案例。结论针对多智能体推理，不能直接外推到人与模型的价值迎合。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-26",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2610.34836",
+          "publicationType": "preprint",
+          "abstractZh": "论文提出REMAP框架，比较多智能体互动与匹配的单体自我修正，发现互动能够在需要整合分散证据的推理任务中产生额外的参考答案对齐收益。",
+          "abstractSource": "https://arxiv.org/abs/2610.34836"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于人机互动的田野实验设计与行为结果测量。",
+          "researchConnection": "补充sycophancy主题，也为文化产品共同消费中的人工陪伴和人际连接提供行为基准。",
+          "title": "Sharing with AI, Connecting with Humans: Evidence from a Large-Scale Field Experiment on AI Co-Listening",
+          "titleZh": "与人工智能分享，和人类连接：人工智能共同聆听的大规模田野实验",
+          "authors": "Yahe Tan, Qi Zhong, Liqiang Huang",
+          "year": 2026,
+          "venue": "SSRN working paper 7552601",
+          "source": "SSRN",
+          "sourceDatabase": "SSRN",
+          "category": "其他研究 · 最新",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7552601",
+          "doi": "https://doi.org/10.2139/ssrn.7552601",
+          "topicIds": [
+            "sycophancy",
+            "culture"
+          ],
+          "takeaway": "一项覆盖约579万用户的随机田野实验发现，提供拟人化人工智能共同聆听伙伴使播放和内容参与小幅增加，并在首次使用后持续提高与朋友共同聆听的占比。",
+          "theory": "论文提出关系差异化的替代与激活框架。人工智能可以替代低摩擦的陌生人陪伴，却因缺乏关系历史和长期承诺而激活更深的人际连接需求。",
+          "data": "与一家社交音乐流媒体平台合作，用户层面随机实验约579万人。补充行为分析比较人工智能房间、陌生人房间和朋友房间中的聆听强度。",
+          "method": "随机提供人工智能共同聆听功能，估计其对播放与内容参与的意向处理效应，再以用户首次人工智能共同聆听为时间点比较不同关系类型的共同聆听变化。",
+          "results": "功能使播放和内容参与增加约0.34%至0.50%。同一用户在人工智能房间的聆听强度高于陌生人房间但低于朋友房间。首次人工智能共同聆听后，朋友共同聆听占比持续上升，陌生人共同聆听只短暂增加。",
+          "limitations": "SSRN版本尚未同行评审。公开摘要未给出随机化比例、平台名称、置信区间和长期追踪窗口，关系激活机制仍主要由行为模式推断。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-02",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7552601",
+          "publicationType": "working-paper",
+          "abstractZh": "一项覆盖约579万用户的随机田野实验发现，提供拟人化人工智能共同聆听伙伴使播放和内容参与小幅增加，并在首次使用后持续提高与朋友共同聆听的占比。",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7552601"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+          "readingPriority": "high",
+          "priorityReason": "对人物接收能否推广到外群体提供直接的随机实验边界证据。",
+          "readingUse": "用于群体边界调节、抽样范围和行为结果的实验设计。",
+          "researchConnection": "直接补充博士论文的内外群体边界问题。它说明对一个人物的深入接收未必推广到整个文化群体，广泛范例和具体关系可能产生不同结果。",
+          "title": "Learning About Outgroups: The Impact of Broad Versus Deep Interactions",
+          "titleZh": "如何了解外群体：广泛互动与深入互动的不同影响",
+          "authors": "Anujit Chakraborty, Arkadev Ghosh, Matt Lowe, Gareth Nellis",
+          "year": 2026,
+          "venue": "NBER Working Paper 35884",
+          "source": "NBER",
+          "sourceDatabase": "NBER",
+          "category": "其他研究 · 最新",
+          "url": "https://www.nber.org/papers/w35884",
+          "doi": "https://doi.org/10.3386/w35884",
+          "identityAliases": [
+            "doi:10.2139/ssrn.4991911"
+          ],
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "印度工厂田野实验表明，与同一外群体成员深入合作更能建立具体关系，而与多个外群体成员短暂合作更能修正多数群体对陌生外群体成员的错误认知。两种接触都没有改变对更广泛外群体的行为。",
+          "theory": "把群际接触拆分为关系深化与独立抽样学习。深入接触积累针对特定伙伴的关系资本，广泛接触则提供更多独立样本，使信念更新更可能推广到陌生人。",
+          "data": "在印度西孟加拉邦设立工厂，招募964名18至40岁的印度教和穆斯林男性，每人参与6天纸袋协作生产。",
+          "method": "随机分配到与同一外群体伙伴连续合作、每天更换外群体伙伴、同一内群体伙伴或纯控制条件。测量生产率、工作士气、群体信念、互动意愿及社会经济联系，并利用伙伴处理前生产率的组内差异分析学习过程。",
+          "results": "深入接触强化和具体伙伴的持续联系与互助，广泛接触更能纠正多数群体对外群体陌生人的生产率和宗教性误判。广泛接触的信念更新可以推广，但两种处理均未提高对外群体陌生人的捐赠等行为。",
+          "limitations": "NBER工作论文尚未同行评审，首次版本可追溯到2024年的CESifo和SSRN记录，因此本期把它列作近月NBER新收录而非全新研究。实验只覆盖特定地区、男性和劳动协作情境。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10",
+          "publicationDatePrecision": "month",
+          "publicationDateSource": "https://www.nber.org/papers/w35884",
+          "publicationType": "working-paper",
+          "abstractZh": "印度工厂田野实验表明，与同一外群体成员深入合作更能建立具体关系，而与多个外群体成员短暂合作更能修正多数群体对陌生外群体成员的错误认知。两种接触都没有改变对更广泛外群体的行为。",
+          "abstractSource": "https://www.nber.org/papers/w35884"
+        }
+      ]
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "journalPriorityNote": "按规则应先在Google Scholar执行主题检索，再筛传播学SSCI Q1或Q2期刊。原生页面当日返回异常流量提示，无法核验实际被引次数和完成规定排序，因此不以其他索引替代。",
+      "sortDescription": "应按Google Scholar实际被引次数降序。本期渠道受阻，栏目留空。",
+      "papers": []
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "unit": "issue",
+      "target": 0,
+      "sortBy": "issue",
+      "collection": {
+        "journalId": "nms",
+        "journalName": "New Media & Society",
+        "kind": "online-first",
+        "title": "Online First目录检查 · 2026-10-28",
+        "url": "https://journals.sagepub.com/toc/nmsa/0/0?ContentItemType=research-article&pageSize=100&sortBy=FullEpubDateField&startPage=0",
+        "checkedAt": "2026-10-28",
+        "complete": false,
+        "toc": []
+      },
+      "sortDescription": "不使用关键词。出版方目录在一次正常重试后仍要求人机安全验证，公开索引只提供零散条目，不能据此冒充完整Online First集合。",
+      "papers": []
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "pnas",
+      "sortDescription": "不使用关键词。按轮换检查PNAS最新可核验且尚未推荐的社会科学研究，并保存首次在线日期。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于综合顶刊中的科学计量和职业研究追踪。",
+          "researchConnection": "和博士论文直接关系较弱，但其对颠覆性与持久性的区分可作为构念分解和长期结果测量的参照。",
+          "title": "Scientists Disrupt Less but More Persistently With Career Aging",
+          "titleZh": "科学家的颠覆性随职业年龄下降，但持久颠覆更可能出现",
+          "authors": "Nan Deng, Liying Yang, Shlomo Havlin, An Zeng",
+          "year": 2026,
+          "venue": "Proceedings of the National Academy of Sciences, 123(43), e2626763123",
+          "source": "PNAS",
+          "category": "综合顶刊 · 社会科学",
+          "url": "https://doi.org/10.1073/pnas.2626763123",
+          "doi": "https://doi.org/10.1073/pnas.2626763123",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "对1120万篇论文和20多万名长职业科研人员的分析显示，科研人员随职业年龄增长更少产生颠覆性成果，但一旦产生，这类颠覆更可能被后续研究巩固而不是迅速取代。",
+          "theory": "论文区分普通颠覆指数与持久颠覆框架。前者衡量论文是否推翻前置知识，后者进一步判断该颠覆是否在后续研究中被接受并持续。",
+          "data": "约1120万篇论文，覆盖20多万名职业跨度超过40年的科学家，并分析引用、社交媒体关注、研究资助和诺贝尔奖获得者。",
+          "method": "以职业年龄为主要时间轴，比较普通颠覆与持久颠覆的发生概率，并在固定颠覆水平下考察引用、社交媒体和资助认可。公开摘要与报道明确说明结果为关联而非因果。",
+          "results": "产生持久颠覆论文的概率从职业早期约1%提高到第40年的约2.2%。资深科学家的颠覆成果更可能持续，并在固定颠覆水平下获得更多引用、社交媒体关注与资助。数学和计算机科学呈现部分不同模式。",
+          "limitations": "职业年龄与研究经验高度相关，观察性设计不能识别因果。持久颠覆依赖引用网络和观察窗口，资深论文拥有更长累积时间，具体校正方式需阅读全文核验。",
+          "publicationType": "journal",
+          "publicationStatus": "published",
+          "peerReviewed": true,
+          "publicationDate": "2026-10-19",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://pubmed.ncbi.nlm.nih.gov/42896063/",
+          "abstractSource": "https://pubmed.ncbi.nlm.nih.gov/42896063/",
+          "socialScienceAssessment": "confirmed",
+          "socialScienceReason": "研究问题、分析对象和主要结论均聚焦科研职业、知识生产与学术认可，是典型的科学社会学和科学计量研究。",
+          "abstractZh": "对1120万篇论文和20多万名长职业科研人员的分析显示，科研人员随职业年龄增长更少产生颠覆性成果，但一旦产生，这类颠覆更可能被后续研究巩固而不是迅速取代。"
+        }
+      ]
+    }
+  ],
+  "shortfallReason": "Google Scholar原生页面返回异常流量提示，无法执行规定的主题发现、实际被引次数核验和排序。为避免以其他索引替代，高被引栏缺2篇，传播学与社会科学栏缺5篇。New Media & Society出版方目录持续显示人机安全验证，无法确认完整Online First集合，整期栏留空且不推进游标。其余三库最新、PNAS轮换与博士论文专题按可核验证据发布。",
+  "periodicalCheckNote": "New Media & Society本次目录不完整，未推进完成状态。PNAS候选完成正式题录和摘要核验。",
+  "coreTracking": [],
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "优先核验2026-10-27上期发布以来的新发表研究。当天新增不足后扩展到2026年内尚未推荐的高相关同行评审论文，全部明确其首次在线日期，不把较早论文冒称当日新增。",
+    "selectionNote": "本期精选5篇正式同行评审论文。新近RedNote实验与角色榜样实验分别提供群体边界和人物弧线证据，文化图式研究直接检验熟悉性对理解与记忆的作用，其余研究用于区分寄生关系、信任、人物认同和价值契合。",
+    "historyCoverage": "已核对网站331条永久登记、截至2026-10-27的简报和博士论文专题、用户明确列出的既有文献及本轮可见对话，并按DOI、规范化题名和已知版本别名去重。无法访问的完整旧对话和未同步私人清单不在覆盖范围内，因此不声称绝对完全去重。",
+    "selectedPapers": [
+      "https://doi.org/10.1080/15213269.2026.2736253",
+      "https://doi.org/10.1080/15205436.2026.2649890",
+      "https://doi.org/10.1080/10510974.2026.2708678",
+      "https://doi.org/10.3758/s13421-026-01928-9",
+      "https://doi.org/10.1177/10755470261460413"
+    ],
+    "papers": [
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "新近、实验设计清楚，而且直接区分特定外群体结果和更宽泛的推广结果。",
+        "readingUse": "用于群体边界假设、调节变量和传播意向测量。",
+        "researchConnection": "直接支持把外群体边界、感知连接和推广范围分开建模，也提醒对单个人物的积极接收不等于对所有外群体的普遍好感。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Where the World Connects: How Intergroup Contact on Social Media Influences Intergroup Outcomes",
+        "titleZh": "世界在此连接：社交媒体群际接触如何影响群际结果",
+        "authors": "Yansheng Liu, Yilan Guo, Alex Paloma, Mary Beth Oliver",
+        "year": 2026,
+        "venue": "Media Psychology, Advance online publication",
+        "source": "Taylor & Francis",
+        "url": "https://doi.org/10.1080/15213269.2026.2736253",
+        "doi": "https://doi.org/10.1080/15213269.2026.2736253",
+        "publicationDate": "2026-10-16",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://doi.org/10.1080/15213269.2026.2736253",
+        "peerReviewSource": "https://doi.org/10.1080/15213269.2026.2736253",
+        "apaCitation": "Liu, Y., Guo, Y., Paloma, A., & Oliver, M. B. (2026). Where the world connects: How intergroup contact on social media influences intergroup outcomes. Media Psychology. Advance online publication. https://doi.org/10.1080/15213269.2026.2736253",
+        "takeaway": "两项RedNote在线实验显示，相比中国发布者，观看美国发布者的猫图片或交友帖会提高中国用户对美国人的自我纳入、道德评价和互动意愿，作用主要通过感知连接传递，但没有推广到更宽泛的全球外群体。",
+        "theory": "整合群际接触理论、传播适应理论和次级转移效应。共同兴趣与建立连接的帖子提供潜在友谊线索，感知连接被视为从个体接触推广到群体评价的中介。",
+        "data": "两项2乘3在线实验总样本833名中国RedNote用户。研究一N为364，材料是猫图片；研究二N为469，材料是寻求连接的帖子。",
+        "method": "随机操纵发布者身份为美国外群体或中国内群体，并操纵帖子语言为英语、中文或双语。结果变量包括自我纳入、对美国人的道德评价、互动意愿、普遍主义取向和对全球他者的评价，中介变量为感知连接。",
+        "results": "外群体发布者在两种内容情境中均改善针对美国人的三个结果，感知连接解释主要路径。语言的作用有限，效应也没有转移到全球他者，说明接触效果受目标群体范围约束。",
+        "limitations": "研究考察中国受众观看普通美国用户帖子，不是外国受众接收中国神话人物。结果集中在美国人这一群体层级，不能直接等同人物认同或文化产品传播意向。",
+        "hypothesisImplication": "简报推论：可以提出价值契合对人物认同的作用强于对广义文化态度的作用，并检验文化内外群体边界是否限制效应推广。",
+        "manipulationImplication": "简报推论：分别操纵人物文化身份和共享兴趣或价值线索，不要只用语言作为文化接近的代理。",
+        "measurementImplication": "简报推论：分别测量人物认同、对人物所属群体的态度、感知连接、互动或传播意向，以及对其他文化群体的次级转移。",
+        "abstractZh": "两项RedNote在线实验显示，相比中国发布者，观看美国发布者的猫图片或交友帖会提高中国用户对美国人的自我纳入、道德评价和互动意愿，作用主要通过感知连接传递，但没有推广到更宽泛的全球外群体。",
+        "abstractSource": "https://doi.org/10.1080/15213269.2026.2736253"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "它直接比较不同人物弧线，并显示人物卷入与行为意向可能由不同叙事策略驱动。",
+        "readingUse": "用于人物弧线操纵、结果变量区分和群体边界检验。",
+        "researchConnection": "直接补充人物认同、道德评价和传播或接触意向的区分。它说明最令人认同的人物叙事未必最能改变行为意向。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Vicarious Mediated Contact and Role Models: Understanding Narrative Strategies to Reduce Stigma and Prejudice",
+        "titleZh": "替代性媒介接触与角色榜样：降低污名和偏见的叙事策略",
+        "authors": "Kristina Medero, Emily Moyer-Gusé",
+        "year": 2026,
+        "venue": "Mass Communication and Society, Advance online publication",
+        "source": "Taylor & Francis",
+        "url": "https://doi.org/10.1080/15205436.2026.2649890",
+        "doi": "https://doi.org/10.1080/15205436.2026.2649890",
+        "publicationDate": "2026-04-30",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://doi.org/10.1080/15205436.2026.2649890",
+        "peerReviewSource": "https://doi.org/10.1080/15205436.2026.2649890",
+        "apaCitation": "Medero, K., & Moyer-Gusé, E. (2026). Vicarious mediated contact and role models: Understanding narrative strategies to reduce stigma and prejudice. Mass Communication and Society. Advance online publication. https://doi.org/10.1080/15205436.2026.2649890",
+        "takeaway": "一项六条件随机实验表明，正面内群体榜样更容易引发人物卷入，但发生转变的榜样可能更有利于提升未来群际接触意向。角色榜样类型还可能与被呈现的外群体发生交互。",
+        "theory": "替代性媒介接触要求受众观察内群体人物与外群体人物互动。论文把内群体角色榜样区分为正面、负面和转变型，并强调人物卷入、群际焦虑与行为意向并非同一结果。",
+        "data": "N为817，随机进入六个叙事条件。三类内群体榜样分别和黑人角色或跨性别角色发生群际接触。",
+        "method": "采用3种榜样类型乘2种外群体的组间实验，比较人物卷入、群际态度、群际焦虑及未来接触意向。出版方摘要未公开全部量表、条件样本量和效应系数。",
+        "results": "正面榜样最有利于人物卷入，转变型榜样可能更能推动行为意向。研究同时警示某些叙事策略可能意外增加群际焦虑，且具体效果依赖外群体类别。",
+        "limitations": "研究对象是种族和性别身份污名，不能直接外推到神话人物或国家文化边界。当前仅核验出版方摘要与量表说明，未核验所有中介模型和效应量。",
+        "hypothesisImplication": "简报推论：价值契合可能先提高人物认同，但传播意向还取决于人物是否呈现可理解的转变过程以及群际焦虑是否下降。",
+        "manipulationImplication": "简报推论：可以把中国神话人物写成稳定正面型与经历价值冲突后转变型，同时保持情节长度和价值内容一致。",
+        "measurementImplication": "简报推论：分别测量人物卷入、价值契合、道德评价、群际焦虑和分享或进一步接触意向，避免用单一好感指标替代。",
+        "abstractZh": "一项六条件随机实验表明，正面内群体榜样更容易引发人物卷入，但发生转变的榜样可能更有利于提升未来群际接触意向。角色榜样类型还可能与被呈现的外群体发生交互。",
+        "abstractSource": "https://doi.org/10.1080/15205436.2026.2649890"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+        "readingPriority": "normal",
+        "priorityReason": "对如何在相同时长内操纵接触质量提供可直接转化的制作方案。",
+        "readingUse": "用于材料等时控制、人物关系强度和典型性测量。",
+        "researchConnection": "支持把关系质量、人物典型性和接触时长分开。对博士论文而言，本国相似神话人物类比可能提高理解，却也可能改变外国受众对中国人物典型性的判断。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Short Episodes but Fast Friends: Examining the Effects of Parasocial Relationship Quality on Mediated Intergenerational Contact in Grace and Frankie",
+        "titleZh": "短剧集也能迅速成为朋友：寄生关系质量与代际媒介接触",
+        "authors": "Alysse C. Baker, Elizabeth L. Cohen, Christine Kunkle",
+        "year": 2026,
+        "venue": "Communication Studies, Advance online publication",
+        "source": "Taylor & Francis",
+        "url": "https://doi.org/10.1080/10510974.2026.2708678",
+        "doi": "https://doi.org/10.1080/10510974.2026.2708678",
+        "publicationDate": "2026-07-31",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://doi.org/10.1080/10510974.2026.2708678",
+        "peerReviewSource": "https://doi.org/10.1080/10510974.2026.2708678",
+        "apaCitation": "Baker, A. C., Cohen, E. L., & Kunkle, C. (2026). Short episodes but fast friends: Examining the effects of parasocial relationship quality on mediated intergenerational contact in Grace and Frankie. Communication Studies. Advance online publication. https://doi.org/10.1080/10510974.2026.2708678",
+        "takeaway": "在观看时长相同的条件下，高质量接触版本让青年受众和Grace形成更强寄生关系，继而提高群际失调感和与老年人互动的意愿，但同一路径没有出现在Frankie身上。",
+        "theory": "研究把接触质量与接触时长分开，并以寄生关系、群际失调和角色典型性解释媒介接触如何推广到现实群体。",
+        "data": "青年受众被随机分配观看Grace and Frankie的高质量或低质量接触版本。出版方公开摘要未报告最终样本量，因此本简报不作推测。",
+        "method": "两个版本时长相同，高质量条件通过一季蒙太奇提供更多关系信息点，低质量条件使用试播集。研究采用串联中介模型，分别检验受众对Grace和Frankie的寄生关系。",
+        "results": "高接触质量增强对Grace的寄生关系，并通过群际失调提高与老年人互动的意愿。对Frankie没有出现同样路径，作者据此强调媒介范例的群体典型性。",
+        "limitations": "公开摘要没有样本量和完整操纵检查系数。对象为代际群体和既有电视剧人物，不能自动推广到跨国神话人物。不同角色结果不一致，说明人物特征可能与处理混淆。",
+        "hypothesisImplication": "简报推论：类比解释的效果可能通过更高关系质量和寄生联系发生，但只有在人物被视为其文化群体的有效范例时才会推广。",
+        "manipulationImplication": "简报推论：高低类比条件保持时长一致，只改变可建立关系的价值和经历信息点数量，并预先检验人物典型性。",
+        "measurementImplication": "简报推论：增加寄生关系强度、接触质量、人物典型性和对人物所属文化群体的推广指标。",
+        "abstractZh": "在观看时长相同的条件下，高质量接触版本让青年受众和Grace形成更强寄生关系，继而提高群际失调感和与老年人互动的意愿，但同一路径没有出现在Frankie身上。",
+        "abstractSource": "https://doi.org/10.1080/10510974.2026.2708678"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "它直接操纵文化熟悉性并区分初始编码与遗忘，是设计类比解释实验最关键的新证据。",
+        "readingUse": "用于文化图式操纵、理解与记忆测量及机制边界。",
+        "researchConnection": "直接支持本国相似神话人物类比和文化熟悉性机制，但也提示类比可能主要改善理解与记忆，不必然提高好感、认同或传播意向。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Between the Lines: Role of Cultural Schemas in Remembering and Forgetting",
+        "titleZh": "字里行间：文化图式在记忆与遗忘中的作用",
+        "authors": "Nan Peng, Robert H. Logie, Sergio Della Sala",
+        "year": 2026,
+        "venue": "Memory & Cognition, Advance online publication",
+        "source": "Springer Nature",
+        "url": "https://doi.org/10.3758/s13421-026-01928-9",
+        "doi": "https://doi.org/10.3758/s13421-026-01928-9",
+        "publicationDate": "2026-08-28",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://link.springer.com/article/10.3758/s13421-026-01928-9",
+        "peerReviewSource": "https://link.springer.com/article/10.3758/s13421-026-01928-9",
+        "apaCitation": "Peng, N., Logie, R. H., & Della Sala, S. (2026). Between the lines: Role of cultural schemas in remembering and forgetting. Memory & Cognition. Advance online publication. https://doi.org/10.3758/s13421-026-01928-9",
+        "takeaway": "四项实验一致表明，激活文化图式可以提高文化叙事的即时和延迟回忆，但不会改变随后遗忘的斜率。文化熟悉性改善的是初始编码，而不是记忆保持速度。",
+        "theory": "以Bartlett的文化图式和建构性记忆为基础，区分图式对编码水平的支持与对遗忘过程的影响。相关机制包括深度加工和语义网络中的扩散激活。",
+        "data": "实验一招募75名中国参与者，实验二招募70名中国参与者。实验三新招35名中国参与者并与实验一的熟悉组比较。实验四招募50名苏格兰参与者，最终按图式激活情况排除少量不符合操纵者。",
+        "method": "使用中秋节与苏格兰彭斯之夜叙事，前两项研究以参与者对文化属性的解释衡量图式激活，后两项在中国和苏格兰样本中操纵熟悉与陌生叙事。通过30秒、1天或3天的线索回忆，结合贝叶斯线性混合模型和多种遗忘函数比较记忆水平与遗忘率。",
+        "results": "文化图式激活提高各时间点的回忆准确性并减少猜测。实验四中熟悉条件的回忆优势明显，但条件与延迟的交互不明确，说明熟悉性提高初始学习而没有减慢遗忘。",
+        "limitations": "叙事围绕节庆晚宴，不是人物价值冲突。实验三部分比较复用实验一样本，可能存在选择偏差，实验四虽进行新样本复制，跨文化范围仍限于中国与苏格兰。",
+        "hypothesisImplication": "简报推论：相似神话人物类比首先提高理解与记忆，其对好感和认同的作用需要通过加工流畅性或价值契合另行检验。",
+        "manipulationImplication": "简报推论：为同一中国神话情节提供受众本国熟悉图式提示或中性解释，并保持事件结构、长度和信息量一致。",
+        "measurementImplication": "简报推论：在即时和延迟时点分别测量事实理解、线索回忆、文化推断和错误侵入，再与好感、认同及分享意向区分。",
+        "abstractZh": "四项实验一致表明，激活文化图式可以提高文化叙事的即时和延迟回忆，但不会改变随后遗忘的斜率。文化熟悉性改善的是初始编码，而不是记忆保持速度。",
+        "abstractSource": "https://doi.org/10.3758/s13421-026-01928-9"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "未核实到允许完整转载原文摘要的明确许可。请通过来源链接查看原文摘要，中文概述由本简报依据可核验证据原创。",
+        "readingPriority": "normal",
+        "priorityReason": "它直接展示受众如何用不同线索解释信任、认同和价值契合，有助于避免构念混同。",
+        "readingUse": "用于概念区分、开放题设计与价值契合量表开发。",
+        "researchConnection": "最直接支持博士论文区分理解、好感、人物认同和价值契合，并说明价值契合不等同信任、道德评价或人口相似。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Forming Relationships With Scientists Through Film: A Qualitative Study of Viewers’ Trust, Identification, and Value Alignment",
+        "titleZh": "通过电影和科学家建立关系：受众信任、认同与价值契合的质性研究",
+        "authors": "Nicole M. Krause, Emily L. Howell, Sarah S. Goodwin",
+        "year": 2026,
+        "venue": "Science Communication, OnlineFirst",
+        "source": "SAGE",
+        "url": "https://doi.org/10.1177/10755470261460413",
+        "doi": "https://doi.org/10.1177/10755470261460413",
+        "publicationDate": "2026-07-29",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://journals.sagepub.com/doi/abs/10.1177/10755470261460413",
+        "peerReviewSource": "https://journals.sagepub.com/doi/abs/10.1177/10755470261460413",
+        "apaCitation": "Krause, N. M., Howell, E. L., & Goodwin, S. S. (2026). Forming relationships with scientists through film: A qualitative study of viewers’ trust, identification, and value alignment. Science Communication. OnlineFirst. https://doi.org/10.1177/10755470261460413",
+        "takeaway": "对630名美国受众开放回答的质性分析发现，受众判断科学家角色时，信任、认同和价值契合是相关但不同的亲近形式。信任更多依赖真实性、知识和传播风格，认同与价值契合更依赖世界观、生活经验及人与自然关系。",
+        "theory": "把媒介人物关系拆分为信任、认同和价值契合，并关注受众用何种关系性、情感性和经验性理由说明亲近或疏离。",
+        "data": "美国全国调查N为630，参与者观看纪录片Observer中从事观察活动的科学家片段并回答开放问题。",
+        "method": "对受众解释信任、人物认同和感知价值契合的开放文本进行质性编码，并比较有无科学接近经验及党派亚组。公开页面说明去标识数据与复现代码可依请求提供，调查工具和码本在附录中。",
+        "results": "信任理由集中于真实性、知识性、热情和传播方式；人物认同与价值契合更多涉及好奇心、生活取向、世界观和自然关系。人口相似与正式科学权威较少被主动提及，三个判断也不会自动同步。",
+        "limitations": "开放回答依赖受众自我说明，不能提供因果识别。人物是美国科学家而非跨文化神话角色，且不少回答缺乏充分理由。质性频率不等于心理机制的效应大小。",
+        "hypothesisImplication": "简报推论：价值契合应被建模为人物认同的独立前因，并与真实性信任、道德评价和人口相似分别进入模型。",
+        "manipulationImplication": "简报推论：价值条件使用人物选择、目标和世界观线索，信任条件使用真实性与能力线索，避免把两类线索混在同一材料中。",
+        "measurementImplication": "简报推论：为信任、人物认同、Schwartz价值契合和道德评价设置独立量表，并用开放题追问受众判断依据。",
+        "abstractZh": "对630名美国受众开放回答的质性分析发现，受众判断科学家角色时，信任、认同和价值契合是相关但不同的亲近形式。信任更多依赖真实性、知识和传播风格，认同与价值契合更依赖世界观、生活经验及人与自然关系。",
+        "abstractSource": "https://doi.org/10.1177/10755470261460413"
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.3758/s13421-026-01928-9",
+        "reason": "直接操纵文化熟悉与陌生叙事，并区分即时理解、延迟记忆和遗忘率，是设计本国相似神话人物类比实验最关键的证据。"
+      },
+      {
+        "doi": "https://doi.org/10.1080/15213269.2026.2736253",
+        "reason": "两项新近实验清楚区分特定外群体结果与更宽泛的文化推广，最适合推导内外群体边界调节。"
+      },
+      {
+        "doi": "https://doi.org/10.1080/15205436.2026.2649890",
+        "reason": "直接比较正面、负面和转变型角色榜样，说明人物卷入与行为意向可能由不同叙事策略驱动。"
+      }
+    ]
+  }
+}

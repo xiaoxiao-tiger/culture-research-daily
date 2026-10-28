@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-23",
@@ -221,18 +221,18 @@
       }
     },
     "nms": {
-      "lastAttemptAt": "2026-10-21",
-      "lastCheckedAt": "2026-10-21",
+      "lastAttemptAt": "2026-10-28",
+      "lastCheckedAt": "2026-10-28",
       "status": "blocked",
-      "reason": "Publisher directory remained behind a Cloudflare human-verification page after one normal reload; public indexing exposed only a partial directory. No complete Online First snapshot or issue cursor advanced.",
+      "reason": "Publisher Online First directory remained behind a Cloudflare human-verification page after one normal reload. Public indexing exposed only partial entries, so no complete snapshot or issue cursor advanced.",
       "lastCompletedAt": null,
       "onlineSnapshots": [],
       "completedIssues": [],
       "directoryObservation": {
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-28",
         "url": "https://journals.sagepub.com/toc/nmsa/0/0?ContentItemType=research-article&pageSize=100&sortBy=FullEpubDateField&startPage=0",
         "complete": false,
-        "scopeNote": "Public search exposed a partial directory, while the publisher page required human verification. No arbitrary subset was treated as a complete issue."
+        "scopeNote": "The publisher page required human verification after one normal reload. Partial public indexing was not treated as a complete issue."
       }
     },
     "sms": {
@@ -261,11 +261,12 @@
   },
   "general": {
     "pnas": {
-      "lastAttemptAt": "2026-10-22",
+      "lastAttemptAt": "2026-10-28",
       "status": "completed",
-      "lastCompletedAt": "2026-10-22",
-      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2534825123",
-      "publicationDate": "2026-10-21",
+      "lastCompletedAt": "2026-10-28",
+      "lastCheckedAt": "2026-10-28",
+      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2626763123",
+      "publicationDate": "2026-10-19",
       "socialScienceAssessment": "confirmed"
     },
     "nature": {
