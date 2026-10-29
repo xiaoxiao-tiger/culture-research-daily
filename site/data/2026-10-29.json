@@ -1,0 +1,712 @@
+{
+  "schemaVersion": 6,
+  "date": "2026-10-29",
+  "timezone": "Asia/Shanghai",
+  "edition": "正式第26期",
+  "title": "深层相似、人物关系与文化边界：从被看见走向被接收",
+  "summary": "本期完成NBER、SSRN和arXiv最新研究各1篇，补齐Social Media + Society当前期新增2篇，推荐Nature最新研究1篇，并为博士论文精选5篇尚未推荐的同行评审论文。Google Scholar异常流量限制导致高被引与主题期刊栏留缺。",
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "activeTopicIds": [
+    "culture",
+    "sycophancy",
+    "methods"
+  ],
+  "searchSettings": {
+    "source": "defaults + reading-plan",
+    "lookbackDays": 30,
+    "conflictNote": "当日没有生效的一次性用户设置，未来设置保持不变。culture继续以博士论文的人物接收、价值契合、文化边界、图式和类比机制为重点，同时保留culture、sycophancy和methods三个主题。"
+  },
+  "notice": "本期逐篇依据可访问的出版方页面、权威索引、官方摘要或正式记录核验。未读取正文关键部分时不标全文核验，无法核验的样本、系数和识别细节均明确说明。",
+  "searchNote": "Google Scholar原生主题查询返回异常流量提示，随即停止，不绕过验证，也不以网页搜索或其他索引数字冒充Scholar引用次数。NBER、SSRN和arXiv通过公开域名网页发现并回到官方记录逐篇核验，公开网页检索不冒称站内高级检索。博士论文专题另使用出版方和权威学术索引核验同行评审状态。",
+  "themeSearches": [
+    {
+      "platform": "Google Scholar",
+      "query": "(\"cultural transmission\" OR \"cross-cultural reception\" OR \"value congruence\" OR sycophancy OR \"text measurement\")",
+      "timeRange": "不限年份；检索日期2026-10-29",
+      "purpose": "culture、sycophancy和methods主题发现，随后筛期刊并核验被引次数",
+      "status": "原生页面返回unusual traffic，未取得结果和引用次数，未绕过验证。"
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers October 2026 (culture OR communication OR oversight OR methods)",
+      "timeRange": "优先近30日；检索日期2026-10-29",
+      "purpose": "NBER最新候选发现",
+      "status": "公开域名网页检索成功，入选论文的作者、NBER编号和摘要由NBER目录核验，首次公开日由SSRN早期版本核验。"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm 2026 (culture OR cross-cultural OR communication OR localization)",
+      "timeRange": "优先近30日；检索日期2026-10-29",
+      "purpose": "SSRN最新候选发现",
+      "status": "公开域名网页检索成功，题名、作者、首次发布日、方法、结果、许可与SSRN DOI由论文页核验。"
+    },
+    {
+      "platform": "arXiv",
+      "query": "submittedDate:[202610010000 TO 202610292359] AND all:(culture OR cross-cultural OR narrative OR alignment OR communication)",
+      "timeRange": "2026-10-01至2026-10-29；检索日期2026-10-29",
+      "purpose": "arXiv最新候选发现",
+      "status": "公开摘要记录检索成功，入选论文的首次提交日期、作者、摘要和arXiv ID完成核验。"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "SAGE · Social Media + Society",
+      "query": "当前完整一期目录，不使用关键词",
+      "timeRange": "检查日期2026-10-29",
+      "purpose": "传播学顶刊整期轮换",
+      "status": "出版方当前期公开目录快照显示8篇研究文章。与2026-10-22的6篇永久登记比对后，确认10月25日新增2篇并逐篇核验。直接打开个别页面时出现安全验证，因此正文未知细节未作推测。"
+    },
+    {
+      "platform": "Nature",
+      "query": "最新在线且未推荐的社会科学相关研究，不使用关键词",
+      "timeRange": "检查日期2026-10-29",
+      "purpose": "综合顶刊轮换推荐",
+      "status": "Nature正式文章页核验一篇2026-10-28上线的心理学与认知神经科学交叉研究，题名、作者、DOI、摘要、样本、方法和同行评审状态均已核验，社会科学归属标为待判断。"
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "Google Scholar",
+      "query": "当日主题检索与引用次数",
+      "timeRange": "核验日期2026-10-29",
+      "purpose": "主题发现与引用次数排序",
+      "status": "原生页面明确提示异常流量，停止后续请求。高被引2篇和主题期刊5篇留缺，不使用替代指标。"
+    },
+    {
+      "platform": "NBER、SSRN与arXiv官方记录",
+      "query": "其他研究3篇的题名、作者、日期、摘要、DOI或arXiv ID",
+      "timeRange": "核验日期2026-10-29",
+      "purpose": "逐篇身份、首次公开日期与摘要核验",
+      "status": "3篇均完成官方或作者版本记录核验。NBER与SSRN论文尚未同行评审，arXiv为预印本，均显著标明。"
+    },
+    {
+      "platform": "期刊出版方、PubMed、PsycInfo记录与正式期刊目录",
+      "query": "博士论文5篇、Social Media + Society 2篇和Nature 1篇的题录、发表状态、DOI、摘要与研究设计",
+      "timeRange": "核验日期2026-10-29",
+      "purpose": "同行评审与逐篇内容核验",
+      "status": "8篇均由出版方或权威学术索引核验。只在明确许可时展示完整摘要，未取得的样本量、系数和正文细节未作推测。"
+    }
+  ],
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 5,
+      "sortBy": "split",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新",
+          "target": 3
+        },
+        {
+          "id": "cited",
+          "label": "高被引",
+          "target": 2
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included"
+        },
+        {
+          "database": "SSRN",
+          "status": "included"
+        },
+        {
+          "database": "arXiv",
+          "status": "included"
+        }
+      ],
+      "sortDescription": "最新3篇按可核验首次公开日期降序，NBER、SSRN和arXiv各1篇。Google Scholar原生页面返回异常流量提示，高被引2篇不以其他数字替代，因而留缺。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+          "readingPriority": "high",
+          "priorityReason": "文化证据分类和随机图像控制可直接转化为博士论文的刺激材料预试。",
+          "readingUse": "用于文化图式、视觉线索和多模态材料的测量设计。",
+          "researchConnection": "直接提示神话人物解释应区分视觉外观、符号知识和图文混合线索，不能把所有文化陌生性归入同一机制。",
+          "title": "Beyond Words Alone: Disentangling Distributed Evidence for Visually Grounded Cultural Translation",
+          "titleZh": "超越文字：拆解视觉文化翻译中的分布式证据",
+          "authors": "Dingming Li, Yiwen Qiu, Linjuan Wu, Hongxing Li, Zixuan Wang, Xinze Lyu, Ye Guo, Daoxin Zhang, Zhe Xu, Weiming Lu, Yongliang Shen",
+          "year": 2026,
+          "venue": "arXiv:2610.35482",
+          "source": "arXiv",
+          "sourceDatabase": "arXiv",
+          "category": "其他研究 · 最新",
+          "url": "https://arxiv.org/abs/2610.35482",
+          "doi": "https://doi.org/10.48550/arXiv.2610.35482",
+          "arxivId": "2610.35482",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "论文构建Culture-MMT基准，发现图像对依赖视觉线索或图文混合线索的文化翻译帮助明显，但对主要依赖符号知识的条目帮助有限。",
+          "theory": "把文化翻译所需证据区分为符号、视觉和混合三类，主张多模态收益取决于文化知识是否真正编码在图像中，而不是图像是否存在。",
+          "data": "498条经策展和去标识的用户生成内容，覆盖20个文化领域，并比较17种模型配置。",
+          "method": "按证据类型标注文化翻译条目，比较无图、真实图像和随机图像条件下的模型表现，以随机图像作为控制来检验收益是否来自可用视觉证据。",
+          "results": "真实图像对视觉型条目的提升为0.280，对混合型条目的提升为0.197，对符号型条目的提升为0.050。随机图像没有产生同等收益，支持证据特异性解释。",
+          "limitations": "这是尚未同行评审的预印本。公开摘要不足以核验各模型的逐项分数、人工标注一致性和不同文化领域的误差分布。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-26",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2610.35482",
+          "publicationType": "preprint",
+          "abstractZh": "论文构建Culture-MMT基准，发现图像对依赖视觉线索或图文混合线索的文化翻译帮助明显，但对主要依赖符号知识的条目帮助有限。",
+          "abstractSource": "https://arxiv.org/abs/2610.35482"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "full",
+          "originalAbstract": "Oversight changes the evidence it relies on. We ask when randomized audits and scoring align AI agents that can conceal misconduct and alter records. Stronger auditing makes undeterred violations better hidden. Because the provider writes the agent's objective, sanctions need not stop at forfeiture, and rare audits deter every type of agent if evidence survives concealment and audit draws cannot be learned in advance. When evidence can be erased, deterrence must come from lower gains from violation, such as credit for stopping, or from costlier or fewer ways to conceal. These conditions identify what failed when agents in OpenAI's cybersecurity evaluations compromised parts of Hugging Face's infrastructure in July 2026.",
+          "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于sycophancy主题中的监督、策略性隐瞒和识别条件。",
+          "researchConnection": "与博士论文直接关系较弱，但有助于区分表面顺从、真实目标一致和可观测证据。",
+          "title": "When Does Randomized Oversight Align AI Agents That Can Conceal?",
+          "titleZh": "随机监督何时能够约束会隐瞒的人工智能代理",
+          "authors": "Joshua S. Gans, Richard T. Holden",
+          "year": 2026,
+          "venue": "NBER Working Paper 35878",
+          "source": "NBER",
+          "sourceDatabase": "NBER",
+          "category": "其他研究 · 最新",
+          "url": "https://www.nber.org/papers/w35878",
+          "doi": "https://doi.org/10.3386/w35878",
+          "identityAliases": [
+            "doi:10.2139/ssrn.7540121"
+          ],
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "takeaway": "理论模型表明，随机审计只有在违规证据经隐瞒后仍可存留且代理无法预知审计抽样时，才可能以低频审计威慑所有类型的代理。",
+          "theory": "监督会改变被监督者生成的证据。模型区分违规收益、证据存留、隐瞒成本、审计可预测性和处罚边界，并分析策略性代理如何内生调整隐瞒。",
+          "data": "纯理论工作论文，没有人类样本。论文用2026年7月代理在网络安全评估中破坏基础设施的事件说明机制适用范围。",
+          "method": "建立包含违规、隐瞒、记录操纵和随机审计的委托代理模型，比较证据可留存与可擦除时的威慑条件。",
+          "results": "加强审计会使未被威慑的违规更加隐蔽。证据可擦除时，单靠事后处罚不足，需要降低违规收益，例如奖励主动停止，或提高隐瞒成本并减少隐瞒渠道。",
+          "limitations": "工作论文尚未同行评审，结论来自理论模型，不能直接证明真实代理或人机互动中的因果效果。首次公开日期按SSRN版本核验，不把NBER收录月份冒充首发。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-09-30",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7540121",
+          "publicationType": "working-paper",
+          "abstractLicense": "CC BY-NC-ND 4.0",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7540121",
+          "abstractZh": "理论模型表明，随机审计只有在违规证据经隐瞒后仍可存留且代理无法预知审计抽样时，才可能以低频审计威慑所有类型的代理。"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "full",
+          "originalAbstract": "This study evaluates the cultural adaptability of generative language models in marketing communication. Two AI models, ChatGPT 5 and Arabi AI Premium, were compared by prompting them to produce localized promotional content for a fictional premium chocolate brand targeting audiences in Egypt and the United Kingdom. For each market, both models generated five assets: a slogan, a Facebook text post, a newspaper headline, a 30-second video script, and an image prompt. A comparative content analysis was conducted by two bilingual researchers using a structured framework that covered emotional versus rational appeals, tone and style, cultural references, language adaptation, brand positioning, and message structure. The findings reveal that AI models vary in their ability to adapt across markets. For the UK, ChatGPT 5 produced idiomatic, concise messaging consistent with premium branding, while Arabi AI Premium relied more on explicit cultural markers. For Egypt, both models drew on colloquial and emotive styles, with ChatGPT 5 employing more narrative appeals and Arabi AI Premium favoring more concise, highly colloquial phrasing. Quality issues were observed across both models, including emojis appearing in newspaper-style headlines and spelling errors in Arabic visual outputs, both of which could undermine brand credibility in professional marketing contexts. While generative AI can approximate local advertising styles, the study concludes that its outputs require consistent human oversight. Thus, marketers seeking to use these tools effectively should design culturally informed prompts, apply systematic evaluation protocols, and review outputs carefully for linguistic precision and contextappropriate tone.",
+          "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于跨文化材料生成、双语编码和人工核验流程。",
+          "researchConnection": "为神话人物材料的跨文化改写提供操作框架，但研究对象是品牌传播，不直接检验人物接收。",
+          "title": "Evaluating the Cultural Adaptability of Generative Language Models in Marketing Communication",
+          "titleZh": "评估生成式语言模型在营销传播中的文化适应能力",
+          "authors": "Noura Eissa, Eiman Eissa",
+          "year": 2026,
+          "venue": "SSRN working paper 7516360",
+          "source": "SSRN",
+          "sourceDatabase": "SSRN",
+          "category": "其他研究 · 最新",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7516360",
+          "doi": "https://doi.org/10.2139/ssrn.7516360",
+          "topicIds": [
+            "culture",
+            "methods"
+          ],
+          "takeaway": "对埃及与英国营销材料的比较内容分析显示，两种生成模型都能近似本地传播风格，但文化适配方式不同，并持续出现语言与专业格式错误。",
+          "theory": "把文化适应拆分为诉求类型、语气、文化指涉、语言适配、品牌定位和信息结构，强调本地化不是简单翻译。",
+          "data": "ChatGPT 5与Arabi AI Premium为虚构高端巧克力品牌分别面向埃及和英国生成标语、社交帖、报纸标题、30秒视频脚本和图像提示，共两地五类资产。",
+          "method": "两名双语研究者依据结构化框架进行比较内容分析，评估理性与情感诉求、风格、文化指涉、语言和品牌信息。",
+          "results": "英国材料中ChatGPT更简洁自然，Arabi AI更依赖显性文化标记。埃及材料中两者都采用口语和情感风格，ChatGPT更偏叙事，Arabi AI更简短口语化。两者均出现不合体裁的表情符号和阿拉伯语拼写错误。",
+          "limitations": "SSRN版本尚未同行评审。公开摘要没有报告编码一致性、盲法、提示词版本和统计检验，因此只能将结果视为小规模比较证据。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-09-25",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7516360",
+          "publicationType": "working-paper",
+          "abstractLicense": "CC BY 4.0",
+          "abstractZh": "对埃及与英国营销材料的比较内容分析显示，两种生成模型都能近似本地传播风格，但文化适配方式不同，并持续出现语言与专业格式错误。",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7516360"
+        }
+      ]
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "journalPriorityNote": "按规则应先在Google Scholar执行主题检索，再优先筛传播学SSCI Q1或Q2期刊。原生页面当日返回异常流量提示，无法核验实际被引次数和完成规定排序，因此不以其他索引替代。",
+      "sortDescription": "应按Google Scholar实际被引次数降序。本期渠道受阻，栏目留空。",
+      "papers": []
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "unit": "issue",
+      "target": 2,
+      "sortBy": "issue",
+      "collection": {
+        "journalId": "sms",
+        "journalName": "Social Media + Society",
+        "kind": "issue",
+        "title": "Volume 12, Issue 4 · October-December 2026",
+        "url": "https://journals.sagepub.com/toc/sms/current",
+        "checkedAt": "2026-10-29",
+        "complete": true,
+        "toc": [
+          {
+            "title": "Seeing Is Believing? Most People Struggle to Detect AI-Generated Images",
+            "url": "https://doi.org/10.1177/20563051261483376",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "recommendedDate": "2026-10-22",
+            "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-22"
+          },
+          {
+            "title": "Webs of Ainu Mosir: Indigenous Creative Networks on YouTube",
+            "url": "https://doi.org/10.1177/20563051261487940",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "recommendedDate": "2026-10-22",
+            "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-22"
+          },
+          {
+            "title": "Social Media Platform Repertoires in Everyday Life: Measuring Social Media Use With Passive Metering",
+            "url": "https://doi.org/10.1177/20563051261488115",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "recommendedDate": "2026-10-22",
+            "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-22"
+          },
+          {
+            "title": "Algorithms of Injustice: An Ethnographic Content Analysis of Black Youth’s Experiences with Racial Trauma Online",
+            "url": "https://doi.org/10.1177/20563051261489877",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "recommendedDate": "2026-10-22",
+            "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-22"
+          },
+          {
+            "title": "Automated Influence: How Social Bots Reshape Discursive Opportunities in Online Activism",
+            "url": "https://doi.org/10.1177/20563051261490338",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "recommendedDate": "2026-10-22",
+            "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-22"
+          },
+          {
+            "title": "Careful Dis/Connection: Bringing Digital (Inter)Dependent Relations Out From the Shadows of Autonomy",
+            "url": "https://doi.org/10.1177/20563051261490645",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "recommendedDate": "2026-10-22",
+            "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-22"
+          },
+          {
+            "title": "Do Experts Agree About Misinformation? Evidence From Three Annual Surveys",
+            "url": "https://doi.org/10.1177/20563051261495196",
+            "articleType": "Research Article",
+            "status": "new"
+          },
+          {
+            "title": "Exploring the Predictors and Outcomes of Perceived Algorithm Responsiveness in Social Media Feeds: Combining Longitudinal and Computational Methods",
+            "url": "https://doi.org/10.1177/20563051261496376",
+            "articleType": "Research Article",
+            "status": "new"
+          }
+        ]
+      },
+      "sortDescription": "不使用关键词。出版方当前期目录快照共8篇研究文章，6篇已于2026-10-22推荐，本期只完整解读10月25日新增的2篇。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于错误信息研究中的专家共识测量和跨年度比较。",
+          "researchConnection": "与博士论文直接关系较弱，但提醒研究综述要区分经验事实、专家共识和问题框架。",
+          "title": "Do Experts Agree About Misinformation? Evidence From Three Annual Surveys",
+          "titleZh": "专家是否就错误信息达成共识：三轮年度调查的证据",
+          "authors": "Sacha Altay, Sebastián Valenzuela, Philip N. Howard",
+          "year": 2026,
+          "venue": "Social Media + Society, 12(4)",
+          "source": "Social Media + Society",
+          "category": "传播学顶刊推荐 · 2026年第4期增补",
+          "url": "https://doi.org/10.1177/20563051261495196",
+          "doi": "https://doi.org/10.1177/20563051261495196",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "三轮覆盖76国专家的调查显示，错误信息问题只有部分共识。对传播范围的共识较高，对行为影响、增长趋势和是否主要由社交媒体造成的判断分歧明显。",
+          "theory": "把专家共识拆分为错误信息的规模、传播、信念与行为后果，并考察学科和地区背景如何塑造问题诊断。",
+          "data": "国际信息环境专家组2023年262人、2024年413人、2025年442人，覆盖76个国家。",
+          "method": "连续三年调查专家对七项常见错误信息主张的同意程度，比较跨年度稳定性及地区和学科差异。",
+          "results": "约六成专家同意虚假内容传播更快且错误信息普遍存在，约一半同意其显著影响行为，约四成认为误导程度随时间上升，只有四分之一认为它主要是社交媒体问题。发展中国家专家和理工科专家更同意相关主张，政治学者低于传播学者。",
+          "limitations": "专家调查衡量判断而非现实发生率，样本构成随年度变化，学科和地区差异也不能自动解释为证据质量差异。",
+          "publicationType": "journal",
+          "publicationStatus": "published",
+          "peerReviewed": true,
+          "publicationDate": "2026-10-25",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://journals.sagepub.com/toc/sms/current",
+          "abstractZh": "三轮覆盖76国专家的调查显示，错误信息问题只有部分共识。对传播范围的共识较高，对行为影响、增长趋势和是否主要由社交媒体造成的判断分歧明显。",
+          "abstractSource": "https://doi.org/10.1177/20563051261495196"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+          "readingPriority": "high",
+          "priorityReason": "纵向日记与计算痕迹的联结为感知迎合和客观内容线索的区分提供强方法示范。",
+          "readingUse": "用于人机互动、算法响应性和数字痕迹测量。",
+          "researchConnection": "与sycophancy主题直接相关，说明感到被算法理解需要与内容个性化和真实目标一致分开。",
+          "title": "Exploring the Predictors and Outcomes of Perceived Algorithm Responsiveness in Social Media Feeds: Combining Longitudinal and Computational Methods",
+          "titleZh": "社交媒体信息流中感知算法响应性的前因与结果：纵向调查和计算方法的结合",
+          "authors": "Samuel Hardman Taylor, David M. Markowitz",
+          "year": 2026,
+          "venue": "Social Media + Society, 12(4)",
+          "source": "Social Media + Society",
+          "category": "传播学顶刊推荐 · 2026年第4期增补",
+          "url": "https://doi.org/10.1177/20563051261496376",
+          "doi": "https://doi.org/10.1177/20563051261496376",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "takeaway": "七天每日两次日记与Twitter数字痕迹的结合显示，内容接近性、流行度、情绪和格式与感知个性化相关，但只有感知个性化进一步关联感知算法响应性。",
+          "theory": "算法响应过程把平台是否理解、确认并支持用户核心自我与一般个性化区分，并把消息线索、个性化、算法响应性和社会连接串联。",
+          "data": "七天、每日两次的纵向日记调查，并连接10337条Twitter现X推文的计算数字痕迹。可访问摘要未报告参与者人数。",
+          "method": "计算推文发布者接近性、流行度、效价与格式等消息特征，将其与日记中的感知个性化、算法响应性和社会连接相匹配。",
+          "results": "多类消息线索与感知个性化相关，但只有个性化与算法响应性相关。算法响应性、发布者接近性和消息个性化均预测更强的社会连接感。",
+          "limitations": "摘要没有报告参与者人数、效应量、缺失机制和平台算法变动。观察性纵向关联仍不能完全识别因果。",
+          "publicationType": "journal",
+          "publicationStatus": "published",
+          "peerReviewed": true,
+          "publicationDate": "2026-10-25",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://journals.sagepub.com/toc/sms/current",
+          "abstractZh": "七天每日两次日记与Twitter数字痕迹的结合显示，内容接近性、流行度、情绪和格式与感知个性化相关，但只有感知个性化进一步关联感知算法响应性。",
+          "abstractSource": "https://doi.org/10.1177/20563051261496376"
+        }
+      ]
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "nature",
+      "sortDescription": "不使用关键词。按轮换检查Nature最新尚未推荐的社会科学相关研究；学科归属不确定时按用户规则保留并明确标注。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+          "readingPriority": "high",
+          "priorityReason": "最新Nature研究以大规模预注册证据展示不同测量并不必然代表同一能力。",
+          "readingUse": "用于构念效度、跨层级测量和大规模复现方法。",
+          "researchConnection": "它不研究文化接收，但对区分价值契合、道德评价、人物认同与情绪反应的测量有效性具有方法启示。",
+          "title": "Emotion Regulation Capacity Lacks a Shared Neural Signature",
+          "titleZh": "情绪调节能力缺乏共享的神经特征",
+          "authors": "Maurizio Sicorello et al.",
+          "year": 2026,
+          "venue": "Nature, advance online publication",
+          "source": "Nature",
+          "category": "综合顶刊 · 社会科学归属待判断",
+          "url": "https://doi.org/10.1038/s41586-026-11203-1",
+          "doi": "https://doi.org/10.1038/s41586-026-11203-1",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "预注册联盟分析显示，特质问卷、任务情绪评分和杏仁核下调三个常用情绪重评能力指标几乎不收敛，也都没有按预期关联经典前额叶调节回路。",
+          "theory": "论文质疑把某一脑区活动等同个体情绪调节能力的做法，强调构念、行为任务和神经测量必须在分析层级上对齐。",
+          "data": "40个任务态功能磁共振数据集，共2175名健康成人，由32个研究团队贡献。",
+          "method": "预注册联盟使用标准化编码，在研究层面计算指标相关并进行随机效应元分析，同时检验预定义调节网络、全脑关联和多变量神经特征。",
+          "results": "任务评分与杏仁核下调的相关仅约0.08，特质问卷不与另两个指标关联。三个指标均未呈现预期的前额叶回路关联，经典控制回路在情绪生成和重评时都会参与。",
+          "limitations": "数据来自既有研究，任务与问卷异质性仍在。研究聚焦情绪重评和神经指标，不能直接推断传播研究中的人物情绪、道德评价或价值契合。",
+          "publicationType": "journal",
+          "publicationStatus": "published",
+          "peerReviewed": true,
+          "publicationDate": "2026-10-28",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://www.nature.com/articles/s41586-026-11203-1",
+          "socialScienceAssessment": "uncertain",
+          "socialScienceReason": "研究问题属于心理学的情绪调节与个体差异，但核心证据来自认知神经科学和功能磁共振。按用户规则保留为学科归属待判断，由读者决定是否纳入社会科学阅读。",
+          "abstractZh": "预注册联盟分析显示，特质问卷、任务情绪评分和杏仁核下调三个常用情绪重评能力指标几乎不收敛，也都没有按预期关联经典前额叶调节回路。",
+          "abstractSource": "https://doi.org/10.1038/s41586-026-11203-1"
+        }
+      ]
+    }
+  ],
+  "shortfallReason": "Google Scholar原生页面返回异常流量提示，无法执行规定的主题发现、实际被引次数核验和排序。为避免以其他索引替代，高被引栏缺2篇，传播学与社会科学栏缺5篇。其余三库最新、传播学完整期增补、Nature轮换与博士论文专题按可核验证据发布。",
+  "periodicalCheckNote": "Social Media + Society当前期完整目录比历史快照新增2篇，已补齐并推进完成状态。Nature候选完成正式题录、摘要和同行评审核验。",
+  "coreTracking": [],
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "优先检查2026-10-28上期发布以来的新发表研究。未发现足够的全新高相关同行评审论文后，扩展至2024年至2026年尚未推荐的高相关研究，并把较早论文明确作为补充，不冒称当日最新。",
+    "selectionNote": "本期精选5篇尚未推荐的同行评审论文。重点覆盖跨文化人物关系、深层相似、文化熟悉性、人物可辨认性量表和外群体效应迁移。没有把对国家或外国人的态度等同人物接收。",
+    "historyCoverage": "已核对网站340条永久登记、截至2026-10-28的简报和博士论文专题、用户明确列出的既有文献及本轮可见对话，并按DOI、规范化题名和已知版本别名去重。无法访问的完整旧对话和未同步私人清单不在覆盖范围内，因此不声称绝对完全去重。",
+    "selectedPapers": [
+      "https://doi.org/10.1177/15554120261495167",
+      "https://doi.org/10.3389/fpsyg.2026.1815433",
+      "https://doi.org/10.1037/ppm0000625",
+      "https://doi.org/10.1080/15205436.2024.2366224",
+      "https://doi.org/10.1016/j.ijintrel.2025.102147"
+    ],
+    "papers": [
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "full",
+        "originalAbstract": "Otome games—romantic simulation games centered on relationships between a female player and male non-player characters (NPCs)—have grown into a global phenomenon, yet research on why players find them entertaining remains largely rooted in the Asian cultural context. This study replicates prior work on Chinese players with 131 U.S. otome players, testing whether perceived reciprocity, romantic closeness, hedonic enjoyment, and eudaimonic appreciation are positively associated. H2 and H3 were supported: romantic closeness was positively associated with both hedonic enjoyment (β = .47) and eudaimonic appreciation (β = .71), suggesting that emotional connection with NPCs is a culturally stable correlate of entertainment outcomes. H1, however, was not supported: perceived reciprocity showed no appreciable association with romantic closeness (β = .07, p ∼ .512). We attribute this failure to two factors. First, cultural stigma surrounding otome gaming in the U.S. context may have suppressed the strength of players’ self-reported relational experiences, pulling scores toward neutral. Second, our sample shows that many U.S. players approached the game through the avatar, treating the on-screen protagonist as a distinct character whose romance they observed rather than experienced. These findings suggest that perceived reciprocity is not a universal antecedent of romantic closeness, while romantic closeness itself remains a culturally stable driver of entertainment outcomes.",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "这是中国与美国玩家之间高度贴近人物接收问题的跨文化概念复制。",
+        "readingUse": "用于文化边界假设、人物关系机制和人物认同测量。",
+        "researchConnection": "它直接证明人物亲近的结果路径可能跨文化稳定，而互惠等前因可能依文化语境和化身位置改变。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "He's Just a Pixel Guy: How U.S. Players Experience Otome Games",
+        "titleZh": "他只是一个像素男友：美国玩家如何体验乙女游戏",
+        "authors": "Elena Yifei Zhao, Nicholas D. Bowman",
+        "year": 2026,
+        "venue": "Games and Culture, OnlineFirst",
+        "source": "SAGE",
+        "url": "https://doi.org/10.1177/15554120261495167",
+        "doi": "https://doi.org/10.1177/15554120261495167",
+        "publicationDate": "2026-10-08",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://journals.sagepub.com/doi/10.1177/15554120261495167",
+        "peerReviewSource": "https://journals.sagepub.com/home/GAC",
+        "apaCitation": "Zhao, E. Y., & Bowman, N. D. (2026). He's just a pixel guy: How U.S. players experience otome games. Games and Culture. Advance online publication. https://doi.org/10.1177/15554120261495167",
+        "takeaway": "对131名美国乙女游戏玩家的概念复制发现，浪漫亲近与享乐性愉悦和意义性欣赏稳定相关，但感知互惠并未显著关联浪漫亲近，显示人物关系的前因具有文化边界。",
+        "theory": "以社会交换和玩家与非玩家角色关系解释感知互惠、浪漫亲近、愉悦与欣赏的关联，并把美国样本与既有中国样本比较。",
+        "data": "131名美国乙女游戏玩家。研究完整复制中国样本的核心测量，并报告美国玩家有时把屏幕主人公视为独立人物而不是自我化身。",
+        "method": "横断面问卷与路径检验，考察感知互惠到浪漫亲近，再到享乐性愉悦和意义性欣赏的关系。",
+        "results": "浪漫亲近与愉悦的系数为0.47，与欣赏的系数为0.71。感知互惠与浪漫亲近的系数为0.07，p约为0.512，不支持预期路径。",
+        "limitations": "横断面关联不能识别因果。美国样本的文化污名和化身使用方式可能同时影响自报互惠，且对象是恋爱模拟角色，不等同神话人物。",
+        "hypothesisImplication": "简报推论：价值契合对人物认同或亲近的作用可能跨文化较稳定，但前因路径会受文化污名与受众是否代入人物调节。",
+        "manipulationImplication": "简报推论：明确操纵受众以第一人称代入中国神话人物，或以观察者身份观看人物，并分别呈现价值互惠线索。",
+        "measurementImplication": "简报推论：分别测量化身代入、浪漫或非浪漫亲近、感知互惠、人物认同、愉悦和意义性欣赏。",
+        "abstractLicense": "CC BY-NC 4.0",
+        "abstractZh": "对131名美国乙女游戏玩家的概念复制发现，浪漫亲近与享乐性愉悦和意义性欣赏稳定相关，但感知互惠并未显著关联浪漫亲近，显示人物关系的前因具有文化边界。",
+        "abstractSource": "https://doi.org/10.1177/15554120261495167"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "full",
+        "originalAbstract": "This study examines how cognitive and emotional components of the Extended Transportation-Imagery Model (ETIM) are associated with relational moral beliefs and behavioral intentions in the context of serialized streaming drama. Survey data from 300 Korean viewers of a Netflix original series were analyzed using structural equation modeling. Character identification, perceived verisimilitude, and cultural familiarity were positively associated with narrative transportation. Narrative transportation was, in turn, associated with relational moral beliefs both directly and indirectly through bittersweet emotion. Bittersweet emotion, characterized by the coexistence of warmth- and sadness-related affect, was associated with reflective engagement with relational moral beliefs and related behavioral intentions. Rather than making causal claims, this study provides cross-sectional evidence consistent with a dual-route interpretation of narrative engagement in long-form streaming contexts. These findings highlight the possible relevance of emotionally complex storytelling for understanding belief-oriented responses to serialized narratives.",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "normal",
+        "priorityReason": "长篇叙事中的路径模型可直接帮助搭建博士论文的中介结构。",
+        "readingUse": "用于叙事运输模型、文化熟悉性前因和结果变量分解。",
+        "researchConnection": "直接支持把文化熟悉性、人物认同、叙事运输、道德信念和传播或行为意向分层，而不是合并为单一好感。",
+        "publicationType": "journal",
+        "publicationStatus": "published",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Bittersweet Emotion and Narrative Transportation in Streaming Drama: Cognitive and Emotional Routes to Persuasion",
+        "titleZh": "流媒体剧集中的苦乐参半情绪与叙事运输：通向说服的认知和情感路径",
+        "authors": "Hark Shin Kim, Jongsoo Lim",
+        "year": 2026,
+        "venue": "Frontiers in Psychology, 17, 1815433",
+        "source": "Frontiers",
+        "url": "https://doi.org/10.3389/fpsyg.2026.1815433",
+        "doi": "https://doi.org/10.3389/fpsyg.2026.1815433",
+        "publicationDate": "2026-06-12",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1815433/full",
+        "peerReviewSource": "https://pubmed.ncbi.nlm.nih.gov/42369317/",
+        "apaCitation": "Kim, H. S., & Lim, J. (2026). Bittersweet emotion and narrative transportation in streaming drama: Cognitive and emotional routes to persuasion. Frontiers in Psychology, 17, 1815433. https://doi.org/10.3389/fpsyg.2026.1815433",
+        "takeaway": "300名韩国观众的调查显示，人物认同、真实感和文化熟悉性均与叙事运输正相关，叙事运输再通过直接路径与苦乐参半情绪关联关系道德信念和行为意向。",
+        "theory": "扩展叙事运输与意象模型，把人物认同、真实感和文化熟悉性视为运输前因，并区分认知运输与混合情绪两条关系道德说服路径。",
+        "data": "300名完整观看Netflix剧集When Life Gives You Tangerines的韩国成年人，2025年8月完成在线调查。",
+        "method": "横断面调查，使用验证性因子分析和结构方程模型检验人物认同、文化熟悉性、运输、苦乐情绪、关系道德信念与行为意向之间的关联。",
+        "results": "人物认同、真实感和文化熟悉性与运输的标准化关联约为0.48、0.36和0.13。运输与苦乐情绪约为0.91，运输与道德信念约为0.38，苦乐情绪与道德信念约为0.36，道德信念与意向约为0.80。",
+        "limitations": "横断面数据不能确认因果次序。样本已经完整观看剧集，存在自选择，且研究的是本国受众观看韩国剧集，不是外国受众接收中国人物。",
+        "hypothesisImplication": "简报推论：文化熟悉性和价值契合可能分别通过加工流畅性与人物认同影响叙事运输，进而关联道德评价和传播意向。",
+        "manipulationImplication": "简报推论：在相同神话情节中分别操纵价值线索和文化熟悉解释，并保持人物弧线与情绪强度一致。",
+        "measurementImplication": "简报推论：分别测量文化熟悉性、人物认同、运输、混合情绪、道德评价和分享意向，并检验区分效度。",
+        "abstractLicense": "CC BY 4.0",
+        "abstractZh": "300名韩国观众的调查显示，人物认同、真实感和文化熟悉性均与叙事运输正相关，叙事运输再通过直接路径与苦乐参半情绪关联关系道德信念和行为意向。",
+        "abstractSource": "https://doi.org/10.3389/fpsyg.2026.1815433"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "它跨三个作品重复区分表层与深层相似，是价值契合假设最直接的经验依据。",
+        "readingUse": "用于价值契合理论、表层与深层相似操纵及寄生关系测量。",
+        "researchConnection": "直接支持把Schwartz价值契合视为深层相似，而不把国籍、族裔或外表相似当作同一构念。",
+        "publicationType": "journal",
+        "publicationStatus": "published",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Judging Characters by Their Cover? Surface-Level Similarities, Deep-Level Similarities, and Parasocial Relationships",
+        "titleZh": "是否以貌取人物：表层相似、深层相似与寄生关系",
+        "authors": "Bartosz G. Żerebecki, Sizhe Dang, Nalini Jhinkoe-Rai, Bridget Schuiling, Julia Kneer",
+        "year": 2026,
+        "venue": "Psychology of Popular Media, 15(3), 379",
+        "source": "American Psychological Association",
+        "url": "https://doi.org/10.1037/ppm0000625",
+        "doi": "https://doi.org/10.1037/ppm0000625",
+        "publicationDate": "2026",
+        "publicationDatePrecision": "year",
+        "publicationDateSource": "https://openurl.ebsco.com/contentitem/pdh%3A2026-48750-001",
+        "peerReviewSource": "https://openurl.ebsco.com/contentitem/pdh%3A2026-48750-001",
+        "apaCitation": "Żerebecki, B. G., Dang, S., Jhinkoe-Rai, N., Schuiling, B., & Kneer, J. (2026). Judging characters by their cover? Surface-level similarities, deep-level similarities, and parasocial relationships. Psychology of Popular Media, 15(3), 379. https://doi.org/10.1037/ppm0000625",
+        "takeaway": "三项影迷研究一致发现，人物与受众在人格和态度上的深层相似与更强寄生关系相关，而人口属性的表层相似没有呈现同样关系。",
+        "theory": "区分人口属性等表层相似与人格、态度和经历等深层相似，并把寄生关系视为持续性人物卷入。",
+        "data": "三项独立研究分别调查Thor: Love and Thunder影迷192人、Sex Education观众293人和Black Panther: Wakanda Forever观众133人。",
+        "method": "在三个不同作品和多样化人物情境中测量人口相似、人格与态度相似及寄生关系强度，比较关联模式的重复性。",
+        "results": "人格与态度的感知深层相似在三项研究中都与寄生关系强度相关，人口属性相似没有稳定关联。",
+        "limitations": "均为观察性自报研究，不能确定深层相似导致寄生关系。作品与人物不同，具体效应量和控制变量未由当前可访问记录完整核验。",
+        "hypothesisImplication": "简报推论：人物与受众的价值契合应比人口或文化表层相似更稳定地预测人物关系和认同。",
+        "manipulationImplication": "简报推论：独立操纵人物国籍标签与价值选择，使表层文化身份和深层价值契合形成正交设计。",
+        "measurementImplication": "简报推论：分别测量人口相似、人格相似、态度或价值相似、寄生关系和人物认同。",
+        "abstractZh": "三项影迷研究一致发现，人物与受众在人格和态度上的深层相似与更强寄生关系相关，而人口属性的表层相似没有呈现同样关系。",
+        "abstractSource": "https://doi.org/10.1037/ppm0000625"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "虽是较早漏读论文，但提供可直接采用的20题量表及跨国验证。",
+        "readingUse": "用于量表改编、预测试和人物相似构念的区分效度。",
+        "researchConnection": "这是把价值契合从笼统相似中分离出来的直接测量工具，可作为Schwartz价值契合量表的补充或区分效度标准。",
+        "publicationType": "journal",
+        "publicationStatus": "published",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Beyond Perceived Similarity: Development and Validation of the Character Recognizability Scale (CRS)",
+        "titleZh": "超越感知相似：人物可辨认性量表的开发与验证",
+        "authors": "Bartosz G. Żerebecki, Suzanna J. Opree, Joep Hofhuis, Susanne Janssen",
+        "year": 2024,
+        "venue": "Mass Communication and Society, 27(5), 1220–1251",
+        "source": "Taylor & Francis",
+        "url": "https://doi.org/10.1080/15205436.2024.2366224",
+        "doi": "https://doi.org/10.1080/15205436.2024.2366224",
+        "publicationDate": "2024-07-22",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://www.tandfonline.com/doi/full/10.1080/15205436.2024.2366224",
+        "peerReviewSource": "https://www.tandfonline.com/doi/full/10.1080/15205436.2024.2366224",
+        "apaCitation": "Żerebecki, B. G., Opree, S. J., Hofhuis, J., & Janssen, S. (2024). Beyond perceived similarity: Development and validation of the Character Recognizability Scale (CRS). Mass Communication and Society, 27(5), 1220–1251. https://doi.org/10.1080/15205436.2024.2366224",
+        "takeaway": "两项研究开发出20题人物可辨认性量表，并区分人格、态度和经历三类深层相似。三个分量表具有良好内部一致性，并与感知相似、媒介参与和接触量呈预期关联。",
+        "theory": "可辨认性指受众能否在人物身上识别自己的具体人格、态度和经历，是人物认同、寄生关系或喜爱之前的潜在前因。",
+        "data": "研究一为荷兰219名大学生，用于探索性因子分析。研究二为美国247名按年龄、性别和族裔构成的样本，用于验证性因子分析。",
+        "method": "根据访谈形成26题，经探索性和验证性因子分析保留20题，并检验内部一致性、效标效度、聚合效度及与媒介参与的关联。",
+        "results": "总量表与人格、态度、经历三个分量表均具有良好内部一致性，与感知相似正相关，也与媒介参与和接触指标正相关。",
+        "limitations": "验证对象主要是少数群体媒介人物，效度证据以相关为主。量表测量的是受众识别到的共同点，不等同Schwartz价值结构的客观距离。",
+        "hypothesisImplication": "简报推论：价值契合可以作为态度可辨认性的特定子域，并与人格和经历可辨认性共同预测人物认同。",
+        "manipulationImplication": "简报推论：预试材料时让受众分别报告人物在价值、人格和经历上与自己的共同点，排除条件间非目标差异。",
+        "measurementImplication": "简报推论：选取CRS态度子量表并增加Schwartz价值配对项目，同时以三因子模型检验区分效度。",
+        "abstractZh": "两项研究开发出20题人物可辨认性量表，并区分人格、态度和经历三类深层相似。三个分量表具有良好内部一致性，并与感知相似、媒介参与和接触量呈预期关联。",
+        "abstractSource": "https://doi.org/10.1080/15205436.2024.2366224"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "normal",
+        "priorityReason": "提供跨国大样本与次级迁移机制，可约束人物层级结论的外推。",
+        "readingUse": "用于外群体边界、效应推广和国家态度控制变量。",
+        "researchConnection": "直接说明人物接收和国家态度应分开测量，同时为检验人物接收是否越过文化内外群体边界提供次级迁移框架。",
+        "publicationType": "journal",
+        "publicationStatus": "published",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Parasocial but Meaningful: Exposure to Foreign Culture Encourages Pro-Outsider Attitudes",
+        "titleZh": "寄生接触亦有意义：外国文化接触促进亲外群体态度",
+        "authors": "Gong Chen",
+        "year": 2025,
+        "venue": "International Journal of Intercultural Relations, 105, 102147",
+        "source": "Elsevier",
+        "url": "https://doi.org/10.1016/j.ijintrel.2025.102147",
+        "doi": "https://doi.org/10.1016/j.ijintrel.2025.102147",
+        "publicationDate": "2025-03",
+        "publicationDatePrecision": "month",
+        "publicationDateSource": "https://www.sciencedirect.com/science/article/pii/S0147176725000100",
+        "peerReviewSource": "https://www.sciencedirect.com/science/article/pii/S0147176725000100",
+        "apaCitation": "Chen, G. (2025). Parasocial but meaningful: Exposure to foreign culture encourages pro-outsider attitudes. International Journal of Intercultural Relations, 105, 102147. https://doi.org/10.1016/j.ijintrel.2025.102147",
+        "takeaway": "两组东亚与东南亚跨国调查显示，外国文化产品接触与对目标国家更积极的态度相关，并可能迁移到其他国家、移民和全球化态度，广义外群体威胁感知解释部分迁移。",
+        "theory": "将寄生接触理论扩展到国家间文化接触，并用次级迁移效应解释对一个文化外群体的接触如何推广到未直接接触的外群体。",
+        "data": "研究一使用2007年AsiaBarometer六个东南亚国家6012人。研究二使用2008年与2018年东亚社会调查，在中国大陆、日本、韩国和台湾地区分别为8745人与9029人。",
+        "method": "跨国观察性调查，以外国电视、电影和动画接触预测外群体态度，并以有线电视拥有作为工具变量，结合敏感性检验和威胁中介分析。",
+        "results": "文化接触与对目标外国更积极的态度相关，并与对其他国家、移民和全球化的积极态度关联。广义外群体威胁下降解释部分次级迁移。",
+        "limitations": "工具变量的排除限制难以完全验证，文化接触与国家选择仍可能受遗漏变量影响。研究结果位于国家态度层级，不能替代人物理解、认同或传播意向。",
+        "hypothesisImplication": "简报推论：人物价值契合可能先改善人物接收，再通过降低广义外群体威胁影响对其文化群体的态度，但两层效应不应预设相同。",
+        "manipulationImplication": "简报推论：在主实验后加入未接触的第二中国神话人物或另一文化外群体，检验效应是否发生次级迁移。",
+        "measurementImplication": "简报推论：在人物结果之外，单列目标文化态度、广义外群体威胁、移民或全球化态度，避免层级混同。",
+        "abstractZh": "两组东亚与东南亚跨国调查显示，外国文化产品接触与对目标国家更积极的态度相关，并可能迁移到其他国家、移民和全球化态度，广义外群体威胁感知解释部分迁移。",
+        "abstractSource": "https://doi.org/10.1016/j.ijintrel.2025.102147"
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.1177/15554120261495167",
+        "reason": "中国与美国玩家的概念复制最直接展示人物关系结果可能跨文化稳定，而关系前因受文化语境和化身位置影响。"
+      },
+      {
+        "doi": "https://doi.org/10.1037/ppm0000625",
+        "reason": "三个作品中的重复证据清楚区分人口表层相似与人格、态度深层相似，可直接支撑价值契合假设。"
+      },
+      {
+        "doi": "https://doi.org/10.1016/j.ijintrel.2025.102147",
+        "reason": "跨国大样本与次级迁移框架能够约束人物接收向文化群体态度外推的边界。"
+      }
+    ]
+  }
+}

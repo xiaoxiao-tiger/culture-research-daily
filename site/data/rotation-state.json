@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-29",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-23",
@@ -236,14 +236,14 @@
       }
     },
     "sms": {
-      "lastAttemptAt": "2026-10-22",
-      "lastCheckedAt": "2026-10-22",
+      "lastAttemptAt": "2026-10-29",
+      "lastCheckedAt": "2026-10-29",
       "status": "completed",
-      "lastCompletedAt": "2026-10-22",
+      "lastCompletedAt": "2026-10-29",
       "onlineSnapshots": [],
       "completedIssues": [
         {
-          "checkedAt": "2026-10-22",
+          "checkedAt": "2026-10-29",
           "url": "https://journals.sagepub.com/toc/sms/current",
           "title": "Volume 12, Issue 4, October-December 2026",
           "complete": true,
@@ -253,7 +253,9 @@
             "https://doi.org/10.1177/20563051261488115",
             "https://doi.org/10.1177/20563051261489877",
             "https://doi.org/10.1177/20563051261490338",
-            "https://doi.org/10.1177/20563051261490645"
+            "https://doi.org/10.1177/20563051261490645",
+            "https://doi.org/10.1177/20563051261495196",
+            "https://doi.org/10.1177/20563051261496376"
           ]
         }
       ]
@@ -270,12 +272,13 @@
       "socialScienceAssessment": "confirmed"
     },
     "nature": {
-      "lastAttemptAt": "2026-10-23",
+      "lastAttemptAt": "2026-10-29",
       "status": "completed",
-      "lastCompletedAt": "2026-10-23",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11154-7",
-      "publicationDate": "2026-10-14",
-      "socialScienceAssessment": "confirmed"
+      "lastCompletedAt": "2026-10-29",
+      "lastCheckedAt": "2026-10-29",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11203-1",
+      "publicationDate": "2026-10-28",
+      "socialScienceAssessment": "uncertain"
     },
     "science": {
       "lastAttemptAt": "2026-10-24",
