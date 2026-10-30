@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-10-30",
   "communication": {
     "joc": {
-      "lastAttemptAt": "2026-10-23",
-      "lastCheckedAt": "2026-10-23",
+      "lastAttemptAt": "2026-10-30",
+      "lastCheckedAt": "2026-10-30",
       "status": "completed",
-      "lastCompletedAt": "2026-10-23",
+      "lastCompletedAt": "2026-10-30",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-16",
@@ -20,6 +20,27 @@
             "https://doi.org/10.1093/joc/jqag013"
           ],
           "firstOnlineDates": [
+            "2026-10-01",
+            "2026-09-22",
+            "2026-09-08",
+            "2026-09-08",
+            "2026-08-30"
+          ]
+        },
+        {
+          "checkedAt": "2026-10-30",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag020",
+            "https://doi.org/10.1093/joc/jqag018",
+            "https://doi.org/10.1093/joc/jqag014",
+            "https://doi.org/10.1093/joc/jqag016",
+            "https://doi.org/10.1093/joc/jqag015",
+            "https://doi.org/10.1093/joc/jqag013"
+          ],
+          "firstOnlineDates": [
+            "2026-10-21",
             "2026-10-01",
             "2026-09-22",
             "2026-09-08",
@@ -42,7 +63,8 @@
             "https://doi.org/10.1093/joc/jqag012"
           ]
         }
-      ]
+      ],
+      "reason": "Oxford Academic Advance Articles directory was fully readable. One new Research Article was added since the complete 2026-10-16 snapshot; one Oration was recorded as non-research."
     },
     "hcr": {
       "lastCheckedAt": "2026-10-24",
@@ -281,11 +303,11 @@
       "socialScienceAssessment": "uncertain"
     },
     "science": {
-      "lastAttemptAt": "2026-10-24",
+      "lastAttemptAt": "2026-10-30",
       "status": "blocked",
-      "reason": "Science current directory remained behind a human-verification page after one normal refresh; no verified candidate and no completed cursor advanced.",
+      "reason": "Science current research directory remained behind human verification. Public indexing did not establish a complete current directory, so no candidate or completed cursor was recorded.",
       "lastCompletedAt": null,
-      "lastCheckedAt": "2026-10-24"
+      "lastCheckedAt": "2026-10-30"
     },
     "science-advances": {
       "lastAttemptAt": "2026-10-25",

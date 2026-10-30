@@ -1,0 +1,406 @@
+import json
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[1] / "site/data"
+date = "2026-10-30"
+unavailable = "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。"
+
+
+def paper(**values):
+    item = {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": unavailable,
+        "readingPriority": "normal",
+        "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+        "readingUse": "用于理论框架、研究设计或结果讨论。",
+        "researchConnection": "作为一般研究追踪，和博士论文的具体关系见逐篇说明。",
+    }
+    item.update(values)
+    item.setdefault("abstractZh", item["takeaway"])
+    item.setdefault("abstractSource", item["url"])
+    return item
+
+
+def dissertation(**values):
+    defaults = {
+        "publicationType": "journal",
+        "publicationStatus": "published",
+        "peerReviewed": True,
+        "topicIds": ["culture"],
+        "category": "博士论文专题 · 同行评审",
+    }
+    defaults.update(values)
+    return paper(**defaults)
+
+
+cross = [
+    paper(
+        title="Investigating Forecasting Capabilities of Narrative Networks on Emerging Stories",
+        titleZh="叙事网络能否预测新故事线的形成",
+        authors="Ravi Teja Karumuri, Steven Corman, Huan Liu, Joshua Garland",
+        year=2026,
+        venue="arXiv:2610.35628",
+        source="arXiv",
+        sourceDatabase="arXiv",
+        category="其他研究 · 最新",
+        url="https://arxiv.org/abs/2610.35628",
+        doi="https://doi.org/10.48550/arXiv.2610.35628",
+        arxivId="2610.35628",
+        topicIds=["culture", "methods"],
+        takeaway="对三类现实新闻事件的滚动预测显示，叙事网络结构能够把次日新出现的关系排在随机水平之上，其中优先连接指标表现最好。",
+        theory="将叙事理解为人物、组织、地点和事件之间不断演化的关系网络，检验既有网络结构是否包含新故事线出现的前置信号。",
+        data="三类事件的新闻文章，分别涉及2022年加拿大自由车队、2025年飓风Melissa和2025至2026年伊朗抗议。公开摘要未给出文章总数和网络节点总量。",
+        method="用大语言模型支持的Semantic Edge Parser抽取叙事实体与关系，构建滚动时间窗，并用七类标准链路预测器预测次日出现的新关系。",
+        results="优先连接指标在三个事件中的平均ROC AUC为0.76至0.79，比记忆既有边的EdgeBank基线高11.3至14.5个百分点。预测优势主要集中在高频和高连接实体。",
+        limitations="尚未同行评审。公开摘要不足以核验时间窗长度、抽取误差、负例采样和跨事件稳健性，网络可预测性也不等同受众接收。",
+        selectionBucket="latest",
+        publicationDate="2026-10-26",
+        publicationDatePrecision="day",
+        publicationDateSource="https://arxiv.org/abs/2610.35628",
+        publicationType="preprint",
+        readingUse="用于叙事关系抽取、事件演化和预测验证设计。",
+        researchConnection="可用于追踪中国神话人物在海外报道和讨论中与价值、群体及事件建立何种关系，但不能替代对理解、好感和认同的受众测量。",
+    ),
+    paper(
+        title="Storytelling as Persuasion: A Multimechanistic Analysis of Narrative Influence in the Fields of Marketing and Advertising",
+        titleZh="作为说服的故事讲述：营销与广告中叙事影响的多机制分析",
+        authors="Jason Hobbs",
+        year=2026,
+        venue="SSRN Working Paper 7587078",
+        source="SSRN",
+        sourceDatabase="SSRN",
+        category="其他研究 · 最新",
+        url="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7587078",
+        doi="https://doi.org/10.2139/ssrn.7587078",
+        topicIds=["culture"],
+        takeaway="理论综述认为，故事说服不是单一运输机制的结果，而是叙事认知、情绪沉浸、记忆与来源分离及自我品牌连接共同作用的产物。",
+        theory="整合叙事运输、叙事认知、情绪耐久性、记忆和自我连接，提出跨学科的多机制说服框架。",
+        data="理论文献综述，没有原始样本。作者选择性综合认知心理学、传播学和营销研究。",
+        method="概念性整合既有理论与经验结果，比较故事信息与事实信息在反驳、分析审查、记忆和情绪路径上的差异。",
+        results="文章主张，没有任何单一过程能够充分解释故事的说服力，叙事效果来自多个认知与情绪机制的联合。该结论属于理论综合，不是新实验效应。",
+        limitations="SSRN论文尚未同行评审，检索页面列出的参考文献数量为零，综述的检索范围、纳入标准和偏倚控制未报告，不能视为系统综述。",
+        selectionBucket="latest",
+        publicationDate="2026-10-10",
+        publicationDatePrecision="day",
+        publicationDateSource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7587078",
+        publicationType="working-paper",
+        evidence="理论综述",
+        readingUse="用于梳理叙事说服的竞争机制。",
+        researchConnection="提示博士论文应分别测量加工流畅性、运输、人物认同、记忆与传播意向，不能把故事效果归因于单一中介。",
+    ),
+    paper(
+        title="Generative AI, Managerial Expectations, and Economic Activity",
+        titleZh="生成式人工智能、管理者预期与经济活动",
+        authors="Manish Jha, Jialin Qian, Michael Weber, Baozhong Yang",
+        year=2026,
+        venue="NBER Working Paper 35949",
+        source="NBER",
+        sourceDatabase="NBER",
+        category="其他研究 · 最新",
+        url="https://www.nber.org/papers/w35949",
+        doi="https://doi.org/10.3386/w35949",
+        identityAliases=["title:Harnessing Generative AI for Economic Insights"],
+        topicIds=["methods"],
+        takeaway="从12万余份公司电话会议记录提取的AI经济预期分数，能够在既有调查与指标之外预测五个及以上季度后的宏观和企业活动。",
+        theory="把管理者文本中的前瞻判断视为分散信息的载体，区分信息渠道与无信息噪声渠道。",
+        data="超过12万份公司业绩电话会议文本，并与GDP、生产、就业、工资、行业活动和企业活动相匹配。公开摘要未说明覆盖年份和企业数。",
+        method="用生成式人工智能提取管理者经济预期，构建宏观、行业和企业层级分数，并比较其对未来经济结果的增量预测力。",
+        results="AI Economy Score可预测五个及以上季度后的GDP增长、生产、就业和工资。企业、行业和宏观分数的组合进一步改善预测，信号集中于历史上更准确、偏误更低的管理者。",
+        limitations="NBER工作论文尚未同行评审。公开摘要未提供训练和验证划分、基准模型、系数、误差或提示词，因此只能确认预测性主张，不能核验全部识别细节。",
+        selectionBucket="latest",
+        publicationDate="2026-10",
+        publicationDatePrecision="month",
+        publicationDateSource="https://www.nber.org/papers/w35949",
+        publicationType="working-paper",
+        readingUse="用于大规模文本测量和预测效度验证。",
+        researchConnection="与人物接收的直接关系较弱，但为将开放文本编码为受众预期和价值判断提供方法参照。",
+    ),
+]
+
+
+joc_new = dissertation(
+    title="Positioning enjoyment and appreciation as key components of news use",
+    titleZh="将愉悦与欣赏置于新闻使用的核心",
+    authors="Jennifer Hoewe, Brett Sherrick, Diane Jackson, Sam Woodland",
+    year=2026,
+    venue="Journal of Communication, Advance Article, jqag020",
+    source="Journal of Communication",
+    category="传播学顶刊推荐 · Online First",
+    url="https://doi.org/10.1093/joc/jqag020",
+    doi="https://doi.org/10.1093/joc/jqag020",
+    publicationStatus="online-first",
+    publicationDate="2026-10-21",
+    publicationDatePrecision="day",
+    publicationDateSource="https://doi.org/10.1093/joc/jqag020",
+    peerReviewSource="https://academic.oup.com/joc/advance-articles",
+    apaCitation="Hoewe, J., Sherrick, B., Jackson, D., & Woodland, S. (2026). Positioning enjoyment and appreciation as key components of news use. Journal of Communication. Advance online publication. https://doi.org/10.1093/joc/jqag020",
+    takeaway="两项调查和一项实验显示，愉悦与欣赏都关联新闻同意、价值一致、态度改变和强化，但愉悦同时降低实际知识并提高情感极化，欣赏则提高对他人的积极感受。",
+    theory="将娱乐研究中的愉悦和意义性欣赏引入新闻使用，区分正向情绪回报与容纳混合情绪的反思性体验。",
+    data="三项研究，包括两项调查和一项实验。可访问摘要未报告各研究样本量、新闻材料和受众构成。",
+    method="跨三项研究检验愉悦、欣赏与同意、价值一致、态度改变、态度强化、知识、情感极化和他人评价的关系。只有其中一项是实验，不能把所有结果都表述为因果效应。",
+    results="两类体验均正向关联同意、价值一致和态度结果。愉悦增加正向情绪、减少负向情绪，同时降低实际知识并增加情感极化。欣赏增加对混合情绪的容纳和对他人的积极感受。",
+    limitations="仅核验出版方摘要，未核验各研究样本、操纵、量表、效应量和实验识别。研究对象是新闻而不是神话人物。",
+    readingUse="用于区分愉悦、欣赏、价值一致与知识结果。",
+    researchConnection="直接提醒博士论文不能把好感视为单一正向接收。愉悦、意义性欣赏、理解和价值一致可能产生不同甚至相反的后果。",
+    readingPriority="high",
+    priorityReason="它在传播学顶刊中直接区分价值一致、愉悦、欣赏、知识和极化，是本期最适合搭建结果变量结构的论文。",
+    hypothesisImplication="简报推论：价值契合可能同时提升人物愉悦与意义性欣赏，但两条路径对理解、人物认同和传播意向的作用并不相同。",
+    manipulationImplication="简报推论：在保持人物价值行为一致的条件下，分别操纵轻松愉悦和意义反思的叙事表达，并设置中性版本。",
+    measurementImplication="简报推论：分别测量理解、实际记忆、愉悦、欣赏、价值一致、人物认同、好感和传播意向。",
+)
+
+
+dissertation_papers = [
+    dissertation(
+        title="The power of superheroes: How parasocial relationships inspire self-efficacy",
+        titleZh="超级英雄的力量：寄生关系如何激发自我效能",
+        authors="Jennifer Hoewe",
+        year=2026,
+        venue="Atlantic Journal of Communication, Advance online publication",
+        source="Taylor & Francis",
+        url="https://doi.org/10.1080/15456870.2026.2711984",
+        doi="https://doi.org/10.1080/15456870.2026.2711984",
+        publicationStatus="online-first",
+        publicationDate="2026-08-01",
+        publicationDatePrecision="day",
+        publicationDateSource="https://www.tandfonline.com/doi/full/10.1080/15456870.2026.2711984",
+        peerReviewSource="https://www.tandfonline.com/doi/full/10.1080/15456870.2026.2711984",
+        apaCitation="Hoewe, J. (2026). The power of superheroes: How parasocial relationships inspire self-efficacy. Atlantic Journal of Communication. Advance online publication. https://doi.org/10.1080/15456870.2026.2711984",
+        takeaway="476名本科生的调查显示，当受众与最喜欢的超级英雄性别一致时，寄生关系更强，寄生关系进一步关联一般自我效能，但不关联政治自我效能。",
+        theory="以人物受众匹配和寄生关系解释虚构英雄如何关联现实自我效能，并区分一般效能与领域特定的政治效能。",
+        data="476名本科生，报告其最喜欢的超级英雄、性别匹配、寄生关系、一般自我效能和政治自我效能。",
+        method="横断面调查与中介路径分析，检验性别匹配、寄生关系和两类自我效能之间的关联。",
+        results="性别匹配与更强寄生关系相关，寄生关系再与一般自我效能相关，但与政治自我效能没有显著联系。",
+        limitations="横断面自报不能确认因果。大学生样本、受欢迎超级英雄和性别匹配不足以代表价值契合或跨文化边界。",
+        readingUse="用于人物关系与结果变量的边界条件。",
+        researchConnection="说明人物关系可以外溢至现实自我评价，但效果具有领域边界，不能从人物认同直接推断所有态度和行为。",
+        readingPriority="high",
+        priorityReason="它直接研究虚构英雄、人物受众匹配、寄生关系和现实结果，最贴近神话人物接收链条。",
+        hypothesisImplication="简报推论：价值契合可能经人物认同或寄生关系提升与人物价值领域相匹配的效能和传播意向，而非普遍提升所有结果。",
+        manipulationImplication="简报推论：选取目标人物明确展示某一Schwartz价值的行动，并操纵受众与人物的价值契合，同时保持性别和知名度平衡。",
+        measurementImplication="简报推论：测量人物认同、寄生关系、一般效能、价值领域效能和传播意向，检验结果的领域特异性。",
+    ),
+    dissertation(
+        title="From involvement to effects: Current research in narrative persuasion",
+        titleZh="从卷入到效果：叙事说服的当前研究",
+        authors="Melanie C. Green, Irina Andreeva, Gavin Raffloer",
+        year=2026,
+        venue="Current Opinion in Psychology, 72, 102388",
+        source="Elsevier",
+        url="https://doi.org/10.1016/j.copsyc.2026.102388",
+        doi="https://doi.org/10.1016/j.copsyc.2026.102388",
+        publicationDate="2026-08-06",
+        publicationDatePrecision="day",
+        publicationDateSource="https://pubmed.ncbi.nlm.nih.gov/42617505/",
+        peerReviewSource="https://pubmed.ncbi.nlm.nih.gov/42617505/",
+        apaCitation="Green, M. C., Andreeva, I., & Raffloer, G. (2026). From involvement to effects: Current research in narrative persuasion. Current Opinion in Psychology, 72, 102388. https://doi.org/10.1016/j.copsyc.2026.102388",
+        takeaway="近期综述将叙事效果组织为运输倾向、人物认同与寄生互动、叙事视角、情绪流、人物深度、群际叙事及人工智能叙事等相互关联的研究线索。",
+        theory="整合运输、人物认同、寄生互动、心理距离与情绪流，强调叙事效果取决于受众特征、叙事形式、内容和具体结果。",
+        data="叙述性综述，没有新样本。文章综合近期叙事说服研究，并讨论跨文化运输测量、群际关系、环境传播和人工智能叙事。",
+        method="选择性综述近期理论与经验研究，梳理人物卷入、叙事内容、结果和人工智能作者身份。不是预注册系统综述。",
+        results="现有证据支持运输、人物认同和寄生互动的重要性，但视角、框架、人物深度及人工智能作者身份的效果会随情境和结果而变化。",
+        limitations="综述不提供新的因果证据，也未报告系统检索和偏倚评估。它提供理论地图，不能替代对具体机制的原始研究核验。",
+        evidence="理论综述",
+        readingUse="用于建立博士论文的叙事接收总框架。",
+        researchConnection="可把文化类比放入叙事形式和心理距离，把价值契合放入人物认同，把群体边界作为群际叙事条件，形成清晰的机制链。",
+        readingPriority="high",
+        priorityReason="这是本期最新且覆盖面最完整的叙事说服综述，可用于确定理论章节结构和遗漏机制。",
+        hypothesisImplication="简报推论：价值契合和文化类比应被视为不同入口，前者主要作用于人物认同，后者主要作用于加工和心理距离。",
+        manipulationImplication="简报推论：将价值契合、文化类比和叙事视角设计为可区分的实验因素，避免一项材料同时改变多个机制。",
+        measurementImplication="简报推论：除结果变量外，分别测量运输、人物认同、寄生互动、心理距离、情绪流和加工流畅性。",
+    ),
+    dissertation(
+        title="The effect of audience-character similarity on identification with narrative characters: A meta-analysis",
+        titleZh="受众与人物相似性对叙事人物认同的影响：元分析",
+        authors="Kate Y. Huang, Helene H. Fung, Peifeng Sun",
+        year=2024,
+        venue="Current Psychology, 43(8), 7026–7043",
+        source="Springer Nature",
+        url="https://doi.org/10.1007/s12144-023-04842-4",
+        doi="https://doi.org/10.1007/s12144-023-04842-4",
+        publicationDate="2023-06-29",
+        publicationDatePrecision="day",
+        publicationDateSource="https://doi.org/10.1007/s12144-023-04842-4",
+        peerReviewSource="https://research.cuhk.edu.hk/en/publications/the-effect-of-audiencecharacter-similarity-on-identification-with-2/",
+        apaCitation="Huang, K. Y., Fung, H. H., & Sun, P. (2024). The effect of audience-character similarity on identification with narrative characters: A meta-analysis. Current Psychology, 43(8), 7026–7043. https://doi.org/10.1007/s12144-023-04842-4",
+        takeaway="39项研究、50个效应和11077名参与者的元分析显示，相似性对人物认同有小而稳健的正向效应，心理相似的效果大于客观属性相似。",
+        theory="把人物认同界定为受众与人物的心理合并，并区分心理相似与人口等客观相似。",
+        data="39项研究，50个独立效应，合计11077名参与者。",
+        method="元分析汇总相似性操纵对人物认同的效应，并检验叙事层面和研究层面的异质性、影响点与发表偏倚。",
+        results="总体效应为Hedges g等于0.19，95%置信区间为0.10至0.28，p小于0.001。心理相似的效应大于客观相似，组内设计的效应大于组间设计。",
+        limitations="总体效应较小，心理相似优势在排除三个影响点后的敏感性分析中降至边缘显著。纳入研究的相似性和认同操作并不完全一致。",
+        readingUse="用于价值契合假设和相似性操纵。",
+        researchConnection="直接支持将Schwartz价值契合视为心理相似，而不把国籍、外表或文化标签当作同一构念。",
+        readingPriority="high",
+        priorityReason="它给出相似性影响人物认同的总体效应和关键调节，是价值契合假设最直接的数量证据。",
+        hypothesisImplication="简报推论：人物与受众的价值契合应正向预测人物认同，其效应可能强于国籍或外表等客观相似。",
+        manipulationImplication="简报推论：独立操纵人物价值选择与文化身份标签，并使用组间设计减少比较线索导致的效应放大。",
+        measurementImplication="简报推论：分别测量客观相似、感知心理相似、价值契合与人物认同，并报告操纵检验和区分效度。",
+    ),
+    dissertation(
+        title="Measuring identification with narrative characters: the development and validation of a new scale",
+        titleZh="叙事人物认同的测量：新量表的开发与验证",
+        authors="Kate Y. Huang, Helene H. Fung",
+        year=2024,
+        venue="Current Psychology, 43, 24835–24849",
+        source="Springer Nature",
+        url="https://doi.org/10.1007/s12144-024-06191-2",
+        doi="https://doi.org/10.1007/s12144-024-06191-2",
+        publicationDate="2024-06-06",
+        publicationDatePrecision="day",
+        publicationDateSource="https://link.springer.com/article/10.1007/s12144-024-06191-2",
+        peerReviewSource="https://link.springer.com/article/10.1007/s12144-024-06191-2",
+        apaCitation="Huang, K. Y., & Fung, H. H. (2024). Measuring identification with narrative characters: The development and validation of a new scale. Current Psychology, 43, 24835–24849. https://doi.org/10.1007/s12144-024-06191-2",
+        takeaway="三项研究开发出12题人物认同量表，形成合并、视角采择、理解和情感卷入四个相关维度，并在两类叙事之间达到构型、度量和部分截距等值。",
+        theory="将人物认同理解为受众在接收叙事时与人物发生心理合并，区分合并、视角采择、理解和情感卷入，避免把一般运输混入人物认同。",
+        data="研究一224人，研究二191人，研究三290人。第三项研究使用人口构成更为多样的样本，并比较两类叙事。",
+        method="依次实施探索性因子分析、验证性因子分析、二阶模型比较、信效度检验和跨叙事测量等值检验。",
+        results="研究得到12题四维二阶结构。量表及分量表内部一致性充分，与理论相关和无关构念的关系符合预期，跨两类叙事达到构型、度量和部分截距等值。",
+        limitations="当前证据主要支持跨叙事而非跨语言或跨国家等值。自报认同仍可能与好感、相似性和运输相关，需要在本研究语境重新验证。",
+        readingUse="用于人物认同的量表选择和跨文化测量检验。",
+        researchConnection="可直接解决博士论文中理解、情感卷入、视角采择和人物合并是否被误合并的问题。",
+        priorityReason="这是目前结构清晰且完成多阶段验证的人物认同工具，适合作为核心因变量或中介。",
+        hypothesisImplication="简报推论：价值契合可能首先影响理解和视角采择，再影响情感卷入与心理合并，不同维度的路径强度可能不同。",
+        manipulationImplication="简报推论：在不同文化类比版本中保持人物事件一致，以便检验量表结构是否稳定而非被材料差异驱动。",
+        measurementImplication="简报推论：采用12题四维量表，并在目标语言和国家样本中进行翻译回译、确认性因子分析和测量等值检验。",
+    ),
+]
+
+
+prior_joc = json.loads((root / "2026-10-16.json").read_text())["groups"][2]
+toc = [
+    {"title": joc_new["title"], "url": joc_new["url"], "articleType": "Research Article", "status": "new"},
+    {"title": "Academic freedom: defending a public good", "url": "https://doi.org/10.1093/joc/jqag017", "articleType": "Oration", "status": "non-research"},
+]
+for entry in prior_joc["collection"]["toc"]:
+    toc.append({**entry, "status": "previously-recommended", "recommendedDate": "2026-10-16", "reviewUrl": "./?date=2026-10-16"})
+
+groups = [
+    {
+        "id": "crossdisciplinary", "label": "其他研究", "target": 5, "sortBy": "split",
+        "selectionBuckets": [{"id": "latest", "label": "最新", "target": 3}, {"id": "cited", "label": "高被引", "target": 2}],
+        "sourceCoverage": [{"database": x, "status": "included"} for x in ["NBER", "SSRN", "arXiv"]],
+        "sortDescription": "最新3篇按首次公开日期降序，NBER、SSRN和arXiv各1篇。Google Scholar返回异常流量验证页，高被引2篇不使用替代指标，因而留缺。",
+        "papers": cross,
+    },
+    {
+        "id": "journals", "label": "传播学与社会科学", "target": 5, "sortBy": "citationCount",
+        "journalPriorityNote": "应先执行Google Scholar主题检索，再优先筛选传播学SSCI Q1或Q2期刊。原生页面被异常流量验证页阻断，无法完成规定发现与引用排序。",
+        "sortDescription": "本栏必须按Google Scholar实际引用次数降序。本期没有取得可核验结果，因而留空。",
+        "papers": [],
+    },
+    {
+        "id": "communication-issue", "label": "传播学顶刊推荐", "unit": "issue", "target": 1, "sortBy": "issue",
+        "collection": {
+            "journalId": "joc", "journalName": "Journal of Communication", "kind": "online-first",
+            "title": "Journal of Communication · Advance Articles · 2026-10-30在线集合",
+            "url": "https://academic.oup.com/joc/advance-articles", "checkedAt": date, "complete": True, "toc": toc,
+            "scopeNote": "出版方Advance Articles完整可见目录共7条，其中6篇研究论文和1篇Oration。与2026-10-16完整快照比较，新增1篇研究论文和1篇非研究文章。",
+        },
+        "sortDescription": "不使用关键词，完整检查当前Advance Articles。只对尚未推荐的新研究论文作完整解读，非研究文章列入目录但不计推荐。",
+        "papers": [joc_new],
+    },
+    {
+        "id": "general-science", "label": "综合顶刊推荐", "target": 1, "sortBy": "publicationDate", "rotationJournalId": "science",
+        "sortDescription": "今天轮到Science。当前目录无法在不绕过人机验证的情况下完成最新社会科学研究核验，因此留缺。",
+        "papers": [],
+    },
+]
+
+selected = [joc_new["doi"]] + [p["doi"] for p in dissertation_papers]
+data = {
+    "schemaVersion": 6,
+    "date": date,
+    "timezone": "Asia/Shanghai",
+    "edition": "正式第27期",
+    "title": "价值一致、人物认同与叙事结果：从相似走向可测量的接收",
+    "summary": "本期完成NBER、SSRN和arXiv最新研究各1篇，核验Journal of Communication当前在线集合新增1篇研究论文，并为博士论文精选5篇未推荐的同行评审论文。Google Scholar与Science访问受阻，相关栏目如实留缺。",
+    "historyPolicy": "exclude-recommended",
+    "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+    "searchPlatforms": ["Google Scholar", "NBER", "SSRN", "arXiv"],
+    "activeTopicIds": ["culture", "sycophancy", "methods"],
+    "searchSettings": {"source": "defaults + reading-plan", "lookbackDays": 30, "conflictNote": "当日没有生效的一次性用户设置，未来设置保持不变。culture继续以博士论文的人物接收、价值契合、文化边界、图式和类比机制为重点，同时保留culture、sycophancy和methods三个主题。"},
+    "notice": "本期逐篇依据可访问的出版方页面、权威索引、官方摘要或正式记录核验。未读取正文关键部分时不标全文核验，无法核验的样本、系数和识别细节均明确说明。",
+    "searchNote": "Google Scholar原生主题查询返回异常流量提示，随即停止，不绕过验证，也不以其他索引数字冒充引用次数。NBER、SSRN和arXiv通过公开域名网页发现并回到官方记录核验。公开网页检索不冒称站内高级检索。博士论文专题另使用出版方和权威学术索引核验同行评审状态。",
+    "themeSearches": [
+        {"platform": "Google Scholar", "query": "(\"cultural transmission\" OR \"cross-cultural reception\" OR \"value congruence\" OR sycophancy OR \"text measurement\")", "timeRange": "不限年份；检索日期2026-10-30", "purpose": "culture、sycophancy和methods主题发现，随后筛期刊并核验被引次数", "status": "原生页面返回异常流量验证，未取得结果和引用次数，未绕过验证。"},
+        {"platform": "NBER", "query": "site:nber.org/papers October 2026 (culture OR communication OR AI OR methods)", "timeRange": "优先近30日；检索日期2026-10-30", "purpose": "NBER最新候选发现", "status": "公开域名网页检索成功，入选论文的题名、作者、编号、月份和摘要由NBER论文页核验。"},
+        {"platform": "SSRN", "query": "site:papers.ssrn.com/sol3/papers.cfm 2026 (culture OR narrative OR communication OR persuasion)", "timeRange": "优先近30日；检索日期2026-10-30", "purpose": "SSRN最新候选发现", "status": "公开域名网页检索成功，入选论文的题名、作者、首次发布日、摘要、许可和SSRN DOI由论文页核验。"},
+        {"platform": "arXiv", "query": "submittedDate:[202610010000 TO 202610302359] AND all:(culture OR narrative OR communication OR social)", "timeRange": "2026-10-01至2026-10-30；检索日期2026-10-30", "purpose": "arXiv最新候选发现", "status": "公开摘要记录检索成功，入选论文的首次提交日期、作者、摘要和arXiv ID完成核验。"},
+    ],
+    "periodicalChecks": [
+        {"platform": "Oxford Academic · Journal of Communication", "query": "当前完整Advance Articles目录，不使用关键词", "timeRange": "检查日期2026-10-30", "purpose": "传播学顶刊整期轮换", "status": "官方目录完整可见7条，较2026-10-16快照新增1篇研究论文和1篇Oration。新研究论文完成摘要核验，Oration按非研究文章列出。"},
+        {"platform": "Science", "query": "当前最新在线研究目录，不使用关键词", "timeRange": "检查日期2026-10-30", "purpose": "综合顶刊轮换推荐", "status": "目录访问仍触发人机验证，公开索引不足以证明完整性和最新性。未绕过验证，也未用其他期刊补位。"},
+    ],
+    "verificationLog": [
+        {"platform": "Google Scholar", "query": "当日主题检索与引用次数", "timeRange": "核验日期2026-10-30", "purpose": "主题发现与引用次数排序", "status": "原生页面提示异常流量，停止后续请求。高被引2篇和主题期刊5篇留缺，不使用替代指标。"},
+        {"platform": "NBER、SSRN与arXiv官方记录", "query": "其他研究3篇的题名、作者、日期、摘要、DOI或arXiv ID", "timeRange": "核验日期2026-10-30", "purpose": "逐篇身份、首次公开日期与摘要核验", "status": "3篇均完成官方记录核验。NBER与SSRN论文尚未同行评审，arXiv为预印本，均明确标注。"},
+        {"platform": "期刊出版方与PubMed等权威索引", "query": "博士论文5篇和Journal of Communication新增论文的题录、发表状态、DOI、摘要与研究设计", "timeRange": "核验日期2026-10-30", "purpose": "同行评审与逐篇内容核验", "status": "6篇均由出版方或权威学术索引核验。未取得的样本、系数和正文细节未作推测。"},
+    ],
+    "groups": groups,
+    "shortfallReason": "Google Scholar原生页面返回异常流量验证，无法取得实际引用次数，其他研究高被引2篇和传播学与社会科学5篇留缺。Science当前目录的人机验证阻止完整最新性核验，综合顶刊栏留缺。所有缺额均未以替代引用指标、非指定数据库或不完整目录补齐。",
+    "periodicalCheckNote": "轮换栏目不使用主题关键词。Journal of Communication按当前完整在线集合检查；Science因目录完整性无法核验而未推进完成游标。",
+    "coreTracking": [],
+    "coreTrackingNote": "reading-plan与core-papers当日没有用户提交的核心论文请求，因此本期没有核心文献状态更新。",
+    "dissertation": {
+        "title": "从被看见到被接收",
+        "timeRange": "优先检查2026-10-29上期发布以来的新发表研究。高相关的新论文不足5篇后，扩展至2023年至2026年尚未推荐的同行评审论文，并把较早研究视为补充，不冒称当日最新。",
+        "selectionNote": "本期精选5篇尚未推荐的同行评审论文，另有1篇同时属于Journal of Communication在线集合和博士论文重点，采用跨栏目引用而不重复完整解读。重点覆盖价值一致、叙事愉悦与欣赏、人物关系、人物认同测量和相似性元分析。",
+        "historyCoverage": "已核对网站351条永久登记、截至2026-10-29的简报和博士论文专题、用户明确列出的既有文献及本轮可见对话，并按DOI、规范化题名和已知版本别名去重。无法访问的完整旧对话和未同步私人清单不在覆盖范围内，因此不声称绝对完全去重。",
+        "selectedPapers": selected,
+        "papers": dissertation_papers,
+        "topPapers": [
+            {"doi": "https://doi.org/10.1007/s12144-023-04842-4", "reason": "直接给出相似性影响人物认同的总体效应，并证明心理相似通常比客观相似更重要，是Schwartz价值契合假设最直接的数量依据。"},
+            {"doi": "https://doi.org/10.1007/s12144-024-06191-2", "reason": "提供四维、12题且经过多阶段验证的人物认同量表，可直接用于区分理解、视角采择、情感卷入和心理合并。"},
+            {"doi": "https://doi.org/10.1093/joc/jqag020", "reason": "区分价值一致、愉悦、欣赏、知识和极化，能防止把跨文化人物接收压缩为单一好感结果。"},
+        ],
+    },
+    "weeklyReview": {
+        "weekStart": "2026-10-24", "weekEnd": "2026-10-30",
+        "topPapers": [
+            {"title": "The effect of audience-character similarity on identification with narrative characters: A meta-analysis", "url": "https://doi.org/10.1007/s12144-023-04842-4", "reason": "把价值契合明确放在心理相似到人物认同的机制链上，并提供可预期的小效应基准。"},
+            {"title": "He's Just a Pixel Guy: How U.S. Players Experience Otome Games", "url": "https://doi.org/10.1177/15554120261495167", "reason": "跨文化复制显示人物亲近的结果路径可能稳定，但互惠等前因具有文化和化身边界。"},
+            {"title": "Between the Lines: Role of Cultural Schemas in Remembering and Forgetting", "url": "https://doi.org/10.3758/s13421-026-01928-9", "reason": "四项实验表明文化图式激活影响即时和延迟记忆，为本国相似神话人物类比提供直接机制依据。"},
+        ],
+        "designImplications": [
+            "将人物价值契合、文化身份标签和本国相似人物类比分别操纵，避免把深层相似、群体边界和加工流畅性混为同一处理。",
+            "把理解、记忆、愉悦、欣赏、人物认同、好感和传播意向分开测量，并预先规定主要结果和中介顺序。",
+            "在跨语言样本中对人物认同、价值契合和文化接近量表实施翻译回译与测量等值检验。",
+        ],
+        "literatureUses": [
+            "用相似性元分析和人物认同量表支撑价值契合到人物认同的核心理论链。",
+            "用文化图式与加工流畅性研究解释本国相似神话人物类比的认知路径。",
+            "用跨文化人物关系研究界定文化边界、化身位置和结果领域的调节作用。",
+        ],
+        "openQuestions": [
+            "Schwartz价值契合是否在控制人口相似和文化接近后仍能独立预测人物认同。",
+            "本国相似人物类比究竟提升理解，还是也会改变对原人物文化归属和真实性的判断。",
+            "愉悦与意义性欣赏是否分别通向好感和深层理解，并对传播意向产生不同作用。",
+        ],
+    },
+}
+
+(root / f"{date}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+
+index_path = root / "index.json"
+index = json.loads(index_path.read_text())
+index = [row for row in index if row["date"] != date]
+count = len(cross) + len(dissertation_papers) + 1
+index.insert(0, {"date": date, "title": data["title"], "summary": data["summary"], "edition": data["edition"], "count": count, "file": f"{date}.json"})
+index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
+
+rotation_path = root / "rotation-state.json"
+rotation_state = json.loads(rotation_path.read_text())
+rotation_state["updatedAt"] = date
+joc = rotation_state["communication"]["joc"]
+joc.update(lastAttemptAt=date, lastCheckedAt=date, status="completed", lastCompletedAt=date,
+           reason="Oxford Academic Advance Articles directory was fully readable. One new Research Article was added since the complete 2026-10-16 snapshot; one Oration was recorded as non-research.")
+joc["onlineSnapshots"].append({"checkedAt": date, "url": "https://academic.oup.com/joc/advance-articles", "complete": True,
+    "dois": ["https://doi.org/10.1093/joc/jqag020", "https://doi.org/10.1093/joc/jqag018", "https://doi.org/10.1093/joc/jqag014", "https://doi.org/10.1093/joc/jqag016", "https://doi.org/10.1093/joc/jqag015", "https://doi.org/10.1093/joc/jqag013"],
+    "firstOnlineDates": ["2026-10-21", "2026-10-01", "2026-09-22", "2026-09-08", "2026-09-08", "2026-08-30"]})
+science = rotation_state["general"]["science"]
+science.update(lastAttemptAt=date, lastCheckedAt=date, status="blocked", reason="Science current research directory remained behind human verification. Public indexing did not establish a complete current directory, so no candidate or completed cursor was recorded.")
+rotation_path.write_text(json.dumps(rotation_state, ensure_ascii=False, indent=2) + "\n")
