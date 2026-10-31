@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-10-31",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-30",
@@ -67,7 +67,7 @@
       "reason": "Oxford Academic Advance Articles directory was fully readable. One new Research Article was added since the complete 2026-10-16 snapshot; one Oration was recorded as non-research."
     },
     "hcr": {
-      "lastCheckedAt": "2026-10-24",
+      "lastCheckedAt": "2026-10-31",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-17",
@@ -79,6 +79,23 @@
             "https://doi.org/10.1093/hcr/hqag001"
           ],
           "firstOnlineDates": [
+            "2026-07-26",
+            "2026-04-30",
+            "2026-01-27"
+          ]
+        },
+        {
+          "checkedAt": "2026-10-31",
+          "url": "https://academic.oup.com/hcr/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/hcr/hqag004",
+            "https://doi.org/10.1093/hcr/hqag003",
+            "https://doi.org/10.1093/hcr/hqag002",
+            "https://doi.org/10.1093/hcr/hqag001"
+          ],
+          "firstOnlineDates": [
+            "2026-10-26",
             "2026-07-26",
             "2026-04-30",
             "2026-01-27"
@@ -99,9 +116,10 @@
           ]
         }
       ],
-      "lastAttemptAt": "2026-10-24",
+      "lastAttemptAt": "2026-10-31",
       "status": "completed",
-      "lastCompletedAt": "2026-10-24"
+      "lastCompletedAt": "2026-10-31",
+      "reason": "Oxford Academic Advance Access directory was fully readable. One new Research Article appeared since the complete 2026-10-17 snapshot."
     },
     "cr": {
       "lastAttemptAt": "2026-10-25",
@@ -310,12 +328,12 @@
       "lastCheckedAt": "2026-10-30"
     },
     "science-advances": {
-      "lastAttemptAt": "2026-10-25",
+      "lastAttemptAt": "2026-10-31",
       "status": "completed",
-      "lastCompletedAt": "2026-10-25",
-      "lastCheckedAt": "2026-10-25",
-      "lastRecommendedDoi": "https://doi.org/10.1126/sciadv.ady6737",
-      "publicationDate": "2026-10-14",
+      "lastCompletedAt": "2026-10-31",
+      "lastCheckedAt": "2026-10-31",
+      "lastRecommendedDoi": "https://doi.org/10.1126/sciadv.aeg4737",
+      "publicationDate": "2026-10-30",
       "socialScienceAssessment": "confirmed"
     },
     "scientific-data": {
