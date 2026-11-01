@@ -1,5 +1,17 @@
 # 每日研究简报更新指南
 
+## 访问受限时的降级规则（2026-11-01确认）
+
+本节优先于上文涉及Google Scholar硬门槛、整期完整性与综合顶刊替补的旧限制。适用于2026-11-01及之后的新生成或显式重新生成简报，不改写已发布历史。禁止绕过验证码、Cloudflare或反爬验证，不更换身份规避限制，不索取密码。受阻不等于没有相关研究，优先使用合法可访问的官方页面、官方RSS及公开权威元数据。
+
+- 传播学与社会科学：Scholar可用时仍先主题检索、后筛期刊并按实际引用量排序。Scholar受阻时可直接使用出版方官网和官方RSS按主题发现论文，优先传播学，保留原有SSCI与传播学77刊Q1/Q2范围。改用sortBy:relevance-quality-date，按相关性、期刊质量及首次发表时间综合选取，不冒称引用排名。每篇discoverySource记录实际来源，citationStatus:unverified，citationNote明确“本次Google Scholar引用次数未核验”；未知次数及对应来源字段不填，不记0。已核验的历史次数若需展示须明确日期，不用于本次排序。
+- 其他研究：最新3篇及三库覆盖规则不变。高被引2篇无法取得实际Scholar次数时，保留selectionBucket:cited身份以兼容历史，桶label改为“重要研究精选”，sortBy:relevance-quality，按质量和相关性选取NBER、SSRN、arXiv剩余候选。明确“不按引用量排名”，逐篇记录selectionReason、citationStatus:unverified与citationNote，不伪造引用数或使用替代指标。
+- 上述每个降级组或桶保存accessFallback:{reason,channel,checkedAt}，均为非空文本；reason必须记录实际失败而非计划，channel列实际执行渠道，checkedAt为实际核验日期。保留themeSearches、verificationLog、searchNote及sortDescription，实际渠道可超出旧四库限制，但原始searchPlatforms仍描述常规主题四库，扩展渠道据实单列。仅访问失败不直接导致整栏为空；仍须相关、可核验且未推荐，不足则如实缺额。
+- 传播学顶刊仍按当天轮换七刊，不偷换期刊。官方完整目录不可得时可以推荐已核验、未推荐的新在线论文，collection.complete:false并标注“部分目录”，toc只列已核验范围，不冒称整期。使用官方RSS或其他官方目录时记录实际URL、核验日期与范围。target等于已核验的新研究数，不推进整期完成游标。
+- 综合顶刊：先查当天轮到的一本，仅在访问受阻时，按既定六刊循环顺序尝试其后期刊，选首本可核验且有合格未推荐论文的期刊。无候选与访问失败分别记录，不扩大名单，不因替补重置或推进日历轮换。group.rotationJournalId保留当天计划期刊，实际论文期刊存selectedJournalId；发生替补时保存rotationFallback:{reason,checkedAt,attempts}，attempts按顺序列journalId、status（blocked/no-candidate/selected）、reason，包含原期刊及直到选中的全部尝试，status:selected须为最后一项。无可用合格候选仍可留空并说明。
+- 页面须直接显示降级原因、实际排序、引用未核验提示与替补期刊，不只把状态存在未渲染字段中。永久去重、题录和内容核验、同行评审、摘要许可、博士专题规则及用户设置均不放宽。
+
+
 2026-10-16起执行以下规则，Asia/Shanghai上午10点开始，完成后发布。历史schemaVersion:5简报不改写；新简报schemaVersion:6。
 
 ## 博士论文追踪整合（2026-10-20起）
@@ -69,3 +81,4 @@ target:1，sortBy:publicationDate。不使用关键词，按PNAS、Nature、Scie
 schemaVersion:6；historyPolicy:exclude-recommended；journalPolicy:ssci-communication-q1-q2-and-social-science；searchPlatforms依次四库（仅主题渠道）。新增期刊渠道保存periodicalChecks。保留全部题录与摘要字段。轮换完成后同提交更新rotation-state.json，失败与不完整不能推进完成状态。
 
 运行rebuild_registry.py永久追加，validate.py及相关Python/Node测试。基于最新main原子提交简报、index、recommended和rotation-state，非强制更新；并发重新合并，不覆盖用户关键词、核心文献或历史。保留历史schema5格式兼容。确认数量、排序、来源和Actions Pages部署成功，再报告实际网站状态。不发邮件、外部消息或写凭证。
+

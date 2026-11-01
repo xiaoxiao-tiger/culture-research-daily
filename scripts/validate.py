@@ -5,6 +5,7 @@ from urllib.parse import urlparse
 from paper_identity import identifiers,papers_in,normalize_title
 from apply_search_request import parse_request
 from reading_plan import rotation,TOPICS
+from access_fallback import validate_fallback,validate_unverified,validate_rotation_fallback
 root=Path(__file__).resolve().parents[1]/'site/data'
 index=json.loads((root/'index.json').read_text());dates=set();seen={}
 ledger_path=root/'recommended.json'
@@ -21,7 +22,17 @@ for issue in sorted(index,key=lambda x:x['date']):
     assert data['searchPlatforms']==['Google Scholar','NBER','SSRN','arXiv']
     groups=data['groups'];assert [g['id'] for g in groups]==(['crossdisciplinary','journals','communication-issue','general-science'] if modern else ['crossdisciplinary','journals'])
     assert all(g['label'] and g['target']==target and 0<=len(g['papers'])<=target for g,target in zip(groups,[5 if modern else 10,5]))
-    assert [g['sortBy'] for g in groups]==(['split','citationCount','issue','publicationDate'] if modern else ['split','citationCount'])
+    journal_fallback=groups[1].get('accessFallback')
+    cited_fallback=groups[0]['selectionBuckets'][1].get('accessFallback')
+    if journal_fallback:
+        validate_fallback(journal_fallback,date)
+        assert modern and groups[1].get('sortDescription')
+    if cited_fallback:
+        validate_fallback(cited_fallback,date)
+        assert modern and groups[0]['selectionBuckets'][1].get('sortDescription')
+        assert groups[0]['selectionBuckets'][1]['label']=='重要研究精选'
+        assert groups[0]['selectionBuckets'][1]['sortBy']=='relevance-quality'
+    assert [g['sortBy'] for g in groups]==(['split','relevance-quality-date' if journal_fallback else 'citationCount','issue','publicationDate'] if modern else ['split','citationCount'])
     other=groups[0]['papers'];latest=[p for p in other if p.get('selectionBucket')=='latest'];popular=[p for p in other if p.get('selectionBucket')=='cited']
     assert len(latest)<=(3 if modern else 5) and len(popular)<=(2 if modern else 5) and latest+popular==other, 'Invalid latest/cited split'
     assert [b['id'] for b in groups[0]['selectionBuckets']]==['latest','cited']
@@ -78,7 +89,7 @@ for issue in sorted(index,key=lambda x:x['date']):
         assert groups[1].get('journalPriorityNote'),'Explain communication-first selection'
         comm,general=groups[2:]
         assert general['target']==1 and len(general['papers'])<=1
-        assert general['rotationJournalId']==rotation(plan,date,'general')['id'],'Wrong general journal rotation'
+        validate_rotation_fallback(general,plan,date)
         assert comm.get('unit')=='issue'
         collection=comm.get('collection')
         if collection:
@@ -105,11 +116,17 @@ for issue in sorted(index,key=lambda x:x['date']):
         assert data.get('periodicalChecks'),'Document publisher browsing'
         for row in data['periodicalChecks']:
             assert all(row.get(k) for k in ('platform','query','timeRange','purpose','status'))
-    for cited in [popular,groups[1]['papers']]:
+    for cited,fallback in [(popular,cited_fallback),(groups[1]['papers'],journal_fallback)]:
+        if fallback:
+            for p in cited:
+                validate_unverified(p)
+                assert p.get('selectionReason'), 'Explain fallback selection'
+            continue
         assert all(type(p.get('citationCount')) is int and p['citationCount']>=0 and p.get('citationSource')=='Google Scholar' and p.get('citationCheckedAt') and urlparse(p.get('citationSourceUrl','')).scheme=='https' for p in cited), 'Use actual Google Scholar citations'
         assert [p['citationCount'] for p in cited]==sorted((p['citationCount'] for p in cited),reverse=True), 'Citations out of order'
     for p in groups[1]['papers']:
-        assert p['publicationType']=='journal' and p.get('discoverySource')=='Google Scholar'
+        assert p['publicationType']=='journal'
+        assert p.get('discoverySource') in ('Publisher','Official RSS') if journal_fallback else p.get('discoverySource')=='Google Scholar'
         assert p.get('journalEdition')=='SSCI' and p.get('indexSource'), 'ESCI or unverified journal indexing'
         assert p.get('discipline') in ('communication','social-science')
         if p['discipline']=='communication':
