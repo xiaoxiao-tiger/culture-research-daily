@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-31",
+  "updatedAt": "2026-11-01",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-30",
@@ -122,18 +122,18 @@
       "reason": "Oxford Academic Advance Access directory was fully readable. One new Research Article appeared since the complete 2026-10-17 snapshot."
     },
     "cr": {
-      "lastAttemptAt": "2026-10-25",
-      "lastCheckedAt": "2026-10-25",
+      "lastAttemptAt": "2026-11-01",
+      "lastCheckedAt": "2026-11-01",
       "status": "blocked",
-      "reason": "Publisher Online First directory remained behind a Cloudflare human-verification page after one normal refresh. Public indexing exposed only a partial directory, so no complete snapshot or issue cursor advanced.",
+      "reason": "Publisher Online First directory required Cloudflare human verification. Public indexing exposed only partial entries, so no complete snapshot or issue cursor advanced.",
       "lastCompletedAt": null,
       "onlineSnapshots": [],
       "completedIssues": [],
       "directoryObservation": {
-        "checkedAt": "2026-10-25",
+        "checkedAt": "2026-11-01",
         "url": "https://journals.sagepub.com/toc/crxa/0/0?ContentItemType=research-article&pageSize=100&sortBy=FullEpubDateField&startPage=0",
         "complete": false,
-        "scopeNote": "The publisher page required human verification. Indexed previews were not treated as a complete issue."
+        "scopeNote": "Publisher security verification blocked the full directory. Partial public indexing was not treated as a complete Online First issue."
       }
     },
     "jcmc": {
@@ -337,12 +337,13 @@
       "socialScienceAssessment": "confirmed"
     },
     "scientific-data": {
-      "lastAttemptAt": "2026-10-26",
+      "lastAttemptAt": "2026-11-01",
       "status": "completed",
-      "lastCompletedAt": "2026-10-26",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08160-9",
-      "publicationDate": "2026-10-21",
-      "socialScienceAssessment": "confirmed"
+      "lastCompletedAt": "2026-11-01",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08558-5",
+      "publicationDate": "2026-10-31",
+      "socialScienceAssessment": "confirmed",
+      "lastCheckedAt": "2026-11-01"
     },
     "nature-communications": {
       "lastAttemptAt": "2026-10-27",

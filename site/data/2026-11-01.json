@@ -1,0 +1,570 @@
+{
+  "schemaVersion": 6,
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "edition": "正式第29期",
+  "title": "故事身份、价值契合与文化边界：从叙事接触到人物认同",
+  "summary": "本期完成NBER、SSRN和arXiv最新研究各1篇，推荐Scientific Data最新社会科学数据论文1篇，并为博士论文精选5篇未曾推荐的同行评审论文。Google Scholar异常流量验证导致高被引与主题期刊栏留缺，Communication Research完整Online First目录也未能核实。",
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "activeTopicIds": [
+    "culture",
+    "sycophancy",
+    "methods"
+  ],
+  "searchSettings": {
+    "source": "defaults + reading-plan",
+    "lookbackDays": 30,
+    "conflictNote": "当日没有生效的一次性用户设置。culture继续以博士论文的人物接收、价值契合、文化边界、图式和类比机制为重点，同时保留culture、sycophancy和methods主题。未来设置保持不变。"
+  },
+  "notice": "本期逐篇依据可访问的出版方页面、官方摘要和正式记录核验。未读取正文关键部分时不标全文核验，无法核验的样本、系数和识别细节均明确说明。",
+  "searchNote": "Google Scholar原生主题查询返回异常流量提示后立即停止，不绕过验证，也不以其他索引数字冒充引用次数。NBER、SSRN和arXiv先通过公开网页发现，再回到官方记录核验。公开网页检索不冒称站内高级检索。博士论文专题另用出版方页面核验同行评审状态。",
+  "themeSearches": [
+    {
+      "platform": "Google Scholar",
+      "query": "(\"cultural transmission\" OR \"cross-cultural reception\" OR \"value congruence\" OR sycophancy OR \"text measurement\")",
+      "timeRange": "不限年份；检索日期2026-11-01",
+      "purpose": "culture、sycophancy和methods主题发现，随后筛期刊并核验被引次数",
+      "status": "原生页面返回异常流量验证，未取得结果和引用次数，未绕过验证。"
+    },
+    {
+      "platform": "NBER",
+      "query": "site:nber.org/papers October 2026 (culture OR communication OR AI OR methods)",
+      "timeRange": "优先近30日；检索日期2026-11-01",
+      "purpose": "NBER最新候选发现",
+      "status": "公开域名网页检索成功，入选论文的题名、作者、编号、月份和摘要由NBER记录核验。"
+    },
+    {
+      "platform": "SSRN",
+      "query": "site:papers.ssrn.com/sol3/papers.cfm October 2026 (culture OR narrative OR communication OR AI)",
+      "timeRange": "优先近30日；检索日期2026-11-01",
+      "purpose": "SSRN最新候选发现",
+      "status": "公开域名网页检索成功，题名、作者、首次发布日、摘要和DOI由SSRN记录核验。"
+    },
+    {
+      "platform": "arXiv",
+      "query": "submittedDate:[202610010000 TO 202610312359] AND all:(culture OR value OR narrative OR communication OR sycophancy OR social)",
+      "timeRange": "2026-10-01至2026-10-31；检索日期2026-11-01",
+      "purpose": "arXiv最新候选发现",
+      "status": "官方摘要记录检索成功，入选论文的首次提交日期、作者、摘要和arXiv ID完成核验。"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "SAGE · Communication Research",
+      "query": "当前完整Online First研究文章目录，不使用关键词",
+      "timeRange": "检查日期2026-11-01",
+      "purpose": "传播学顶刊整期轮换",
+      "status": "出版方页面要求Cloudflare安全验证。公开索引只显示部分条目，未形成完整目录，轮换游标不推进。"
+    },
+    {
+      "platform": "Scientific Data",
+      "query": "官方2026年文章目录，不使用关键词",
+      "timeRange": "检查日期2026-11-01",
+      "purpose": "综合顶刊轮换推荐",
+      "status": "官方目录与文章记录完成核验，入选2026-10-31发表的社会科学数据论文1篇。"
+    }
+  ],
+  "verificationLog": [
+    {
+      "platform": "Google Scholar",
+      "query": "当日主题检索与引用次数",
+      "timeRange": "核验日期2026-11-01",
+      "purpose": "主题发现与引用次数排序",
+      "status": "原生页面提示异常流量后停止请求。高被引2篇和主题期刊5篇留缺，不使用替代指标。"
+    },
+    {
+      "platform": "NBER、SSRN与arXiv官方记录",
+      "query": "其他研究3篇的题名、作者、日期、摘要、DOI或arXiv ID",
+      "timeRange": "核验日期2026-11-01",
+      "purpose": "逐篇身份、首次公开日期与摘要核验",
+      "status": "3篇均完成官方记录核验。NBER和SSRN为未同行评审工作论文，arXiv为预印本。"
+    },
+    {
+      "platform": "Wiley、SAGE、Frontiers与Nature Portfolio",
+      "query": "博士论文5篇及Scientific Data论文的题录、发表状态、DOI、摘要、样本与方法",
+      "timeRange": "核验日期2026-11-01",
+      "purpose": "同行评审、发表状态和逐篇内容核验",
+      "status": "题录与同行评审状态完成核验。Frontiers开放全文用于核验样本、模型和限制；其余按出版方摘要与可访问正文信息表述。"
+    }
+  ],
+  "groups": [
+    {
+      "id": "crossdisciplinary",
+      "label": "其他研究",
+      "target": 5,
+      "sortBy": "split",
+      "selectionBuckets": [
+        {
+          "id": "latest",
+          "label": "最新",
+          "target": 3
+        },
+        {
+          "id": "cited",
+          "label": "高被引",
+          "target": 2
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "database": "NBER",
+          "status": "included"
+        },
+        {
+          "database": "SSRN",
+          "status": "included"
+        },
+        {
+          "database": "arXiv",
+          "status": "included"
+        }
+      ],
+      "sortDescription": "最新3篇按首次公开日期降序，NBER、SSRN和arXiv各1篇。Google Scholar原生页面返回异常流量验证，高被引2篇不以替代指标补齐。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于迎合构念拆分、训练阶段比较和过程测量。",
+          "researchConnection": "方法上提示博士论文应把理解后的真实态度变化与因实验者线索产生的表面顺从分开，并测量初始确信程度。",
+          "title": "Locating Sycophancy Across Training Stages in Open Language Models",
+          "titleZh": "定位开放语言模型不同训练阶段中的迎合行为",
+          "authors": "Jiarui Yao, Shweta Parihar, Nghia Tuan Bui, Guergana K. Savova, Lijing Wang",
+          "year": 2026,
+          "venue": "arXiv:2610.37788",
+          "source": "arXiv",
+          "sourceDatabase": "arXiv",
+          "category": "其他研究 · 最新",
+          "url": "https://arxiv.org/abs/2610.37788",
+          "doi": "https://doi.org/10.48550/arXiv.2610.37788",
+          "arxivId": "2610.37788",
+          "topicIds": [
+            "sycophancy",
+            "methods"
+          ],
+          "takeaway": "作者追踪5个模型谱系的13个开放检查点，区分提示中对外部主张的服从与对话中撤回既有答案两类迎合。前者已存在于基础模型，后者主要在后训练阶段出现。",
+          "theory": "把迎合拆成来源敏感的主张服从与对话中的答案放弃，避免把所有同意用户的行为都归因于偏好优化。",
+          "data": "5个开放模型谱系的13个训练检查点，覆盖基础模型、监督微调、偏好优化和发布版本，并在多个数据集上复现。公开摘要未列出全部模型与样本题量。",
+          "method": "向模型注入来源、可靠性与措辞强度不同的主张，分别测量答案移动幅度和原答案确信程度，再比较不同训练阶段。",
+          "results": "所有基础模型已经按来源可靠性表现出提示服从。对话中因用户反对而撤回答案的行为在基础模型中较少，却在所有后训练检查点中出现；不少后训练模型对坚定和不坚定答案同样容易让步。",
+          "limitations": "预印本尚未同行评审。公开摘要不足以核验具体数据集、统计区间和模型间异质性，也不能把模型行为直接外推为人的社会迎合。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-27",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://arxiv.org/abs/2610.37788",
+          "publicationType": "preprint",
+          "abstractZh": "作者追踪5个模型谱系的13个开放检查点，区分提示中对外部主张的服从与对话中撤回既有答案两类迎合。前者已存在于基础模型，后者主要在后训练阶段出现。",
+          "abstractSource": "https://arxiv.org/abs/2610.37788"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "full",
+          "originalAbstract": "We conduct a field experiment in virtual conference calls hosted by Chinese listed firms, providing investors with AI-generated summaries of annual reports. Access to AI summaries increases the number of questions investors ask by 39.2%, and their questions become longer, more numerical, and reflect greater cognitive processing. Previously silent investors focus on topics highlighted in the summaries, while already vocal investors expand their inquiries beyond the summarized content. The treatment also strengthens market responses to conference calls, particularly when investor engagement is high. Our findings show that AI-summarized disclosures can lower information processing costs, broaden investor participation, and enhance the effectiveness of corporate communication.",
+          "abstractUnavailableReason": "",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于信息压缩、参与行为和异质性效应设计。",
+          "researchConnection": "可借鉴其把信息理解、主动提问与后续反应分开的设计，分别测量神话人物理解、好感、认同与传播意向。",
+          "title": "Enhancing Corporate Communication with AI-summarized Disclosures",
+          "titleZh": "以人工智能摘要披露增强企业沟通",
+          "authors": "T. J. Wong, Yang Yi, Gwen Yu, Shubo Zhang, Tianyu Zhang",
+          "year": 2026,
+          "venue": "SSRN Working Paper 7601598",
+          "source": "SSRN",
+          "sourceDatabase": "SSRN",
+          "category": "其他研究 · 最新",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601598",
+          "doi": "https://doi.org/10.2139/ssrn.7601598",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "一项中国上市公司虚拟业绩说明会现场实验向投资者提供AI生成的年报摘要，使提问数量增加39.2%，问题更长、数字信息更多、认知加工更充分，市场反应也更强。",
+          "theory": "把AI摘要视为降低信息获取与加工成本的沟通基础设施，并区分原本沉默与原本积极发言投资者的反应。",
+          "data": "中国上市公司虚拟业绩说明会及参与投资者的提问与市场反应。官方摘要没有披露公司数、投资者数和随机化单元。",
+          "method": "现场实验比较获得与未获得AI年报摘要的投资者，分析提问数量、长度、数字内容、认知加工、主题选择和市场反应。",
+          "results": "AI摘要使提问增加39.2%。沉默投资者更多围绕摘要主题发问，原本活跃者扩展到摘要之外；较高参与度伴随更强市场反应。",
+          "limitations": "SSRN工作论文尚未同行评审。未读取正文，因而没有核验随机化、标准误聚类、效应量区间和市场反应窗口。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10-13",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601598",
+          "publicationType": "working-paper",
+          "abstractLicense": "CC BY 4.0；原文摘要按SSRN页面许可原样呈现，作者与来源见题录。",
+          "abstractZh": "一项中国上市公司虚拟业绩说明会现场实验向投资者提供AI生成的年报摘要，使提问数量增加39.2%，问题更长、数字信息更多、认知加工更充分，市场反应也更强。",
+          "abstractSource": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7601598"
+        },
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于基准模型与经验评分之间偏差的测量。",
+          "researchConnection": "可类比检验受众的道德评价是否偏离由人物实际价值行为推导的理论判断，并把文化国家标签造成的固定差异单独估计。",
+          "title": "Ratings, Debt, and Deficits: An Exploration",
+          "titleZh": "评级、债务与赤字：一项探索",
+          "authors": "Olivier J. Blanchard, Daniel Leigh, Prachi Mishra",
+          "year": 2026,
+          "venue": "NBER Working Paper 35956",
+          "source": "NBER",
+          "sourceDatabase": "NBER",
+          "category": "其他研究 · 最新",
+          "url": "https://www.nber.org/papers/w35956",
+          "doi": "https://doi.org/10.3386/w35956",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "研究用简化模型比较主权信用评级与债务、预期初级财政余额以及利率和增长率差异的关系，发现评级对债务权重过高、低估利率增长差，并赋予国家固定差异极大作用。",
+          "theory": "以政府跨期预算约束为基准，检验评级是否一致反映债务可持续性的核心变量。",
+          "data": "跨国主权信用评级、债务、预期初级财政余额、利率和增长率资料。公开摘要未报告国家数、时间范围和评级机构。",
+          "method": "建立简化债务动态模型，将模型含义与评级数据中的经验关系比较，并评估国家效应。",
+          "results": "评级相较模型更重视债务而非预期初级余额，低估利率与增长率差异的作用，并显示极大的国家效应，同样债务和财政余额对应的评级差异很大。",
+          "limitations": "NBER工作论文尚未同行评审，且官方记录只给出2026年10月的月份精度。摘要不足以核验估计方程、评级来源和稳健性。",
+          "selectionBucket": "latest",
+          "publicationDate": "2026-10",
+          "publicationDatePrecision": "month",
+          "publicationDateSource": "https://www.nber.org/papers/w35956",
+          "publicationType": "working-paper",
+          "abstractZh": "研究用简化模型比较主权信用评级与债务、预期初级财政余额以及利率和增长率差异的关系，发现评级对债务权重过高、低估利率增长差，并赋予国家固定差异极大作用。",
+          "abstractSource": "https://www.nber.org/papers/w35956"
+        }
+      ]
+    },
+    {
+      "id": "journals",
+      "label": "传播学与社会科学",
+      "target": 5,
+      "sortBy": "citationCount",
+      "journalPriorityNote": "先执行Google Scholar主题检索，再优先筛选传播学SSCI Q1或Q2期刊。原生页面被异常流量验证阻断，无法完成规定发现与引用排序。",
+      "sortDescription": "本栏必须按Google Scholar实际引用次数降序。本期没有取得可核验结果，因而留空。",
+      "papers": []
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "unit": "issue",
+      "target": 0,
+      "sortBy": "issue",
+      "collection": {
+        "journalId": "cr",
+        "journalName": "Communication Research",
+        "kind": "online-first",
+        "title": "Online First目录检查 · 2026-11-01",
+        "url": "https://journals.sagepub.com/toc/crxa/0/0?ContentItemType=research-article&pageSize=100&sortBy=FullEpubDateField&startPage=0",
+        "checkedAt": "2026-11-01",
+        "complete": false,
+        "toc": []
+      },
+      "sortDescription": "不使用关键词。出版方目录要求Cloudflare安全验证，公开索引只显示部分条目，不能冒充完整Online First一期。",
+      "papers": []
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "scientific-data",
+      "sortDescription": "今天轮到Scientific Data。不使用关键词，从官方2026年文章目录向前检查，选择最新且社会科学属性明确的研究。",
+      "papers": [
+        {
+          "evidence": "摘要核验",
+          "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+          "abstractMode": "full",
+          "originalAbstract": "Public concern about education, employment and healthcare is a key indicator of social well-being and policy priorities. This Data Descriptor presents China’s Public Livelihood Concern Index, a longitudinal panel dataset constructed from messages posted on the China Leadership Message Board between 2011 and 2023. The dataset measures public concern about education, employment and healthcare at national, provincial and prefecture levels and includes six subdimensions. Following text standardization, deduplication and dictionary matching, concern scores are calculated as lexical match rates multiplied by 100. The released balanced panel contains 4,966 observations, a 357-term dictionary and reproducible code. Validation includes formula reconstruction, alternative denominators and time windows, comparisons with official statistics and checks against documented events. The dataset enables systematic analysis of temporal and spatial variation in public livelihood concerns in China.",
+          "abstractUnavailableReason": "",
+          "readingPriority": "normal",
+          "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+          "readingUse": "用于词典构建、层级面板与文本指标验证。",
+          "researchConnection": "可借鉴其词典与多层级验证流程，对跨文化受众自由回答中的人物理解、价值词汇和传播意向进行可复核编码。",
+          "title": "China’s Public Livelihood Concern Index for Education, Employment and Healthcare (2011–2023)",
+          "titleZh": "中国教育、就业与医疗公共民生关切指数（2011至2023年）",
+          "authors": "Yanchao Feng, Haolin Zhuang, Yuxi Pan, Zhenhua Zhang",
+          "year": 2026,
+          "venue": "Scientific Data, Data Descriptor",
+          "source": "Scientific Data",
+          "category": "综合顶刊推荐 · 最新社会科学数据",
+          "url": "https://doi.org/10.1038/s41597-026-08558-5",
+          "doi": "https://doi.org/10.1038/s41597-026-08558-5",
+          "topicIds": [
+            "methods"
+          ],
+          "takeaway": "作者基于2011至2023年中国领导留言板文本构建教育、就业和医疗民生关切指数，提供国家、省和地级市三级面板以及六个子维度，共4966条平衡面板记录。",
+          "theory": "把公众主动留言中的议题词频视为相对关切度，并区分教育、就业和医疗三大领域及六个细分维度。",
+          "data": "2011至2023年中国领导留言板文本，形成国家、省和地级市面板，包含4966行平衡记录和357词词典，并提供代码。",
+          "method": "文本标准化、去重、词典匹配后，以匹配率乘100构建指数；通过公式重建、不同分母和时间窗、官方统计及已知事件进行验证。",
+          "results": "数据集能够在多层级追踪三类民生议题的相对关切，并通过多种内部与外部验证显示可重建性和时间变化的合理性。",
+          "limitations": "留言板用户并非总体随机样本，指数反映主动表达而非人口总体偏好。词典匹配会遗漏隐含表达，也可能受平台治理和上网可得性变化影响。",
+          "publicationDate": "2026-10-31",
+          "publicationDatePrecision": "day",
+          "publicationDateSource": "https://doi.org/10.1038/s41597-026-08558-5",
+          "publicationType": "journal",
+          "publicationStatus": "published",
+          "peerReviewed": true,
+          "socialScienceAssessment": "confirmed",
+          "socialScienceReason": "研究对象是公众对教育、就业和医疗的社会关切，数据来自大规模公共表达，并提供社会科学面板指标与验证。",
+          "abstractLicense": "CC BY-NC-ND 4.0；原文摘要未作改写并注明作者与来源，本站为非商业研究简报。",
+          "abstractZh": "作者基于2011至2023年中国领导留言板文本构建教育、就业和医疗民生关切指数，提供国家、省和地级市三级面板以及六个子维度，共4966条平衡面板记录。",
+          "abstractSource": "https://doi.org/10.1038/s41597-026-08558-5"
+        }
+      ]
+    }
+  ],
+  "shortfallReason": "Google Scholar原生页面返回异常流量验证，无法取得实际引用次数，其他研究高被引2篇和传播学与社会科学5篇留缺。Communication Research出版方完整Online First目录被安全验证阻断，零散索引不作为一期。所有缺额均未用替代引用指标、非指定数据库或不完整目录补齐。",
+  "periodicalCheckNote": "轮换栏目不使用主题关键词。Communication Research必须取得完整Online First目录后才视为一期；Scientific Data按官方最新文章目录检查。",
+  "coreTracking": [],
+  "coreTrackingNote": "reading-plan与core-papers当日没有用户提交的核心论文请求，因此本期没有核心文献状态更新。",
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "优先检查2026-10-31上期发布以来的新发表研究。高相关新论文不足5篇后，扩展至2026年尚未推荐的同行评审论文，并明确把较早研究视为补充，不冒称当日最新。",
+    "selectionNote": "本期精选5篇尚未推荐的同行评审论文，覆盖故事讲述者身份与披露时机、Schwartz价值契合的非线性、文化边界线索诊断性、跨文化虚拟人物接收和叙事能动性。它们均在博士论文专题完整解读，未在其他栏目重复登记。",
+    "historyCoverage": "已核对网站截至2026-10-31的368条永久登记、现有简报、用户明确列出的既有文献、本轮可见对话以及可访问的博士论文阅读清单和2026-11-01补充指南，并按DOI、arXiv ID、规范化题名和已知版本别名去重。无法访问的完整旧对话和未同步私人清单不在覆盖范围内，因此不声称绝对完全去重。",
+    "selectedPapers": [
+      "https://doi.org/10.1111/jasp.70105",
+      "https://doi.org/10.1111/jasp.70072",
+      "https://doi.org/10.1177/00936502261466759",
+      "https://doi.org/10.3389/fpsyg.2026.1675447",
+      "https://doi.org/10.1177/0261927X261493082"
+    ],
+    "papers": [
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "它同时操纵故事来源、讲述者内外群身份和披露时机，最直接对应文化边界如何改变跨文化叙事接收。",
+        "readingUse": "用于文化内外群边界、讲述者身份和披露时机设计。",
+        "researchConnection": "可把中国神话人物的文化来源标签或本国类比放在故事前后披露，检验其通过人物认同、讲述者评价还是防御反应影响接收。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Story-Framing in Narrative-Based Interventions: How Storyteller Identity and the Timing of Identity Disclosure Shape Attitudes Toward Migrants",
+        "titleZh": "叙事干预中的故事框架：讲述者身份及其披露时机如何影响移民态度",
+        "authors": "Maria Ioannou, Andreas Michael",
+        "year": 2026,
+        "venue": "Journal of Applied Social Psychology, Early View",
+        "source": "Wiley",
+        "url": "https://doi.org/10.1111/jasp.70105",
+        "doi": "https://doi.org/10.1111/jasp.70105",
+        "publicationDate": "2026-10-12",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://onlinelibrary.wiley.com/doi/10.1111/jasp.70105",
+        "peerReviewSource": "https://onlinelibrary.wiley.com/doi/10.1111/jasp.70105",
+        "apaCitation": "Ioannou, M., & Michael, A. (2026). Story-framing in narrative-based interventions: How storyteller identity and the timing of identity disclosure shape attitudes toward migrants. Journal of Applied Social Psychology. Advance online publication. https://doi.org/10.1111/jasp.70105",
+        "takeaway": "两项希腊塞浦路斯在线实验使用非洲与阿拉伯民间故事，发现混合群体讲述者和延迟披露身份总体上产生更积极的移民态度，但身份效应只在实验一显著，披露时机效应只在实验二显著。",
+        "theory": "整合叙事干预、人物或讲述者认同与群际接触，强调文化身份线索既可能帮助形成共同内群，也可能在故事进入前触发防御。",
+        "data": "实验一N=194，接触非洲民间故事；实验二N=281，接触阿拉伯民间故事。参与者均为希腊塞浦路斯受众。",
+        "method": "两个2×2在线实验操纵讲述者身份，即穆斯林移民双重外群与基督教移民混合群体，以及身份在故事前或故事后披露。结果包括去人性化、社会距离和移民态度。",
+        "results": "混合群体身份和延迟披露总体改善群际结果，但跨实验并不稳定。身份效应经由更强讲述者认同中介，披露时机效应经由对讲述者更有利的评价中介。",
+        "limitations": "两个实验使用不同文化来源故事，身份与故事情境无法完全等同。结果针对移民态度而非具体神话人物接收，跨实验效应不稳定。",
+        "hypothesisImplication": "简报推论：文化外群线索在接触前出现可能削弱认同，而在受众先形成叙事投入后披露，其负效应可能减弱。",
+        "manipulationImplication": "简报推论：正交操纵人物价值行为与文化身份披露时机，并设置本国相似人物共同内群线索。",
+        "measurementImplication": "简报推论：分开测量理解、讲述者评价、人物认同、社会距离、好感与传播意向，并检验中介的跨故事稳定性。",
+        "abstractZh": "两项希腊塞浦路斯在线实验使用非洲与阿拉伯民间故事，发现混合群体讲述者和延迟披露身份总体上产生更积极的移民态度，但身份效应只在实验一显著，披露时机效应只在实验二显著。",
+        "abstractSource": "https://doi.org/10.1111/jasp.70105"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "它直接以Schwartz环状结构说明价值契合的方向、内容和绝对水平都重要，是本期最适合修正简单相似效应假设的论文。",
+        "readingUse": "用于Schwartz价值契合的非线性建模与响应面分析。",
+        "researchConnection": "博士论文不应只计算受众与人物价值差值，可同时建模受众价值、人物价值及其二次项，区分不同价值域的契合曲面。",
+        "publicationType": "journal",
+        "publicationStatus": "published",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Content Matters: A Multilevel Circumplex Approach to Work Value Congruence and Organizational Identification",
+        "titleZh": "价值内容很重要：工作价值契合与组织认同的多层环状模型",
+        "authors": "Jannick Schneider, Marcel Kern, Timo Lorenz",
+        "year": 2026,
+        "venue": "Journal of Applied Social Psychology, 56(8), 545–565",
+        "source": "Wiley",
+        "url": "https://doi.org/10.1111/jasp.70072",
+        "doi": "https://doi.org/10.1111/jasp.70072",
+        "publicationDate": "2026-07-03",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://onlinelibrary.wiley.com/doi/10.1111/jasp.70072",
+        "peerReviewSource": "https://onlinelibrary.wiley.com/doi/10.1111/jasp.70072",
+        "apaCitation": "Schneider, J., Kern, M., & Lorenz, T. (2026). Content matters: A multilevel circumplex approach to work value congruence and organizational identification. Journal of Applied Social Psychology, 56(8), 545–565. https://doi.org/10.1111/jasp.70072",
+        "takeaway": "对54个组织中2151名员工的多层响应面分析显示，价值契合并非一律有益。保守与自我提升价值在高赋权文化中大致线性提高认同，开放与自我超越则呈弯曲关系，高水平时收益递减甚至转负。",
+        "theory": "把Schwartz基本价值环状结构转化为工作价值体系，强调契合效应取决于价值内容、绝对水平和组织文化，而不只是两者差值。",
+        "data": "2151名员工，嵌套于54个组织，测量高阶工作价值、赋权文化、身份型领导和组织认同。",
+        "method": "多层多项式回归与响应面分析估计个人价值和组织文化的联合曲面，并检验身份型领导的调节。",
+        "results": "保守和自我提升在高赋权文化中主要呈正向线性关系；开放与自我超越呈非线性，较高水平可能收益递减或反向。高身份型领导扩大了部分价值取向受众的高认同范围。",
+        "limitations": "横断面数据不能识别因果，组织文化与价值均可能受共同方法影响。工作组织认同与人物认同不同，但价值内容依赖的非线性逻辑可迁移检验。",
+        "hypothesisImplication": "简报推论：价值契合对人物认同的作用会随价值域和双方绝对水平改变，某些高水平契合可能出现递减或反向效应。",
+        "manipulationImplication": "简报推论：从开放、自我超越、保守与自我提升中选择理论冲突明确的价值域，并设置高高、低低和不一致组合。",
+        "measurementImplication": "简报推论：保留受众价值与人物感知价值的原始分量，使用多项式回归或响应面，不把绝对差值当作唯一契合指标。",
+        "abstractZh": "对54个组织中2151名员工的多层响应面分析显示，价值契合并非一律有益。保守与自我提升价值在高赋权文化中大致线性提高认同，开放与自我超越则呈弯曲关系，高水平时收益递减甚至转负。",
+        "abstractSource": "https://doi.org/10.1111/jasp.70072"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "high",
+        "priorityReason": "它直接说明文化内外群线索只有在与当前叙事边界一致时才发挥作用，可精化边界调节假设。",
+        "readingUse": "用于文化边界线索、诊断性和替代性接触机制。",
+        "researchConnection": "本国相似人物类比的作用可能不是熟悉性本身，而是它是否准确标示与当前人物价值冲突相关的群体边界。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Do Profile Photos Enhance Vicarious Intergroup Contact? Testing Theoretical Perspectives from Social Identity, the Social Identity Model of Deindividuation Effects (SIDE), and Social Presence",
+        "titleZh": "头像会增强替代性群际接触吗：社会认同、SIDE与社会临场理论检验",
+        "authors": "Yue (Nancy) Dai, Lunrui Fu, Wufan Jia",
+        "year": 2026,
+        "venue": "Communication Research, OnlineFirst",
+        "source": "SAGE",
+        "url": "https://doi.org/10.1177/00936502261466759",
+        "doi": "https://doi.org/10.1177/00936502261466759",
+        "publicationDate": "2026-07-06",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://journals.sagepub.com/doi/10.1177/00936502261466759",
+        "peerReviewSource": "https://journals.sagepub.com/doi/10.1177/00936502261466759",
+        "apaCitation": "Dai, Y. (N.), Fu, L., & Jia, W. (2026). Do profile photos enhance vicarious intergroup contact? Testing theoretical perspectives from social identity, the social identity model of deindividuation effects (SIDE), and social presence. Communication Research. Advance online publication. https://doi.org/10.1177/00936502261466759",
+        "takeaway": "N=1661的2×2实验显示，头像只有在清楚标示当前互动所涉及的群体边界时，才会提高群体差异觉察，并通过对内群评论者的认同改善外群反应；同时建模后只保留群际路径。",
+        "theory": "在社会认同、去个体化效应模型与社会临场理论之间比较竞争机制，提出线索诊断性决定视觉丰富性是否增强群际接触。",
+        "data": "1661名参与者观察新闻评论区中的群际互动，主题分别涉及反亚裔偏见与HIV污名。",
+        "method": "2×2实验操纵互动主题与是否显示头像，测量相关群体边界觉察、内群评论者认同、人际或群际印象及外群反应，并比较中介路径。",
+        "results": "头像在种族线索与议题群体边界一致时增强群体觉察和内群认同，进而改善外群反应；头像无法可视化HIV身份时没有同样作用。联合模型只支持群际路径。",
+        "limitations": "研究检验的是观察评论互动，而非接触人物叙事。头像同时包含多种属性，线索诊断性高度依赖议题，不能简单推断可见文化标签总是有利。",
+        "hypothesisImplication": "简报推论：文化标签对价值契合效应的调节取决于标签对当前价值冲突的诊断性，非诊断标签不应产生同等作用。",
+        "manipulationImplication": "简报推论：预试文化来源、服饰和类比线索是否确实让受众识别实验所需的群体边界，并设置诊断与非诊断线索。",
+        "measurementImplication": "简报推论：测量群体边界觉察、内群人物认同、外群人物评价和整体文化态度，避免合并为单一好感。",
+        "abstractZh": "N=1661的2×2实验显示，头像只有在清楚标示当前互动所涉及的群体边界时，才会提高群体差异觉察，并通过对内群评论者的认同改善外群反应；同时建模后只保留群际路径。",
+        "abstractSource": "https://doi.org/10.1177/00936502261466759"
+      },
+      {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "full",
+        "originalAbstract": "This study employs the Theory of Planned Behavior (TPB) to investigate the key factors influencing audience intention to watch Virtual YouTubers (VTubers). Guided by the decomposition logic of the decomposed theory of planned behavior, twelve antecedent variables were systematically integrated to decompose the three core TPB dimensions—attitude, subjective norms, and perceived behavioral control—within VTuber consumption contexts. Among these, three domain-specific variables—virtual identity identification, ACG culture identity, and cross-cultural influence—were introduced to capture the unique cultural and psychological characteristics of VTuber audiences. Data were collected through an online survey platform, yielding 352 valid responses, and analyzed using Structural Equation Modeling (SEM). The findings reveal that audience attitude and subjective norms significantly and positively influence watching intention, while perceived behavioral control exhibits a relatively weaker effect. Content professionalism and sense of virtual community emerge as the primary antecedents affecting attitude and subjective norms, indicating that audiences prioritize content quality and community connections over virtual identity identification. Time availability proves to be the most crucial determinant of perceived behavioral control, reflecting the constraints of attention economy on VTuber viewing behavior. This study represents the first systematic application of DTPB in quantitative empirical research within the VTuber domain. Beyond contextual application, the findings reveal important boundary conditions: the unexpectedly weak effect of virtual identity identification challenges prevailing assumptions about avatar-based consumption, while the dominance of time constraints over economic barriers provides empirical evidence for attention economy dynamics in virtual entertainment contexts. The results offer both theoretical insights into TPB’s applicability boundaries in emerging virtual content domains and practical implications for platform operation and content design strategies.",
+        "abstractUnavailableReason": "",
+        "readingPriority": "normal",
+        "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+        "readingUse": "用于区分人物认同、亚文化认同、社区规范和行为意向。",
+        "researchConnection": "提示人物认同未必是传播意向的唯一来源，文化共同体规范、内容质量和时间资源可能形成独立路径。",
+        "publicationType": "journal",
+        "publicationStatus": "published",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "Cross-dimensional cultural identity: a multi-dimensional empirical investigation of VTuber audience behavior through the lens of theory of planned behavior",
+        "titleZh": "跨维度文化认同：计划行为理论视角下VTuber受众行为的多维实证研究",
+        "authors": "Yuan-Ming Chang, Juan Wu, Yan-Xin Hu, Shih-Chih Chen",
+        "year": 2026,
+        "venue": "Frontiers in Psychology, 17, 1675447",
+        "source": "Frontiers in Psychology",
+        "url": "https://doi.org/10.3389/fpsyg.2026.1675447",
+        "doi": "https://doi.org/10.3389/fpsyg.2026.1675447",
+        "publicationDate": "2026-05-13",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1675447/full",
+        "peerReviewSource": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1675447/full",
+        "apaCitation": "Chang, Y.-M., Wu, J., Hu, Y.-X., & Chen, S.-C. (2026). Cross-dimensional cultural identity: A multi-dimensional empirical investigation of VTuber audience behavior through the lens of theory of planned behavior. Frontiers in Psychology, 17, Article 1675447. https://doi.org/10.3389/fpsyg.2026.1675447",
+        "takeaway": "352名中国Bilibili受众的结构方程模型显示，态度和主观规范显著预测观看意向，内容专业性与虚拟社区感比虚拟身份认同更重要，跨文化影响和ACG文化认同主要通过规范路径发挥作用。",
+        "theory": "以分解的计划行为理论整合内容、互动、文化身份、跨文化影响、社区规范与资源约束，区分人物身份认同和文化共同体认同。",
+        "data": "352名中国大陆Bilibili用户，主要通过VTuber相关微信群便利招募，77.6%为18至35岁，使用16个潜变量和64个观测指标。",
+        "method": "在线横断面问卷与协方差结构方程模型，检验12个前因对态度、主观规范和感知行为控制的影响，再预测观看意向。",
+        "results": "态度和主观规范显著正向预测观看意向，感知控制较弱。内容专业性对态度影响最强，虚拟社区感对主观规范重要；虚拟身份认同弱于预期，时间可得性是感知控制最强前因。",
+        "limitations": "便利样本、单一国家、横断面自报和观看意向都限制因果与外推。研究测量的是感知跨文化影响，而不是跨国受众实际差异。",
+        "hypothesisImplication": "简报推论：人物认同影响传播意向的同时，主观规范与文化共同体认同可能构成并列机制。",
+        "manipulationImplication": "简报推论：实验保持内容专业性和制作质量一致，避免把文化类比效应与内容质量混淆。",
+        "measurementImplication": "简报推论：分别测量人物认同、文化身份、社区规范、态度、感知控制和真实或意向性传播行为。",
+        "abstractLicense": "CC BY 4.0；原文摘要按Frontiers开放许可原样呈现，作者与来源见题录。",
+        "abstractZh": "352名中国Bilibili受众的结构方程模型显示，态度和主观规范显著预测观看意向，内容专业性与虚拟社区感比虚拟身份认同更重要，跨文化影响和ACG文化认同主要通过规范路径发挥作用。",
+        "abstractSource": "https://doi.org/10.3389/fpsyg.2026.1675447"
+      },
+      {
+        "evidence": "理论综述",
+        "relevance": "研究启示是本简报基于论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。",
+        "readingPriority": "normal",
+        "priorityReason": "与当日主题相关，且题录、摘要与发表状态可以核验。",
+        "readingUse": "用于把理解、表达和传播意向放入叙事能动性框架。",
+        "researchConnection": "可把传播意向理解为受众能否把外来神话人物整合进自己的因果叙事并重新讲述，而不只是是否喜欢该人物。",
+        "publicationType": "journal",
+        "publicationStatus": "online-first",
+        "peerReviewed": true,
+        "topicIds": [
+          "culture"
+        ],
+        "category": "博士论文专题 · 同行评审",
+        "title": "How Artificial Intelligence Shapes Human Narratives",
+        "titleZh": "人工智能如何塑造人类叙事",
+        "authors": "J. Hunter Priniski",
+        "year": 2026,
+        "venue": "Journal of Language and Social Psychology, OnlineFirst",
+        "source": "SAGE",
+        "url": "https://doi.org/10.1177/0261927X261493082",
+        "doi": "https://doi.org/10.1177/0261927X261493082",
+        "publicationDate": "2026-09-30",
+        "publicationDatePrecision": "day",
+        "publicationDateSource": "https://journals.sagepub.com/doi/10.1177/0261927X261493082",
+        "peerReviewSource": "https://journals.sagepub.com/doi/10.1177/0261927X261493082",
+        "apaCitation": "Priniski, J. H. (2026). How artificial intelligence shapes human narratives. Journal of Language and Social Psychology. Advance online publication. https://doi.org/10.1177/0261927X261493082",
+        "takeaway": "论文提出叙事能动性框架，认为个体与群体通过形成、沟通和修正因果叙事来行动。大语言模型、推荐系统与代理系统的影响取决于它们增强还是替代人的叙事能动性。",
+        "theory": "以个人叙事、群体共享理解和叙事能动性连接叙事心理学、计算社会科学与人机互动，强调AI输出必须经人的叙事解释才能转化为现实行动。",
+        "data": "概念综合，不含单一新样本。论文综合人机协作、推荐系统和代理式AI的既有实验与理论研究。",
+        "method": "概念综合而非元分析，围绕大语言模型、社交媒体推荐和机构代理三类系统组织跨领域证据。",
+        "results": "论文提出理论判断：同一AI系统既可能提高也可能削弱人的叙事形成和传播能力，互补绩效依赖人机能力与错误类型的非对称性。",
+        "limitations": "概念综合没有给出效应量或系统检索流程，不能证明具体文化类比或人物价值契合的因果效应。",
+        "hypothesisImplication": "简报推论：理解与人物认同只有转化为受众可自主重述的叙事结构时，才更可能提高传播意向。",
+        "manipulationImplication": "简报推论：比较直接给出类比解释与让受众自行生成本国类比，检验外部支架是否增强或替代叙事能动性。",
+        "measurementImplication": "简报推论：增加自由重述、因果结构完整性、叙事自主感和愿意向他人解释人物的指标。",
+        "abstractZh": "论文提出叙事能动性框架，认为个体与群体通过形成、沟通和修正因果叙事来行动。大语言模型、推荐系统与代理系统的影响取决于它们增强还是替代人的叙事能动性。",
+        "abstractSource": "https://doi.org/10.1177/0261927X261493082"
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.1111/jasp.70105",
+        "reason": "同时操纵讲述者文化身份与披露时机，并使用跨文化民间故事，最直接连接群体边界、认同和叙事接收。"
+      },
+      {
+        "doi": "https://doi.org/10.1111/jasp.70072",
+        "reason": "以Schwartz环状价值结构和响应面模型证明契合并非一律有利，最适合修正博士论文的价值契合假设与估计方式。"
+      },
+      {
+        "doi": "https://doi.org/10.1177/00936502261466759",
+        "reason": "以大样本实验说明群体线索只有在对当前边界具有诊断性时才发挥作用，可直接定义文化内外群调节的边界条件。"
+      }
+    ]
+  }
+}
