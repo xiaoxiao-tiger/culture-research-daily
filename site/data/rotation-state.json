@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-03",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-30",
@@ -192,11 +192,11 @@
       }
     },
     "ct": {
-      "lastAttemptAt": "2026-10-27",
-      "lastCheckedAt": "2026-10-27",
+      "lastAttemptAt": "2026-11-03",
+      "lastCheckedAt": "2026-11-03",
       "status": "completed",
-      "lastCompletedAt": "2026-10-27",
-      "reason": "Oxford Academic Advance Articles directory was fully readable: 25 Research Articles, one Correction and one Book Review. All 25 research articles were included.",
+      "lastCompletedAt": "2026-11-03",
+      "reason": "Oxford Academic Advance Articles directory was fully readable on 2026-11-03: 25 Research Articles, one Correction and one Book Review. No research article was newer than or different from the complete 2026-10-27 snapshot.",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-27",
@@ -256,17 +256,49 @@
             "2025-09-15",
             "2025-08-07"
           ]
+        },
+        {
+          "checkedAt": "2026-11-03",
+          "url": "https://academic.oup.com/ct/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/ct/qtag019",
+            "https://doi.org/10.1093/ct/qtag017",
+            "https://doi.org/10.1093/ct/qtag018",
+            "https://doi.org/10.1093/ct/qtag016",
+            "https://doi.org/10.1093/ct/qtag011",
+            "https://doi.org/10.1093/ct/qtag004",
+            "https://doi.org/10.1093/ct/qtag014",
+            "https://doi.org/10.1093/ct/qtag010",
+            "https://doi.org/10.1093/ct/qtag007",
+            "https://doi.org/10.1093/ct/qtag006",
+            "https://doi.org/10.1093/ct/qtag008",
+            "https://doi.org/10.1093/ct/qtag009",
+            "https://doi.org/10.1093/ct/qtag001",
+            "https://doi.org/10.1093/ct/qtag002",
+            "https://doi.org/10.1093/ct/qtag003",
+            "https://doi.org/10.1093/ct/qtaf038",
+            "https://doi.org/10.1093/ct/qtaf037",
+            "https://doi.org/10.1093/ct/qtaf032",
+            "https://doi.org/10.1093/ct/qtaf027",
+            "https://doi.org/10.1093/ct/qtaf031",
+            "https://doi.org/10.1093/ct/qtaf028",
+            "https://doi.org/10.1093/ct/qtaf021",
+            "https://doi.org/10.1093/ct/qtaf022",
+            "https://doi.org/10.1093/ct/qtaf020",
+            "https://doi.org/10.1093/ct/qtaf015"
+          ]
         }
       ],
       "completedIssues": [],
       "directoryObservation": {
-        "checkedAt": "2026-10-27",
+        "checkedAt": "2026-11-03",
         "url": "https://academic.oup.com/ct/advance-articles",
         "complete": true,
         "reportedTotal": 27,
         "researchArticleCount": 25,
         "nonResearchCount": 2,
-        "scopeNote": "Complete visible Advance Articles directory on 2026-10-27."
+        "scopeNote": "Complete visible Advance Articles directory on 2026-11-03; no new research article since the complete 2026-10-27 snapshot."
       }
     },
     "nms": {
@@ -312,11 +344,11 @@
   },
   "general": {
     "pnas": {
-      "lastAttemptAt": "2026-10-28",
+      "lastAttemptAt": "2026-11-03",
       "status": "completed",
-      "lastCompletedAt": "2026-10-28",
-      "lastCheckedAt": "2026-10-28",
-      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2626763123",
+      "lastCompletedAt": "2026-11-03",
+      "lastCheckedAt": "2026-11-03",
+      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2615627123",
       "publicationDate": "2026-10-19",
       "socialScienceAssessment": "confirmed"
     },
