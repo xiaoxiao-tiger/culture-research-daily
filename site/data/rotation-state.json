@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-30",
@@ -302,18 +302,20 @@
       }
     },
     "nms": {
-      "lastAttemptAt": "2026-10-28",
-      "lastCheckedAt": "2026-10-28",
-      "status": "blocked",
-      "reason": "Publisher Online First directory remained behind a Cloudflare human-verification page after one normal reload. Public indexing exposed only partial entries, so no complete snapshot or issue cursor advanced.",
+      "lastAttemptAt": "2026-11-04",
+      "lastCheckedAt": "2026-11-04",
+      "status": "partial",
+      "reason": "Official OnlineFirst directory reported 203 entries, but publisher access controls allowed reliable verification of only the four newest research articles. Partial snapshot published; rotation completion not advanced.",
       "lastCompletedAt": null,
       "onlineSnapshots": [],
       "completedIssues": [],
       "directoryObservation": {
-        "checkedAt": "2026-10-28",
-        "url": "https://journals.sagepub.com/toc/nmsa/0/0?ContentItemType=research-article&pageSize=100&sortBy=FullEpubDateField&startPage=0",
+        "checkedAt": "2026-11-04",
+        "url": "https://journals.sagepub.com/toc/NMS/0/0",
         "complete": false,
-        "scopeNote": "The publisher page required human verification after one normal reload. Partial public indexing was not treated as a complete issue."
+        "reportedTotal": 203,
+        "verifiedResearchArticleCount": 4,
+        "scopeNote": "Newest four research articles verified individually; remaining directory pagination inaccessible."
       }
     },
     "sms": {
@@ -353,13 +355,13 @@
       "socialScienceAssessment": "confirmed"
     },
     "nature": {
-      "lastAttemptAt": "2026-10-29",
+      "lastAttemptAt": "2026-11-04",
       "status": "completed",
-      "lastCompletedAt": "2026-10-29",
-      "lastCheckedAt": "2026-10-29",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11203-1",
-      "publicationDate": "2026-10-28",
-      "socialScienceAssessment": "uncertain"
+      "lastCompletedAt": "2026-11-04",
+      "lastCheckedAt": "2026-11-04",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11049-7",
+      "publicationDate": "2026-09-23",
+      "socialScienceAssessment": "confirmed"
     },
     "science": {
       "lastAttemptAt": "2026-10-30",
