@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-10-30",
@@ -319,10 +319,10 @@
       }
     },
     "sms": {
-      "lastAttemptAt": "2026-10-29",
-      "lastCheckedAt": "2026-10-29",
+      "lastAttemptAt": "2026-11-05",
+      "lastCheckedAt": "2026-11-05",
       "status": "completed",
-      "lastCompletedAt": "2026-10-29",
+      "lastCompletedAt": "2026-11-05",
       "onlineSnapshots": [],
       "completedIssues": [
         {
@@ -340,8 +340,25 @@
             "https://doi.org/10.1177/20563051261495196",
             "https://doi.org/10.1177/20563051261496376"
           ]
+        },
+        {
+          "checkedAt": "2026-11-05",
+          "url": "https://journals.sagepub.com/toc/sms/current",
+          "title": "Volume 12, Issue 4 · October-December 2026 · 2026-11-05复核",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1177/20563051261483376",
+            "https://doi.org/10.1177/20563051261487940",
+            "https://doi.org/10.1177/20563051261488115",
+            "https://doi.org/10.1177/20563051261489877",
+            "https://doi.org/10.1177/20563051261490338",
+            "https://doi.org/10.1177/20563051261490645",
+            "https://doi.org/10.1177/20563051261495196",
+            "https://doi.org/10.1177/20563051261496376"
+          ]
         }
-      ]
+      ],
+      "reason": "Official current issue directory remained fully readable and contained the same eight research articles already recommended on 2026-10-22 and 2026-10-29; no new paper was added."
     }
   },
   "general": {
@@ -364,20 +381,20 @@
       "socialScienceAssessment": "confirmed"
     },
     "science": {
-      "lastAttemptAt": "2026-10-30",
+      "lastAttemptAt": "2026-11-05",
       "status": "blocked",
-      "reason": "Science current research directory remained behind human verification. Public indexing did not establish a complete current directory, so no candidate or completed cursor was recorded.",
+      "reason": "Science current directory remained behind access verification, so no candidate or completed cursor was recorded.",
       "lastCompletedAt": null,
-      "lastCheckedAt": "2026-10-30"
+      "lastCheckedAt": "2026-11-05"
     },
     "science-advances": {
-      "lastAttemptAt": "2026-10-31",
+      "lastAttemptAt": "2026-11-05",
       "status": "completed",
-      "lastCompletedAt": "2026-10-31",
-      "lastCheckedAt": "2026-10-31",
-      "lastRecommendedDoi": "https://doi.org/10.1126/sciadv.aeg4737",
-      "publicationDate": "2026-10-30",
-      "socialScienceAssessment": "confirmed"
+      "lastCompletedAt": "2026-11-05",
+      "lastCheckedAt": "2026-11-05",
+      "lastRecommendedDoi": "https://doi.org/10.1126/sciadv.aed4003",
+      "publicationDate": "2026-10-23",
+      "socialScienceAssessment": "uncertain"
     },
     "scientific-data": {
       "lastAttemptAt": "2026-11-01",
