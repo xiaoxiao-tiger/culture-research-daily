@@ -1,0 +1,333 @@
+import copy
+import json
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[1] / "site/data"
+date = "2026-11-06"
+unavailable = "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。"
+fallback = {
+    "reason": "Google Scholar原生页面返回异常流量验证，未取得可核验结果或引用次数，且未尝试绕过验证。",
+    "channel": "改用出版方官网、官方目录、PubMed、NBER、SSRN与arXiv官方记录进行发现和逐篇核验。",
+    "checkedAt": date,
+}
+
+
+def paper(**v):
+    x = {
+        "evidence": "摘要核验", "relevance": "研究启示是本简报依据论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable", "originalAbstract": "", "abstractUnavailableReason": unavailable,
+        "readingPriority": "normal", "priorityReason": "题录、摘要与日期可以核验，且与当日主题相关。",
+        "readingUse": "用于理论框架、研究设计或结果讨论。", "researchConnection": "作为一般研究追踪，和博士论文的关系见逐篇说明。",
+    }
+    x.update(v)
+    x.setdefault("abstractZh", x["takeaway"]); x.setdefault("abstractSource", x["url"])
+    return x
+
+
+def journal(**v):
+    discipline = v.pop("discipline", "communication")
+    x = {
+        "publicationType": "journal", "publicationStatus": "published", "peerReviewed": True,
+        "discoverySource": "Publisher", "journalEdition": "SSCI", "discipline": discipline,
+        "indexSource": "site/data/journals.json中的传播学SSCI表或Clarivate Master Journal List公开期刊资料",
+        "quartileSource": "site/data/journals.json中的用户上传传播学SSCI Q1/Q2表；跨学科社会科学论文不冒充分区",
+        "jifQuartile": "Q1" if discipline == "communication" else "未单列",
+        "citationStatus": "unverified", "citationCount": None, "citationSource": None,
+        "citationSourceUrl": None, "citationCheckedAt": None,
+        "citationNote": "Google Scholar原生页面触发异常流量验证，未取得实际被引次数，不以其他指标替代。",
+        "selectionReason": "在可核验候选中按博士论文直接相关性、设计质量和首次发表日期综合选择。",
+        "topicIds": ["culture"], "category": "传播学与社会科学 · 出版方回退",
+    }
+    x.update(v)
+    return paper(**x)
+
+
+def dissertation(x, apa, hypothesis, manipulation, measurement, reason):
+    x.update(
+        apaCitation=apa, peerReviewed=True, peerReviewSource=x["url"], publicationDateSource=x["url"],
+        readingPriority="high", priorityReason=reason,
+        hypothesisImplication="简报推论：" + hypothesis,
+        manipulationImplication="简报推论：" + manipulation,
+        measurementImplication="简报推论：" + measurement,
+    )
+    return x
+
+
+cross = [
+    paper(
+        title="Using AI Predictions to Augment Rather Than Replace Surveys", titleZh="用人工智能预测增强而非替代调查",
+        authors="Lai Wei, Yifei Zhu", year=2026, venue="arXiv:2611.06743", source="arXiv", sourceDatabase="arXiv",
+        category="其他研究 · 最新", url="https://arxiv.org/abs/2611.06743", doi="https://doi.org/10.48550/arXiv.2611.06743", arxivId="2611.06743",
+        topicIds=["methods", "sycophancy"], selectionBucket="latest", publicationType="preprint",
+        publicationDate="2026-11-04", publicationDatePrecision="day", publicationDateSource="https://arxiv.org/abs/2611.06743",
+        takeaway="论文反对以大模型合成回答替代真实调查，转而把模型预测作为辅助测量纳入预测增强推断。作者比较混合受试设计下的估计效率，强调少量真实人类样本仍承担偏差校正作用。",
+        theory="把人工智能预测视为有误差的辅助变量，而非真实态度的替身；核心问题是如何在保持设计有效性的同时提高精度。",
+        data="论文使用社会调查数据与大模型生成的个体层预测进行方法评估。公开摘要未列出全部数据集名称、样本量与模型版本。",
+        method="采用prediction-powered inference与社会学混合受试设计，把有人类标签的子样本用于校正大规模模型预测的系统偏差。",
+        results="在模型预测具有信息量且校正样本覆盖充分时，联合估计可提高社会调查统计效率；模型预测不能消除真实样本需求。",
+        limitations="预印本尚未同行评审；公开摘要不足以核验各数据集的精度增益、偏差大小和跨文化外推。",
+        readingUse="用于大模型辅助预试和调查估计。",
+        researchConnection="博士论文可以用大模型辅助材料筛查，但外国受众的理解、好感、认同与传播意向仍须由真实受众数据校正。",
+    ),
+    paper(
+        title="Elon Musk’s Political Economy", titleZh="埃隆·马斯克的政治经济学",
+        authors="Boris N. Mamlyuk", year=2026, venue="SSRN Working Paper 7679782", source="SSRN", sourceDatabase="SSRN",
+        category="其他研究 · 最新", url="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7679782", doi="https://doi.org/10.2139/ssrn.7679782",
+        topicIds=["sycophancy"], selectionBucket="latest", publicationType="working-paper",
+        publicationDate="2026-11-02", publicationDatePrecision="day", publicationDateSource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7679782",
+        takeaway="论文把X、xAI、SpaceX、Tesla及支付和机器人业务视为相互连接的公司国家计划，比较企业控制权、服务条款和公共承诺之间的不对称可撤回性。",
+        theory="以法律政治经济学分析平台治理、公司国家和退出权，区分法律固定的企业权利与可被单方改写的公众收益承诺。",
+        data="106页法律与制度分析，材料包括公司披露、控制者公开表述、服务条款及美国、欧盟、瑞士和海湾地区监管安排。",
+        method="第一手公司文件与公开陈述的文本和制度比较，构建三阶段、三情景的政策分析。",
+        results="作者认为企业对公众的权利被法律固定，而公众对企业的收益期待长期保持可撤回，由此形成平台权力和责任的不对称。",
+        limitations="SSRN工作论文尚未同行评审；规范性法律分析不提供行为实验，也不能单独识别公众态度或传播效果。",
+        readingUse="用于平台权力、承诺和退出权的背景讨论。",
+        researchConnection="可作为sycophancy主题的制度背景，提醒研究者把平台或AI的友好承诺与可验证责任区分。",
+    ),
+    paper(
+        title="Universities as Incubators of Mass Uprising", titleZh="大学作为群众起义的孵化器",
+        authors="Sultan Mehmood, Ahmed Mushfiq Mobarak", year=2026, venue="NBER Working Paper 35983", source="NBER", sourceDatabase="NBER",
+        category="其他研究 · 最新", url="https://www.nber.org/papers/w35983", doi="https://doi.org/10.3386/w35983",
+        topicIds=["methods"], selectionBucket="latest", publicationType="working-paper",
+        publicationDate="2026-11", publicationDatePrecision="month", publicationDateSource="https://www.nber.org/papers/w35983",
+        takeaway="研究连接孟加拉国2024年抗议的高频地理数据、Facebook抗议活动与社会连接、大学入学和人口资料。学生相关抗议先于校外动员，连向学生抗议地点的社会网络预测一周后的校外扩散。",
+        theory="大学通过集中学生、提高异议可见性并提供社会连接，使局部行动具备协调和扩散条件。",
+        data="孟加拉国2024年季风革命的高频地理编码抗议、Facebook活动与社会连接、大学入学和人口统计，并补充美国越战抗议与全球资料。",
+        method="比较学生集中度、非学生青年、受教育成人、城市化及尚未运营的安慰剂大学地点，并利用时间先后和网络连接检验扩散。",
+        results="学生相关抗议在时间上领先校外动员；学生集中和对抗议地点的社会连接具有预测力，替代人口解释与安慰剂大学不呈同样模式。",
+        limitations="工作论文尚未同行评审；观察性时序与安慰剂比较增强解释，但摘要证据不足以把全部关系表述为随机因果效应。",
+        readingUse="用于可见性、社会网络和跨地点扩散的识别设计。",
+        researchConnection="研究区分被看见、被连接和被扩散三个环节，可帮助博士论文把人物曝光、接收判断与传播意向建模为不同阶段。",
+    ),
+    paper(
+        title="For You, Not for Everyone: Bystander-Aware Delivery of Critical Feedback in Robot Tutoring", titleZh="只给你看而非让所有人听见：机器人辅导中的旁观者感知反馈",
+        authors="Atikkhan Faridkhan Nilgar, Manuel Dietrich, Kristof Van Laerhoven", year=2026, venue="arXiv:2611.05001", source="arXiv", sourceDatabase="arXiv",
+        category="其他研究 · 重要研究精选", url="https://arxiv.org/abs/2611.05001", doi="https://doi.org/10.48550/arXiv.2611.05001", arxivId="2611.05001",
+        topicIds=["sycophancy"], selectionBucket="cited", publicationType="preprint", publicationDate="2026-11-03", publicationDatePrecision="day", publicationDateSource="https://arxiv.org/abs/2611.05001",
+        takeaway="40人组间实验保持批评内容相同，只改变有旁观者时机器人的朝向与传递模态。适应性条件提高隐私意识和社会能力评价，但是否降低尴尬的证据不确定。",
+        theory="将社会情境适应分解为环境感知、身体朝向和公开或私密模态选择，检验内容恒定时传递方式的关系后果。",
+        data="40名参与者，每组20人；先无旁观者，随后旁观者进入，参与者收到两条与实际表现无关的脚本化批评。",
+        method="组间比较始终公开朗读与检测旁观者后转身、静默显示反馈两种机器人行为，测量隐私意识、社会能力和尴尬。",
+        results="适应性机器人获得更高隐私意识和社会能力评分；尴尬下降证据不足，说明社会能力评价与情绪结果并不等价。",
+        limitations="预印本尚未同行评审，样本小，批评内容带夸张戏谑，不能代表一般教学或跨文化传播。",
+        citationStatus="unverified", citationNote="Google Scholar受异常流量验证阻断，未核验实际引用次数。", selectionReason="操纵清楚并提供可复核样本、条件和结果，适合检验传播渠道与社会情境。",
+        readingUse="用于传播模态和旁观者情境操纵。", researchConnection="提示同一人物解释在公开分享与私下阅读中可能产生不同接收，应固定或显式操纵观看情境。",
+    ),
+    paper(
+        title="Coding Cultural Distortion Risk: Operationalizing Decoding Positions in the Transnational Reception of Chinese Online Media Exports", titleZh="编码文化失真风险：中国网络媒体出海接收中解码位置的操作化",
+        authors="Xiaoyu Meng", year=2026, venue="SSRN Working Paper 6858438", source="SSRN", sourceDatabase="SSRN",
+        category="其他研究 · 重要研究精选", url="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6858438", doi="https://doi.org/10.2139/ssrn.6858438",
+        topicIds=["culture", "methods"], selectionBucket="cited", publicationType="working-paper", publicationDate="2026-06-18", publicationDatePrecision="day", publicationDateSource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6858438",
+        takeaway="论文把中国网络文学、视听内容与游戏的海外评论分为符号、叙事、价值和平台再编码四类失真，并映射到主导、协商和对抗三种解码位置。三平台4200条英文评论试编码的主要类别Krippendorff α为0.83。",
+        theory="把Hall编码解码模型转为跨国受众评论的可观察分类，同时把平台再编码纳入原模型。",
+        data="三个平台的4200条英文评论。公开摘要没有列出平台名称、抽样窗口与各文化群体分布。",
+        method="构建编码手册并进行人工试编码，评估主类别与解码位置的编码一致性。",
+        results="总体主类别一致性达到0.83，但价值失真和协商式解码的一致性较低，显示边界类别仍需细化。",
+        limitations="SSRN工作论文尚未同行评审；评论文本不等同受众个体态度，平台样本和国别边界未充分核验。",
+        citationStatus="unverified", citationNote="Google Scholar受异常流量验证阻断，未核验实际引用次数。", selectionReason="直接处理中国媒体出海接收并提供可操作的编码框架和一致性证据。",
+        readingUse="用于海外评论编码、理解与价值判断的区分。", researchConnection="可把理解偏差、价值评价和平台再编码分开，但不能把评论立场直接当作人物认同或传播意向。",
+    ),
+]
+
+j1 = dissertation(journal(
+    title="Testing the bi-directional influence of media and identity: a longitudinal study of Muslim American adolescents", titleZh="检验媒体与身份的双向影响：穆斯林美国青少年的纵向研究",
+    authors="Muniba Saleem, Ismaharif Ismail", year=2025, venue="Human Communication Research, 51(3), 153–163", source="Human Communication Research", journalName="HUMAN COMMUNICATION RESEARCH",
+    url="https://doi.org/10.1093/hcr/hqaf011", doi="https://doi.org/10.1093/hcr/hqaf011", publicationDate="2025-05-07", publicationDatePrecision="day",
+    takeaway="220名族裔与语言背景多样的穆斯林美国青少年接受三年追踪。潜在增长模型更支持媒体消费推动身份变化，母语娱乐媒体与身份中心性和私人自尊相关，但公共自尊未呈相同关系。",
+    theory="社会身份满足理论预期媒体选择与身份发展相互影响，并将身份中心性、私人自尊和公共自尊区分。",
+    data="220名穆斯林美国青少年，三年纵向资料，受访者在族裔和语言背景上具有差异。",
+    method="潜在增长曲线模型同时估计媒体消费与社会身份的个体间差异和个体内变化，并比较媒体类型与语言。",
+    results="媒体到身份的证据强于身份到媒体；母语娱乐与身份中心性和私人自尊正相关，英文媒体在个体内外呈不同模式。",
+    limitations="观察性纵向模型不能完全排除时变混淆；青少年少数群体身份不等同外国成年受众对神话人物的接收。",
+    readingUse="用于文化内外群体身份和纵向机制。", researchConnection="证明身份维度需拆分，文化内群体媒体可能影响私人认同，却不必然改变对外部评价的判断。"),
+    "Saleem, M., & Ismail, I. (2025). Testing the bi-directional influence of media and identity: A longitudinal study of Muslim American adolescents. Human Communication Research, 51(3), 153–163. https://doi.org/10.1093/hcr/hqaf011",
+    "文化内群体媒体接触可能优先影响身份中心性和私人评价，而不必然改变公共评价。",
+    "在文化来源条件之外记录受众的族裔、语言和身份中心性，并考虑纵向或重复测量。",
+    "分别测量身份中心性、私人自尊、公共评价、人物认同和传播意向。",
+    "提供三年纵向证据并区分身份维度，适合设计文化边界的调节模型。")
+
+j2 = dissertation(journal(
+    title="Using media to navigate identity? U.S. Black parents’ encouragement and selection of content for their children", titleZh="用媒体协商身份？美国黑人父母对子女内容的鼓励与选择",
+    authors="AnneMarie K. McClain, Marie-Louise Mares", year=2025, venue="Human Communication Research, 51(4), 278–290", source="Human Communication Research", journalName="HUMAN COMMUNICATION RESEARCH",
+    url="https://doi.org/10.1093/hcr/hqaf006", doi="https://doi.org/10.1093/hcr/hqaf006", publicationDate="2025-04-03", publicationDatePrecision="day",
+    takeaway="498名美国黑人父母被随机要求想象孩子经历普通一天或同伴种族歧视，再观看四个在情绪基调和种族主题上变化的预告片。种族歧视情境提高选择种族相关内容的概率，父母和儿童身份强度也预测鼓励或选择。",
+    theory="选择性接触的自我与情绪管理模型解释身份威胁如何改变内容选择，区别于仅追求情绪修复的情绪管理预测。",
+    data="498名美国黑人父母，子女年龄分为3至5岁、9至11岁和15至17岁。",
+    method="随机操纵普通一天或同伴种族歧视情境，随后对四个情绪基调与种族主题交叉变化的预告片评分并做单项选择。",
+    results="种族相关内容总体获得更高鼓励；歧视条件提高选择种族相关及歧视描写内容的概率，身份强度具有额外预测力。",
+    limitations="父母为孩子代选而非受众直接接收；选择行为发生在美国黑人家庭语境，不能直接外推中国神话。",
+    readingUse="用于身份威胁、选择接触和行为结果。", researchConnection="文化内外群体边界可能先改变是否选择接触，再影响接触后的理解和认同，两个阶段应分别估计。"),
+    "McClain, A. K., & Mares, M.-L. (2025). Using media to navigate identity? U.S. Black parents’ encouragement and selection of content for their children. Human Communication Research, 51(4), 278–290. https://doi.org/10.1093/hcr/hqaf006",
+    "群体身份威胁可能调节文化内容选择，并进一步改变后续接收样本的组成。",
+    "在人物接收实验前独立操纵群体边界是否受威胁，并记录是否主动选择观看。",
+    "把内容选择、理解、好感、认同与传播意向作为连续但不同的结果。",
+    "随机操纵身份威胁并观察真实选择，适合补足接收研究常忽略的选择进入阶段。")
+
+j3 = dissertation(journal(
+    title="Does Character–Audience Matching Increase the Persuasive Impact of Anti-Sugar-Sweetened-Beverage Consumption Messages?", titleZh="人物与受众匹配会提高反含糖饮料信息的说服力吗",
+    authors="Yingke Li, James Dillard, Lijiang Shen", year=2025, venue="Health Communication, 40, 2060–2070", source="Health Communication", journalName="HEALTH COMMUNICATION",
+    url="https://doi.org/10.1080/10410236.2024.2440534", doi="https://doi.org/10.1080/10410236.2024.2440534", publicationDate="2024-12-16", publicationDatePrecision="day",
+    takeaway="研究从同一议题的91条真实传播材料中抽样，692名参与者评估人物与受众在性别、年龄和族裔上的匹配。三类表层匹配均无总体主效应，仅性别匹配对高含糖饮料消费者的感知有效性更高。",
+    theory="直接检验人口属性匹配是否提高人物信息的说服力，并把既有行为作为边界条件。",
+    data="692名参与者，91条倡导减少含糖饮料消费的真实信息。",
+    method="利用多条真实材料估计性别、年龄与族裔匹配的主效应及其与既有消费的交互。",
+    results="没有发现三类人口匹配的总体主效应；性别匹配仅在较高既有消费水平下提高感知信息有效性。",
+    limitations="健康议题与人物神话情境不同，感知有效性不能替代实际态度或行为，深层价值契合未被操纵。",
+    readingUse="用于表层匹配与深层价值契合的区分。", researchConnection="直接警示不能把国籍、性别或年龄相同当作价值契合，受众既有经验可能才是关键调节。"),
+    "Li, Y., Dillard, J., & Shen, L. (2025). Does character–audience matching increase the persuasive impact of anti-sugar-sweetened-beverage consumption messages? Health Communication, 40, 2060–2070. https://doi.org/10.1080/10410236.2024.2440534",
+    "表层人口匹配不会稳定提高说服，价值契合的效应应在控制表层匹配后检验。",
+    "正交操纵人物国别线索与深层价值行为，并预注册受众既有经验的调节。",
+    "测量感知表层相似、价值契合、既有熟悉性、人物认同和实际传播选择。",
+    "大样本和多材料设计提供表层匹配零主效应及边界条件，是反驳简单文化接近假设的关键证据。")
+
+j4 = dissertation(journal(
+    title="Identification with Characters of a National Narrative Health Communication Campaign Targeting Type 2 Diabetes", titleZh="全国糖尿病叙事传播活动中的人物认同",
+    authors="Anastasia Doré, Jennifer Grammes, Esra Egri, Lilli Priesterroth, Svenja B. Frenzel, Olaf Spörkel, Thomas Kubiak", year=2025,
+    venue="Health Communication, 40(5), 904–911", source="Health Communication", journalName="HEALTH COMMUNICATION",
+    url="https://doi.org/10.1080/10410236.2024.2378256", doi="https://doi.org/10.1080/10410236.2024.2378256", publicationDate="2024-07-16", publicationDatePrecision="day",
+    takeaway="9个焦点小组共76名德国2型糖尿病患者，其中两个小组由土耳其裔参与者组成。真人和名人证言人物通常被喜欢，但总体认同和相似性感知偏低；动画较少污名化，却也较少引发参与。",
+    theory="把人物喜欢和感知相似视为认同的前因，检验不同人物呈现形式在健康叙事中的作用。",
+    data="76名2型糖尿病患者，9个焦点小组；材料包括真人、动画和名人证言三类视频。",
+    method="焦点小组结合针对多个角色的喜欢、相似和认同评估，并比较不同视频形式的解释。",
+    results="喜欢并不足以产生认同；参与者认为自己与人物在个人和疾病特征上缺乏相似，动画虽少污名化但参与度也低。",
+    limitations="质性样本较小且集中于患者，不能估计因果效应；人物形式与具体内容可能同时变化。",
+    readingUse="用于区分好感、相似与人物认同。", researchConnection="直接支持博士论文把理解、好感、相似和认同分开测量，也说明低污名化不自动等于高参与。"),
+    "Doré, A., et al. (2025). Identification with characters of a national narrative health communication campaign targeting type 2 diabetes. Health Communication, 40(5), 904–911. https://doi.org/10.1080/10410236.2024.2378256",
+    "人物好感并不足以形成认同，感知相似可能是独立前因。",
+    "保持人物内容一致，分别操纵真人、动画或文化类比形式，并进行认同机制预试。",
+    "分别测量喜欢、个人相似、价值相似、污名感、认同和参与意愿。",
+    "以跨族裔焦点小组明确显示喜欢与认同可分离，是结果变量区分的直接证据。")
+
+j5 = dissertation(journal(
+    discipline="social-science", title="He sees the forest, I see the trees: Narrative perspective shifts how abstractly people construe a text", titleZh="他看森林，我看树木：叙事视角改变文本建构的抽象程度",
+    authors="Zachary Adolph Niese", year=2025, venue="Journal of Personality and Social Psychology, 129(5), 773–787", source="Journal of Personality and Social Psychology", journalName="JOURNAL OF PERSONALITY AND SOCIAL PSYCHOLOGY",
+    url="https://doi.org/10.1037/pspa0000462", doi="https://doi.org/10.1037/pspa0000462", publicationDate="2025-08-14", publicationDatePrecision="day",
+    takeaway="七项实验显示，第一人称相较第三人称叙事使行动被更具体地建构，并影响摘要偏好和献血说服。第一人称提高人物认同的效果取决于人物经历是否足够可关联，过于陌生时优势消失。",
+    theory="把叙事人称连接到解释水平，提出第一人称促进具体建构，第三人称促进抽象建构。",
+    data="实验1a、1b、2a、2b、3和4等七项实验；公开摘要未列各实验样本量。",
+    method="操纵第一或第三人称叙事，测量行动建构、摘要偏好、献血动机和人物认同，并检验经历可关联性的调节。",
+    results="第一人称促进具体建构并在具体论证配对时提高说服；只有人物经历可关联时，第一人称才提高认同。",
+    limitations="公开摘要不足以核验各实验样本和全部效应量；健康与短篇文本任务不等同神话人物接收。",
+    readingUse="用于叙事视角、加工流畅性和可关联性。", researchConnection="本国相似神话人物类比可能通过提高经历可关联性使第一人称叙事有效，视角与类比应避免混淆。"),
+    "Niese, Z. A. (2025). He sees the forest, I see the trees: Narrative perspective shifts how abstractly people construe a text. Journal of Personality and Social Psychology, 129(5), 773–787. https://doi.org/10.1037/pspa0000462",
+    "第一人称对人物认同的促进受经历可关联性调节，文化距离可能构成边界。",
+    "采用叙事人称与本国相似人物类比的二乘二设计，并预试人物经历可关联性。",
+    "测量具体或抽象建构、可关联性、加工流畅性、认同和传播意向。",
+    "多实验建立叙事视角到建构水平再到认同的边界链条，可直接优化类比实验材料。")
+
+journals = [j1, j2, j3, j4, j5]
+
+old = json.loads((root / "2026-10-30.json").read_text())
+collection = copy.deepcopy(next(g for g in old["groups"] if g["id"] == "communication-issue")["collection"])
+collection["checkedAt"] = date
+for entry in collection["toc"]:
+    if entry["status"] == "new":
+        entry.update(status="previously-recommended", recommendedDate="2026-10-30", reviewUrl="https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-30")
+
+general = paper(
+    title="Machine psychology for language models", titleZh="面向语言模型的机器心理学",
+    authors="Thilo Hagendorff, Ishita Dasgupta, Marcel Binz, Stephanie Chan, Andrew Lampinen, Jane X. Wang, Zeynep Akata, Eric Schulz", year=2026,
+    venue="Science Advances, 12(44), eaec1912", source="Science Advances", category="综合顶刊 · 社会科学",
+    url="https://doi.org/10.1126/sciadv.aec1912", doi="https://doi.org/10.1126/sciadv.aec1912", topicIds=["methods", "sycophancy"],
+    publicationType="journal", publicationStatus="published", peerReviewed=True, publicationDate="2026-10-30", publicationDatePrecision="day", publicationDateSource="https://pubmed.ncbi.nlm.nih.gov/42950038/",
+    socialScienceAssessment="confirmed", socialScienceReason="论文以实验心理学理论、范式和计算分析研究语言模型的行为与推理，并系统讨论把人类心理方法用于机器时的效度边界，直接属于社会与行为科学方法论。",
+    takeaway="综述主张把实验心理学的理论、任务与计算分析用于研究语言模型的涌现行为，而不只比较任务分数。作者同时强调人类构念与机器机制不能简单同一化。",
+    theory="把机器心理学界定为针对模型内部或行为机制的实验研究框架，连接认知理论、心理范式和计算建模。",
+    data="方法综述，整合现有语言模型实验研究，没有新的单一受试者样本。",
+    method="系统梳理理论视角、实验范式与计算分析技术，并总结最佳实践和未来方向。",
+    results="作者提出从性能评测转向机制发现的研究议程，同时列出测量效度、拟人化和人机可比性的关键警告。",
+    limitations="综述不提供新的因果估计；将为人类设计的任务用于模型时，表面行为相似不保证机制相同。",
+    readingUse="用于大模型作为研究对象与辅助工具的方法边界。",
+    researchConnection="博士论文若使用大模型预试叙事或模拟外国受众，应把模型行为视为辅助证据，并由真实受众验证构念和效应。",
+)
+
+groups = [
+    {"id":"crossdisciplinary","label":"其他研究","target":5,"sortBy":"split",
+     "selectionBuckets":[{"id":"latest","label":"最新","target":3},{"id":"cited","label":"重要研究精选","target":2,"sortBy":"relevance-quality","sortDescription":"Google Scholar受异常流量验证阻断后，按相关性和研究质量选择，不按引用量排名。","accessFallback":fallback}],
+     "sourceCoverage":[{"database":x,"status":"included"} for x in ["NBER","SSRN","arXiv"]],
+     "sortDescription":"最新3篇按首次公开日期降序并覆盖arXiv、NBER和SSRN；重要研究精选2篇按相关性和研究质量呈现。","papers":cross},
+    {"id":"journals","label":"传播学与社会科学","target":5,"sortBy":"relevance-quality-date",
+     "journalPriorityNote":"先执行不限期刊的主题检索。Google Scholar受阻后改用出版方和PubMed发现，再筛传播学SSCI期刊及高质量社会心理学期刊；本期4篇传播学、1篇社会心理学。",
+     "sortDescription":"按博士论文直接相关性、设计质量和首次发表日期综合排序，不冒充引用次数排序。","accessFallback":fallback,"papers":journals},
+    {"id":"communication-issue","label":"传播学顶刊推荐","unit":"issue","target":0,"sortBy":"issue","collection":collection,
+     "sortDescription":"不使用关键词。Oxford Academic完整Advance Articles目录与2026-10-30快照相同，6篇研究论文均已推荐，另1篇Oration为非研究，因此本次只记录完整复核。","papers":[]},
+    {"id":"general-science","label":"综合顶刊推荐","target":1,"sortBy":"publicationDate","rotationJournalId":"science-advances","selectedJournalId":"science-advances",
+     "sortDescription":"不使用主题关键词，直接检查Science Advances最新可访问一期，选取一篇未推荐且社会科学归属明确的方法综述。","papers":[general]},
+]
+
+refs = [p["doi"] for p in journals]
+weekly = {
+    "weekStart":"2026-10-31","weekEnd":date,
+    "topPapers":[
+        {"title":j3["title"],"url":j3["url"],"reason":"以692人和91条真实材料显示人口属性匹配没有稳定主效应，为区分文化接近与价值契合提供最直接反证。"},
+        {"title":j5["title"],"url":j5["url"],"reason":"七项实验把叙事人称、建构水平和经历可关联性连接起来，可直接指导神话人物类比材料设计。"},
+        {"title":"The role of value references in shaping cultures of engagement: evidence from COVID-19 news on Facebook in Romania and the U.K.","url":"https://doi.org/10.1093/hcr/hqae021","reason":"本周研究中最直接使用Schwartz价值并进行跨国文本测量，可支撑价值契合的内容编码与操纵检查。"},
+    ],
+    "designImplications":[
+        "采用文化来源与深层价值契合的二乘二设计，并把表层人口匹配作为控制而非价值契合替代。",
+        "在本国相似神话人物类比组中固定叙事人称，或与第一人称和第三人称正交操纵，预试经历可关联性和加工流畅性。",
+        "把是否选择接触、理解准确度、好感、人物认同和传播意向视为连续但不同阶段，避免仅在已选择观看者中解释总体接收。",
+        "大模型只用于材料筛查或辅助测量，保留真实外国受众子样本用于构念验证和偏差校正。",
+    ],
+    "literatureUses":[
+        "价值指涉研究用于Schwartz价值的文本编码与跨文化比较。",
+        "人物受众匹配研究用于反驳表层相似自动提高接收的简单假设。",
+        "叙事视角研究用于界定类比解释通过具体建构和可关联性发生作用的边界。",
+    ],
+    "openQuestions":[
+        "价值契合是在控制人物喜欢与表层相似后独立影响认同，还是主要经由经历可关联性起作用？",
+        "本国相似人物类比提高理解时，是否同时增加错误图式迁移或削弱中国人物的文化独特性？",
+        "文化内外群体边界先影响内容选择，还是在接触后调节价值契合到认同的路径，两个阶段能否在同一设计中识别？",
+    ],
+}
+
+data = {
+    "schemaVersion":6,"date":date,"timezone":"Asia/Shanghai","edition":"正式第34期",
+    "title":"从表层匹配到深层接收：价值契合、身份边界与叙事视角",
+    "summary":"本期完成其他研究5篇、传播学与社会科学5篇、Journal of Communication完整在线目录复核和Science Advances轮换推荐1篇。博士论文精选5篇同行评审研究，并完成10月31日至11月6日周评。",
+    "historyPolicy":"exclude-recommended","journalPolicy":"ssci-communication-q1-q2-and-social-science","searchPlatforms":["Google Scholar","NBER","SSRN","arXiv"],"activeTopicIds":["culture","sycophancy","methods"],
+    "searchSettings":{"source":"defaults + reading-plan","lookbackDays":30,"conflictNote":"当日没有生效的一次性或持续用户设置。博士论文标准强化culture主题，但未删除culture、sycophancy和methods，也未改动未来设置。"},
+    "notice":"逐篇依据官方记录、出版方页面及可访问正文核验。只有实际阅读正文关键部分才标全文核验；无法核验的样本、系数、识别和许可信息均明确说明。",
+    "searchNote":"Google Scholar原生主题查询返回异常流量提示后停止，不绕过验证，也不以Web of Science、OpenAlex、下载量或网页指标冒充引用次数。其余候选由NBER、SSRN、arXiv官方记录、出版方和PubMed发现并回到权威页面核验。",
+    "themeSearches":[
+      {"platform":"Google Scholar","query":"(\"cross-cultural reception\" OR \"value congruence\" OR \"character identification\") communication","timeRange":"2024年至今；检索日期2026-11-06","purpose":"culture主题发现，随后筛期刊并核验引用次数","status":"原生页面显示异常流量验证，未取得结果或引用次数，未绕过验证。"},
+      {"platform":"Google Scholar","query":"(sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\")","timeRange":"不限年份；检索日期2026-11-06","purpose":"sycophancy主题发现","status":"首次请求已触发站点级验证，因此未继续发送本主题请求，并启用指南规定的回退。"},
+      {"platform":"Google Scholar","query":"(\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\")","timeRange":"不限年份；检索日期2026-11-06","purpose":"methods主题发现","status":"首次请求已触发站点级验证，因此未继续发送本主题请求，并启用指南规定的回退。"},
+      {"platform":"NBER","query":"site:nber.org/papers 2026 culture social media communication education","timeRange":"优先近30日；检索日期2026-11-06","purpose":"NBER候选发现","status":"限定官方域名的公开网页检索成功，不冒称NBER站内高级检索；入选记录回到NBER官方页核验。"},
+      {"platform":"SSRN","query":"site:papers.ssrn.com 2026 cultural diffusion cross-cultural reception value congruence AI sycophancy","timeRange":"优先近30日，必要时扩展；检索日期2026-11-06","purpose":"SSRN候选发现","status":"限定官方域名的公开网页检索成功；题录、日期和摘要回到SSRN记录核验。"},
+      {"platform":"arXiv","query":"submittedDate:[202611010000 TO 202611062359] AND (all:communication OR all:culture OR all:narrative OR all:sycophancy OR all:social_media OR all:causal_inference)","timeRange":"2026-11-01至2026-11-06","purpose":"arXiv候选发现","status":"官方API检索成功，题名、作者、首次提交日期、摘要和arXiv ID完成核验。"}],
+    "periodicalChecks":[
+      {"platform":"Oxford Academic · Journal of Communication","query":"Advance Articles完整目录，不使用关键词","timeRange":"检查日期2026-11-06","purpose":"传播学顶刊整期轮换","status":"官方目录完整可读，与2026-10-30快照相同，没有新增研究论文。"},
+      {"platform":"Science Advances","query":"Volume 12, Issue 44及最新可访问文章，不使用关键词","timeRange":"检查日期2026-11-06","purpose":"综合顶刊轮换推荐","status":"官方题录与PubMed核验成功，入选论文题名、作者、日期、DOI和摘要均可核验。"}],
+    "verificationLog":[
+      {"platform":"Google Scholar","query":"当日主题检索与实际引用次数","timeRange":"核验日期2026-11-06","purpose":"主题发现与引用排序","status":"首次原生查询显示异常流量验证后停止；没有绕过验证、记录虚构0次引用或用其他指标替代。"},
+      {"platform":"NBER、SSRN与arXiv官方记录","query":"其他研究5篇的身份、首次公开日期、摘要与版本","timeRange":"核验日期2026-11-06","purpose":"逐篇核验与跨版本去重","status":"5篇均完成题录和摘要核验，并与截至2026-11-05的430条永久登记去重。"},
+      {"platform":"出版方、PubMed与权威题录","query":"期刊论文题名、作者、年份、期刊、同行评审状态、DOI、摘要、样本与方法","timeRange":"核验日期2026-11-06","purpose":"主题期刊、博士论文专题与轮换栏目逐篇核验","status":"6篇新期刊论文完成身份核验；只有公开证据支持的研究细节被写入，未知细节明确标示。"}],
+    "groups":groups,"coreTracking":[],"coreTrackingNote":"reading-plan与core-papers当日没有用户提交的核心论文请求，因此本期没有核心文献状态更新。",
+    "periodicalCheckNote":"两个轮换栏目不使用主题关键词。Journal of Communication完整在线目录无新增；Science Advances选取一篇最新可核验的方法综述。",
+    "dissertation":{"title":"从被看见到被接收","timeRange":"优先检查2026-11-05上期发布以来的新发表研究。没有发现足量且未推荐的直接相关新论文后，扩展至2024年以来尚未推荐的同行评审研究；本期5篇均明确作为补充，不冒称当日最新。",
+      "selectionNote":"本期从传播学与社会科学栏精选5篇同行评审论文，不重复建立完整解读。它们分别处理媒体与身份的纵向关系、身份威胁下的选择接触、表层人物匹配、喜欢与认同的区分、叙事视角与可关联性。",
+      "historyCoverage":"已核对网站截至2026-11-05的430条永久登记、现有简报、用户明确列出的既有文献、本轮可见对话及可访问清单，并按DOI、arXiv ID、规范化题名和已知版本别名去重。无法访问的完整旧对话和未同步私人清单不在覆盖范围内，因此不声称绝对完全去重。",
+      "selectedPapers":refs,"papers":[],"topPapers":[
+        {"doi":j3["doi"],"reason":"以多材料大样本显示表层人口匹配没有稳定主效应，最能支持价值契合与文化接近的概念区分。"},
+        {"doi":j5["doi"],"reason":"七项实验把叙事视角、建构水平和经历可关联性连接起来，可直接优化本国神话类比实验。"},
+        {"doi":j4["doi"],"reason":"跨族裔焦点小组清楚显示人物喜欢不等于人物认同，直接对应论文结果变量拆分。"}]},
+    "weeklyReview":weekly,
+}
+
+(root / f"{date}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+index_path = root / "index.json"
+index = [x for x in json.loads(index_path.read_text()) if x["date"] != date]
+count = sum(len(g["papers"]) for g in groups)
+index.insert(0, {"date":date,"title":data["title"],"summary":data["summary"],"edition":data["edition"],"count":count,"file":f"{date}.json"})
+index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
+
+state_path = root / "rotation-state.json"
+state = json.loads(state_path.read_text()); state["updatedAt"] = date
+joc = state["communication"]["joc"]
+joc.update(lastAttemptAt=date,lastCheckedAt=date,status="completed",lastCompletedAt=date,reason="Oxford Academic Advance Articles directory remained fully readable and unchanged from the complete 2026-10-30 snapshot; no new research article was added.")
+joc["onlineSnapshots"].append({"checkedAt":date,"url":collection["url"],"complete":True,"dois":[x["url"] for x in collection["toc"] if x.get("articleType") != "oration"]})
+sadv = state["general"]["science-advances"]
+sadv.update(lastAttemptAt=date,lastCheckedAt=date,status="completed",lastCompletedAt=date,lastRecommendedDoi=general["doi"],publicationDate=general["publicationDate"],socialScienceAssessment="confirmed")
+state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+print(f"Wrote {date} with {count} papers")

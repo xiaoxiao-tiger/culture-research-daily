@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-06",
   "communication": {
     "joc": {
-      "lastAttemptAt": "2026-10-30",
-      "lastCheckedAt": "2026-10-30",
+      "lastAttemptAt": "2026-11-06",
+      "lastCheckedAt": "2026-11-06",
       "status": "completed",
-      "lastCompletedAt": "2026-10-30",
+      "lastCompletedAt": "2026-11-06",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-16",
@@ -47,6 +47,76 @@
             "2026-09-08",
             "2026-08-30"
           ]
+        },
+        {
+          "checkedAt": "2026-11-06",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag020",
+            "https://doi.org/10.1093/joc/jqag017",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag018/8858993",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag014/8827379",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag016/8788307",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag015/8788306",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag013/8776177"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-06",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag020",
+            "https://doi.org/10.1093/joc/jqag017",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag018/8858993",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag014/8827379",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag016/8788307",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag015/8788306",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag013/8776177"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-06",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag020",
+            "https://doi.org/10.1093/joc/jqag017",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag018/8858993",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag014/8827379",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag016/8788307",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag015/8788306",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag013/8776177"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-06",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag020",
+            "https://doi.org/10.1093/joc/jqag017",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag018/8858993",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag014/8827379",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag016/8788307",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag015/8788306",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag013/8776177"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-06",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag020",
+            "https://doi.org/10.1093/joc/jqag017",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag018/8858993",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag014/8827379",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag016/8788307",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag015/8788306",
+            "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag013/8776177"
+          ]
         }
       ],
       "completedIssues": [
@@ -64,7 +134,7 @@
           ]
         }
       ],
-      "reason": "Oxford Academic Advance Articles directory was fully readable. One new Research Article was added since the complete 2026-10-16 snapshot; one Oration was recorded as non-research."
+      "reason": "Oxford Academic Advance Articles directory remained fully readable and unchanged from the complete 2026-10-30 snapshot; no new research article was added."
     },
     "hcr": {
       "lastCheckedAt": "2026-10-31",
@@ -388,13 +458,13 @@
       "lastCheckedAt": "2026-11-05"
     },
     "science-advances": {
-      "lastAttemptAt": "2026-11-05",
+      "lastAttemptAt": "2026-11-06",
       "status": "completed",
-      "lastCompletedAt": "2026-11-05",
-      "lastCheckedAt": "2026-11-05",
-      "lastRecommendedDoi": "https://doi.org/10.1126/sciadv.aed4003",
-      "publicationDate": "2026-10-23",
-      "socialScienceAssessment": "uncertain"
+      "lastCompletedAt": "2026-11-06",
+      "lastCheckedAt": "2026-11-06",
+      "lastRecommendedDoi": "https://doi.org/10.1126/sciadv.aec1912",
+      "publicationDate": "2026-10-30",
+      "socialScienceAssessment": "confirmed"
     },
     "scientific-data": {
       "lastAttemptAt": "2026-11-01",
