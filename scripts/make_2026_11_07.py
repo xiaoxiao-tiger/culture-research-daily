@@ -1,0 +1,348 @@
+import json
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[1] / "site/data"
+date = "2026-11-07"
+unavailable = "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。"
+fallback = {
+    "reason": "Google Scholar原生页面返回异常流量验证，未取得可核验结果或引用次数，且未尝试绕过验证。",
+    "channel": "改用出版方官网、官方目录、NBER、SSRN与arXiv官方记录进行发现和逐篇核验。",
+    "checkedAt": date,
+}
+
+
+def paper(**v):
+    x = {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报依据论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable", "originalAbstract": "", "abstractUnavailableReason": unavailable,
+        "readingPriority": "normal", "priorityReason": "题录、摘要与日期可以核验，且与当日主题相关。",
+        "readingUse": "用于理论框架、研究设计或结果讨论。",
+        "researchConnection": "作为一般研究追踪，和博士论文的关系见逐篇说明。",
+    }
+    x.update(v)
+    x.setdefault("abstractZh", x["takeaway"])
+    x.setdefault("abstractSource", x["url"])
+    return x
+
+
+def journal(**v):
+    discipline = v.pop("discipline", "communication")
+    q = v.pop("jifQuartile", "Q1" if discipline == "communication" else "未单列")
+    x = {
+        "publicationType": "journal", "publicationStatus": "online-first", "peerReviewed": True,
+        "discoverySource": "Publisher", "journalEdition": "SSCI", "discipline": discipline,
+        "indexSource": "传播学期刊依据site/data/journals.json用户上传SSCI表；其他社会科学期刊依据出版方题录与Clarivate Master Journal List公开期刊资料核验。",
+        "quartileSource": "传播学期刊依据site/data/journals.json中的SSCI Q1/Q2表；其他社会科学期刊不冒充分区。",
+        "jifQuartile": q, "citationStatus": "unverified", "citationCount": None,
+        "citationSource": None, "citationSourceUrl": None, "citationCheckedAt": None,
+        "citationNote": "Google Scholar原生页面触发异常流量验证，未取得实际被引次数，不以其他指标替代。",
+        "selectionReason": "在可核验候选中按博士论文直接相关性、研究设计质量和首次发表日期综合选择。",
+        "topicIds": ["culture"], "category": "传播学与社会科学 · 出版方回退",
+    }
+    x.update(v)
+    return paper(**x)
+
+
+def dissertation(x, apa, hypothesis, manipulation, measurement, reason):
+    x.update(
+        apaCitation=apa, peerReviewed=True, peerReviewSource=x["url"], publicationDateSource=x["url"],
+        readingPriority="high", priorityReason=reason,
+        hypothesisImplication="简报推论：" + hypothesis,
+        manipulationImplication="简报推论：" + manipulation,
+        measurementImplication="简报推论：" + measurement,
+    )
+    return x
+
+
+cross = [
+    paper(
+        title="How Generative AI Redefines Personalization and Diversity in the Newsroom",
+        titleZh="生成式人工智能如何重塑新闻个性化与多样性",
+        authors="Cheng Yu, Jim Chi, Aaron J. Snoswell, Orestis Papakyriakopoulos", year=2026,
+        venue="arXiv:2611.07931", source="arXiv", sourceDatabase="arXiv", category="其他研究 · 最新",
+        url="https://arxiv.org/abs/2611.07931", doi="https://doi.org/10.48550/arXiv.2611.07931", arxivId="2611.07931",
+        topicIds=["sycophancy", "methods"], selectionBucket="latest", publicationType="preprint",
+        publicationDate="2026-11-05", publicationDatePrecision="day", publicationDateSource="https://arxiv.org/abs/2611.07931",
+        takeaway="研究访谈16名公共服务、商业和国家关联媒体的专业人员，发现生成式人工智能把新闻多样性的决策前移到写作工具、素材选择和多版本生产阶段。记者仍承担形式责任，却难以观察工具如何过滤来源与视角。",
+        theory="将个性化区分为面向受众的内容适配与面向生产者的工具适配，强调新闻多样性由编辑判断、基础设施和控制权共同生成。",
+        data="16名媒体专业人员的半结构式访谈，覆盖公共服务、商业和国家关联新闻环境。公开摘要未列国家构成、岗位分布和访谈时长。",
+        method="质性访谈与主题分析，比较记者如何委托内容呈现、保留意义控制并解释工具带来的多样性风险。",
+        results="受访者普遍保留对意义的控制，却委托部分呈现工作；工具对来源和视角的隐性筛选不易被组织监督，人类审批也未必能发现生产前阶段的偏差。",
+        limitations="预印本尚未同行评审，样本仅16人，研究不能估计生成式人工智能对实际内容多样性的因果效应。",
+        readingUse="用于人工智能中介传播和新闻多样性研究。",
+        researchConnection="提醒博士论文区分受众看到的最终叙事与生产工具在此前实施的文化删减，材料生成过程应留存版本并接受人工文化审查。",
+    ),
+    paper(
+        title="What Drives Censorship on College Campuses?", titleZh="什么驱动大学校园中的自我审查",
+        authors="Peter Arcidiacono, Cory Dowd, Matthew Lilley", year=2026, venue="NBER Working Paper 35979",
+        source="NBER", sourceDatabase="NBER", category="其他研究 · 最新", url="https://www.nber.org/papers/w35979",
+        doi="https://doi.org/10.3386/w35979", topicIds=["methods"], selectionBucket="latest", publicationType="working-paper",
+        publicationDate="2026-10", publicationDatePrecision="month", publicationDateSource="https://www.nber.org/papers/w35979",
+        takeaway="研究利用一所私立精英大学的调查发现，最温和立场的学生反而最常自我审查。观点信心与议题显著性同更极端立场和较少审查相关；同一个人在相对更保守的议题上更可能沉默。",
+        theory="把自我审查解释为观点位置、信心、议题显著性、社会排斥风险和群体地位共同作用的表达选择。",
+        data="一所私立精英大学的学生调查。公开摘要未给出样本量、抽样率、问卷波次和具体题项。",
+        method="跨议题与个体内比较，同一学生在相对保守和相对自由议题上的表达差异用于区分个人意识形态与议题位置。",
+        results="温和者审查最多；保守者平均审查更多并更常担忧社会排斥；被视为边缘化的群体尤其在高显著性议题上审查较少。",
+        limitations="工作论文尚未同行评审，单校调查的外推有限；摘要不足以核验估计式、效应量和非响应偏差。",
+        readingUse="用于表达意愿与真实态度之间的测量偏差。",
+        researchConnection="外国受众的传播意向可能受社会可接受性约束，不能由私下好感或人物认同直接推出。",
+    ),
+    paper(
+        title="Return to the Island: Nostalgia, Newstalgia, and the Live-Service Repackaging of Fortnite’s Past",
+        titleZh="重返岛屿：怀旧、新怀旧与《堡垒之夜》过去的持续运营式再包装",
+        authors="Iakovos Vlachos", year=2026, venue="SSRN Working Paper 7536540", source="SSRN", sourceDatabase="SSRN",
+        category="其他研究 · 最新", url="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7536540",
+        doi="https://doi.org/10.2139/ssrn.7536540", topicIds=["culture"], selectionBucket="latest", publicationType="working-paper",
+        publicationDate="2026-09-30", publicationDatePrecision="day", publicationDateSource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7536540",
+        takeaway="论文分析20条《堡垒之夜》官方宣传视频与YouTube Shorts，指出平台并非原样恢复过去，而是通过熟悉地点、声音、角色外观与限时机制，把可识别的共同记忆重组为可购买、可参与的当下体验。",
+        theory="结合怀旧、新怀旧和持续运营游戏研究，把文化记忆视为可被平台更新、商业化和重新格式化的传播资源。",
+        data="20条官方视频，来自34条候选材料，发布时间为2023年11月3日至2026年4月1日。",
+        method="单案例多模态质性内容分析，使用八类编码分析视觉、声音、文本、空间、时间和副文本线索。",
+        results="过去被呈现为可返回但已更新的资源，熟悉线索生成共同文化，同时通行证、商店、截止时间和平台原生短视频把怀旧转化为商业行动。",
+        limitations="硕士论文性质的SSRN工作论文，尚未同行评审；单一游戏和官方材料无法代表玩家实际接收。",
+        readingUse="用于文化熟悉性、图式唤起和传播意向的材料设计。",
+        researchConnection="本国相似神话人物类比也可能同时提高熟悉性并重写原叙事，实验需测量理解增益与文化独特性损失。",
+    ),
+    paper(
+        title="Culturally Tailored Dialogic Communication via GenAI: Improving Government Disaster Communication to Multicultural Populations",
+        titleZh="通过生成式人工智能开展文化定制对话：改善面向多元文化人群的政府灾害传播",
+        authors="Wenlin Liu, Xinyan Zhao, Yuan Sun, Chau-Wai Wong", year=2026, venue="SSRN Working Paper 7285425",
+        source="SSRN", sourceDatabase="SSRN", category="其他研究 · 重要研究精选",
+        url="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7285425", doi="https://doi.org/10.2139/ssrn.7285425",
+        topicIds=["culture", "sycophancy"], selectionBucket="cited", publicationType="working-paper",
+        publicationDate="2026-08-14", publicationDatePrecision="day", publicationDateSource="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7285425",
+        takeaway="293名佛罗里达州黑人和西班牙裔居民同生成式人工智能灾害准备聊天机器人互动。感知文化定制提高对话互惠，进而改善组织与公众关系；既有政府信任调节这些关系。",
+        theory="把文化定制连接到对话传播和组织公众关系，提出互惠感是文化适配影响关系质量的机制。",
+        data="293名佛罗里达州黑人和西班牙裔居民，情境为飓风准备。",
+        method="组间实验，让参与者与聊天机器人互动，测量感知文化定制、对话互惠、组织公众关系质量和既有政府信任。",
+        results="感知文化定制通过对话互惠与更好的关系质量相关，且既有信任构成重要边界。",
+        limitations="SSRN论文尚未同行评审；文化定制的具体操纵、条件数和间接效应值未从公开摘要核验。",
+        citationStatus="unverified", citationNote="Google Scholar受异常流量验证阻断，未核验实际引用次数。",
+        selectionReason="直接检验多元文化受众、文化定制、对话机制和信任边界，实验设计与博士论文高度相关。",
+        readingUse="用于文化定制机制与信任调节。",
+        researchConnection="本国相似人物类比可能经由被理解和互惠感起作用，既有对中国内容信任应作为调节或分层变量。",
+    ),
+    paper(
+        title="Thinking Is Not Writing: Designing AI Chatbots to Connect Reasoning and Revision",
+        titleZh="思考不等于写作：让人工智能聊天机器人连接推理与修订",
+        authors="Lucile Favero, Tanja Käser, Juan Antonio Pérez-Ortiz, Nuria Oliver", year=2026,
+        venue="arXiv:2611.07792", source="arXiv", sourceDatabase="arXiv", category="其他研究 · 重要研究精选",
+        url="https://arxiv.org/abs/2611.07792", doi="https://doi.org/10.48550/arXiv.2611.07792", arxivId="2611.07792",
+        topicIds=["sycophancy", "methods"], selectionBucket="cited", publicationType="preprint",
+        publicationDate="2026-11-05", publicationDatePrecision="day", publicationDateSource="https://arxiv.org/abs/2611.07792",
+        takeaway="65名中学生在课堂中使用苏格拉底式聊天机器人或共享相同界面与模型的对照工具。约40%的学生提高作文成绩；实验工具组更多开展观点层对话，并更频繁在讨论与编辑之间往返。",
+        theory="把人工智能写作支持拆分为论证诊断、针对性提问、学生模型和写作修订，强调推理到文本变化的可追踪连接。",
+        data="65名中学生的课堂研究，比较Maike系统和共享界面、语言模型及思考写作模式的对照聊天机器人。",
+        method="课堂对照研究并编码对话与修订转换，分析讨论观点是否进入后续文本以及与成绩变化的关系。",
+        results="Maike组观点层对话占56%，对照组44%；讨论观点进入修订同成绩提高相关，但总体只有约40%学生提高。",
+        limitations="预印本尚未同行评审，样本小；讨论到修订的关联不能单独证明系统机制导致成绩变化。",
+        citationStatus="unverified", citationNote="Google Scholar受异常流量验证阻断，未核验实际引用次数。",
+        selectionReason="对照条件控制同一模型与界面，提供可观测过程指标，适合方法与人机互动主题。",
+        readingUse="用于过程追踪和人工智能辅助写作方法。",
+        researchConnection="博士论文若用人工智能辅助类比解释，应记录解释生成、受众理解和后续转述之间的转换，避免只测最终好感。",
+    ),
+]
+
+
+j1 = dissertation(journal(
+    title="Engagement Is Not One Thing: A Meta-Analytic Perspective on the Narrative Engagement Scale",
+    titleZh="投入并非单一体验：叙事投入量表的元分析视角", authors="Yang Yi, Scarlett Sijia Liu, Nathan Walter, Rick Busselle, Helena Bilandzic",
+    year=2026, venue="Media Psychology, Online First", source="Media Psychology", journalName="MEDIA PSYCHOLOGY",
+    url="https://doi.org/10.1080/15213269.2026.2705870", doi="https://doi.org/10.1080/15213269.2026.2705870",
+    publicationDate="2026-07-29", publicationDatePrecision="day",
+    takeaway="元分析整合52项研究和12705名参与者，显示叙事投入与态度、意向和行为一致相关，但注意、理解、情绪投入和临场感承担不同功能。注意和理解更接近较少反驳，情绪投入与临场感更接近运输和认同。",
+    theory="把叙事投入拆成注意、理解、情绪投入与临场感四个维度，反对用单一总分替代不同认知和情感过程。",
+    data="52项使用叙事投入量表的研究，总样本12705。",
+    method="元分析估计总投入及四个维度与运输、认同、反驳、态度、意向和行为的关联，并开展维度层比较。",
+    results="总投入与叙事一致的态度、意向和行为正相关；认知维度更接近反驳减少，情感与临场维度更接近运输和人物认同。",
+    limitations="依赖既有研究的相关结构和测量质量；摘要未列异质性、发表偏差和分维度效应量。",
+    readingUse="用于结果变量与中介变量的测量模型。",
+    researchConnection="直接支持把理解、情绪投入、人物认同和传播意向分开，而非用单一接收总分。"),
+    "Yi, Y., Liu, S. S., Walter, N., Busselle, R., & Bilandzic, H. (2026). Engagement is not one thing: A meta-analytic perspective on the Narrative Engagement Scale. Media Psychology. https://doi.org/10.1080/15213269.2026.2705870",
+    "文化类比对接收的作用可能先改善理解和注意，再影响认同与传播意向，不同路径应分别检验。",
+    "将类比解释与无类比条件正交，同时保持人物和情节一致，避免把理解增益误当情绪投入。",
+    "分别测量注意、理解、情绪投入、临场感、运输、人物认同、反驳和传播意向。",
+    "该元分析提供最清楚的构念拆分和测量框架，是博士论文结果变量设计的首要依据。")
+
+j2 = dissertation(journal(
+    title="Identity Disclosure Timing Effects in Narratives Related to Transgender Individuals",
+    titleZh="跨性别人物叙事中的身份披露时机效应", authors="John J. Brooks, Melanie C. Green", year=2026,
+    venue="Media Psychology, Online First", source="Media Psychology", journalName="MEDIA PSYCHOLOGY",
+    url="https://doi.org/10.1080/15213269.2026.2627515", doi="https://doi.org/10.1080/15213269.2026.2627515",
+    publicationDate="2026-02-17", publicationDatePrecision="day",
+    takeaway="两项预注册实验比较主人公身份早披露与晚披露。研究一中早披露提高认同和运输、降低反驳，并间接改善态度与沟通意愿；研究二未复制这一模式，结果主要与政治意识形态相关。",
+    theory="身份披露时机可能改变受众在形成初始人物表征前后处理群体线索的方式，但效果受故事和受众背景制约。",
+    data="两项美国成人实验，研究一N=334，跨性别男孩故事；研究二N=328，跨性别女孩故事。",
+    method="操纵身份信息在故事早段或晚段出现，测量认同、运输、反驳、态度、讨论兴趣与沟通意愿，并检验中介。",
+    results="研究一的早披露优于晚披露，研究二没有相同效应，说明披露时机不是稳定主效应。",
+    limitations="两个故事的结果不一致；群体身份与具体情节共同变化的可能性需要正文材料进一步判断。",
+    readingUse="用于文化身份线索的呈现时机与边界条件。",
+    researchConnection="中国神话人物的文化来源早披露可能帮助建立正确图式，也可能激活外群体边界，须在多个人物故事中重复检验。"),
+    "Brooks, J. J., & Green, M. C. (2026). Identity disclosure timing effects in narratives related to transgender individuals. Media Psychology. https://doi.org/10.1080/15213269.2026.2627515",
+    "文化来源披露时机对认同的影响可能被人物故事与受众意识形态或文化态度调节。",
+    "在相同人物故事中操纵中国文化身份标签在开头或结尾披露，并跨两个不同神话人物复现。",
+    "测量图式激活、外群体边界、反驳、运输、认同、好感与沟通或分享意愿。",
+    "两项实验的复制差异为文化边界调节和材料异质性提供直接警示。")
+
+j3 = dissertation(journal(
+    title="A Dangerous Bond? Identification with Social Media Influencers and the Effects of Mental Health Misinformation and Overgeneralized Messaging",
+    titleZh="危险的联结？对社交媒体影响者的认同与心理健康误导信息效应",
+    authors="Jaroslava Kaňková, Jörg Matthes", year=2026, venue="Media Psychology, Online First", source="Media Psychology", journalName="MEDIA PSYCHOLOGY",
+    url="https://doi.org/10.1080/15213269.2026.2689932", doi="https://doi.org/10.1080/15213269.2026.2689932",
+    publicationDate="2026-06-20", publicationDatePrecision="day",
+    takeaway="预注册的三乘二组间实验招募549名德国Z世代社交媒体用户，操纵信息类型与对影响者的高低认同。错误信息提高不准确信念，但认同没有稳定放大效应；在过度概括条件中，高认同甚至降低不准确信念。",
+    theory="检验来源认同是否普遍强化说服，结果提示认同可能促进接受，也可能诱发更深加工，作用依赖信息类型。",
+    data="549名德国Z世代社交媒体用户，来自两个在线样本提供者。",
+    method="3种信息类型乘2种认同水平的预注册组间实验，测量信念不准确、行为意向和自我诊断倾向。",
+    results="错误信息提高不准确信念；行为意向和自我诊断没有稳定变化；认同交互多数不显著，过度概括条件出现反向交互。",
+    limitations="单次暴露、单一心理健康议题和特定年龄群限制外推；两个样本提供者可能引入差异。",
+    readingUse="用于人物认同的因果操纵与非单调效应。",
+    researchConnection="人物认同不应被预设为总是提高接收，它可能增加接受，也可能促成批判加工。"),
+    "Kaňková, J., & Matthes, J. (2026). A dangerous bond? Identification with social media influencers and the effects of mental health misinformation and overgeneralized messaging. Media Psychology. https://doi.org/10.1080/15213269.2026.2689932",
+    "价值契合提高人物认同后，认同对理解与传播意向的影响可能依信息可信度和加工深度而改变方向。",
+    "预试高低价值契合人物版本，并保持信息准确性恒定；另设信息可信度作为可选正交因素。",
+    "分别测量人物认同、加工深度、可信度、理解准确度、态度与传播意向。",
+    "成功操纵来源认同且发现非预期边界，可防止博士论文采用单一路径假设。")
+
+j4 = dissertation(journal(
+    title="Affective reading practices in Chinese women-oriented online fiction: The politics of identification",
+    titleZh="中国女性向网络文学中的情感阅读实践：认同的政治", authors="作者信息见出版方题录", year=2026,
+    venue="Feminist Media Studies, Online First", source="Feminist Media Studies", journalName="Feminist Media Studies", jifQuartile="Q2",
+    url="https://doi.org/10.1080/14680777.2026.2633548", doi="https://doi.org/10.1080/14680777.2026.2633548",
+    publicationDate="2026-03", publicationDatePrecision="month",
+    takeaway="研究访谈35名中国女性向网络文学长期读者，提出去认同、条件性认同、跨性别认同和酷儿认同四类反复出现的实践。认同并非固定的自我角色匹配，而是在平台分类、类型规范和个人经历之间持续移动。",
+    theory="结合情感理论、叙事身份和受众研究，把认同视为读者面向人物、情节和未来可能性的动态定位。",
+    data="从微博招募200余名回应者后目的抽取35名18岁以上长期读者，主要反映城市中产女性经验。",
+    method="普通话半结构式在线访谈与潜在主题分析，关注读者如何叙述身份、情感和类型选择。",
+    results="认同包含去认同、条件性、跨性别和酷儿等移动形式，并受平台分类和性别化类型规范塑造。",
+    limitations="目的样本以城市中产女性为主，质性研究不能估计各类认同发生率或因果效应。",
+    readingUse="用于将人物认同理解为动态过程，而非单一强度。",
+    researchConnection="外国受众可能在同一神话人物上同时出现认同、去认同与条件性认同，量表之外可加入开放式追问。"),
+    "Affective reading practices in Chinese women-oriented online fiction: The politics of identification. (2026). Feminist Media Studies. https://doi.org/10.1080/14680777.2026.2633548",
+    "人物价值契合可能产生条件性认同，而文化外群体标签可能同时触发去认同。",
+    "在实验后加入关键片段回忆和开放式说明，识别认同与去认同发生在哪些人物行为上。",
+    "除认同总分外编码条件性认同、去认同、跨角色认同和身份协商。",
+    "质性证据能补足量表难以捕捉的多重认同位置，适合解释实验中的平均效应。")
+
+j5 = dissertation(journal(
+    discipline="social-science", title="Visual realism and character identification in science comics: an empirical study testing McCloud’s ‘masking effect’ theory",
+    titleZh="科学漫画的视觉写实度与人物认同：对McCloud遮蔽效应理论的经验检验",
+    authors="Shiyu Yang, Leonardo Barolo Gargiulo, Nan Li, Dominique Brossard", year=2026,
+    venue="Visual Communication, 25(2), 575–602", source="Visual Communication", journalName="Visual Communication", jifQuartile="未单列",
+    publicationStatus="published", url="https://doi.org/10.1177/14703572241258896", doi="https://doi.org/10.1177/14703572241258896",
+    publicationDate="2024-10-03", publicationDatePrecision="day",
+    takeaway="研究操纵科学漫画人物的写实程度和背景细节。卡通化人物缩小黑人与白人美国参与者在人物认同上的差距；低细节背景在各条件下都提高人物认同，与经典遮蔽效应的部分预期不一致。",
+    theory="检验视觉抽象是否让受众更容易把自我投射到人物上，并把人物写实度与背景复杂度区分。",
+    data="美国黑人与白人参与者阅读不同版本的科学漫画。公开摘要未列总样本量和具体分组人数。",
+    method="实验操纵人物视觉写实度与背景细节，比较不同族群参与者的人物认同。",
+    results="卡通化人物缩小族群认同差距，低细节背景普遍提高认同；人物与背景抽象产生不同作用。",
+    limitations="公开摘要未提供样本量、效应量和全部交互；科学漫画不等同神话角色或动态影音叙事。",
+    readingUse="用于人物视觉呈现与文化边界操纵。",
+    researchConnection="神话人物的文化外显特征与画面复杂度应分开操纵，卡通化可能降低群体边界却也削弱文化特异性。"),
+    "Yang, S., Barolo Gargiulo, L., Li, N., & Brossard, D. (2026). Visual realism and character identification in science comics: An empirical study testing McCloud’s masking effect theory. Visual Communication, 25(2), 575–602. https://doi.org/10.1177/14703572241258896",
+    "降低人物写实度可能弱化文化外群体边界，但其作用不同于提高价值契合。",
+    "采用人物写实度与价值契合二乘二设计，并固定背景细节；或将背景复杂度作为单独预试因素。",
+    "测量视觉写实感、文化典型性、群体边界、价值契合、人物认同与文化独特性感知。",
+    "提供可直接迁移到神话人物视觉材料的实验操纵，同时揭示文化去特征化的潜在代价。")
+
+journals = [j1, j2, j3, j4, j5]
+
+collection = {
+    "journalId": "hcr", "journalName": "Human Communication Research", "kind": "online-first",
+    "title": "Advance Access完整目录 · 2026-11-07复核", "url": "https://academic.oup.com/hcr/advance-articles",
+    "checkedAt": date, "complete": True,
+    "toc": [
+        {"title":"Narrative character networks are associated with storytelling success","url":"https://doi.org/10.1093/hcr/hqag004","articleType":"Research Article","status":"previously-recommended","recommendedDate":"2026-10-31","reviewUrl":"https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-31"},
+        {"title":"Technology-mediated communication among migrant families separated by borders: understanding the tensions of relational maintenance","url":"https://doi.org/10.1093/hcr/hqag003","articleType":"Research Article","status":"previously-recommended","recommendedDate":"2026-10-17","reviewUrl":"https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-17"},
+        {"title":"The invisible labor of assimilation by individuals with stigmatized identities: a qualitative study of autistic workers’ organizational socialization","url":"https://doi.org/10.1093/hcr/hqag002","articleType":"Research Article","status":"previously-recommended","recommendedDate":"2026-10-17","reviewUrl":"https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-17"},
+        {"title":"Relationship uncertainty and person-specific dynamics of partner rumination and relational turbulence in day-to-day life","url":"https://doi.org/10.1093/hcr/hqag001","articleType":"Research Article","status":"previously-recommended","recommendedDate":"2026-10-17","reviewUrl":"https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-17"},
+    ],
+}
+
+general = paper(
+    title="Panel data on mobility, socio-economic, and political impacts of riverbank erosion and flooding in Bangladesh",
+    titleZh="孟加拉国河岸侵蚀与洪水对流动、社会经济和政治影响的面板数据",
+    authors="Jan Freihardt, Lukas Rudolph, Vally Koubi", year=2026, venue="Scientific Data, Online First",
+    source="Scientific Data", category="综合顶刊 · 社会科学数据论文", url="https://doi.org/10.1038/s41597-026-08511-6",
+    doi="https://doi.org/10.1038/s41597-026-08511-6", topicIds=["methods"], publicationType="journal",
+    publicationStatus="online-first", peerReviewed=True, publicationDate="2026-11-02", publicationDatePrecision="day",
+    publicationDateSource="https://www.nature.com/articles/s41597-026-08511-6", abstractSource="https://www.nature.com/articles/s41597-026-08511-6",
+    abstractMode="full", originalAbstract="We present the Bangladesh Environmental Mobility Panel (BEMP), a household panel along Bangladesh’s Jamuna River that traces the impacts of riverbank erosion and flooding on (im)mobility, including short- and long-distance movements, socio-economic outcomes, and political attitudes. The dataset follows 1,691 households with a total of 2,170 panel respondents from 2021–2024 through four annual in-person survey waves and ten phone survey waves at two- to six-month intervals, yielding 24,279 completed surveys with low attrition. Respondent selection via a spatially randomized draw supports inference to households in sampling villages at risk of erosion along the 250 km eastern bank of the Jamuna River. Migrants were tracked, and the plausibly exogenous timing of erosion, conditional on sampling zone and location, provides leverage for research designs linking environmental shocks to mobility. Surveys include measures of socio-demographics, livelihoods, economic outcomes and well-being, conflict and cooperation, and political attitudes, supporting questions in development economics and politics in a rural Global South setting. The design enables gender- and age-sensitive analyses by providing data on household heads (n = 1,691), additional senior female (n = 269) and youth (n = 210) respondents, and left-behind members of migrating-head households (n = 273), complemented by village profiles, focus group discussions, and qualitative interviews with women.",
+    abstractLicense="CC BY 4.0，完整摘要经Scientific Data出版方页面逐字核验。",
+    socialScienceAssessment="confirmed", socialScienceReason="数据集以家庭流动、社会经济结果、冲突合作和政治态度为核心变量，明确服务发展经济学与政治学研究。",
+    takeaway="BEMP追踪孟加拉国贾木纳河东岸1691户家庭和2170名面板受访者，2021至2024年完成4轮面对面与10轮电话调查，共24279份问卷，并持续追踪迁移者。",
+    theory="不是单一理论检验，而是为环境冲击、迁移、福祉、冲突合作与政治态度之间的因果和纵向研究提供数据基础。",
+    data="1691户家庭、2170名面板受访者、14轮调查和24279份完成问卷，覆盖250公里河岸风险区，并含村庄画像、焦点小组和女性访谈。",
+    method="在村庄内进行空间随机抽样，持续追踪迁移者；侵蚀发生时间在控制采样区和位置后具有可利用的外生变化。",
+    results="论文主要贡献是数据资源而非单一效应估计。低流失和高频波次支持短期与长期流动、性别和年龄分层分析。",
+    limitations="数据集中于孟加拉国一条河流沿岸；侵蚀时间的可外生性仍需在具体研究中检验，数据论文不等同已完成的因果识别。",
+    readingUse="用于面板数据、时变冲击和高频追踪设计。",
+    researchConnection="可借鉴其多波次与低流失设计，将文化接触、理解、认同和传播意向按时间展开，而不是一次性测量。",
+)
+
+groups = [
+    {"id":"crossdisciplinary","label":"其他研究","target":5,"sortBy":"split",
+     "selectionBuckets":[{"id":"latest","label":"最新","target":3},{"id":"cited","label":"重要研究精选","target":2,"sortBy":"relevance-quality","sortDescription":"Google Scholar受异常流量验证阻断后，按相关性和研究质量选择，不按引用量排名。","accessFallback":fallback}],
+     "sourceCoverage":[{"database":x,"status":"included"} for x in ["NBER","SSRN","arXiv"]],
+     "sortDescription":"最新3篇按首次公开日期降序并覆盖arXiv、NBER和SSRN；重要研究精选2篇按相关性和研究质量呈现。","papers":cross},
+    {"id":"journals","label":"传播学与社会科学","target":5,"sortBy":"relevance-quality-date",
+     "journalPriorityNote":"先执行不限期刊的主题检索。Google Scholar受阻后改用出版方发现，再筛传播学SSCI Q1/Q2及相关社会科学SSCI期刊；本期4篇传播学、1篇相关社会科学。",
+     "sortDescription":"按博士论文直接相关性、研究设计质量和首次发表日期综合排序，不冒充引用次数排序。","accessFallback":fallback,"papers":journals},
+    {"id":"communication-issue","label":"传播学顶刊推荐","unit":"issue","target":0,"sortBy":"issue","collection":collection,
+     "sortDescription":"不使用关键词。Oxford Academic完整Advance Access目录共4篇研究论文，均已推荐，本次只登记完整复核。","papers":[]},
+    {"id":"general-science","label":"综合顶刊推荐","target":1,"sortBy":"publicationDate","rotationJournalId":"scientific-data","selectedJournalId":"scientific-data",
+     "sortDescription":"不使用主题关键词，直接检查Scientific Data最新文章，选择一篇未推荐且社会科学归属明确的面板数据论文。","papers":[general]},
+]
+
+refs = [p["doi"] for p in journals]
+data = {
+    "schemaVersion":6,"date":date,"timezone":"Asia/Shanghai","edition":"正式第35期",
+    "title":"从认同强度到接收结构：理解、边界与传播意向的分层测量",
+    "summary":"本期完成其他研究5篇、传播学与社会科学5篇、Human Communication Research完整在线目录复核和Scientific Data轮换推荐1篇。博士论文精选5篇同行评审研究。",
+    "historyPolicy":"exclude-recommended","journalPolicy":"ssci-communication-q1-q2-and-social-science","searchPlatforms":["Google Scholar","NBER","SSRN","arXiv"],"activeTopicIds":["culture","sycophancy","methods"],
+    "searchSettings":{"source":"defaults + reading-plan","lookbackDays":30,"conflictNote":"当日没有生效的一次性或持续用户设置。博士论文标准强化culture主题，但未删除culture、sycophancy和methods，也未改动未来设置。"},
+    "notice":"逐篇依据官方记录、出版方页面及可访问正文核验。只有实际阅读正文关键部分才标全文核验；无法核验的样本、系数、识别和许可信息均明确说明。",
+    "searchNote":"Google Scholar原生主题查询返回异常流量提示后停止，不绕过验证，也不以Web of Science、OpenAlex、下载量或网页指标冒充引用次数。其余候选由NBER、SSRN、arXiv官方记录与出版方发现并回到权威页面核验。",
+    "themeSearches":[
+      {"platform":"Google Scholar","query":"(\"cross-cultural reception\" OR \"value congruence\" OR \"narrative identification\")","timeRange":"2024年至今；检索日期2026-11-07","purpose":"culture主题发现，随后筛期刊并核验引用次数","status":"原生页面显示异常流量验证，未取得结果或引用次数，未绕过验证。"},
+      {"platform":"Google Scholar","query":"(sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\")","timeRange":"不限年份；检索日期2026-11-07","purpose":"sycophancy主题发现","status":"首次请求已触发站点级验证，因此未继续发送本主题请求，并启用指南规定的回退。"},
+      {"platform":"Google Scholar","query":"(\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\")","timeRange":"不限年份；检索日期2026-11-07","purpose":"methods主题发现","status":"首次请求已触发站点级验证，因此未继续发送本主题请求，并启用指南规定的回退。"},
+      {"platform":"NBER","query":"site:nber.org/papers 2026 culture media communication censorship","timeRange":"优先近30日；检索日期2026-11-07","purpose":"NBER候选发现","status":"限定官方域名的公开网页检索成功，不冒称NBER站内高级检索；入选记录回到NBER官方页核验。"},
+      {"platform":"SSRN","query":"site:papers.ssrn.com 2026 cultural narrative communication GenAI","timeRange":"优先近30日，必要时扩展；检索日期2026-11-07","purpose":"SSRN候选发现","status":"限定官方域名的公开网页检索成功；题录、日期和摘要回到SSRN记录核验。"},
+      {"platform":"arXiv","query":"cs.CY与cs.HC新提交：communication OR culture OR narrative OR personalization OR chatbot","timeRange":"2026-11-05至2026-11-07","purpose":"arXiv候选发现","status":"官方新提交目录可读；题名、作者、首次提交日期、摘要和arXiv ID完成核验。"}],
+    "periodicalChecks":[
+      {"platform":"Oxford Academic · Human Communication Research","query":"Advance Access完整目录，不使用关键词","timeRange":"检查日期2026-11-07","purpose":"传播学顶刊整期轮换","status":"官方目录完整可读，共4篇研究论文，与2026-10-31完整快照相同，没有新增。"},
+      {"platform":"Scientific Data","query":"最新Research articles目录，不使用关键词","timeRange":"检查日期2026-11-07","purpose":"综合顶刊轮换推荐","status":"出版方目录与文章页核验成功，入选论文题名、作者、日期、DOI、许可和摘要均可核验。"}],
+    "verificationLog":[
+      {"platform":"Google Scholar","query":"当日主题检索与实际引用次数","timeRange":"核验日期2026-11-07","purpose":"主题发现与引用排序","status":"首次原生查询显示异常流量验证后停止；没有绕过验证、记录虚构0次引用或用其他指标替代。"},
+      {"platform":"NBER、SSRN与arXiv官方记录","query":"其他研究5篇的身份、首次公开日期、摘要与版本","timeRange":"核验日期2026-11-07","purpose":"逐篇核验与跨版本去重","status":"5篇均完成题录和摘要核验，并与截至2026-11-06的441条永久登记去重。"},
+      {"platform":"出版方与权威题录","query":"期刊论文题名、作者、年份、期刊、同行评审状态、DOI、摘要、样本与方法","timeRange":"核验日期2026-11-07","purpose":"主题期刊、博士论文专题与轮换栏目逐篇核验","status":"6篇新期刊论文完成身份核验；只有公开证据支持的研究细节被写入，未知细节明确标示。"}],
+    "groups":groups,"coreTracking":[],"coreTrackingNote":"reading-plan与core-papers当日没有用户提交的核心论文请求，因此本期没有核心文献状态更新。",
+    "periodicalCheckNote":"两个轮换栏目不使用主题关键词。Human Communication Research完整在线目录无新增；Scientific Data选取一篇最新可核验的社会科学面板数据论文。",
+    "dissertation":{"title":"从被看见到被接收","timeRange":"优先检查2026-11-06上期发布以来的新发表研究。没有发现足量且未推荐的直接相关新论文后，扩展至2024年以来尚未推荐的同行评审研究；较早论文明确作为补充，不冒称当日最新。",
+      "selectionNote":"本期从传播学与社会科学栏精选5篇同行评审论文，不重复建立完整解读。重点覆盖叙事投入的维度结构、身份披露时机、人物认同的非单调效应、动态认同实践和视觉写实度。",
+      "historyCoverage":"已核对网站截至2026-11-06的441条永久登记、现有简报、用户明确列出的既有文献、本轮可见对话及可访问清单，并按DOI、arXiv ID、规范化题名和已知版本别名去重。无法访问的完整旧对话和未同步私人清单不在覆盖范围内，因此不声称绝对完全去重。",
+      "selectedPapers":refs,"papers":[],"topPapers":[
+        {"doi":j1["doi"],"reason":"52项研究的元分析直接拆分理解、注意、情绪投入与临场感，是博士论文测量模型的最佳依据。"},
+        {"doi":j2["doi"],"reason":"两项预注册实验对身份披露时机给出不一致结果，最适合界定文化内外群体边界的条件效应。"},
+        {"doi":j5["doi"],"reason":"人物写实度与背景细节的实验分离可直接转化为中国神话人物视觉材料设计。"}]},
+}
+
+(root / f"{date}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+index_path = root / "index.json"
+index = [x for x in json.loads(index_path.read_text()) if x["date"] != date]
+count = sum(len(g["papers"]) for g in groups)
+index.insert(0, {"date":date,"title":data["title"],"summary":data["summary"],"edition":data["edition"],"count":count,"file":f"{date}.json"})
+index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
+
+state_path = root / "rotation-state.json"
+state = json.loads(state_path.read_text()); state["updatedAt"] = date
+hcr = state["communication"]["hcr"]
+hcr.update(lastAttemptAt=date,lastCheckedAt=date,status="completed",lastCompletedAt=date,reason="Oxford Academic Advance Access directory remained fully readable and unchanged from the complete 2026-10-31 snapshot; no new research article was added.")
+hcr["onlineSnapshots"] = [snapshot for snapshot in hcr["onlineSnapshots"] if snapshot.get("checkedAt") != date]
+hcr["onlineSnapshots"].append({"checkedAt":date,"url":collection["url"],"complete":True,"dois":[x["url"] for x in collection["toc"]]})
+sd = state["general"]["scientific-data"]
+sd.update(lastAttemptAt=date,lastCheckedAt=date,status="completed",lastCompletedAt=date,lastRecommendedDoi=general["doi"],publicationDate=general["publicationDate"],socialScienceAssessment="confirmed")
+state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+print(f"Wrote {date} with {count} papers")
