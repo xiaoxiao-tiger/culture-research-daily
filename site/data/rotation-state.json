@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-07",
+  "updatedAt": "2026-11-08",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-06",
@@ -203,18 +203,35 @@
       "reason": "Oxford Academic Advance Access directory remained fully readable and unchanged from the complete 2026-10-31 snapshot; no new research article was added."
     },
     "cr": {
-      "lastAttemptAt": "2026-11-01",
-      "lastCheckedAt": "2026-11-01",
-      "status": "blocked",
-      "reason": "Publisher Online First directory required Cloudflare human verification. Public indexing exposed only partial entries, so no complete snapshot or issue cursor advanced.",
+      "lastAttemptAt": "2026-11-08",
+      "lastCheckedAt": "2026-11-08",
+      "status": "partial",
+      "reason": "SAGE public Online First page exposed only entries 1-10 of 101. The verified range contained one non-research acknowledgement and nine new research articles; the snapshot is incomplete, so lastCompletedAt remains unchanged.",
       "lastCompletedAt": null,
-      "onlineSnapshots": [],
+      "onlineSnapshots": [
+        {
+          "checkedAt": "2026-11-08",
+          "url": "https://journals.sagepub.com/toc/crx/0/0",
+          "complete": false,
+          "dois": [
+            "https://doi.org/10.1177/00936502261498263",
+            "https://doi.org/10.1177/00936502261494874",
+            "https://doi.org/10.1177/00936502261494013",
+            "https://doi.org/10.1177/00936502261496144",
+            "https://doi.org/10.1177/00936502261478982",
+            "https://doi.org/10.1177/00936502261489660",
+            "https://doi.org/10.1177/00936502261487784",
+            "https://doi.org/10.1177/00936502261490466",
+            "https://doi.org/10.1177/00936502261489667"
+          ]
+        }
+      ],
       "completedIssues": [],
       "directoryObservation": {
-        "checkedAt": "2026-11-01",
-        "url": "https://journals.sagepub.com/toc/crxa/0/0?ContentItemType=research-article&pageSize=100&sortBy=FullEpubDateField&startPage=0",
+        "checkedAt": "2026-11-08",
+        "url": "https://journals.sagepub.com/toc/crx/0/0",
         "complete": false,
-        "scopeNote": "Publisher security verification blocked the full directory. Partial public indexing was not treated as a complete Online First issue."
+        "scopeNote": "Public page verified only the first 10 of 101 entries; no complete Online First cursor was advanced."
       }
     },
     "jcmc": {
@@ -487,13 +504,13 @@
       "lastCheckedAt": "2026-11-07"
     },
     "nature-communications": {
-      "lastAttemptAt": "2026-11-02",
+      "lastAttemptAt": "2026-11-08",
       "status": "completed",
-      "lastCompletedAt": "2026-11-02",
-      "lastCheckedAt": "2026-11-02",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41467-026-79126-z",
-      "publicationDate": "2026-10-29",
-      "socialScienceAssessment": "uncertain"
+      "lastCompletedAt": "2026-11-08",
+      "lastCheckedAt": "2026-11-08",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41467-026-79207-z",
+      "publicationDate": "2026-11-06",
+      "socialScienceAssessment": "confirmed"
     }
   }
 }
