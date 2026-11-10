@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-10",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-06",
@@ -300,11 +300,11 @@
       }
     },
     "ct": {
-      "lastAttemptAt": "2026-11-03",
-      "lastCheckedAt": "2026-11-03",
+      "lastAttemptAt": "2026-11-10",
+      "lastCheckedAt": "2026-11-10",
       "status": "completed",
-      "lastCompletedAt": "2026-11-03",
-      "reason": "Oxford Academic Advance Articles directory was fully readable on 2026-11-03: 25 Research Articles, one Correction and one Book Review. No research article was newer than or different from the complete 2026-10-27 snapshot.",
+      "lastCompletedAt": "2026-11-10",
+      "reason": "Oxford Academic Advance Access directory was fully readable on 2026-11-10: 22 Research Articles, one Correction and one Book Review. All research articles were already in permanent history; no duplicate was added.",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-27",
@@ -396,17 +396,46 @@
             "https://doi.org/10.1093/ct/qtaf020",
             "https://doi.org/10.1093/ct/qtaf015"
           ]
+        },
+        {
+          "checkedAt": "2026-11-10",
+          "url": "https://academic.oup.com/ct/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/ct/qtag021",
+            "https://doi.org/10.1093/ct/qtag024",
+            "https://doi.org/10.1093/ct/qtag022",
+            "https://doi.org/10.1093/ct/qtag023",
+            "https://doi.org/10.1093/ct/qtag019",
+            "https://doi.org/10.1093/ct/qtag017",
+            "https://doi.org/10.1093/ct/qtag018",
+            "https://doi.org/10.1093/ct/qtag016",
+            "https://doi.org/10.1093/ct/qtag011",
+            "https://doi.org/10.1093/ct/qtag004",
+            "https://doi.org/10.1093/ct/qtag014",
+            "https://doi.org/10.1093/ct/qtag010",
+            "https://doi.org/10.1093/ct/qtag007",
+            "https://doi.org/10.1093/ct/qtag009",
+            "https://doi.org/10.1093/ct/qtag008",
+            "https://doi.org/10.1093/ct/qtag001",
+            "https://doi.org/10.1093/ct/qtag002",
+            "https://doi.org/10.1093/ct/qtaf038",
+            "https://doi.org/10.1093/ct/qtaf037",
+            "https://doi.org/10.1093/ct/qtaf028",
+            "https://doi.org/10.1093/ct/qtaf022",
+            "https://doi.org/10.1093/ct/qtaf021"
+          ]
         }
       ],
       "completedIssues": [],
       "directoryObservation": {
-        "checkedAt": "2026-11-03",
+        "checkedAt": "2026-11-10",
         "url": "https://academic.oup.com/ct/advance-articles",
         "complete": true,
-        "reportedTotal": 27,
-        "researchArticleCount": 25,
+        "reportedTotal": 24,
+        "researchArticleCount": 22,
         "nonResearchCount": 2,
-        "scopeNote": "Complete visible Advance Articles directory on 2026-11-03; no new research article since the complete 2026-10-27 snapshot."
+        "scopeNote": "Complete visible Advance Access directory on 2026-11-10; all 22 research articles were previously recommended."
       }
     },
     "nms": {
@@ -481,13 +510,15 @@
       "reason": "PNAS public latest directory did not yield a stable article-level set of un-recommended social-science candidates; no cursor was advanced."
     },
     "nature": {
-      "lastAttemptAt": "2026-11-04",
+      "lastAttemptAt": "2026-11-10",
       "status": "completed",
-      "lastCompletedAt": "2026-11-04",
-      "lastCheckedAt": "2026-11-04",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11049-7",
+      "lastCompletedAt": "2026-11-10",
+      "lastCheckedAt": "2026-11-10",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41586-026-11351-4",
       "publicationDate": "2026-09-23",
-      "socialScienceAssessment": "confirmed"
+      "socialScienceAssessment": "confirmed",
+      "reason": "Nature latest online records were checked without topic keywords; DOI 10.1038/s41586-026-11351-4 was the latest un-recommended social-science-related original study that could be verified.",
+      "lastRecommendedPublicationDate": "2026-11-05"
     },
     "science": {
       "lastAttemptAt": "2026-11-05",
