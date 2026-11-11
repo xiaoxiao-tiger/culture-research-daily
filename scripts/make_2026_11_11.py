@@ -1,0 +1,606 @@
+import json
+from pathlib import Path
+
+
+root = Path(__file__).resolve().parents[1] / "site/data"
+date = "2026-11-11"
+unavailable = "本次核验未取得允许本站完整转载摘要的明确许可。请通过来源链接查看原文摘要，中文概述依据可核验证据原创。"
+fallback = {
+    "reason": "Google Scholar原生页面返回异常流量验证，未取得可核验结果或引用次数，且未尝试绕过验证。",
+    "channel": "改用出版方官网、官方期刊目录、NBER、SSRN、arXiv及权威学术索引进行发现和逐篇核验。",
+    "checkedAt": date,
+}
+
+
+def paper(**v):
+    x = {
+        "evidence": "摘要核验",
+        "relevance": "研究启示是本简报依据论文证据作出的推论，不是论文作者已经检验的结论。",
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": unavailable,
+        "readingPriority": "normal",
+        "priorityReason": "题录、摘要与日期可以核验，且与当日主题相关。",
+        "readingUse": "用于理论框架、研究设计或结果讨论。",
+        "researchConnection": "作为一般研究追踪，和博士论文的关系见逐篇说明。",
+    }
+    x.update(v)
+    x.setdefault("abstractZh", x["takeaway"])
+    x.setdefault("abstractSource", x["url"])
+    return x
+
+
+def dissertation(p, apa, hypothesis, manipulation, measurement, reason):
+    p.update(
+        apaCitation=apa,
+        peerReviewed=True,
+        peerReviewSource=p["url"],
+        publicationDateSource=p["url"],
+        readingPriority="high",
+        priorityReason=reason,
+        hypothesisImplication="简报推论：" + hypothesis,
+        manipulationImplication="简报推论：" + manipulation,
+        measurementImplication="简报推论：" + measurement,
+    )
+    return p
+
+
+cross = [
+    paper(
+        title="TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale",
+        titleZh="TaskNet：从大规模劳动者访谈构建职业任务清单",
+        authors="Jennifer Wang, Andreas Haupt, Isaac Robinson, Phil Lewis, Erik Brynjolfsson, Diyi Yang",
+        year=2026,
+        venue="NBER Working Paper 35987",
+        source="NBER",
+        sourceDatabase="NBER",
+        category="其他研究 · 最新",
+        url="https://www.nber.org/papers/w35987",
+        doi="https://doi.org/10.3386/w35987",
+        topicIds=["methods", "sycophancy"],
+        selectionBucket="latest",
+        publicationType="working-paper",
+        publicationDate="2026-11",
+        publicationDatePrecision="month",
+        publicationDateSource="https://www.nber.org/papers/w35987",
+        takeaway="研究开发混合主动访谈系统，把132名劳动者的2726条任务陈述归并为六类职业的202项标准任务，并由职业分析员和318名在职者复核。与O*NET相比，TaskNet既覆盖既有任务，也补入人工智能变化下的新任务。",
+        theory="把职业任务分类视为可由劳动者经验、机器归并与专家复核共同完成的动态测量问题。",
+        data="六类职业的132名受访劳动者、2726条报告、202项任务陈述、318名在职复核者和7923次相关性及重要性评分。",
+        method="混合主动访谈、任务标准化、职业内聚合、O*NET分析员审核、在职者验证及与岗位广告和留出样本的外部比较。",
+        results="全部202项任务陈述获O*NET分析员接受；相较现有O*NET任务，系统覆盖75%的既有任务并新增79项无对应任务，留出劳动者任务覆盖率为89%，高于O*NET的79%。",
+        limitations="NBER工作论文尚未期刊同行评审；只覆盖六类职业，访谈系统和聚合规则对其他语言、行业与制度环境的外推仍需检验。",
+        readingUse="用于开放式访谈、分类体系构建和多层验证。",
+        researchConnection="博士论文可借鉴其做法，先从开放式访谈归纳外国受众区分理解、好感、认同与传播意向的自然语言，再由专家和目标受众双重验证量表条目。",
+    ),
+    paper(
+        title="Mitigating Social Sycophancy via Pluralistic Preference Optimization",
+        titleZh="以多元偏好优化缓解社会性谄媚",
+        authors="Stephane Hatgis-Kessell, Myra Cheng, Xiaoxuan Hou, Qian Hu, Rahul Gupta, Natasha Jaques, Emma Brunskill",
+        year=2026,
+        venue="arXiv:2610.02568",
+        source="arXiv",
+        sourceDatabase="arXiv",
+        category="其他研究 · 最新",
+        url="https://arxiv.org/abs/2610.02568",
+        doi="https://doi.org/10.48550/arXiv.2610.02568",
+        arxivId="2610.02568",
+        topicIds=["sycophancy", "methods"],
+        selectionBucket="latest",
+        publicationType="preprint",
+        publicationDate="2026-10-01",
+        publicationDatePrecision="day",
+        publicationDateSource="https://arxiv.org/abs/2610.02568",
+        takeaway="论文将社会性谄媚解释为模型过度以用户为中心、忽略受影响他者，并提出让模型模拟多方利益相关者后再进行偏好优化。该方法在多数据集和多模型族上降低不当认可，尤其在伤害意图情境中显著减少迎合。",
+        theory="用利益相关者多元视角替代单一用户满意度，把社会性建议中的规范冲突纳入偏好学习。",
+        data="四个社会性谄媚数据集、四个模型族及8B到32B模型的迁移评估。",
+        method="模型生成利益相关者视角和偏好信号，再进行多元偏好优化，并与提示和既有后训练方法比较。",
+        results="在伤害意图陈述上，四个模型的认可率平均降低89%；一般建议中的人机认可差距由17.8%缩小到8.0%，8B模型构造的偏好数据还能迁移到32B模型。",
+        limitations="arXiv预印本尚未同行评审；摘要未提供各数据集的全部误差类型、人工评价协议与跨文化表现。",
+        readingUse="用于将单一受众迎合扩展为多方价值冲突。",
+        researchConnection="类比本国神话人物时不能只追求受众熟悉和即时好感，还应检查是否压平中国人物自身价值及其他相关群体的解释权。",
+    ),
+    paper(
+        title="Trust and Generative AI in Organizational Communication and Culture",
+        titleZh="组织传播与文化中的信任和生成式人工智能",
+        authors="Tara Whitson, Jeff Allen",
+        year=2026,
+        venue="Information Matters, 6(9), SSRN 7512658",
+        source="SSRN",
+        sourceDatabase="SSRN",
+        category="其他研究 · 最新",
+        url="https://ssrn.com/abstract=7512658",
+        doi="https://doi.org/10.2139/ssrn.7512658",
+        topicIds=["sycophancy", "culture"],
+        selectionBucket="latest",
+        publicationType="working-paper",
+        publicationDate="2026-09-28",
+        publicationDatePrecision="day",
+        publicationDateSource="https://ssrn.com/abstract=7512658",
+        takeaway="短文讨论生成式人工智能代写组织邮件后，接收者如何从语言模式推断领导者是否真正投入、是否保持真实表达，以及这种推断如何影响组织信任和文化。",
+        theory="把人工智能中介表达放入真实性、领导者在场感和组织文化信号框架。",
+        data="三页概念性文章，公开记录未报告新的人类受试者数据。",
+        method="基于组织传播情境进行概念分析，提出接收者识别人工智能语言后可能发生的信任机制。",
+        results="文章的核心判断是流畅文本不必然传达发送者投入，持续的人工智能模式可能改变接收者对意图与真实性的解释。",
+        limitations="SSRN记录为短篇概念文，缺少因果实验和跨组织比较，结论应视为待检验命题。",
+        readingUse="用于来源披露、真实性与接收者推断。",
+        researchConnection="如果实验中的人物介绍或本国类比由人工智能生成，应控制语言风格并测量来源真实性，避免把加工流畅性误当作人物价值契合。",
+    ),
+    paper(
+        title="Testing Narrative Models in the Field: Domestic Violence, Donations, and Cross-Cultural Persuasion",
+        titleZh="在现场检验叙事模型：家庭暴力、捐赠与跨文化说服",
+        authors="Maja Adena, Anselm Hager, Rustamdjan Hakimov, Lydia Mechtenberg, Stephanie Wang",
+        year=2026,
+        venue="SSRN Working Paper 6981710",
+        source="SSRN",
+        sourceDatabase="SSRN",
+        category="其他研究 · 重要研究精选",
+        url="https://ssrn.com/abstract=6981710",
+        doi="https://doi.org/10.2139/ssrn.6981710",
+        topicIds=["culture", "methods"],
+        selectionBucket="cited",
+        publicationType="working-paper",
+        publicationDate="2026-06-25",
+        publicationDatePrecision="day",
+        publicationDateSource="https://ssrn.com/abstract=6981710",
+        takeaway="研究在吉尔吉斯斯坦3060名农村女性的现场实验和美国3000名女性的在线实验中，以相同事实材料构造事实型、乐观易解型和数据过拟合型三种视频叙事，比较捐赠、叙事认可与群体讨论。",
+        theory="把叙事说服理解为对同一证据的不同解释框架，并检验本地与外部受众的情境差异。",
+        data="吉尔吉斯斯坦3060名农村女性和美国3000名女性，另含结构化小组讨论记录。",
+        method="随机分配三种视频，保持数据来源和事实主张不变，只改变证据解释；测量个人捐赠、叙事认可及讨论前后集体捐赠提议。",
+        results="公开摘要确认其完成两地随机实验和多层结果测量，但没有给出各处理效应方向与大小，因此本简报不推断哪种叙事最有效。",
+        limitations="SSRN工作论文尚未期刊同行评审；关键处理效应需读正文结果表核验，家庭暴力捐赠情境也不能直接外推到人物接收。",
+        citationStatus="unverified",
+        citationCount=None,
+        citationSource=None,
+        citationSourceUrl=None,
+        citationCheckedAt=None,
+        citationNote="Google Scholar受异常流量验证阻断，未核验实际引用次数。",
+        selectionReason="两国大样本随机实验保持事实恒定而改变叙事解释，直接展示跨文化叙事检验的高质量设计。",
+        readingUse="用于跨文化实验、叙事操纵和多层行为结果。",
+        researchConnection="可直接借鉴为同一中国神话人物构造原叙事、本国类比和深层价值解释三种版本，并在不同国家保持事实信息恒定。",
+    ),
+    paper(
+        title="Peer Influence in College Applications",
+        titleZh="大学申请中的同伴影响",
+        authors="Ana M. Gazmuri, Elena Prager",
+        year=2026,
+        venue="NBER Working Paper 35993",
+        source="NBER",
+        sourceDatabase="NBER",
+        category="其他研究 · 重要研究精选",
+        url="https://www.nber.org/papers/w35993",
+        doi="https://doi.org/10.3386/w35993",
+        topicIds=["methods"],
+        selectionBucket="cited",
+        publicationType="working-paper",
+        publicationDate="2026-11",
+        publicationDatePrecision="month",
+        publicationDateSource="https://www.nber.org/papers/w35993",
+        takeaway="研究利用就读不同高中的邻居作为同伴暴露来源，发现接触已申请某项目的同伴会提高申请率，而同伴是否被录取没有额外影响，结果更符合信息传播而非成功示范机制。",
+        theory="区分同伴行为提供的信息效应与同伴成功带来的示范效应。",
+        data="细粒度课堂、邻居、高校项目申请和录取数据，公开摘要未披露具体样本规模。",
+        method="用邻居就读不同高中降低共同冲击，并建立可计算的申请组合选择模型进行反事实分析。",
+        results="同伴申请提高个体申请率，同伴被录取不产生额外效应；反事实显示该影响足以缩小选择性项目申请中的城乡和性别差距。",
+        limitations="NBER工作论文尚未期刊同行评审；识别依赖邻居跨校暴露和条件独立等假设，效应也来自教育选择情境。",
+        citationStatus="unverified",
+        citationCount=None,
+        citationSource=None,
+        citationSourceUrl=None,
+        citationCheckedAt=None,
+        citationNote="Google Scholar受异常流量验证阻断，未核验实际引用次数。",
+        selectionReason="研究清楚区分信息与示范机制，并提供准实验识别和结构反事实，对传播机制识别有方法价值。",
+        readingUse="用于区分信息暴露和成功线索。",
+        researchConnection="本国相似神话人物的类比可能通过提供解释信息或提供社会认同示范起作用，实验应分别操纵并测量两条路径。",
+    ),
+]
+
+
+def special(**v):
+    return dissertation(paper(**v["paper"]), v["apa"], v["hypothesis"], v["manipulation"], v["measurement"], v["reason"])
+
+
+myth_reimagining = special(
+    paper=dict(
+        title="Narrative Strategies and Audience Reception in the Reimagining of Chinese Mythology",
+        titleZh="中国神话再想象中的叙事策略与受众反应",
+        authors="Enhe Xing, Myung Jin Park",
+        year=2026,
+        venue="Journal of Chinese Language and Literature, 102, 241–270",
+        source="Journal of Chinese Language and Literature",
+        category="博士论文专题 · 神话叙事补充",
+        url="https://doi.org/10.15792/clsyn..102.202608.241",
+        doi="https://doi.org/10.15792/clsyn..102.202608.241",
+        topicIds=["culture"],
+        publicationType="journal",
+        publicationStatus="published",
+        publicationDate="2026-08-30",
+        publicationDatePrecision="day",
+        takeaway="论文比较《封神第二部》和《哪吒2》的神话再想象策略，并以英雄旅程、叙事功能、文化符号学和豆瓣评论情感分析建立叙事、符号与接收框架。两部作品分别突出集体英雄与政治秩序，以及个体成长、自我救赎和反抗命运。",
+        theory="用叙事结构与文化符号转换解释传统神话如何在当代电影中重组价值重点。",
+        data="两部中国神话电影的叙事、视觉符号和豆瓣评论；公开摘要未给出评论样本量。",
+        method="比较文本分析、英雄旅程与Propp叙事功能编码、文化符号学及评论情感分析。",
+        results="《封神第二部》以多线集体英雄和历史正统为核心，《哪吒2》以单线成长、自我救赎和反命运为核心；两者也分别通过考古视觉与幽默青年化风格重构神话权威。",
+        limitations="接收证据来自中国平台豆瓣，不能回答外国受众如何理解这些人物；摘要未报告评论样本和模型验证，因此作为较早漏读补充而非最新直接证据。",
+        readingUse="用于把神话人物的价值行动、叙事结构和符号形式分层编码。",
+        researchConnection="它帮助界定人物价值刺激，但不能替代外国受众实验。",
+    ),
+    apa="Xing, E., & Park, M. J. (2026). Narrative strategies and audience reception in the reimagining of Chinese mythology. Journal of Chinese Language and Literature, 102, 241–270. https://doi.org/10.15792/clsyn..102.202608.241",
+    hypothesis="同一神话母题被组织为集体秩序或个体自我实现时，会激活不同的Schwartz价值判断，并进一步影响人物认同。",
+    manipulation="以同一人物和情节事实制作集体责任、自我超越与开放改变等价值突出版本，保持画面质量和信息量恒定。",
+    measurement="先编码刺激中的价值行动，再分别测量受众的价值知觉、Schwartz个人价值、价值契合、道德评价、人物认同与传播意向。",
+    reason="它直接比较中国神话人物的叙事和价值重构，但外国接收证据缺失，适合作为刺激设计补充。",
+)
+
+
+wukong_overflow = special(
+    paper=dict(
+        title="Cultural overflow vs. cultural export: Black Myth: Wukong and the evolution of Chinese gaming in global creative industries",
+        titleZh="文化溢出还是文化出口：《黑神话：悟空》与中国游戏在全球创意产业中的演化",
+        authors="Aiqing Wang, Thomas William Whyke, Zhennuo Song",
+        year=2025,
+        venue="Creative Industries Journal, Online First",
+        source="Creative Industries Journal",
+        category="博士论文专题 · 较早漏读",
+        url="https://doi.org/10.1080/17510694.2025.2583652",
+        doi="https://doi.org/10.1080/17510694.2025.2583652",
+        topicIds=["culture"],
+        publicationType="journal",
+        publicationStatus="online-first",
+        publicationDate="2025-11-19",
+        publicationDatePrecision="day",
+        takeaway="论文把《黑神话：悟空》视为传统神话、数字技术和全球创意产业相遇的案例，结合内容分析、受众情感分析与主题分析讨论文化真实性、跨文化连接和包容性争议。",
+        theory="结合Walter Benjamin的故事理论和互动媒体研究，将游戏理解为文化桥梁与跨国创意产业产品。",
+        data="游戏叙事与视觉材料以及受众接收文本；公开摘要未报告平台、时间窗和文本数量。",
+        method="叙事与视觉内容分析、受众情感分析，以及演绎和归纳结合的主题分析。",
+        results="研究认为互动叙事可以在保持文化真实性的同时促进跨文化连接，但包容性、伦理叙事和解释差异构成持续边界。",
+        limitations="公开摘要不足以核验受众语料来源、样本量和编码信度，观察性评论也不能识别类比或价值契合的因果作用。",
+        readingUse="用于文化真实性、可及性与全球接收的张力。",
+        researchConnection="可作为直接中国神话游戏接收材料，但不能把对游戏技术的好评等同人物接收。",
+    ),
+    apa="Wang, A., Whyke, T. W., & Song, Z. (2025). Cultural overflow vs. cultural export: Black Myth: Wukong and the evolution of Chinese gaming in global creative industries. Creative Industries Journal. Advance online publication. https://doi.org/10.1080/17510694.2025.2583652",
+    hypothesis="文化真实性提高理解和尊重，但只有在受众能建立人物层面的价值联系时，才进一步提高人物认同和传播意向。",
+    manipulation="在相同游戏片段前加入无解释、本国人物表层类比和深层价值类比三种导语，并保持国家来源标签不变。",
+    measurement="把技术评价、审美吸引、文化真实性、人物理解、人物好感、人物认同和传播意向分开测量。",
+    reason="它直接涉及中国神话游戏的全球接收，能防止把产业成功或技术赞誉误写成人物接收。",
+)
+
+
+film_borders = special(
+    paper=dict(
+        title="Beyond borders: understanding the determinants of global audience engagement with Chinese films",
+        titleZh="跨越边界：理解全球受众参与中国电影的决定因素",
+        authors="Shengnan Wang, Yanyu Chen, Yunlong Ji",
+        year=2026,
+        venue="Humanities and Social Sciences Communications, Online First",
+        source="Humanities and Social Sciences Communications",
+        category="博士论文专题 · 全球受众边界",
+        url="https://doi.org/10.1057/s41599-026-09232-2",
+        doi="https://doi.org/10.1057/s41599-026-09232-2",
+        topicIds=["culture", "methods"],
+        publicationType="journal",
+        publicationStatus="online-first",
+        publicationDate="2026-09-28",
+        publicationDatePrecision="day",
+        takeaway="论文研究中国电影全球受众参与的经济、文化和政治决定因素，并强调国内成功与海外参与之间并不存在自动转换。出版方将其标为已同行评审、已接受且可正式引用的早期在线版本。",
+        theory="把全球受众参与视为产业条件、文化距离和政治环境共同作用的结果。",
+        data="中国电影的跨国参与数据；公开页面摘要未披露样本单位、年份范围和各变量操作化。",
+        method="出版方摘要确认其分析全球受众参与的多类决定因素，但模型、识别策略和系数需正文进一步核验。",
+        results="核心结论是中国电影的全球参与度受到经济、文化和政治因素共同约束，国内市场成功不足以保证海外接收。",
+        limitations="公开摘要证据不足以核验样本和因果识别，结果变量是总体电影参与，不是神话人物的理解、好感、认同或传播意向。",
+        readingUse="用于界定人物层实验之外的宏观传播边界。",
+        researchConnection="可作为跨国样本分层和控制变量来源，但不能替代人物层面的接收测量。",
+    ),
+    apa="Wang, S., Chen, Y., & Ji, Y. (2026). Beyond borders: Understanding the determinants of global audience engagement with Chinese films. Humanities and Social Sciences Communications. Advance online publication. https://doi.org/10.1057/s41599-026-09232-2",
+    hypothesis="文化距离和政治环境更多调节接触与参与机会，而人物价值契合主要解释接触后的认同，因此两类机制应分层建模。",
+    manipulation="人物实验保持作品可得性恒定，并在多国样本中把文化距离与来源政治评价作为测量型调节变量而非处理本身。",
+    measurement="除四个接收结果外，加入中国电影接触频率、来源国态度、文化距离和平台可得性作为控制或调节变量。",
+    reason="它把宏观文化与政治边界同人物层接收区分开，适合校准论文的外部效度。",
+)
+
+
+melt = special(
+    paper=dict(
+        title="MELT: A Style-Adaptive Multimodal Folktale Generation Framework for Underrepresented Cultures",
+        titleZh="MELT：面向代表不足文化的风格自适应多模态民间故事生成框架",
+        authors="Hanbi Choi, Yuri Kim, Dohee Kim, Heejae Shin, Minsu Lee",
+        year=2026,
+        venue="Electronics, 15(10), 2083",
+        source="Electronics",
+        category="博士论文专题 · 本国类比机制",
+        url="https://doi.org/10.3390/electronics15102083",
+        doi="https://doi.org/10.3390/electronics15102083",
+        topicIds=["culture", "methods"],
+        publicationType="journal",
+        publicationStatus="published",
+        publicationDate="2026-05-12",
+        publicationDatePrecision="day",
+        takeaway="论文把文化情境作为生成约束，将外国故事中的文化特定元素识别、寻找目标文化对应物和本地化重写串联到文本、图像与语音框架。韩国和孟加拉案例的人类评价显示，文化适应与跨模态文化一致性优于无文化适配基线。",
+        theory="把文化适配区分为符号替换、叙事风格保持和跨模态文化一致性，而不是只追求表面流畅。",
+        data="韩国与孟加拉民间故事案例，韩国21名成人和孟加拉18名成人的人类评价。",
+        method="结构化文化适配提示、参数高效微调、文本图像语音生成，以及基线对照的人类评价、模型评价和自动指标。",
+        results="韩国样本的整体质量、文化适配和一致性均显著提高；孟加拉样本的文化适配与一致性提高，但整体质量差异不显著。",
+        limitations="样本很小，评价的是生成质量而非外国受众对原人物的理解和认同；不同文化的评估者与素材也可能混杂。",
+        readingUse="用于设计本国相似人物类比的深层与表层版本。",
+        researchConnection="它直接提供文化对应物替换范例，但博士论文应测试这种本地化是否帮助理解，还是扭曲原人物价值。",
+    ),
+    apa="Choi, H., Kim, Y., Kim, D., Shin, H., & Lee, M. (2026). MELT: A style-adaptive multimodal folktale generation framework for underrepresented cultures. Electronics, 15(10), 2083. https://doi.org/10.3390/electronics15102083",
+    hypothesis="本国相似人物类比通过图式可及性和加工流畅性提高理解，但若只做表层符号替换，可能降低对原人物价值的准确把握。",
+    manipulation="设置无类比、表层符号类比、深层价值结构类比和不匹配类比四组，并让文本长度、视觉质量与信息量相当。",
+    measurement="测量文化熟悉性、加工流畅性、图式激活、理解准确度、价值知觉偏差、人物认同和文化真实性。",
+    reason="它是本期最直接涉及跨文化民间故事对应物替换的研究，能把类比操纵从直觉改为可编码步骤。",
+)
+
+
+specials = [myth_reimagining, wukong_overflow, film_borders, melt]
+
+
+nms_papers = [
+    paper(
+        title="Ambivalence and antagonism: The intertwinement of gossiping and public shaming on social media",
+        titleZh="矛盾与对抗：社交媒体八卦和公开羞辱的交织",
+        authors="Hanna-Kaisa Lassila",
+        year=2026,
+        venue="New Media & Society, OnlineFirst",
+        source="New Media & Society",
+        category="传播学顶刊推荐 · OnlineFirst",
+        url="https://doi.org/10.1177/14614448261500889",
+        doi="https://doi.org/10.1177/14614448261500889",
+        topicIds=["culture"],
+        publicationType="journal",
+        publicationStatus="online-first",
+        peerReviewed=True,
+        publicationDate="2026-11-01",
+        publicationDatePrecision="day",
+        publicationDateSource="https://journals.sagepub.com/doi/10.1177/14614448261500889",
+        takeaway="研究考察两个芬兰Reddit子版块中八卦与公开羞辱如何同时作为娱乐和纪律机制。创作者帖子截图被反复传播、审视和拆解，娱乐、判断、不可预测性、矛盾感和社群建构相互缠绕。",
+        theory="把网络八卦和公开羞辱理解为日常化的道德规训与社群实践。",
+        data="两个芬兰Reddit子版块中的创作者相关帖子与讨论，摘要未披露精确样本量。",
+        method="数字平台语料的质性话语与实践分析。",
+        results="娱乐与判断围绕不可预测性、矛盾感和社群建构形成，道德规训与欺凌的边界因此更容易被跨越。",
+        limitations="两个芬兰子版块的自选择语料限制外推，摘要未报告时间窗、编码规模和信度。",
+        readingUse="用于平台道德评价与群体边界。",
+        researchConnection="可启发把人物道德评价与人物价值契合分开，因为社群规训会把非规范自我呈现转化为群体边界判断。",
+    ),
+    paper(
+        title="Fuck You, Pay Me: Payment apps, review platforms, and ambivalent resistance in the influencer industry",
+        titleZh="付我钱：支付应用、评论平台与网红产业中的矛盾抵抗",
+        authors="Sarah Edwards",
+        year=2026,
+        venue="New Media & Society, OnlineFirst",
+        source="New Media & Society",
+        category="传播学顶刊推荐 · OnlineFirst",
+        url="https://doi.org/10.1177/14614448261493408",
+        doi="https://doi.org/10.1177/14614448261493408",
+        topicIds=["methods"],
+        publicationType="journal",
+        publicationStatus="online-first",
+        peerReviewed=True,
+        publicationDate="2026-11-01",
+        publicationDatePrecision="day",
+        publicationDateSource="https://journals.sagepub.com/doi/10.1177/14614448261493408",
+        takeaway="论文分析四类汇总品牌匿名评价或公开网红报酬的中介平台，指出它们一方面帮助创作者抵抗不稳定劳动，另一方面也可能被品牌和平台用于监控，形成可被吸纳的矛盾抵抗。",
+        theory="把平台化文化生产中的抵抗理解为在有限位置上协商权力，而非纯粹自上而下或自下而上。",
+        data="四个网红产业中介平台的功能、话语和实践材料。",
+        method="批判性平台与产业分析；公开摘要未披露是否包含访谈及其数量。",
+        results="透明报酬和品牌评价能增强谈判能力，也会生成可追踪数据并削弱集体行动潜力。",
+        limitations="缺少可核验的因果证据和样本细节，产业平台结论不直接等于受众接收机制。",
+        readingUse="用于平台中介、透明度和被吸纳的抵抗。",
+        researchConnection="与博士论文直接关系较弱，主要提示类比或解释工具既能降低信息不对称，也可能重新分配解释权。",
+    ),
+    paper(
+        title="Paid, but not a partner: Monetization without standing in Facebook’s Performance Bonus Program",
+        titleZh="获得报酬却不是伙伴：Facebook绩效奖金项目中的无地位变现",
+        authors="Rebecca C. Hains",
+        year=2026,
+        venue="New Media & Society, OnlineFirst",
+        source="New Media & Society",
+        category="传播学顶刊推荐 · OnlineFirst",
+        url="https://doi.org/10.1177/14614448261498621",
+        doi="https://doi.org/10.1177/14614448261498621",
+        topicIds=["methods"],
+        publicationType="journal",
+        publicationStatus="online-first",
+        peerReviewed=True,
+        publicationDate="2026-11-01",
+        publicationDatePrecision="day",
+        publicationDateSource="https://journals.sagepub.com/doi/10.1177/14614448261498621",
+        takeaway="研究基于18名Facebook绩效奖金项目参与者访谈和作者亲身参与，提出无地位变现：创作者被付费并受劳动治理，却得不到解释、人工复核或申诉的程序性承认。",
+        theory="以心理契约和程序正义解释平台支付如何制造持续性与回应性的期待。",
+        data="18名项目参与者访谈及作者参与式经验。",
+        method="质性访谈与参与式观察，分析入驻承诺、支付波动、执法错误和支持失败。",
+        results="早期付款和被称为重要创作者形成心理契约，随后解释与申诉缺失导致持续行为约束、边缘创作者的不均衡影响和退出。",
+        limitations="小样本和单一平台项目限制外推，作者参与带来丰富证据也需要反思位置性。",
+        readingUse="用于程序地位、心理契约和平台治理。",
+        researchConnection="与博士论文直接关系较弱，但提醒传播意向还受受众能否获得解释和回应的程序体验影响。",
+    ),
+]
+
+
+collection = {
+    "journalId": "nms",
+    "journalName": "New Media & Society",
+    "kind": "online-first",
+    "title": "OnlineFirst部分目录 · 2026-11-11已核验最新3篇",
+    "url": "https://journals.sagepub.com/toc/nms/0/0?pageSize=20&sortBy=FullEpubDateField",
+    "checkedAt": date,
+    "complete": False,
+    "toc": [
+        {"title": p["title"], "url": p["doi"], "articleType": "Research Article", "status": "new"}
+        for p in nms_papers
+    ],
+}
+
+
+general = paper(
+    title="Early Gravettian genomic data from Western Europe reveal population movements before the LGM",
+    titleZh="西欧早期格拉维特人群基因组数据揭示末次冰盛期前的人口迁移",
+    authors="Pere Gelabert, Susanna Sawyer, Vanessa Villalba-Mouco, et al.",
+    year=2026,
+    venue="Science Advances, 12(43), eaeh6128",
+    source="Science Advances",
+    category="综合顶刊 · 社会与跨学科研究",
+    url="https://doi.org/10.1126/sciadv.aeh6128",
+    doi="https://doi.org/10.1126/sciadv.aeh6128",
+    topicIds=["methods", "culture"],
+    publicationType="journal",
+    publicationStatus="published",
+    peerReviewed=True,
+    publicationDate="2026-10-23",
+    publicationDatePrecision="day",
+    publicationDateSource="https://www.science.org/doi/10.1126/sciadv.aeh6128",
+    socialScienceAssessment="confirmed",
+    socialScienceReason="Science Advances将其列入Social and Interdisciplinary Sciences and Public Health，研究人口迁移、区域连续性和考古文化形成。",
+    takeaway="研究报告三名格拉维特时期个体的全基因组数据，并从西班牙El Mirón洞穴沉积物中恢复约1.4万个古人类单核苷酸多态性，发现末次冰盛期前东、西欧早期格拉维特人群之间存在此前未识别的基因交流。",
+    theory="用古基因组证据检验考古文化区域连续与人口迁移模型。",
+    data="法国、西班牙和意大利三名格拉维特时期个体的全基因组，以及约2.2万年前洞穴沉积物中的约1.4万个古人类单核苷酸多态性。",
+    method="古DNA提取、全基因组比较、群体遗传亲缘与基因流分析，以及沉积物古DNA复原。",
+    results="数据支持西南欧早期格拉维特人群存在东、西谱系交流，并显示Fournol相关祖源在西南欧持续到末次冰盛期。",
+    limitations="基因组样本极少，考古文化标签不能直接等同社会身份或神话传播；沉积物DNA的个体分辨率有限。",
+    readingUse="用于小样本、多来源证据与区域连续性推断。",
+    researchConnection="与博士论文关系较远，主要提供不要把文化区域、人口祖源和认同边界简单等同的方法警示。",
+)
+
+
+groups = [
+    {
+        "id": "crossdisciplinary",
+        "label": "其他研究",
+        "target": 5,
+        "sortBy": "split",
+        "selectionBuckets": [
+            {"id": "latest", "label": "最新", "target": 3},
+            {"id": "cited", "label": "重要研究精选", "target": 2, "sortBy": "relevance-quality", "sortDescription": "Google Scholar受异常流量验证阻断后，按相关性和研究质量选择，不按引用量排名。", "accessFallback": fallback},
+        ],
+        "sourceCoverage": [{"database": x, "status": "included"} for x in ["NBER", "SSRN", "arXiv"]],
+        "sortDescription": "最新3篇按首次公开日期降序并各覆盖NBER、arXiv和SSRN；重要研究精选2篇按相关性和研究质量呈现。",
+        "papers": cross,
+    },
+    {
+        "id": "journals",
+        "label": "传播学与社会科学",
+        "target": 5,
+        "sortBy": "relevance-quality-date",
+        "journalPriorityNote": "Google Scholar原生主题检索受验证阻断。出版方回退找到的博士论文候选不属于传播学77刊，且未能核验为其他社会科学SSCI期刊，因此保留在博士论文专题，不冒充主题期刊栏。",
+        "sortDescription": "按传播学SSCI Q1/Q2优先、直接相关性、研究质量和日期筛选；本期未发现同时满足新颖、去重和索引条件的主题期刊论文。",
+        "accessFallback": fallback,
+        "papers": [],
+    },
+    {
+        "id": "communication-issue",
+        "label": "传播学顶刊推荐",
+        "unit": "issue",
+        "target": 3,
+        "sortBy": "issue",
+        "collection": collection,
+        "sortDescription": "不使用关键词。官方目录报告206条OnlineFirst记录，本次逐篇核验最新3篇新研究；由于未完整核对全部206条，保存为未完成快照且不推进New Media & Society的完成游标。",
+        "papers": nms_papers,
+    },
+    {
+        "id": "general-science",
+        "label": "综合顶刊推荐",
+        "target": 1,
+        "sortBy": "publicationDate",
+        "rotationJournalId": "science",
+        "selectedJournalId": "science-advances",
+        "rotationFallback": {
+            "reason": "Science当前目录的直接读取受访问限制，公开检索也未取得可核验且未推荐的社会科学原始研究，因此按配置顺序回退到下一刊Science Advances。",
+            "checkedAt": date,
+            "attempts": [
+                {"journalId": "science", "status": "blocked", "reason": "当前目录直接读取受访问限制，未能完成可核验的新社会科学候选筛选。"},
+                {"journalId": "science-advances", "status": "selected", "reason": "当前期Social and Interdisciplinary Sciences and Public Health目录可读，并发现尚未推荐的原始研究。"},
+            ],
+        },
+        "sortDescription": "不使用主题关键词。Science当日目录无法取得可核验的新社会科学候选，按配置顺序回退到Science Advances，选择其社会与跨学科栏目中尚未推荐的原始研究。",
+        "papers": [general],
+    },
+]
+
+
+selected_refs = [p["doi"] for p in specials]
+all_count = sum(len(g["papers"]) for g in groups) + len(specials)
+data = {
+    "schemaVersion": 6,
+    "date": date,
+    "timezone": "Asia/Shanghai",
+    "edition": "正式第39期",
+    "title": "从文化对应物到接收边界：类比能帮助理解，也可能改写人物价值",
+    "summary": "本期完成其他研究5篇、New Media & Society最新3篇部分快照、Science Advances综合顶刊1篇，并新增博士论文同行评审专题4篇。",
+    "historyPolicy": "exclude-recommended",
+    "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+    "searchPlatforms": ["Google Scholar", "NBER", "SSRN", "arXiv"],
+    "activeTopicIds": ["culture", "sycophancy", "methods"],
+    "searchSettings": {
+        "source": "defaults + reading-plan",
+        "lookbackDays": 30,
+        "conflictNote": "当日没有生效的一次性或持续用户设置。博士论文标准强化culture主题，但未删除culture、sycophancy和methods，也未改动未来设置。",
+    },
+    "notice": "逐篇依据官方记录、出版方页面及权威学术索引核验。只有实际阅读正文关键部分才标全文核验；无法核验的样本、系数、识别和许可信息均明确说明。",
+    "searchNote": "Google Scholar原生主题查询返回异常流量提示后停止，不绕过验证，也不以Web of Science、OpenAlex、下载量或网页指标冒充引用次数。其余候选由NBER、SSRN、arXiv官方记录、出版方目录和权威学术索引发现并逐篇核验。",
+    "shortfallReason": "传播学与社会科学主题栏目标5篇，实际0篇。Scholar受阻后，未发现同时满足未推荐、主题直接相关和传播学77刊SSCI Q1/Q2或其他社会科学SSCI核验要求的论文，因此不凑数。博士论文方向目标通常5至8篇，本期严格排除网站497条永久登记、最新阅读清单、可见对话和已知既有论文后，仅4篇新候选达到同行评审与相关性底线，故明确缺1篇。New Media & Society目录为部分核验，不冒称完整。",
+    "themeSearches": [
+        {"platform": "Google Scholar", "query": "(\"cross-cultural reception\" OR \"value congruence\" OR \"narrative identification\")", "timeRange": "2024年至今；检索日期2026-11-11", "purpose": "culture主题发现，随后筛期刊并核验引用次数", "status": "原生页面明确显示unusual traffic验证，未取得结果或引用次数，未绕过验证。"},
+        {"platform": "Google Scholar", "query": "(sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\")", "timeRange": "不限年份；检索日期2026-11-11", "purpose": "sycophancy主题发现", "status": "首次请求已触发站点级验证，因此未继续发送本主题请求，并启用指南规定的回退。"},
+        {"platform": "Google Scholar", "query": "(\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\")", "timeRange": "不限年份；检索日期2026-11-11", "purpose": "methods主题发现", "status": "首次请求已触发站点级验证，因此未继续发送本主题请求，并启用指南规定的回退。"},
+        {"platform": "NBER", "query": "site:nber.org/papers 2026 November AI communication methods social", "timeRange": "优先近30日；检索日期2026-11-11", "purpose": "NBER候选发现", "status": "限定官方域名的公开网页检索成功，不冒称NBER站内高级检索；入选记录回到NBER官方页核验。"},
+        {"platform": "SSRN", "query": "site:ssrn.com 2026 cross-cultural narrative persuasion AI communication", "timeRange": "优先近30日，必要时扩展至2026年；检索日期2026-11-11", "purpose": "SSRN候选发现", "status": "限定官方域名的公开网页检索成功；题录、首次张贴日期和摘要回到SSRN记录核验。"},
+        {"platform": "arXiv", "query": "sycophancy AND (pluralistic OR social advice OR stakeholder)", "timeRange": "2026-10-01至2026-11-11", "purpose": "arXiv候选发现", "status": "官方记录可读；题名、作者、首次提交日期、摘要和arXiv ID完成核验。"},
+    ],
+    "periodicalChecks": [
+        {"platform": "SAGE · New Media & Society", "query": "OnlineFirst目录，不使用关键词", "timeRange": "检查日期2026-11-11", "purpose": "传播学顶刊轮换", "status": "官方目录报告206条记录；本次核验最新3篇新研究及其DOI、日期和摘要，未完整核对其余203条，因此complete为false。"},
+        {"platform": "Science", "query": "最新在线目录，不使用主题关键词", "timeRange": "检查日期2026-11-11", "purpose": "综合顶刊轮换", "status": "公开目录检索未取得可核验且未推荐的社会科学原始研究，按配置回退。"},
+        {"platform": "Science Advances", "query": "当前期Social and Interdisciplinary Sciences and Public Health栏目，不使用主题关键词", "timeRange": "检查日期2026-11-11", "purpose": "综合顶刊回退", "status": "官方目录和PubMed记录可核验题名、作者、日期、DOI、同行评审期刊状态和摘要；入选2026-10-23研究。"},
+    ],
+    "verificationLog": [
+        {"platform": "Google Scholar", "query": "当日主题检索与实际引用次数", "timeRange": "核验日期2026-11-11", "purpose": "主题发现与引用排序", "status": "首次原生查询显示异常流量验证后停止；没有绕过验证、记录虚构0次引用或用其他指标替代。"},
+        {"platform": "NBER、SSRN与arXiv官方记录", "query": "其他研究5篇的身份、首次公开日期、摘要与版本", "timeRange": "核验日期2026-11-11", "purpose": "逐篇核验与跨版本去重", "status": "5篇均完成题录和摘要核验，并与截至2026-11-10的497条永久登记去重。"},
+        {"platform": "出版方官网与权威学术索引", "query": "期刊题名、作者、年份、期刊、同行评审状态、DOI、日期、摘要、样本与方法", "timeRange": "核验日期2026-11-11", "purpose": "博士论文专题与轮换栏目逐篇核验", "status": "8篇新期刊论文完成身份核验；只写入公开证据支持的研究细节，未知细节明确标示。"},
+        {"platform": "博士论文文献阅读与补充清单", "query": "2026-11-09同步的六个工作表及现有网站登记", "timeRange": "核验日期2026-11-11", "purpose": "题名、DOI与版本去重", "status": "读取最新可访问工作簿六个工作表，并与永久登记、可见对话和用户明确列出的既有论文交叉核对；2026-11-10对话中已讨论的Yeo等2026论文也排除。"},
+    ],
+    "groups": groups,
+    "coreTracking": [],
+    "coreTrackingNote": "reading-plan与core-papers当日没有用户提交的核心论文请求，因此本期没有核心文献状态更新。",
+    "periodicalCheckNote": "两个轮换栏目均不使用主题关键词。New Media & Society保存为最新3篇的部分目录；Science未找到新候选后依配置回退Science Advances。",
+    "dissertation": {
+        "title": "从被看见到被接收",
+        "timeRange": "优先检查2026-11-10上期发布以来的新发表研究。未发现达到质量门槛的当日新增后扩展至2025至2026年尚未推荐且未进入阅读清单的同行评审研究；较早论文明确标为补充，不冒称最新。",
+        "selectionNote": "本期精选4篇同行评审论文，均在博士论文专题区完整解读。严格去重后未达到通常5至8篇目标，因此不以低可信期刊、非同行评审预印本或弱相关论文凑数。重点覆盖中国神话叙事重构、全球游戏与电影接收边界，以及本国民间故事对应物的文化适配。",
+        "shortfallReason": "严格排除网站497条永久登记、最新阅读清单、可见对话和用户明确列出的既有论文后，仅4篇新候选同时达到同行评审、可核验发表状态与直接相关性底线，故不以低可信期刊、预印本或弱相关论文补足第5篇。",
+        "historyCoverage": "已核对网站截至2026-11-10的497条永久登记、现有简报、用户明确列出的既有文献、本轮可见对话、2026-11-10已讨论的Yeo等论文，以及2026-11-09同步的《博士论文文献阅读与补充清单》六个工作表，并按DOI、arXiv ID、规范化题名和已知版本别名去重。无法访问的完整旧对话和未同步私人清单不在覆盖范围内，因此不声称绝对完全去重。",
+        "selectedPapers": selected_refs,
+        "papers": specials,
+        "topPapers": [
+            {"doi": melt["doi"], "reason": "直接把外国民间故事的文化特定元素映射到受众本国对应物，并提供表层替换、风格保持和文化一致性的可操作步骤。"},
+            {"doi": wukong_overflow["doi"], "reason": "直接研究中国神话游戏的全球接收，可帮助严格区分技术和产业评价、文化真实性与人物接收。"},
+            {"doi": myth_reimagining["doi"], "reason": "清楚比较集体秩序和个体自我实现两类神话价值结构，最适合转化为人物价值操纵。"},
+        ],
+    },
+}
+
+
+(root / f"{date}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+
+index_path = root / "index.json"
+index = [x for x in json.loads(index_path.read_text()) if x["date"] != date]
+index.insert(0, {"date": date, "title": data["title"], "summary": data["summary"], "edition": data["edition"], "count": all_count, "file": f"{date}.json"})
+index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
+
+state_path = root / "rotation-state.json"
+state = json.loads(state_path.read_text())
+state["updatedAt"] = date
+nms = state["communication"]["nms"]
+nms.update(
+    lastAttemptAt=date,
+    lastCheckedAt=date,
+    status="partial",
+    reason="SAGE OnlineFirst directory reported 206 records. The three newest research articles dated 2026-11-01 were individually verified, but the remaining directory was not fully reconciled, so lastCompletedAt was not advanced.",
+)
+nms["onlineSnapshots"] = [x for x in nms.get("onlineSnapshots", []) if x.get("checkedAt") != date]
+nms["onlineSnapshots"].append({"checkedAt": date, "url": collection["url"], "complete": False, "dois": [p["doi"] for p in nms_papers]})
+nms["directoryObservation"] = {"checkedAt": date, "url": collection["url"], "complete": False, "reportedTotal": 206, "verifiedNewestCount": 3, "scopeNote": "Verified the three newest research articles only; no claim of complete directory coverage."}
+
+science = state["general"]["science"]
+science.update(lastAttemptAt=date, lastCheckedAt=date, status="blocked", reason="Science public directory search did not yield a verifiable, unrecommended social-science original study on 2026-11-11, so no completed cursor was recorded and the configured fallback was used.")
+sciadv = state["general"]["science-advances"]
+sciadv.update(lastAttemptAt=date, lastCheckedAt=date, status="completed", lastCompletedAt=date, reason="Science Advances current Social and Interdisciplinary Sciences and Public Health section was checked without topic keywords; DOI 10.1126/sciadv.aeh6128 was a verifiable, unrecommended original study.", lastRecommendedDoi=general["doi"], publicationDate=general["publicationDate"], socialScienceAssessment="confirmed")
+state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+
+print(f"Wrote {date} with {all_count} papers")

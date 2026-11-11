@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-06",
@@ -439,20 +439,31 @@
       }
     },
     "nms": {
-      "lastAttemptAt": "2026-11-04",
-      "lastCheckedAt": "2026-11-04",
+      "lastAttemptAt": "2026-11-11",
+      "lastCheckedAt": "2026-11-11",
       "status": "partial",
-      "reason": "Official OnlineFirst directory reported 203 entries, but publisher access controls allowed reliable verification of only the four newest research articles. Partial snapshot published; rotation completion not advanced.",
+      "reason": "SAGE OnlineFirst directory reported 206 records. The three newest research articles dated 2026-11-01 were individually verified, but the remaining directory was not fully reconciled, so lastCompletedAt was not advanced.",
       "lastCompletedAt": null,
-      "onlineSnapshots": [],
+      "onlineSnapshots": [
+        {
+          "checkedAt": "2026-11-11",
+          "url": "https://journals.sagepub.com/toc/nms/0/0?pageSize=20&sortBy=FullEpubDateField",
+          "complete": false,
+          "dois": [
+            "https://doi.org/10.1177/14614448261500889",
+            "https://doi.org/10.1177/14614448261493408",
+            "https://doi.org/10.1177/14614448261498621"
+          ]
+        }
+      ],
       "completedIssues": [],
       "directoryObservation": {
-        "checkedAt": "2026-11-04",
-        "url": "https://journals.sagepub.com/toc/NMS/0/0",
+        "checkedAt": "2026-11-11",
+        "url": "https://journals.sagepub.com/toc/nms/0/0?pageSize=20&sortBy=FullEpubDateField",
         "complete": false,
-        "reportedTotal": 203,
-        "verifiedResearchArticleCount": 4,
-        "scopeNote": "Newest four research articles verified individually; remaining directory pagination inaccessible."
+        "reportedTotal": 206,
+        "verifiedNewestCount": 3,
+        "scopeNote": "Verified the three newest research articles only; no claim of complete directory coverage."
       }
     },
     "sms": {
@@ -521,20 +532,21 @@
       "lastRecommendedPublicationDate": "2026-11-05"
     },
     "science": {
-      "lastAttemptAt": "2026-11-05",
+      "lastAttemptAt": "2026-11-11",
       "status": "blocked",
-      "reason": "Science current directory remained behind access verification, so no candidate or completed cursor was recorded.",
+      "reason": "Science public directory search did not yield a verifiable, unrecommended social-science original study on 2026-11-11, so no completed cursor was recorded and the configured fallback was used.",
       "lastCompletedAt": null,
-      "lastCheckedAt": "2026-11-05"
+      "lastCheckedAt": "2026-11-11"
     },
     "science-advances": {
-      "lastAttemptAt": "2026-11-06",
+      "lastAttemptAt": "2026-11-11",
       "status": "completed",
-      "lastCompletedAt": "2026-11-06",
-      "lastCheckedAt": "2026-11-06",
-      "lastRecommendedDoi": "https://doi.org/10.1126/sciadv.aec1912",
-      "publicationDate": "2026-10-30",
-      "socialScienceAssessment": "confirmed"
+      "lastCompletedAt": "2026-11-11",
+      "lastCheckedAt": "2026-11-11",
+      "lastRecommendedDoi": "https://doi.org/10.1126/sciadv.aeh6128",
+      "publicationDate": "2026-10-23",
+      "socialScienceAssessment": "confirmed",
+      "reason": "Science Advances current Social and Interdisciplinary Sciences and Public Health section was checked without topic keywords; DOI 10.1126/sciadv.aeh6128 was a verifiable, unrecommended original study."
     },
     "scientific-data": {
       "lastAttemptAt": "2026-11-07",
