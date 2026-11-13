@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "communication": {
     "joc": {
-      "lastAttemptAt": "2026-11-06",
-      "lastCheckedAt": "2026-11-06",
+      "lastAttemptAt": "2026-11-13",
+      "lastCheckedAt": "2026-11-13",
       "status": "completed",
-      "lastCompletedAt": "2026-11-06",
+      "lastCompletedAt": "2026-11-13",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-16",
@@ -132,9 +132,26 @@
             "https://doi.org/10.1093/joc/jqag009",
             "https://doi.org/10.1093/joc/jqag012"
           ]
+        },
+        {
+          "checkedAt": "2026-11-13",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "title": "Advance Articles · 2026-11-13完整快照",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag023",
+            "https://doi.org/10.1093/joc/jqag021",
+            "https://doi.org/10.1093/joc/jqag020",
+            "https://doi.org/10.1093/joc/jqag017",
+            "https://doi.org/10.1093/joc/jqag018",
+            "https://doi.org/10.1093/joc/jqag014",
+            "https://doi.org/10.1093/joc/jqag016",
+            "https://doi.org/10.1093/joc/jqag015",
+            "https://doi.org/10.1093/joc/jqag013"
+          ]
         }
       ],
-      "reason": "Oxford Academic Advance Articles directory remained fully readable and unchanged from the complete 2026-10-30 snapshot; no new research article was added."
+      "reason": "Official Advance Articles directory was fully reconciled: seven prior research papers, one non-research presidential address, and one new theory article, DOI 10.1093/joc/jqag023."
     },
     "hcr": {
       "lastCheckedAt": "2026-11-07",
@@ -566,13 +583,14 @@
       "reason": "Official current issue listing remained dated 2026-10-23 and all verifiable social-science candidates were already present in the permanent registry; no duplicate recommendation was made."
     },
     "scientific-data": {
-      "lastAttemptAt": "2026-11-07",
+      "lastAttemptAt": "2026-11-13",
       "status": "completed",
-      "lastCompletedAt": "2026-11-07",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08511-6",
-      "publicationDate": "2026-11-02",
+      "lastCompletedAt": "2026-11-13",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08270-4",
+      "publicationDate": "2026-11-11",
       "socialScienceAssessment": "confirmed",
-      "lastCheckedAt": "2026-11-07"
+      "lastCheckedAt": "2026-11-13",
+      "reason": "Official latest directory yielded the unrecommended social-science dataset CORA, DOI 10.1038/s41597-026-08270-4."
     },
     "nature-communications": {
       "lastAttemptAt": "2026-11-08",
