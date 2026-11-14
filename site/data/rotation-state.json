@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-13",
@@ -154,7 +154,7 @@
       "reason": "Official Advance Articles directory was fully reconciled: seven prior research papers, one non-research presidential address, and one new theory article, DOI 10.1093/joc/jqag023."
     },
     "hcr": {
-      "lastCheckedAt": "2026-11-07",
+      "lastCheckedAt": "2026-11-14",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-17",
@@ -198,6 +198,18 @@
             "https://doi.org/10.1093/hcr/hqag002",
             "https://doi.org/10.1093/hcr/hqag001"
           ]
+        },
+        {
+          "checkedAt": "2026-11-14",
+          "url": "https://academic.oup.com/hcr/advance-articles",
+          "title": "Advance Articles · 2026-11-14完整快照",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/hcr/hqag004",
+            "https://doi.org/10.1093/hcr/hqag003",
+            "https://doi.org/10.1093/hcr/hqag002",
+            "https://doi.org/10.1093/hcr/hqag001"
+          ]
         }
       ],
       "completedIssues": [
@@ -214,10 +226,10 @@
           ]
         }
       ],
-      "lastAttemptAt": "2026-11-07",
+      "lastAttemptAt": "2026-11-14",
       "status": "completed",
-      "lastCompletedAt": "2026-11-07",
-      "reason": "Oxford Academic Advance Access directory remained fully readable and unchanged from the complete 2026-10-31 snapshot; no new research article was added."
+      "lastCompletedAt": "2026-11-14",
+      "reason": "Official Advance Articles directory was fully reconciled: all four research papers were previously recommended, so there was no new paper on 2026-11-14."
     },
     "cr": {
       "lastAttemptAt": "2026-11-08",
@@ -593,13 +605,14 @@
       "reason": "Official latest directory yielded the unrecommended social-science dataset CORA, DOI 10.1038/s41597-026-08270-4."
     },
     "nature-communications": {
-      "lastAttemptAt": "2026-11-08",
+      "lastAttemptAt": "2026-11-14",
       "status": "completed",
-      "lastCompletedAt": "2026-11-08",
-      "lastCheckedAt": "2026-11-08",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41467-026-79207-z",
-      "publicationDate": "2026-11-06",
-      "socialScienceAssessment": "confirmed"
+      "lastCompletedAt": "2026-11-14",
+      "lastCheckedAt": "2026-11-14",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41467-026-78922-x",
+      "publicationDate": "2026-11-09",
+      "socialScienceAssessment": "confirmed",
+      "reason": "Official Nature Communications listings yielded an unrecommended social-science study of collective memory and generational amnesia, DOI 10.1038/s41467-026-78922-x."
     }
   }
 }
