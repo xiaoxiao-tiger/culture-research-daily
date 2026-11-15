@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-14",
+  "updatedAt": "2026-11-15",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-13",
@@ -232,10 +232,10 @@
       "reason": "Official Advance Articles directory was fully reconciled: all four research papers were previously recommended, so there was no new paper on 2026-11-14."
     },
     "cr": {
-      "lastAttemptAt": "2026-11-08",
-      "lastCheckedAt": "2026-11-08",
+      "lastAttemptAt": "2026-11-15",
+      "lastCheckedAt": "2026-11-15",
       "status": "partial",
-      "reason": "SAGE public Online First page exposed only entries 1-10 of 101. The verified range contained one non-research acknowledgement and nine new research articles; the snapshot is incomplete, so lastCompletedAt remains unchanged.",
+      "reason": "Official Communication Research OnlineFirst leading range was verified and yielded two unrecommended research articles, but the full directory was not completely reconciled; completion cursor was not advanced.",
       "lastCompletedAt": null,
       "onlineSnapshots": [
         {
@@ -252,6 +252,18 @@
             "https://doi.org/10.1177/00936502261487784",
             "https://doi.org/10.1177/00936502261490466",
             "https://doi.org/10.1177/00936502261489667"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-15",
+          "url": "https://journals.sagepub.com/toc/crxa/0/0?pageSize=50&sortBy=FullEpubDateField&startPage=0",
+          "title": "OnlineFirst领先范围 · 2026-11-15部分核验",
+          "complete": false,
+          "dois": [
+            "https://doi.org/10.1177/00936502261505920",
+            "https://doi.org/10.1177/00936502261501242",
+            "https://doi.org/10.1177/00936502261499806",
+            "https://doi.org/10.1177/00936502261497370"
           ]
         }
       ],
@@ -557,14 +569,14 @@
   },
   "general": {
     "pnas": {
-      "lastAttemptAt": "2026-11-09",
-      "status": "blocked",
-      "lastCompletedAt": "2026-11-03",
-      "lastCheckedAt": "2026-11-09",
-      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2615627123",
-      "publicationDate": "2026-10-19",
+      "lastAttemptAt": "2026-11-15",
+      "status": "completed",
+      "lastCompletedAt": "2026-11-15",
+      "lastCheckedAt": "2026-11-15",
+      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2622764123",
+      "publicationDate": "2026-11-09",
       "socialScienceAssessment": "confirmed",
-      "reason": "PNAS public latest directory did not yield a stable article-level set of un-recommended social-science candidates; no cursor was advanced."
+      "reason": "PNAS and PubMed records yielded an unrecommended social-science experiment on ideology-based group membership and belief revision, DOI 10.1073/pnas.2622764123."
     },
     "nature": {
       "lastAttemptAt": "2026-11-10",
