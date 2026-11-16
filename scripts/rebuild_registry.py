@@ -1,10 +1,10 @@
-"""Append published paper identities without erasing older recommendations."""
+"""Rebuild recommendation identities from the currently published archive."""
 import json
 from pathlib import Path
 from paper_identity import identifiers,papers_in
 root=Path(__file__).resolve().parents[1]/'site/data'
 path=root/'recommended.json'
-ledger=json.loads(path.read_text()) if path.exists() else {'version':1,'records':[]}
+ledger={'version':1,'records':[]}
 keys={(r['date'],tuple(r['identifiers'])) for r in ledger['records']}
 for issue in json.loads((root/'index.json').read_text()):
     data=json.loads((root/(issue['date']+'.json')).read_text())

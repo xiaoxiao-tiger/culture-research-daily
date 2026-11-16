@@ -17,11 +17,11 @@ class DissertationTests(unittest.TestCase):
         root=Path(__file__).resolve().parents[1]
         with tempfile.TemporaryDirectory() as tmp:
             target=Path(tmp);shutil.copytree(root/'scripts',target/'scripts');shutil.copytree(root/'site/data',target/'site/data')
-            path=target/'site/data/2026-10-20.json';original=json.loads(path.read_text())
+            path=target/'site/data/2026-11-16.json';original=json.loads(path.read_text())
             for mutate,message in [
                 (lambda d:d['dissertation']['papers'][0].update(peerReviewed=False),'Dissertation requires peer-reviewed'),
                 (lambda d:d['dissertation']['topPapers'][0].update(doi='https://doi.org/10.invalid/missing'),'Invalid dissertation priorities'),
-                (lambda d:d['dissertation']['papers'][0].update(doi=d['groups'][1]['papers'][0]['doi']),'Unresolved dissertation reference')]:
+                (lambda d:d['dissertation']['papers'][0].update(doi=d['groups'][0]['papers'][0]['doi']),'Unresolved dissertation reference')]:
                 data=json.loads(json.dumps(original));mutate(data);path.write_text(json.dumps(data))
                 result=subprocess.run([sys.executable,str(target/'scripts/validate.py')],capture_output=True,text=True)
                 self.assertNotEqual(result.returncode,0);self.assertIn(message,result.stderr)

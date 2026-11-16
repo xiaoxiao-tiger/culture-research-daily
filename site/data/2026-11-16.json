@@ -145,7 +145,8 @@
           "citationSourceUrl": null,
           "citationCheckedAt": null,
           "citationNote": "Google Scholar受异常流量验证阻断，未核验实际引用次数。",
-          "selectionReason": "大规模平台数据与访谈结合，直接连接粉丝、情感和集体参与。"
+          "selectionReason": "大规模平台数据与访谈结合，直接连接粉丝、情感和集体参与。",
+          "abstractEn": "Drawing on interviews with thirteen fans, anti-fans, and bystanders, together with 139,795 Weibo posts and 205,001 comments surrounding the Cai Xukun controversy, this study identifies positioning, storytelling, affective attunement, and calibration as four affective practices. These practices explain how heterogeneous participants sustain movement-like collective participation after an external rupture."
         },
         {
           "evidence": "全文核验",
@@ -187,7 +188,8 @@
           "peerReviewSource": "https://doi.org/10.1177/20594364251385203",
           "hypothesisImplication": "简报推论：国际受众的技术好评可能与文化理解脱钩，人物认同与传播意向也不应从总体情感自动推断。",
           "manipulationImplication": "简报推论：在同一人物材料中正交操纵文化解释深度和本国相似人物类比，并固定玩法与视觉质量。",
-          "measurementImplication": "简报推论：分别测量事实理解、象征意义理解、人物好感、Schwartz价值契合、人物认同、分享意向和实际选择。"
+          "measurementImplication": "简报推论：分别测量事实理解、象征意义理解、人物好感、Schwartz价值契合、人物认同、分享意向和实际选择。",
+          "abstractEn": "Using third-space and cultural-hybridity perspectives, this study combines critical discourse analysis of Black Myth: Wukong and its paratexts with computational analysis of 3,842 relevant posts from Weibo, Reddit, and Steam. Chinese audiences emphasized cultural authenticity, symbolism, and narrative depth, whereas international audiences focused more on gameplay, technology, and accessibility and frequently missed or misinterpreted cultural details."
         }
       ]
     },
@@ -252,7 +254,8 @@
           "peerReviewSource": "https://doi.org/10.1080/15213269.2025.2576679",
           "hypothesisImplication": "简报推论：本国相似人物类比可能通过提高流畅性改善理解，但在负荷很低或很高时未必提高说服或人物认同。",
           "manipulationImplication": "简报推论：正交操纵语言难度与类比线索，同时加入无类比、表层类比和价值结构类比条件。",
-          "measurementImplication": "简报推论：分别测量主观流畅性、反应时、事实记忆、关系理解、好感、人物认同和分享意向。"
+          "measurementImplication": "简报推论：分别测量主观流畅性、反应时、事实记忆、关系理解、好感、人物认同和分享意向。",
+          "abstractEn": "This experiment independently manipulated reactive cognitive control through auditory cues and processing fluency through linguistic difficulty in a health narrative. Linguistic difficulty affected memory and narrative persuasion. Under difficult language conditions, auditory cues improved rather than impaired memory, showing that cognitive load and processing fluency should not be treated as the same dimension of difficult processing."
         },
         {
           "evidence": "全文核验",
@@ -303,7 +306,8 @@
           "citationSourceUrl": null,
           "citationCheckedAt": null,
           "citationNote": "Google Scholar受异常流量验证阻断，未核验实际引用次数。",
-          "selectionReason": "最新跨国研究，覆盖AI生产实践与公共价值冲突。"
+          "selectionReason": "最新跨国研究，覆盖AI生产实践与公共价值冲突。",
+          "abstractEn": "Using surveys, organizational documents, and interviews with senior managers, this comparative study examines artificial-intelligence use in thirteen public-service media networks across Africa, Asia, Europe, Oceania, and the Caribbean. AI was used mainly for transcription, image generation and editing, and content personalization. The findings reveal persistent tensions between efficiency, public value, statutory obligations, and democratic missions."
         }
       ]
     },
@@ -349,7 +353,8 @@
           "results": "AI使用增加并未减轻孤独，主观孤独反而上升；其他福祉结果方向不利但不够精确。",
           "limitations": "SSRN工作论文尚未同行评审，允许参与者自行选择工具，使具体模型和对话内容异质。",
           "abstractZh": "法国成年人的大规模预注册实验要求处理组连续28天每天至少进行一次个人AI对话。干预显著增加社会情感型AI使用，但主观孤独上升，其他福祉指标方向也一致不利，不过估计不精确。",
-          "abstractSource": "https://ssrn.com/abstract=7625264"
+          "abstractSource": "https://ssrn.com/abstract=7625264",
+          "abstractEn": "A large preregistered experiment with adults in France required participants in the treatment condition to hold at least one personal conversation with an AI system each day for twenty-eight days. The intervention substantially increased socioemotional AI use but did not reduce loneliness. Self-reported loneliness increased, and other well-being measures moved in similarly unfavorable directions, although several estimates were imprecise."
         },
         {
           "evidence": "全文核验",
@@ -405,7 +410,8 @@
           "peerReviewSource": "https://doi.org/10.3389/fpsyg.2026.1970730",
           "hypothesisImplication": "简报推论：来源披露、信息情绪性和辅助程度可能改变解释的可信度，但不应与内容理解效应混为一谈。",
           "manipulationImplication": "简报推论：若使用AI或第三方解释，正交操纵来源披露与辅助程度，并保持解释文本内容相同。",
-          "measurementImplication": "简报推论：分别测量感知作者身份、真实性、信任、理解、人物评价和传播意向。"
+          "measurementImplication": "简报推论：分别测量感知作者身份、真实性、信任、理解、人物评价和传播意向。",
+          "abstractEn": "This mini-review synthesizes thirteen core experiments and four adjacent studies on AI-mediated interpersonal communication. Relational costs of AI assistance were concentrated around four conditions: disclosure or suspicion of AI use, emotionality of the message, closeness of the relationship, and degree of assistance. Perceived authorship is proposed as a candidate mechanism, but the review notes that it has not yet been tested directly."
         }
       ]
     },
@@ -433,7 +439,8 @@
             "status": "previously-recommended",
             "recommendedDate": "2026-10-26",
             "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-26",
-            "abstractZh": "两项预注册双轮实验发现，AI介入线索会稳定降低道歉与感谢信息的真诚感。先前被启动的AI介导意识还会通过提高AI使用怀疑，影响后来没有AI线索的信息判断，形成序列效应。"
+            "abstractZh": "两项预注册双轮实验发现，AI介入线索会稳定降低道歉与感谢信息的真诚感。先前被启动的AI介导意识还会通过提高AI使用怀疑，影响后来没有AI线索的信息判断，形成序列效应。",
+            "abstractEn": "Across two preregistered, two-wave experiments, cues that artificial intelligence had assisted with apologies or expressions of gratitude consistently reduced perceived sincerity. Making AI mediation salient in an earlier message also increased suspicion of AI use and shaped evaluations of a later message that contained no AI cue, producing a sequential replicant effect."
           },
           {
             "title": "The link between three smartphone school policies and students’ mental health: a growth trajectory approach",
@@ -442,7 +449,8 @@
             "status": "previously-recommended",
             "recommendedDate": "2026-10-26",
             "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-26",
-            "abstractZh": "比利时三所学校实施不同手机限制后，研究以最多七轮调查追踪学生。首次测量时全禁学校的抑郁和焦虑最高，但三校心理健康变化轨迹没有显著差异；全禁和午餐可用学校内部的抑郁症状均上升。"
+            "abstractZh": "比利时三所学校实施不同手机限制后，研究以最多七轮调查追踪学生。首次测量时全禁学校的抑郁和焦虑最高，但三校心理健康变化轨迹没有显著差异；全禁和午餐可用学校内部的抑郁症状均上升。",
+            "abstractEn": "Students in three Belgian schools were followed for as many as seven survey waves after the schools adopted different smartphone policies. At baseline, depression and anxiety were highest in the school with a full ban, but trajectories of mental health did not differ significantly across schools. Depressive symptoms increased within both the full-ban school and the school allowing lunchtime use."
           }
         ]
       },
@@ -493,7 +501,8 @@
           "limitations": "宏观历史识别依赖制度差异和模型假设，摘要不足以核验全部机制与异质性。",
           "abstractZh": "研究显示，把官员晋升前景与出生指标挂钩的官僚激励强化了独生子女政策执行，并解释1990年代中国生育率下降的近一半。",
           "abstractSource": "https://doi.org/10.1038/s41586-026-11232-w",
-          "socialScienceReason": "研究政策执行、组织激励与人口行为，属于明确的社会科学研究。"
+          "socialScienceReason": "研究政策执行、组织激励与人口行为，属于明确的社会科学研究。",
+          "abstractEn": "This study shows that bureaucratic incentives linking officials’ promotion prospects to birth-control targets strengthened enforcement of China’s one-child policy. Variation in these incentives helps explain a substantial share of the fertility decline during the 1990s, illustrating how personnel rules can shape the effectiveness of nationwide social policy."
         }
       ]
     }
@@ -551,7 +560,8 @@
         "peerReviewSource": "https://doi.org/10.1111/nyas.15407",
         "hypothesisImplication": "简报推论：第二语言可能改变外国文化规范的可接受性，因此价值契合效应可能受到实验语言调节。",
         "manipulationImplication": "简报推论：在同一外国受众中随机呈现母语版与高质量第二语言版，并保持人物行为和价值信息一致。",
-        "measurementImplication": "简报推论：同时测量接受度、理解、文化接近、价值契合、道德评价、反应时和可行的隐性加工指标。"
+        "measurementImplication": "简报推论：同时测量接受度、理解、文化接近、价值契合、道德评价、反应时和可行的隐性加工指标。",
+        "abstractEn": "This study examined whether bilingual speakers accept cultural norms differently depending on the language in use. Twenty Chinese–English bilinguals and twenty English monolinguals evaluated general knowledge statements and British or Chinese cultural norms while EEG was recorded. General knowledge integration was similar across languages, whereas bilingual participants were more accepting of British norms in English and Chinese norms in Chinese. Explicit judgments and N400 responses therefore converged on a language-context effect in cultural norm acceptance."
       },
       {
         "evidence": "摘要核验",
@@ -593,7 +603,8 @@
         "peerReviewSource": "https://doi.org/10.1111/hcre.12015",
         "hypothesisImplication": "简报推论：本国相似人物类比可能通过自我参照提高接收，但该路径与价值契合和文化熟悉性不同。",
         "manipulationImplication": "简报推论：比较无类比、表层相似类比和价值结构相似类比，并测量而非假定自我参照。",
-        "measurementImplication": "简报推论：测量自我参照、感知相似、价值契合、文化熟悉、人物认同和叙事结果。"
+        "measurementImplication": "简报推论：测量自我参照、感知相似、价值契合、文化熟悉、人物认同和叙事结果。",
+        "abstractEn": "A between-subjects experiment with 220 participants tested whether adapting a narrative protagonist to resemble readers increases narrative impact in a health context. Readers exposed to a similar protagonist perceived greater personal disease risk and greater efficacy in dealing with the symptoms than readers exposed to a dissimilar protagonist. Self-referencing mediated these effects, indicating that similarity made readers relate the story more strongly to themselves."
       }
     ],
     "topPapers": [

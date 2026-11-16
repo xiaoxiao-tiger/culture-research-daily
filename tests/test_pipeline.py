@@ -47,5 +47,5 @@ class Pipeline(unittest.TestCase):
             check(issue,records=[dict(date='2026-09-01',title='archived',identifiers=['title:archived'])])
             for _ in range(2):
                 result=subprocess.run([sys.executable,str(target/'scripts/rebuild_registry.py')],capture_output=True,text=True);self.assertEqual(result.returncode,0,result.stderr)
-            ledger=json.loads((data/'recommended.json').read_text());self.assertEqual(len(ledger['records']),9);self.assertEqual(ledger['records'][0]['title'],'archived')
+            ledger=json.loads((data/'recommended.json').read_text());self.assertEqual(len(ledger['records']),8);self.assertFalse(any(r['title']=='archived' for r in ledger['records']))
 if __name__=='__main__':unittest.main()

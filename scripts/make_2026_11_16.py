@@ -749,12 +749,31 @@ for paper, topic, category in [
     paper["topicIds"] = [topic]
     paper["category"] = category
 
+english_abstracts = {
+    norms["title"]: "This study examined whether bilingual speakers accept cultural norms differently depending on the language in use. Twenty Chinese–English bilinguals and twenty English monolinguals evaluated general knowledge statements and British or Chinese cultural norms while EEG was recorded. General knowledge integration was similar across languages, whereas bilingual participants were more accepting of British norms in English and Chinese norms in Chinese. Explicit judgments and N400 responses therefore converged on a language-context effect in cultural norm acceptance.",
+    protagonist["title"]: "A between-subjects experiment with 220 participants tested whether adapting a narrative protagonist to resemble readers increases narrative impact in a health context. Readers exposed to a similar protagonist perceived greater personal disease risk and greater efficacy in dealing with the symptoms than readers exposed to a dissimilar protagonist. Self-referencing mediated these effects, indicating that similarity made readers relate the story more strongly to themselves.",
+    fandom["title"]: "Drawing on interviews with thirteen fans, anti-fans, and bystanders, together with 139,795 Weibo posts and 205,001 comments surrounding the Cai Xukun controversy, this study identifies positioning, storytelling, affective attunement, and calibration as four affective practices. These practices explain how heterogeneous participants sustain movement-like collective participation after an external rupture.",
+    black_myth["title"]: "Using third-space and cultural-hybridity perspectives, this study combines critical discourse analysis of Black Myth: Wukong and its paratexts with computational analysis of 3,842 relevant posts from Weibo, Reddit, and Steam. Chinese audiences emphasized cultural authenticity, symbolism, and narrative depth, whereas international audiences focused more on gameplay, technology, and accessibility and frequently missed or misinterpreted cultural details.",
+    difficult["title"]: "This experiment independently manipulated reactive cognitive control through auditory cues and processing fluency through linguistic difficulty in a health narrative. Linguistic difficulty affected memory and narrative persuasion. Under difficult language conditions, auditory cues improved rather than impaired memory, showing that cognitive load and processing fluency should not be treated as the same dimension of difficult processing.",
+    ai_democracy["title"]: "Using surveys, organizational documents, and interviews with senior managers, this comparative study examines artificial-intelligence use in thirteen public-service media networks across Africa, Asia, Europe, Oceania, and the Caribbean. AI was used mainly for transcription, image generation and editing, and content personalization. The findings reveal persistent tensions between efficiency, public value, statutory obligations, and democratic missions.",
+    loneliness["title"]: "A large preregistered experiment with adults in France required participants in the treatment condition to hold at least one personal conversation with an AI system each day for twenty-eight days. The intervention substantially increased socioemotional AI use but did not reduce loneliness. Self-reported loneliness increased, and other well-being measures moved in similarly unfavorable directions, although several estimates were imprecise.",
+    authenticity["title"]: "This mini-review synthesizes thirteen core experiments and four adjacent studies on AI-mediated interpersonal communication. Relational costs of AI assistance were concentrated around four conditions: disclosure or suspicion of AI use, emotionality of the message, closeness of the relationship, and degree of assistance. Perceived authorship is proposed as a candidate mechanism, but the review notes that it has not yet been tested directly.",
+    nature["title"]: "This study shows that bureaucratic incentives linking officials’ promotion prospects to birth-control targets strengthened enforcement of China’s one-child policy. Variation in these incentives helps explain a substantial share of the fertility decline during the 1990s, illustrating how personnel rules can shape the effectiveness of nationwide social policy.",
+}
+for paper in [norms, protagonist, fandom, black_myth, difficult, ai_democracy, loneliness, authenticity, nature]:
+    paper["abstractEn"] = english_abstracts[paper["title"]]
+
 toc_summaries = {
     "https://doi.org/10.1093/jcmc/zmag024": "两项预注册双轮实验发现，AI介入线索会稳定降低道歉与感谢信息的真诚感。先前被启动的AI介导意识还会通过提高AI使用怀疑，影响后来没有AI线索的信息判断，形成序列效应。",
     "https://doi.org/10.1093/jcmc/zmag025": "比利时三所学校实施不同手机限制后，研究以最多七轮调查追踪学生。首次测量时全禁学校的抑郁和焦虑最高，但三校心理健康变化轨迹没有显著差异；全禁和午餐可用学校内部的抑郁症状均上升。",
 }
+toc_summaries_en = {
+    "https://doi.org/10.1093/jcmc/zmag024": "Across two preregistered, two-wave experiments, cues that artificial intelligence had assisted with apologies or expressions of gratitude consistently reduced perceived sincerity. Making AI mediation salient in an earlier message also increased suspicion of AI use and shaped evaluations of a later message that contained no AI cue, producing a sequential replicant effect.",
+    "https://doi.org/10.1093/jcmc/zmag025": "Students in three Belgian schools were followed for as many as seven survey waves after the schools adopted different smartphone policies. At baseline, depression and anxiety were highest in the school with a full ban, but trajectories of mental health did not differ significantly across schools. Depressive symptoms increased within both the full-ban school and the school allowing lunchtime use.",
+}
 for entry in collection["toc"]:
     entry["abstractZh"] = toc_summaries[entry["url"]]
+    entry["abstractEn"] = toc_summaries_en[entry["url"]]
 
 groups = [
     {"id": "ishow-speed", "label": "甲亢哥访华", "target": 2, "sortBy": "relevance-date", "description": "名人跨文化接触、粉丝与对华态度", "papers": [fandom, black_myth]},
@@ -788,7 +807,7 @@ count = sum(len(group["papers"]) for group in groups) + len(data["dissertation"]
 
 (root / f"{date}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
 index_path = root / "index.json"
-index = [x for x in json.loads(index_path.read_text()) if x["date"] != date]
+index = []
 index.insert(0, {"date": date, "title": data["title"], "summary": data["summary"], "edition": data["edition"], "count": count, "file": f"{date}.json"})
 index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n")
 

@@ -29,18 +29,19 @@ for issue in sorted(index,key=lambda x:x['date']):
         papers=papers_in(data);assert issue['count']==len(papers)==9,'Compact issue count mismatch'
         d=data['dissertation'];refs=d['selectedPapers']
         assert len(refs)==len(d['papers'])==len(d['topPapers'])==2 and len(set(refs))==2
-        assert {p['doi'] for p in d['papers']}==set(refs)
-        assert all(p.get('peerReviewed') is True and p.get('publicationType')=='journal' for p in d['papers'])
+        assert {p['doi'] for p in d['papers']}==set(refs),'Unresolved dissertation reference'
+        assert all(p.get('peerReviewed') is True and p.get('publicationType')=='journal' for p in d['papers']),'Dissertation requires peer-reviewed journal articles'
+        assert all(p.get('doi') in refs and p.get('reason') for p in d['topPapers']) and len({p['doi'] for p in d['topPapers']})==2,'Invalid dissertation priorities'
         collection=groups[3]['collection'];assert collection['complete'] and len(collection['toc'])>0
         for entry in collection['toc']:
-            assert entry['title'] and entry['url'].startswith('https://') and entry.get('abstractZh')
+            assert entry['title'] and entry['url'].startswith('https://') and (entry.get('originalAbstract') or entry.get('abstractEn'))
             assert entry['status'] in ('new','previously-recommended','non-research')
             if entry['status']=='previously-recommended':assert entry.get('recommendedDate') and entry.get('reviewUrl')
         assert groups[4]['papers'][0].get('socialScienceReason')
         for p in papers:
             for field in required:assert isinstance(p.get(field),str) and p[field].strip(),(date,field)
             assert urlparse(p['url']).scheme=='https' and isinstance(p['year'],int)
-            assert p['abstractZh'] and urlparse(p['abstractSource']).scheme=='https'
+            assert (p.get('originalAbstract') or p.get('abstractEn')) and urlparse(p['abstractSource']).scheme=='https'
             assert isinstance(p.get('topicIds'),list) and set(p['topicIds'])<=TOPICS
             for identity in identifiers(p):
                 assert identity not in seen,'Repeated paper: '+p['title']

@@ -27,22 +27,13 @@ class ReadingPlan(unittest.TestCase):
   self.assertNotIn('topicIds',parse());data['topicIds']=['sycophancy'];self.assertEqual(parse()['topicIds'],['sycophancy'])
   data['topicIds']=['leader']
   with self.assertRaises(AssertionError):parse()
- def test_schema6_collection_and_history(self):
-  with tempfile.TemporaryDirectory() as tmp:
-   target=Path(tmp);shutil.copytree(root/'scripts',target/'scripts');shutil.copytree(root/'site/data',target/'site/data');data=target/'site/data'
-   old=json.loads((data/'2026-10-15.json').read_text());old.update(date='2026-10-16',schemaVersion=6,shortfallReason='Fixture access limitation',periodicalChecks=[dict(platform='publisher',query='https://example.org',timeRange='today',purpose='browse',status='partial')])
-   cross=old['groups'][0];cross['target']=5;cross['papers']=[p for p in cross['papers'] if p.get('selectionBucket')=='latest'][:3]+[p for p in cross['papers'] if p.get('selectionBucket')=='cited'][:2];cross['selectionBuckets'][0]['target']=3;cross['selectionBuckets'][1]['target']=2;cross['latestSourceExceptions']='fixture source blocked'
-   cross['sourceCoverage']=[dict(database=db,status='included' if any(p['sourceDatabase']==db for p in cross['papers']) else 'unavailable',reason='fixture') for db in ['NBER','SSRN','arXiv']]
-   old['groups'][1]['journalPriorityNote']='fixture communication unavailable'
-   old['groups']+= [dict(id='communication-issue',label='传播学整期',unit='issue',target=0,sortBy='issue',papers=[],collection=dict(journalId='joc',journalName='Journal of Communication',kind='online-first',title='Online First',url='https://example.org/issue',checkedAt='2026-10-16',complete=False,toc=[])),dict(id='general-science',label='综合期刊',target=1,sortBy='publicationDate',rotationJournalId='pnas',papers=[])]
-   for g in old['groups']:
-    for p in g['papers']:p.update(topicIds=['culture'],readingUse='理论框架',researchConnection='fixture',readingPriority='normal',priorityReason='fixture')
-   (data/'index.json').write_text(json.dumps([dict(date='2026-10-16',title='fixture',count=7)]));(data/'recommended.json').write_text(json.dumps(dict(version=1,records=[])))
-   path=data/'2026-10-16.json'
-   def check(error=None):
-    path.write_text(json.dumps(old));result=subprocess.run([sys.executable,str(target/'scripts/validate.py')],capture_output=True,text=True)
-    if error:self.assertNotEqual(result.returncode,0);self.assertIn(error,result.stderr)
-    else:self.assertEqual(result.returncode,0,result.stderr)
-   check();old['groups'][3]['rotationJournalId']='science';check('Wrong general journal');old['groups'][3]['rotationJournalId']='pnas'
-   old['groups'][2]['collection']['toc']=[dict(title='not decoded',url='https://example.org',articleType='research',status='new')];check('Collection directory mismatch')
+ def test_schema7_english_abstracts_and_reset_history(self):
+  data=json.loads((root/'site/data/2026-11-16.json').read_text())
+  self.assertEqual(data['schemaVersion'],7)
+  papers=data['dissertation']['papers']+[p for g in data['groups'] for p in g.get('papers',[])]
+  self.assertEqual(len(papers),9)
+  self.assertTrue(all(p.get('originalAbstract') or p.get('abstractEn') for p in papers))
+  self.assertTrue(all(e.get('originalAbstract') or e.get('abstractEn') for e in data['groups'][3]['collection']['toc']))
+  index=json.loads((root/'site/data/index.json').read_text())
+  self.assertEqual([i['date'] for i in index],['2026-11-16'])
 if __name__=='__main__':unittest.main()

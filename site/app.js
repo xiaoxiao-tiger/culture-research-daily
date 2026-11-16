@@ -29,10 +29,9 @@ function paper(p,i,date=currentDate,bookmark=null){
 function compactPaper(p,i,date=currentDate){
  const card=el('article','compact-paper'),meta=el('div','compact-meta');
  meta.append(el('span','compact-number',String(i+1).padStart(2,'0')),el('span','compact-source',p.source||p.venue));
- card.append(meta,el('h3','',p.titleZh||p.title));
- if(p.titleZh&&p.title)card.append(el('p','compact-english',p.title));
+ card.append(meta,el('h3','',p.title));
  card.append(el('p','compact-citation',p.apaCitation||`${p.authors} · ${p.year} · ${p.venue}`));
- card.append(el('p','compact-abstract',p.abstractZh||p.takeaway));
+ card.append(el('p','compact-abstract',p.originalAbstract||p.abstractEn||'No English abstract is available from the verified source.'));
  const actions=el('div','compact-actions');
  if(safeURL(p.url))actions.append(link('原文',p.url));
  if(safeURL(p.doi)&&p.doi!==p.url)actions.append(link('DOI',p.doi));
@@ -50,7 +49,7 @@ function compactCollection(group){
  const list=el('div','toc-list');
  for(const [i,item] of (c?.toc||[]).entries()){
   const row=el('article','toc-item');row.append(el('span','compact-number',String(i+1).padStart(2,'0')));
-  const body=el('div');const title=safeURL(item.url)?link(item.title,item.url):el('span','',item.title);title.className='toc-title';body.append(title,el('p','compact-abstract',item.abstractZh||'本期尚未取得可展示的摘要。'));
+  const body=el('div');const title=safeURL(item.url)?link(item.title,item.url):el('span','',item.title);title.className='toc-title';body.append(title,el('p','compact-abstract',item.originalAbstract||item.abstractEn||'No English abstract is available from the verified source.'));
   if(item.status==='previously-recommended')body.append(el('p','muted','已于 '+item.recommendedDate+' 推荐，本期仅随完整目录展示摘要，不重复登记。'));
   row.append(body);list.append(row)
  }
