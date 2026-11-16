@@ -735,7 +735,7 @@ data = {
 # their information architecture and keeps every paper in a single full card.
 fandom = journals[1]
 ai_democracy = journals[2]
-loneliness = cross[1]
+loneliness = next(paper for paper in cross if paper["title"].startswith("Do Personal AI Conversations"))
 for paper, topic, category in [
     (fandom, "ishow-speed", "研究idea · 甲亢哥访华"),
     (black_myth, "ishow-speed", "研究idea · 甲亢哥访华"),
@@ -769,6 +769,7 @@ data.update(
     title="三个研究议题：跨文化接触、自动翻译与AI幸福感",
     summary="博士论文专题2篇置顶，三个研究idea各2篇，并保留传播学完整一期与综合顶刊1篇。页面仅展示题录、摘要和原文链接。",
     notice="本页使用2026-11-16已核验文献演示新布局。三个idea中若当天只有邻近机制研究，会在摘要上方标明主题范围；后续更新优先选择直接研究，不以无关论文补足数量。",
+    shortfallReason="三个研究idea与博士论文专题均达到本期精简配额。JCMC当期完整目录中的2篇均已进入永久历史，因此只展示目录摘要、不重复登记。X自动翻译第二篇属于平台AI应用的邻近机制研究，后续优先补充更直接的新研究。",
     groups=groups,
     dissertation={
         "title": "从被看见到被接收",
