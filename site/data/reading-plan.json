@@ -4,8 +4,9 @@
   "timezone": "Asia/Shanghai",
   "activeTopicIds": [
     "culture",
-    "sycophancy",
-    "methods"
+    "ishow-speed",
+    "x-translation",
+    "ai-wellbeing"
   ],
   "topics": [
     {
@@ -15,32 +16,47 @@
       "note": "神话人物接收、价值观契合、人物认同与受众本国神话人物类比；用户保存的当日关键词优先。"
     },
     {
-      "id": "sycophancy",
-      "label": "AI价值谄媚与人机互动",
-      "query": "(sycophancy OR \"value alignment\" OR ingratiation OR \"opinion agreement\") AND (\"large language model\" OR chatbot OR \"conversational agent\")",
-      "note": "价值迎合、用户参与、新闻消费与公共讨论。"
-    },
-    {
       "id": "methods",
       "label": "计算传播研究方法",
       "query": "(\"causal inference\" OR \"panel data\" OR \"interrupted time series\" OR \"text measurement\") AND (communication OR \"digital platforms\" OR \"social media\")",
       "note": "因果识别、面板、时间序列与文本测量；不单独追踪leader注意力。"
+    },
+    {
+      "id": "ishow-speed",
+      "label": "甲亢哥访华与粉丝对华态度",
+      "query": "(IShowSpeed OR influencer OR celebrity OR fandom OR parasocial) AND (China OR cross-cultural OR intergroup) AND (attitude OR reception OR contact)",
+      "note": "重点追踪媒介化替代性群际接触、拟社会关系、既有粉丝态度与事件冲击。"
+    },
+    {
+      "id": "x-translation",
+      "label": "X自动翻译与跨语言互动",
+      "query": "(\"automatic translation\" OR \"machine translation\" OR \"cross-language\" OR multilingual) AND (social media OR platform OR interaction OR reply OR sharing)",
+      "note": "重点追踪翻译功能、跨语言回复与转发、语言距离、文化距离和因果识别。"
+    },
+    {
+      "id": "ai-wellbeing",
+      "label": "AI使用与幸福感",
+      "query": "(\"generative AI\" OR chatbot OR \"conversational AI\" OR \"AI companion\") AND (well-being OR wellbeing OR happiness OR loneliness OR \"life satisfaction\" OR \"social connection\")",
+      "note": "重点追踪AI使用对幸福感、孤独感、社会连接和生活满意度的正负影响。"
     }
   ],
   "groups": [
     {
-      "id": "crossdisciplinary",
-      "label": "其他研究",
-      "target": 5,
-      "latestTarget": 3,
-      "citedTarget": 2,
+      "id": "ishow-speed",
+      "label": "甲亢哥访华",
+      "target": 2,
       "keywords": true
     },
     {
-      "id": "journals",
-      "label": "传播学与社会科学",
-      "target": 5,
-      "communicationFirst": true,
+      "id": "x-translation",
+      "label": "X自动翻译",
+      "target": 2,
+      "keywords": true
+    },
+    {
+      "id": "ai-wellbeing",
+      "label": "AI与幸福感",
+      "target": 2,
       "keywords": true
     },
     {
@@ -129,7 +145,7 @@
     ]
   },
   "weeklyReviewDay": 5,
-  "note": "从2026-10-16起执行；历史简报保持原栏目与内容。整期栏目不受关键词或Q1/Q2主题栏名单限制，以明确指定七刊为准。",
+  "note": "2026-11-16起使用三项研究idea各2篇、博士论文专题2篇、传播学完整一期和综合顶刊1篇的紧凑布局。历史简报保持原栏目与内容。整期栏目不受关键词限制。",
   "accessFallbackPolicy": {
     "effectiveDate": "2026-11-01",
     "journals": "publisher-relevance-quality-date",

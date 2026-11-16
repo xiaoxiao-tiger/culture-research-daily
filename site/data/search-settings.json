@@ -2,8 +2,8 @@
   "version": 1,
   "owner": "xiaoxiao-tiger",
   "defaults": {
-    "themeKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
-    "journalKeywords": "\"cultural transmission\"\n\"cultural diffusion\"\n\"cross-cultural reception\"\n\"intercultural communication\"\n\"cultural premium\"\nnovelty\nexoticism\ncosmopolitanism",
+    "themeKeywords": "(IShowSpeed OR influencer OR fandom OR parasocial) AND (China OR cross-cultural OR intergroup)\n(\"automatic translation\" OR \"machine translation\" OR \"cross-language\") AND (social media OR interaction)\n(\"generative AI\" OR chatbot OR \"AI companion\") AND (well-being OR happiness OR loneliness OR \"social connection\")",
+    "journalKeywords": "",
     "excludeTerms": "",
     "lookbackDays": 30
   },

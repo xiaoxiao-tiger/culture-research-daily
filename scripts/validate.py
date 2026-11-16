@@ -16,11 +16,39 @@ journals={normalize_title(j['name']):j for j in json.loads((root/'journals.json'
 for issue in sorted(index,key=lambda x:x['date']):
     date=issue['date'];assert re.fullmatch(r'\d{4}-\d{2}-\d{2}',date) and date not in dates;dates.add(date)
     data=json.loads((root/f'{date}.json').read_text());assert data['date']==date and data['title'] and data['summary']
-    assert data['schemaVersion'] in (5,6) and data['historyPolicy']=='exclude-recommended'
-    modern=data['schemaVersion']==6
+    assert data['schemaVersion'] in (5,6,7) and data['historyPolicy']=='exclude-recommended'
+    modern=data['schemaVersion']>=6
     assert data['journalPolicy']=='ssci-communication-q1-q2-and-social-science'
     assert data['searchPlatforms']==['Google Scholar','NBER','SSRN','arXiv']
-    groups=data['groups'];assert [g['id'] for g in groups]==(['crossdisciplinary','journals','communication-issue','general-science'] if modern else ['crossdisciplinary','journals'])
+    groups=data['groups']
+    if data['schemaVersion']==7:
+        assert data.get('layoutVersion')=='compact-ideas-v1'
+        assert [g['id'] for g in groups]==['ishow-speed','x-translation','ai-wellbeing','communication-issue','general-science']
+        assert [g['target'] for g in groups]==[2,2,2,0,1]
+        assert [len(g['papers']) for g in groups]==[2,2,2,0,1]
+        papers=papers_in(data);assert issue['count']==len(papers)==9,'Compact issue count mismatch'
+        d=data['dissertation'];refs=d['selectedPapers']
+        assert len(refs)==len(d['papers'])==len(d['topPapers'])==2 and len(set(refs))==2
+        assert {p['doi'] for p in d['papers']}==set(refs)
+        assert all(p.get('peerReviewed') is True and p.get('publicationType')=='journal' for p in d['papers'])
+        collection=groups[3]['collection'];assert collection['complete'] and len(collection['toc'])>0
+        for entry in collection['toc']:
+            assert entry['title'] and entry['url'].startswith('https://') and entry.get('abstractZh')
+            assert entry['status'] in ('new','previously-recommended','non-research')
+            if entry['status']=='previously-recommended':assert entry.get('recommendedDate') and entry.get('reviewUrl')
+        assert groups[4]['papers'][0].get('socialScienceReason')
+        for p in papers:
+            for field in required:assert isinstance(p.get(field),str) and p[field].strip(),(date,field)
+            assert urlparse(p['url']).scheme=='https' and isinstance(p['year'],int)
+            assert p['abstractZh'] and urlparse(p['abstractSource']).scheme=='https'
+            assert isinstance(p.get('topicIds'),list) and set(p['topicIds'])<=TOPICS
+            for identity in identifiers(p):
+                assert identity not in seen,'Repeated paper: '+p['title']
+                assert not any(identity in entry['identifiers'] and entry['date']<date for entry in ledger['records']),'Previously recommended paper: '+p['title']
+                seen[identity]=date
+        assert data.get('themeSearches') and data.get('periodicalChecks') and data.get('searchNote')
+        continue
+    assert [g['id'] for g in groups]==(['crossdisciplinary','journals','communication-issue','general-science'] if modern else ['crossdisciplinary','journals'])
     assert all(g['label'] and g['target']==target and 0<=len(g['papers'])<=target for g,target in zip(groups,[5 if modern else 10,5]))
     journal_fallback=groups[1].get('accessFallback')
     cited_fallback=groups[0]['selectionBuckets'][1].get('accessFallback')

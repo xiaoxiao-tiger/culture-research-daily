@@ -1,7 +1,7 @@
 """Pure date rotation and structured owner requests; no network or credential access."""
 import json,re
 from datetime import date
-TOPICS={'culture','sycophancy','methods'}
+TOPICS={'culture','sycophancy','methods','ishow-speed','x-translation','ai-wellbeing'}
 def rotation(plan,day,kind):
     offset=(date.fromisoformat(day)-date.fromisoformat(plan['rotations']['startDate'])).days
     assert offset>=0, 'Rotation has not started'

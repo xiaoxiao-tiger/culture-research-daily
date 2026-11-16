@@ -729,6 +729,62 @@ data = {
     },
 }
 
+# 2026-11-16 compact redesign: two dissertation papers first, followed by
+# three standing research ideas (two papers each), then the two rotations.
+# The records below were already verified in this run; this block changes only
+# their information architecture and keeps every paper in a single full card.
+fandom = journals[1]
+ai_democracy = journals[2]
+loneliness = cross[1]
+for paper, topic, category in [
+    (fandom, "ishow-speed", "研究idea · 甲亢哥访华"),
+    (black_myth, "ishow-speed", "研究idea · 甲亢哥访华"),
+    (difficult, "x-translation", "研究idea · X自动翻译"),
+    (ai_democracy, "x-translation", "研究idea · X自动翻译"),
+    (loneliness, "ai-wellbeing", "研究idea · AI与幸福感"),
+    (authenticity, "ai-wellbeing", "研究idea · AI与幸福感"),
+    (norms, "culture", "博士论文专题"),
+    (protagonist, "culture", "博士论文专题"),
+]:
+    paper["topicIds"] = [topic]
+    paper["category"] = category
+
+toc_summaries = {
+    "https://doi.org/10.1093/jcmc/zmag024": "两项预注册双轮实验发现，AI介入线索会稳定降低道歉与感谢信息的真诚感。先前被启动的AI介导意识还会通过提高AI使用怀疑，影响后来没有AI线索的信息判断，形成序列效应。",
+    "https://doi.org/10.1093/jcmc/zmag025": "比利时三所学校实施不同手机限制后，研究以最多七轮调查追踪学生。首次测量时全禁学校的抑郁和焦虑最高，但三校心理健康变化轨迹没有显著差异；全禁和午餐可用学校内部的抑郁症状均上升。",
+}
+for entry in collection["toc"]:
+    entry["abstractZh"] = toc_summaries[entry["url"]]
+
+groups = [
+    {"id": "ishow-speed", "label": "甲亢哥访华", "target": 2, "sortBy": "relevance-date", "description": "名人跨文化接触、粉丝与对华态度", "papers": [fandom, black_myth]},
+    {"id": "x-translation", "label": "X自动翻译", "target": 2, "sortBy": "relevance-date", "description": "跨语言互动、加工流畅性与平台技术", "papers": [difficult, ai_democracy]},
+    {"id": "ai-wellbeing", "label": "AI与幸福感", "target": 2, "sortBy": "relevance-date", "description": "幸福感、孤独感、社会连接与关系真实性", "papers": [loneliness, authenticity]},
+    {"id": "communication-issue", "label": "传播学顶刊", "target": 0, "sortBy": "issue", "unit": "issue", "collection": collection, "papers": []},
+    {"id": "general-science", "label": "综合顶刊", "target": 1, "sortBy": "publicationDate", "rotationJournalId": "nature", "selectedJournalId": "nature", "papers": [nature]},
+]
+data.update(
+    schemaVersion=7,
+    layoutVersion="compact-ideas-v1",
+    title="三个研究议题：跨文化接触、自动翻译与AI幸福感",
+    summary="博士论文专题2篇置顶，三个研究idea各2篇，并保留传播学完整一期与综合顶刊1篇。页面仅展示题录、摘要和原文链接。",
+    notice="本页使用2026-11-16已核验文献演示新布局。三个idea中若当天只有邻近机制研究，会在摘要上方标明主题范围；后续更新优先选择直接研究，不以无关论文补足数量。",
+    groups=groups,
+    dissertation={
+        "title": "从被看见到被接收",
+        "timeRange": "沿用本期已核验候选池，并按新规则仅保留2篇。",
+        "selectionNote": "今日专题保留语言情境与主人公相似性两篇，分别对应文化规范接受和人物认同机制。",
+        "historyCoverage": data["dissertation"]["historyCoverage"],
+        "selectedPapers": [norms["doi"], protagonist["doi"]],
+        "papers": [norms, protagonist],
+        "topPapers": [
+            {"doi": norms["doi"], "reason": "语言情境与文化规范接受"},
+            {"doi": protagonist["doi"], "reason": "人物相似性、自我参照与接收"},
+        ],
+    },
+)
+count = sum(len(group["papers"]) for group in groups) + len(data["dissertation"]["papers"])
+
 (root / f"{date}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
 index_path = root / "index.json"
 index = [x for x in json.loads(index_path.read_text()) if x["date"] != date]
