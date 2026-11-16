@@ -5,7 +5,7 @@ const safeURL=url=>{try{const u=new URL(url);return u.protocol==='https:'?u.href
 const REPO='https://github.com/xiaoxiao-tiger/culture-research-daily';
 let issues=[],currentRequest=0,currentDate='',favorites=[],config=null,readingPlan=null;
 const storageKey='research-favorites-v1';
-async function json(path){const r=await fetch(path,{cache:'no-cache'});if(!r.ok)throw Error('读取失败');return r.json()}
+async function json(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error('读取失败');return r.json()}
 function link(label,url){const a=el('a','',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a}
 function saveFavorites(next){try{localStorage.setItem(storageKey,JSON.stringify(next));favorites=next;$('#favorite-count').textContent=String(favorites.length);return true}catch{$('#storage-status').textContent='浏览器无法保存收藏，请检查存储权限或空间。';return false}}
 function favoriteOf(p){return favorites.find(f=>C.samePaper(f.paper,p))}
