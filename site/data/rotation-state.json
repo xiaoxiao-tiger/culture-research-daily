@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-18",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-13",
@@ -491,11 +491,11 @@
       }
     },
     "nms": {
-      "lastAttemptAt": "2026-11-11",
-      "lastCheckedAt": "2026-11-11",
-      "status": "partial",
-      "reason": "SAGE OnlineFirst directory reported 206 records. The three newest research articles dated 2026-11-01 were individually verified, but the remaining directory was not fully reconciled, so lastCompletedAt was not advanced.",
-      "lastCompletedAt": null,
+      "lastAttemptAt": "2026-11-18",
+      "lastCheckedAt": "2026-11-18",
+      "status": "completed",
+      "reason": "Official SAGE Volume 28 Issue 11 directory was reconciled as 33 research articles with English abstract summaries.",
+      "lastCompletedAt": "2026-11-18",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-11-11",
@@ -508,7 +508,49 @@
           ]
         }
       ],
-      "completedIssues": [],
+      "completedIssues": [
+        {
+          "checkedAt": "2026-11-18",
+          "url": "https://journals.sagepub.com/toc/nmsa/28/11",
+          "title": "Volume 28, Issue 11, November 2026",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1177/14614448251397518",
+            "https://doi.org/10.1177/14614448251401865",
+            "https://doi.org/10.1177/14614448251403488",
+            "https://doi.org/10.1177/14614448251403196",
+            "https://doi.org/10.1177/14614448251400675",
+            "https://doi.org/10.1177/14614448251395192",
+            "https://doi.org/10.1177/14614448251321165",
+            "https://doi.org/10.1177/14614448251406245",
+            "https://doi.org/10.1177/14614448251403091",
+            "https://doi.org/10.1177/14614448251404427",
+            "https://doi.org/10.1177/14614448251406282",
+            "https://doi.org/10.1177/14614448251396951",
+            "https://doi.org/10.1177/14614448251400345",
+            "https://doi.org/10.1177/14614448251400684",
+            "https://doi.org/10.1177/14614448251407335",
+            "https://doi.org/10.1177/14614448251396941",
+            "https://doi.org/10.1177/14614448251404416",
+            "https://doi.org/10.1177/14614448251406231",
+            "https://doi.org/10.1177/14614448251406284",
+            "https://doi.org/10.1177/14614448251406904",
+            "https://doi.org/10.1177/14614448251410507",
+            "https://doi.org/10.1177/14614448251407336",
+            "https://doi.org/10.1177/14614448251405828",
+            "https://doi.org/10.1177/14614448251409211",
+            "https://doi.org/10.1177/14614448251410943",
+            "https://doi.org/10.1177/14614448251408336",
+            "https://doi.org/10.1177/14614448251409209",
+            "https://doi.org/10.1177/14614448251411264",
+            "https://doi.org/10.1177/14614448251397398",
+            "https://doi.org/10.1177/14614448251413141",
+            "https://doi.org/10.1177/14614448251411526",
+            "https://doi.org/10.1177/14614448251409208",
+            "https://doi.org/10.1177/14614448251413695"
+          ]
+        }
+      ],
       "directoryObservation": {
         "checkedAt": "2026-11-11",
         "url": "https://journals.sagepub.com/toc/nms/0/0?pageSize=20&sortBy=FullEpubDateField",
