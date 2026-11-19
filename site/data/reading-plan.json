@@ -36,8 +36,8 @@
     {
       "id": "ai-wellbeing",
       "label": "AI使用与幸福感",
-      "query": "(\"generative AI\" OR chatbot OR \"conversational AI\" OR \"AI companion\") AND (well-being OR wellbeing OR happiness OR loneliness OR \"life satisfaction\" OR \"social connection\")",
-      "note": "重点追踪AI使用对幸福感、孤独感、社会连接和生活满意度的正负影响。"
+      "query": "(\"generative AI\" OR \"AI-supported work\" OR \"workplace AI\" OR copilot) AND (employee OR worker OR workplace OR job) AND (well-being OR wellbeing OR happiness OR \"job satisfaction\" OR burnout OR \"work-life balance\")",
+      "note": "仅追踪工作场景中的AI使用与员工幸福感、工作满意度、倦怠、压力和工作生活边界；排除AI陪伴与一般消费者聊天机器人。"
     }
   ],
   "groups": [
@@ -57,6 +57,18 @@
       "id": "ai-wellbeing",
       "label": "AI与幸福感",
       "target": 2,
+      "keywords": true
+    },
+    {
+      "id": "preprints",
+      "label": "Preprints · arXiv / SSRN / NBER",
+      "target": 4,
+      "keywords": true
+    },
+    {
+      "id": "preprints",
+      "label": "Preprints · arXiv / SSRN / NBER",
+      "target": 4,
       "keywords": true
     },
     {
@@ -145,7 +157,7 @@
     ]
   },
   "weeklyReviewDay": 5,
-  "note": "2026-11-16起使用三项研究idea各2篇、博士论文专题2篇、传播学完整一期和综合顶刊1篇的紧凑布局。历史简报保持原栏目与内容。整期栏目不受关键词限制。",
+  "note": "2026-11-19起使用博士专题2篇、三个研究idea各2篇、独立预印本4篇、传播学完整一期和综合顶刊1篇的紧凑布局。正式论文按JCR Q1/Q2、Q3/Q4、ESCI、其他同行评审来源依次降级；预印本不参与分区且必须标明未同行评审。",
   "accessFallbackPolicy": {
     "effectiveDate": "2026-11-01",
     "journals": "publisher-relevance-quality-date",

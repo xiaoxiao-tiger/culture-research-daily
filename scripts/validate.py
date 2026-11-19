@@ -18,26 +18,35 @@ for issue in sorted(index,key=lambda x:x['date']):
     data=json.loads((root/f'{date}.json').read_text());assert data['date']==date and data['title'] and data['summary']
     assert data['schemaVersion'] in (5,6,7) and data['historyPolicy']=='exclude-recommended'
     modern=data['schemaVersion']>=6
-    assert data['journalPolicy']=='ssci-communication-q1-q2-and-social-science'
+    if data['schemaVersion']==7 and date>='2026-11-19':
+        assert data['journalPolicy']=='jcr-q1-q2-then-q3-q4-then-esci-then-other-peer-reviewed'
+    else:
+        assert data['journalPolicy']=='ssci-communication-q1-q2-and-social-science'
     assert data['searchPlatforms']==['Google Scholar','NBER','SSRN','arXiv']
     groups=data['groups']
     if data['schemaVersion']==7:
         assert data.get('layoutVersion')=='compact-ideas-v1'
-        assert [g['id'] for g in groups]==['ishow-speed','x-translation','ai-wellbeing','communication-issue','general-science']
-        assert [g['target'] for g in groups]==[2,2,2,0,1]
-        assert [len(g['papers']) for g in groups]==[2,2,2,0,1]
-        papers=papers_in(data);assert issue['count']==len(papers)==9,'Compact issue count mismatch'
+        expected_ids=['ishow-speed','x-translation','ai-wellbeing','preprints','communication-issue','general-science'] if date>='2026-11-19' else ['ishow-speed','x-translation','ai-wellbeing','communication-issue','general-science']
+        expected_counts=[2,2,2,4,0,1] if date>='2026-11-19' else [2,2,2,0,1]
+        assert [g['id'] for g in groups]==expected_ids
+        assert [g['target'] for g in groups]==expected_counts
+        assert [len(g['papers']) for g in groups]==expected_counts
+        papers=papers_in(data);assert issue['count']==len(papers)==(13 if date>='2026-11-19' else 9),'Compact issue count mismatch'
         d=data['dissertation'];refs=d['selectedPapers']
         assert len(refs)==len(d['papers'])==len(d['topPapers'])==2 and len(set(refs))==2
         assert {p['doi'] for p in d['papers']}==set(refs),'Unresolved dissertation reference'
         assert all(p.get('peerReviewed') is True and p.get('publicationType')=='journal' for p in d['papers']),'Dissertation requires peer-reviewed journal articles'
         assert all(p.get('doi') in refs and p.get('reason') for p in d['topPapers']) and len({p['doi'] for p in d['topPapers']})==2,'Invalid dissertation priorities'
-        collection=groups[3]['collection'];assert collection['complete'] and len(collection['toc'])>0
+        if date>='2026-11-19':
+            preprints=groups[3]
+            assert preprints['sortBy']=='topic-publication-date-desc'
+            assert all(p.get('publicationType')=='preprint' and p.get('peerReviewed') is False and p.get('publicationDate') for p in preprints['papers'])
+        collection=groups[4 if date>='2026-11-19' else 3]['collection'];assert collection['complete'] and len(collection['toc'])>0
         for entry in collection['toc']:
             assert entry['title'] and entry['url'].startswith('https://') and (entry.get('originalAbstract') or entry.get('abstractEn'))
             assert entry['status'] in ('new','previously-recommended','non-research')
             if entry['status']=='previously-recommended':assert entry.get('recommendedDate') and entry.get('reviewUrl')
-        assert groups[4]['papers'][0].get('socialScienceReason')
+        assert groups[5 if date>='2026-11-19' else 4]['papers'][0].get('socialScienceReason')
         for p in papers:
             for field in required:assert isinstance(p.get(field),str) and p[field].strip(),(date,field)
             assert urlparse(p['url']).scheme=='https' and isinstance(p['year'],int)
