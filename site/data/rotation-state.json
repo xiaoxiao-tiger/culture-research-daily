@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-13",
@@ -561,10 +561,10 @@
       }
     },
     "sms": {
-      "lastAttemptAt": "2026-11-12",
-      "lastCheckedAt": "2026-11-12",
+      "lastAttemptAt": "2026-11-19",
+      "lastCheckedAt": "2026-11-19",
       "status": "completed",
-      "lastCompletedAt": "2026-11-12",
+      "lastCompletedAt": "2026-11-19",
       "onlineSnapshots": [],
       "completedIssues": [
         {
@@ -615,9 +615,66 @@
             "https://doi.org/10.1177/20563051261496376",
             "https://doi.org/10.1177/20563051261501463"
           ]
+        },
+        {
+          "checkedAt": "2026-11-19",
+          "url": "https://journals.sagepub.com/toc/SMS/current",
+          "title": "Volume 12, Issue 4, October–December 2026",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1177/20563051261483376",
+            "https://doi.org/10.1177/20563051261487940",
+            "https://doi.org/10.1177/20563051261488115",
+            "https://doi.org/10.1177/20563051261489877",
+            "https://doi.org/10.1177/20563051261490338",
+            "https://doi.org/10.1177/20563051261490645",
+            "https://doi.org/10.1177/20563051261495196",
+            "https://doi.org/10.1177/20563051261496376",
+            "https://doi.org/10.1177/20563051261496968",
+            "https://doi.org/10.1177/20563051261501463",
+            "https://doi.org/10.1177/20563051261502656"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-19",
+          "url": "https://journals.sagepub.com/toc/SMS/current",
+          "title": "Volume 12, Issue 4, October–December 2026",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1177/20563051261483376",
+            "https://doi.org/10.1177/20563051261487940",
+            "https://doi.org/10.1177/20563051261488115",
+            "https://doi.org/10.1177/20563051261489877",
+            "https://doi.org/10.1177/20563051261490338",
+            "https://doi.org/10.1177/20563051261490645",
+            "https://doi.org/10.1177/20563051261495196",
+            "https://doi.org/10.1177/20563051261496376",
+            "https://doi.org/10.1177/20563051261496968",
+            "https://doi.org/10.1177/20563051261501463",
+            "https://doi.org/10.1177/20563051261502656"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-19",
+          "url": "https://journals.sagepub.com/toc/SMS/current",
+          "title": "Volume 12, Issue 4, October–December 2026",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1177/20563051261483376",
+            "https://doi.org/10.1177/20563051261487940",
+            "https://doi.org/10.1177/20563051261488115",
+            "https://doi.org/10.1177/20563051261489877",
+            "https://doi.org/10.1177/20563051261490338",
+            "https://doi.org/10.1177/20563051261490645",
+            "https://doi.org/10.1177/20563051261495196",
+            "https://doi.org/10.1177/20563051261496376",
+            "https://doi.org/10.1177/20563051261496968",
+            "https://doi.org/10.1177/20563051261501463",
+            "https://doi.org/10.1177/20563051261502656"
+          ]
         }
       ],
-      "reason": "Official current issue directory was fully reconciled: eight prior papers plus one new research article, DOI 10.1177/20563051261501463."
+      "reason": "Official current issue reconciled as 11 research articles with English abstract summaries."
     }
   },
   "general": {

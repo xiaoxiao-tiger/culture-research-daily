@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 7,
+  "layoutVersion": "compact-ideas-v1",
+  "date": "2026-11-19",
+  "title": "Research ideas: cultural reception, influencer visits, platform translation, and AI well-being",
+  "summary": "Two dissertation papers, two papers for each of three research ideas, the complete current Social Media + Society issue, and one Scientific Data paper.",
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "ssci-communication-q1-q2-and-social-science",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "themeSearches": [
+    {
+      "topicId": "culture",
+      "platform": "Publisher and authoritative indexes",
+      "query": "cultural distance AND media interest OR cross-cultural consumption",
+      "timeRange": "verified 2026-11-19",
+      "status": "completed"
+    },
+    {
+      "topicId": "ishow-speed",
+      "platform": "Publisher websites",
+      "query": "travel influencer OR celebrity AND destination image AND parasocial",
+      "timeRange": "verified 2026-11-19",
+      "status": "completed"
+    },
+    {
+      "topicId": "x-translation",
+      "platform": "Publisher websites",
+      "query": "automatic translation AND social media platform",
+      "timeRange": "verified 2026-11-19",
+      "status": "completed"
+    },
+    {
+      "topicId": "ai-wellbeing",
+      "platform": "Publisher websites and PubMed",
+      "query": "AI companion chatbot AND loneliness OR well-being",
+      "timeRange": "verified 2026-11-19",
+      "status": "completed"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "SAGE Journals",
+      "query": "Social Media + Society Volume 12 Issue 4",
+      "timeRange": "checked 2026-11-19",
+      "purpose": "Complete communication-journal issue",
+      "status": "11 research articles verified"
+    },
+    {
+      "platform": "Nature and official article metadata",
+      "query": "Scientific Data current social-science data descriptors",
+      "timeRange": "checked 2026-11-19",
+      "purpose": "General top-journal rotation",
+      "status": "one eligible data descriptor verified"
+    }
+  ],
+  "searchNote": "Bibliographic records, publication status, abstracts, and links were checked against publisher pages or authoritative indexes. English text is a faithful summary unless explicit republication permission was confirmed.",
+  "groups": [
+    {
+      "id": "ishow-speed",
+      "label": "甲亢哥访华",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [
+        {
+          "title": "Short-form travel vlogs: The influence of parasocial interaction on viewers’ destination–self congruence and behavioural intention",
+          "titleZh": "Not displayed",
+          "authors": "Made Handijaya Dewantara, Xin Jin, and Sarah Gardiner",
+          "year": 2026,
+          "venue": "Journal of Vacation Marketing, OnlineFirst",
+          "source": "SAGE Journals",
+          "category": "甲亢哥访华 · adjacent mechanism",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "A survey experiment with 459 Australian Millennials links vlogger attractiveness, attitude homophily, and technology skill to parasocial interaction, which in turn predicts destination–self congruence, travel intention, and willingness to create electronic word of mouth. This is an adjacent mechanism study for influencer-mediated perceptions of a visited country.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "A survey experiment with 459 Australian Millennials links vlogger attractiveness, attitude homophily, and technology skill to parasocial interaction, which in turn predicts destination–self congruence, travel intention, and willingness to create electronic word of mouth. This is an adjacent mechanism study for influencer-mediated perceptions of a visited country.",
+          "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+          "limitations": "See the linked article for design-specific limitations.",
+          "url": "https://doi.org/10.1177/13567667261487698",
+          "doi": "https://doi.org/10.1177/13567667261487698",
+          "topicIds": [
+            "ishow-speed"
+          ],
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+          "abstractEn": "A survey experiment with 459 Australian Millennials links vlogger attractiveness, attitude homophily, and technology skill to parasocial interaction, which in turn predicts destination–self congruence, travel intention, and willingness to create electronic word of mouth. This is an adjacent mechanism study for influencer-mediated perceptions of a visited country.",
+          "abstractSource": "https://doi.org/10.1177/13567667261487698",
+          "readingPriority": "normal",
+          "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published"
+        },
+        {
+          "title": "Does celebrity endorsement actually help sustainable destinations?",
+          "titleZh": "Not displayed",
+          "authors": "Natalia Vila-López, Isabel Pascual-Riquelme, and Ines Kuster-Boluda",
+          "year": 2026,
+          "venue": "Journal of Vacation Marketing, OnlineFirst",
+          "source": "SAGE Journals",
+          "category": "甲亢哥访华 · adjacent mechanism",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "An experiment with 432 English potential tourists compared Instagram promotion of Spain by a Spanish chef, an English chef, or no celebrity. Celebrity endorsement did not consistently outperform the control, and effects varied by familiarity and audience segment, making this an adjacent boundary-condition study for celebrity-led country image change.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "An experiment with 432 English potential tourists compared Instagram promotion of Spain by a Spanish chef, an English chef, or no celebrity. Celebrity endorsement did not consistently outperform the control, and effects varied by familiarity and audience segment, making this an adjacent boundary-condition study for celebrity-led country image change.",
+          "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+          "limitations": "See the linked article for design-specific limitations.",
+          "url": "https://doi.org/10.1177/13567667261473690",
+          "doi": "https://doi.org/10.1177/13567667261473690",
+          "topicIds": [
+            "ishow-speed"
+          ],
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+          "abstractEn": "An experiment with 432 English potential tourists compared Instagram promotion of Spain by a Spanish chef, an English chef, or no celebrity. Celebrity endorsement did not consistently outperform the control, and effects varied by familiarity and audience segment, making this an adjacent boundary-condition study for celebrity-led country image change.",
+          "abstractSource": "https://doi.org/10.1177/13567667261473690",
+          "readingPriority": "normal",
+          "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published"
+        }
+      ]
+    },
+    {
+      "id": "x-translation",
+      "label": "X自动翻译",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [
+        {
+          "title": "Machine translation and automatic subtitling of gender-focused messages on Instagram. A case study of a Raquel Willis’ speech",
+          "titleZh": "Not displayed",
+          "authors": "Carla Piqueres Centelles",
+          "year": 2026,
+          "venue": "Journal of Audiovisual Translation",
+          "source": "Taylor & Francis",
+          "category": "X自动翻译 · direct platform mechanism",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "The study manually evaluates 67 English-to-Spanish subtitles automatically generated by Instagram for a gender-liberation speech. Accuracy errors were the most frequent problem, and translations often failed to preserve inclusive language, demonstrating that platform translation can expand access while distorting culturally and politically sensitive meaning.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "The study manually evaluates 67 English-to-Spanish subtitles automatically generated by Instagram for a gender-liberation speech. Accuracy errors were the most frequent problem, and translations often failed to preserve inclusive language, demonstrating that platform translation can expand access while distorting culturally and politically sensitive meaning.",
+          "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+          "limitations": "See the linked article for design-specific limitations.",
+          "url": "https://doi.org/10.1080/29940443.2026.2731364",
+          "doi": "https://doi.org/10.1080/29940443.2026.2731364",
+          "topicIds": [
+            "x-translation"
+          ],
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+          "abstractEn": "The study manually evaluates 67 English-to-Spanish subtitles automatically generated by Instagram for a gender-liberation speech. Accuracy errors were the most frequent problem, and translations often failed to preserve inclusive language, demonstrating that platform translation can expand access while distorting culturally and politically sensitive meaning.",
+          "abstractSource": "https://doi.org/10.1080/29940443.2026.2731364",
+          "readingPriority": "normal",
+          "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published"
+        },
+        {
+          "title": "The role of AI in international communication: Cross-cultural implications of automated translation and content curation",
+          "titleZh": "Not displayed",
+          "authors": "Can Zhu",
+          "year": 2025,
+          "venue": "Convergence, OnlineFirst",
+          "source": "SAGE Journals",
+          "category": "X自动翻译 · adjacent mechanism",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "A survey of 300 participants in South China examines automated translation and content curation in international communication. The article reports that AI can facilitate cross-cultural interaction but that accuracy, cultural relevance, inclusion, representation, and bias remain central constraints. It is an adjacent study because it is not specific to X.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "A survey of 300 participants in South China examines automated translation and content curation in international communication. The article reports that AI can facilitate cross-cultural interaction but that accuracy, cultural relevance, inclusion, representation, and bias remain central constraints. It is an adjacent study because it is not specific to X.",
+          "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+          "limitations": "See the linked article for design-specific limitations.",
+          "url": "https://doi.org/10.1177/13548565251403582",
+          "doi": "https://doi.org/10.1177/13548565251403582",
+          "topicIds": [
+            "x-translation"
+          ],
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+          "abstractEn": "A survey of 300 participants in South China examines automated translation and content curation in international communication. The article reports that AI can facilitate cross-cultural interaction but that accuracy, cultural relevance, inclusion, representation, and bias remain central constraints. It is an adjacent study because it is not specific to X.",
+          "abstractSource": "https://doi.org/10.1177/13548565251403582",
+          "readingPriority": "normal",
+          "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published"
+        }
+      ]
+    },
+    {
+      "id": "ai-wellbeing",
+      "label": "使用AI提升还是降低幸福感",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [
+        {
+          "title": "How Does Turning to AI for Companionship Predict Loneliness and Vice Versa?",
+          "titleZh": "Not displayed",
+          "authors": "Dunigan Folk and Elizabeth Dunn",
+          "year": 2026,
+          "venue": "Psychological Science, 37(4), 276–286",
+          "source": "Association for Psychological Science / PubMed",
+          "category": "AI与幸福感 · direct evidence",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "A 12-month longitudinal study of more than 2,000 adults in four Western countries finds a bidirectional pattern: lower social connection predicts later increases in social-chatbot use, while increased use predicts greater loneliness on a measure of emotional isolation. The authors describe the analyses as exploratory and caution against strong causal conclusions.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "A 12-month longitudinal study of more than 2,000 adults in four Western countries finds a bidirectional pattern: lower social connection predicts later increases in social-chatbot use, while increased use predicts greater loneliness on a measure of emotional isolation. The authors describe the analyses as exploratory and caution against strong causal conclusions.",
+          "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+          "limitations": "See the linked article for design-specific limitations.",
+          "url": "https://doi.org/10.1177/09567976261427747",
+          "doi": "https://doi.org/10.1177/09567976261427747",
+          "topicIds": [
+            "ai-wellbeing"
+          ],
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+          "abstractEn": "A 12-month longitudinal study of more than 2,000 adults in four Western countries finds a bidirectional pattern: lower social connection predicts later increases in social-chatbot use, while increased use predicts greater loneliness on a measure of emotional isolation. The authors describe the analyses as exploratory and caution against strong causal conclusions.",
+          "abstractSource": "https://doi.org/10.1177/09567976261427747",
+          "readingPriority": "normal",
+          "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published"
+        },
+        {
+          "title": "Is a random human peer better than a highly supportive chatbot in reducing loneliness over time?",
+          "titleZh": "Not displayed",
+          "authors": "Ruo-Ning Li, Dunigan Folk, Abhay Singh, Lyle Ungar, and Elizabeth Dunn",
+          "year": 2026,
+          "venue": "Journal of Experimental Social Psychology, 125, 104911",
+          "source": "Elsevier",
+          "category": "AI与幸福感 · direct evidence",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "In a preregistered two-week study with 296 first-year university students, participants interacted daily with a supportive chatbot, a randomly paired human peer, or completed journaling. Human-peer interaction produced stronger loneliness benefits than the chatbot, showing that supportive AI conversation did not reproduce the cumulative benefit of reciprocal human contact.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "In a preregistered two-week study with 296 first-year university students, participants interacted daily with a supportive chatbot, a randomly paired human peer, or completed journaling. Human-peer interaction produced stronger loneliness benefits than the chatbot, showing that supportive AI conversation did not reproduce the cumulative benefit of reciprocal human contact.",
+          "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+          "limitations": "See the linked article for design-specific limitations.",
+          "url": "https://doi.org/10.1016/j.jesp.2026.104911",
+          "doi": "https://doi.org/10.1016/j.jesp.2026.104911",
+          "topicIds": [
+            "ai-wellbeing"
+          ],
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+          "abstractEn": "In a preregistered two-week study with 296 first-year university students, participants interacted daily with a supportive chatbot, a randomly paired human peer, or completed journaling. Human-peer interaction produced stronger loneliness benefits than the chatbot, showing that supportive AI conversation did not reproduce the cumulative benefit of reciprocal human contact.",
+          "abstractSource": "https://doi.org/10.1016/j.jesp.2026.104911",
+          "readingPriority": "normal",
+          "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published"
+        }
+      ]
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "target": 0,
+      "sortBy": "issue",
+      "unit": "issue",
+      "collection": {
+        "journalId": "sms",
+        "journalName": "Social Media + Society",
+        "kind": "issue",
+        "volume": "12",
+        "issue": "4",
+        "title": "Volume 12, Issue 4, October–December 2026",
+        "url": "https://journals.sagepub.com/toc/SMS/current",
+        "checkedAt": "2026-11-19",
+        "complete": true,
+        "toc": [
+          {
+            "title": "Seeing Is Believing? Most People Struggle to Detect AI-Generated Images",
+            "url": "https://doi.org/10.1177/20563051261483376",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "A preregistered survey experiment finds that most people distinguish photorealistic AI-generated images from authentic images only around chance level, with modest advantages for younger, analytically minded, and experienced users.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Webs of Ainu Mosir: Indigenous Creative Networks on YouTube",
+            "url": "https://doi.org/10.1177/20563051261487940",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "A social-network analysis examines how Ainu creators use YouTube to form Indigenous creative networks and make cultural expression visible within platformed media systems.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Social Media Platform Repertoires in Everyday Life: Measuring Social Media Use With Passive Metering",
+            "url": "https://doi.org/10.1177/20563051261488115",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "Passive metering is used to measure how people combine multiple social platforms in everyday repertoires, addressing limitations of self-reports and single-platform behavioral data.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Algorithms of Injustice: An Ethnographic Content Analysis of Black Youth’s Experiences with Racial Trauma Online",
+            "url": "https://doi.org/10.1177/20563051261489877",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "An ethnographic content analysis documents how racially traumatic social-media content affects Black youths’ well-being and how platform systems participate in the circulation of that harm.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Automated Influence: How Social Bots Reshape Discursive Opportunities in Online Activism",
+            "url": "https://doi.org/10.1177/20563051261490338",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "The study adapts the discursive-opportunity framework to show how social bots alter visibility, resonance, and legitimacy in online protest discourse.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Careful Dis/Connection: Bringing Digital (Inter)Dependent Relations Out From the Shadows of Autonomy",
+            "url": "https://doi.org/10.1177/20563051261490645",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "A conceptual analysis argues that digital disconnection should be understood through interdependence and care rather than an ideal of autonomous withdrawal from devices and platforms.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Do Experts Agree About Misinformation? Evidence From Three Annual Surveys",
+            "url": "https://doi.org/10.1177/20563051261495196",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "Three annual expert surveys assess agreement about the prevalence, spread, and effects of misinformation, identifying both areas of consensus and persistent uncertainty.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Exploring the Predictors and Outcomes of Perceived Algorithm Responsiveness in Social Media Feeds: Combining Longitudinal and Computational Methods",
+            "url": "https://doi.org/10.1177/20563051261496376",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "Longitudinal and computational analyses examine which message cues predict perceived algorithm responsiveness and how those perceptions relate to later social-media use.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Women Sustaining TikTok as Supplementary Information Infrastructure for Flexible Work Arrangements: Gendered Conditions, Community and Surveillance",
+            "url": "https://doi.org/10.1177/20563051261496968",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "The study examines how women use TikTok as an informal information infrastructure for interpreting flexible work, while navigating gendered community support and surveillance.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "“I Share Your Sentiment”—A Longitudinal Study of Facebook Post Sentiment and Sharing",
+            "url": "https://doi.org/10.1177/20563051261501463",
+            "articleType": "Research Article",
+            "status": "new",
+            "abstractEn": "A population-level analysis of Norwegian political parties’ Facebook posts from 2016 to 2025 tests how negative, positive, and neutral sentiment predicts sharing over time.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current"
+          },
+          {
+            "title": "Fandom Rupture in the Movement Society: Reactive Collective Participation Through Affective Practices",
+            "url": "https://doi.org/10.1177/20563051261502656",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "The article explains how affective practices sustain movement-like participation after an external shock draws heterogeneous fandom actors into a shared platform arena before a collective goal has formed.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-16",
+            "reviewUrl": "?date=2026-11-16"
+          }
+        ]
+      },
+      "papers": []
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "scientific-data",
+      "selectedJournalId": "scientific-data",
+      "papers": [
+        {
+          "title": "A multimodal dataset bridging brain activity, cognition, and real-world collective behavior",
+          "titleZh": "Not displayed",
+          "authors": "Yaling Deng, Huihong Lin, Juncheng Wu, Xiangyu Guo, Meixuan Li, Ye Wang, Hongjiang Xiao, et al.",
+          "year": 2026,
+          "venue": "Scientific Data",
+          "source": "Nature Portfolio",
+          "category": "综合顶刊 · Scientific Data",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "This open multimodal dataset combines 64-channel EEG from 65 participants watching narrative videos with affective, cognitive, social, demographic, and psychological measures. Each stimulus is linked to real-world platform engagement such as plays, likes, comments, danmaku, saves, and shares, enabling work on narrative processing, computational social science, and neuroforecasting.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "This open multimodal dataset combines 64-channel EEG from 65 participants watching narrative videos with affective, cognitive, social, demographic, and psychological measures. Each stimulus is linked to real-world platform engagement such as plays, likes, comments, danmaku, saves, and shares, enabling work on narrative processing, computational social science, and neuroforecasting.",
+          "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+          "limitations": "See the linked article for design-specific limitations.",
+          "url": "https://doi.org/10.1038/s41597-026-08410-w",
+          "doi": "https://doi.org/10.1038/s41597-026-08410-w",
+          "topicIds": [
+            "methods"
+          ],
+          "abstractMode": "unavailable",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+          "abstractEn": "This open multimodal dataset combines 64-channel EEG from 65 participants watching narrative videos with affective, cognitive, social, demographic, and psychological measures. Each stimulus is linked to real-world platform engagement such as plays, likes, comments, danmaku, saves, and shares, enabling work on narrative processing, computational social science, and neuroforecasting.",
+          "abstractSource": "https://doi.org/10.1038/s41597-026-08410-w",
+          "readingPriority": "normal",
+          "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published",
+          "publicationDate": "2026-10-15",
+          "publicationDateSource": "Nature article record",
+          "socialScienceReason": "The dataset directly links individual neural and psychological responses to collective media engagement and is explicitly designed for computational social-science research."
+        }
+      ]
+    }
+  ],
+  "coreTracking": [],
+  "coreTrackingNote": "No new owner-submitted core-paper request was present.",
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "Current research plus an earlier high-relevance mechanism paper",
+    "selectionNote": "Two papers isolate cultural distance, interest, and cross-border consumption without treating general attitudes toward a country as character reception.",
+    "historyCoverage": "Checked the public index and recommended registry after the 2026-11-17 reset; inaccessible private notes are outside this coverage.",
+    "selectedPapers": [
+      "https://doi.org/10.1177/0894439314562184",
+      "https://doi.org/10.1027/1864-1105/a000508"
+    ],
+    "papers": [
+      {
+        "title": "Relationship Between Cultural Distance and Cross-Cultural Music Video Consumption on YouTube",
+        "titleZh": "Not displayed",
+        "authors": "Young Min Baek",
+        "year": 2015,
+        "venue": "Social Science Computer Review, 33(6), 730–748",
+        "source": "SAGE Journals",
+        "category": "Dissertation · cross-cultural reception",
+        "evidence": "Publisher or authoritative index record verified",
+        "takeaway": "Using YouTube activity around K-pop videos, national cultural dimensions, and World Bank indicators, the study tests competing cultural-proximity and cultural-exoticism accounts of cross-border media consumption. The results show that cultural distance does not operate as a single universal barrier and that its association with consumption depends on the dimension and context considered.",
+        "theory": "See the linked article.",
+        "data": "See the linked article.",
+        "method": "See the linked article.",
+        "results": "Using YouTube activity around K-pop videos, national cultural dimensions, and World Bank indicators, the study tests competing cultural-proximity and cultural-exoticism accounts of cross-border media consumption. The results show that cultural distance does not operate as a single universal barrier and that its association with consumption depends on the dimension and context considered.",
+        "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+        "limitations": "See the linked article for design-specific limitations.",
+        "url": "https://doi.org/10.1177/0894439314562184",
+        "doi": "https://doi.org/10.1177/0894439314562184",
+        "topicIds": [
+          "culture"
+        ],
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+        "abstractEn": "Using YouTube activity around K-pop videos, national cultural dimensions, and World Bank indicators, the study tests competing cultural-proximity and cultural-exoticism accounts of cross-border media consumption. The results show that cultural distance does not operate as a single universal barrier and that its association with consumption depends on the dimension and context considered.",
+        "abstractSource": "https://doi.org/10.1177/0894439314562184",
+        "readingPriority": "normal",
+        "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+        "readingUse": "Compact evidence briefing.",
+        "researchConnection": "Relevant to the named research idea.",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "publicationStatus": "published"
+      },
+      {
+        "title": "A Window Into the Other Side of the World: Predictors of Viewers’ Interest in Culturally Distant Media",
+        "titleZh": "Not displayed",
+        "authors": "Jiyeon Yeo, Kalkidan Lea Classen, and Jan-Philipp Stein",
+        "year": 2026,
+        "venue": "Journal of Media Psychology",
+        "source": "Hogrefe",
+        "category": "Dissertation · cross-cultural reception",
+        "evidence": "Publisher or authoritative index record verified",
+        "takeaway": "In a within-subject experiment with 167 Western adults, participants evaluated fictitious films framed as culturally similar or culturally distant. Openness to experience, peer interest, cultural intelligence, and learning motivation predicted interest in culturally distant media, while the broad Western versus non-Western manipulation leaves finer cultural distinctions unresolved.",
+        "theory": "See the linked article.",
+        "data": "See the linked article.",
+        "method": "See the linked article.",
+        "results": "In a within-subject experiment with 167 Western adults, participants evaluated fictitious films framed as culturally similar or culturally distant. Openness to experience, peer interest, cultural intelligence, and learning motivation predicted interest in culturally distant media, while the broad Western versus non-Western manipulation leaves finer cultural distinctions unresolved.",
+        "relevance": "Selected for direct relevance or a clearly marked adjacent mechanism.",
+        "limitations": "See the linked article for design-specific limitations.",
+        "url": "https://doi.org/10.1027/1864-1105/a000508",
+        "doi": "https://doi.org/10.1027/1864-1105/a000508",
+        "topicIds": [
+          "culture"
+        ],
+        "abstractMode": "unavailable",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "No permission for verbatim republication was confirmed; this is a faithful English abstract summary based on the linked source.",
+        "abstractEn": "In a within-subject experiment with 167 Western adults, participants evaluated fictitious films framed as culturally similar or culturally distant. Openness to experience, peer interest, cultural intelligence, and learning motivation predicted interest in culturally distant media, while the broad Western versus non-Western manipulation leaves finer cultural distinctions unresolved.",
+        "abstractSource": "https://doi.org/10.1027/1864-1105/a000508",
+        "readingPriority": "normal",
+        "priorityReason": "Directly relevant or a clearly identified adjacent mechanism.",
+        "readingUse": "Compact evidence briefing.",
+        "researchConnection": "Relevant to the named research idea.",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "publicationStatus": "published"
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.1177/0894439314562184",
+        "reason": "Directly relevant cross-cultural media evidence"
+      },
+      {
+        "doi": "https://doi.org/10.1027/1864-1105/a000508",
+        "reason": "Directly relevant cross-cultural media evidence"
+      }
+    ]
+  }
+}
