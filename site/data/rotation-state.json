@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "communication": {
     "joc": {
-      "lastAttemptAt": "2026-11-13",
-      "lastCheckedAt": "2026-11-13",
+      "lastAttemptAt": "2026-11-20",
+      "lastCheckedAt": "2026-11-20",
       "status": "completed",
-      "lastCompletedAt": "2026-11-13",
+      "lastCompletedAt": "2026-11-20",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-16",
@@ -117,6 +117,23 @@
             "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag015/8788306",
             "https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqag013/8776177"
           ]
+        },
+        {
+          "checkedAt": "2026-11-20",
+          "url": "https://academic.oup.com/joc/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/joc/jqag024",
+            "https://doi.org/10.1093/joc/jqag023",
+            "https://doi.org/10.1093/joc/jqag021",
+            "https://doi.org/10.1093/joc/jqag020",
+            "https://doi.org/10.1093/joc/jqag017",
+            "https://doi.org/10.1093/joc/jqag018",
+            "https://doi.org/10.1093/joc/jqag014",
+            "https://doi.org/10.1093/joc/jqag016",
+            "https://doi.org/10.1093/joc/jqag015",
+            "https://doi.org/10.1093/joc/jqag013"
+          ]
         }
       ],
       "completedIssues": [
@@ -151,7 +168,7 @@
           ]
         }
       ],
-      "reason": "Official Advance Articles directory was fully reconciled: seven prior research papers, one non-research presidential address, and one new theory article, DOI 10.1093/joc/jqag023."
+      "reason": "Official Advance Access snapshot reconciled as 10 research articles with English summaries."
     },
     "hcr": {
       "lastCheckedAt": "2026-11-14",
