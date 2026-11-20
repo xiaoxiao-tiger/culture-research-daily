@@ -35,5 +35,7 @@ class ReadingPlan(unittest.TestCase):
   self.assertTrue(all(p.get('originalAbstract') or p.get('abstractEn') for p in papers))
   self.assertTrue(all(e.get('originalAbstract') or e.get('abstractEn') for e in data['groups'][3]['collection']['toc']))
   index=json.loads((root/'site/data/index.json').read_text())
-  self.assertEqual([i['date'] for i in index],['2026-11-19','2026-11-18','2026-11-16'])
+  dates=[i['date'] for i in index]
+  self.assertEqual(dates,['2026-11-20','2026-11-19','2026-11-18','2026-11-16'])
+  self.assertTrue(all(d>='2026-11-16' for d in dates))
 if __name__=='__main__':unittest.main()
