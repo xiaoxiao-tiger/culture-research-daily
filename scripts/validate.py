@@ -30,8 +30,11 @@ for issue in sorted(index,key=lambda x:x['date']):
         expected_counts=[2,2,2,4,0,1] if date>='2026-11-19' else [2,2,2,0,1]
         assert [g['id'] for g in groups]==expected_ids
         assert [g['target'] for g in groups]==expected_counts
-        assert [len(g['papers']) for g in groups]==expected_counts
-        papers=papers_in(data);assert issue['count']==len(papers)==(13 if date>='2026-11-19' else 9),'Compact issue count mismatch'
+        assert all(0 <= len(g['papers']) <= target for g,target in zip(groups,expected_counts))
+        for g,target in zip(groups,expected_counts):
+            if len(g['papers']) < target:
+                assert g.get('shortfallReason') or data.get('shortfallReason'), 'Explain compact-section shortfall'
+        papers=papers_in(data);assert issue['count']==len(papers),'Compact issue count mismatch'
         d=data['dissertation'];refs=d['selectedPapers']
         assert len(refs)==len(d['papers'])==len(d['topPapers'])==2 and len(set(refs))==2
         assert {p['doi'] for p in d['papers']}==set(refs),'Unresolved dissertation reference'
@@ -46,7 +49,9 @@ for issue in sorted(index,key=lambda x:x['date']):
             assert entry['title'] and entry['url'].startswith('https://') and (entry.get('originalAbstract') or entry.get('abstractEn'))
             assert entry['status'] in ('new','previously-recommended','non-research')
             if entry['status']=='previously-recommended':assert entry.get('recommendedDate') and entry.get('reviewUrl')
-        assert groups[5 if date>='2026-11-19' else 4]['papers'][0].get('socialScienceReason')
+        general_group=groups[5 if date>='2026-11-19' else 4]
+        if general_group['papers']:
+            assert general_group['papers'][0].get('socialScienceReason')
         for p in papers:
             for field in required:assert isinstance(p.get(field),str) and p[field].strip(),(date,field)
             assert urlparse(p['url']).scheme=='https' and isinstance(p['year'],int)

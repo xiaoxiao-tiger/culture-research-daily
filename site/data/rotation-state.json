@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-21",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-20",
@@ -171,7 +171,7 @@
       "reason": "Official Advance Access snapshot reconciled as 10 research articles with English summaries."
     },
     "hcr": {
-      "lastCheckedAt": "2026-11-14",
+      "lastCheckedAt": "2026-11-21",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-17",
@@ -227,6 +227,42 @@
             "https://doi.org/10.1093/hcr/hqag002",
             "https://doi.org/10.1093/hcr/hqag001"
           ]
+        },
+        {
+          "checkedAt": "2026-11-21",
+          "url": "https://academic.oup.com/hcr/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/hcr/hqag006",
+            "https://doi.org/10.1093/hcr/hqag004",
+            "https://doi.org/10.1093/hcr/hqag003",
+            "https://doi.org/10.1093/hcr/hqag002",
+            "https://doi.org/10.1093/hcr/hqag001"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-21",
+          "url": "https://academic.oup.com/hcr/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/hcr/hqag006",
+            "https://doi.org/10.1093/hcr/hqag004",
+            "https://doi.org/10.1093/hcr/hqag003",
+            "https://doi.org/10.1093/hcr/hqag002",
+            "https://doi.org/10.1093/hcr/hqag001"
+          ]
+        },
+        {
+          "checkedAt": "2026-11-21",
+          "url": "https://academic.oup.com/hcr/advance-articles",
+          "complete": true,
+          "dois": [
+            "https://doi.org/10.1093/hcr/hqag006",
+            "https://doi.org/10.1093/hcr/hqag004",
+            "https://doi.org/10.1093/hcr/hqag003",
+            "https://doi.org/10.1093/hcr/hqag002",
+            "https://doi.org/10.1093/hcr/hqag001"
+          ]
         }
       ],
       "completedIssues": [
@@ -243,10 +279,10 @@
           ]
         }
       ],
-      "lastAttemptAt": "2026-11-14",
+      "lastAttemptAt": "2026-11-21",
       "status": "completed",
-      "lastCompletedAt": "2026-11-14",
-      "reason": "Official Advance Articles directory was fully reconciled: all four research papers were previously recommended, so there was no new paper on 2026-11-14."
+      "lastCompletedAt": "2026-11-21",
+      "reason": "Official Advance Access snapshot reconciled as five research articles with English summaries; one newly published item."
     },
     "cr": {
       "lastAttemptAt": "2026-11-15",
