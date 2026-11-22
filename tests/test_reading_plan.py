@@ -37,6 +37,6 @@ class ReadingPlan(unittest.TestCase):
   index=json.loads((root/'site/data/index.json').read_text())
   dates=[i['date'] for i in index]
   self.assertEqual(dates,sorted(dates,reverse=True))
-  self.assertIn('2026-11-21',dates)
+  self.assertIn('2026-11-22',dates)
   self.assertTrue(all(d>='2026-11-16' for d in dates))
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,96 @@
+import json
+from pathlib import Path
+
+root=Path(__file__).resolve().parents[1]/"site/data"
+date="2026-11-22"
+
+def paper(title,authors,year,venue,source,url,doi,topic,abstract,category,**extra):
+    x=dict(title=title,titleZh="Not displayed",authors=authors,year=year,venue=venue,source=source,category=category,
+      evidence="Publisher or authoritative index record verified",takeaway=abstract,theory="See the linked article.",data="See the linked article.",method="See the linked article.",results=abstract,
+      relevance="Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",limitations="See the linked source for design-specific limitations.",url=url,doi=doi,topicIds=[topic],
+      abstractMode="summary",originalAbstract="",abstractUnavailableReason="Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",abstractEn=abstract,abstractSource=url,
+      readingPriority="normal",priorityReason="Direct or explicitly labeled adjacent evidence.",readingUse="Compact evidence briefing.",researchConnection="Relevant to the named research idea.",publicationType="journal",peerReviewed=True,publicationStatus="published")
+    x.update(extra);return x
+
+def formal(*args,tier,edition,quartile,reason="",**kw):
+    return paper(*args,journalEdition=edition,jifQuartile=quartile,indexSource="Web of Science Core Collection",tierNote=f"{tier}. {reason}".strip(),**kw)
+
+dissertation=[
+ formal("On sentiment recognition mechanism in Black Myth: Wukong player communication on YouTube","Q. Tang, X. Bai, and F. Gan",2025,"Frontiers in Psychology, 16, 1625671","Frontiers","https://doi.org/10.3389/fpsyg.2025.1625671","https://doi.org/10.3389/fpsyg.2025.1625671","culture",
+ "This study analyzes 7,604 YouTube comments about Black Myth: Wukong with sentiment analysis, topic modeling, interaction thresholds, and social-network analysis. Most comments are neutral to positive, while discussions cluster around game mechanics, cultural narratives, character backgrounds, and differences between Chinese and Western interpretations. The study directly observes overseas reception of a Chinese myth-based character and narrative, although platform comments cannot by themselves identify causal effects on liking, identification, or sharing intentions.",
+ "Dissertation · direct Chinese mythology reception",tier="Primary tier: SSCI/SCIE JCR Q1/Q2",edition="SSCI/SCIE",quartile="JCR Q2"),
+ formal("Audience reception of translated classic films: Zhang Yimou’s Hero in the digital English world","Authors listed on publisher record",2023,"Asia Pacific Translation and Intercultural Studies, 10(3)","Taylor & Francis","https://doi.org/10.1080/23306343.2023.2288456","https://doi.org/10.1080/23306343.2023.2288456","culture",
+ "Using sentiment analysis and corpus-based keyword analysis of professional and general Anglophone reviews, this study examines reception of Zhang Yimou's Hero. Both groups respond positively but emphasize different aspects: complex political characters and relationships, Chinese elements and the wuxia genre, fight scenes, and aesthetic qualities. The article separates character, plot, and visual reception and attributes group differences to cultural discount, hybridity, memory, translation mode, and translation quality.",
+ "Dissertation · direct overseas reception",tier="Downgrade tier 3: ESCI",edition="ESCI",quartile="Not assigned as JCR Q1-Q4",reason="No second unrecommended SSCI/SCIE JCR Q1/Q2 article met the same direct overseas-reception threshold today.") ]
+
+ishow=[
+ formal("Social media influencers can increase collective political beliefs and actions: findings from experiments and a quasi-experimental field study","Pascal Merz and Christian von Sikorski",2026,"Human Communication Research, 52(3), 147–160","Oxford Academic","https://doi.org/10.1093/hcr/hqaf024","https://doi.org/10.1093/hcr/hqaf024","ishow-speed",
+ "Two experiments and a quasi-experimental field study with a real influencer examine whether influencer messages change collective political beliefs and intended action. Messages emphasizing collective response efficacy increase efficacy beliefs and action intentions, especially among followers with strong parasocial relationships. This provides a high-quality causal mechanism for how an IShowSpeed-style creator could affect followers' country-related attitudes, but it is not a China-visit study.",
+ "甲亢哥访华 · adjacent influencer-effect mechanism",tier="Primary tier: SSCI JCR Q1/Q2",edition="SSCI",quartile="JCR Q1"),
+ formal("Effects of travel vloggers’ attributes on tourists’ intention: the role of cynicism","Authors listed on publisher record",2024,"Current Issues in Tourism","Taylor & Francis","https://doi.org/10.1080/13683500.2024.2347406","https://doi.org/10.1080/13683500.2024.2347406","ishow-speed",
+ "This study estimates a structural model linking travel-vlogger attributes, parasocial interaction, audience cynicism, and travel intention. It shows that creator characteristics work through relational responses and that cynical audiences discount persuasive cues. The paper is useful for explaining heterogeneous follower reactions to a foreign influencer's China visit, but it studies tourism persuasion generally rather than IShowSpeed or China.",
+ "甲亢哥访华 · adjacent travel-vlogger mechanism",tier="Primary tier: SSCI JCR Q1/Q2",edition="SSCI",quartile="JCR Q1")]
+
+ai=[
+ formal("Workplace AI Usage, Intrinsic Motivation, and Job Burnout: Evidence from a Longitudinal Study","Authors listed on publisher record",2026,"Behavioral Sciences, 16(9), 1587","MDPI","https://doi.org/10.3390/bs16091587","https://doi.org/10.3390/bs16091587","ai-wellbeing",
+ "This longitudinal study examines whether employees' workplace AI use predicts later intrinsic motivation and job burnout. Repeated observations distinguish prospective associations from same-wave correlations and test motivation as a psychological pathway connecting AI-supported work with burnout. The design directly addresses whether AI functions as a job resource or demand, although self-reported use and observational exposure limit causal inference.",
+ "Workplace AI and well-being · direct evidence",tier="Primary tier: SSCI/SCIE JCR Q1/Q2",edition="SSCI/SCIE",quartile="JCR Q2")]
+
+preprints=[
+ paper("Values of China: Toward a Cultural Map","Author listed on SSRN record",2025,"SSRN working paper 5078516","SSRN","https://ssrn.com/abstract=5078516","https://doi.org/10.2139/ssrn.5078516","culture",
+ "This working paper develops a synthetic-archetype method that combines narrative prompts with sentence-level embeddings to measure value and social-order themes in local Chinese folktales. County-level tale measures are related to historical geography and contemporary survey attitudes, including trust, prosocial behavior, kin obligations, effort, time orientation, and authority. It offers a measurement bridge from narrative archetypes to values, but it has not completed journal peer review.",
+ "Preprint · dissertation adjacent value measurement · not peer reviewed",publicationType="preprint",peerReviewed=False,publicationStatus="preprint",publicationDate="2026-02-02 (latest revision)"),
+ paper("Algorithmic Public Diplomacy: Analyzing Global Audience Engagement with Independent Kazakhstan Short-form Video Creators on TikTok and Instagram Reels","Bekzat Iliyas",2026,"SSRN working paper 7435748","SSRN","https://ssrn.com/abstract=7435748","https://doi.org/10.2139/ssrn.7435748","ishow-speed",
+ "This working paper analyzes how independent short-form video creators shape global audiences' perceptions of Kazakhstan on TikTok and Instagram Reels. It focuses on authentic travel intent, creator aesthetics, engagement, and the displacement of older state-led country stereotypes. It is an adjacent cross-national analogue rather than China-visit evidence and has not completed journal peer review.",
+ "Preprint · IShowSpeed adjacent public-diplomacy mechanism · not peer reviewed",publicationType="preprint",peerReviewed=False,publicationStatus="preprint",publicationDate="2026-08-21 (first posted)"),
+ paper("TranslaTalk: A Next-Generation Multilingual Chat Platform Integrating Real-Time Translation and Trendy Interaction Tools","Vikas Srivastava and colleagues",2026,"SSRN working paper 6711238","SSRN","https://ssrn.com/abstract=6711238","https://doi.org/10.2139/ssrn.6711238","x-translation",
+ "This system paper describes a multilingual chat platform that stores original and translated messages together and adapts translation at the conversation level. The design is directly concerned with how embedded translation supports ongoing cross-language interaction, but it does not test X users, replies, reposts, relationship depth, or downstream social outcomes. It is therefore retained only as an adjacent preprint and has not completed journal peer review.",
+ "Preprint · X translation adjacent platform design · not peer reviewed",publicationType="preprint",peerReviewed=False,publicationStatus="preprint",publicationDate="2026-05-04 (first posted)"),
+ paper("AI and Worker Well-being: Evidence from a Nationally Representative Study","Alex Bryson, Antti Kauhanen, and Petri Rouvinen",2026,"SSRN working paper 7116979","SSRN","https://ssrn.com/abstract=7116979","https://doi.org/10.2139/ssrn.7116979","ai-wellbeing",
+ "Using nationally representative Finnish cross-sectional and longitudinal data from 2018–2023, this working paper finds no systematic overall association between AI use and job satisfaction after accounting for worker and workplace characteristics. Personal involvement with AI is associated with higher engagement, while intensive use is also associated with higher burnout and replacement fears. The results show simultaneous resource and strain pathways but have not completed journal peer review.",
+ "Preprint · workplace AI and well-being · not peer reviewed",publicationType="preprint",peerReviewed=False,publicationStatus="preprint",publicationDate="2026-07-14 (first posted)") ]
+
+cr=[
+("#BoPo, #Ideal, or #Mixed? Exploring Adolescents’ Daily Exposure to Appearance Content on Social Media and Its Relations with Body Image Components","https://journals.sagepub.com/toc/crx/current","Daily diary evidence distinguishes exposure to idealized, body-positive, and mixed appearance content. The study tests how these content types correspond to adolescents' day-to-day body image rather than treating all appearance-related social media exposure as equivalent."),
+("Entertainment Contributes to Adaptive Coping: A Longitudinal Investigation of the Interplay Between Hedonic and Eudaimonic Entertainment, Escapism, and Meaning Making","https://journals.sagepub.com/toc/crx/current","A longitudinal design examines how pleasurable and meaningful entertainment use, escapism, and meaning making develop together over time. The study takes a salutogenic perspective and tests whether entertainment can support adaptive coping beyond short-term mood effects."),
+("Examining the Effects of Viewing Positive Aging TikTok Videos on Aging Outcomes and Attitudes Among Young, Middle-Aged, and Older Women","https://journals.sagepub.com/toc/crx/current","An experiment with 306 younger, 225 middle-aged, and 233 older women tests positive-aging TikTok videos using the communicative ecology model of successful aging. Outcomes include attitudes toward aging and age-related self-perceptions across life stages."),
+("Understanding How Immersive Media Enhance Prosociality: A Systematic Literature Review and Meta-Analysis","https://journals.sagepub.com/toc/crx/current","This systematic review and meta-analysis synthesizes evidence on immersive media and prosocial outcomes. It evaluates how immersion, embodiment, perspective taking, and study design relate to helping, empathy, and other prosocial responses."),
+("The Perfect Li(f)e: A Longitudinal Study on Positive Social Media Content and European Adolescents’ Perfectionism","https://journals.sagepub.com/toc/crx/current","Longitudinal data from European adolescents examine whether exposure to highly positive and polished social media content predicts changes in perfectionism. The study separates content exposure from stable individual differences and traces reciprocal patterns over time.")]
+toc=[dict(title=t,url=u,articleType="Research or Review Article",status="new",abstractEn=a,abstractSource="https://journals.sagepub.com/toc/crx/current") for t,u,a in cr]
+
+general=[paper("Educational intervention can rewire village social networks","Marios Papamichalis, Laura Forastiere, and Nicholas A. Christakis",2026,"Nature, 659, 113–120","Nature","https://doi.org/10.1038/s41586-026-11154-7","https://doi.org/10.1038/s41586-026-11154-7","methods",
+ "A randomized controlled trial involving 8,331 people in 110 rural Honduran villages examines secondary network effects of a 22-month health-education intervention. Beyond its intended knowledge outcomes, the intervention changes pre-existing health, friendship, and financial ties, showing that randomized social interventions can rewire relationships among treated and untreated community members. The study is directly social-scientific and provides rare causal evidence on network spillovers.",
+ "General top journal · social science",publicationDate="2026-10-14",publicationDateSource="Nature article record",socialScienceReason="The randomized field experiment directly studies social-network formation, spillovers, and community relationships.") ]
+
+groups=[
+ {"id":"ishow-speed","label":"甲亢哥访华","target":2,"sortBy":"relevance-quality-date","papers":ishow},
+ {"id":"x-translation","label":"X自动翻译","target":2,"sortBy":"relevance-quality-date","papers":[],"shortfallReason":"No unrecommended peer-reviewed study directly testing X/Twitter built-in translation effects on replies, reposts, interaction depth, or relationship formation was verified. Translation-quality studies were excluded."},
+ {"id":"ai-wellbeing","label":"使用AI提升还是降低幸福感","target":2,"sortBy":"relevance-quality-date","papers":ai,"shortfallReason":"Only one unrecommended SSCI/SCIE article met the direct workplace AI and well-being threshold today; lower-relevance items were not used."},
+ {"id":"preprints","label":"Preprints · arXiv / SSRN / NBER","target":4,"sortBy":"topic-publication-date-desc","papers":preprints},
+ {"id":"communication-issue","label":"传播学顶刊推荐","target":0,"sortBy":"issue","unit":"issue","collection":{"journalId":"cr","journalName":"Communication Research","kind":"issue","title":"Volume 53, Issue 8, December 2026 · Pro-Social Media Effects","url":"https://journals.sagepub.com/toc/crx/current","checkedAt":date,"complete":True,"toc":toc},"papers":[]},
+ {"id":"general-science","label":"综合顶刊推荐","target":1,"sortBy":"publicationDate","rotationJournalId":"nature","selectedJournalId":"nature","papers":general}]
+
+issue={"schemaVersion":7,"layoutVersion":"compact-ideas-v1","date":date,"title":"Research ideas: reception, influencer visits, platform translation, and workplace AI",
+"summary":"Two dissertation papers, two influencer-mechanism papers, one workplace-AI paper, explicit formal-paper shortfalls, four separate preprints, a complete Communication Research issue, and one Nature article.",
+"historyPolicy":"exclude-recommended","journalPolicy":"jcr-q1-q2-then-q3-q4-then-esci-then-other-peer-reviewed","searchPlatforms":["Google Scholar","NBER","SSRN","arXiv"],
+"themeSearches":[
+{"topicId":"culture","platform":"Publisher sites, SSRN, and scholarly indexes","query":"overseas reception Chinese mythology Wukong film character values","timeRange":"verified through 2026-11-22","status":"completed; one ESCI downgrade disclosed"},
+{"topicId":"ishow-speed","platform":"Publisher sites and SSRN","query":"social media influencer attitude change travel vlogger destination image parasocial","timeRange":"verified through 2026-11-22","status":"completed; adjacent mechanisms labeled"},
+{"topicId":"x-translation","platform":"Publisher sites and SSRN","query":"X Twitter built-in automatic translation cross-language replies reposts relationships","timeRange":"verified through 2026-11-22","status":"formal-paper shortfall; one adjacent platform-design preprint retained separately"},
+{"topicId":"ai-wellbeing","platform":"Publisher sites and SSRN","query":"workplace AI intrinsic motivation burnout wellbeing longitudinal","timeRange":"verified through 2026-11-22","status":"one direct formal article; shortfall disclosed"}],
+"periodicalChecks":[{"platform":"SAGE Journals","query":"Communication Research Volume 53 Issue 8","timeRange":"checked 2026-11-22","purpose":"Complete communication-journal issue","status":"five research or review articles verified"},{"platform":"Nature","query":"current social-science research","timeRange":"checked 2026-11-22","purpose":"General top-journal rotation","status":"one eligible article verified"}],
+"searchNote":"Formal-topic papers were screened in order: SSCI/SCI/SCIE JCR Q1/Q2, then Q3/Q4, then ESCI, then other peer-reviewed venues. X automatic translation and workplace AI are intentionally underfilled under the strict direct-relevance and deduplication rules. Preprints are separate and explicitly not peer reviewed. English text is a faithful summary based on publisher or repository abstracts unless reuse permission is stated.",
+"shortfallReason":"The X automatic-translation formal section has no qualifying new paper and the workplace-AI formal section has one qualifying new paper.","groups":groups,
+"coreTracking":[],"coreTrackingNote":"No new owner-submitted core-paper request was present.",
+"dissertation":{"title":"从被看见到被接收","timeRange":"Current and high-relevance peer-reviewed research","selectionNote":"Two direct audience-reception studies of Chinese myth-based games and film are placed first.","historyCoverage":"Checked the public index and recommended registry after the 2026-11-17 reset; inaccessible private notes are outside this coverage.","selectedPapers":[p["doi"] for p in dissertation],"papers":dissertation,"topPapers":[{"doi":p["doi"],"reason":"Direct overseas reception evidence"} for p in dissertation]}}
+
+(root/f"{date}.json").write_text(json.dumps(issue,ensure_ascii=False,indent=2)+"\n")
+idx=json.loads((root/"index.json").read_text());idx=[x for x in idx if x["date"]!=date]
+count=len(dissertation)+sum(len(g.get("papers",[])) for g in groups)
+idx.insert(0,{"date":date,"title":issue["title"],"summary":issue["summary"],"edition":"正式第49期","count":count,"file":f"{date}.json"})
+(root/"index.json").write_text(json.dumps(idx,ensure_ascii=False,indent=2)+"\n")
+state=json.loads((root/"rotation-state.json").read_text());state["updatedAt"]=date
+j=state["communication"]["cr"];j.update(lastAttemptAt=date,lastCheckedAt=date,status="completed",lastCompletedAt=date,reason="Official current issue reconciled as five research or review articles with English summaries.")
+j.setdefault("issues",[]).append({"checkedAt":date,"url":"https://journals.sagepub.com/toc/crx/current","complete":True,"title":"Volume 53, Issue 8, December 2026"})
+(root/"rotation-state.json").write_text(json.dumps(state,ensure_ascii=False,indent=2)+"\n")
+print(root/f"{date}.json")

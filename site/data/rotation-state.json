@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-22",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-20",
@@ -285,11 +285,11 @@
       "reason": "Official Advance Access snapshot reconciled as five research articles with English summaries; one newly published item."
     },
     "cr": {
-      "lastAttemptAt": "2026-11-15",
-      "lastCheckedAt": "2026-11-15",
-      "status": "partial",
-      "reason": "Official Communication Research OnlineFirst leading range was verified and yielded two unrecommended research articles, but the full directory was not completely reconciled; completion cursor was not advanced.",
-      "lastCompletedAt": null,
+      "lastAttemptAt": "2026-11-22",
+      "lastCheckedAt": "2026-11-22",
+      "status": "completed",
+      "reason": "Official current issue reconciled as five research or review articles with English summaries.",
+      "lastCompletedAt": "2026-11-22",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-11-08",
@@ -326,7 +326,15 @@
         "url": "https://journals.sagepub.com/toc/crx/0/0",
         "complete": false,
         "scopeNote": "Public page verified only the first 10 of 101 entries; no complete Online First cursor was advanced."
-      }
+      },
+      "issues": [
+        {
+          "checkedAt": "2026-11-22",
+          "url": "https://journals.sagepub.com/toc/crx/current",
+          "complete": true,
+          "title": "Volume 53, Issue 8, December 2026"
+        }
+      ]
     },
     "jcmc": {
       "lastAttemptAt": "2026-11-16",
