@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 7,
+  "layoutVersion": "compact-ideas-v1",
+  "date": "2026-11-23",
+  "title": "Research ideas: reception, influencer visits, platform translation, and workplace AI",
+  "summary": "Two direct dissertation papers, two China-influencer papers, two workplace-AI papers, explicit formal and preprint shortfalls, two separate preprints, and the complete current JCMC issue.",
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "jcr-q1-q2-then-q3-q4-then-esci-then-other-peer-reviewed",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "themeSearches": [
+    {
+      "topicId": "culture",
+      "platform": "Publisher sites, SSRN, and scholarly indexes",
+      "query": "foreign audience reception Chinese mythology Ne Zha Wukong cross-cultural identification",
+      "timeRange": "verified through 2026-11-23",
+      "status": "completed; two direct ESCI downgrades disclosed"
+    },
+    {
+      "topicId": "ishow-speed",
+      "platform": "Publisher sites and SSRN",
+      "query": "foreign influencer China visit national image YouTube audience engagement attitudes",
+      "timeRange": "verified through 2026-11-23",
+      "status": "two formal papers verified; no new unrecommended strict-threshold preprint"
+    },
+    {
+      "topicId": "x-translation",
+      "platform": "Publisher sites, arXiv, SSRN, and NBER",
+      "query": "X Twitter built-in automatic translation cross-language replies reposts relationships",
+      "timeRange": "verified through 2026-11-23",
+      "status": "formal and preprint shortfall; generic machine-translation studies excluded"
+    },
+    {
+      "topicId": "ai-wellbeing",
+      "platform": "Publisher sites and SSRN",
+      "query": "workplace generative AI job satisfaction technostress psychological distress wellbeing",
+      "timeRange": "verified through 2026-11-23",
+      "status": "two direct formal articles and one separate preprint verified"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "Oxford Academic",
+      "query": "Journal of Computer-Mediated Communication Volume 31 Issue 6",
+      "timeRange": "checked 2026-11-23",
+      "purpose": "Complete communication-journal issue",
+      "status": "two research articles verified; both previously recommended and both retain English summaries"
+    },
+    {
+      "platform": "Science",
+      "query": "current social-science original research and reviews",
+      "timeRange": "checked 2026-11-23",
+      "purpose": "General top-journal rotation",
+      "status": "no eligible unrecommended paper verified; no substitution"
+    }
+  ],
+  "searchNote": "Formal-topic papers were screened in order: SSCI/SCI/SCIE JCR Q1/Q2, then Q3/Q4, then ESCI, then other peer-reviewed venues. The dissertation section uses two direct-relevance ESCI papers because no unused Q1/Q2 paper met the same foreign-audience threshold. X automatic translation is intentionally empty in both formal and preprint sections. English text is a faithful summary based on publisher or repository abstracts; it is not presented as a verbatim abstract.",
+  "shortfallReason": "The X automatic-translation formal and preprint slots are empty, the IShowSpeed preprint slot has no new unrepeated candidate, and the Science rotation has no qualifying item.",
+  "groups": [
+    {
+      "id": "ishow-speed",
+      "label": "甲亢哥访华",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [
+        {
+          "title": "Selling China’s story: the multimodal semiotics of positive symbolic communication in national image building through Laowai Wanghong’s vlogs",
+          "titleZh": "Not displayed",
+          "authors": "Luanying Li, Xiaoping Wu, and Richard Fitzgerald",
+          "year": 2026,
+          "venue": "Social Semiotics",
+          "source": "Taylor & Francis",
+          "category": "甲亢哥访华 · direct foreign-vlogger China representation",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "A multimodal critical discourse analysis examines how foreign internet celebrities use YouTube videos to represent China through modern factories, cultural richness, and a foreigner-friendly environment. The study finds that these portrayals are curated and filtered and often align implicitly with state-led image-building themes. It is directly relevant to foreign creators visiting and narrating China, but its primary evidence concerns content strategies rather than causal changes in followers’ attitudes.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "A multimodal critical discourse analysis examines how foreign internet celebrities use YouTube videos to represent China through modern factories, cultural richness, and a foreigner-friendly environment. The study finds that these portrayals are curated and filtered and often align implicitly with state-led image-building themes. It is directly relevant to foreign creators visiting and narrating China, but its primary evidence concerns content strategies rather than causal changes in followers’ attitudes.",
+          "relevance": "Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://doi.org/10.1080/10350330.2025.2601620",
+          "doi": "https://doi.org/10.1080/10350330.2025.2601620",
+          "topicIds": [
+            "ishow-speed"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",
+          "abstractEn": "A multimodal critical discourse analysis examines how foreign internet celebrities use YouTube videos to represent China through modern factories, cultural richness, and a foreigner-friendly environment. The study finds that these portrayals are curated and filtered and often align implicitly with state-led image-building themes. It is directly relevant to foreign creators visiting and narrating China, but its primary evidence concerns content strategies rather than causal changes in followers’ attitudes.",
+          "abstractSource": "https://doi.org/10.1080/10350330.2025.2601620",
+          "readingPriority": "normal",
+          "priorityReason": "Direct or explicitly labeled adjacent evidence.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published",
+          "journalEdition": "SSCI",
+          "jifQuartile": "JCR Q2",
+          "indexSource": "Web of Science Core Collection / Journal Citation Reports",
+          "tierNote": "Primary tier: SSCI JCR Q1/Q2."
+        },
+        {
+          "title": "Nation branding via sportswashing: An exploration of pro-China YouTube influencers and commenters around the 2022 Winter Olympic Games",
+          "titleZh": "Not displayed",
+          "authors": "Authors listed on publisher record",
+          "year": 2025,
+          "venue": "Public Relations Review, 51(4), 102611",
+          "source": "Elsevier",
+          "category": "甲亢哥访华 · adjacent China-influencer audience mechanism",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "The study analyzes 27 videos from eight pro-China YouTube channels and 21,958 comments surrounding the 2022 Beijing Winter Olympics. It identifies strategies for building a desirable national brand and countering unfavorable perceptions, then compares engagement and language patterns across likely ordinary users and potentially coordinated accounts. The article offers direct evidence on foreign-facing influencer content, audience engagement, and China’s national image, while the state-linked sports campaign differs from an independent creator visit such as IShowSpeed’s.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "The study analyzes 27 videos from eight pro-China YouTube channels and 21,958 comments surrounding the 2022 Beijing Winter Olympics. It identifies strategies for building a desirable national brand and countering unfavorable perceptions, then compares engagement and language patterns across likely ordinary users and potentially coordinated accounts. The article offers direct evidence on foreign-facing influencer content, audience engagement, and China’s national image, while the state-linked sports campaign differs from an independent creator visit such as IShowSpeed’s.",
+          "relevance": "Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://doi.org/10.1016/j.pubrev.2025.102611",
+          "doi": "https://doi.org/10.1016/j.pubrev.2025.102611",
+          "topicIds": [
+            "ishow-speed"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",
+          "abstractEn": "The study analyzes 27 videos from eight pro-China YouTube channels and 21,958 comments surrounding the 2022 Beijing Winter Olympics. It identifies strategies for building a desirable national brand and countering unfavorable perceptions, then compares engagement and language patterns across likely ordinary users and potentially coordinated accounts. The article offers direct evidence on foreign-facing influencer content, audience engagement, and China’s national image, while the state-linked sports campaign differs from an independent creator visit such as IShowSpeed’s.",
+          "abstractSource": "https://doi.org/10.1016/j.pubrev.2025.102611",
+          "readingPriority": "normal",
+          "priorityReason": "Direct or explicitly labeled adjacent evidence.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published",
+          "journalEdition": "SSCI",
+          "jifQuartile": "JCR Q1",
+          "indexSource": "Web of Science Core Collection / Journal Citation Reports",
+          "tierNote": "Primary tier: SSCI JCR Q1/Q2."
+        }
+      ]
+    },
+    {
+      "id": "x-translation",
+      "label": "X自动翻译",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [],
+      "shortfallReason": "No unrecommended peer-reviewed study directly testing X/Twitter built-in translation effects on replies, reposts, interaction depth, or relationship formation was verified. Machine-translation performance studies were excluded."
+    },
+    {
+      "id": "ai-wellbeing",
+      "label": "使用AI提升还是降低幸福感",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [
+        {
+          "title": "Generative AI, Job Satisfaction and Type of Work",
+          "titleZh": "Not displayed",
+          "authors": "Dorota Bosek-Rak and Dariusz Kaszyński",
+          "year": 2026,
+          "venue": "Journal of Computer Information Systems, 1–16",
+          "source": "Taylor & Francis",
+          "category": "Workplace AI and well-being · direct job-satisfaction evidence",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "A survey of 433 white-collar employees in Poland’s financial-services sector uses ordered logit models to relate generative-AI conditions to job satisfaction. Organizational support and leadership effectiveness are positively associated with satisfaction, whereas individual enthusiasm toward GenAI is not. AI-related technostress is more strongly associated with lower satisfaction in roles highly exposed to AI-driven task transformation, indicating that workplace context and job design shape whether GenAI becomes a resource or a demand.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "A survey of 433 white-collar employees in Poland’s financial-services sector uses ordered logit models to relate generative-AI conditions to job satisfaction. Organizational support and leadership effectiveness are positively associated with satisfaction, whereas individual enthusiasm toward GenAI is not. AI-related technostress is more strongly associated with lower satisfaction in roles highly exposed to AI-driven task transformation, indicating that workplace context and job design shape whether GenAI becomes a resource or a demand.",
+          "relevance": "Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://doi.org/10.1080/08874417.2026.2615836",
+          "doi": "https://doi.org/10.1080/08874417.2026.2615836",
+          "topicIds": [
+            "ai-wellbeing"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",
+          "abstractEn": "A survey of 433 white-collar employees in Poland’s financial-services sector uses ordered logit models to relate generative-AI conditions to job satisfaction. Organizational support and leadership effectiveness are positively associated with satisfaction, whereas individual enthusiasm toward GenAI is not. AI-related technostress is more strongly associated with lower satisfaction in roles highly exposed to AI-driven task transformation, indicating that workplace context and job design shape whether GenAI becomes a resource or a demand.",
+          "abstractSource": "https://doi.org/10.1080/08874417.2026.2615836",
+          "readingPriority": "normal",
+          "priorityReason": "Direct or explicitly labeled adjacent evidence.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published",
+          "journalEdition": "SCIE",
+          "jifQuartile": "JCR Q1",
+          "indexSource": "Web of Science Core Collection / Journal Citation Reports",
+          "tierNote": "Primary tier: SCIE JCR Q1/Q2."
+        },
+        {
+          "title": "The impact of generative AI use on employees’ psychological distress: a moderated mediation model",
+          "titleZh": "Not displayed",
+          "authors": "M. Liu, Y. Li, and J. Li",
+          "year": 2026,
+          "venue": "Frontiers in Public Health, 14, 1798423",
+          "source": "Frontiers",
+          "category": "Workplace AI and well-being · direct psychological-distress evidence",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "Using survey data from 424 Chinese employees, this study tests a moderated mediation model linking workplace GenAI use to psychological distress. Job insecurity and workplace loneliness carry the positive association between use and distress, while information literacy and perceived AI ethical risk operate as boundary conditions. The results provide direct evidence of strain pathways, although the cross-sectional self-report design does not establish that GenAI use itself causes distress.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "Using survey data from 424 Chinese employees, this study tests a moderated mediation model linking workplace GenAI use to psychological distress. Job insecurity and workplace loneliness carry the positive association between use and distress, while information literacy and perceived AI ethical risk operate as boundary conditions. The results provide direct evidence of strain pathways, although the cross-sectional self-report design does not establish that GenAI use itself causes distress.",
+          "relevance": "Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://doi.org/10.3389/fpubh.2026.1798423",
+          "doi": "https://doi.org/10.3389/fpubh.2026.1798423",
+          "topicIds": [
+            "ai-wellbeing"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",
+          "abstractEn": "Using survey data from 424 Chinese employees, this study tests a moderated mediation model linking workplace GenAI use to psychological distress. Job insecurity and workplace loneliness carry the positive association between use and distress, while information literacy and perceived AI ethical risk operate as boundary conditions. The results provide direct evidence of strain pathways, although the cross-sectional self-report design does not establish that GenAI use itself causes distress.",
+          "abstractSource": "https://doi.org/10.3389/fpubh.2026.1798423",
+          "readingPriority": "normal",
+          "priorityReason": "Direct or explicitly labeled adjacent evidence.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published",
+          "journalEdition": "SSCI/SCIE",
+          "jifQuartile": "JCR Q1",
+          "indexSource": "Web of Science Core Collection / Journal Citation Reports",
+          "tierNote": "Primary tier: SSCI/SCIE JCR Q1/Q2."
+        }
+      ]
+    },
+    {
+      "id": "preprints",
+      "label": "Preprints · arXiv / SSRN / NBER",
+      "target": 4,
+      "sortBy": "topic-publication-date-desc",
+      "papers": [
+        {
+          "title": "A Game Sense Theory Approach to Translating Culturally Specific Chinese Video Games",
+          "titleZh": "Not displayed",
+          "authors": "Dariush Robertson",
+          "year": 2026,
+          "venue": "SSRN working paper 6454141",
+          "source": "SSRN",
+          "category": "Preprint · dissertation translation and reception · not peer reviewed",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "This working paper uses translator interviews and player-reception data to examine how culturally specific Chinese video games are localized. It argues that foreignizing strategies predominate for cultural content, while more domesticating strategies are used for interactive terms such as items and skills. Excessive transliteration is associated with less favorable player reception. The paper directly links translation choices to reception of Chinese mythological and cultural material but has not completed journal peer review.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "This working paper uses translator interviews and player-reception data to examine how culturally specific Chinese video games are localized. It argues that foreignizing strategies predominate for cultural content, while more domesticating strategies are used for interactive terms such as items and skills. Excessive transliteration is associated with less favorable player reception. The paper directly links translation choices to reception of Chinese mythological and cultural material but has not completed journal peer review.",
+          "relevance": "Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://ssrn.com/abstract=6454141",
+          "doi": "https://doi.org/10.2139/ssrn.6454141",
+          "topicIds": [
+            "culture"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",
+          "abstractEn": "This working paper uses translator interviews and player-reception data to examine how culturally specific Chinese video games are localized. It argues that foreignizing strategies predominate for cultural content, while more domesticating strategies are used for interactive terms such as items and skills. Excessive transliteration is associated with less favorable player reception. The paper directly links translation choices to reception of Chinese mythological and cultural material but has not completed journal peer review.",
+          "abstractSource": "https://ssrn.com/abstract=6454141",
+          "readingPriority": "normal",
+          "priorityReason": "Direct or explicitly labeled adjacent evidence.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "preprint",
+          "peerReviewed": false,
+          "publicationStatus": "preprint",
+          "publicationDate": "2026-04-12 (latest revision)"
+        },
+        {
+          "title": "Investigating the relationship between generative AI usage and wellbeing: a multi-dimensional analysis of work and private life",
+          "titleZh": "Not displayed",
+          "authors": "Shinichi Yamaguchi, Hidetaka Oshima, Yukiko Osaka, and Tomoaki Watanabe",
+          "year": 2026,
+          "venue": "SSRN working paper 6639121",
+          "source": "SSRN",
+          "category": "Preprint · workplace GenAI and multidimensional well-being · not peer reviewed",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "Using a large-scale Japanese survey, this working paper examines how GenAI use and use frequency relate to multiple dimensions of well-being and distinguishes work from private use. Work-related use is more strongly associated with life satisfaction, self-realization, and growth, whereas private use is more strongly associated with positive affect, social connection, and gratitude. The observational associations are context-dependent and the paper has not completed journal peer review.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "Using a large-scale Japanese survey, this working paper examines how GenAI use and use frequency relate to multiple dimensions of well-being and distinguishes work from private use. Work-related use is more strongly associated with life satisfaction, self-realization, and growth, whereas private use is more strongly associated with positive affect, social connection, and gratitude. The observational associations are context-dependent and the paper has not completed journal peer review.",
+          "relevance": "Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://ssrn.com/abstract=6639121",
+          "doi": "https://doi.org/10.2139/ssrn.6639121",
+          "topicIds": [
+            "ai-wellbeing"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",
+          "abstractEn": "Using a large-scale Japanese survey, this working paper examines how GenAI use and use frequency relate to multiple dimensions of well-being and distinguishes work from private use. Work-related use is more strongly associated with life satisfaction, self-realization, and growth, whereas private use is more strongly associated with positive affect, social connection, and gratitude. The observational associations are context-dependent and the paper has not completed journal peer review.",
+          "abstractSource": "https://ssrn.com/abstract=6639121",
+          "readingPriority": "normal",
+          "priorityReason": "Direct or explicitly labeled adjacent evidence.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "preprint",
+          "peerReviewed": false,
+          "publicationStatus": "preprint",
+          "publicationDate": "2026-09-11 (latest revision)"
+        }
+      ],
+      "shortfallReason": "No new unrecommended arXiv, SSRN, or NBER paper met the strict IShowSpeed/foreign-creator China-visit threshold, and none met the X built-in translation and user-interaction threshold. Both topic slots remain unfilled rather than repeating history or using generic material."
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "target": 0,
+      "sortBy": "issue",
+      "unit": "issue",
+      "collection": {
+        "journalId": "jcmc",
+        "journalName": "Journal of Computer-Mediated Communication",
+        "kind": "issue",
+        "volume": "31",
+        "issue": "6",
+        "title": "Volume 31, Issue 6, November 2026 (In Progress)",
+        "url": "https://academic.oup.com/jcmc/issue/31/6",
+        "checkedAt": "2026-11-23",
+        "complete": true,
+        "toc": [
+          {
+            "title": "The sequential replicant effect in interpersonal sincerity: evidence from AI-mediated apology and gratitude",
+            "url": "https://doi.org/10.1093/jcmc/zmag024",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "recommendedDate": "2026-10-26",
+            "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-26",
+            "abstractEn": "Across two preregistered, two-wave experiments, cues that artificial intelligence had assisted with apologies or expressions of gratitude consistently reduced perceived sincerity. Making AI mediation salient in an earlier message also increased suspicion of AI use and shaped evaluations of a later message that contained no AI cue, producing a sequential replicant effect."
+          },
+          {
+            "title": "The link between three smartphone school policies and students’ mental health: a growth trajectory approach",
+            "url": "https://doi.org/10.1093/jcmc/zmag025",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "recommendedDate": "2026-10-26",
+            "reviewUrl": "https://xiaoxiao-tiger.github.io/culture-research-daily/?date=2026-10-26",
+            "abstractEn": "Students in three Belgian schools were followed for as many as seven survey waves after the schools adopted different smartphone policies. At baseline, depression and anxiety were highest in the school with a full ban, but trajectories of mental health did not differ significantly across schools. Depressive symptoms increased within both the full-ban school and the school allowing lunchtime use."
+          }
+        ]
+      },
+      "papers": []
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "science",
+      "selectedJournalId": "science",
+      "papers": [],
+      "shortfallReason": "No unrecommended social-science original research or review in Science was verified for the current rotation; the slot remains empty rather than substituting another journal."
+    }
+  ],
+  "coreTracking": [],
+  "coreTrackingNote": "No new owner-submitted core-paper request was present.",
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "Current and high-relevance peer-reviewed research",
+    "selectionNote": "Two direct foreign-audience studies of Chinese myth-based media are placed first; both required an explicitly disclosed ESCI downgrade.",
+    "historyCoverage": "Checked the public index and permanent recommendation registry after the 2026-11-17 reset; inaccessible private notes are outside this coverage.",
+    "selectedPapers": [
+      "https://doi.org/10.1007/s40636-025-00351-0",
+      "https://doi.org/10.1080/23311983.2026.2657188"
+    ],
+    "papers": [
+      {
+        "title": "How does the Chinese animation Ne Zha 2 journey to the world?—From the perspective of Intercultural New Media Studies",
+        "titleZh": "Not displayed",
+        "authors": "Yan Yan and Ziye Liu",
+        "year": 2026,
+        "venue": "International Communication of Chinese Culture, 13(1), 131–150",
+        "source": "Springer Nature",
+        "category": "Dissertation · direct overseas reception of Chinese mythology",
+        "evidence": "Publisher or authoritative index record verified",
+        "takeaway": "This mixed-methods case study develops an Intercultural Communication Diamond Model and examines news reports, X posts, YouTube comments, and Reddit discussions about Ne Zha 2. It finds platform-specific reception: X decentralizes conventional gatekeeping, YouTube content fits audience preferences but language barriers limit emotional resonance, and Reddit supports participatory meaning-making. The evidence directly concerns overseas reception of a Chinese mythological character, although it does not isolate understanding, liking, identification, and sharing intention as separate causal outcomes.",
+        "theory": "See the linked article.",
+        "data": "See the linked article.",
+        "method": "See the linked article.",
+        "results": "This mixed-methods case study develops an Intercultural Communication Diamond Model and examines news reports, X posts, YouTube comments, and Reddit discussions about Ne Zha 2. It finds platform-specific reception: X decentralizes conventional gatekeeping, YouTube content fits audience preferences but language barriers limit emotional resonance, and Reddit supports participatory meaning-making. The evidence directly concerns overseas reception of a Chinese mythological character, although it does not isolate understanding, liking, identification, and sharing intention as separate causal outcomes.",
+        "relevance": "Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",
+        "limitations": "See the linked source for design-specific limitations.",
+        "url": "https://doi.org/10.1007/s40636-025-00351-0",
+        "doi": "https://doi.org/10.1007/s40636-025-00351-0",
+        "topicIds": [
+          "culture"
+        ],
+        "abstractMode": "summary",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",
+        "abstractEn": "This mixed-methods case study develops an Intercultural Communication Diamond Model and examines news reports, X posts, YouTube comments, and Reddit discussions about Ne Zha 2. It finds platform-specific reception: X decentralizes conventional gatekeeping, YouTube content fits audience preferences but language barriers limit emotional resonance, and Reddit supports participatory meaning-making. The evidence directly concerns overseas reception of a Chinese mythological character, although it does not isolate understanding, liking, identification, and sharing intention as separate causal outcomes.",
+        "abstractSource": "https://doi.org/10.1007/s40636-025-00351-0",
+        "readingPriority": "normal",
+        "priorityReason": "Direct or explicitly labeled adjacent evidence.",
+        "readingUse": "Compact evidence briefing.",
+        "researchConnection": "Relevant to the named research idea.",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "publicationStatus": "published",
+        "journalEdition": "ESCI",
+        "jifQuartile": "JCR Q3",
+        "indexSource": "Web of Science Core Collection / Journal Citation Reports",
+        "tierNote": "Downgrade tier 3: ESCI JCR Q3. No unrecommended SSCI/SCIE JCR Q1/Q2 article met the same direct foreign-audience reception threshold today."
+      },
+      {
+        "title": "Recognizing beauty, engaging with goodness, and approaching truth: foreign players’ cross-cultural identification with Chinese culture through Black Myth: Wukong",
+        "titleZh": "Not displayed",
+        "authors": "Junhua Chen and Lin Chen",
+        "year": 2026,
+        "venue": "Cogent Arts & Humanities, 13(1), 2657188",
+        "source": "Taylor & Francis",
+        "category": "Dissertation · direct foreign-player identification",
+        "evidence": "Publisher or authoritative index record verified",
+        "takeaway": "Using foreign-player and critic reviews, this study combines Scene Theory with the Cultural Iceberg Model to describe a three-level path of cross-cultural identification. Players first recognize aesthetic beauty, then engage with moral context and identity formation, and finally approach deeper cultural meanings, although deep identification remains partial. Narrative complexity and cross-cultural misunderstanding constrain reception, making this article directly relevant to distinguishing surface appreciation from deeper character and cultural identification.",
+        "theory": "See the linked article.",
+        "data": "See the linked article.",
+        "method": "See the linked article.",
+        "results": "Using foreign-player and critic reviews, this study combines Scene Theory with the Cultural Iceberg Model to describe a three-level path of cross-cultural identification. Players first recognize aesthetic beauty, then engage with moral context and identity formation, and finally approach deeper cultural meanings, although deep identification remains partial. Narrative complexity and cross-cultural misunderstanding constrain reception, making this article directly relevant to distinguishing surface appreciation from deeper character and cultural identification.",
+        "relevance": "Selected under the strict relevance hierarchy; adjacent evidence is explicitly labeled.",
+        "limitations": "See the linked source for design-specific limitations.",
+        "url": "https://doi.org/10.1080/23311983.2026.2657188",
+        "doi": "https://doi.org/10.1080/23311983.2026.2657188",
+        "topicIds": [
+          "culture"
+        ],
+        "abstractMode": "summary",
+        "originalAbstract": "",
+        "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher or repository abstract.",
+        "abstractEn": "Using foreign-player and critic reviews, this study combines Scene Theory with the Cultural Iceberg Model to describe a three-level path of cross-cultural identification. Players first recognize aesthetic beauty, then engage with moral context and identity formation, and finally approach deeper cultural meanings, although deep identification remains partial. Narrative complexity and cross-cultural misunderstanding constrain reception, making this article directly relevant to distinguishing surface appreciation from deeper character and cultural identification.",
+        "abstractSource": "https://doi.org/10.1080/23311983.2026.2657188",
+        "readingPriority": "normal",
+        "priorityReason": "Direct or explicitly labeled adjacent evidence.",
+        "readingUse": "Compact evidence briefing.",
+        "researchConnection": "Relevant to the named research idea.",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "publicationStatus": "published",
+        "journalEdition": "ESCI",
+        "jifQuartile": "JCR quartile not assigned in the verified record",
+        "indexSource": "Web of Science Core Collection / Journal Citation Reports",
+        "tierNote": "Downgrade tier 3: ESCI. A second unused SSCI/SCIE JCR Q1/Q2 paper with direct foreign-player reception evidence was not verified; this ESCI article was retained for its substantially higher direct relevance."
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.1007/s40636-025-00351-0",
+        "reason": "Direct foreign-audience reception evidence"
+      },
+      {
+        "doi": "https://doi.org/10.1080/23311983.2026.2657188",
+        "reason": "Direct foreign-audience reception evidence"
+      }
+    ]
+  }
+}

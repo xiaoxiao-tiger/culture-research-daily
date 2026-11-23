@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-23",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-20",
@@ -337,11 +337,11 @@
       ]
     },
     "jcmc": {
-      "lastAttemptAt": "2026-11-16",
-      "lastCheckedAt": "2026-11-16",
+      "lastAttemptAt": "2026-11-23",
+      "lastCheckedAt": "2026-11-23",
       "status": "completed",
-      "reason": "Official JCMC Volume 31 Issue 6 directory was completely reconciled. Its two research articles were already present in permanent history, so no duplicate recommendation was added.",
-      "lastCompletedAt": "2026-11-16",
+      "reason": "Official current issue reconciled as two research articles; both previously recommended and both shown with English summaries.",
+      "lastCompletedAt": "2026-11-23",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-11-16",
@@ -410,7 +410,21 @@
             "doi": "10.1093/jcmc/zmag025"
           }
         ]
-      }
+      },
+      "issues": [
+        {
+          "checkedAt": "2026-11-23",
+          "url": "https://academic.oup.com/jcmc/issue/31/6",
+          "complete": true,
+          "title": "Volume 31, Issue 6, November 2026 (In Progress)"
+        },
+        {
+          "checkedAt": "2026-11-23",
+          "url": "https://academic.oup.com/jcmc/issue/31/6",
+          "complete": true,
+          "title": "Volume 31, Issue 6, November 2026 (In Progress)"
+        }
+      ]
     },
     "ct": {
       "lastAttemptAt": "2026-11-10",
