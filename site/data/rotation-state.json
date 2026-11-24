@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-20",
@@ -427,11 +427,11 @@
       ]
     },
     "ct": {
-      "lastAttemptAt": "2026-11-10",
-      "lastCheckedAt": "2026-11-10",
+      "lastAttemptAt": "2026-11-24",
+      "lastCheckedAt": "2026-11-24",
       "status": "completed",
-      "lastCompletedAt": "2026-11-10",
-      "reason": "Oxford Academic Advance Access directory was fully readable on 2026-11-10: 22 Research Articles, one Correction and one Book Review. All research articles were already in permanent history; no duplicate was added.",
+      "lastCompletedAt": "2026-11-24",
+      "reason": "Official Volume 36 Issue 4 reconciled as eight Original Articles; all eight were new and include English summaries.",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-27",
@@ -563,7 +563,15 @@
         "researchArticleCount": 22,
         "nonResearchCount": 2,
         "scopeNote": "Complete visible Advance Access directory on 2026-11-10; all 22 research articles were previously recommended."
-      }
+      },
+      "issues": [
+        {
+          "checkedAt": "2026-11-24",
+          "url": "https://academic.oup.com/ct/issue/36/4",
+          "complete": true,
+          "title": "Volume 36, Issue 4, November 2026"
+        }
+      ]
     },
     "nms": {
       "lastAttemptAt": "2026-11-18",
