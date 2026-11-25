@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-20",
@@ -574,11 +574,11 @@
       ]
     },
     "nms": {
-      "lastAttemptAt": "2026-11-18",
-      "lastCheckedAt": "2026-11-18",
+      "lastAttemptAt": "2026-11-25",
+      "lastCheckedAt": "2026-11-25",
       "status": "completed",
-      "reason": "Official SAGE Volume 28 Issue 11 directory was reconciled as 33 research articles with English abstract summaries.",
-      "lastCompletedAt": "2026-11-18",
+      "reason": "Official current issue remains Volume 28 Issue 11; all 33 research articles were reconciled with English summaries and were already recommended on 2026-11-18.",
+      "lastCompletedAt": "2026-11-25",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-11-11",
@@ -800,14 +800,14 @@
       "reason": "Official current issue listing remained dated 2026-10-23 and all verifiable social-science candidates were already present in the permanent registry; no duplicate recommendation was made."
     },
     "scientific-data": {
-      "lastAttemptAt": "2026-11-13",
+      "lastAttemptAt": "2026-11-25",
       "status": "completed",
-      "lastCompletedAt": "2026-11-13",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08270-4",
-      "publicationDate": "2026-11-11",
+      "lastCompletedAt": "2026-11-25",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41597-026-08909-2",
+      "publicationDate": "2026-11-23",
       "socialScienceAssessment": "confirmed",
-      "lastCheckedAt": "2026-11-13",
-      "reason": "Official latest directory yielded the unrecommended social-science dataset CORA, DOI 10.1038/s41597-026-08270-4."
+      "lastCheckedAt": "2026-11-25",
+      "reason": "Official Scientific Data listing yielded an unrecommended multilingual human-participant dataset relevant to cross-cultural communication research."
     },
     "nature-communications": {
       "lastAttemptAt": "2026-11-14",
