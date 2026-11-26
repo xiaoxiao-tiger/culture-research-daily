@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-26",
   "communication": {
     "joc": {
       "lastAttemptAt": "2026-11-20",
@@ -644,10 +644,10 @@
       }
     },
     "sms": {
-      "lastAttemptAt": "2026-11-19",
-      "lastCheckedAt": "2026-11-19",
+      "lastAttemptAt": "2026-11-26",
+      "lastCheckedAt": "2026-11-26",
       "status": "completed",
-      "lastCompletedAt": "2026-11-19",
+      "lastCompletedAt": "2026-11-26",
       "onlineSnapshots": [],
       "completedIssues": [
         {
@@ -757,7 +757,7 @@
           ]
         }
       ],
-      "reason": "Official current issue reconciled as 11 research articles with English abstract summaries."
+      "reason": "Official current issue remains Volume 12 Issue 4; all 11 research articles were reconciled with English summaries and linked to prior recommendation dates."
     }
   },
   "general": {
@@ -810,14 +810,14 @@
       "reason": "Official Scientific Data listing yielded an unrecommended multilingual human-participant dataset relevant to cross-cultural communication research."
     },
     "nature-communications": {
-      "lastAttemptAt": "2026-11-14",
+      "lastAttemptAt": "2026-11-26",
       "status": "completed",
-      "lastCompletedAt": "2026-11-14",
-      "lastCheckedAt": "2026-11-14",
-      "lastRecommendedDoi": "https://doi.org/10.1038/s41467-026-78922-x",
-      "publicationDate": "2026-11-09",
+      "lastCompletedAt": "2026-11-26",
+      "lastCheckedAt": "2026-11-26",
+      "lastRecommendedDoi": "https://doi.org/10.1038/s41467-026-79292-0",
+      "publicationDate": "2026-11-25",
       "socialScienceAssessment": "confirmed",
-      "reason": "Official Nature Communications listings yielded an unrecommended social-science study of collective memory and generational amnesia, DOI 10.1038/s41467-026-78922-x."
+      "reason": "Official Nature Communications listing yielded an unrecommended social-psychology study using experimental and ecological momentary assessment data."
     }
   }
 }

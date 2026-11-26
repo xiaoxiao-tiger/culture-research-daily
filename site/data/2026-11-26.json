@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 7,
+  "layoutVersion": "compact-ideas-v1",
+  "date": "2026-11-26",
+  "title": "Research ideas: reception, influencer visits, platform translation, and workplace AI",
+  "summary": "Two dissertation papers, one foreign-influencer paper, an explicit X-translation shortfall, two workplace-AI papers, explicit preprint shortfalls, the complete Social Media + Society issue with English summaries, and one Nature Communications article.",
+  "historyPolicy": "exclude-recommended",
+  "journalPolicy": "jcr-q1-q2-then-q3-q4-then-esci-then-other-peer-reviewed",
+  "searchPlatforms": [
+    "Google Scholar",
+    "NBER",
+    "SSRN",
+    "arXiv"
+  ],
+  "themeSearches": [
+    {
+      "topicId": "culture",
+      "platform": "Publisher sites and scholarly indexes",
+      "query": "Chinese mythology character reception cultural visibility interpretation character IP audience response",
+      "timeRange": "verified through 2026-11-26",
+      "status": "one SSCI Q1 direct media-reception study and one SSCI Q2 adjacent audience-response study"
+    },
+    {
+      "topicId": "ishow-speed",
+      "platform": "Publisher sites, SSRN, arXiv, NBER",
+      "query": "IShowSpeed China visit foreign influencer China image foreign fans attitudes mediated contact",
+      "timeRange": "verified through 2026-11-26",
+      "status": "one SSCI Q1 adjacent study; second slot left empty"
+    },
+    {
+      "topicId": "x-translation",
+      "platform": "Publisher sites, arXiv, SSRN, NBER",
+      "query": "X Twitter built-in automatic translation cross-language replies reposts relationships",
+      "timeRange": "verified through 2026-11-26",
+      "status": "formal and preprint shortfall; translation-quality-only results excluded"
+    },
+    {
+      "topicId": "ai-wellbeing",
+      "platform": "Publisher sites, SSRN, arXiv, NBER",
+      "query": "workplace generative AI employee well-being technostress loneliness trust burnout",
+      "timeRange": "verified through 2026-11-26",
+      "status": "one SSCI Q2 direct paper and one disclosed ESCI downgrade"
+    }
+  ],
+  "periodicalChecks": [
+    {
+      "platform": "SAGE",
+      "query": "Social Media + Society Volume 12 Issue 4",
+      "timeRange": "checked 2026-11-26",
+      "purpose": "Complete communication-journal issue",
+      "status": "all 11 research articles reconciled with English summaries and linked to prior recommendation dates"
+    },
+    {
+      "platform": "Nature Portfolio",
+      "query": "Nature Communications latest social-science research",
+      "timeRange": "checked 2026-11-26",
+      "purpose": "General top-journal rotation",
+      "status": "one unrecommended open-access social-psychology article selected"
+    }
+  ],
+  "searchNote": "Formal papers were screened in the required database and JCR order. Adjacent evidence and the ESCI downgrade are explicitly labeled. English text is a faithful summary based on publisher abstracts unless a reuse license is stated; no summary is presented as a verbatim abstract.",
+  "shortfallReason": "IShowSpeed has one formal-paper vacancy; X has two; all four preprint topic slots are empty under strict relevance and permanent deduplication.",
+  "groups": [
+    {
+      "id": "ishow-speed",
+      "label": "甲亢哥访华",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [
+        {
+          "title": "Imported Nationalism: How Foreign Influencers and Local Followers Amplify the Chinese Dream in Weibo’s Attention Economy",
+          "titleZh": "Not displayed",
+          "authors": "Saif Shahin and Jing Cai",
+          "year": 2026,
+          "venue": "Journal of Contemporary China, OnlineFirst",
+          "source": "Taylor & Francis",
+          "category": "甲亢哥访华 · adjacent foreign-influencer mechanism",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "Using posts published by Western and non-Western influencers on Weibo during 2020–2021 and the comments of their Chinese followers, this study analyzes how foreign influencers articulate Chinese nationalist discourse and how local audiences amplify it through platform engagement. The analysis links comparative claims about China and the West to user-generated nationalism and to the incentives of the platform attention economy. It is adjacent rather than direct evidence for the IShowSpeed idea because it concerns domestic Chinese followers, not changes in foreign fans’ attitudes after a China visit.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "Using posts published by Western and non-Western influencers on Weibo during 2020–2021 and the comments of their Chinese followers, this study analyzes how foreign influencers articulate Chinese nationalist discourse and how local audiences amplify it through platform engagement. The analysis links comparative claims about China and the West to user-generated nationalism and to the incentives of the platform attention economy. It is adjacent rather than direct evidence for the IShowSpeed idea because it concerns domestic Chinese followers, not changes in foreign fans’ attitudes after a China visit.",
+          "relevance": "Direct or explicitly labeled adjacent evidence under the strict topic hierarchy.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://doi.org/10.1080/10670564.2026.2639981",
+          "doi": "https://doi.org/10.1080/10670564.2026.2639981",
+          "topicIds": [
+            "ishow-speed"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractEn": "Using posts published by Western and non-Western influencers on Weibo during 2020–2021 and the comments of their Chinese followers, this study analyzes how foreign influencers articulate Chinese nationalist discourse and how local audiences amplify it through platform engagement. The analysis links comparative claims about China and the West to user-generated nationalism and to the incentives of the platform attention economy. It is adjacent rather than direct evidence for the IShowSpeed idea because it concerns domestic Chinese followers, not changes in foreign fans’ attitudes after a China visit.",
+          "abstractSource": "https://doi.org/10.1080/10670564.2026.2639981",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher abstract.",
+          "readingPriority": "normal",
+          "priorityReason": "Strict relevance and quality screening.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "online-first",
+          "journalEdition": "SSCI",
+          "jifQuartile": "JCR Q1",
+          "indexSource": "Web of Science Core Collection / 2025 Journal Citation Reports",
+          "tierNote": "Primary tier: SSCI JCR Q1.",
+          "publicationDate": "2026-03-09",
+          "publicationDateSource": "Publisher record"
+        }
+      ],
+      "description": "One unused high-tier adjacent foreign-influencer study passed the screen.",
+      "shortfallReason": "No second unrecommended study directly examining IShowSpeed or foreign fans’ attitude change after an influencer’s China visit was verified. Lower-relevance destination-image papers were not used to fill the slot."
+    },
+    {
+      "id": "x-translation",
+      "label": "X自动翻译",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [],
+      "description": "Strictly limited to platform-integrated translation and cross-language interaction.",
+      "shortfallReason": "No unrecommended peer-reviewed study directly testing X/Twitter built-in translation effects on replies, reposts, interaction depth, or relationship formation was verified. Machine-translation quality studies were excluded."
+    },
+    {
+      "id": "ai-wellbeing",
+      "label": "使用AI提升还是降低幸福感",
+      "target": 2,
+      "sortBy": "relevance-quality-date",
+      "papers": [
+        {
+          "title": "The dark side of GenAI in the workplace: technostress, loneliness, and the buffering role of transformational leadership",
+          "titleZh": "Not displayed",
+          "authors": "Fei Liu, Minxuan Qu, and Yixiao Zhang",
+          "year": 2026,
+          "venue": "Frontiers in Psychology, 17, 1910745",
+          "source": "Frontiers",
+          "category": "Workplace AI and well-being · direct evidence",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "A survey of 290 public-school teachers in Taiwan tests a stressor-strain-outcome and conservation-of-resources model. GenAI-induced technostress is associated with lower work effort indirectly through greater work loneliness, while its direct association with effort is not significant. Transformational leadership weakens the negative link between loneliness and effort but does not significantly moderate the technostress-to-loneliness path or the overall moderated mediation. The cross-sectional design cannot establish causality, but the study directly connects workplace GenAI use with socio-emotional strain.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "A survey of 290 public-school teachers in Taiwan tests a stressor-strain-outcome and conservation-of-resources model. GenAI-induced technostress is associated with lower work effort indirectly through greater work loneliness, while its direct association with effort is not significant. Transformational leadership weakens the negative link between loneliness and effort but does not significantly moderate the technostress-to-loneliness path or the overall moderated mediation. The cross-sectional design cannot establish causality, but the study directly connects workplace GenAI use with socio-emotional strain.",
+          "relevance": "Direct or explicitly labeled adjacent evidence under the strict topic hierarchy.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://doi.org/10.3389/fpsyg.2026.1910745",
+          "doi": "https://doi.org/10.3389/fpsyg.2026.1910745",
+          "topicIds": [
+            "ai-wellbeing"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractEn": "A survey of 290 public-school teachers in Taiwan tests a stressor-strain-outcome and conservation-of-resources model. GenAI-induced technostress is associated with lower work effort indirectly through greater work loneliness, while its direct association with effort is not significant. Transformational leadership weakens the negative link between loneliness and effort but does not significantly moderate the technostress-to-loneliness path or the overall moderated mediation. The cross-sectional design cannot establish causality, but the study directly connects workplace GenAI use with socio-emotional strain.",
+          "abstractSource": "https://doi.org/10.3389/fpsyg.2026.1910745",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher abstract.",
+          "readingPriority": "normal",
+          "priorityReason": "Strict relevance and quality screening.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published",
+          "journalEdition": "SSCI",
+          "jifQuartile": "JCR Q2",
+          "indexSource": "Web of Science Core Collection / 2025 Journal Citation Reports",
+          "tierNote": "Primary tier: SSCI JCR Q2.",
+          "publicationDate": "2026-11-05",
+          "publicationDateSource": "Frontiers article record",
+          "abstractLicense": "CC BY 4.0; publisher abstract summarized"
+        },
+        {
+          "title": "Technostress and trust in AI mediate the association between AI adoption and employee well-being",
+          "titleZh": "Not displayed",
+          "authors": "K. D. V. Prasad, Ved Srinivas, Shivoham Singh, Hemant Kothari, Debanjan Nag, et al.",
+          "year": 2026,
+          "venue": "Discover Psychology, OnlineFirst",
+          "source": "Springer Nature",
+          "category": "Workplace AI and well-being · direct evidence",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "A cross-sectional survey of 499 IT employees in AI-enabled organizations in Hyderabad, India, uses exploratory and confirmatory factor analysis and covariance-based structural equation modeling. AI adoption is positively associated with psychological well-being and trust in AI while also increasing technostress. Technostress is negatively associated with well-being, trust is positively associated with well-being, and bootstrapped models indicate full mediation through both pathways. Because the study is observational and self-reported, the paths should not be read as causal effects.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "A cross-sectional survey of 499 IT employees in AI-enabled organizations in Hyderabad, India, uses exploratory and confirmatory factor analysis and covariance-based structural equation modeling. AI adoption is positively associated with psychological well-being and trust in AI while also increasing technostress. Technostress is negatively associated with well-being, trust is positively associated with well-being, and bootstrapped models indicate full mediation through both pathways. Because the study is observational and self-reported, the paths should not be read as causal effects.",
+          "relevance": "Direct or explicitly labeled adjacent evidence under the strict topic hierarchy.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://doi.org/10.1007/s44202-026-00928-9",
+          "doi": "https://doi.org/10.1007/s44202-026-00928-9",
+          "topicIds": [
+            "ai-wellbeing"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractEn": "A cross-sectional survey of 499 IT employees in AI-enabled organizations in Hyderabad, India, uses exploratory and confirmatory factor analysis and covariance-based structural equation modeling. AI adoption is positively associated with psychological well-being and trust in AI while also increasing technostress. Technostress is negatively associated with well-being, trust is positively associated with well-being, and bootstrapped models indicate full mediation through both pathways. Because the study is observational and self-reported, the paths should not be read as causal effects.",
+          "abstractSource": "https://doi.org/10.1007/s44202-026-00928-9",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher abstract.",
+          "readingPriority": "normal",
+          "priorityReason": "Strict relevance and quality screening.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "online-first",
+          "journalEdition": "ESCI",
+          "jifQuartile": "No JCR quartile verified",
+          "indexSource": "Web of Science Core Collection journal record",
+          "tierNote": "Downgrade tier 3: ESCI. No second unrecommended SSCI/SCIE Q1–Q4 article was verified with comparable directness; this direct employee-well-being study was retained.",
+          "publicationDate": "2026-10-11",
+          "publicationDateSource": "Springer Nature article record"
+        }
+      ],
+      "description": "Direct workplace evidence on GenAI technostress, loneliness, trust, effort, and psychological well-being."
+    },
+    {
+      "id": "preprints",
+      "label": "Preprints · arXiv / SSRN / NBER",
+      "target": 4,
+      "sortBy": "topic-publication-date-desc",
+      "papers": [],
+      "description": "Strict-relevance, newest-first preprint screen.",
+      "shortfallReason": "No unrecommended strict-relevance arXiv, SSRN, or NBER item remained for the four topic slots after unified history deduplication. Previously recommended working papers were not repeated, and newer but generic papers were excluded."
+    },
+    {
+      "id": "communication-issue",
+      "label": "传播学顶刊推荐",
+      "target": 0,
+      "sortBy": "issue",
+      "unit": "issue",
+      "collection": {
+        "journalId": "sms",
+        "journalName": "Social Media + Society",
+        "kind": "issue",
+        "volume": "12",
+        "issue": "4",
+        "title": "Volume 12, Issue 4, October–December 2026",
+        "url": "https://journals.sagepub.com/toc/sms/current",
+        "checkedAt": "2026-11-26",
+        "complete": true,
+        "toc": [
+          {
+            "title": "Seeing Is Believing? Most People Struggle to Detect AI-Generated Images",
+            "url": "https://doi.org/10.1177/20563051261483376",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "A preregistered survey experiment finds that most people distinguish photorealistic AI-generated images from authentic images only around chance level, with modest advantages for younger, analytically minded, and experienced users.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Webs of Ainu Mosir: Indigenous Creative Networks on YouTube",
+            "url": "https://doi.org/10.1177/20563051261487940",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "A social-network analysis examines how Ainu creators use YouTube to form Indigenous creative networks and make cultural expression visible within platformed media systems.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Social Media Platform Repertoires in Everyday Life: Measuring Social Media Use With Passive Metering",
+            "url": "https://doi.org/10.1177/20563051261488115",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "Passive metering is used to measure how people combine multiple social platforms in everyday repertoires, addressing limitations of self-reports and single-platform behavioral data.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Algorithms of Injustice: An Ethnographic Content Analysis of Black Youth’s Experiences with Racial Trauma Online",
+            "url": "https://doi.org/10.1177/20563051261489877",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "An ethnographic content analysis documents how racially traumatic social-media content affects Black youths’ well-being and how platform systems participate in the circulation of that harm.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Automated Influence: How Social Bots Reshape Discursive Opportunities in Online Activism",
+            "url": "https://doi.org/10.1177/20563051261490338",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "The study adapts the discursive-opportunity framework to show how social bots alter visibility, resonance, and legitimacy in online protest discourse.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Careful Dis/Connection: Bringing Digital (Inter)Dependent Relations Out From the Shadows of Autonomy",
+            "url": "https://doi.org/10.1177/20563051261490645",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "A conceptual analysis argues that digital disconnection should be understood through interdependence and care rather than an ideal of autonomous withdrawal from devices and platforms.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Do Experts Agree About Misinformation? Evidence From Three Annual Surveys",
+            "url": "https://doi.org/10.1177/20563051261495196",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "Three annual expert surveys assess agreement about the prevalence, spread, and effects of misinformation, identifying both areas of consensus and persistent uncertainty.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Exploring the Predictors and Outcomes of Perceived Algorithm Responsiveness in Social Media Feeds: Combining Longitudinal and Computational Methods",
+            "url": "https://doi.org/10.1177/20563051261496376",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "Longitudinal and computational analyses examine which message cues predict perceived algorithm responsiveness and how those perceptions relate to later social-media use.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Women Sustaining TikTok as Supplementary Information Infrastructure for Flexible Work Arrangements: Gendered Conditions, Community and Surveillance",
+            "url": "https://doi.org/10.1177/20563051261496968",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "The study examines how women use TikTok as an informal information infrastructure for interpreting flexible work, while navigating gendered community support and surveillance.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "“I Share Your Sentiment”—A Longitudinal Study of Facebook Post Sentiment and Sharing",
+            "url": "https://doi.org/10.1177/20563051261501463",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "A population-level analysis of Norwegian political parties’ Facebook posts from 2016 to 2025 tests how negative, positive, and neutral sentiment predicts sharing over time.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-19",
+            "reviewUrl": "?date=2026-11-19"
+          },
+          {
+            "title": "Fandom Rupture in the Movement Society: Reactive Collective Participation Through Affective Practices",
+            "url": "https://doi.org/10.1177/20563051261502656",
+            "articleType": "Research Article",
+            "status": "previously-recommended",
+            "abstractEn": "The article explains how affective practices sustain movement-like participation after an external shock draws heterogeneous fandom actors into a shared platform arena before a collective goal has formed.",
+            "abstractSource": "https://journals.sagepub.com/toc/SMS/current",
+            "recommendedDate": "2026-11-16",
+            "reviewUrl": "?date=2026-11-16"
+          }
+        ]
+      },
+      "papers": []
+    },
+    {
+      "id": "general-science",
+      "label": "综合顶刊推荐",
+      "target": 1,
+      "sortBy": "publicationDate",
+      "rotationJournalId": "nature-communications",
+      "selectedJournalId": "nature-communications",
+      "papers": [
+        {
+          "title": "Exploring enhanced self-esteem reactivity in response to social prediction errors in adolescence",
+          "titleZh": "Not displayed",
+          "authors": "Klara Gregorova, Geert-Jan Will, Pia Burkard, Marcel Romanos, et al.",
+          "year": 2026,
+          "venue": "Nature Communications",
+          "source": "Nature Portfolio",
+          "category": "综合顶刊 · social psychology",
+          "evidence": "Publisher or authoritative index record verified",
+          "takeaway": "This open-access study examines how social experiences shape self-esteem in 141 participants aged 10–40 using an experimental social-evaluation task and ecological momentary assessment. In the experiment, self-esteem responses to unexpected social feedback follow a nonlinear age pattern and peak in late adolescence. In daily life, younger participants show stronger self-esteem reactivity to pleasant social interactions and naturalistic social prediction errors. Experimental and daily-life reactivity are associated, supporting heightened self-esteem malleability during adolescence.",
+          "theory": "See the linked article.",
+          "data": "See the linked article.",
+          "method": "See the linked article.",
+          "results": "This open-access study examines how social experiences shape self-esteem in 141 participants aged 10–40 using an experimental social-evaluation task and ecological momentary assessment. In the experiment, self-esteem responses to unexpected social feedback follow a nonlinear age pattern and peak in late adolescence. In daily life, younger participants show stronger self-esteem reactivity to pleasant social interactions and naturalistic social prediction errors. Experimental and daily-life reactivity are associated, supporting heightened self-esteem malleability during adolescence.",
+          "relevance": "Direct or explicitly labeled adjacent evidence under the strict topic hierarchy.",
+          "limitations": "See the linked source for design-specific limitations.",
+          "url": "https://doi.org/10.1038/s41467-026-79292-0",
+          "doi": "https://doi.org/10.1038/s41467-026-79292-0",
+          "topicIds": [
+            "methods"
+          ],
+          "abstractMode": "summary",
+          "originalAbstract": "",
+          "abstractEn": "This open-access study examines how social experiences shape self-esteem in 141 participants aged 10–40 using an experimental social-evaluation task and ecological momentary assessment. In the experiment, self-esteem responses to unexpected social feedback follow a nonlinear age pattern and peak in late adolescence. In daily life, younger participants show stronger self-esteem reactivity to pleasant social interactions and naturalistic social prediction errors. Experimental and daily-life reactivity are associated, supporting heightened self-esteem malleability during adolescence.",
+          "abstractSource": "https://doi.org/10.1038/s41467-026-79292-0",
+          "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher abstract.",
+          "readingPriority": "normal",
+          "priorityReason": "Strict relevance and quality screening.",
+          "readingUse": "Compact evidence briefing.",
+          "researchConnection": "Relevant to the named research idea.",
+          "publicationType": "journal",
+          "peerReviewed": true,
+          "publicationStatus": "published",
+          "journalEdition": "SCIE",
+          "jifQuartile": "JCR Q1",
+          "indexSource": "Web of Science Core Collection / 2025 Journal Citation Reports",
+          "tierNote": "Nature Communications rotation.",
+          "publicationDate": "2026-11-25",
+          "publicationDateSource": "Nature Communications article record",
+          "socialScienceAssessment": "confirmed",
+          "socialScienceReason": "Human social-evaluation experiment and ecological momentary assessment.",
+          "abstractLicense": "CC BY 4.0; publisher abstract summarized"
+        }
+      ]
+    }
+  ],
+  "coreTracking": [],
+  "coreTrackingNote": "No new owner-submitted core-paper request was present.",
+  "dissertation": {
+    "title": "从被看见到被接收",
+    "timeRange": "Current and high-relevance peer-reviewed research",
+    "selectionNote": "One direct study of foreign media interpretation of Chinese cultural icons and one adjacent domestic audience-response study of character IP.",
+    "historyCoverage": "Checked the public index and permanent recommendation registry after the 2026-11-17 reset; inaccessible private notes are outside this coverage.",
+    "selectedPapers": [
+      "https://doi.org/10.1177/13678779261455102",
+      "https://doi.org/10.3389/fpsyg.2026.1946141"
+    ],
+    "papers": [
+      {
+        "title": "Interpretive incompleteness in global cultural flows: Ne Zha 2 and Labubu between visibility and decentralization",
+        "titleZh": "Not displayed",
+        "authors": "Sizhou Pan",
+        "year": 2026,
+        "venue": "International Journal of Cultural Studies, 29(6)",
+        "source": "SAGE",
+        "category": "Dissertation · direct cultural-reception evidence",
+        "evidence": "Publisher or authoritative index record verified",
+        "takeaway": "A critical discourse analysis examines 349 media articles about the Chinese cultural icons Ne Zha 2 and Labubu. It identifies selective visibility followed by economic narratives that erase cultural subjecthood, political narratives that construct symbolic boundaries, and security narratives that recode popularity as social risk. The article argues that market visibility can coexist with limited interpretive power and proposes interpretive incompleteness as a structural feature of global cultural circulation. This is direct evidence about foreign media reception of Chinese cultural icons, but it analyzes media discourse rather than individual audience attitudes, identification, or sharing intentions.",
+        "theory": "See the linked article.",
+        "data": "See the linked article.",
+        "method": "See the linked article.",
+        "results": "A critical discourse analysis examines 349 media articles about the Chinese cultural icons Ne Zha 2 and Labubu. It identifies selective visibility followed by economic narratives that erase cultural subjecthood, political narratives that construct symbolic boundaries, and security narratives that recode popularity as social risk. The article argues that market visibility can coexist with limited interpretive power and proposes interpretive incompleteness as a structural feature of global cultural circulation. This is direct evidence about foreign media reception of Chinese cultural icons, but it analyzes media discourse rather than individual audience attitudes, identification, or sharing intentions.",
+        "relevance": "Direct or explicitly labeled adjacent evidence under the strict topic hierarchy.",
+        "limitations": "See the linked source for design-specific limitations.",
+        "url": "https://doi.org/10.1177/13678779261455102",
+        "doi": "https://doi.org/10.1177/13678779261455102",
+        "topicIds": [
+          "culture"
+        ],
+        "abstractMode": "summary",
+        "originalAbstract": "",
+        "abstractEn": "A critical discourse analysis examines 349 media articles about the Chinese cultural icons Ne Zha 2 and Labubu. It identifies selective visibility followed by economic narratives that erase cultural subjecthood, political narratives that construct symbolic boundaries, and security narratives that recode popularity as social risk. The article argues that market visibility can coexist with limited interpretive power and proposes interpretive incompleteness as a structural feature of global cultural circulation. This is direct evidence about foreign media reception of Chinese cultural icons, but it analyzes media discourse rather than individual audience attitudes, identification, or sharing intentions.",
+        "abstractSource": "https://doi.org/10.1177/13678779261455102",
+        "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher abstract.",
+        "readingPriority": "normal",
+        "priorityReason": "Strict relevance and quality screening.",
+        "readingUse": "Compact evidence briefing.",
+        "researchConnection": "Relevant to the named research idea.",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "publicationStatus": "online-first",
+        "journalEdition": "SSCI",
+        "jifQuartile": "JCR Q1",
+        "indexSource": "Web of Science Core Collection / 2025 Journal Citation Reports",
+        "tierNote": "Primary tier: SSCI JCR Q1.",
+        "publicationDate": "2026-06-02",
+        "publicationDateSource": "SAGE article record"
+      },
+      {
+        "title": "Selecting and testing cultural symbols for character IP: evidence from Mount Tai, China",
+        "titleZh": "Not displayed",
+        "authors": "Yu Wang and Changqiang Si",
+        "year": 2026,
+        "venue": "Frontiers in Psychology, 17, 1946141",
+        "source": "Frontiers",
+        "category": "Dissertation · adjacent character-IP reception evidence",
+        "evidence": "Publisher or authoritative index record verified",
+        "takeaway": "The study combines expert scoring and an entropy-weight TOPSIS model with a structural equation model of 331 valid university-student questionnaires collected around Mount Tai. Anthropomorphic reinvention and emotional-compensation potential received the largest symbol-selection weights, while stronger cultural identity was associated with willingness to interact through new media and with cultural-tourism consumption. The self-report, hypothetical-stimulus design supports associations rather than causal claims. It is adjacent evidence because it studies domestic young audiences rather than foreign reception, but it directly separates resonance, identity, interaction, recommendation, and consumption outcomes for a Chinese character IP.",
+        "theory": "See the linked article.",
+        "data": "See the linked article.",
+        "method": "See the linked article.",
+        "results": "The study combines expert scoring and an entropy-weight TOPSIS model with a structural equation model of 331 valid university-student questionnaires collected around Mount Tai. Anthropomorphic reinvention and emotional-compensation potential received the largest symbol-selection weights, while stronger cultural identity was associated with willingness to interact through new media and with cultural-tourism consumption. The self-report, hypothetical-stimulus design supports associations rather than causal claims. It is adjacent evidence because it studies domestic young audiences rather than foreign reception, but it directly separates resonance, identity, interaction, recommendation, and consumption outcomes for a Chinese character IP.",
+        "relevance": "Direct or explicitly labeled adjacent evidence under the strict topic hierarchy.",
+        "limitations": "See the linked source for design-specific limitations.",
+        "url": "https://doi.org/10.3389/fpsyg.2026.1946141",
+        "doi": "https://doi.org/10.3389/fpsyg.2026.1946141",
+        "topicIds": [
+          "culture"
+        ],
+        "abstractMode": "summary",
+        "originalAbstract": "",
+        "abstractEn": "The study combines expert scoring and an entropy-weight TOPSIS model with a structural equation model of 331 valid university-student questionnaires collected around Mount Tai. Anthropomorphic reinvention and emotional-compensation potential received the largest symbol-selection weights, while stronger cultural identity was associated with willingness to interact through new media and with cultural-tourism consumption. The self-report, hypothetical-stimulus design supports associations rather than causal claims. It is adjacent evidence because it studies domestic young audiences rather than foreign reception, but it directly separates resonance, identity, interaction, recommendation, and consumption outcomes for a Chinese character IP.",
+        "abstractSource": "https://doi.org/10.3389/fpsyg.2026.1946141",
+        "abstractUnavailableReason": "Verbatim republication permission was not confirmed; this is an English summary based on the publisher abstract.",
+        "readingPriority": "normal",
+        "priorityReason": "Strict relevance and quality screening.",
+        "readingUse": "Compact evidence briefing.",
+        "researchConnection": "Relevant to the named research idea.",
+        "publicationType": "journal",
+        "peerReviewed": true,
+        "publicationStatus": "published",
+        "journalEdition": "SSCI",
+        "jifQuartile": "JCR Q2",
+        "indexSource": "Web of Science Core Collection / 2025 Journal Citation Reports",
+        "tierNote": "Primary tier: SSCI JCR Q2.",
+        "publicationDate": "2026-09-03",
+        "publicationDateSource": "Frontiers article record",
+        "abstractLicense": "CC BY; summary based on the open article"
+      }
+    ],
+    "topPapers": [
+      {
+        "doi": "https://doi.org/10.1177/13678779261455102",
+        "reason": "Direct or clearly labeled adjacent reception evidence"
+      },
+      {
+        "doi": "https://doi.org/10.3389/fpsyg.2026.1946141",
+        "reason": "Direct or clearly labeled adjacent reception evidence"
+      }
+    ]
+  }
+}
