@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26",
+  "updatedAt": "2026-11-27",
   "communication": {
     "joc": {
-      "lastAttemptAt": "2026-11-20",
-      "lastCheckedAt": "2026-11-20",
+      "lastAttemptAt": "2026-11-27",
+      "lastCheckedAt": "2026-11-27",
       "status": "completed",
-      "lastCompletedAt": "2026-11-20",
+      "lastCompletedAt": "2026-11-27",
       "onlineSnapshots": [
         {
           "checkedAt": "2026-10-16",
@@ -168,7 +168,7 @@
           ]
         }
       ],
-      "reason": "Official Advance Access snapshot reconciled as 10 research articles with English summaries."
+      "reason": "Official Volume 76 Issue 5 reconciled as five original articles with English summaries; reintroduced after the 2026-11-17 public-history reset."
     },
     "hcr": {
       "lastCheckedAt": "2026-11-21",
@@ -762,14 +762,14 @@
   },
   "general": {
     "pnas": {
-      "lastAttemptAt": "2026-11-15",
+      "lastAttemptAt": "2026-11-27",
       "status": "completed",
-      "lastCompletedAt": "2026-11-15",
-      "lastCheckedAt": "2026-11-15",
-      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2622764123",
-      "publicationDate": "2026-11-09",
+      "lastCompletedAt": "2026-11-27",
+      "lastCheckedAt": "2026-11-27",
+      "lastRecommendedDoi": "https://doi.org/10.1073/pnas.2518033123",
+      "publicationDate": "2026-11-23",
       "socialScienceAssessment": "confirmed",
-      "reason": "PNAS and PubMed records yielded an unrecommended social-science experiment on ideology-based group membership and belief revision, DOI 10.1073/pnas.2622764123."
+      "reason": "PNAS and PubMed records yielded an unrecommended social-media governance synthesis on community moderation."
     },
     "nature": {
       "lastAttemptAt": "2026-11-16",
